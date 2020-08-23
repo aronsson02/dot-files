@@ -1,0 +1,97 @@
+ * {
+   --fg:   #fff;
+  --afg:   #cdcdcd;
+  --xfg:   #aaa;
+   --bg:   #353535;
+  --tbg:   #00000066;
+  --abg:   #303030;
+  --xbg:   #2b2b2b;
+   --ac:   #00bfbf;
+  --xac:   #00e6e6;
+  --grey:  #808080;
+  --red:   #F44336;
+  --orange:#EA9D1C;
+  --green: #00E676;
+	scrollbar-color: var(--ac) var(--bg) !important;
+	scrollbar-width: none !important;
+  font-family: "SF Pro Display", sans-serif;
+}
+@-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
+  body{background-color:var(--bg)!important;--newtab-search-icon: transparent !important;}
+  a,a:visited,a:hover{color:#292D31!important}
+	#newtab-search-text {
+	background-color: var(--bg) !important;
+	font-size: 18px !important;
+	color: var(--xfg) !important;
+	box-shadow: none !important;
+	text-align: center !important;
+	border:none !important;
+	font-weight: bold !important;
+		}
+
+.non-collapsible-section {
+    display: none !important;
+}
+.search-wrapper input {
+    --newtab-textbox-focus-boxshadow: none !important;
+    padding-left: 20px !important;
+    padding-inline-end: 13px !important;
+  }
+
+
+.search-wrapper .logo-and-wordmark .wordmark {
+  display: none!important;
+}
+
+.search-wrapper .logo-and-wordmark {
+  margin-bottom: 40px!important;
+  padding-top: 60px!important;
+  filter: saturate(30%) opacity(50%)!important;
+}
+
+
+
+.search-button{background:none !important;}
+
+.prefs-button button {fill: #9BA8BB !important;}
+
+.prefs-button button:hover, .prefs-button button:focus {
+    background-color:  transparent !important; }
+
+ .contentSearchSuggestionTable {display: none !important;}
+
+
+}
+:root {
+
+    --in-content-border-active: var(--ac) !important;
+    --in-content-border-active-shadow: none !important;
+    --in-content-page-background: var(--bg) !important;
+}
+
+@-moz-document url("about:home"), url("about:newtab"){ .icon.icon-pin-small{ display: none !important } }
+
+/* uBlock Origin */
+@-moz-document url("moz-extension://cb34cddc-988c-418d-99ce-3e8e2acd7488/popup.html") {
+    body{background-color: var(--bg) !important; color: var(--fg) !important; }
+    h2 {background-color: var(--bg) !important; color: var(--fg) !important; font-weight: bold !important;}
+    span {color: var(--fg) !important;}
+    #extraTools {background-color: var(--bg) !important;}
+    #extraTools svg {fill: var(--fg) !important;}
+    #firewallContainer > div > span:first-child {background-color: var(--bg) !important; color: var(--fg) !important;}
+    #appinfo {display: none !important;}
+    #switch .fa-icon {fill: var(--fg) !important;}
+    body.off #switch .fa-icon {fill: var(--fg) !important;}
+    #rulesetTools .fa-icon {background-color: var(--bg) !important; fill: var(--fg) !important;}
+    #rulesetTools .fa-icon:hover {background-color: var(--bg) !important; fill: var(--fg) !important;}
+    #basicTools svg {fill: var(--fg) !important;}
+    #basicTools span:hover {fill: var(--fg) !important;}
+    #refresh {background-color: var(--bg) !important; fill: var(--fg) !important; border: none !important;}
+    #refresh svg:hover, #refresh svg:active {fill: var(--fg) !important;}
+    .nope {stroke: var(--fg) !important;}
+
+    #firewallContainer > div > span:nth-child(2), #firewallContainer > div > span:nth-child(3) {background-color: #191925 !important;}
+    #firewallContainer > div > span.allowRule.ownRule {background-color: #2ecc71 !important;}
+    #firewallContainer > div > span.blockRule.ownRule {background-color: #e74c3c !important;}
+    #firewallContainer > div > span.noopRule.ownRule {background-color: #555 !important;}
+}
