@@ -1,7 +1,5 @@
 
 :root {
-
-   /* Minimal Functional Fox variables*/
   --mff-bg: var(--tbg);
   --mff-icon-color: var(--fg);
   --mff-nav-toolbar-padding: 5px;
@@ -201,10 +199,16 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 .toolbarbutton-text {
-  color: var(--mff-icon-color)  !important;
+    color: var(--mff-icon-color)  !important;
 }
 .urlbar-icon {
-  color: var(--mff-icon-color)  !important;
+    color: var(--mff-icon-color)  !important;
+}
+#back-button {
+    list-style-image: url("left-arrow.svg");
+}
+#forward-button {
+    list-style-image: url("right-arrow.svg");
 }
 
 #urlbar-results {
