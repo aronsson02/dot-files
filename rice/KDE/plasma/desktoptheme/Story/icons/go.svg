@@ -14,7 +14,7 @@
    id="svg3869"
    version="1.1"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="distribute.svgz"
+   sodipodi:docname="go.svgz"
    viewBox="0 0 22 22">
   <defs
      id="defs3871">
@@ -63,9 +63,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="18.397981"
-     inkscape:cy="9.0212739"
+     inkscape:zoom="8.0000001"
+     inkscape:cx="50.086451"
+     inkscape:cy="10.924615"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -102,37 +102,88 @@
      transform="translate(-326,-534.3622)">
     <g
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
-       id="distribute-horizontal-x"
+       id="go-home"
        transform="translate(326,534.3622)">
       <path
          inkscape:connector-curvature="0"
          id="path2"
          style="fill:#C3C7D1"
-         d="m 17,15 h 2 v 1 h -2 v 2 H 5 V 16 H 3 V 15 H 5 V 13 H 17 Z M 6,14 v 3 h 10 v -3 z m 9,-8 h 4 V 7 H 15 V 9 H 7 V 7 H 3 V 6 H 7 V 4 h 8 z M 14,5 H 8 v 3 h 6 z" />
+         d="M 8,20 H 3 V 11.7 L 2.707,11.707 2,11 10.293,2.707 11,2 14,5 V 3 h 4 v 6 l 2,2 -0.707,0.707 L 19,11.7 V 20 H 12 V 13 H 8 Z m 7,-12.586 -4,-4 -7,7 V 19 h 3 v -7 h 6 v 7 h 5 v -8.586 l -1,-1 V 4 h -2 z" />
       <rect
          y="0"
          x="0"
          height="22"
          width="22"
          id="rect817"
-         style="fill:#ffffff;fill-opacity:0;stroke-width:0.99167538" />
+         style="fill:#ffffff;fill-opacity:0;stroke-width:0.95913571" />
     </g>
     <g
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
-       id="16-16-distribute-horizontal-x"
-       transform="translate(310,540.3622)">
+       id="go-next"
+       transform="translate(348,534.3622)">
       <path
          inkscape:connector-curvature="0"
-         id="path2-1"
-         d="M 5,1 V 3 H 1 v 1 h 4 v 2 h 6 V 4 h 4 V 3 H 11 V 1 Z m 1,1 h 4 V 3 4 5 H 6 V 4 3 Z m -3,8 v 2 H 1 v 1 h 2 v 2 h 10 v -2 h 2 v -1 h -2 v -2 z m 1,1 h 8 v 3 H 4 Z"
-         style="fill:#C3C7D1" />
+         id="path2-9"
+         style="fill:#C3C7D1"
+         d="m 7.356,3 v 0 l 8,8 -8,8 H 7.346 L 6.644,18.298 13.942,11 6.649,3.707 Z" />
       <rect
          y="0"
          x="0"
-         height="16"
-         width="16"
-         id="rect828"
-         style="fill:#ffffff;fill-opacity:0;stroke-width:1.00632572" />
+         height="22"
+         width="22"
+         id="rect817-0"
+         style="fill:#ffffff;fill-opacity:0;stroke-width:0.99790585" />
+    </g>
+    <g
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+       id="go-previous"
+       transform="matrix(-1,0,0,1,392,534.3622)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2-9-5"
+         style="fill:#C3C7D1"
+         d="m 7.356,3 v 0 l 8,8 -8,8 H 7.346 L 6.644,18.298 13.942,11 6.649,3.707 Z" />
+      <rect
+         y="0"
+         x="0"
+         height="22"
+         width="22"
+         id="rect817-0-2"
+         style="fill:#ffffff;fill-opacity:0;stroke-width:0.99790585" />
+    </g>
+    <g
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+       id="go-down"
+       transform="rotate(90,-48.6811,485.6811)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2-9-5-8"
+         style="fill:#C3C7D1"
+         d="m 7.356,3 v 0 l 8,8 -8,8 H 7.346 L 6.644,18.298 13.942,11 6.649,3.707 Z" />
+      <rect
+         y="0"
+         x="0"
+         height="22"
+         width="22"
+         id="rect817-0-2-3"
+         style="fill:#ffffff;fill-opacity:0;stroke-width:0.99790585" />
+    </g>
+    <g
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+       id="go-up"
+       transform="matrix(0,-1,-1,0,414,556.3622)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2-9-5-8-1"
+         style="fill:#C3C7D1"
+         d="m 7.356,3 v 0 l 8,8 -8,8 H 7.346 L 6.644,18.298 13.942,11 6.649,3.707 Z" />
+      <rect
+         y="0"
+         x="0"
+         height="22"
+         width="22"
+         id="rect817-0-2-3-5"
+         style="fill:#ffffff;fill-opacity:0;stroke-width:0.99790585" />
     </g>
   </g>
 </svg>

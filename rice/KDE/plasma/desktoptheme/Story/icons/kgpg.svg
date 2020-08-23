@@ -14,7 +14,7 @@
    id="svg3869"
    version="1.1"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="distribute.svgz"
+   sodipodi:docname="kgpg.svgz"
    viewBox="0 0 22 22">
   <defs
      id="defs3871">
@@ -63,9 +63,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="18.397981"
-     inkscape:cy="9.0212739"
+     inkscape:zoom="1"
+     inkscape:cx="-16.584291"
+     inkscape:cy="13.944031"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -81,7 +81,9 @@
      inkscape:showpageshadow="false">
     <inkscape:grid
        type="xygrid"
-       id="grid4132" />
+       id="grid4132"
+       originx="0"
+       originy="-1.74e-05" />
   </sodipodi:namedview>
   <metadata
      id="metadata3874">
@@ -99,40 +101,24 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-326,-534.3622)">
+     transform="translate(-326,-534.36218)">
     <g
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
-       id="distribute-horizontal-x"
-       transform="translate(326,534.3622)">
+       id="kgpg"
+       transform="translate(326,534.36218)">
       <path
          inkscape:connector-curvature="0"
-         id="path2"
+         id="path2-8"
          style="fill:#C3C7D1"
-         d="m 17,15 h 2 v 1 h -2 v 2 H 5 V 16 H 3 V 15 H 5 V 13 H 17 Z M 6,14 v 3 h 10 v -3 z m 9,-8 h 4 V 7 H 15 V 9 H 7 V 7 H 3 V 6 H 7 V 4 h 8 z M 14,5 H 8 v 3 h 6 z" />
+         d="m 4,11 h 14 v 9 H 4 Z m 13,8 V 12 H 5 v 7 z M 9,11 H 8 V 7 c 0,-1.656 1.344,-3 3,-3 1.656,0 3,1.344 3,3 v 4 H 13 V 7 C 13,5.896 12.104,5 11,5 9.896,5 9,5.896 9,7 Z M 7,11 H 6 V 7 c 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 v 4 H 15 V 7 C 15,4.792 13.208,3 11,3 8.792,3 7,4.792 7,7 Z" />
       <rect
+         ry="1.1683168"
          y="0"
          x="0"
          height="22"
          width="22"
          id="rect817"
-         style="fill:#ffffff;fill-opacity:0;stroke-width:0.99167538" />
-    </g>
-    <g
-       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
-       id="16-16-distribute-horizontal-x"
-       transform="translate(310,540.3622)">
-      <path
-         inkscape:connector-curvature="0"
-         id="path2-1"
-         d="M 5,1 V 3 H 1 v 1 h 4 v 2 h 6 V 4 h 4 V 3 H 11 V 1 Z m 1,1 h 4 V 3 4 5 H 6 V 4 3 Z m -3,8 v 2 H 1 v 1 h 2 v 2 h 10 v -2 h 2 v -1 h -2 v -2 z m 1,1 h 8 v 3 H 4 Z"
-         style="fill:#C3C7D1" />
-      <rect
-         y="0"
-         x="0"
-         height="16"
-         width="16"
-         id="rect828"
-         style="fill:#ffffff;fill-opacity:0;stroke-width:1.00632572" />
+         style="fill:#ffff00;fill-opacity:0;stroke-width:1.15973663;stroke-miterlimit:1.41420996;stroke-dasharray:none" />
     </g>
   </g>
 </svg>

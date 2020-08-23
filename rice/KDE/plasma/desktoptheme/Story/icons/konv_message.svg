@@ -13,8 +13,8 @@
    height="22"
    id="svg3869"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="distribute.svgz"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="konv_message.svgz"
    viewBox="0 0 22 22">
   <defs
      id="defs3871">
@@ -63,9 +63,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="18.397981"
-     inkscape:cy="9.0212739"
+     inkscape:zoom="11.313708"
+     inkscape:cx="-27.136522"
+     inkscape:cy="9.6859846"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -74,9 +74,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:showpageshadow="false">
     <inkscape:grid
@@ -102,37 +102,20 @@
      transform="translate(-326,-534.3622)">
     <g
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
-       id="distribute-horizontal-x"
+       id="konv_message"
        transform="translate(326,534.3622)">
       <path
          inkscape:connector-curvature="0"
          id="path2"
-         style="fill:#C3C7D1"
-         d="m 17,15 h 2 v 1 h -2 v 2 H 5 V 16 H 3 V 15 H 5 V 13 H 17 Z M 6,14 v 3 h 10 v -3 z m 9,-8 h 4 V 7 H 15 V 9 H 7 V 7 H 3 V 6 H 7 V 4 h 8 z M 14,5 H 8 v 3 h 6 z" />
+         d="M 4,3 C 2.896,3 2,3.896 2,5 v 8 c 0,1.104 0.896,2 2,2 h 1 v 4 H 6 V 18.998 L 10,15 h 8 c 1.104,0 2,-0.896 2,-2 V 5 C 20,3.896 19.104,3 18,3 Z m 0,1 h 14 c 0.552,0 1,0.448 1,1 v 8 c 0,0.552 -0.448,1 -1,1 H 9.5859375 L 6,17.585938 V 14 H 4 C 3.448,14 3,13.552 3,13 V 5 C 3,4.448 3.448,4 4,4 Z M 5,7 V 8 H 17 V 7 Z m 0,3 v 1 h 12 v -1 z"
+         style="fill:#268aff;fill-opacity:1" />
       <rect
          y="0"
          x="0"
          height="22"
          width="22"
-         id="rect817"
-         style="fill:#ffffff;fill-opacity:0;stroke-width:0.99167538" />
-    </g>
-    <g
-       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
-       id="16-16-distribute-horizontal-x"
-       transform="translate(310,540.3622)">
-      <path
-         inkscape:connector-curvature="0"
-         id="path2-1"
-         d="M 5,1 V 3 H 1 v 1 h 4 v 2 h 6 V 4 h 4 V 3 H 11 V 1 Z m 1,1 h 4 V 3 4 5 H 6 V 4 3 Z m -3,8 v 2 H 1 v 1 h 2 v 2 h 10 v -2 h 2 v -1 h -2 v -2 z m 1,1 h 8 v 3 H 4 Z"
-         style="fill:#C3C7D1" />
-      <rect
-         y="0"
-         x="0"
-         height="16"
-         width="16"
-         id="rect828"
-         style="fill:#ffffff;fill-opacity:0;stroke-width:1.00632572" />
+         id="rect822"
+         style="fill:#ffffff;fill-opacity:0;stroke-width:0.90256649" />
     </g>
   </g>
 </svg>
