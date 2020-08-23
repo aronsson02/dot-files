@@ -1,0 +1,90 @@
+:root {
+   --fg:   #fff;
+  --afg:   #cdcdcd;
+  --xfg:   #aaa;
+   --bg:   #353535;
+  --tbg:   #00000066;
+  --abg:   #303030;
+  --xbg:   #2b2b2b;
+   --ac:   #00bfbf;
+  --xac:   #00e6e6;
+  --grey:  #808080;
+  --red:   #F44336;
+  --orange:#EA9D1C;
+  --green: #00E676;
+}
+
+        Blue = #1CCFEA (FG)
+Lighter Blue = #00FFFF (AFG)
+        Dark Blue = #041A1F (BG)
+Lighter Dark Blue = #1C3237 (ABG)
+
+
+ FG = #cdcdcd / RGBA(205, 205, 205, 1)
+AFG = #bebebe / RGBA(190, 190, 190, 1)
+XFG = #aaa    / RGBA(170, 170, 170, 1)
+ BG = #0f1019 / RGBA(15, 16, 25, 1)
+ABG = #11121d / RGBA(17, 18, 29, 1)
+XBG = #191A23 / RGBA(25, 26, 35, 1)
+ AC = #009696 / RGBA(0, 150, 150, 1)
+XAC = #00b8b8 / RGBA(0, 184, 184, 1)
+
+
+        Manjaro green = #1ABC9C (FG) [0.1, 0.74, 0.61)]
+Lighter Manjaro Green = #36d7b7 (AFG)
+        Breath Gray = #292F34 (BG) / RGBA(41, 47, 52, 1)
+Lighter Breath Gray = #3e474e (ABG)
+
+
+Red = #F44336
+Orange = #EA9D1C
+Dark Orange = #1F1504
+Green = #00E676
+
+Pink = #FF0080
+Dark Pink = #D37ED3
+
+Dark Purple = #C51DDC ﴾Link﴿
+Pastel Purple = #6E87FF ﴾Visited Link﴿
+
+Vall-halla Blue = #120056
+
+
+animation: fadein 250ms
+
+transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+box-shadow: 3px 3px 3px 3px rgba(4, 26, 31, 0.85)
+
+filter:blur(5px)
+
+*{
+    -moz-animation: fadein 750ms !important;
+    animation: fadein 750ms !important;
+    transition: all 750ms !important;
+    scroll-behavior: smooth !important;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+body {
+    background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082) !important;
+    animation: filter 6s linear infinite !important;
+}
+@keyframes filter {
+    0% {
+        filter: hue-rotate(360deg) sepia(0) ;
+    }
+    50% {
+        filter: hue-rotate(0) sepia(50%) ;
+    }
+    100%{
+        filter: hue-rotate(360deg) sepia(0) ;
+    }
+}
