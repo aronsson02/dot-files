@@ -1,8 +1,8 @@
 sudo cp "~/dot-files/XKB/evdev.xml" "/usr/share/X11/xkb/rules/"
 sudo cp "~/dot-files/XKB/jp" "/usr/share/X11/xkb/symbols"
 setxkbmap jp
-sudo ln -sf "~/Documents/фэлш/Themes/faev kde splash" "~/.local/share/plasma/look-and-feel/faev"
-sudo ln -sf "~/Documents/фэлш/Themes/faev plasma" "~/.local/share/plasma/desktoptheme/faev"
+sudo ln -sf "~/dot-files/rice/KDE/plasma/look-and-feel/Story" "~/.local/share/plasma/look-and-feel/Story"
+sudo ln -sf "~/dot-files/rice/KDE/plasma/desktoptheme/Story" "~/.local/share/plasma/desktoptheme/Story"
 sudo ln -sf "~/dot-files/rice/KDE/color-schemes/Story.colors" "~/.local/share/color-schemes"
 sudo ln -sf "~/dot-files/rice/KDE/aurorae/Story" "~/.local/share/aurorae/themes/Story"
 sudo ln -sf "~/dot-files/rice/linux system/themes/Story" "~/.themes/Story"
