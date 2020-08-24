@@ -80,6 +80,23 @@ panelview {
 	scrollbar-width: none !important;
   font-family: "SF Pro Display", sans-serif;
 }
+#titlebar {
+  margin-top: -30px !important;
+  opacity: 0 !important;
+  transition: all 250ms linear 750ms !important;
+}
+#navigator-toolbox:hover #titlebar {
+  margin-top: 0px !important;
+  opacity: 1 !important;
+  transition: all 250ms linear !important;
+}
+#PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional {
+  display: none !important;
+}
+
+#navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional {
+  display: inherit !important;
+}
 /*
   _____ _   ___ ___
  |_   _/_\ | _ ) __|
@@ -205,10 +222,10 @@ hbox.tab-content[pinned=true] .tab-text {
     color: var(--mff-icon-color)  !important;
 }
 #back-button {
-    list-style-image: url("left-arrow.svg");
+    list-style-image: url("left-arrow.svg") !important;
 }
 #forward-button {
-    list-style-image: url("right-arrow.svg");
+    list-style-image: url("right-arrow.svg") !important;
 }
 
 #urlbar-results {
