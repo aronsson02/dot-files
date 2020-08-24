@@ -384,7 +384,6 @@ toolbarseparator {
   display: none;
 }
 
-
 /* Transparency */
 #TabsToolbar, #titlebar, #main-window, #navigator-toolbox {
 	-moz-appearance: none !important;
@@ -405,7 +404,15 @@ menupopup {
   border-radius: 4px !important;
   padding: 4px 0 !important;
 }
-
+#context-back {
+	list-style-image: url("left-arrow.svg") !important;
+}
+#context-forward {
+	list-style-image: url("right-arrow.svg") !important;
+}
+#context-reload {
+display: none !important;
+}
 menupopup menupopup {
   margin: -5px 0 0 -4px;
 }
