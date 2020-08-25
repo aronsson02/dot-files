@@ -1,7 +1,7 @@
 sudo cp "$HOME/dot-files/XKB/evdev.xml" "/usr/share/X11/xkb/rules/"
 sudo cp "$HOME/dot-files/XKB/jp" "/usr/share/X11/xkb/symbols"
 setxkbmap jp
-yay -Sy awesome-git rofi-git picom-tryone-git
+yay -Sy awesome-git rofi-git picom-tryone-git alsa-utils pulseaudio pulseaudio-alsa xprop imagemagick xfce4-power-manager xdg-user-dirs kvantum-qt5-git konsole
 ln -sf "$HOME/dot-files/fonts/" "$HOME/.fonts"
 ln -sf "$HOME/dot-files/rice/KDE/plasma/look-and-feel/Story" "$HOME/.local/share/plasma/look-and-feel/Story"
 ln -sf "$HOME/dot-files/rice/KDE/plasma/desktoptheme/Story" "$HOME/.local/share/plasma/desktoptheme/Story"
