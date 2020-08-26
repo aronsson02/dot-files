@@ -1,20 +1,37 @@
- * {
-   --fg:   #fff;
-  --afg:   #cdcdcd;
-  --xfg:   #aaa;
+:root {
+   --fg:   #FFF;
+  --afg:   #CDCDCD;
+  --xfg:   #AAA;
    --bg:   #353535;
   --tbg:   #00000066;
   --abg:   #303030;
-  --xbg:   #2b2b2b;
-   --ac:   #00bfbf;
-  --xac:   #00e6e6;
+  --xbg:   #2B2B2B;
+   --ac:   #00BFBF;
+  --xac:   #00E6E6;
   --grey:  #808080;
   --red:   #F44336;
   --orange:#EA9D1C;
+  --dark-orange:#1F1504;
   --green: #00E676;
-	scrollbar-color: var(--ac) var(--bg) !important;
-	scrollbar-width: none !important;
-  font-family: "SF Pro Display", sans-serif;
+  --blue: #120056;
+  --bdb: blur(50px) brightness(66%);
+  --bdblur: blur(50px);
+  --bdbl: blur(5px);
+}
+@keyframes hue-rotate {
+    0% { filter: hue-rotate(0deg); }
+    100%   { filter: hue-rotate(360deg); }
+}
+@keyframes filter {
+    0% {
+        filter: hue-rotate(360deg) sepia(0) ;
+    }
+    50% {
+        filter: hue-rotate(0) sepia(50%) ;
+    }
+    100%{
+        filter: hue-rotate(360deg) sepia(0) ;
+    }
 }
 @-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
   body{background-color:var(--bg)!important;--newtab-search-icon: transparent !important;}

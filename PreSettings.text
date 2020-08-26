@@ -1,12 +1,12 @@
 :root {
-     --fg:   #FFF;
+   --fg:   #FFF;
   --afg:   #CDCDCD;
   --xfg:   #AAA;
-    --bg:   #353535;
-   --tbg:   #00000066;
+   --bg:   #353535;
+  --tbg:   #00000066;
   --abg:   #303030;
   --xbg:   #2B2B2B;
-    --ac:   #00BFBF;
+   --ac:   #00BFBF;
   --xac:   #00E6E6;
   --grey:  #808080;
   --red:   #F44336;

@@ -13,7 +13,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     local osd_header = wibox.widget {
         text = 'Lyd forsterkning:',
-        font = 'Inter Bold 14',
+        font = 'SF Pro 14',
         align = 'left',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -21,7 +21,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     local osd_value = wibox.widget {
         text = '0%',
-        font = 'Inter Bold 14',
+        font = 'SF Pro 14',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -30,7 +30,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
     local slider_osd = wibox.widget {
         nil,
         {
-            id                     = 'vol_osd_slider',
+            id                  = 'vol_osd_slider',
             bar_shape           = gears.shape.rounded_rect,
             bar_height          = dpi(5),
             bar_color           = '#ffffff20',
@@ -40,7 +40,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
             handle_width        = dpi(15),
             handle_border_color = '#00000012',
             handle_border_width = dpi(1),
-            maximum                = 100,
+            maximum             = 100,
             widget              = wibox.widget.slider
         },
         nil,
@@ -96,7 +96,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     local icon = wibox.widget {
         {
-            image = icons.volume,
+            image  = icons.volume,
             resize = true,
             widget = wibox.widget.imagebox
         },
@@ -108,7 +108,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     -- Create the box
     local osd_height = dpi(250)
-    local osd_width = dpi(300)
+    local osd_width  = dpi(300)
     local osd_margin = dpi(10)
 
     s.volume_osd_overlay = awful.popup {
@@ -157,12 +157,12 @@ screen.connect_signal('request::desktop_decoration', function(s)
                     layout = wibox.layout.fixed.vertical
                 },
             },
-            left = dpi(24),
-            right = dpi(24),
+            left   = dpi(24),
+            right  = dpi(24),
             widget = wibox.container.margin
         },
-        bg = beautiful.background,
-        shape = gears.shape.rounded_rect,
+        bg     = beautiful.background,
+        shape  = gears.shape.rounded_rect,
         widget = wibox.container.background()
     }
 
@@ -201,7 +201,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
                 preferred_positions = 'top',
                 preferred_anchors   = 'middle',
                 geometry            = focused.top_panel or s,
-                offset                = { x = 0, y = dpi(800)}
+                offset              = { x = 0, y = dpi(600)}
             }
         )
     end
