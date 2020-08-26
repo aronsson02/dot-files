@@ -57,7 +57,6 @@ local top_panel = function(s)
     s.battery               = require('widget.battery')()
     s.network               = require('widget.network')()
     s.control_center_toggle = require('widget.control-center-toggle')()
-    s.global_search         = require('widget.global-search')()
     s.info_center_toggle    = require('widget.info-center-toggle')()
     s.stop                  = require('widget.end-session')()
 

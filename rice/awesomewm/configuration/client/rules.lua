@@ -228,26 +228,6 @@ ruled.client.append_rule {
     }
 }
 
--- Image viewers with splash-like behaviour
-ruled.client.append_rule {
-    id = 'splash_like',
-    rule_any  = {
-        class    = {
-            'feh',
-            'Pqiv',
-            'Sxiv'
-        },
-        name = {'Discord Updater'}
-    },
-    properties = {
-        skip_decoration = true,
-        hide_titlebars = true,
-        floating = true,
-        ontop = true,
-        placement = awful.placement.centered
-    }
-}
-
 -- Splash-like but with titlebars enabled
 ruled.client.append_rule {
     id = 'instances',

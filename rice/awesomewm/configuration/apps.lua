@@ -7,17 +7,17 @@ return {
     -- The default applications that we will use in keybindings and widgets
         default = {
 
-                -- Terminal Emulator
-                terminal                                = 'konsole',
+        -- Terminal Emulator
+        terminal                                = 'konsole',
 
-                -- GUI Text Editor
-                text_editor                     = 'kate',
+        -- GUI Text Editor
+        text_editor                     = 'kate',
 
-                -- Web browser
-                web_browser                     = 'firefox-developer-edition',
+        -- Web browser
+        web_browser                     = 'firefox-developer-edition',
 
-                -- GUI File manager
-                file_manager                    = 'dolphin',
+        -- GUI File manager
+        file_manager                    = 'dolphin',
 
         -- Network manager
         network_manager         = 'nm-connection-editor',
@@ -26,16 +26,13 @@ return {
         bluetooth_manager         = 'blueman-manager',
 
         -- Power manager
-                power_manager                   = 'xfce4-power-manager',
+        power_manager                   = 'xfce4-power-manager',
 
-                -- GUI Package manager
-                package_manager                 = 'octopi',
+        -- GUI Package manager
+        package_manager                 = 'pacman',
 
-                -- Lockscreen
-                lock                                    = 'awesome-client "awesome.emit_signal(\'module::lockscreen_show\')"',
-
-        -- Quake-like Terminal
-        quake                     = 'kitty --name QuakeTerminal',
+        -- Lockscreen
+        lock                                    = 'awesome-client "awesome.emit_signal(\'module::lockscreen_show\')"',
 
         -- Rofi Web Search
         rofi_global                = 'rofi -dpi ' .. screen.primary.dpi ..
@@ -61,20 +58,20 @@ return {
         'picom -b --experimental-backends --dbus --config ' ..
         config_dir .. '/configuration/picom.conf',
 
-                -- Bluetooth tray icon
-                'blueman-applet',
+        -- Bluetooth tray icon
+        'blueman-applet',
 
-                -- Ckb-next
-                'ckb-next --background',
+        -- Ckb-next
+        'ckb-next --background',
 
-                -- Xinput
-                'xinput set-prop "Corsair CORSAIR DARK CORE RGB Wireless USB Receiver Mouse" "libinput Middle Emulation Enabled" 1',
+        -- Xinput
+        'xinput set-prop "Corsair CORSAIR DARK CORE RGB Wireless USB Receiver Mouse" "libinput Middle Emulation Enabled" 1',
 
-                -- Xinput
-                'xinput set-prop "Corsair CORSAIR DARK CORE RGB Gaming Mouse" "libinput Middle Emulation Enabled" 1',
+        -- Xinput
+        'xinput set-prop "Corsair CORSAIR DARK CORE RGB Gaming Mouse" "libinput Middle Emulation Enabled" 1',
 
-                -- Power manager
-                'xfce4-power-manager',
+        -- Power manager
+        'xfce4-power-manager',
 
         -- Credential manager
         '/usr/lib/polkit-kde-authentication-agent-1 &' ..
@@ -87,13 +84,7 @@ return {
         'nm-applet',
 
         -- Audio Equalizer
-        'pulseeffects --gapplication-service',
-
-        -- Auto lock timer
-        [[
-        xidlehook --not-when-fullscreen --not-when-audio --timer 600 \
-        "awesome-client 'awesome.emit_signal(\"module::lockscreen_show\")'" ""
-        ]]
+        'pulseeffects --gapplication-service'
 
         -- You can add more start-up applications here
     },

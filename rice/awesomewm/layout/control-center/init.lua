@@ -84,8 +84,7 @@ local main_control_row_two = wibox.widget {
             layout = wibox.layout.fixed.vertical,
             spacing = dpi(5),
             require('widget.airplane-mode'),
-            require('widget.bluetooth-toggle'),
-            require('widget.blue-light')
+            require('widget.bluetooth-toggle')
         }
     ),
     {
@@ -132,17 +131,6 @@ local main_control_row_sliders = wibox.widget {
     format_item(
         {
             require('widget.volume-slider'),
-            margins = dpi(10),
-            widget = wibox.container.margin
-        }
-    )
-}
-
-local main_control_music_box = wibox.widget {
-    layout = wibox.layout.fixed.vertical,
-    format_item(
-        {
-            require('widget.mpd'),
             margins = dpi(10),
             widget = wibox.container.margin
         }
