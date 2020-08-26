@@ -10,4 +10,4 @@ ln -sf "$HOME/dot-files/rice/KDE/aurorae/Story" "$HOME/.local/share/aurorae/them
 ln -sf "$HOME/dot-files/rice/linux system/themes/Story" "$HOME/.themes/Story"
 ln -sf "$HOME/dot-files/rice/linux system/icons/Story" "$HOME/.icons/Story"
 ln -sf "$HOME/dot-files/rice/linux system/icons/blue-oreo" "$HOME/.icons/blue-oreo"
-ln -sf "$HOME/dot-files/rice/firefox" "$HOME/.mozilla/firefox/zpba42s9.default/chrome/"
+ln -sf "$HOME/dot-files/rice/firefox" "$HOME/.mozilla/firefox/zpba42s9.default/chrome"
