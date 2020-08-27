@@ -426,9 +426,6 @@ menupopup {
 #context-forward {
 	list-style-image: url("right-arrow.svg") !important;
 }
-#context-reload {
-display: none !important;
-}
 menupopup menupopup {
   margin: -5px 0 0 -4px;
 }

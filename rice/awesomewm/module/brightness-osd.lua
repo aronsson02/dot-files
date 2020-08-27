@@ -202,7 +202,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
             {
                 preferred_positions = 'top',
                 preferred_anchors   = 'middle',
-                geometry            = focused.bottom_panel or s,
+                geometry            = focused.top_panel or s,
                 offset                = { x = 0, y = dpi(-20)}
             }
         )
