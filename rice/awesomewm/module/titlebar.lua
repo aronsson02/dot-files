@@ -65,7 +65,6 @@ local bg_xresources_group = {
 --░░█░░░█░░░█░░█░░░█▀▀░█▀▄░█▀█░█▀▄
 --░░▀░░▀▀▀░░▀░░▀▀▀░▀▀▀░▀▀░░▀░▀░▀░▀
 
-
 local double_click_event_handler = function(double_click_event)
     if double_click_timer then
         double_click_timer:stop()
@@ -129,10 +128,10 @@ client.connect_signal(
                             awful.titlebar.widget.closebutton(c),
                             awful.titlebar.widget.maximizedbutton(c),
                             awful.titlebar.widget.minimizebutton (c),
-                            spacing = dpi(10),
+                            spacing = dpi(14),
                             layout  = wibox.layout.fixed.vertical
                         },
-                        margins = dpi(10),
+                        margins = dpi(6),
                         widget = wibox.container.margin
                     },
                     {
@@ -141,62 +140,7 @@ client.connect_signal(
                     },
                     {
                         awful.titlebar.widget.floatingbutton (c),
-                        margins = dpi(10),
-                        widget = wibox.container.margin
-                    },
-                    layout = wibox.layout.align.vertical
-
-                }
-
-            elseif pos == 'top' or pos == 'bottom' then
-
-                -- Creates top or bottom titlebars
-                awful.titlebar(c, {position = pos, bg = bg, size = size or titlebar_size}) : setup {
-                    {
-                        {
-                            awful.titlebar.widget.closebutton(c),
-                            awful.titlebar.widget.maximizedbutton(c),
-                            awful.titlebar.widget.minimizebutton (c),
-                            spacing = dpi(10),
-                            layout  = wibox.layout.fixed.horizontal
-                        },
-                        margins = dpi(10),
-                        widget = wibox.container.margin
-                    },
-                    {
-                        buttons = buttons,
-                        layout = wibox.layout.flex.horizontal
-                    },
-                    {
-                        awful.titlebar.widget.floatingbutton (c),
-                        margins = dpi(10),
-                        widget = wibox.container.margin
-                    },
-                    layout = wibox.layout.align.horizontal
-                }
-
-            else
-
-                -- Create a left titlebar (default in this setup)
-                awful.titlebar(c, {position = 'left', size = titlebar_size}) : setup {
-                    {
-                        {
-                            awful.titlebar.widget.closebutton(c),
-                            awful.titlebar.widget.maximizedbutton(c),
-                            awful.titlebar.widget.minimizebutton (c),
-                            spacing = dpi(10),
-                            layout  = wibox.layout.fixed.vertical
-                        },
-                        margins = dpi(10),
-                        widget = wibox.container.margin
-                    },
-                    {
-                        buttons = buttons,
-                        layout = wibox.layout.flex.vertical
-                    },
-                    {
-                        awful.titlebar.widget.floatingbutton (c),
-                        margins = dpi(10),
+                        margins = dpi(6),
                         widget = wibox.container.margin
                     },
                     layout = wibox.layout.align.vertical
@@ -225,24 +169,11 @@ client.connect_signal(
         elseif table_has_value(bg_gtk_group.role, c.role)
             or table_has_value(bg_gtk_group.type, c.type) then
 
-            -- Let's use the gtk theme's bg_color as titlebar's bg then add some transparency
-            -- Let's set the titlebar's position to top
-            -- Isn't it neat? lol
             decorate_titlebar(c, 'top', beautiful.gtk.get_theme_variables().bg_color:sub(1,7) .. '66', titlebar_size)
 
         elseif table_has_value(bg_xresources_group.class, c.class) then
 
-            -- Let's use the xresources' background color as the titlebar color for xterm
-            -- awesome is the shit boi!
             decorate_titlebar(c, 'top', beautiful.xresources.get_current_theme().background, titlebar_size)
-
-        elseif c.class == 'kitty' then
-
-            decorate_titlebar(c, 'left', '#000000AA', titlebar_size)
-
-        elseif c.class == 'Nemo' then
-
-            decorate_titlebar(c, 'left', beautiful.xresources.get_current_theme().background, titlebar_size)
 
         else
             -- Default titlebar

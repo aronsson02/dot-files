@@ -45,7 +45,7 @@ local awesome_overrides = function(theme)
     theme.systray_icon_spacing = dpi(16)
 
     -- Titlebar
-    theme.titlebar_size = dpi(28)
+    theme.titlebar_size = dpi(20)
     theme.titlebar_bg_focus = gtk_variable().bg_color:sub(1,7) .. '66'
     theme.titlebar_bg_normal = gtk_variable().base_color:sub(1,7) .. '66'
     theme.titlebar_fg_focus = gtk_variable().fg_color .. '00'
@@ -153,7 +153,6 @@ local awesome_overrides = function(theme)
     theme.menu_border_color = theme.background:sub(1,7) .. '5C'
 
     -- Tooltips
-
     theme.tooltip_bg = theme.background
     theme.tooltip_border_color = theme.transparent
     theme.tooltip_border_width = 0
@@ -176,20 +175,20 @@ local awesome_overrides = function(theme)
     theme.taglist_bg_occupied =  '#ffffff' .. '1A'
     theme.taglist_bg_urgent = '#E91E63' .. '99'
     theme.taglist_bg_focus = theme.background
-        theme.taglist_spacing = dpi(0)
+    theme.taglist_spacing = dpi(0)
 
-        -- Tasklist
-        theme.tasklist_font = 'SF Pro 12'
-        theme.tasklist_bg_normal = theme.background .. '99'
-        theme.tasklist_bg_focus = theme.background
-        theme.tasklist_bg_urgent = '#E91E63' .. '99'
+    -- Tasklist
+    theme.tasklist_font = 'SF Pro 12'
+    theme.tasklist_bg_normal = theme.background .. '99'
+    theme.tasklist_bg_focus = theme.background
+    theme.tasklist_bg_urgent = '#E91E63' .. '99'
     theme.tasklist_fg_focus = '#DDDDDD'
     theme.tasklist_fg_urgent = '#ffffff'
     theme.tasklist_fg_normal = '#AAAAAA'
 
     -- Notification
-    theme.notification_position = 'top_left'
-    theme.notification_bg = theme.transparent
+    theme.notification_position = 'top_right'
+    theme.notification_bg = theme.background
     theme.notification_margin = dpi(5)
     theme.notification_border_width = dpi(0)
     theme.notification_border_color = theme.transparent
@@ -200,13 +199,13 @@ local awesome_overrides = function(theme)
     -- Client Snap Theme
     theme.snap_bg = theme.background
     theme.snap_shape = gears.shape.rectangle
-        theme.snap_border_width = dpi(15)
+    theme.snap_border_width = dpi(15)
 
-        -- Hotkey popup
-        theme.hotkeys_font = 'SF Pro'
-        theme.hotkeys_description_font   = 'SF Pro'
-        theme.hotkeys_bg = theme.background
-        theme.hotkeys_group_margin = dpi(20)
+    -- Hotkey popup
+    theme.hotkeys_font = 'SF Pro'
+    theme.hotkeys_description_font = 'SF Pro'
+    theme.hotkeys_bg = theme.background
+    theme.hotkeys_group_margin = dpi(20)
 end
 
 return {
