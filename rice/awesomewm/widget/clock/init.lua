@@ -21,12 +21,9 @@ local create_clock = function(s)
     )
 
     s.clock_widget = wibox.widget {
-        {
             s.clock_widget,
             margins = dpi(2),
             widget = wibox.container.margin
-        },
-        widget = clickable_container
     }
 
     s.clock_widget:connect_signal(
@@ -50,55 +47,7 @@ local create_clock = function(s)
         end
     )
 
-        s.month_calendar      = awful.widget.calendar_popup.month({
-                start_sunday      = false,
-                spacing           = dpi(5),
-                font              = 'SF Pro 12',
-                long_weekdays     = true,
-                margin            = dpi(10),
-                screen            = s,
-        style_month       = {
-            border_width    = dpi(0),
-            bg_color         = beautiful.background,
-            padding         = dpi(20),
-            shape           = function(cr, width, height)
-                gears.shape.partially_rounded_rect(
-                    cr, width, height, true, true, true, true, beautiful.groups_radius
-                )
-            end
-        },
-        style_header      = {
-            border_width    = 0,
-            bg_color        = beautiful.transparent
-        },
-        style_weekday     = {
-            border_width    = 0,
-            bg_color        = beautiful.transparent
-        },
-        style_normal      = {
-            border_width    = 0,
-            bg_color        = beautiful.transparent
-        },
-        style_focus       = {
-            border_width    = dpi(0),
-            border_color    = beautiful.fg_normal,
-            bg_color        = beautiful.accent,
-            shape           = function(cr, width, height)
-                gears.shape.partially_rounded_rect(
-                    cr, width, height, true, true, true, true, dpi(6)
-                )
-            end,
-        },
-    })
 
-    s.month_calendar:attach(
-        s.clock_widget,
-        'tc',
-        {
-            on_pressed = true,
-            on_hover = false
-        }
-    )
 
     return s.clock_widget
 end

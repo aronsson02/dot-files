@@ -13,7 +13,7 @@ local top_panel = function(s)
         ontop = true,
         screen = s,
         type = 'dock',
-        height = 1,
+        height = dpi(24),
         width = s.geometry.width,
         x = s.geometry.x,
         y = s.geometry.y,
@@ -22,13 +22,17 @@ local top_panel = function(s)
         fg = beautiful.fg_normal
     }
 
-    panel:connect_signal("mouse::enter", function(h)
-        h:geometry({ height = dpi(24) })
-    end)
+    panel:struts
+    {
+        top = dpi(24)
+    }
+--    panel:connect_signal("mouse::enter", function(h)
+--        h:geometry({ height = dpi(24) })
+--    end)
 
-    panel:connect_signal("mouse::leave", function(h)
-        h:geometry({ height = 1 })
-    end)
+--    panel:connect_signal("mouse::leave", function(h)
+--        h:geometry({ height = 1 })
+--    end)
 
     panel:connect_signal(
             'mouse::enter', function()
@@ -68,7 +72,7 @@ local top_panel = function(s)
         widget = wibox.widget.separator
     }
 
-    panel : setup {
+    panel:setup {
         layout = wibox.layout.align.horizontal,
             expand = 'none',
             {

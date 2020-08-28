@@ -1,0 +1,66 @@
+@-moz-document domain("mangadex.org") {
+.bg-light, .bg-dark, .modal-content {
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: var(--bdblur) !important
+}
+.dropdown-menu {
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: var(--bdbl) !important
+}
+thead, .table-header, .card-header, .modal-header, .edit.nav.nav-tabs, .table-striped > tbody > tr:nth-of-type(2n+1) {
+	background-color: var(--bg) !important
+}
+.card-body, #latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), .list-group-item {
+	background-color: var(--abg) !important
+}
+body, .bg-reader-controls, .form-control {
+	background-color: var(--xbg) !important
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.show .nav-link, .nav-pills .nav-link.active, .nav-pills .show > .nav-link, .badge-warning, .alert, .btn-success.disabled, .btn-success:disabled, .btn-warning {
+	background-color: var(--ac) !important
+}
+.badge-success, .btn-success {
+	background-color: var(--green) !important
+}
+.badge-warning, .alert {
+	color: var(--fg) !important
+}
+ {
+	color: var(--afg) !important
+}
+ {
+	color: var(--xfg) !important
+}
+.text-primary {
+	color: var(--yellow) !important
+}
+.text-success {
+	color: var(--green) !important
+}
+.nav.nav-tabs, .nav.nav-pills, .card-header-pills {
+    border-bottom: 3px solid var(--ac) !important
+}
+.border-bottom {
+	border-bottom: 1px solid var(--grey) !important
+}
+.bg-light, .bg-dark, .btn-warning, .btn-success, .dropdown-menu {
+	border: none !important
+}
+.card {
+ background: var(--bg) !important
+}
+.btn-warning {
+	background-image: none !important
+}
+.user_level_guest {
+	filter: contrast(5) !important
+}
+#increment_chapter, #increment_volume, .modal-header, .modal-body, .modal-footer {
+	background: none !important
+}
+.footer {
+	display: none !important
+}
+}

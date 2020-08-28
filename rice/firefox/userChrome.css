@@ -64,7 +64,7 @@
   /* Overriden Firefox variables*/
   --autocomplete-popup-background: var(--mff-bg) !important;
   --default-arrowpanel-background: var(--mff-bg) !important;
-  --default-arrowpanel-color: #cdcdcd !important;
+  --default-arrowpanel-color: var(--afg) !important;
   --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
   --panel-disabled-color: #f9f9fa80;
   --toolbar-bgcolor: var(--mff-bg) !important;
@@ -74,14 +74,14 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
 
 ::placeholder {
-	opacity: 0 !important;
+    opacity: 0 !important;
 }
 #customizationui-widget-panel{
-  background-color: transparent !important;
-  backdrop-filter: blur(2px) brightness(66%) !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(2px) brightness(66%) !important;
 }
 panelview {
-	background: var(--bg) !important;
+    background: var(--bg) !important;
 }
 /* Status Color Change */
 #statuspanel #statuspanel-label {
@@ -96,7 +96,7 @@ panelview {
   background-color: transparent !important;
   border-color: transparent !important;
 }
-#titlebar {
+/*#titlebar {
   margin-top: -30px !important;
   opacity: 0 !important;
   transition: all 250ms linear 750ms !important;
@@ -109,10 +109,9 @@ panelview {
 #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional {
   display: none !important;
 }
-
 #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional {
   display: inherit !important;
-}
+}*/
 /*
   _____ _   ___ ___
  |_   _/_\ | _ ) __|

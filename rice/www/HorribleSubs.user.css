@@ -1,0 +1,46 @@
+@-moz-document domain("horriblesubs.info") {
+body, .navbar-default .navbar-nav .dropdown-menu > li:focus, .ind-show:hover, .latest-releases a:hover, .latest-show-more a:hover, .table-hover>tbody>tr:hover, .form-control {
+    background-color: var(--xbg) !important
+}
+a, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: var(--ac) !important
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a:hover, a:focus, body {
+    color: var(--fg) !important
+}
+.alphabet-title {
+    border-color: var(--xbg) !important
+}
+.comment-wrapper, .homepage-spons.text-center, #t1a, #disqus_thread, .rls-spons.text-center, .latest-spons.text-center {
+    display: none !important
+}
+.latest-releases .active {
+    background-color: var(--xac) !important
+}
+.latest-releases .active a {
+    color: var(--bg) !important
+}
+.latest-releases .active a:hover, .schedule-today, .rls-label:hover {
+    background-color: var(--ac) !important;
+    color: var(--fg) !important
+}
+* {
+    box-shadow: none !important;
+}
+body {
+    background-image:  url(https://vignette.wikia.nocookie.net/debatesjungle/images/c/c4/MD_Concealment_of_Dual_Blades_-_Kirito.png/revision/latest?cb=20181221235603) !important;
+    background-size: 750px !important;
+}
+.navbar-default .navbar-nav .dropdown-menu > li:hover, .schedule-table>tbody>tr:hover {
+    background-color: var(--tbg) !important;
+}
+.post-inner-content, .dropdown-menu, .well {
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: var(--bdblur) !important;
+}
+.navbar-brand:hover {
+    background-image: none !important;
+    transition: background 0s .1s !important;
+}
+}

@@ -1,0 +1,462 @@
+@-moz-document url-prefix("https://app.plex.tv/"), url-prefix("http://app.plex.tv/"), url-prefix("https://plex.tv"), domain("127.0.0.1"), regexp("https?://.*:32400/.*"), regexp(".*:32400/.*") {
+/* Blurification */
+#id-16,
+#id-6,
+#id-30,
+#id-509,
+#id-68,
+#id-549,
+#id-989,
+#id-1100,
+.AudioVideoPlaybackSettings-container-2pTAjN.AudioVideoStripeContainer-container-MI02OU,
+.BottomBar-bottomBar-gbDBaF,
+.ControlsContainer-controlsContainer-1Wn7vp,
+.AudioVideoFullPlayer-topBar-2XUGMf.AudioVideoFullPlayer-bar-dDYeoN,
+.SourceSidebar-expandedSidebar-ljacXC.SourceSidebar-sidebar-YpV2mw,
+.QuickSearchResults-container-3IlHhN.Scroller-scroller-3GqQcZ.Scroller-vertical-VScFLT,
+.MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-:hover,
+.modal-body.modal-body-scroll.dark-scrollbar,
+.modal-content,
+.input-group-addon.edit-lock-addon,
+.PosterCardOverlayProgress-progressTrack-3luzPK,
+.ModalHeader-modalHeader-1Kf9RW,
+.EditHomeModalContent-footer-10Ix6N.ModalFooter-modalFooter-30WIB5,
+.EditHomeModalContent-modalBody-2rHN2d.ModalBody-modalBody--5uHSu.Scroller-scroller-3GqQcZ.Scroller-none-3GfKRp.Scroller-auto-LsWiWx,
+.PrePlayDetailsContainer-container-1oBwsq,
+.PrePlayMetadataListInnerContent-innerContent-2CsIzg,
+.list.modal-list,
+.ModalFooter-modalFooter-30WIB5,
+.ConfirmModal-confirmBody-10ifxp.ModalBody-modalScroller-1xOMqS.ModalBody-modalBody--5uHSu.Scroller-scroller-3GqQcZ.Scroller-vertical-VScFLT.Scroller-auto-LsWiWx,
+.ModalContent-modalContent-UQlV4k,
+.Menu-menuPortal-AbMPTD,
+.MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt,
+.Menu-menu-3XnN6J.Menu-medium-2qYxsO,
+.media-info-file-list.well {
+	background-color: transparent !important;
+	background-image: none !important;
+	backdrop-filter: var(--bdb) !important;
+}
+div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1SwhlG.Link-link-2n0yJn.Link-default-2XA2bN {
+	background-color: transparent !important;
+	background-image: none !important;
+	backdrop-filter: blur(2px) !important;
+}
+.ModalContent-modalContent-UQlV4k,
+.modal-header,
+.modal-footer,
+.Modal-modalBackdrop-3-L45r,
+#id-509 * {
+	background-color: transparent !important;
+}
+/* Coloration */
+.NavBar-container-1T0BJz,
+.SourceSidebar-openSidebar-364QEr.SourceSidebar-sidebar-YpV2mw,
+.SourceSidebar-collapsedSidebar-3MDUee.SourceSidebar-sidebar-YpV2mw,
+.show-modal-transparent {
+	background-color: var(--bg) !important
+}
+.alert-bar.server-update-alert-bar.notify,
+.EditHomeModalContent-button-HgDyCQ.ModalFooter-button-15VJa0.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
+.MetadataPosterCardOverlay-unplayedTag-3hwoiQ,
+.MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf,
+.save-btn.btn.btn-primary.btn-loading,
+.input-group-addon.edit-lock-addon.locked,
+.PosterCardOverlayProgress-progressBar-3k291O,
+.NavBar-plexPassButton-wVK4vI.NavBarPlexPassButton-button-2zlgP_.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
+.NavBarActivityButton-activityIcon-1Db2GP.NavBarActivityIcon-iconContainer-24xhXd,
+.ConfirmModal-confirmButton-1DVQ-r.SpinnerButton-button-1A8EcL.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
+.btn.btn-sm.btn-primary,
+.VolumeSlider-fill-3XkYyD.VerticalSlider-fill-2HISoE.Slider-fill-35GFqs,
+.SeekBar-seekBarBuffer-3bUz95.Slider-secondaryFill-31_05F.Slider-fill-35GFqs,
+.PlayPauseOverlay-playCircle-3ydPYX.PlayButton-playCircle-3Evfdw,
+.PlexPassModalContent-plansContainer-2boTWX *,
+.submit-btn.btn.btn-lg.btn-primary.btn-loading,
+.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
+.checking-for-updates-btn.label.label-btn.label-primary.active,
+.check-for-updates-btn.label.label-btn.label-primary,
+.retry-btn.btn.btn-primary.btn-loading,
+.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-large-3S9UdJ.Link-link-2n0yJn.Link-default-2XA2bN,
+.alert-bar.notify,
+.Badge-primary-3suJx3,
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw,
+.NavBarButton-button-oTeMHk {
+	background-color: var(--ac) !important
+}
+.SeekBar-seekBarFill-1Lcu0w.Slider-fill-35GFqs,
+.Slider-thumb-2QGiU1.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
+.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-large-3S9UdJ.Link-link-2n0yJn.Link-default-2XA2bN:hover,
+.EditHomeModalContent-button-HgDyCQ.ModalFooter-button-15VJa0.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN:hover,
+.ConfirmModal-confirmButton-1DVQ-r.SpinnerButton-button-1A8EcL.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN:hover,
+.save-btn.btn.btn-primary.btn-loading.save:hover,
+.NavBarButton-button-oTeMHk:hover {
+	background-color: var(--xac) !important
+}
+.Link-link-2n0yJn.Link-primary-1vcAGA,
+.PageHeaderTabButton-isSelected-25CIS7,
+.artwork-file-container a,
+.upload-url-btn,
+.MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-,
+.input-group-addon.edit-lock-addon .glyphicon.lock,
+.NavBarActivityMenuStatusItem-statusButtonIndicator-3D2d1i,
+.search-options-btn,
+.dropdown-toggle,
+.match-name,
+.SelectedMenuItem-selectedIcon-20Yx1_,
+.SelectedMenuItem-isSelected-178xe1,
+.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.Link-link-2n0yJn.Link-default-2XA2bN.Link-isSelected-IRm9uM,
+.SidebarMenuButton-sidebarMenuPrimaryTitleContainer-3-vDDD,
+.ServerSettingsServerMenuItem-friendlyName-2eYIlv,
+#plex-icon-selected-560,
+.text-muted.text-center a,
+.unreachable-description.status-description.help-block a,
+.double-nat-description.status-details.help-block a,
+.remote-access-error-container .help-block a,
+.remote-access-status-message .status-description.help-block a,
+.SourceSidebarServerHeader-title-3zMGa0.SourceSidebarLink-title-1lgRT2.SidebarLink-title-2vaAAn,
+.NavBarActivityMenuStatusItem-primaryLabel-o8tsu6,
+.form-group .help-block a,
+.agent-types-nav.nav.nav-pills .active a,
+.agents-list-container .active a,
+.modal-footer .pull-left a,
+.PlayerControls-buttonGroupCenter-11q8ie.PlayerControls-buttonGroup-4L6Pw-.PlayerControls-balanceLeft--vfZAg button,
+#id-2076,
+#plex-icon-player-repeat-560,
+#plex-icon-player-repeat-one-560,
+.MultiSelectPageHeader-selectedTitle-1kn-xo,
+#id-16171,
+#plex-icon-player-shuffle-560,
+#plex-icon-player-settings-560,
+#plex-icon-player-chapters-560,
+.AudioVideoSettingsRow-cell-24KvKF .DisclosureArrowButton-disclosureArrowButton-11LSbY.Link-link-2n0yJn.DisclosureArrowButton-medium-3zt1WM.DisclosureArrowButton-isSelected-1aPl5o.Link-link-2n0yJn.Link-default-2XA2bN.Link-medium-3gAfLz.Link-isSelected-IRm9uM,
+#plex-icon-player-queue-560,
+#plex-icon-player-volume-high-560,
+#plex-icon-player-volume-mid-560,
+#plex-icon-player-volume-low-560,
+#plex-icon-player-volume-mute-560,
+#plex-icon-player-more-vertical-560,
+.btn-gray.selected,
+.help-block a,
+.edit-section-modal .wizard-blocks-group > .wizard-block.selected,
+.edit-section-modal .wizard-blocks-group > .wizard-block.selected,
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw:hover {
+	color: var(--ac) !important
+}
+.glyphicon.remove-2:hover,
+.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.Link-link-2n0yJn.Link-default-2XA2bN.Link-isSelected-IRm9uM:hover,
+#id-2132:hover,
+.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv:hover .SourceSidebarServerHeader-title-3zMGa0.SourceSidebarLink-title-1lgRT2.SidebarLink-title-2vaAAn,
+.Link-link-2n0yJn.Link-primary-1vcAGA:hover,
+.ModalContent-closeButton-3NY5uJ.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN:hover .PlexIcon-plexIcon-8Tamaj,
+.NavBarActivityMenuStatusItem-splitButton-3DXXY-.ActivityMenuStatusItem-splitButton-1Ov6bl.MenuItem-menuItem-1s02mQ.MenuItem-menuItem-1s02mQ.MenuItem-default-2SKQ84.Link-link-2n0yJn.Link-default-2XA2bN:hover .NavBarActivityMenuStatusItem-statusButtonIndicator-3D2d1i,
+.PageHeaderTabButton-button-1zTdeV.Button-button-2kT68l.Link-link-2n0yJn.PageHeaderTabButton-isSelected-25CIS7.Button-button-2kT68l.Link-link-2n0yJn.Button-default--yDCH5.Button-large-3S9UdJ.Link-link-2n0yJn.Link-default-2XA2bN:hover,
+.NavBarActivityMenuStatusItem-splitButton-3DXXY-.ActivityMenuStatusItem-splitButton-1Ov6bl.MenuItem-menuItem-1s02mQ.MenuItem-menuItem-1s02mQ.MenuItem-default-2SKQ84.Link-link-2n0yJn.Link-default-2XA2bN:hover .NavBarActivityMenuStatusItem-primaryLabel-o8tsu6,
+.form-group .help-block a:hover,
+.install-manual-link:hover,
+.agent-types-nav.nav.nav-pills .active:hover a,
+.agents-list-container .active:hover a,
+.modal-footer .pull-left a:hover,
+#plex-icon-player-previous-track-560:hover,
+#plex-icon-player-skip-back-560:hover,
+#plex-icon-player-pause-560:hover,
+#plex-icon-player-skip-forward-560:hover,
+#plex-icon-player-next-track-560:hover,
+#plex-icon-player-stop-560:hover,
+#id-2076:hover,
+#plex-icon-player-repeat-560:hover,
+#plex-icon-player-repeat-one-560:hover,
+#id-16171:hover,
+.AudioVideoSettingsRow-cell-24KvKF .DisclosureArrowButton-disclosureArrowButton-11LSbY.Link-link-2n0yJn.DisclosureArrowButton-medium-3zt1WM.DisclosureArrowButton-isSelected-1aPl5o.Link-link-2n0yJn.Link-default-2XA2bN.Link-medium-3gAfLz.Link-isSelected-IRm9uM:hover,
+#plex-icon-player-shuffle-560:hover,
+#plex-icon-player-settings-560:hover,
+#plex-icon-player-chapters-560:hover,
+#plex-icon-player-queue-560:hover,
+#plex-icon-player-volume-high-560:hover,
+#plex-icon-player-volume-mid-560:hover,
+#plex-icon-player-volume-low-560:hover,
+#plex-icon-player-volume-mute-560:hover,
+#plex-icon-player-more-vertical-560:hover,
+.help-block a:hover {
+	color: var(--xac) !important
+}
+.input-group-addon.edit-lock-addon.locked .glyphicon.lock,
+.NavBarActivityButton-label-2ZN0gQ,
+.match-score,
+.ModalContent-closeButton-3NY5uJ.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
+.NavBarButton-button-oTeMHk {
+	color: var(--fg) !important
+}
+.media-poster-container.selected .media-poster::after,
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw,
+.NavBarButton-button-oTeMHk:hover {
+	color: var(--bg) !important
+}
+.mapping-icon.glyphicon.left-arrow.text-success,
+.status-header.text-success,
+.PlexIcon-plexIcon-8Tamaj.ServerSettingsServerMenuButton-icon-2pk73R.ServerConnectionStatusIcon-secureIcon-2Rpe9G,
+.PlexIcon-plexIcon-8Tamaj.ServerSettingsServerMenuItem-icon-3bTVtt.ServerConnectionStatusIcon-secureIcon-2Rpe9G,
+.success-icon.glyphicon.ok-2 {
+	color: var(--green) !important;
+}
+.glyphicon.remove-2,
+.delete-btn.text-danger.pull-right {
+	color: var(--red) !important;
+}
+.confirm-btn.btn.btn-lg.btn-danger.btn-loading,
+.reset-customization-btn.btn.btn-sm.btn-default.btn-loading.form-control-btn {
+	background-color: var(--red) !important;
+}
+.AlertRoundOpaqueIcon-img-19hrPS,
+.PlexPassFeature-featureImage-1MQuZ0 {
+	filter: hue-rotate(140deg) !important;
+}
+.AllSourcesSidebarContent-iconImg-1hajvx,
+.EmptyPage-imgIcon-32C35q {
+	filter: hue-rotate(130deg) !important;
+}
+.PlayerIconButton-playerButton-1DmNp4.IconButton-button-9An-7I.IconButton-isActive-1_AJJ-.Link-link-2n0yJn.Link-default-2XA2bN {
+	filter: hue-rotate(90deg) !important;
+}
+.PageHeader-pageHeader-2KNPGd {
+	box-shadow: none !important;
+}
+.isFocused:not(.isDisabled) {
+	box-shadow: inset 0 0 0 2px var(--xac) !important;
+}
+.DisclosureArrow-isSelected-QMJhDY,
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw {
+	border-color: var(--xac)!important;
+}
+.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv.SourceSidebarLink-isSelected-27-9-6 {
+	box-shadow: inset 4px 0 0 0 var(--ac) !important
+}
+.media-poster-container.selected .media-poster,
+.force-hover .media-poster-container .media-poster,
+.force-hover .media-poster-container .media-poster-fade,
+.media-poster-container:focus .media-poster,
+.media-poster-container:focus .media-poster-fade,
+.media-poster-container:hover .media-poster,
+.media-poster-container:hover .media-poster-fade {
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--ac) !important;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--ac) !important;
+}
+.media-poster-container.selected .media-poster::before {
+	border-color: var(--ac) var(--ac) transparent transparent !important;
+}
+.EditHomeModalContent-footer-10Ix6N.ModalFooter-modalFooter-30WIB5,
+.MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt {
+	border-radius: 0 0 10px 10px !important;
+}
+.ModalHeader-modalHeader-1Kf9RW {
+	border-radius: 10px 10px 0 0 !important;
+}
+.MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-:hover,
+.input-group-addon.edit-lock-addon.locked,
+.MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt {
+	border-color: var(--ac) !important
+}
+.MetadataPosterCardOverlay-refreshingSpinner-ipJiyn.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+.NavBarActivityIcon-activityIndicator-3asEGT.Spinner-spinner-Niere7.spin-spin-2kLwt_.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+.loading,
+.loading.loading-sm,
+.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+.Spinner-large-3AQPyD.Spinner-spinner-Niere7.spin-spin-2kLwt_ {
+	border-color: var(--xac) transparent !important;
+}
+.MetadataPosterCardFace-face--dz_Dx:hover,
+.PrePlayCastCell-posterCardLinkContainer-27hxZ8.PrePlayCastCell-posterCardContainer-2xrsDg.Link-link-2n0yJn.Link-default-2XA2bN:hover {
+	box-shadow: 0 0 0 2px var(--xac) !important;
+}
+.SourceSidebarLink-isSelected-27-9-6 {
+	box-shadow: inset 4px 0 0 0 var(--xac) !important;
+}
+.SourceSidebarItem-button-257zM0.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-small-3s6oyr:hover,
+.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv:hover {
+	box-shadow: inset 4px 0 0 0 var(--ac) !important;
+}
+.MetadataPosterCardFace-isSelected-1XUgkl {
+	box-shadow: 0 0 0 3px var(--xac) !important;
+}
+.modal-backdrop.fade.in {
+	opacity: 0 !important;
+}
+.SettingsPage-content-1vKVEr.PageContent-pageContent-16mK6G *,
+.PlayPauseOverlay-playCircle-3ydPYX.PlayButton-playCircle-3Evfdw {
+	border: none !important;
+}
+.background-container div div div {
+	background-image: none !important;
+	background-color: var(--xbg) !important;
+}
+/* Darkified Side Bar */
+div[class^="SourceSidebar-sidebar-"] {
+	background-color: var(--bg) !important;
+}
+/* Hoverification Effects */
+div[class^="MetadataPhotoCell-photoContainer-"]:hover div {
+	transform: scale(1.05) !important;
+	box-shadow: none !important;
+}
+div[class^="MetadataPhotoCell-photoContainer-"]:hover > div:first-child {
+	outline: 2px solid var(--ac) !important;
+}
+div[class^="MetadataPosterCard-card-"] {
+	-webkit-perspective: 500px;
+	perspective: 500px;
+	box-shadow: 0px 5px 12px -4px var(--bg);
+	transition: all 350ms;
+}
+/* Search Box Colorification */
+.QuickSearchInput-focused-3rEqJC {
+	background: rgba(15, 16, 25, 0.5) !important;
+	color: var(--ac) !important;
+}
+.QuickSearchInput-focused-3rEqJC input {
+	color: var(--ac) !important;
+}
+/* Cast Hoverification Effect */
+a[class^="PrePlayCastCell-cardLink-"] {
+	box-shadow: 0px 8px 15px -5px var(--bg) !important;
+}
+a[class^="PrePlayCastCell-cardLink-"]:hover {
+	box-shadow: none;
+}
+/* Now Playing Glyph */
+.NavBarActivityButton-isHighlighted-27qlko {
+	animation: flip 2s ease infinite !important;
+}
+/* Angle E number */
+.MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf {
+	transform-origin: bottom left;
+	transform: rotate(45deg);
+	padding-top: 25px !important;
+	padding-left: 32px !important;
+	padding-right: 32px !important;
+	margin-top: -55px !important;
+	margin-right: -28px !important;
+	transition: all 750ms !important
+}
+.MetadataPosterCardOverlay-unplayedTag-3hwoiQ.MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf {
+	transform-origin: bottom left;
+	padding: 0px !important;
+	margin: 0px !important;
+	margin-top: -50px !important;
+	margin-right: -4px !important;
+	transition: all 500ms !important;
+	width: 64px !important;
+	height: 64px !important;
+}
+.MetadataPosterCardOverlay-unplayedTagContainer-1uFYq2 {
+	width: 64px !important;
+	height: 64px !important;
+}
+div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf {
+	transform-origin: bottom left;
+	transform: rotate(0deg);
+	padding-top: 25px !important;
+	padding-left: 32px !important;
+	padding-right: 32px !important;
+	margin-top: -55px !important;
+	margin-right: -28px !important;
+	opacity: 1;
+	transition: all 175ms !important
+}
+div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-unplayedTag-3hwoiQ.MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf {
+	transform-origin: bottom left;
+	padding: 0px !important;
+	margin: 0px !important;
+	margin-top: -50px !important;
+	opacity: 1;
+	transition: all 175ms !important
+}
+/* ¡¡¡ANIMATIONS!!! */
+@keyframes flip {
+	0% {
+		transform: rotate(0deg) scale(1);
+		opacity: 1;
+	}
+	75% {
+		transform: rotate(360deg) scale(0.9);
+		opacity: 0.25;
+	}
+	100% {
+		transform: rotate(360deg) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes warn {
+	0% {
+		color: var(--red);
+	}
+	50% {
+		color: var(--orange);
+	}
+	100% {
+		color: var(--red);
+	}
+}
+@keyframes warnz {
+	0% {
+		background-color: var(--red);
+	}
+	50% {
+		background-color: var(--orange);
+	}
+	100% {
+		background-color: var(--red);
+	}
+}
+@keyframes attention {
+	0% {
+		background-color: var(--ac);
+	}
+	50% {
+		background-color: var(--xac);
+	}
+	100% {
+		background-color: var(--ac);
+	}
+}
+.SettingsFormSection-section-1zYMPA:hover .Link-link-2n0yJn.Link-danger-58vt6Z,
+.PlexIcon-plexIcon-8Tamaj.RemoteAccessStateIcon-error-1HDvqj,
+.status-header.text-danger,
+.mapping-icon.glyphicon.remove-2.text-danger,
+.modal-icon.glyphicon.circle-exclamation-mark,
+.PlexIcon-plexIcon-8Tamaj.EmptyPage-default-26GUDH,
+.failure-icon.glyphicon.circle-exclamation-mark,
+.install-manual-link,
+.delete-btn.text-danger.pull-right:hover {
+	opacity: 1;
+	animation: warn 1s linear infinite !important;
+}
+.available-updates-btn.label.label-btn.label-primary {
+	animation: attention 2s linear infinite !important;
+}
+.AudioVideoFullPlayer-fullPlayer-3bJyOR:not(.AudioVideoFullPlayer-isVideo-1aASwH) .FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
+	background-color: var(--bg) !important;
+	background-image: var(--bg) !important;
+}
+.FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
+	filter: blur(2px) grayscale(0.5) contrast(1.03) brightness(0.7) invert(0.03) !important;
+}
+.background-container > .FullPage-container-17Y0cs > div > div > div,
+.FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
+	background-color: var(--bg) !important;
+	background-image: var(--bg) !important;
+}
+.Link-link-2n0yJn.Link-danger-58vt6Z {
+	opacity: 0;
+	transition: all 250ms
+}
+.reset-customization-btn.btn.btn-sm.btn-default.btn-loading.form-control-btn:hover,
+.restore-btn.btn.btn-sm.btn-danger.btn-loading.form-control-btn:hover {
+	animation: warnz 1s linear infinite !important;
+}
+/* Text Modifications */
+.agent-label {
+	font-style: italic !important;
+}
+/* Pictures */
+.NavBar-plexLogo-3_NNRw.NavBarIconButton-button-eR0v0j.IconButton-button-9An-7I.Link-link-2n0yJn.Link-default-2XA2bN {
+	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4wICg0MDM1YTRmYjQ5LCAyMDIwLTA1LTAxKSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ib3V0cHV0LW9ubGluZXBuZ3Rvb2xzLnN2ZyIKICAgaWQ9InN2ZzIzIgogICB2ZXJzaW9uPSIxLjEiCiAgIGhlaWdodD0iMTAwMCIKICAgd2lkdGg9IjMwODYiPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTI3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iZzIxIgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjQyIgogICAgIGlua3NjYXBlOndpbmRvdy14PSI2OCIKICAgICBpbmtzY2FwZTpjeT0iNDQyLjc3MjU3IgogICAgIGlua3NjYXBlOmN4PSIxODkwLjMiCiAgICAgaW5rc2NhcGU6em9vbT0iMC41MTU1NTA5NiIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaWQ9Im5hbWVkdmlldzI1IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjIxMTgiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIzNzcyIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczciPgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJzY2FsZSgwLjc4MDgyOTc4LDEuMjgwNjg4OSkiCiAgICAgICBpZD0iYSIKICAgICAgIHI9IjcyMi42Mjg2OSIKICAgICAgIGZ5PSIzOTAuNjEwMDgiCiAgICAgICBmeD0iMzU4MC43OTMyIgogICAgICAgY3k9IjM5MC42MTAwOCIKICAgICAgIGN4PSIzNTgwLjc5MzIiPgogICAgICA8c3RvcAogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDBiOGI4O3N0b3Atb3BhY2l0eToxIgogICAgICAgICBpZD0ic3RvcDIiCiAgICAgICAgIG9mZnNldD0iMCUiCiAgICAgICAgIHN0b3AtY29sb3I9IiNGOUJFMDMiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDk2OTY7c3RvcC1vcGFjaXR5OjEiCiAgICAgICAgIGlkPSJzdG9wNCIKICAgICAgICAgb2Zmc2V0PSIxMDAlIgogICAgICAgICBzdG9wLWNvbG9yPSIjQ0M3QzE5IiAvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcKICAgICBpZD0iZzIxIgogICAgIGZpbGwtcnVsZT0iZXZlbm9kZCIKICAgICBmaWxsPSJub25lIj4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDkiCiAgICAgICBmaWxsPSIjZmZmZmZmIgogICAgICAgZD0ibSAzMDg1Ljk5LDAgaCAtMjkwIGwgLTI5MCw1MDAgMjkwLDUwMCBoIDI4OS43NDcgTCAyNzk1Ljk5LDUwMC4yNSAzMDg1Ljk5LDAiIC8+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6dXJsKCNhKSIKICAgICAgIGlkPSJwYXRoMTEiCiAgICAgICBmaWxsPSJ1cmwoI2EpIgogICAgICAgZD0ibSAyMTg2LDAgaCAyOTAgbCAzMjAsNTAwLjI1IC0zMjAsNTAwLjI1IEggMjE4NiBMIDI1MDYsNTAwLjI1IDIxODYsMCIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDEzIgogICAgICAgZmlsbD0iI2ZmZmZmZiIKICAgICAgIGQ9Ik0gMjA4NS45NDcsMTAwMCBIIDE1MDguODc0IFYgMCBoIDU3Ny4wNzMgViAxNzMuNzM3IEggMTcyMS4zNCBWIDM5My4zIGggMzM5LjI1NCBWIDU2Ny4wMyBIIDE3MjEuMzQgdiAyNTcuODY1IGggMzY0LjYwNyBWIDEwMDAgbSAtMTI5NC42NzEsMCBWIDAgaCAyMTIuMDQgdiA4MjQuODk1IGggNDA1LjYxIFYgMTAwMCBoIC02MTcuNjUiIC8+CiAgICA8ZwogICAgICAgaWQ9ImcxOSIKICAgICAgIGZpbGw9IiNmZmZmZmYiPgogICAgICA8cGF0aAogICAgICAgICBpZD0icGF0aDE1IgogICAgICAgICBkPSJtIDU4OS45NDcsNTU4LjgyNCBjIC02Ny4yNjgsNTcuMDA3IC0xNjIuOTEsODUuNSAtMjg2LjkzOCw4NS41IGggLTkwLjk3IFYgMTAwMCBIIDAgViA0NzAuMzM4IGwgMjkwLDAuMzYgYyAxNzcuNTYzLC0yLjA3IDE4Ni44NDIsLTExMC44MiAxODYuODQyLC0xNDguNDk4IDAsLTM0Ljk4IDAsLTE0Ni43NTUgLTE1Ny44NDIsLTE0OC41IEwgMCwxNzMuNzAzIFYgMCBIIDMxOS40MjQgQyA0NDAuNzE3LDAgNTMyLjk0LDI2LjEwNyA1OTYuMSw3OC4zMiBjIDYzLjE1Myw1Mi4yMTQgOTQuNzM0LDEzMC4wNzIgOTQuNzM0LDIzMy41ODIgMCwxMDcuNjI1IC0zMy42MzIsMTg5LjkyOCAtMTAwLjg4NywyNDYuOTIyIHoiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGlkPSJwYXRoMTciCiAgICAgICAgIGQ9Ik0gMCwxMTAgSCAyMTIuMiBWIDUzOSBIIDAgWiIgLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=") !important
+}
+}

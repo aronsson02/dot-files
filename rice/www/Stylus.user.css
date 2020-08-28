@@ -1,0 +1,21 @@
+@-moz-document url-prefix("moz-extension://73385206-fdb4-4111-8439-10313ee03a25") {
+#stylus-edit, #stylus-popup, #stylus-manage, #options-title, .CodeMirror-search-field, #message-box-buttons {
+    background-color: var(--bg) !important;
+    color: var(--fg) !important;
+}
+#options, #message-box-contents {
+    background-color: var(--abg) !important;
+    color: var(--fg) !important;
+}
+#message-box.danger #message-box-title {
+	background-color: var(--red) !important;
+}
+.svg-icon.checked, .option.aligned, .style-name-link, .filter-selection div {
+    filter: invert() !important;
+}
+#help-popup {
+	background-color: transparent !important;
+	background-image: none !important;
+	backdrop-filter: var(--bdb) !important;
+}
+}
