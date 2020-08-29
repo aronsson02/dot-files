@@ -5,38 +5,40 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg4153"
-   version="1.1"
-   width="22"
-   height="22"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="mail.svg"
    viewBox="0 0 22 22"
-   sodipodi:docname="mail.svgz"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   height="22"
+   width="22"
+   version="1.1"
+   id="svg4153">
   <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1011"
-     id="namedview12"
-     showgrid="true"
-     inkscape:zoom="7.5853273"
-     inkscape:cx="-0.60413041"
-     inkscape:cy="17.596427"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="svg4153"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4153">
+     inkscape:window-y="36"
+     inkscape:window-x="0"
+     inkscape:cy="8.0167869"
+     inkscape:cx="24.259938"
+     inkscape:zoom="21.454545"
+     showgrid="true"
+     id="namedview12"
+     inkscape:window-height="2124"
+     inkscape:window-width="3810"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff">
     <inkscape:grid
-       type="xygrid"
-       id="grid832" />
+       id="grid832"
+       type="xygrid" />
   </sodipodi:namedview>
   <metadata
      id="metadata4159">
@@ -52,9 +54,21 @@
   </metadata>
   <defs
      id="defs4157">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient852">
+      <stop
+         style="stop-color:#0018ff;stop-opacity:1"
+         offset="0"
+         id="stop848" />
+      <stop
+         style="stop-color:#00ff15;stop-opacity:1"
+         offset="1"
+         id="stop850" />
+    </linearGradient>
     <style
-       type="text/css"
-       id="current-color-scheme">
+       id="current-color-scheme"
+       type="text/css">
       .ColorScheme-Text {
         color:#31363b;
       }
@@ -89,44 +103,62 @@
         color:#3daee9;
       }
       </style>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="4"
+       x2="20"
+       y1="18"
+       x1="2"
+       id="linearGradient844"
+       xlink:href="#linearGradient852"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="25"
+       x2="20"
+       y1="39"
+       x1="2"
+       id="linearGradient846"
+       xlink:href="#linearGradient852"
+       inkscape:collect="always" />
   </defs>
   <g
-     style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
-     id="mail-unread">
+     id="mail-unread"
+     style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
     <path
-       inkscape:connector-curvature="0"
+       d="M 20,18 H 2 V 4 H 20 Z M 7.878,11.207 3.222,15.864 C 3.123,15.963 3.049,16.078 3,16.2 v 0.741 c 0.008,0.02 0.016,0.04 0.026,0.059 H 18.974 C 18.984,16.981 18.992,16.961 19,16.941 V 16.2 c -0.049,-0.122 -0.123,-0.237 -0.222,-0.336 l -4.656,-4.657 -1.708,1.708 c -0.78,0.78 -2.048,0.78 -2.828,0 z M 3,14.671 7.171,10.5 3,6.329 Z M 14.829,10.5 19,14.671 V 6.329 Z M 18.892,5 H 3.108 c 0.033,0.048 0.071,0.094 0.114,0.136 l 7.071,7.071 c 0.39,0.391 1.024,0.391 1.414,0 L 18.778,5.136 C 18.821,5.094 18.859,5.048 18.892,5 Z"
+       style="fill:url(#linearGradient844);fill-opacity:1"
        id="path2"
-       style="fill:#C3C7D1"
-       d="M 20,18 H 2 V 4 H 20 Z M 7.878,11.207 3.222,15.864 C 3.123,15.963 3.049,16.078 3,16.2 v 0.741 c 0.008,0.02 0.016,0.04 0.026,0.059 H 18.974 C 18.984,16.981 18.992,16.961 19,16.941 V 16.2 c -0.049,-0.122 -0.123,-0.237 -0.222,-0.336 l -4.656,-4.657 -1.708,1.708 c -0.78,0.78 -2.048,0.78 -2.828,0 z M 3,14.671 7.171,10.5 3,6.329 Z M 14.829,10.5 19,14.671 V 6.329 Z M 18.892,5 H 3.108 c 0.033,0.048 0.071,0.094 0.114,0.136 l 7.071,7.071 c 0.39,0.391 1.024,0.391 1.414,0 L 18.778,5.136 C 18.821,5.094 18.859,5.048 18.892,5 Z" />
+       inkscape:connector-curvature="0" />
     <rect
-       y="0"
-       x="0"
-       height="22"
-       width="22"
+       style="fill:#ffffff;fill-opacity:0;stroke-width:1.29741"
        id="rect817"
-       style="fill:#ffffff;fill-opacity:0;stroke-width:1.29740846" />
+       width="22"
+       height="22"
+       x="0"
+       y="0" />
   </g>
   <g
-     id="mail-unread-new"
-     transform="translate(22,-21)">
+     transform="translate(22,-21)"
+     id="mail-unread-new">
     <path
-       sodipodi:nodetypes="cccccccscsccccccccccccccccccccc"
-       inkscape:connector-curvature="0"
-       id="path2-8"
+       style="clip-rule:evenodd;fill:url(#linearGradient846);fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;fill-opacity:1.0"
        d="M 2,25 V 39 H 12 V 38 H 3.0253906 C 3.0153906,37.981 3.008,37.961406 3,37.941406 v -0.742187 c 0.049,-0.122 0.1236563,-0.236938 0.2226562,-0.335938 l 4.65625,-4.65625 1.7070313,1.707031 c 0.7800005,0.780001 2.0481255,0.780001 2.8281245,0 L 14.121094,32.207031 14.914062,33 h 1.414063 l -1.5,-1.5 L 19,27.328125 V 33 h 1 v -8 z m 1.1074219,1 H 18.892578 c -0.033,0.048 -0.07223,0.09472 -0.115234,0.136719 l -7.070313,7.070312 c -0.39,0.391 -1.024062,0.391 -1.414062,0 L 3.2226562,26.136719 C 3.1796562,26.094719 3.1404219,26.048 3.1074219,26 Z M 3,27.328125 7.171875,31.5 3,35.671875 Z"
-       style="clip-rule:evenodd;fill:#C3C7D1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996" />
+       id="path2-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccscsccccccccccccccccccccc" />
     <rect
-       y="21"
-       x="0"
-       height="22"
-       width="22"
+       style="clip-rule:evenodd;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke-width:1.29741;stroke-linejoin:round;stroke-miterlimit:1.41421"
        id="rect817-2"
-       style="clip-rule:evenodd;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke-width:1.29740846;stroke-linejoin:round;stroke-miterlimit:1.41420996" />
+       width="22"
+       height="22"
+       x="0"
+       y="21" />
     <circle
-       r="4"
-       cy="38"
-       cx="17"
+       style="fill:#268aff;fill-opacity:1"
        id="path862"
-       style="fill:#268aff;fill-opacity:1" />
+       cx="17"
+       cy="38"
+       r="4" />
   </g>
 </svg>
