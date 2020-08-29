@@ -1,4 +1,19 @@
-@-moz-document url-prefix("moz-extension://73385206-fdb4-4111-8439-10313ee03a25") {
+/* ==UserStyle==
+@name         Stylus
+@version      1.0.0
+@description  Stylus theme.
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Stylus.user.css
+@license      CC0
+@preprocessor default
+==/UserStyle== */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("moz-extension://") {
 #stylus-edit, #stylus-popup, #stylus-manage, #options-title, .CodeMirror-search-field, #message-box-buttons {
     background-color: var(--bg) !important;
     color: var(--fg) !important;

@@ -1,3 +1,18 @@
+/* ==UserStyle==
+@name         HorribleSubs
+@version      1.0.0
+@description  HorribleSubs theme.
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/HorribleSubs.user.css
+@license      CC0
+@preprocessor default
+==/UserStyle== */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
 @-moz-document domain("horriblesubs.info") {
 body, .navbar-default .navbar-nav .dropdown-menu > li:focus, .ind-show:hover, .latest-releases a:hover, .latest-show-more a:hover, .table-hover>tbody>tr:hover, .form-control {
     background-color: var(--xbg) !important
@@ -30,6 +45,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a:hover, a:focus, body {
 body {
     background-image:  url(https://vignette.wikia.nocookie.net/debatesjungle/images/c/c4/MD_Concealment_of_Dual_Blades_-_Kirito.png/revision/latest?cb=20181221235603) !important;
     background-size: 750px !important;
+}
+.navbar-brand {
+    animation: filter 3s linear infinite !important;
 }
 .navbar-default .navbar-nav .dropdown-menu > li:hover, .schedule-table>tbody>tr:hover {
     background-color: var(--tbg) !important;

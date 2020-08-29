@@ -1,3 +1,18 @@
+/* ==UserStyle==
+@name         Plex
+@version      1.0.0
+@description  Plex theme.
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Plex.user.css
+@license      CC0
+@preprocessor default
+==/UserStyle== */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
 @-moz-document url-prefix("https://app.plex.tv/"), url-prefix("http://app.plex.tv/"), url-prefix("https://plex.tv"), domain("127.0.0.1"), regexp("https?://.*:32400/.*"), regexp(".*:32400/.*") {
 /* Blurification */
 #id-16,

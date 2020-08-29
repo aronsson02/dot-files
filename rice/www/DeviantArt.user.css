@@ -1,3 +1,18 @@
+/* ==UserStyle==
+@name         DeviantArt
+@version      1.0.0
+@description  DeviantArt theme.
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/DeviantArt.user.css
+@license      CC0
+@preprocessor default
+==/UserStyle== */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
 @-moz-document domain("deviantart.com") {
 /*theme colors*/
 body {

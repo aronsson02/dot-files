@@ -1,50 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="22"
-   height="22"
-   viewBox="0 0 22 22"
-   id="svg2"
+   sodipodi:docname="vlc.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="vlc.svgz">
+   id="svg2"
+   viewBox="0 0 22 22"
+   height="22"
+   width="22">
   <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     id="namedview13"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:window-maximized="0"
+     inkscape:window-y="36"
+     inkscape:window-x="0"
+     inkscape:cy="14.770556"
+     inkscape:cx="4.3888772"
+     inkscape:zoom="30.34131"
      showgrid="false"
-     inkscape:zoom="10.727273"
-     inkscape:cx="11"
-     inkscape:cy="22.186441"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     id="namedview13"
+     inkscape:window-height="2124"
+     inkscape:window-width="3840"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient838"
+       inkscape:collect="always">
+      <stop
+         id="stop834"
+         offset="0"
+         style="stop-color:#ffec1a;stop-opacity:1" />
+      <stop
+         id="stop836"
+         offset="1"
+         style="stop-color:#00d1fe;stop-opacity:1" />
+    </linearGradient>
     <style
-       id="current-color-scheme"
-       type="text/css">
+       type="text/css"
+       id="current-color-scheme">
       .ColorScheme-Text {
         color:#31363b;
       }
       </style>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="2"
+       x2="13.748"
+       y1="20"
+       x1="2"
+       id="linearGradient840"
+       xlink:href="#linearGradient838"
+       inkscape:collect="always" />
   </defs>
   <metadata
      id="metadata7">
@@ -59,27 +80,27 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
+     transform="translate(0,-1030.3621)"
      id="layer1"
-     transform="translate(0,-1030.3621)">
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
     <g
-       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+       transform="translate(0,1030.3621)"
        id="vlc"
-       transform="translate(0,1030.3621)">
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
       <path
-         inkscape:connector-curvature="0"
-         style="fill:#C3C7D1;fill-opacity:1"
+         d="M 17.499,16 H 20 v 4 H 2 V 16 H 4.501 L 8.252,2 h 5.496 z M 19,17 H 3 v 2 H 19 Z M 15.66,13 H 6.34 L 5.536,16 H 16.464 Z M 7.679,8 6.876,11 h 8.248 L 14.321,8 Z M 9.019,3 8.215,6 h 5.57 L 12.981,3 Z"
          id="path2"
-         d="M 17.499,16 H 20 v 4 H 2 V 16 H 4.501 L 8.252,2 h 5.496 z M 19,17 H 3 v 2 H 19 Z M 15.66,13 H 6.34 L 5.536,16 H 16.464 Z M 7.679,8 6.876,11 h 8.248 L 14.321,8 Z M 9.019,3 8.215,6 h 5.57 L 12.981,3 Z" />
+         style="fill:url(#linearGradient840);fill-opacity:1"
+         inkscape:connector-curvature="0" />
       <rect
-         ry="0.83687943"
-         y="0"
-         x="0"
-         height="22"
-         width="22"
+         style="opacity:1;fill:#ffffff;fill-opacity:0;stroke-width:0.945347;stroke-miterlimit:1.41421;stroke-dasharray:none"
          id="rect817"
-         style="opacity:1;fill:#ffffff;fill-opacity:0;stroke-width:0.94534713;stroke-miterlimit:1.41420996;stroke-dasharray:none" />
+         width="22"
+         height="22"
+         x="0"
+         y="0"
+         ry="0.83687943" />
     </g>
   </g>
 </svg>

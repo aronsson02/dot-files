@@ -5,53 +5,168 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="240"
-   height="240"
-   viewBox="0 0 240 240"
-   id="svg4"
+   width="26"
+   height="20"
+   id="svg7229"
+   sodipodi:version="0.32"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   version="1.0"
    sodipodi:docname="volume-high.svg"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+   inkscape:output_extension="org.inkscape.output.svgz.inkscape"
+   viewBox="0 0 26 20">
+  <defs
+     id="defs7231">
+    <linearGradient
+       id="linearGradient1061"
+       inkscape:collect="always">
+      <stop
+         id="stop1057"
+         offset="0"
+         style="stop-color:#944bff;stop-opacity:1;" />
+      <stop
+         id="stop1059"
+         offset="1"
+         style="stop-color:#60ff80;stop-opacity:1" />
+    </linearGradient>
+    <style
+       id="current-color-scheme"
+       type="text/css">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background{
+        color:#eff0f1;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground{
+        color:#ffffff;
+      }
+      .ColorScheme-ViewHover {
+        color:#000000;
+      }
+      .ColorScheme-ViewFocus{
+        color:#5a5a5a;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground{
+        color:#E9E8E8;
+      }
+      .ColorScheme-ButtonHover {
+        color:#1489ff;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#2B74C7;
+      }
+</style>
+    <style
+       type="text/css"
+       id="style5">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1061"
+       id="linearGradient1055"
+       x1="29.0625"
+       y1="25.875"
+       x2="3"
+       y2="6.0625"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="-39.450258"
+     inkscape:cy="9.1834072"
+     inkscape:document-units="px"
+     inkscape:current-layer="audio-volume-high"
+     showgrid="true"
+     inkscape:window-width="3840"
+     inkscape:window-height="2160"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     gridtolerance="10000"
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox="true"
+     inkscape:showpageshadow="false"
+     borderlayer="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:document-rotation="0" />
   <metadata
-     id="metadata10">
+     id="metadata7234">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <defs
-     id="defs8" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1321"
-     inkscape:window-height="740"
-     id="namedview6"
-     showgrid="false"
-     inkscape:pagecheckerboard="true"
-     inkscape:zoom="0.98333333"
-     inkscape:cx="-267.45763"
-     inkscape:cy="120"
-     inkscape:window-x="45"
-     inkscape:window-y="28"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg4" />
-  <path
-     d="m 142.22222,22.555558 v 22.88889 c 32.11111,9.55555 55.55556,39.33333 55.55556,74.555552 0,35.22222 -23.44445,64.88888 -55.55556,74.44444 v 23 C 186.66667,207.33333 220,167.55555 220,120 220,72.444448 186.66667,32.666668 142.22222,22.555558 M 170,120 C 170,100.33333 158.88889,83.444448 142.22222,75.222228 V 164.44444 C 158.88889,156.55555 170,139.55555 170,120 M 20,86.666668 V 153.33333 H 64.444444 L 120,208.88888 V 31.111118 l -55.555556,55.55555 z"
-     id="path2"
-     inkscape:connector-curvature="0"
-     style="fill:#ffffff;stroke-width:11.11111164" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-249.53572,-400.50504)">
+    <g
+       id="audio-volume-high"
+       transform="translate(31.999999)">
+      <path
+         inkscape:connector-curvature="0"
+         id="rect839-2"
+         transform="translate(214.53572,394.50504)"
+         d="M 13.986328,6 9,10.570312 V 11 11.927734 20.070312 21 21.427734 L 13.988281,26 H 15 V 25.570312 6.4277344 6 Z M 23,6.2089844 v 1.1464844 a 10,10 0 0 1 5,8.6503902 10,10 0 0 1 -5,8.644532 v 1.140625 A 11,11 0 0 0 29,16.005859 11,11 0 0 0 23,6.2089844 Z M 14,7.34375 v 17.310547 l -4,-3.667969 v -9.974609 z m 6,1.2460938 v 1.0957031 a 7,7 0 0 1 4,6.3164061 7,7 0 0 1 -4,6.314453 v 1.09375 a 8,8 0 0 0 5,-7.408203 8,8 0 0 0 -5,-7.4121092 z m -3,2.5136722 v 1.027343 a 4,4 0 0 1 3,3.867188 4,4 0 0 1 -3,3.869141 v 1.029296 a 5,5 0 0 0 4,-4.898437 5,5 0 0 0 -4,-4.894531 z M 3,12 v 8 h 5 v -8 z m 1,1 h 3 v 6 H 4 Z"
+         style="opacity:1;fill:url(#linearGradient1055);fill-opacity:1;stroke-width:1.19523" />
+    </g>
+  </g>
 </svg>

@@ -1,3 +1,18 @@
+/* ==UserStyle==
+@name         MangaDex
+@version      1.0.0
+@description  MangaDex theme.
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/MangaDex.user.css
+@license      CC0
+@preprocessor default
+==/UserStyle== */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
 @-moz-document domain("mangadex.org") {
 .bg-light, .bg-dark, .modal-content {
     background-color: transparent !important;
@@ -26,12 +41,6 @@ body, .bg-reader-controls, .form-control {
 }
 .badge-warning, .alert {
 	color: var(--fg) !important
-}
- {
-	color: var(--afg) !important
-}
- {
-	color: var(--xfg) !important
 }
 .text-primary {
 	color: var(--yellow) !important
