@@ -13,7 +13,7 @@ local top_panel = function(s)
         ontop = true,
         screen = s,
         type = 'dock',
-        height = dpi(24),
+        height = dpi(28),
         width = s.geometry.width,
         x = s.geometry.x,
         y = s.geometry.y,
@@ -24,15 +24,8 @@ local top_panel = function(s)
 
     panel:struts
     {
-        top = dpi(24)
+        top = dpi(28)
     }
---    panel:connect_signal("mouse::enter", function(h)
---        h:geometry({ height = dpi(24) })
---    end)
-
---    panel:connect_signal("mouse::leave", function(h)
---        h:geometry({ height = 1 })
---    end)
 
     panel:connect_signal(
             'mouse::enter', function()
@@ -55,7 +48,6 @@ local top_panel = function(s)
     local add_button        = require('widget.open-default-app')(s)
     s.search                = require('widget.search-apps')()
     s.tray_toggler          = require('widget.tray-toggle')
-    s.updater               = require('widget.package-updater')()
     s.screen_rec            = require('widget.screen-recorder')()
     s.bluetooth             = require('widget.bluetooth')()
     s.battery               = require('widget.battery')()
@@ -91,15 +83,15 @@ local top_panel = function(s)
                 widget = wibox.container.margin
             },
             s.tray_toggler,
-            s.updater,
+            separator,
             s.screen_rec,
             s.network,
             s.bluetooth,
             s.battery,
             separator,
             s.control_center_toggle,
-            separator,
             layout_box,
+            separator,
             s.info_center_toggle,
             separator,
             s.stop

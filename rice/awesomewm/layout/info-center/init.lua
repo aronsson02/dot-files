@@ -5,14 +5,6 @@ local beautiful = require('beautiful')
 local dpi = beautiful.xresources.apply_dpi
 panel_visible = false
 
-local vertical_separator =  wibox.widget {
-    orientation = 'vertical',
-    forced_height = dpi(1),
-    forced_width = dpi(1),
-    span_ratio = 0.55,
-    widget = wibox.widget.separator
-}
-
 local info_center = function(s)
     -- Set the info center geometry
     local panel_width = dpi(350)
@@ -24,10 +16,10 @@ local info_center = function(s)
                 {
                     layout = wibox.layout.fixed.vertical,
                     forced_width = dpi(panel_width),
-                    spacing = dpi(10),
+                    spacing = dpi(16),
+                    require('widget.calculator'),
                     require('widget.email'),
                     require('widget.weather'),
-                    require('widget.calculator'),
                     require('widget.notif-center')(s)
                 },
                 margins = dpi(16),
@@ -58,8 +50,8 @@ local info_center = function(s)
             honor_workarea = true,
             parent = s,
             margins = {
-                top = dpi(33),
-                right = dpi(5)
+                top = dpi(32),
+                right = dpi(2)
             }
         }
     )
