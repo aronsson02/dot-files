@@ -28,7 +28,7 @@ local top_panel = function(s)
     }
 
     panel:connect_signal(
-            'mouse::enter', function()
+        'mouse::enter', function()
         local w = mouse.current_wibox
         if w then
             w.cursor = 'left_ptr'

@@ -3,27 +3,20 @@ local awful = require('awful')
 local gears = require('gears')
 local beautiful = require('beautiful')
 local dpi = beautiful.xresources.apply_dpi
-local clickable_container = require('widget.clickable-container')
-local military_mode = false
 
 local create_clock = function(s)
 
-        local clock_format = nil
-        if not military_mode then
-                clock_format = '<span font="SF Pro 12">%A %d %B %I:%M:%S %p</span>'
-        else
-                clock_format = '<span font="SF Pro 12">%H%M</span>'
-        end
+    local clock_format = '<span font="SF Pro 14">%A %d %B %I:%M;%S %p</span>'
 
-        s.clock_widget = wibox.widget.textclock(
+    s.clock_widget = wibox.widget.textclock(
         clock_format,
         1
     )
 
     s.clock_widget = wibox.widget {
-            s.clock_widget,
-            margins = dpi(2),
-            widget = wibox.container.margin
+        s.clock_widget,
+        margins = dpi(2),
+        widget = wibox.container.margin
     }
 
     s.clock_widget:connect_signal(
@@ -46,8 +39,6 @@ local create_clock = function(s)
             end
         end
     )
-
-
 
     return s.clock_widget
 end
