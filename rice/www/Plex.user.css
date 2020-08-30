@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.0.0
+@version      1.0.1
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -319,6 +319,12 @@ div[class^="MetadataPosterCard-card-"] {
 	perspective: 500px;
 	box-shadow: 0px 5px 12px -4px var(--bg);
 	transition: all 350ms;
+}
+.MetadataPosterCardFace-poster-L2P6rC {
+	overflow: hidden;
+	border-radius: 8px;
+	background-color: rgba(0,0,0,0);
+	box-shadow: 0 0 4px rgba(0,0,0,1);
 }
 /* Search Box Colorification */
 .QuickSearchInput-focused-3rEqJC {
