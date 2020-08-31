@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         YouTube
-@version      1.0.0
+@version      1.0.1
 @description  YouTube and YouTube Music theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -103,6 +103,9 @@ yt-unlimited-page-header-renderer {
 	background-color: transparent !important;
 	background-image: none !important;
 	backdrop-filter: var(--bdbl) !important;
+}
+.video-stream.html5-main-video, #thumbnail {
+	filter: contrast(1.1) !important
 }
 .ytp-spinner-container {
 	border: 5px solid!important;
