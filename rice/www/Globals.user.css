@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      1.0.1
+@version      1.1.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -32,6 +32,7 @@
   --blue: #120056;
   --bdb: blur(50px) brightness(66%);
   --bdblur: blur(50px);
+  --bdblu: blur(5px) brightness(66%);
   --bdbl: blur(5px);
 }
 
