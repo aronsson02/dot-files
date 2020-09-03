@@ -367,7 +367,7 @@ a[class^="PrePlayCastCell-cardLink-"]:hover {
 	padding-right: 32px !important;
 	margin-top: -55px !important;
 	margin-right: -28px !important;
-	transition: all 750ms !important
+	transition: all 1s ease-out !important
 }
 .MetadataPosterCardOverlay-unplayedTag-3hwoiQ.MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf {
 	transform-origin: bottom left;
@@ -375,9 +375,9 @@ a[class^="PrePlayCastCell-cardLink-"]:hover {
 	margin: 0px !important;
 	margin-top: -50px !important;
 	margin-right: -4px !important;
-	transition: all 500ms !important;
 	width: 64px !important;
 	height: 64px !important;
+	transition: all 1s ease-out !important
 }
 .MetadataPosterCardOverlay-unplayedTagContainer-1uFYq2 {
 	width: 64px !important;
@@ -392,7 +392,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-unplayed
 	margin-top: -55px !important;
 	margin-right: -28px !important;
 	opacity: 1;
-	transition: all 175ms !important
+	transition: all 150ms ease-in !important
 }
 div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-unplayedTag-3hwoiQ.MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf {
 	transform-origin: bottom left;
@@ -400,7 +400,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-unplayed
 	margin: 0px !important;
 	margin-top: -50px !important;
 	opacity: 1;
-	transition: all 175ms !important
+	transition: all 150ms ease-in !important
 }
 /* ¡¡¡ANIMATIONS!!! */
 @keyframes flip {
