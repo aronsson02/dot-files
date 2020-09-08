@@ -22,7 +22,7 @@ local widget_icon_dir = config_dir .. 'widget/network/icons/'
 
 -- Configuration
 local interfaces = {
-        wlan_interface = 'wlp3s0',
+        wlan_interface = 'wlp0s20f3',
         lan_interface = 'eno1'
 }
 
