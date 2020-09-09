@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.0.2
+@version      1.0.3
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -269,14 +269,6 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt {
 	border-color: var(--ac) !important
 }
-.MetadataPosterCardOverlay-refreshingSpinner-ipJiyn.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
-.NavBarActivityIcon-activityIndicator-3asEGT.Spinner-spinner-Niere7.spin-spin-2kLwt_.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
-.loading,
-.loading.loading-sm,
-.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
-.Spinner-large-3AQPyD.Spinner-spinner-Niere7.spin-spin-2kLwt_ {
-	border-color: var(--xac) transparent !important;
-}
 .MetadataPosterCardFace-face--dz_Dx:hover,
 .PrePlayCastCell-posterCardLinkContainer-27hxZ8.PrePlayCastCell-posterCardContainer-2xrsDg.Link-link-2n0yJn.Link-default-2XA2bN:hover {
 	box-shadow: 0 0 0 2px var(--xac) !important;
@@ -301,6 +293,16 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .background-container div div div {
 	background-image: none !important;
 	background-color: var(--xbg) !important;
+}
+/* Spinner */
+.MetadataPosterCardOverlay-refreshingSpinner-ipJiyn.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+.NavBarActivityIcon-activityIndicator-3asEGT.Spinner-spinner-Niere7.spin-spin-2kLwt_.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+.loading,
+.loading.loading-sm,
+.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+.Spinner-large-3AQPyD.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+	.SpinnerButton-spinner-1TgDPI.Spinner-spinner-Niere7.spin-spin-2kLwt_.Spinner-small-3PStHE.Spinner-spinner-Niere7.spin-spin-2kLwt_{
+	border-color: var(--xac) transparent !important;
 }
 /* Darkified Side Bar */
 div[class^="SourceSidebar-sidebar-"] {
