@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      1.1.0
+@version      1.1.1
 @description  Google theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -395,5 +395,8 @@ a:visited, .sbl1p, .sbl1 b, .gb_Lb.gb_Lb:hover, .gb_Mb.gb_Mb:hover, .gb_Bb:hover
 	}
 	.lVJX2wDGbwj__divider, .section-homescreen-expand {
 		display: none !important
+	}
+	.widget-scene-canvas {
+		filter: contrast(1.1)
 	}
 }
