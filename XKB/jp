@@ -8,17 +8,17 @@
 //│ ~  │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ { ‹ │ } › │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
 //│ ≈  │ æ ä │ å   │ ø ö │ þ ð │ [ « │ ] » │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
 //┢━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫//
-//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J   │ L Ł │ U Ù │ Y Ü │ $ £ │ %   │ &   ┃       ┃//
-//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j   │ l ł │ u ù │ y ü │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
+//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J   │ L Ł │ U Ú │ Y Ü │ $ £ │ %   │ &   ┃       ┃//
+//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j   │ l ł │ u ú │ y ü │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
 //┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃//
-//┃        ┃ A Á │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E   │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
-//┃Backspce┃ a á │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e   │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
+//┃        ┃ A Á │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E É │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
+//┃Backspce┃ a á │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e é │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
 //┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫//
 //┃      ┃ _   │ Z   │ X   │ C Š │ V Œ │ B   │ K   │ M   │ O   │ ,   │ *   ┃              ┃//
 //┃ Shift┃ -   │ z   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ o   │ .   │ 0   ┃  Lvl_3_Shift ┃//
 //┣━━━━━━┻┱────┴┲━━━━┷━━┱──┴─────┴─────┴─────┴─────┴─────┴─────┼─────┴┲━━━━┻┳━━━━━┳━━━━━━━┫//
 //┃       ┃     ┃       ┃                                      │      ┃     ┃     ┃       ┃//
-//┃ Ctrl_L┃     ┃ Alt_L ┃                 Caps                 │ Alt_R┃     ┃     ┃ Ctrl_R┃//
+//┃ Ctrl_L┃     ┃ Alt_L ┃                                      │ Alt_R┃     ┃     ┃ Ctrl_R┃//
 //┗━━━━━━━┹─────┺━━━━━━━┹──────────────────────────────────────┴──────┺━━━━━┻━━━━━┻━━━━━━━┛//
 ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -49,7 +49,7 @@ xkb_symbols "latin" {
   key <AD05> { [            g,            G,     dead_ogonek                   ] };
   key <AD06> { [            j,            J,          igrave,           Igrave ] };
   key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
-  key <AD08> { [            u,            U,          ugrave,           Ugrave ] };
+  key <AD08> { [            u,            U,          uacute,           Uacute ] };
   key <AD09> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
   key <AD10> { [            4,       dollar,            cent,         sterling ] };
   key <AD11> { [            5,      percent,        EuroSign,              yen ] };
@@ -85,9 +85,9 @@ xkb_symbols "latin" {
   key <AB10> { [            0,     asterisk                                    ] };
   key <RTSH> { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift] };
 
-  key <PRSC> { [          bar,   dead_acute,       brokenbar,        dead_grave] };
+  key <PRSC> { [          bar,    brokenbar                                    ] };
   key <SCLK> { [dead_diaeresis,dead_circumflex,   dead_tilde                   ] };
-  key <PAUS> { [     asterisk,        acute,           grave,        diaeresis ] };
+  key <PAUS> { [   dead_acute,   dead_grave                                    ] };
 
 
   key <LCTL> { [    Control_L,    Control_L                                    ] };
@@ -120,116 +120,116 @@ xkb_symbols "latin" {
 //│ 2 4 │2 = Shift,  4 = Level3+Shift //
 //│ 1 3 │1 = Normal, 3 = Level3       //
 //└─────┘                             //
-//            фэлш colemak            ///////////////////////////////////////////////////////
+//            fælz colemak            ///////////////////////////////////////////////////////
 //┌────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓//
-//│ ~  │ Э   │     │     │ Т   │ { ‹ │ } › │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
-//│ ≈  │ э   │     │     │ т   │ [ « │ ] » │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
+//│ ~  │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ { ‹ │ } › │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
+//│ ≈  │ æ ä │ å   │ ø ö │ þ ð │ [ « │ ] » │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
 //┢━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫//
-//┃       ┃     │     │ Ф   │ П   │     │ Й   │ Л   │ У Ў │ Ӥ   │ $ £ │ %   │ &   ┃       ┃//
-//┃  Tab  ┃     │     │ ф   │ п   │     │ й   │ л   │ у ў │ ӥ   │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
+//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J   │ L Ł │ U Ú │ Y Ý │ $ £ │ %   │ &   ┃       ┃//
+//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j   │ l ł │ u ú │ y ý │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
 //┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃//
-//┃        ┃ А Ӑ │ Р   │ С   │     │ Д   │ Х   │ Н   │     │ И   │ !   │ "   │ #   ┃  ⏎   ┃//
-//┃Backspce┃ а ӑ │ р   │ с   │     │ д   │ х   │ н   │     │ и   │ 1 ¡ │ 2   │ 3   ┃      ┃//
+//┃        ┃ Á À │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E   │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
+//┃Backspce┃ á à │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e   │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
 //┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫//
-//┃      ┃ _   │     │     │ Ш   │ В   │     │ К   │ м   │ О   │ ,   │ *   ┃              ┃//
-//┃ Shift┃ -   │     │     │ ш   │ в   │     │ к   │     │ о   │ .   │ 0   ┃  Lvl_3_Shift ┃//
+//┃      ┃ _   │ Z   │ X   │ C Š │ V Œ │ B   │ K   │ M   │ O   │ ,   │ *   ┃              ┃//
+//┃ Shift┃ -   │ z   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ o   │ .   │ 0   ┃  Lvl_3_Shift ┃//
 //┣━━━━━━┻┱────┴┲━━━━┷━━┱──┴─────┴─────┴─────┴─────┴─────┴─────┼─────┴┲━━━━┻┳━━━━━┳━━━━━━━┫//
 //┃       ┃     ┃       ┃                                      │      ┃     ┃     ┃       ┃//
-//┃ Ctrl_L┃     ┃ Alt_L ┃                 Caps                 │ Alt_R┃     ┃     ┃ Ctrl_R┃//
+//┃ Ctrl_L┃     ┃ Alt_L ┃                                      │ Alt_R┃     ┃     ┃ Ctrl_R┃//
 //┗━━━━━━━┹─────┺━━━━━━━┹──────────────────────────────────────┴──────┺━━━━━┻━━━━━┻━━━━━━━┛//
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 partial alphanumeric_keys
-xkb_symbols "cyrillic" {
+xkb_symbols "faelz" {
 
-    key <TLDE> { [     approxeq,   asciitilde                                    ] };
-    key <AE01> { [        U044D,        U042D                                    ] };
-    key <AE02> { [     nosymbol                                                  ] };
-    key <AE03> { [     nosymbol                                                  ] };
-    key <AE04> { [        U0442,        U0422                                    ] };
-    key <AE05> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
-    key <AE06> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
-    key <AE07> { [        colon,    semicolon,        multiply,         division ] };
-    key <AE08> { [           at,        equal,      apostrophe                   ] };
-    key <AE09> { [     question,         plus,    questiondown                   ] };
-    key <AE10> { [            7,        slash,       backslash                   ] };
-    key <AE11> { [            8,    parenleft                                    ] };
-    key <AE12> { [            9,   parenright                                    ] };
-    key <BKSP> { [    BackSpace,    BackSpace                                    ] };
-
-
-    key <TAB>  { [          TAB,          TAB                                    ] };
-    key <AD01> { [     nosymbol                                                  ] };
-    key <AD02> { [        UA681,        UA680                                    ] };
-    key <AD03> { [        U0444,        U0424                                    ] };
-    key <AD04> { [        U043F,        U041F                                    ] };
-    key <AD05> { [        U0433,        U0413                                    ] };
-    key <AD06> { [        U0439,        U0419                                    ] };
-    key <AD07> { [        U043B,        U041B,           U0515,            U0514 ] };
-    key <AD08> { [        U0443,        U0423,           U045E,            U040E ] };
-    key <AD09> { [        U04E5,        U04E4                                    ] };
-    key <AD10> { [            4,       dollar,            cent,         sterling ] };
-    key <AD11> { [            5,      percent,        EuroSign,              yen ] };
-    key <AD12> { [            6,    ampersand,     asciicircum,       dead_caron ] };
+  key <TLDE> { [     approxeq,   asciitilde                                    ] };
+  key <AE01> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
+  key <AE02> { [        aring,        Aring                                    ] };
+  key <AE03> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
+  key <AE04> { [        thorn,        THORN,             eth,              ETH ] };
+  key <AE05> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
+  key <AE06> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+  key <AE07> { [        colon,    semicolon,        multiply,         division ] };
+  key <AE08> { [           at,        equal,      apostrophe                   ] };
+  key <AE09> { [     question,         plus,    questiondown                   ] };
+  key <AE10> { [            7,        slash,       backslash                   ] };
+  key <AE11> { [            8,    parenleft                                    ] };
+  key <AE12> { [            9,   parenright                                    ] };
+  key <BKSP> { [    BackSpace,    BackSpace                                    ] };
 
 
-    key <CAPS> { [    BackSpace,    BackSpace                                    ] };
-    key <AC01> { [        U0430,        U0410,           U04D1,            U04D0 ] };
-    key <AC02> { [        U0440,        U0420                                    ] };
-    key <AC03> { [        U0441,        U0421,           U0447,            U0427 ] };
-    key <AC04> { [                                                               ] };
-    key <AC05> { [        U0434,        U0414,           U00B0                   ] };
-    key <AC06> { [        U0445,        U0425                                    ] };
-    key <AC07> { [        U043D,        U041D                                    ] };
-    key <AC08> { [     nosymbol                                                  ] };
-    key <AC09> { [        U0438,        U0418                                    ] };
-    key <AC10> { [            1,       exclam,      exclamdown                   ] };
-    key <AC11> { [            2,     quotedbl                                    ] };
-    key <AC12> { [            3,   numbersign                                    ] };
+  key <TAB>  { [          TAB,          TAB                                    ] };
+  key <AD01> { [            q,            Q                                    ] };
+  key <AD02> { [            w,            W                                    ] };
+  key <AD03> { [            f,            F                                    ] };
+  key <AD04> { [            p,            P                                    ] };
+  key <AD05> { [            g,            G,     dead_ogonek                   ] };
+  key <AD06> { [            j,            J,          igrave,           Igrave ] };
+  key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
+  key <AD08> { [            u,            U,          uacute,           Uacute ] };
+  key <AD09> { [            y,            Y,          yacute,           Yacute ] };
+  key <AD10> { [            4,       dollar,            cent,         sterling ] };
+  key <AD11> { [            5,      percent,        EuroSign,              yen ] };
+  key <AD12> { [            6,    ampersand,     asciicircum,       dead_caron ] };
 
 
-    key <LFSH> { [      Shift_L,      Shift_L                                    ] };
-    key <LSGT> { [        minus,   underscore                                    ] };
-    key <AB01> { [        UA657,        UA656                                    ] };
-    key <AB02> { [        U0449,        U0429                                    ] };
-    key <AB03> { [        U0448,        U0428,           U045F,            U040F ] };
-    key <AB04> { [        U0432,        U0412                                    ] };
-    key <AB05> { [        U0431,        U0411                                    ] };
-    key <AB06> { [        U043A,        U041A                                    ] };
-    key <AB07> { [        U043C,        U041C                                    ] };
-    key <AB08> { [        U043E,        U041E                                    ] };
-    key <AB09> { [       period,        comma,         greater,             less ] };
-    key <AB10> { [            0,     asterisk                                    ] };
-    key <RTSH> { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift] };
-
-    key <PRSC> { [          bar,   dead_acute,       brokenbar,        dead_grave] };
-    key <SCLK> { [dead_diaeresis,dead_circumflex,   dead_tilde                   ] };
-    key <PAUS> { [     asterisk,        acute,           grave,        diaeresis ] };
+  key <CAPS> { [    BackSpace,    BackSpace                                    ] };
+  key <AC01> { [       aacute,       Aacute,          agrave,           Agrave ] };
+  key <AC02> { [            r,            R                                    ] };
+  key <AC03> { [            s,            S,          ssharp                   ] };
+  key <AC04> { [            t,            T                                    ] };
+  key <AC05> { [            d,            D,           U00B0                   ] };
+  key <AC06> { [            h,            H,         hstroke,          Hstroke ] };
+  key <AC07> { [            n,            N,          ntilde,           Ntilde ] };
+  key <AC08> { [            e,            E,          eacute,           Eacute ] };
+  key <AC09> { [            i,            I,          iacute,           Iacute ] };
+  key <AC10> { [            1,       exclam,      exclamdown                   ] };
+  key <AC11> { [            2,     quotedbl                                    ] };
+  key <AC12> { [            3,   numbersign                                    ] };
 
 
-    key <LCTL> { [    Control_L,    Control_L                                    ] };
-    key <LWIN> { [        Super,        Super                                    ] };
-    key <LALT> { [        Alt_L,        Alt_L                                    ] };
-    key <SPCE> { [        space                                                  ] };
-    key <RALT> { [        Alt_R,        Alt_R                                    ] };
-    key <RWIN> { [        Super,        Super                                    ] };
-    key <RCTL> { [    Control_R,    Control_R                                    ] };
+  key <LFSH> { [      Shift_L,      Shift_L                                    ] };
+  key <LSGT> { [        minus,   underscore                                    ] };
+  key <AB01> { [            z,            Z                                    ] };
+  key <AB02> { [            x,            X                                    ] };
+  key <AB03> { [            c,            C,          scaron,           Scaron ] };
+  key <AB04> { [            v,            V,              oe,               OE ] };
+  key <AB05> { [            b,            B,      dead_breve                   ] };
+  key <AB06> { [            k,            K,  dead_abovering                   ] };
+  key <AB07> { [            m,            M,     dead_macron                   ] };
+  key <AB08> { [            o,            O                                    ] };
+  key <AB09> { [       period,        comma,         greater,             less ] };
+  key <AB10> { [            0,     asterisk                                    ] };
+  key <RTSH> { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift] };
+
+  key <PRSC> { [          bar,    brokenbar                                    ] };
+  key <SCLK> { [dead_diaeresis,dead_circumflex,   dead_tilde                   ] };
+  key <PAUS> { [   dead_acute,   dead_grave                                    ] };
 
 
-    key <INS>  { [ Insert ] };
-    key <HOME> { [ Home ] };
-    key <PGUP> { [ Prior ] };
+  key <LCTL> { [    Control_L,    Control_L                                    ] };
+  key <LWIN> { [        Super,        Super                                    ] };
+  key <LALT> { [        Alt_L,        Alt_L                                    ] };
+  key <SPCE> { [        space                                                  ] };
+  key <RALT> { [        Alt_R,        Alt_R                                    ] };
+  key <RWIN> { [        Super,        Super                                    ] };
+  key <RCTL> { [    Control_R,    Control_R                                    ] };
 
-    key <DELE> { [ Delete ] };
-    key <END>  { [ End ] };
-    key <PGDN> { [ Next ] };
+
+  key <INS>  { [ Insert ] };
+  key <HOME> { [ Home ] };
+  key <PGUP> { [ Prior ] };
+
+  key <DELE> { [ Delete ] };
+  key <END>  { [ End ] };
+  key <PGDN> { [ Next ] };
 
 
-    key  <UP>  { [ Up ] };
+  key  <UP>  { [ Up ] };
 
-    key <LEFT> { [ Left ] };
-    key <DOWN> { [ Down ] };
-    key <RGHT> { [ Right ] };
+  key <LEFT> { [ Left ] };
+  key <DOWN> { [ Down ] };
+  key <RGHT> { [ Right ] };
 };
 
 ////////////////////////////////////////

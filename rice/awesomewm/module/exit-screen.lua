@@ -12,7 +12,7 @@ local widget_icon_dir = config_dir .. 'configuration/user-profile/'
 
 local greeter_message = wibox.widget {
         markup = 'Velg smart!',
-        font = 'SF Pro 48',
+        font = 'SF Nodo Pro 48',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -20,7 +20,7 @@ local greeter_message = wibox.widget {
 
 local profile_name = wibox.widget {
         markup = 'user@hostname',
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -87,7 +87,7 @@ local build_button = function(icon, name)
 
     local button_text = wibox.widget {
         text = name,
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox

@@ -14,8 +14,8 @@ local tip = titlebar_icon_path
 local theme = {}
 
 -- Font
-theme.font = 'SF Pro 12'
-theme.font_bold = 'SF Pro 14'
+theme.font = 'SF Nodo Pro 12'
+theme.font_bold = 'SF Nodo Pro 14'
 
 -- Menu icon theme
 theme.icon_theme = 'Tela-blue-dark'
@@ -29,7 +29,7 @@ local awesome_overrides = function(theme)
     theme.wallpaper = theme.dir .. '/wallpapers/morning-wallpaper.jpg'
 
     -- Default font
-    theme.font = 'SF Pro 12'
+    theme.font = 'SF Nodo Pro 12'
 
     -- Foreground
     theme.fg_normal = '#ffffffde'
@@ -140,7 +140,7 @@ local awesome_overrides = function(theme)
     theme.useless_gap = dpi(1)
 
     -- Menu
-    theme.menu_font = 'SF Pro 12'
+    theme.menu_font = 'SF Nodo Pro 12'
     theme.menu_submenu = '' -- ➤
     theme.menu_height = dpi(34)
     theme.menu_width = dpi(200)
@@ -178,7 +178,7 @@ local awesome_overrides = function(theme)
     theme.taglist_spacing = dpi(0)
 
     -- Tasklist
-    theme.tasklist_font = 'SF Pro 12'
+    theme.tasklist_font = 'SF Nodo Pro 12'
     theme.tasklist_bg_normal = theme.background .. '99'
     theme.tasklist_bg_focus = theme.background
     theme.tasklist_bg_urgent = '#E91E63' .. '99'
@@ -202,8 +202,8 @@ local awesome_overrides = function(theme)
     theme.snap_border_width = dpi(15)
 
     -- Hotkey popup
-    theme.hotkeys_font = 'SF Pro'
-    theme.hotkeys_description_font = 'SF Pro'
+    theme.hotkeys_font = 'SF Nodo Pro'
+    theme.hotkeys_description_font = 'SF Nodo Pro'
     theme.hotkeys_bg = theme.background
     theme.hotkeys_group_margin = dpi(20)
 end

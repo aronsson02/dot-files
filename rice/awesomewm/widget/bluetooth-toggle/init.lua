@@ -13,14 +13,14 @@ local device_state = false
 
 local action_name = wibox.widget {
         text = 'Bluetooth',
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }
 
 local action_status = wibox.widget {
         text = 'Av',
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }

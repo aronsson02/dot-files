@@ -31,7 +31,7 @@ record_tbl.screen_rec_toggle_button = wibox.widget {
 
 record_tbl.screen_rec_countdown_txt = wibox.widget {
         id = 'countdown_text',
-        font = 'SF Pro 64',
+        font = 'SF Nodo Pro 64',
         text = '4',
         align = 'center',
         valign = 'bottom',
@@ -183,7 +183,7 @@ record_tbl.screen_rec_back_button = wibox.widget {
 record_tbl.screen_rec_back_txt = wibox.widget {
         {
                 text = 'Tilbake',
-                font = 'SF Pro 16',
+                font = 'SF Nodo Pro 16',
                 align = 'left',
                 valign = 'center',
                 widget = wibox.widget.textbox
@@ -196,7 +196,7 @@ record_tbl.screen_rec_back_txt = wibox.widget {
 record_tbl.screen_rec_res_txt = wibox.widget {
         {
                 text = 'Vedtak',
-                font = 'SF Pro 16',
+                font = 'SF Nodo Pro 16',
                 align = 'left',
                 valign = 'center',
                 widget = wibox.widget.textbox
@@ -212,7 +212,7 @@ record_tbl.screen_rec_res_txtbox = wibox.widget {
                         {
                                 id = 'res_tbox',
                                 markup = '<span foreground="#FFFFFF66">' .. '1366x768' .. "</span>",
-                                font = 'SF Pro 16',
+                                font = 'SF Nodo Pro 16',
                                 align = 'left',
                                 valign = 'center',
                                 widget = wibox.widget.textbox
@@ -235,7 +235,7 @@ record_tbl.screen_rec_res_txtbox = wibox.widget {
 record_tbl.screen_rec_offset_txt = wibox.widget {
         {
                 text = 'Offset',
-                font = 'SF Pro 16',
+                font = 'SF Nodo Pro 16',
                 align = 'left',
                 valign = 'center',
                 widget = wibox.widget.textbox
@@ -251,7 +251,7 @@ record_tbl.screen_rec_offset_txtbox = wibox.widget {
                         {
                                 id = 'offset_tbox',
                                 markup = '<span foreground="#FFFFFF66">' .. '0,0' .. "</span>",
-                                font = 'SF Pro 16',
+                                font = 'SF Nodo Pro 16',
                                 ellipsize = 'start',
                                 align = 'left',
                                 valign = 'center',

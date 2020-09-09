@@ -32,7 +32,7 @@ end
 ui_noti_builder.notifbox_title = function(title)
         return wibox.widget {
                 markup = title,
-                font   = 'SF Pro 12',
+                font   = 'SF Nodo Pro 12',
                 align  = 'left',
                 valign = 'center',
                 widget = wibox.widget.textbox
@@ -43,7 +43,7 @@ end
 ui_noti_builder.notifbox_message = function(msg)
         return wibox.widget {
                 markup = msg,
-                font   = 'SF Pro 12',
+                font   = 'SF Nodo Pro 12',
                 align  = 'left',
                 valign = 'center',
                 widget = wibox.widget.textbox
@@ -54,7 +54,7 @@ end
 ui_noti_builder.notifbox_appname = function(app)
         return wibox.widget {
                 markup  = app,
-                font   = 'SF Pro 12',
+                font   = 'SF Nodo Pro 12',
                 align  = 'left',
                 valign = 'center',
                 widget = wibox.widget.textbox
@@ -75,7 +75,7 @@ ui_noti_builder.notifbox_actions = function(n)
                                         {
                                                 {
                                                         id     = 'text_role',
-                                                        font   = 'SF Pro 12',
+                                                        font   = 'SF Nodo Pro 12',
                                                         widget = wibox.widget.textbox
                                                 },
                                                 widget = wibox.container.place

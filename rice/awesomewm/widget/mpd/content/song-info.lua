@@ -10,7 +10,7 @@ song_info.music_title = wibox.widget {
                 {
                         id = 'title',
                         text = 'title',
-                        font = 'SF Pro 12',
+                        font = 'SF Nodo Pro 12',
                         align  = 'left',
                         valign = 'center',
                         ellipsize = 'end',
@@ -34,7 +34,7 @@ song_info.music_artist = wibox.widget {
                 {
                         id = 'artist',
                         text = 'artist',
-                        font = 'SF Pro 12',
+                        font = 'SF Nodo Pro 12',
                         align  = 'left',
                         valign = 'center',
                         widget = wibox.widget.textbox

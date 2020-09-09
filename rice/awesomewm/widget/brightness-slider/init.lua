@@ -9,7 +9,7 @@ local clickable_container = require('widget.clickable-container')
 
 local action_name = wibox.widget {
         text = 'Lysstyrke',
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }

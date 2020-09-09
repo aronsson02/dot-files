@@ -8,7 +8,7 @@ local icons = require('theme.icons')
 
 local meter_name = wibox.widget {
         text = 'Temperatur',
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }

@@ -5,7 +5,7 @@ local dpi = beautiful.xresources.apply_dpi
 
 local notif_header = wibox.widget {
         text   = 'Notifikasjons senter',
-        font   = 'SF Pro 14',
+        font   = 'SF Nodo Pro 14',
         align  = 'left',
         valign = 'center',
         widget = wibox.widget.textbox

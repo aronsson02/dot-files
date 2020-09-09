@@ -82,7 +82,7 @@ local create_profile = function()
         )
 
         local profile_name = wibox.widget {
-                font = 'SF Pro 12',
+                font = 'SF Nodo Pro 12',
                 markup = 'Bruker',
                 align = 'left',
                 valign = 'center',

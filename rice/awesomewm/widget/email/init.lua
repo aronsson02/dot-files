@@ -45,14 +45,14 @@ local email_icon_widget = wibox.widget {
 
 local email_header = wibox.widget {
         text   = 'E-post',
-        font   = 'SF Pro 14',
+        font   = 'SF Nodo Pro 14',
         align  = 'left',
         valign = 'center',
         widget = wibox.widget.textbox
 }
 
 local email_from_text = wibox.widget {
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         markup = 'Fra:',
         align = 'left',
         valign = 'center',
@@ -61,7 +61,7 @@ local email_from_text = wibox.widget {
 
 
 local email_recent_from = wibox.widget {
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         markup = 'Laster@stdout.sh',
         align = 'left',
         valign = 'center',
@@ -69,7 +69,7 @@ local email_recent_from = wibox.widget {
 }
 
 local email_subject_text = wibox.widget {
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         markup = 'Emne:',
         align = 'left',
         valign = 'center',
@@ -77,7 +77,7 @@ local email_subject_text = wibox.widget {
 }
 
 local email_recent_subject = wibox.widget {
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         markup = 'Laster inn data',
         align = 'left',
         valign = 'center',
@@ -85,7 +85,7 @@ local email_recent_subject = wibox.widget {
 }
 
 local email_date_text = wibox.widget {
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         markup = 'Lokal dato:',
         align = 'left',
         valign = 'center',
@@ -93,7 +93,7 @@ local email_date_text = wibox.widget {
 }
 
 local email_recent_date = wibox.widget {
-        font = 'SF Pro 12',
+        font = 'SF Nodo Pro 12',
         markup = 'Lastedato...',
         align = 'left',
         valign = 'center',
@@ -271,7 +271,7 @@ end
 
 local set_email_data_tooltip = function(email_data)
         local email_data = email_data:match('(Fra:.*)')
-        local counter = "<span font='SF Pro 12'>Ulest telling: </span>" .. unread_email_count
+        local counter = "<span font='SF Nodo Pro 12'>Ulest telling: </span>" .. unread_email_count
         email_details_tooltip:set_markup(counter .. '\n\n' .. email_data)
 end
 

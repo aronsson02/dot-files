@@ -6,7 +6,7 @@ local dpi = beautiful.xresources.apply_dpi
 
 local create_clock = function(s)
 
-    local clock_format = '<span font="SF Pro 14">%A %d %B %I:%M;%S %p</span>'
+    local clock_format = '<span font="SF Nodo Pro 14">%A %d %B %I:%M;%S %p</span>'
 
     s.clock_widget = wibox.widget.textclock(
         clock_format,

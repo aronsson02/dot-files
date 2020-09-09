@@ -3891,13 +3891,13 @@
         <variant>
             <configItem>
                 <name>latin</name>
-                <description>faelc latin (colemak)</description>
+                <description>faelz latin (colemak)</description>
             </configItem>
           </variant>
         <variant>
             <configItem>
-                <name>cyrillic</name>
-                <description>faelc (colemak)</description>
+                <name>faelz</name>
+                <description>faelz (colemak)</description>
             </configItem>
         </variant>
       </variantList>
