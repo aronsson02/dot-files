@@ -128,7 +128,7 @@ Gdraw.GGadget.Box.BorderInnerCol: #000000
 Gdraw.GGadget.Box.BorderOuterCol: #000000
 Gdraw.GGadget.Box.ActiveBorder: #88b2de
 Gdraw.GGadget.Box.BorderType: none
-Gdraw.GGadget.Box.BorderShape: rect
+Gdraw.GGadget.Box.BorderShape: roundrect
 Gdraw.GGadget.Box.BorderWidth: 1
 Gdraw.GGadget.Box.Padding: 2
 Gdraw.GGadget.Box.Radius: 0
@@ -151,8 +151,10 @@ Gdraw.GButton.Box.BorderInner: False
 Gdraw.GButton.Box.BorderOuter: False
 Gdraw.GButton.Box.DoDepressedBackground: False
 Gdraw.GButton.Box.DrawDefault: False
+Gdraw.GButton.Box.BorderBrightest: #333333
+Gdraw.GButton.Box.BorderBrighter: #333333
+Gdraw.GButton.Box.BorderDarker: #333333
 Gdraw.GButton.Box.BorderType: box
-Gdraw.GButton.Box.BorderShape: roundrect
 Gdraw.GButton.Box.Padding: 1
 Gdraw.GButton.Box.Radius: 3
 Gdraw.GButton.Font: 400 10pt sans
@@ -189,7 +191,7 @@ Gdraw.GRadio.Font: 400 10pt sans
 Gdraw.GRadioOn.Box.DoDepressedBackground: False
 Gdraw.GRadioOn.Box.PressedBackground: #88b2de
 Gdraw.GRadioOn.Box.BorderType: none
-Gdraw.GRadioOn.Box.BorderShape: rect
+Gdraw.GRadioOn.Box.BorderShape: roundrect
 Gdraw.GRadioOn.Box.Padding: 3
 Gdraw.GRadioOn.Image: radio_on.png
 Gdraw.GRadioOn.DisabledImage: radio_on_disabled.png
@@ -197,7 +199,7 @@ Gdraw.GRadioOn.DisabledImage: radio_on_disabled.png
 Gdraw.GRadioOff.Box.DoDepressedBackground: False
 Gdraw.GRadioOff.Box.PressedBackground: #363636
 Gdraw.GRadioOff.Box.BorderType: none
-Gdraw.GRadioOff.Box.BorderShape: rect
+Gdraw.GRadioOff.Box.BorderShape: roundrect
 Gdraw.GRadioOff.Image: radio_off.png
 Gdraw.GRadioOff.DisabledImage: radio_off_disabled.png
 
@@ -208,7 +210,7 @@ Gdraw.GCheckBox.Font: 400 10pt sans
 Gdraw.GCheckBoxOn.Box.DoDepressedBackground: False
 Gdraw.GCheckBoxOn.Box.PressedBackground: #88b2de
 Gdraw.GCheckBoxOn.Box.BorderType: none
-Gdraw.GCheckBoxOn.Box.BorderShape: rect
+Gdraw.GCheckBoxOn.Box.BorderShape: roundrect
 Gdraw.GCheckBoxOn.Box.Padding: 3
 Gdraw.GCheckBoxOn.Image: check_on.png
 Gdraw.GCheckBoxOn.DisabledImage: check_on_disabled.png
@@ -216,18 +218,20 @@ Gdraw.GCheckBoxOn.DisabledImage: check_on_disabled.png
 Gdraw.GCheckBoxOff.Box.DoDepressedBackground: False
 Gdraw.GCheckBoxOff.Box.PressedBackground: #363636
 Gdraw.GCheckBoxOff.Box.BorderType: none
-Gdraw.GCheckBoxOff.Box.BorderShape: rect
+Gdraw.GCheckBoxOff.Box.BorderShape: roundrect
 Gdraw.GCheckBoxOff.Box.Padding: 3
 Gdraw.GCheckBoxOff.Image: check_off.png
 Gdraw.GCheckBoxOff.DisabledImage: check_off_disabled.png
 
 Gdraw.GTextField.Box.BorderType: lowered
-Gdraw.GTextField.Box.BorderShape: roundrect
 Gdraw.GTextField.Box.Padding: 2
 Gdraw.GTextField.Box.Radius: 3
 Gdraw.GTextField.Font: 400 10pt Inconsolata,monospace,clearlyu,unifont,unifont upper
 
 Gdraw.GComboBox.Box.BorderInner: True
+Gdraw.GComboBox.Box.BorderBrightest: #333333
+Gdraw.GComboBox.Box.BorderBrighter: #333333
+Gdraw.GComboBox.Box.BorderDarker: #333333
 Gdraw.GComboBox.Box.BorderType: box
 
 Gdraw.GComboBoxMenu.Box.GradientBG: True
@@ -236,46 +240,50 @@ Gdraw.GComboBoxMenu.Box.Padding: 2
 Gdraw.GNumericField.Box.BorderInner: True
 
 Gdraw.GNumericFieldSpinner.Box.GradientBG: True
+Gdraw.GNumericFieldSpinner.Box.BorderBrightest: #333333
+Gdraw.GNumericFieldSpinner.Box.BorderBrighter: #333333
+Gdraw.GNumericFieldSpinner.Box.BorderDarker: #333333
 Gdraw.GNumericFieldSpinner.Box.BorderType: box
 Gdraw.GNumericFieldSpinner.Box.BorderWidth: 1
 Gdraw.GNumericFieldSpinner.Box.Padding: 2
 
 Gdraw.GList.Box.BorderOuter: False
+Gdraw.GList.Box.BorderBrightest: #333333
+Gdraw.GList.Box.BorderBrighter: #333333
+Gdraw.GList.Box.BorderDarker: #333333
 Gdraw.GList.Box.BorderType: box
 Gdraw.GList.Font: 400 10pt sans
 
 Gdraw.GScrollBar.Box.BorderOuter: False
 Gdraw.GScrollBar.Box.NormalBackground: #363636
 Gdraw.GScrollBar.Box.BorderType: none
-Gdraw.GScrollBar.Box.BorderWidth: 0
+Gdraw.GScrollBar.Box.BorderWidth: 1
 Gdraw.GScrollBar.Box.Padding: 2
 
-Gdraw.GScrollBarThumb.Box.NormalBackground: #363636
-Gdraw.GScrollBarThumb.Box.BorderType: box
-Gdraw.GScrollBarThumb.Box.BorderShape: roundrect
-Gdraw.GScrollBarThumb.Box.BorderWidth: 0
-Gdraw.GScrollBarThumb.Box.Padding: 50
-Gdraw.GScrollBarThumb.Box.Radius: 10
+Gdraw.GScrollBarThumb.Box.NormalBackground: #ffffff
+Gdraw.GScrollBarThumb.Box.DisabledBackground: #808080
+Gdraw.GScrollBarThumb.Box.BorderWidth: 1
+Gdraw.GScrollBarThumb.Box.Padding: 2
 
 Gdraw.GLine.Box.BorderType: engraved
-Gdraw.GLine.Box.BorderShape: rect
+Gdraw.GLine.Box.BorderShape: roundrect
 Gdraw.GLine.Box.BorderWidth: 2
 Gdraw.GLine.Box.Padding: 0
 
 Gdraw.GGroup.Box.NormalBackground: #363636
 Gdraw.GGroup.Box.DisabledBackground: #303030
 Gdraw.GGroup.Box.BorderType: none
-Gdraw.GGroup.Box.BorderShape: rect
+Gdraw.GGroup.Box.BorderShape: roundrect
 Gdraw.GGroup.Box.Padding: 0
 
 Gdraw.GMenuBar.Box.BorderOuter: False
-Gdraw.GMenuBar.Box.BorderShape: rect
+Gdraw.GMenuBar.Box.BorderShape: roundrect
 Gdraw.GMenuBar.Box.BorderWidth: 1
 Gdraw.GMenuBar.Box.Radius: 2
 Gdraw.GMenuBar.Font: 400 10pt sans
 
 Gdraw.GMenu.Box.BorderOuter: False
-Gdraw.GMenu.Box.BorderShape: rect
+Gdraw.GMenu.Box.BorderShape: roundrect
 Gdraw.GMenu.Box.Padding: 3
 Gdraw.GMenu.Font: 400 10pt sans
 Gdraw.GMenu.MacIcons: False
@@ -283,7 +291,7 @@ Gdraw.GMenu.MacIcons: False
 Gdraw.GMatrixEdit.Box.NormalBackground: #363636
 Gdraw.GMatrixEdit.Box.DisabledBackground: #303030
 Gdraw.GMatrixEdit.Box.BorderType: none
-Gdraw.GMatrixEdit.Box.BorderShape: rect
+Gdraw.GMatrixEdit.Box.BorderShape: roundrect
 Gdraw.GMatrixEdit.Box.BorderWidth: 0
 Gdraw.GMatrixEdit.Box.Padding: 0
 Gdraw.GMatrixEdit.Font: 400 12pt Inconsolata,monospace
@@ -301,6 +309,9 @@ Gdraw.GDrawable.Box.BorderType: none
 Gdraw.GDrawable.Box.BorderWidth: 0
 Gdraw.GDrawable.Box.Padding: 0
 
+Gdraw.GTabSet.Box.BorderBrightest: #333333
+Gdraw.GTabSet.Box.BorderBrighter: #333333
+Gdraw.GTabSet.Box.BorderDarker: #333333
 Gdraw.GTabSet.Box.BorderType: box
 Gdraw.GTabSet.Box.BorderShape: roundrect
 Gdraw.GTabSet.Box.BorderWidth: 1
