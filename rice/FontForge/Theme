@@ -1,10 +1,10 @@
-fontforge.FontView.GlyphInfoColor: #598ec6
+fontforge.FontView.GlyphInfoColor: #ffffff
 fontforge.FontView.EmptySlotFgColor: #cccbca
 fontforge.FontView.SelectedColor: #bfbfbf
 fontforge.FontView.SelectedFgColor: #000000
-fontforge.FontView.ChangedColor: #204a87
-fontforge.FontView.HintingNeededColor: #598ec6
-fontforge.FontView.FontSize: 12
+fontforge.FontView.ChangedColor: #1c2e87
+fontforge.FontView.HintingNeededColor: #63a8c7
+fontforge.FontView.FontSize: 14
 fontforge.FontView.FontFamily: SF Nodo Pro, dejavu sans,fontview,courier,monospace,clearlyu,unifont,unifont upper
 
 fontforge.CharView.PointColor: #ff0000
