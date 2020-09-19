@@ -18,6 +18,10 @@
   --bdblur: blur(50px);
   --bdbl: blur(5px);
 }
+* {
+    scrollbar-color: var(--ac) var(--bg) !important;
+    scrollbar-width: none !important;
+}
 @keyframes hue-rotate {
     0% { filter: hue-rotate(0deg); }
     100%   { filter: hue-rotate(360deg); }
