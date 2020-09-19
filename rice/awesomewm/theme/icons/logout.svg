@@ -15,7 +15,7 @@
    width="32"
    height="32">
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#fafafa"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -58,7 +58,7 @@
         color:#C3C7D1;
       }
       .ColorScheme-Background {
-        color:#ffffff;
+        color:#fafafa;
       }
       .ColorScheme-Highlight {
         color:#009bff;
@@ -67,7 +67,7 @@
         color:#C3C7D1;
       }
       .ColorScheme-ViewBackground {
-        color:#ffffff;
+        color:#fafafa;
       }
       .ColorScheme-ViewHover {
         color:#2dacff;
@@ -79,7 +79,7 @@
         color:#C3C7D1;
       }
       .ColorScheme-ButtonBackground {
-        color:#ffffff;
+        color:#fafafa;
       }
       .ColorScheme-ButtonHover {
         color:#2dacff;

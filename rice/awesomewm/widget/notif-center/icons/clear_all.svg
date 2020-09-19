@@ -109,7 +109,7 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#fafafa"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -159,6 +159,6 @@
        height="32"
        width="32"
        id="rect829-3-2"
-       style="fill:#ffffff;fill-opacity:0;stroke-width:1.06462" />
+       style="fill:#fafafa;fill-opacity:0;stroke-width:1.06462" />
   </g>
 </svg>

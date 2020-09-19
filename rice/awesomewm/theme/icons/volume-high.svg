@@ -44,7 +44,7 @@
         color:#31363b;
       }
       .ColorScheme-ViewBackground{
-        color:#ffffff;
+        color:#fafafa;
       }
       .ColorScheme-ViewHover {
         color:#000000;
@@ -114,7 +114,7 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#fafafa"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0"

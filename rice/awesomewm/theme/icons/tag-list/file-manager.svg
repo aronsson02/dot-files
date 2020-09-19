@@ -28,7 +28,7 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#fafafa"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -102,7 +102,7 @@
        y="283.771"
        ry="0.26499999"
        id="rect17"
-       style="fill:#ffffff;paint-order:markers stroke fill" />
+       style="fill:#fafafa;paint-order:markers stroke fill" />
     <rect
        width="15.875"
        height="9.5249996"

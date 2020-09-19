@@ -47,7 +47,7 @@ local slider = wibox.widget {
         value              = 29,
         forced_height      = dpi(24),
         color              = '#f2f2f2EE',
-        background_color = '#ffffff20',
+        background_color = '#fafafa20',
         shape              = gears.shape.rounded_rect,
         widget             = wibox.widget.progressbar
     },

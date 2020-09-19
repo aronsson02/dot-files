@@ -44,7 +44,7 @@
         color:#31363b;
       }
       .ColorScheme-ViewBackground{
-        color:#ffffff;
+        color:#fafafa;
       }
       .ColorScheme-ViewHover {
         color:#000000;
@@ -138,7 +138,7 @@
      inkscape:pageopacity="0"
      borderopacity="1.0"
      bordercolor="#666666"
-     pagecolor="#ffffff"
+     pagecolor="#fafafa"
      id="base">
     <inkscape:grid
        snapvisiblegridlinesonly="true"
@@ -175,7 +175,7 @@
          id="path2-7"
          inkscape:connector-curvature="0" />
       <rect
-         style="fill:#ffffff;fill-opacity:0;stroke-width:0.855078"
+         style="fill:#fafafa;fill-opacity:0;stroke-width:0.855078"
          id="rect822"
          width="22"
          height="22"

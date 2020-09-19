@@ -47,7 +47,7 @@ ruled.notification.connect_signal(
 			properties = {
 				font        		= 'SF Nodo Pro 10',
 				bg 					= '#ff0000',
-				fg 					= '#ffffff',
+				fg 					= '#fafafa',
 				margin 				= dpi(16),
 				position 			= 'top_left',
 				implicit_timeout	= 0

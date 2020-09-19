@@ -211,7 +211,7 @@ record_tbl.screen_rec_res_txtbox = wibox.widget {
         {
                         {
                                 id = 'res_tbox',
-                                markup = '<span foreground="#FFFFFF66">' .. '1366x768' .. "</span>",
+                                markup = '<span foreground="#fafafa66">' .. '1366x768' .. "</span>",
                                 font = 'SF Nodo Pro 16',
                                 align = 'left',
                                 valign = 'center',
@@ -250,7 +250,7 @@ record_tbl.screen_rec_offset_txtbox = wibox.widget {
         {
                         {
                                 id = 'offset_tbox',
-                                markup = '<span foreground="#FFFFFF66">' .. '0,0' .. "</span>",
+                                markup = '<span foreground="#fafafa66">' .. '0,0' .. "</span>",
                                 font = 'SF Nodo Pro 16',
                                 ellipsize = 'start',
                                 align = 'left',

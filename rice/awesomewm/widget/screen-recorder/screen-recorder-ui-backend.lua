@@ -72,8 +72,8 @@ local status_audio = sr_user_audio
 
 -- Update UI on startup using the user config
 
-sr_resolution_tbox:set_markup('<span foreground="#FFFFFF66">' .. sr_user_resolution .. "</span>")
-sr_offset_tbox:set_markup('<span foreground="#FFFFFF66">' .. sr_user_offset .. "</span>")
+sr_resolution_tbox:set_markup('<span foreground="#fafafa66">' .. sr_user_resolution .. "</span>")
+sr_offset_tbox:set_markup('<span foreground="#fafafa66">' .. sr_user_offset .. "</span>")
 
 local sr_res_default_markup = sr_resolution_tbox:get_markup()
 local sr_offset_default_markup = sr_offset_tbox:get_markup()

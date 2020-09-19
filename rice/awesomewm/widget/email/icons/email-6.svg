@@ -35,7 +35,7 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff">
+     pagecolor="#fafafa">
     <inkscape:grid
        originy="0"
        originx="-22"
@@ -125,7 +125,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccscsccccccccccccccccccccc" />
     <rect
-       style="clip-rule:evenodd;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke-width:1.29741;stroke-linejoin:round;stroke-miterlimit:1.41421"
+       style="clip-rule:evenodd;fill:#fafafa;fill-opacity:0;fill-rule:evenodd;stroke-width:1.29741;stroke-linejoin:round;stroke-miterlimit:1.41421"
        id="rect817-2"
        width="22"
        height="22"
@@ -142,7 +142,7 @@
        id="text977"
        y="40.99889"
        x="14.423727"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.53582px;line-height:1.25;font-family:'SF Nodo Pro';-inkscape-font-specification:'SF Nodo Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.213397"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.53582px;line-height:1.25;font-family:'SF Nodo Pro';-inkscape-font-specification:'SF Nodo Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:0.213397"
        xml:space="preserve"><tspan
          y="40.99889"
          x="14.423727"

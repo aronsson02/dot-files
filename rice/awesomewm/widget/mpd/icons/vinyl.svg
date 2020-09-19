@@ -103,7 +103,7 @@
     </linearGradient>
   </defs>
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#fafafa"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -5690,7 +5690,7 @@ BhCaltsU1p9E7F7uUfzR1RfBZ2ADUtyqDBMWbdxQOePgxl+c5W+W9D/M+m8m/duI/gan30r2RUZf
        d="M 195.1062,132.68914 224,149.179 v 169.615 l -28.8938,16.49101 C 175.71758,346.35048 160,337.27956 160,314.97681 V 152.99734 c 0,-22.28138 15.8057,-31.32338 35.1062,-20.3082 z"
        id="path1659" />
     <path
-       style="stroke:#ffffff;stroke-width:8;stroke-opacity:0.3"
+       style="stroke:#fafafa;stroke-width:8;stroke-opacity:0.3"
        inkscape:connector-curvature="0"
        d="m 193.1235,331.81098 142.38536,-81.26214 c 16.64414,-9.49914 16.66556,-23.61217 0,-33.12353 L 193.1235,136.16317 C 176.45315,126.64908 164,133.8282 164,152.99734 v 161.97947 c 0,19.22067 12.3913,26.38357 29.1235,16.83417 z"
        id="path1661" />

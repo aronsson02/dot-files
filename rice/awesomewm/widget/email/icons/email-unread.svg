@@ -35,7 +35,7 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff">
+     pagecolor="#fafafa">
     <inkscape:grid
        originy="0"
        originx="-22"
@@ -125,7 +125,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccscsccccccccccccccccccccc" />
     <rect
-       style="clip-rule:evenodd;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke-width:1.29741;stroke-linejoin:round;stroke-miterlimit:1.41421"
+       style="clip-rule:evenodd;fill:#fafafa;fill-opacity:0;fill-rule:evenodd;stroke-width:1.29741;stroke-linejoin:round;stroke-miterlimit:1.41421"
        id="rect817-2"
        width="22"
        height="22"

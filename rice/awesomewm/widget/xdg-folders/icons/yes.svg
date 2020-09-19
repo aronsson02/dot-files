@@ -47,7 +47,7 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#fafafa" />
   <g
      id="g6"
      transform="matrix(12.5,0,0,12.5,20,-12934.5)">
@@ -63,7 +63,7 @@
        width="16" />
     <path
        id="path4"
-       fill="#ffffff"
+       fill="#fafafa"
        d="m 12.658,1039.878 -5.658,5.656 -2.828,-2.828 -1.414,1.414 2.828,2.828 1.414,1.414 1.414,-1.414 5.658,-5.656 z" />
   </g>
 </svg>

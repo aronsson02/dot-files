@@ -21,7 +21,7 @@
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs19" /><sodipodi:namedview
-   pagecolor="#ffffff"
+   pagecolor="#fafafa"
    bordercolor="#666666"
    borderopacity="1"
    objecttolerance="10"
@@ -53,7 +53,7 @@
    data-old_color="#000000"
    id="path2"
    inkscape:connector-curvature="0"
-   style="fill:#ffffff" />
+   style="fill:#fafafa" />
     </g>
 </g><g
      id="g12">
@@ -66,6 +66,6 @@
    data-old_color="#000000"
    id="path8"
    inkscape:connector-curvature="0"
-   style="fill:#ffffff" />
+   style="fill:#fafafa" />
     </g>
 </g></g> </svg>

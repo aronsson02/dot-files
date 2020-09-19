@@ -1,4 +1,4 @@
-fontforge.FontView.GlyphInfoColor: #ffffff
+fontforge.FontView.GlyphInfoColor: #fafafa
 fontforge.FontView.EmptySlotFgColor: #cccbca
 fontforge.FontView.SelectedColor: #bfbfbf
 fontforge.FontView.SelectedFgColor: #000000
@@ -16,10 +16,10 @@ fontforge.CharView.PointOfInflectionColor: #008080
 fontforge.CharView.AlmostHVColor: #00ff80
 fontforge.CharView.NextCPColor: #007090
 fontforge.CharView.PrevCPColor: #ff0000
-fontforge.CharView.SelectedCPColor: #ffffff
+fontforge.CharView.SelectedCPColor: #fafafa
 fontforge.CharView.CoordinateLineColor: #808080
 fontforge.CharView.ItalicCoordColor: #909090
-fontforge.CharView.MetricsLabelColor: #ffffff
+fontforge.CharView.MetricsLabelColor: #fafafa
 fontforge.CharView.HintLabelColor: #00cccc
 fontforge.CharView.BlueValuesStippledColor: #808080ff
 fontforge.CharView.FamilyBlueStippledColor: #80ff7070
@@ -34,7 +34,7 @@ fontforge.CharView.VHintActiveColor: #0000ff
 fontforge.CharView.DraggingComparisonOutlineColor: #8800bb00
 fontforge.CharView.DraggingComparisonAlphaChannelOverride: #88000000
 
-fontforge.CharView.WidthColor: #ffffff
+fontforge.CharView.WidthColor: #fafafa
 fontforge.CharView.WidthSelColor: #00ff00
 fontforge.CharView.LBearingSelColor: #00ff00
 fontforge.CharView.GridFitWidthColor: #009800
@@ -43,7 +43,7 @@ fontforge.CharView.AnchorColor: #0040ff
 fontforge.CharView.AnchoredOutlineColor: #0040ff
 fontforge.CharView.TemplateOutlineColor: #009800
 fontforge.CharView.OldOutlineColor: #008000
-fontforge.CharView.TransformOriginColor: #ffffff
+fontforge.CharView.TransformOriginColor: #fafafa
 fontforge.CharView.GuideOutlineColor: #cccccc
 fontforge.CharView.GridFitOutlineColor: #009800
 fontforge.CharView.BackgroundOutlineColor: #009800
@@ -68,11 +68,11 @@ fontforge.CharView.MeasureToolPointColor: #ff0000
 fontforge.CharView.MeasureToolPointSnappedColor: #00ff00
 fontforge.CharView.MeasureToolCanvasNumbersColor: #ff0000
 fontforge.CharView.MeasureToolCanvasNumbersSnappedColor: #00ff00
-fontforge.CharView.MeasureToolWindowForeground: #ffffff
+fontforge.CharView.MeasureToolWindowForeground: #fafafa
 fontforge.CharView.MeasureToolWindowBackground: #808080
 
-fontforge.BitmapView.BitmapColor: #ffffff
-fontforge.BitmapView.OverviewColor: #ffffff
+fontforge.BitmapView.BitmapColor: #fafafa
+fontforge.BitmapView.OverviewColor: #fafafa
 fontforge.BitmapView.GuideColor: #404040
 fontforge.BitmapView.GuideColor: #404040
 fontforge.BitmapView.GridColor: #a0a0a0
@@ -90,20 +90,20 @@ fontforge.MetricsView.KernLineColor: #3d7905
 fontforge.MetricsView.SideBearingLineColor: #12376c
 fontforge.MetricsView.SelectedGlyphColor: #bfbfbf
 
-fontforge.View.Background: #363636
+fontforge.View.Background: #212121
 
-Gdraw.Background: #363636
-Gdraw.Foreground: #ffffff
+Gdraw.Background: #212121
+Gdraw.Foreground: #fafafa
 Gdraw.ScreenWidthCentimeters: 101.6
 
 Gdraw.GProgress.Font: 400 12pt courier,monospace,clearlyu,unifont,unifont upper
-Gdraw.GProgress.Foreground: #ffffff
+Gdraw.GProgress.Foreground: #fafafa
 Gdraw.GProgress.FillColor: #00dede
-Gdraw.GProgress.Background: #363636
+Gdraw.GProgress.Background: #212121
 
 Gdraw.GGadget.Popup.Font: 400 8pt sans
-Gdraw.GGadget.Popup.Foreground: #ffffff
-Gdraw.GGadget.Popup.Background: #363636
+Gdraw.GGadget.Popup.Foreground: #fafafa
+Gdraw.GGadget.Popup.Background: #212121
 Gdraw.GGadget.Popup.Delay: 1000
 Gdraw.GGadget.Popup.LifeTime: 20000
 
@@ -114,9 +114,9 @@ Gdraw.GGadget.Box.ShadowOuter: False
 Gdraw.GGadget.Box.DoDepressedBackground: False
 Gdraw.GGadget.Box.DrawDefault: False
 Gdraw.GGadget.Box.GradientBG: False
-Gdraw.GGadget.Box.NormalForeground: #ffffff
+Gdraw.GGadget.Box.NormalForeground: #fafafa
 Gdraw.GGadget.Box.DisabledForeground: #e6e6e6
-Gdraw.GGadget.Box.NormalBackground: #363636
+Gdraw.GGadget.Box.NormalBackground: #212121
 Gdraw.GGadget.Box.DisabledBackground: #303030
 Gdraw.GGadget.Box.PressedBackground: #303030
 Gdraw.GGadget.Box.GradientStartCol: #00bfbf
@@ -197,7 +197,7 @@ Gdraw.GRadioOn.Image: radio_on.png
 Gdraw.GRadioOn.DisabledImage: radio_on_disabled.png
 
 Gdraw.GRadioOff.Box.DoDepressedBackground: False
-Gdraw.GRadioOff.Box.PressedBackground: #363636
+Gdraw.GRadioOff.Box.PressedBackground: #212121
 Gdraw.GRadioOff.Box.BorderType: none
 Gdraw.GRadioOff.Box.BorderShape: roundrect
 Gdraw.GRadioOff.Image: radio_off.png
@@ -216,7 +216,7 @@ Gdraw.GCheckBoxOn.Image: check_on.png
 Gdraw.GCheckBoxOn.DisabledImage: check_on_disabled.png
 
 Gdraw.GCheckBoxOff.Box.DoDepressedBackground: False
-Gdraw.GCheckBoxOff.Box.PressedBackground: #363636
+Gdraw.GCheckBoxOff.Box.PressedBackground: #212121
 Gdraw.GCheckBoxOff.Box.BorderType: none
 Gdraw.GCheckBoxOff.Box.BorderShape: roundrect
 Gdraw.GCheckBoxOff.Box.Padding: 3
@@ -255,12 +255,12 @@ Gdraw.GList.Box.BorderType: box
 Gdraw.GList.Font: 400 10pt sans
 
 Gdraw.GScrollBar.Box.BorderOuter: False
-Gdraw.GScrollBar.Box.NormalBackground: #363636
+Gdraw.GScrollBar.Box.NormalBackground: #212121
 Gdraw.GScrollBar.Box.BorderType: none
 Gdraw.GScrollBar.Box.BorderWidth: 1
 Gdraw.GScrollBar.Box.Padding: 2
 
-Gdraw.GScrollBarThumb.Box.NormalBackground: #ffffff
+Gdraw.GScrollBarThumb.Box.NormalBackground: #fafafa
 Gdraw.GScrollBarThumb.Box.DisabledBackground: #808080
 Gdraw.GScrollBarThumb.Box.BorderWidth: 1
 Gdraw.GScrollBarThumb.Box.Padding: 2
@@ -270,7 +270,7 @@ Gdraw.GLine.Box.BorderShape: roundrect
 Gdraw.GLine.Box.BorderWidth: 2
 Gdraw.GLine.Box.Padding: 0
 
-Gdraw.GGroup.Box.NormalBackground: #363636
+Gdraw.GGroup.Box.NormalBackground: #212121
 Gdraw.GGroup.Box.DisabledBackground: #303030
 Gdraw.GGroup.Box.BorderType: none
 Gdraw.GGroup.Box.BorderShape: roundrect
@@ -288,7 +288,7 @@ Gdraw.GMenu.Box.Padding: 3
 Gdraw.GMenu.Font: 400 10pt sans
 Gdraw.GMenu.MacIcons: False
 
-Gdraw.GMatrixEdit.Box.NormalBackground: #363636
+Gdraw.GMatrixEdit.Box.NormalBackground: #212121
 Gdraw.GMatrixEdit.Box.DisabledBackground: #303030
 Gdraw.GMatrixEdit.Box.BorderType: none
 Gdraw.GMatrixEdit.Box.BorderShape: roundrect
@@ -296,8 +296,8 @@ Gdraw.GMatrixEdit.Box.BorderWidth: 0
 Gdraw.GMatrixEdit.Box.Padding: 0
 Gdraw.GMatrixEdit.Font: 400 12pt Inconsolata,monospace
 
-Gdraw.GMatrixEdit.TitleBG: #363636
-Gdraw.GMatrixEdit.TitleFG: #ffffff
+Gdraw.GMatrixEdit.TitleBG: #212121
+Gdraw.GMatrixEdit.TitleFG: #fafafa
 Gdraw.GMatrixEdit.TitleDivider: #2b2b2b
 Gdraw.GMatrixEdit.RuleCol: #908f8e
 Gdraw.GMatrixEdit.FrozenCol: #a40000

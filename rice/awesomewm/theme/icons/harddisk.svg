@@ -35,7 +35,7 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#fafafa" />
   <metadata
      id="metadata21">
     <rdf:RDF>
@@ -252,7 +252,7 @@
          cx="16" />
     </g>
     <rect
-       style="fill:#ffffff;fill-opacity:0;stroke-width:1.00858"
+       style="fill:#fafafa;fill-opacity:0;stroke-width:1.00858"
        id="rect853"
        width="32"
        height="32"

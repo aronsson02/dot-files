@@ -44,7 +44,7 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff">
+     pagecolor="#fafafa">
     <inkscape:grid
        originy="-76.000002"
        originx="-134"
@@ -156,7 +156,7 @@
        id="path4-2-7"
        inkscape:connector-curvature="0" />
     <rect
-       style="fill:#ffffff;fill-opacity:0;stroke-width:0.91767"
+       style="fill:#fafafa;fill-opacity:0;stroke-width:0.91767"
        id="rect822-7-4"
        width="22"
        height="22"
