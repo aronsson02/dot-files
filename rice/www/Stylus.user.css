@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stylus
-@version      1.0.0
+@version      2.0.0
 @description  Stylus theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -15,12 +15,12 @@
 
 @-moz-document url-prefix("moz-extension://") {
 #stylus-edit, #stylus-popup, #stylus-manage, #options-title, .CodeMirror-search-field, #message-box-buttons {
-    background-color: var(--bg) !important;
-    color: var(--fg) !important;
+    background-color: var(--Surface) !important;
+    color: var(--Foreground) !important;
 }
 #options, #message-box-contents {
-    background-color: var(--abg) !important;
-    color: var(--fg) !important;
+    background-color: var(--Surface-Variant) !important;
+    color: var(--Foreground) !important;
 }
 #message-box.danger #message-box-title {
 	background-color: var(--red) !important;

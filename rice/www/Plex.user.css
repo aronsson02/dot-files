@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.0.3
+@version      2.0.0
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -68,7 +68,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .SourceSidebar-openSidebar-364QEr.SourceSidebar-sidebar-YpV2mw,
 .SourceSidebar-collapsedSidebar-3MDUee.SourceSidebar-sidebar-YpV2mw,
 .show-modal-transparent {
-	background-color: var(--bg) !important
+	background-color: var(--Surface) !important
 }
 .alert-bar.server-update-alert-bar.notify,
 .EditHomeModalContent-button-HgDyCQ.ModalFooter-button-15VJa0.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
@@ -95,7 +95,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .Badge-primary-3suJx3,
 .PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw,
 .NavBarButton-button-oTeMHk {
-	background-color: var(--ac) !important
+	background-color: var(--Primary) !important
 }
 .SeekBar-seekBarFill-1Lcu0w.Slider-fill-35GFqs,
 .Slider-thumb-2QGiU1.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
@@ -104,7 +104,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .ConfirmModal-confirmButton-1DVQ-r.SpinnerButton-button-1A8EcL.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN:hover,
 .save-btn.btn.btn-primary.btn-loading.save:hover,
 .NavBarButton-button-oTeMHk:hover {
-	background-color: var(--xac) !important
+	background-color: var(--Primary-Variant) !important
 }
 .Link-link-2n0yJn.Link-primary-1vcAGA,
 .PageHeaderTabButton-isSelected-25CIS7,
@@ -154,7 +154,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .edit-section-modal .wizard-blocks-group > .wizard-block.selected,
 .edit-section-modal .wizard-blocks-group > .wizard-block.selected,
 .PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw:hover {
-	color: var(--ac) !important
+	color: var(--Primary) !important
 }
 .glyphicon.remove-2:hover,
 .SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.Link-link-2n0yJn.Link-default-2XA2bN.Link-isSelected-IRm9uM:hover,
@@ -191,19 +191,19 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 #plex-icon-player-volume-mute-560:hover,
 #plex-icon-player-more-vertical-560:hover,
 .help-block a:hover {
-	color: var(--xac) !important
+	color: var(--Primary-Variant) !important
 }
 .input-group-addon.edit-lock-addon.locked .glyphicon.lock,
 .NavBarActivityButton-label-2ZN0gQ,
 .match-score,
 .ModalContent-closeButton-3NY5uJ.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
 .NavBarButton-button-oTeMHk {
-	color: var(--fg) !important
+	color: var(--Foreground) !important
 }
 .media-poster-container.selected .media-poster::after,
 .PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw,
 .NavBarButton-button-oTeMHk:hover {
-	color: var(--bg) !important
+	color: var(--Surface) !important
 }
 .mapping-icon.glyphicon.left-arrow.text-success,
 .status-header.text-success,
@@ -235,14 +235,14 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 	box-shadow: none !important;
 }
 .isFocused:not(.isDisabled) {
-	box-shadow: inset 0 0 0 2px var(--xac) !important;
+	box-shadow: inset 0 0 0 2px var(--Primary-Variant) !important;
 }
 .DisclosureArrow-isSelected-QMJhDY,
 .PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw {
-	border-color: var(--xac)!important;
+	border-color: var(--Primary-Variant)!important;
 }
 .SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv.SourceSidebarLink-isSelected-27-9-6 {
-	box-shadow: inset 4px 0 0 0 var(--ac) !important
+	box-shadow: inset 4px 0 0 0 var(--Primary) !important
 }
 .media-poster-container.selected .media-poster,
 .force-hover .media-poster-container .media-poster,
@@ -251,11 +251,11 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .media-poster-container:focus .media-poster-fade,
 .media-poster-container:hover .media-poster,
 .media-poster-container:hover .media-poster-fade {
-	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--ac) !important;
-	box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--ac) !important;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--Primary) !important;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--Primary) !important;
 }
 .media-poster-container.selected .media-poster::before {
-	border-color: var(--ac) var(--ac) transparent transparent !important;
+	border-color: var(--Primary) var(--Primary) transparent transparent !important;
 }
 .EditHomeModalContent-footer-10Ix6N.ModalFooter-modalFooter-30WIB5,
 .MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt {
@@ -267,21 +267,21 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-:hover,
 .input-group-addon.edit-lock-addon.locked,
 .MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt {
-	border-color: var(--ac) !important
+	border-color: var(--Primary) !important
 }
 .MetadataPosterCardFace-face--dz_Dx:hover,
 .PrePlayCastCell-posterCardLinkContainer-27hxZ8.PrePlayCastCell-posterCardContainer-2xrsDg.Link-link-2n0yJn.Link-default-2XA2bN:hover {
-	box-shadow: 0 0 0 2px var(--xac) !important;
+	box-shadow: 0 0 0 2px var(--Primary-Variant) !important;
 }
 .SourceSidebarLink-isSelected-27-9-6 {
-	box-shadow: inset 4px 0 0 0 var(--xac) !important;
+	box-shadow: inset 4px 0 0 0 var(--Primary-Variant) !important;
 }
 .SourceSidebarItem-button-257zM0.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-small-3s6oyr:hover,
 .SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv:hover {
-	box-shadow: inset 4px 0 0 0 var(--ac) !important;
+	box-shadow: inset 4px 0 0 0 var(--Primary) !important;
 }
 .MetadataPosterCardFace-isSelected-1XUgkl {
-	box-shadow: 0 0 0 3px var(--xac) !important;
+	box-shadow: 0 0 0 3px var(--Primary-Variant) !important;
 }
 .modal-backdrop.fade.in {
 	opacity: 0 !important;
@@ -292,7 +292,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 }
 .background-container div div div {
 	background-image: none !important;
-	background-color: var(--xbg) !important;
+	background-color: var(--Background) !important;
 }
 /* Spinner */
 .MetadataPosterCardOverlay-refreshingSpinner-ipJiyn.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
@@ -302,11 +302,11 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
 .Spinner-large-3AQPyD.Spinner-spinner-Niere7.spin-spin-2kLwt_,
 	.SpinnerButton-spinner-1TgDPI.Spinner-spinner-Niere7.spin-spin-2kLwt_.Spinner-small-3PStHE.Spinner-spinner-Niere7.spin-spin-2kLwt_{
-	border-color: var(--xac) transparent !important;
+	border-color: var(--Primary-Variant) transparent !important;
 }
 /* Darkified Side Bar */
 div[class^="SourceSidebar-sidebar-"] {
-	background-color: var(--bg) !important;
+	background-color: var(--Surface) !important;
 }
 /* Hoverification Effects */
 div[class^="MetadataPhotoCell-photoContainer-"]:hover div {
@@ -314,12 +314,12 @@ div[class^="MetadataPhotoCell-photoContainer-"]:hover div {
 	box-shadow: none !important;
 }
 div[class^="MetadataPhotoCell-photoContainer-"]:hover > div:first-child {
-	outline: 2px solid var(--ac) !important;
+	outline: 2px solid var(--Primary) !important;
 }
 div[class^="MetadataPosterCard-card-"] {
 	-webkit-perspective: 500px;
 	perspective: 500px;
-	box-shadow: 0px 5px 12px -4px var(--bg);
+	box-shadow: 0px 5px 12px -4px var(--Surface);
 	transition: all 350ms;
 }
 /* Roundification Effects */
@@ -344,14 +344,14 @@ div[class^="MetadataPosterCard-card-"] {
 /* Search Box Colorification */
 .QuickSearchInput-focused-3rEqJC {
 	background: rgba(15, 16, 25, 0.5) !important;
-	color: var(--ac) !important;
+	color: var(--Primary) !important;
 }
 .QuickSearchInput-focused-3rEqJC input {
-	color: var(--ac) !important;
+	color: var(--Primary) !important;
 }
 /* Cast Hoverification Effect */
 a[class^="PrePlayCastCell-cardLink-"] {
-	box-shadow: 0px 8px 15px -5px var(--bg) !important;
+	box-shadow: 0px 8px 15px -5px var(--Surface) !important;
 }
 a[class^="PrePlayCastCell-cardLink-"]:hover {
 	box-shadow: none;
@@ -443,13 +443,13 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-unplayed
 }
 @keyframes attention {
 	0% {
-		background-color: var(--ac);
+		background-color: var(--Primary);
 	}
 	50% {
-		background-color: var(--xac);
+		background-color: var(--Primary-Variant);
 	}
 	100% {
-		background-color: var(--ac);
+		background-color: var(--Primary);
 	}
 }
 .SettingsFormSection-section-1zYMPA:hover .Link-link-2n0yJn.Link-danger-58vt6Z,
@@ -468,16 +468,16 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-unplayed
 	animation: attention 2s linear infinite !important;
 }
 .AudioVideoFullPlayer-fullPlayer-3bJyOR:not(.AudioVideoFullPlayer-isVideo-1aASwH) .FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
-	background-color: var(--bg) !important;
-	background-image: var(--bg) !important;
+	background-color: var(--Surface) !important;
+	background-image: var(--Surface) !important;
 }
 .FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
 	filter: blur(2px) grayscale(0.5) contrast(1.03) brightness(0.7) invert(0.03) !important;
 }
 .background-container > .FullPage-container-17Y0cs > div > div > div,
 .FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
-	background-color: var(--bg) !important;
-	background-image: var(--bg) !important;
+	background-color: var(--Surface) !important;
+	background-image: var(--Surface) !important;
 }
 .Link-link-2n0yJn.Link-danger-58vt6Z {
 	opacity: 0;

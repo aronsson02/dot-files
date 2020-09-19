@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      1.0.0
+@version      2.0.0
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -25,22 +25,22 @@
     backdrop-filter: var(--bdbl) !important
 }
 thead, .table-header, .card-header, .modal-header, .edit.nav.nav-tabs, .table-striped > tbody > tr:nth-of-type(2n+1) {
-	background-color: var(--bg) !important
+	background-color: var(--Surface) !important
 }
 .card-body, #latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), .list-group-item {
-	background-color: var(--abg) !important
+	background-color: var(--Surface-Variant) !important
 }
 body, .bg-reader-controls, .form-control {
-	background-color: var(--xbg) !important
+	background-color: var(--Background) !important
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.show .nav-link, .nav-pills .nav-link.active, .nav-pills .show > .nav-link, .badge-warning, .alert, .btn-success.disabled, .btn-success:disabled, .btn-warning {
-	background-color: var(--ac) !important
+	background-color: var(--Primary) !important
 }
 .badge-success, .btn-success {
 	background-color: var(--green) !important
 }
 .badge-warning, .alert {
-	color: var(--fg) !important
+	color: var(--Foreground) !important
 }
 .text-primary {
 	color: var(--yellow) !important
@@ -49,7 +49,7 @@ body, .bg-reader-controls, .form-control {
 	color: var(--green) !important
 }
 .nav.nav-tabs, .nav.nav-pills, .card-header-pills {
-    border-bottom: 3px solid var(--ac) !important
+    border-bottom: 3px solid var(--Primary) !important
 }
 .border-bottom {
 	border-bottom: 1px solid var(--grey) !important
@@ -58,7 +58,7 @@ body, .bg-reader-controls, .form-control {
 	border: none !important
 }
 .card {
- background: var(--bg) !important
+ background: var(--Surface) !important
 }
 .btn-warning {
 	background-image: none !important

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      1.1.0
+@version      2.0.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -15,25 +15,27 @@
 
 @-moz-document regexp(".*") {
 	:root {
-   --fg:   #FFF;
-  --afg:   #CDCDCD;
-  --xfg:   #AAA;
-   --bg:   #353535;
-  --tbg:   #00000066;
-  --abg:   #303030;
-  --xbg:   #2B2B2B;
-   --ac:   #00BFBF;
-  --xac:   #00E6E6;
-  --grey:  #808080;
-  --red:   #F44336;
-  --orange:#EA9D1C;
-  --dark-orange:#1F1504;
-  --green: #00E676;
-  --blue: #120056;
-  --bdb: blur(50px) brightness(66%);
-  --bdblur: blur(50px);
-  --bdblu: blur(5px) brightness(66%);
-  --bdbl: blur(5px);
+        --Foreground:   #FAFAFA;
+        --Foreground-Variant:   #FAFAFACC;
+        --Foreground-Dark:   #FAFAFA66;
+        --Background:   #212121;
+        --Surface:   #626262;
+        --Surface-Variant:   #424242;
+        --Surface-Transparent:   #00000066;
+        --Primary:   #00BFBF;
+        --Primary-Variant:   #00E6E6;
+        --Secondary:   #6200EE;
+        --Secondary-Variant:   #3700B3;
+        --grey:  #808080;
+        --red:   #F44336;
+        --orange:#EA9D1C;
+        --dark-orange:#1F1504;
+        --green: #00E676;
+        --blue: #120056;
+        --bdb: blur(50px) brightness(66%);
+        --bdblur: blur(50px);
+        --bdblu: blur(5px) brightness(66%);
+        --bdbl: blur(5px);
 }
 
 /*body {
