@@ -1,25 +1,28 @@
 :root {
-   --fg:   #FFF;
-  --afg:   #CDCDCD;
-  --xfg:   #AAA;
-   --bg:   #353535;
-  --tbg:   #00000066;
-  --abg:   #303030;
-  --xbg:   #2B2B2B;
-   --ac:   #00BFBF;
-  --xac:   #00E6E6;
-  --grey:  #808080;
-  --red:   #F44336;
-  --orange:#EA9D1C;
-  --dark-orange:#1F1504;
-  --green: #00E676;
-  --blue: #120056;
-  --bdb: blur(50px) brightness(66%);
-  --bdblur: blur(50px);
-  --bdbl: blur(5px);
+        --Foreground:   #FAFAFA;
+        --Foreground-Variant:   #FAFAFACC;
+        --Foreground-Dark:   #FAFAFA66;
+        --Background:   #212121;
+        --Surface:   #424242;
+        --Surface-Variant:   #626262;
+        --Surface-Transparent:   #00000066;
+        --Primary:   #00BFBF;
+        --Primary-Variant:   #00E6E6;
+        --Secondary:   #6200EE;
+        --Secondary-Variant:   #3700B3;
+        --grey:  #808080;
+        --red:   #F44336;
+        --orange:#EA9D1C;
+        --dark-orange:#1F1504;
+        --green: #00E676;
+        --blue: #120056;
+        --blur: blur(50px);
+        --blur-variant: blur(5px);
+        --blur-dark: blur(50px) brightness(66%);
+        --blur-dark-variant: blur(5px) brightness(66%);
 }
 * {
-    scrollbar-color: var(--ac) var(--bg) !important;
+    scrollbar-color: var(--Primary) var(--Background) !important;
     scrollbar-width: none !important;
 }
 @keyframes hue-rotate {
@@ -38,18 +41,27 @@
     }
 }
 @-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
-  body{background-color:var(--bg)!important;--newtab-search-icon: transparent !important;}
+  body{background-color:var(--Background)!important;--newtab-search-icon: transparent !important;}
+
   a,a:visited,a:hover{color:#292D31!important}
+
 	#newtab-search-text {
-	background-color: var(--bg) !important;
+	background-color: var(--Background) !important;
 	font-size: 18px !important;
-	color: var(--xfg) !important;
+	color: var(--Foreground-Dark) !important;
 	box-shadow: none !important;
 	text-align: center !important;
 	border:none !important;
 	font-weight: bold !important;
-		}
-
+    }
+    .collapsible-section {
+        background-color: var(--Surface) !important;
+        border-radius: 16px !important;
+    }
+    .collapsible-section.active {
+        background-color: var(--Surface-Variant) !important;
+        border-radius: 16px !important;
+    }
 .non-collapsible-section {
     display: none !important;
 }
@@ -58,7 +70,6 @@
     padding-left: 20px !important;
     padding-inline-end: 13px !important;
   }
-
 
 .search-wrapper .logo-and-wordmark .wordmark {
   display: none!important;
@@ -70,8 +81,6 @@
   filter: saturate(30%) opacity(50%)!important;
 }
 
-
-
 .search-button{background:none !important;}
 
 .prefs-button button {fill: #9BA8BB !important;}
@@ -81,35 +90,34 @@
 
  .contentSearchSuggestionTable {display: none !important;}
 
-
 }
 :root {
 
-    --in-content-border-active: var(--ac) !important;
+    --in-content-border-active: var(--Primary) !important;
     --in-content-border-active-shadow: none !important;
-    --in-content-page-background: var(--bg) !important;
+    --in-content-page-background: var(--Background) !important;
 }
 
 @-moz-document url("about:home"), url("about:newtab"){ .icon.icon-pin-small{ display: none !important } }
 
 /* uBlock Origin */
 @-moz-document url("moz-extension://cb34cddc-988c-418d-99ce-3e8e2acd7488/popup.html") {
-    body{background-color: var(--bg) !important; color: var(--fg) !important; }
-    h2 {background-color: var(--bg) !important; color: var(--fg) !important; font-weight: bold !important;}
-    span {color: var(--fg) !important;}
-    #extraTools {background-color: var(--bg) !important;}
-    #extraTools svg {fill: var(--fg) !important;}
-    #firewallContainer > div > span:first-child {background-color: var(--bg) !important; color: var(--fg) !important;}
+    body{background-color: var(--Background) !important; color: var(--Foreground) !important; }
+    h2 {background-color: var(--Background) !important; color: var(--Foreground) !important; font-weight: bold !important;}
+    span {color: var(--Foreground) !important;}
+    #extraTools {background-color: var(--Background) !important;}
+    #extraTools svg {fill: var(--Foreground) !important;}
+    #firewallContainer > div > span:first-child {background-color: var(--Background) !important; color: var(--Foreground) !important;}
     #appinfo {display: none !important;}
-    #switch .fa-icon {fill: var(--fg) !important;}
-    body.off #switch .fa-icon {fill: var(--fg) !important;}
-    #rulesetTools .fa-icon {background-color: var(--bg) !important; fill: var(--fg) !important;}
-    #rulesetTools .fa-icon:hover {background-color: var(--bg) !important; fill: var(--fg) !important;}
-    #basicTools svg {fill: var(--fg) !important;}
-    #basicTools span:hover {fill: var(--fg) !important;}
-    #refresh {background-color: var(--bg) !important; fill: var(--fg) !important; border: none !important;}
-    #refresh svg:hover, #refresh svg:active {fill: var(--fg) !important;}
-    .nope {stroke: var(--fg) !important;}
+    #switch .fa-icon {fill: var(--Foreground) !important;}
+    body.off #switch .fa-icon {fill: var(--Foreground) !important;}
+    #rulesetTools .fa-icon {background-color: var(--Background) !important; fill: var(--Foreground) !important;}
+    #rulesetTools .fa-icon:hover {background-color: var(--Background) !important; fill: var(--Foreground) !important;}
+    #basicTools svg {fill: var(--Foreground) !important;}
+    #basicTools span:hover {fill: var(--Foreground) !important;}
+    #refresh {background-color: var(--Background) !important; fill: var(--Foreground) !important; border: none !important;}
+    #refresh svg:hover, #refresh svg:active {fill: var(--Foreground) !important;}
+    .nope {stroke: var(--Foreground) !important;}
 
     #firewallContainer > div > span:nth-child(2), #firewallContainer > div > span:nth-child(3) {background-color: #191925 !important;}
     #firewallContainer > div > span.allowRule.ownRule {background-color: #2ecc71 !important;}

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stylus
-@version      2.0.0
+@version      2.0.1
 @description  Stylus theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -31,6 +31,6 @@
 #help-popup {
 	background-color: transparent !important;
 	background-image: none !important;
-	backdrop-filter: var(--bdb) !important;
+	backdrop-filter: var(--blur-dark) !important;
 }
 }

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      2.0.0
+@version      2.0.1
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -49,7 +49,7 @@
 .media-info-file-list.well {
 	background-color: transparent !important;
 	background-image: none !important;
-	backdrop-filter: var(--bdb) !important;
+	backdrop-filter: var(--blur-dark) !important;
 }
 div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1SwhlG.Link-link-2n0yJn.Link-default-2XA2bN {
 	background-color: transparent !important;

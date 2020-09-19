@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.0.0
+@version      2.0.1
 @description  Google theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -21,7 +21,7 @@
 	.modal-dialog-content,
 	.modal-dialog-title {
 		background: none !important;
-		backdrop-filter: var(--bdb) !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	.goog-toolbar-combo-button-input:focus,
 	.docs-material .goog-toolbar-menu-button,
@@ -431,7 +431,7 @@ domain("google.no") {
 	.gb_Db.gb_Db,
 	.gb_Db.gb_Db:hover {
 		background: none !important;
-		backdrop-filter: var(--bdb) !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	body,
 	#gsr #viewport #searchform .sfbg,
@@ -547,7 +547,7 @@ domain("google.no") {
 @-moz-document domain("drive.google.com") {
 	.gb_8e {
 		background: none !important;
-		backdrop-filter: var(--bdb) !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	.gb_sa.gb_4a.gb_9e.gb_Oc,
 	.s55KNe .jGNTYb,
@@ -668,7 +668,7 @@ domain("google.no") {
 	.gb_5c.gb_Pg.gb_i,
 	.action-menu-widget {
 		background: none !important;
-		backdrop-filter: var(--bdblu) !important;
+		backdrop-filter: var(--blur-dark-variant) !important;
 	}
 	.scene-footer,
 	.widget-zoom-button,
@@ -676,12 +676,12 @@ domain("google.no") {
 	.widget-watermark,
 	.snackbar {
 		background: none !important;
-		backdrop-filter: var(--bdbl) !important;
+		backdrop-filter: var(--blur-variant) !important;
 	}
 	.widget-settings-pane,
 	.modal-border {
 		background: none !important;
-		backdrop-filter: var(--bdblur) !important;
+		backdrop-filter: var(--blur) !important;
 	}
 	.searchbox,
 	.suggestions,

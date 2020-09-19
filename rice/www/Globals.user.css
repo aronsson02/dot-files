@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      2.0.1
+@version      2.0.3
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -32,10 +32,10 @@
         --dark-orange:#1F1504;
         --green: #00E676;
         --blue: #120056;
-        --bdb: blur(50px) brightness(66%);
-        --bdblur: blur(50px);
-        --bdblu: blur(5px) brightness(66%);
-        --bdbl: blur(5px);
+        --blur: blur(50px);
+        --blur-variant: blur(5px);
+        --blur-dark: blur(50px) brightness(66%);
+        --blur-dark-variant: blur(5px) brightness(66%);
 }
 
 /*body {

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         GitHub
-@version      2.0.0
+@version      2.0.1
 @description  GitHub theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -17,7 +17,7 @@
 .footer, .flex-shrink-0.col-12.col-md-3, #readme, .Box, .bg-gray-light.pt-3, .Popover-message, .Box.mt-3, .protip, .subnav-search, .mb-4.js-notice, .flex-self-center.ml-3.flex-self-stretch.d-none.d-lg-flex.flex-items-center.lh-condensed-ultra, .table-list-header, .js-check-all-container .blankslate, .col-12.col-lg-6.pr-0.pr-md-3.my-1.my-md-2.my-lg-6, .bg-gray-light, .repository-content  .d-flex.flex-wrap, .repository-content  .clearfix.py-3, .bg-gray, .gh-header, .timeline-comment, .js-timeline-item .TimelineItem {
 	background-color: transparent !important;
 	background-image: none !important;
-	backdrop-filter: var(--bdb) !important;
+	backdrop-filter: var(--blur-dark) !important;
 }
 .protip, .mb-4.js-notice, .flex-self-center.ml-3.flex-self-stretch.d-none.d-lg-flex.flex-items-center.lh-condensed-ultra, .col-12.col-lg-6.pr-0.pr-md-3.my-1.my-md-2.my-lg-6, .repository-content, .d-flex.flex-wrap, .clearfix.py-3 {
 	border-radius: 6px;

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         YouTube
-@version      2.0.0
+@version      2.0.1
 @description  YouTube and YouTube Music theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -95,13 +95,13 @@
 	#overlays > ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail.style-scope {
 		background-color: transparent !important;
 		background-image: none !important;
-		backdrop-filter: var(--bdb) !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	#scroll-button-forward,
 	#scroll-button-back {
 		background-color: transparent !important;
 		background-image: none !important;
-		backdrop-filter: var(--bdbl) !important;
+		backdrop-filter: var(--blur-variant) !important;
 	}
 	.video-stream.html5-main-video,
 	#thumbnail {
@@ -515,7 +515,7 @@
 	#masthead {
 		background-color: transparent !important;
 		background-image: none !important;
-		backdrop-filter: var(--bdblur) !important;
+		backdrop-filter: var(--blur) !important;
 	}
 	#cancel-button,
 	#confirm-button {
@@ -1241,17 +1241,17 @@
 	#nav-bar-background {
 		background-color: transparent !important;
 		background-image: none !important;
-		backdrop-filter: var(--bdb) !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	.center-content.ytmusic-nav-bar {
 		background-color: transparent !important;
 		background-image: linear-gradient(var(--Surface) 0%, transparent 95%) !important;
-		backdrop-filter: var(--bdblur) !important;
+		backdrop-filter: var(--blur) !important;
 	}
 	.style-scope.ytmusic-section-list-renderer.fullbleed.stuck #header.style-scope.ytmusic-item-section-renderer {
 		background-color: transparent !important;
 		background-image: none !important;
-		backdrop-filter: var(--bdblur) !important;
+		backdrop-filter: var(--blur) !important;
 	}
 	ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout,
 	ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout,

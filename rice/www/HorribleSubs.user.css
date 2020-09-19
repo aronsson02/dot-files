@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         HorribleSubs
-@version      2.0.0
+@version      2.0.1
 @description  HorribleSubs theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -55,7 +55,7 @@ body {
 .post-inner-content, .dropdown-menu, .well {
     background-color: transparent !important;
     background-image: none !important;
-    backdrop-filter: var(--bdblur) !important;
+    backdrop-filter: var(--blur) !important;
 }
 .navbar-brand:hover {
     background-image: none !important;

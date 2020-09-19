@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      2.0.0
+@version      2.0.1
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -17,12 +17,12 @@
 .bg-light, .bg-dark, .modal-content {
     background-color: transparent !important;
     background-image: none !important;
-    backdrop-filter: var(--bdblur) !important
+    backdrop-filter: var(--blur) !important
 }
 .dropdown-menu {
     background-color: transparent !important;
     background-image: none !important;
-    backdrop-filter: var(--bdbl) !important
+    backdrop-filter: var(--blur-variant) !important
 }
 thead, .table-header, .card-header, .modal-header, .edit.nav.nav-tabs, .table-striped > tbody > tr:nth-of-type(2n+1) {
 	background-color: var(--Surface) !important
