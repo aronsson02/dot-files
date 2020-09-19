@@ -2,14 +2,16 @@
         --Foreground:   #FAFAFA;
         --Foreground-Variant:   #FAFAFACC;
         --Foreground-Dark:   #FAFAFA66;
+        --Foreground-Transparent:   #FFFFFF66;
         --Background:   #212121;
         --Surface:   #424242;
         --Surface-Variant:   #626262;
         --Surface-Transparent:   #00000066;
         --Primary:   #00BFBF;
         --Primary-Variant:   #00E6E6;
-        --Secondary:   #6200EE;
-        --Secondary-Variant:   #3700B3;
+        --Mast:   #512DA8;
+        --Mast-Variant:   #673AB7;
+        --Mast-Dark:   #311B92;
         --grey:  #808080;
         --red:   #F44336;
         --orange:#EA9D1C;
