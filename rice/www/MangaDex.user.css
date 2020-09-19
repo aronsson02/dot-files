@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      2.0.1
+@version      2.0.2
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,7 +14,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("mangadex.org") {
-.bg-light, .bg-dark, .modal-content {
+.modal-content {
     background-color: transparent !important;
     background-image: none !important;
     backdrop-filter: var(--blur) !important
@@ -24,14 +24,17 @@
     background-image: none !important;
     backdrop-filter: var(--blur-variant) !important
 }
-thead, .table-header, .card-header, .modal-header, .edit.nav.nav-tabs, .table-striped > tbody > tr:nth-of-type(2n+1) {
+thead, .card-body, .table-header, .modal-header, .edit.nav.nav-tabs, .table-striped > tbody > tr:nth-of-type(2n+1) {
 	background-color: var(--Surface) !important
 }
-.card-body, #latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), .list-group-item {
+#latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), .list-group-item {
 	background-color: var(--Surface-Variant) !important
 }
 body, .bg-reader-controls, .form-control {
 	background-color: var(--Background) !important
+}
+.bg-light, .bg-dark, .card-header {
+	background-color: var(--Mast) !important
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.show .nav-link, .nav-pills .nav-link.active, .nav-pills .show > .nav-link, .badge-warning, .alert, .btn-success.disabled, .btn-success:disabled, .btn-warning {
 	background-color: var(--Primary) !important

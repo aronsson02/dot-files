@@ -57,6 +57,7 @@
     .collapsible-section {
         background-color: var(--Surface) !important;
         border-radius: 16px !important;
+        box-shadow: 0 0 8px var(--Background) !important
     }
     .collapsible-section.active {
         background-color: var(--Surface-Variant) !important;

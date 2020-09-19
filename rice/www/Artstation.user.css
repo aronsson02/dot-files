@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Artstation
-@version      2.0.0
+@version      2.0.1
 @description  Artstation theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,6 +14,26 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("artstation.com") {
+/*Colors*/
+	.main-menu .menu-level-1, .main-menu-search .tt-dropdown-menu {
+		background-color: var(--Mast);
+		box-shadow: none;
+		border: none
+	}
+	#search-input {
+		background-color: var(--Mast-Variant);
+		box-shadow: 0 0 8px var(--Background) inset !important
+	}
+	.bs-btn-primary {
+		background-color: var(--Primary);
+		color: var(--Background)
+	}
+	.bs-btn-primary.active, .bs-btn-primary:active, .bs-btn-primary:hover, .open > .bs-btn-primary.dropdown-toggle {
+		background-color: var(--Primary-Variant);
+	}
+	.fa-sign-in::before, .bs-btn-primary.active, .bs-btn-primary:active, .bs-btn-primary:hover, .open > .bs-btn-primary.dropdown-toggle {
+		color: var(--Background)
+	}
 /* hide */
 .btn-toolbar,
 .separator-sm,
@@ -32,6 +52,7 @@ _,
 .d-none.d-sm-flex.justify-content-center.ng-star-inserted {
 	display: none !important;
 }
+/*Blur*/
 .flash-card.announcement.toast-info,
 .bs-modal-content,
 .bs-modal-header,
@@ -75,11 +96,7 @@ body {
 .current-collections-list {
 	border-color: #fff2;
 }
-/*
-
-navbar
-
-*/
+/*navbar*/
 .form-control,
 #search-input {
 	background: transparent;
@@ -101,11 +118,7 @@ _ {
 .navbar-default .navbar-nav > .active > a {
 	background: #fffd;
 }
-/*
-
-sidebar
-
-*/
+/*sidebar*/
 #comments {
 	height: .5rem;
 	overflow: hidden;

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stylus
-@version      2.0.1
+@version      2.0.2
 @description  Stylus theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -22,7 +22,7 @@
     background-color: var(--Surface-Variant) !important;
     color: var(--Foreground) !important;
 }
-#message-box.danger #message-box-title {
+#message-box.danger #message-box-title, #save-button {
 	background-color: var(--red) !important;
 }
 .svg-icon.checked, .option.aligned, .style-name-link, .filter-selection div {

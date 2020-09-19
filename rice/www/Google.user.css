@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.0.1
+@version      2.0.2
 @description  Google theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -46,15 +46,15 @@
 	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-focused,
 	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-hover .docs-material-gm-labeled-checkbox-label,
 	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-focused .docs-material-gm-labeled-checkbox-label,
-	.docs-omnibox-input {
+	.kix-appview-editor,
+	.docs-omnibox-input,
+	.left-sidebar-container {
 		background-color: var(--Background) !important;
 	}
 	.grid-shim-bottom,
 	.grid-shim-end-ltr,
 	.grid-shim-end-rtl,
-	.docs-gm .docs-menubar .goog-control:hover,
-	.kix-appview-editor,
-	.left-sidebar-container {
+	.docs-gm .docs-menubar .goog-control:hover {
 		background-color: var(--Surface-Variant) !important;
 	}
 	.companion-app-switcher-container,
@@ -251,7 +251,6 @@ domain("translate.google.com") {
 	.jfk-tooltip {
 		background-color: var(--Surface-Variant) !important;
 	}
-	header,
 	.ft-icon-oval,
 	.gt-is-mobile,
 	.share-panel,
@@ -294,8 +293,13 @@ domain("translate.google.com") {
 	.result,
 	.gt-edit,
 	.contribute-target,
-	.gt-lc.gt-lc-mobile .gt-cd {
+	.gt-lc.gt-lc-mobile .gt-cd,
+	#source, .gb_Ec{
 		background-color: var(--Surface) !important;
+	}
+	#gb {
+		background-color: var(--Mast) !important;
+		box-shadow: 0 0 8px var(--Background) !important
 	}
 	.gb_qe:not(.gb_3),
 	.filled.gt-score-dot,
@@ -356,7 +360,9 @@ domain("translate.google.com") {
 	.history-entry .tl-output,
 	.phrasebook-top-header .title,
 	.phrasebook-entry .tl-output,
-	.mTQVx {
+	.mTQVx,
+	.gb_ta svg,
+	.gb_1c .gb_ge, .gb_Qc .gb_ge {
 		color: var(--Foreground) !important;
 	}
 	.spelling-correction a,
@@ -423,6 +429,9 @@ domain("translate.google.com") {
 	}
 	.gb_8a.gb_F.gb_l.gb_9a.gb_na * {
 		border: none !important;
+	}
+	.gb_uc .gb_se::before {
+		animation: filter 6s linear infinite !important;
 	}
 }
 @-moz-document domain("google.com"),
@@ -560,14 +569,31 @@ domain("google.no") {
 	.gb_3d,
 	.a-Cd-oa,
 	.le-Ba,
-	.gb_ta,
 	.h-w {
 		background-color: var(--Surface) !important;
 	}
-	.a-D-B,
 	.Kk7lMc-Yb-Il-j,
 	.h-sb-Ic.g-d.g-d-wd:hover {
 		background-color: var(--Surface-Variant) !important;
+	}
+	.gb_ta {
+		background-color: var(--Mast) !important;
+		box-shadow: 0 0 8px var(--Background) !important
+	}
+	.gb_5e {
+		background-color: var(--Mast-Variant) !important;
+		box-shadow: 0 0 8px var(--Background) inset !important
+	}
+	.a-D-B {
+		background-color: var(--Mast-Dark) !important;
+		box-shadow: 0 0 8px var(--Background) inset !important
+	}
+	.a-D-B {
+		box-shadow: 0 0 8px var(--Background) !important
+	}
+	.a-s-tb-sc-Ja-Q.a-s-tb-sc-Ja-Q-Nm.a-s-tb-Kg-Q.a-s-tb-kl-Gd-ig {
+		background-color: var(--Surface) !important;
+		margin-right: 4em
 	}
 	.a-qc-La,
 	.Yb-Il-d-W .Yb-Il-d-c-Nd,
@@ -598,7 +624,9 @@ domain("google.no") {
 	.a-nEbBXb .g-d:not(.g-d-db):not(.g-d-R).g-d-W,
 	.a-nEbBXb .g-d:not(.g-d-db):not(.g-d-R):focus,
 	.a-nEbBXb .g-d:not(.g-d-db):not(.g-d-R).g-d-Pb,
-	.a-Va-Zb-ga {
+	.a-Va-Zb-ga,
+	.gb_ge,
+	.gb_ta svg {
 		color: var(--Foreground) !important;
 	}
 	.WYuW0e,
@@ -610,7 +638,8 @@ domain("google.no") {
 	.g-Qb .h-v-x,
 	.h-R-w-d.g-Qb,
 	.l-u-V,
-	.h-v-x {
+	.h-v-x,
+	.a-U-J-x {
 		color: var(--Foreground-Variant) !important;
 	}
 	.s55KNe:not(.KBj6Qd) .GZwC2b .jGNTYb,
@@ -624,7 +653,8 @@ domain("google.no") {
 		color: var(--Primary-Variant) !important;
 	}
 	.a-Ng-c-ha svg,
-	.a-d-c svg {
+	.a-d-c svg,
+	.a-D-B .a-D-B-WErN3d-j .a-d-c .a-nEbBXb-c {
 		fill: var(--Foreground)
 	}
 	.a-D-B-WErN3d-j,
@@ -710,7 +740,7 @@ domain("google.no") {
 	.iRxY3GoUYUY__button:hover,
 	.widget-homescreen .section-layout.section-cardbox,
 	.widget-pane-content,
-	.cX2WmPgCkHi__clickable:focus {
+	.cX2WmPgCkHi__clickable:focus, .widget-pane-toggle-button {
 		background-color: var(--Surface-Variant) !important
 	}
 	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint,
@@ -724,8 +754,15 @@ domain("google.no") {
 	}
 	.widget-directions-omnibox,
 	.widget-directions-dragger,
-	.jqnFjrOWMVU__bucket-fill {
+	.jqnFjrOWMVU__bucket-fill,
+	.widget-directions-omnibox .searchbox, .section-directions-options {
 		background: var(--Primary) !important
+	}
+	.widget-directions .searchbox-searchbutton {
+		background: var(--Primary-Variant) !important
+	}
+	.widget-directions .sbib_b::after {
+		background: none
 	}
 	.section-info-action-icon-button:last-of-type,
 	.ugiz4pqJLAG__clickable.ugiz4pqJLAG__metadata-shown-on-hover-only:hover .section-listitem-metadata,
@@ -835,6 +872,9 @@ domain("google.no") {
 	}
 	.iRxY3GoUYUY__high-contrast:hover .iRxY3GoUYUY__button {
 		border-color: var(--Primary-Variant)
+	}
+	.widget-directions-input-underline {
+		border-color: var(--Mast)
 	}
 	.gm2-hairline-border {
 		border: none

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      2.0.1
+@version      2.0.2
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -64,9 +64,19 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 	background-color: transparent !important;
 }
 /* Coloration */
-.NavBar-container-1T0BJz,
+.NavBar-container-1T0BJz {
+	background-color: var(--Mast) !important;
+		box-shadow: 0 0 8px var(--Background) !important
+}
 .SourceSidebar-openSidebar-364QEr.SourceSidebar-sidebar-YpV2mw,
-.SourceSidebar-collapsedSidebar-3MDUee.SourceSidebar-sidebar-YpV2mw,
+.SourceSidebar-collapsedSidebar-3MDUee.SourceSidebar-sidebar-YpV2mw {
+	background-color: var(--Mast-Dark) !important;
+	box-shadow: 0 0 8px var(--Background) !important
+}
+.QuickSearchInput-container-1HiCoN {
+		background-color: var(--Mast-Variant);
+		box-shadow: 0 0 8px var(--Background) inset !important
+	}
 .show-modal-transparent {
 	background-color: var(--Surface) !important
 }
@@ -103,7 +113,8 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .EditHomeModalContent-button-HgDyCQ.ModalFooter-button-15VJa0.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN:hover,
 .ConfirmModal-confirmButton-1DVQ-r.SpinnerButton-button-1A8EcL.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN:hover,
 .save-btn.btn.btn-primary.btn-loading.save:hover,
-.NavBarButton-button-oTeMHk:hover {
+.NavBarButton-button-oTeMHk:hover,
+.NavBar-plexPassButton-wVK4vI.NavBarPlexPassButton-button-2zlgP_.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN:hover{
 	background-color: var(--Primary-Variant) !important
 }
 .Link-link-2n0yJn.Link-primary-1vcAGA,
@@ -199,6 +210,10 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .ModalContent-closeButton-3NY5uJ.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
 .NavBarButton-button-oTeMHk {
 	color: var(--Foreground) !important
+}
+.NavBar-plexPassButton-wVK4vI.NavBarPlexPassButton-button-2zlgP_.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN {
+	color: var(--Background);
+	background-color: var(--Primary)
 }
 .media-poster-container.selected .media-poster::after,
 .PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw,

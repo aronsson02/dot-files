@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         HorribleSubs
-@version      2.0.1
+@version      2.0.2
 @description  HorribleSubs theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,14 +14,24 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("horriblesubs.info") {
-body, .navbar-default .navbar-nav .dropdown-menu > li:focus, .ind-show:hover, .latest-releases a:hover, .latest-show-more a:hover, .table-hover>tbody>tr:hover, .form-control {
+body, .navbar-default .navbar-nav .dropdown-menu > li:focus, .form-control {
     background-color: var(--Background) !important
 }
-a, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: var(--Primary) !important
+.post-inner-content, .well {
+    background-color: var(--Surface) !important;
+	border-radius: 4px !important;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a:hover, a:focus, body {
+.latest-releases a:hover, .latest-show-more a:hover, .table-hover>tbody>tr:hover, .ind-show:hover {
+    background-color: var(--Surface-Variant) !important
+}
+a, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: var(--Foreground-Variant) !important
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, body {
     color: var(--Foreground) !important
+}
+a:hover, a:focus, body {
+    color: var(--Primary) !important
 }
 .alphabet-title {
     border-color: var(--Background) !important
@@ -39,12 +49,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a:hover, a:focus, body {
     background-color: var(--Primary) !important;
     color: var(--Foreground) !important
 }
+.navbar.navbar-default {
+    background-color: var(--Mast) !important
+}
 * {
     box-shadow: none !important;
-}
-body {
-    background-image:  url(https://vignette.wikia.nocookie.net/debatesjungle/images/c/c4/MD_Concealment_of_Dual_Blades_-_Kirito.png/revision/latest?cb=20181221235603) !important;
-    background-size: 750px !important;
 }
 .navbar-brand {
     animation: filter 3s linear infinite !important;
@@ -52,7 +61,7 @@ body {
 .navbar-default .navbar-nav .dropdown-menu > li:hover, .schedule-table>tbody>tr:hover {
     background-color: var(--Surface-Transparent) !important;
 }
-.post-inner-content, .dropdown-menu, .well {
+.dropdown-menu {
     background-color: transparent !important;
     background-image: none !important;
     backdrop-filter: var(--blur) !important;
