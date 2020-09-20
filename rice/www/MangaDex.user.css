@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      2.0.2
+@version      2.0.3
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -22,19 +22,45 @@
 .dropdown-menu {
     background-color: transparent !important;
     background-image: none !important;
-    backdrop-filter: var(--blur-variant) !important
+    backdrop-filter: var(--blur-dark-variant) !important
 }
-thead, .card-body, .table-header, .modal-header, .edit.nav.nav-tabs, .table-striped > tbody > tr:nth-of-type(2n+1) {
+thead, .card-body, .table-header, .modal-header, .table-striped > tbody > tr:nth-of-type(2n+1), .edit.tab-content {
 	background-color: var(--Surface) !important
 }
-#latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), .list-group-item {
+#latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), .list-group-item, #reader-controls-collapser:hover {
 	background-color: var(--Surface-Variant) !important
 }
 body, .bg-reader-controls, .form-control {
 	background-color: var(--Background) !important
 }
-.bg-light, .bg-dark, .card-header {
-	background-color: var(--Mast) !important
+.bg-light, .bg-dark {
+	background-color: var(--Mast) !important;
+	box-shadow: 0 0 8px var(--Background) !important
+}
+.card-header, .edit.nav.nav-tabs {
+	background-color: var(--Mast-Dark) !important;
+	box-shadow: 0 0 8px var(--Background) !important;
+	border-radius: 8px 8px 0 0 !important;
+}
+#reader-controls-collapser, .reader-controls.row.no-gutters.flex-column.flex-nowrap {
+	background-color: var(--Mast-Dark) !important;
+}
+#jump-chapter {
+	background-color: var(--Mast-Variant) !important;
+	box-shadow: 0 0 8px var(--Background) !important;
+	border-radius: 8px !important;
+	overflow: hidden;
+}
+.nav-link {
+	border-radius: 8px 8px 0 0 !important;
+}
+.card.mb-3 {
+	border-radius: 8px !important;
+	overflow: hidden;
+}
+.edit.tab-content {
+	border-radius: 0 0 8px 8px !important;
+	overflow: hidden;
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.show .nav-link, .nav-pills .nav-link.active, .nav-pills .show > .nav-link, .badge-warning, .alert, .btn-success.disabled, .btn-success:disabled, .btn-warning {
 	background-color: var(--Primary) !important
@@ -72,7 +98,7 @@ body, .bg-reader-controls, .form-control {
 #increment_chapter, #increment_volume, .modal-header, .modal-body, .modal-footer {
 	background: none !important
 }
-.footer {
+.footer, #right_swipe_area, #left_swipe_area {
 	display: none !important
 }
 }
