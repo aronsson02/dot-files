@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         YouTube
-@version      2.0.3
+@version      2.0.5
 @description  YouTube and YouTube Music theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1098,13 +1098,21 @@
 	}
 	.center-content.ytmusic-nav-bar {
 		background-color: transparent !important;
-		background-image: linear-gradient(var(--Background) 0%, transparent 95%) !important;
+		background-image: linear-gradient(var(--Mast) 25%, transparent 100%) !important;
 		backdrop-filter: var(--blur) !important;
 	}
 	.style-scope.ytmusic-section-list-renderer.fullbleed.stuck #header.style-scope.ytmusic-item-section-renderer {
 		background-color: transparent !important;
 		background-image: none !important;
 		backdrop-filter: var(--blur) !important;
+	}
+	.side-panel.modular.style-scope.ytmusic-player-page {
+		background-color: var(--Surface) !important;
+		border-radius: 8px 8px 0 0 !important;
+		overflow: hidden;
+	}
+	.tab-header.style-scope.ytmusic-player-page.iron-selected {
+		background-color: var(--Surface-Variant) !important;
 	}
 	ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout,
 	ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout,
