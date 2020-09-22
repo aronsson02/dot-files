@@ -40,7 +40,7 @@
         --blur-dark-variant: blur(5px) brightness(66%);
 }
 
-*:not(.google-material-icons), *:not(.material-icons-extended) {
+*:not(.google-material-icons):not(.material-icons-extended):not(.w-icon) {
 	font-family: "SF Nodo Pro" !important
 }
 
