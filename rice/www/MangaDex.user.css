@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      2.0.3
+@version      2.0.4
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -24,10 +24,10 @@
     background-image: none !important;
     backdrop-filter: var(--blur-dark-variant) !important
 }
-thead, .card-body, .table-header, .modal-header, .table-striped > tbody > tr:nth-of-type(2n+1), .edit.tab-content {
+thead, .card-body, .table-header, .modal-header, .table-striped > tbody > tr:nth-of-type(2n+1), .edit.tab-content, .list-group-item {
 	background-color: var(--Surface) !important
 }
-#latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), .list-group-item, #reader-controls-collapser:hover {
+#latest_updates, #follows_updates, #site_settings, #change_profile, #change_password, #upload_settings, #reader_settings, #filter_settings, .modal-body, .modal-footer, .well, .table-striped > tbody > tr:nth-of-type(2n+2), #reader-controls-collapser:hover, .nav .nav-link:hover {
 	background-color: var(--Surface-Variant) !important
 }
 body, .bg-reader-controls, .form-control {
@@ -51,10 +51,11 @@ body, .bg-reader-controls, .form-control {
 	border-radius: 8px !important;
 	overflow: hidden;
 }
-.nav-link {
+.nav .nav-link {
 	border-radius: 8px 8px 0 0 !important;
+	background-color: var(--Mast-Dark) !important;
 }
-.card.mb-3 {
+.card.mb-3, .owl-item, .rounded {
 	border-radius: 8px !important;
 	overflow: hidden;
 }
@@ -83,7 +84,7 @@ body, .bg-reader-controls, .form-control {
 .border-bottom {
 	border-bottom: 1px solid var(--grey) !important
 }
-.bg-light, .bg-dark, .btn-warning, .btn-success, .dropdown-menu {
+.bg-light, .bg-dark, .btn-warning, .btn-success, .dropdown-menu, .card-header.text-center {
 	border: none !important
 }
 .card {
