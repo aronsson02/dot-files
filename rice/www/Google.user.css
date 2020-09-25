@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.0
+@version      2.1.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -142,78 +142,8 @@
 	#masthead {
 		padding-bottom: 2px !important;
 	}
-	*:not(.style-scope) {
-		--yt-live-chat-action-panel-background-color: rgba(0, 0, 0, 0) !important;
-		--yt-live-chat-action-panel-background-color-transparent: rgba(0, 0, 0, 0) !important;
-		--yt-emoji-picker-category-background-color: rgba(0, 0, 0, 0) !important;
-		--yt-guide-background: rgba(0, 0, 0, 0) !important;
-		--yt-searchbox-background: rgba(0, 0, 0, 0) !important;
-		--yt-swatch-input-text: var(--Foreground-Dark) !important;
-		--yt-searchbox-text-color: var(--Foreground-Dark) !important;
-		--app-drawer-content-container_-_background-color: rgba(0, 0, 0, 0) !important;
-		--yt-swatch-textbox-bg: rgba(0, 0, 0, 0) !important;
-		--yt-swatch-text: var(--Foreground-Dark) !important;
-		--yt-live-chat-primary-text-color: var(--Foreground-Dark);
-		--yt-live-chat-secondary-text-color: var(--Foreground-Dark);
-		--yt-live-chat-tertiary-text-color: var(--Foreground-Dark);
-		--yt-live-chat-disabled-icon-button-color: rgba(0, 0, 0, 0);
-		--yt-live-chat-picker-button-color: var(--yt-live-chat-tertiary-text-color);
-		--yt-formatted-string-emoji-size: 24px;
-		--yt-emoji-picker-category-color: var(--yt-live-chat-secondary-text-color);
-		--yt-emoji-picker-category-button-color: var(--yt-live-chat-picker-button-color);
-		--yt-emoji-picker-search-background-color: rgba(0, 0, 0, 0);
-		--yt-emoji-picker-search-color: var(--Foreground-Dark);
-		--yt-emoji-picker-search-placeholder-color: rgba(0, 0, 0, 0);
-		--yt-swatch-primary: rgba(0, 0, 0, 0) !important;
-		--yt-swatch-primary-darker: rgba(0, 0, 0, 0) !important;
-		--yt-primary-color: var(--Foreground-Dark);
-		--yt-endpoint-visited-color: var(--Foreground-Dark);
-		--yt-expand-color: var(--Foreground-Dark);
-		--yt-primary-text-color: var(--Foreground-Dark);
-		--ytd-metadata-line-color: var(--Foreground-Dark);
-		--yt-metadata-color: var(--Foreground-Dark);
-		--yt-endpoint-hover-color: var(--Foreground-Dark);
-		--yt-spec-text-primary: var(--Foreground);
-		--ytd-video-publish-date-color: var(--Foreground-Dark);
-		--paper-button_-_color: var(--Foreground-Dark);
-		--yt-button-text-color: var(--Foreground-Dark);
-		--ytd-comment-text-color: var(--Foreground-Dark);
-		--yt-placeholder-text-color: var(--Foreground-Dark);
-		--yt-endpoint-color: var(--Foreground-Dark) !important;
-		--yt-secondary-text-color: var(--Foreground-Dark);
-		--iron-icon-fill-color: var(--Foreground-Dark) !important;
-		--yt-dialog-background: rgba(0, 0, 0, 0);
-		--ytd-searchbox-legacy-button-color: rgba(0, 0, 0, 0);
-		--ytd-searchbox-legacy-button-hover-color: rgba(0, 0, 0, 0);
-		--yt-simple-menu-header-background: rgba(0, 0, 0, 0);
-		--yt-border-color: rgba(0, 0, 0, 0) !important;
-		--yt-icon-color: var(--Foreground) !important;
-		--yt-featured-channel-title-text-color: var(--Foreground-Dark);
-		--yt-tertiary-text-color: var(--Foreground-Dark);
-		--yt-spec-bordered-button-chip-background: rgba(0, 0, 0, 0);
-		--yt-spec-icon-active-button-link: rgba(0, 0, 0, 0);
-		--ytd-simple-badge-color: rgba(0, 0, 0, 0);
-		--yt-spec-feed-background-b: rgba(0, 0, 0, 0);
-		--yt-spec-text-secondary: var(--Foreground-Dark);
-		--paper-listbox-background-color: rgba(0, 0, 0, 0);
-		--paper-dialog-background-color: rgba(0, 0, 0, 0);
-		--ytd-badge-background: rgba(0, 0, 0, 0);
-		--ytd-author-comment-badge-background-color: rgba(0, 0, 0, 0);
-	}
-	ytd-app {
-		--yt-swatch-primary: rgba(0, 0, 0, 0);
-		--yt-swatch-primary-darker: rgba(0, 0, 0, 0);
-		--yt-swatch-text: var(--Foreground);
-		--yt-swatch-important-text: var(--Foreground);
-		--yt-swatch-input-text: var(--Foreground);
-		--yt-swatch-textbox-bg: rgba(0, 0, 0, 0);
-		--yt-swatch-logo-override: var(--Foreground);
-		--yt-swatch-icon-color: rgba(0, 0, 0, 0) !important;
-	}
 	#content.style-scope ytd-mini-guide-renderer,
 	.ytd-mini-guide-renderer.ytd-app.style-scope,
-	.ytp-miniplayer-button.ytp-button,
-	.ytp-hover-progress.ytp-hover-progress-light,
 	#limited-state,
 	#head #autoplay,
 	#head #toggle,
@@ -461,13 +391,7 @@
 	.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.load-more-button.yt-uix-load-more.comment-replies-renderer-paginator.comment-replies-renderer-expander-down.yt-uix-button-link,
 	.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.yt-uix-button-empty.yt-uix-button-has-icon.no-icon-markup.comment-action-buttons-renderer-thumb.yt-uix-sessionlink.sprite-comment-actions,
 	.comment-simplebox-frame,
-	.comment-simplebox-text {
-		background-color: rgba(0, 0, 0, 0) !important;
-		border-color: rgba(0, 0, 0, 0) !important;
-	}
-	ytd-c4-tabbed-header-renderer[has-channel-art] app-header-layout #channel-container {
-		background-color: rgba(0, 0, 0, 0) !important;
-	}
+	.comment-simplebox-text,
 	ytd-c4-tabbed-header-renderer[has-channel-art] app-header-layout #tabs-container,
 	paper-button[subscribed].ytd-subscribe-button-renderer,
 	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
@@ -489,22 +413,23 @@
 		background-color: rgba(0, 0, 0, 0) !important;
 		border-color: rgba(0, 0, 0, 0) !important;
 	}
-	#masthead {
-		background-color: var(--Mast) !important;
-		box-shadow: 0 0 8px var(--Background) !important
-	}
-	#guide-wrapper.ytd-app {
-		background-color: var(--Mast-Dark) !important;
-		box-shadow: 0 0 8px var(--Background) !important
-	}
-	#search-form {
-		background-color: var(--Mast-Variant) !important;
-		box-shadow: 0 0 8px var(--Background) inset !important;
-        border-radius: 8px !important;
-	}
+	ytd-c4-tabbed-header-renderer[has-channel-art] app-header-layout #channel-container,
 	#cancel-button,
 	#confirm-button {
 		background-color: rgba(0, 0, 0, 0) !important;
+	}
+	#masthead {
+		background-color: var(--Mast) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	#guide-wrapper.ytd-app {
+		background-color: var(--Mast-Dark) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	#search-form {
+		background-color: var(--Mast-Variant) !important;
+		box-shadow: var(--Mast-Shadow) inset !important;
+		border-radius: var(--Rounding) !important;
 	}
 	ytd-two-column-browse-results-renderer[page-subtype="channels"],
 	ytd-two-column-search-results-renderer,
@@ -597,12 +522,6 @@
 	.style-scope.ytd-commentbox #cancel-button {
 		background-color: var(--Background) !important;
 	}
-	#masthead {
-		--yt-swatch-primary: rgba(0, 0, 0, 0) !important;
-	}
-	#guide {
-		background-color: rgba(0, 0, 0, 0);
-	}
 	#comment-section-renderer .sprite-like::before,
 	#comment-section-renderer .sprite-dislike::before,
 	#action-panel-overflow-button::before,
@@ -640,7 +559,9 @@
 	#guide {
 		z-index: 2040 !important;
 	}
-	html[hide-scrollbar="true"] ::-webkit-scrollbar, .gstl_50.sbdd_c, #search-icon-legacy {
+	html[hide-scrollbar="true"] ::-webkit-scrollbar,
+	.gstl_50.sbdd_c,
+	#search-icon-legacy {
 		display: none
 	}
 	.more-button.ytd-video-secondary-info-renderer,
@@ -921,10 +842,10 @@
 		color: var(--Surface)!important
 	}
 	.ytd-thumbnail > img {
-		border-radius: 5px
+		border-radius: var(--Rounding)
 	}
 	.ytd-popup-container {
-		border-radius: 15px
+		border-radius: var(--Rounding-Variant)
 	}
 	#cancel-button,
 	#confirm-button {
@@ -1075,7 +996,7 @@
 	#movie_player,
 	.video-stream,
 	.ytp-small-mode {
-		border-radius: 35px 35px 8px 8px
+		border-radius: var(--Rounding)
 	}
 	ytd-watch-flexy[theater] #movie_player,
 	ytd-watch-flexy[theater] .video-stream,
@@ -1106,13 +1027,13 @@
 	}
 	.search-box.style-scope.ytmusic-search-box {
 		background-color: var(--Mast-Variant) !important;
-		box-shadow: 0 0 8px var(--Background) inset !important;
-		border-radius: 8px !important;
+		box-shadow: var(--Mast-Shadow) inset !important;
+		border-radius: var(--Rounding) !important;
 		overflow: hidden;
 	}
 	.side-panel.modular.style-scope.ytmusic-player-page {
 		background-color: var(--Surface) !important;
-		border-radius: 8px 8px 0 0 !important;
+		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0 !important;
 		overflow: hidden;
 	}
 	.tab-header.style-scope.ytmusic-player-page.iron-selected {
@@ -1121,18 +1042,23 @@
 	ytmusic-search-suggestions-section.ytmusic-search-box {
 		border: none !important;
 		background-color: var(--Mast-Variant);
-		border-radius: 0 0 8px 8px !important;
+		border-radius: 0 0 var(--Rounding) var(--Rounding) !important;
 		overflow: hidden;
 	}
-	ytmusic-search-box[opened], ytmusic-search-box[has-query], ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
+	ytmusic-search-box[opened],
+	ytmusic-search-box[has-query],
+	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box,
+	ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
 		border: none !important;
-		box-shadow: 0 0 8px var(--Background) !important
+		box-shadow: var(--Mast-Shadow) !important
 	}
-	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
+	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box,
+	ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
 		border-radius: 8px 8px 0 0 !important;
 		overflow: hidden;
 	}
-	#suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section {
+	#suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section,
+	#suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section {
 		background-color: var(--Mast-Variant);
 	}
 	ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout,
@@ -1151,9 +1077,6 @@
 		display: block;
 		overflow: hidden;
 		background-color: var(--Surface);
-		padding: var(--ytmusic-nav-bar-height) 0 0;
-		margin: 0 0 var(--ytmusic-divider-height);
-		--ytmusic-detail-header-renderer-description-width: 640px;
 	}
 	ytmusic-browse-response #header ytmusic-data-bound-header-renderer {
 		background-color: var(--Surface);
@@ -1178,11 +1101,9 @@
 	}
 	yt-button-renderer[is-paper-button] {
 		background-color: transparent;
-		color: var(--yt-basic-foreground-title-color, var(--yt-spec-text-secondary));
-		border-color: var(--yt-basic-foreground-title-color, var(--yt-spec-text-secondary));
 	}
 	yt-button-renderer #button.yt-button-renderer {
-		color: #aaa;
+		color: var(--Foreground);
 		background-color: var(--Surface);
 		text-transform: inherit;
 	}
@@ -1190,16 +1111,12 @@
 		box-sizing: border-box;
 		border: 0;
 		border-radius: 2px;
-		--yt-paper-button-height: calc(36px - 2px);
-		--yt-button-color: #cdcdcd;
-		--yt-button-background-color: transparent;
 		background-color: transparent;
 		margin: 0 0 0 16px;
-		--yt-button-padding: 6px 12px 6px 12px;
 		box-shadow: none;
 	}
 }
-@-moz-document domain("docs.google.com") {
+@-moz-document url-prefix("https://docs.google.com") {
 	.goog-menu,
 	.docs-docos-activitybox,
 	.docs-gm .docos-streampane-header,
@@ -1207,7 +1124,7 @@
 	.docs-gm .docs-offline-optinpromo.jfk-bubble,
 	.docs-gm .docs-sync-indicator-popup.jfk-bubble,
 	.modal-dialog-content,
-	.modal-dialog-title {
+	.modal-dialog-title, .apps-shortcutshelpcontentimpl-container, .apps-shortcutshelppopup {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -1242,7 +1159,7 @@
 	.grid-shim-bottom,
 	.grid-shim-end-ltr,
 	.grid-shim-end-rtl,
-	.docs-gm .docs-menubar .goog-control:hover {
+	.docs-gm .docs-menubar .goog-control:hover, .boqDrivesharedialogPermissionslistPermissionrowListItem:hover .boqDrivesharedialogPermissionslistPermissionrowPermissionRow, .boqDrivesharedialogPermissionslistPermissionrowListItem:focus-within .boqDrivesharedialogPermissionslistPermissionrowPermissionRow, .boqDrivesharedialogLinkLinkpermissionLinkPermissionRow:hover {
 		background-color: var(--Surface-Variant) !important;
 	}
 	.companion-app-switcher-container,
@@ -1273,7 +1190,7 @@
 	.docs-gm .docos-notification-settings .goog-flat-menu-button,
 	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-label,
 	.docs-horizontal-ruler,
-	.docs-vertical-ruler {
+	.docs-vertical-ruler, .waffle-theme-container-element, .apps-navigationwidget-item:hover {
 		background-color: var(--Surface) !important;
 	}
 	.docs-gm .modal-dialog,
@@ -1294,7 +1211,7 @@
 	.docs-gm .docs-colormenuitems .docs-colormenuitems-custom-header,
 	.gb_l .gb_tb,
 	.docs-gm .docs-details-field,
-	.d-u-Q {
+	.d-u-Q, .boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowPrimary, .boqDrivesharedialogLinkLinkpermissionVisibilityMenuTextButton.mdc-button:not(:disabled), .waffle-current-theme, .apps-shortcutshelpcontentimpl-dialog-title, .apps-actiondatawidget-content-header, .apps-shortcutshelpcontentimpl-input {
 		color: var(--Foreground) !important;
 	}
 	.docs-gm .docs-menubar .goog-control,
@@ -1302,12 +1219,12 @@
 	#goog-toolbar-menu-button-caption.goog-inline-block,
 	.gb_l .gb_vb,
 	.goog-toolbar-menu-button-caption.goog-inline-block,
-	.docs-gm .docs-details-value {
+	.docs-gm .docs-details-value, .boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowSecondary, .boqDrivesharedialogPermissionslistPermissionsummarySummary, .boqDrivesharedialogLinkLinksummaryLinkPermissionsSummary .boqDrivesharedialogLinkLinksummaryBolded, .boqDrivesharedialogLinkLinkpermissionLinkPermissionSummary, .waffle-theme-title, .apps-actiondatawidget-shortcut-desc, .apps-actiondatawidget-shortcut-key, .apps-actiondatawidget-override-keys-on, .apps-navigationwidget, .apps-shortcutshelpcontentimpl-legacy-label {
 		color: var(--Foreground-Variant) !important;
 	}
 	.docs-gm .docos-new-comment-button,
 	.docs-gm .docos-notification-settings .goog-flat-menu-button,
-	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-label {
+	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-label, .GmButtonText:not(:disabled), .appsMaterialWizButtonPaperbuttonTextColored, .appsMaterialWizButtonPaperbuttonTextColored .exportButtonNestedLink, .apps-navigationwidget-item-selected, .apps-shortcutshelpcontentimpl-link, .apps-shortcutshelpcontentimpl-link:active {
 		color: var(--Primary) !important;
 	}
 	.docs-gm .modal-dialog .goog-buttonset-action,
@@ -1327,7 +1244,7 @@
 	.docs-material .goog-toolbar-menu-button:hover,
 	.docs-material .goog-toolbar-combo-button:hover,
 	.docs-material .goog-toolbar-button:hover,
-	.waffle-sidebar-container .goog-flat-menu-button {
+	.waffle-sidebar-container .goog-flat-menu-button, .waffle-theme-thumbnail.waffle-theme-active {
 		border: 1px solid var(--Primary) !important;
 	}
 	.rowcol-dragger-handle-bar,
@@ -1335,14 +1252,16 @@
 		border: 2px solid var(--Primary) !important;
 	}
 	.boqDrivesharedialogCommonCalloutCalloutDialog,
-	.docs-gm #docs-titlebar-share-client-button .jfk-button {
+	.docs-gm #docs-titlebar-share-client-button .jfk-button,
+	.docs-gm-promo.jfk-bubble.docs-promo-bubble, .boqDrivesharedialogCommonTitlebarTitleBar .boqDrivesharedialogCommonTitlebarIconContainer, .GmFillButton:not(:disabled) {
 		background-color: var(--Primary) !important;
 	}
 	.boqDrivesharedialogCommonCalloutArrowDown .Arrow,
 	.boqDrivesharedialogCommonCalloutArrowUp .Arrow,
 	.docs-gm #docs-toolbar-wrapper,
 	.goog-tab-bar.spreadsheet-settings-dialog-tab-bar .goog-tab.spreadsheet-settings-tab.goog-tab-selected,
-	.goog-tab-bar.spreadsheet-settings-dialog-tab-bar .goog-tab.spreadsheet-settings-tab.goog-tab-hover {
+	.goog-tab-bar.spreadsheet-settings-dialog-tab-bar .goog-tab.spreadsheet-settings-tab.goog-tab-hover,
+	.docs-gm-promo.jfk-bubble.jfk-bubble-promo.docs-promo-bubble .jfk-bubble-arrowimplafter {
 		border-color: var(--Primary) transparent !important;
 	}
 	.boqDrivesharedialogCommonCalloutCalloutActionRow .GmButtonText:hover,
@@ -1362,6 +1281,9 @@
 	.docs-omnibox-input {
 		border: none !important;
 	}
+	.docs-title-input {
+		border-radius: var(--Rounding) !important
+	}
 	.ve-Fi-Ue .ve-Gi-Zb-ie {
 		box-shadow: none !important;
 	}
@@ -1375,6 +1297,9 @@
 	}
 	.d-u-Q {
 		background: none
+	}
+	.docs-title-input-label {
+		display: none !important
 	}
 	.docs-gm .docs-material .goog-toolbar-button-active .docs-icon-img,
 	.docs-gm .docs-material .goog-toolbar-button-checked .docs-icon-img,
@@ -1402,8 +1327,8 @@
 		filter: hue-rotate(45deg) !important;
 	}
 }
-@-moz-document domain("translate.google.no"),
-domain("translate.google.com") {
+@-moz-document url-prefix("https://translate.google.no"),
+url-prefix("https://translate.google.com") {
 	body,
 	.frame::before,
 	.gt-is-itm-hover,
@@ -1482,12 +1407,13 @@ domain("translate.google.com") {
 	.gt-edit,
 	.contribute-target,
 	.gt-lc.gt-lc-mobile .gt-cd,
-	#source, .gb_Ec{
+	#source,
+	.gb_Ec {
 		background-color: var(--Surface) !important;
 	}
 	#gb {
 		background-color: var(--Mast) !important;
-		box-shadow: 0 0 8px var(--Background) !important
+		box-shadow: var(--Mast-Shadow) !important
 	}
 	.gb_qe:not(.gb_3),
 	.filled.gt-score-dot,
@@ -1550,7 +1476,8 @@ domain("translate.google.com") {
 	.phrasebook-entry .tl-output,
 	.mTQVx,
 	.gb_ta svg,
-	.gb_1c .gb_ge, .gb_Qc .gb_ge {
+	.gb_1c .gb_ge,
+	.gb_Qc .gb_ge {
 		color: var(--Foreground) !important;
 	}
 	.spelling-correction a,
@@ -1622,8 +1549,8 @@ domain("translate.google.com") {
 		animation: filter 6s linear infinite !important;
 	}
 }
-@-moz-document domain("google.com"),
-domain("google.no") {
+@-moz-document url-prefix("https://www.google.com"),
+url-prefix("https://www.google.no") {
 	.gb_F,
 	.gb_Db.gb_Db,
 	.gb_Db.gb_Db:hover {
@@ -1741,7 +1668,7 @@ domain("google.no") {
 		display: none !important;
 	}
 }
-@-moz-document domain("drive.google.com") {
+@-moz-document url-prefix("https://drive.google.com") {
 	.gb_8e {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
@@ -1766,18 +1693,18 @@ domain("google.no") {
 	}
 	.gb_ta {
 		background-color: var(--Mast) !important;
-		box-shadow: 0 0 8px var(--Background) !important
+		box-shadow: var(--Mast-Shadow) !important
 	}
 	.gb_5e {
 		background-color: var(--Mast-Variant) !important;
-		box-shadow: 0 0 8px var(--Background) inset !important
+		box-shadow: var(--Mast-Shadow) inset !important
 	}
 	.a-D-B {
 		background-color: var(--Mast-Dark) !important;
-		box-shadow: 0 0 8px var(--Background) inset !important
+		box-shadow: var(--Mast-Shadow) inset !important
 	}
 	.a-D-B {
-		box-shadow: 0 0 8px var(--Background) !important
+		box-shadow: var(--Mast-Shadow) !important
 	}
 	.a-s-tb-sc-Ja-Q.a-s-tb-sc-Ja-Q-Nm.a-s-tb-Kg-Q.a-s-tb-kl-Gd-ig {
 		background-color: var(--Surface) !important;
@@ -1915,20 +1842,24 @@ domain("google.no") {
 	.jqnFjrOWMVU__bucket-background,
 	.allxGeDnJMl__button,
 	.rLwmCGCu6mP__card,
+	.widget-pane-content,
 	.ozj7Vb3wnYq__section-topappbar,
-	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted {
+	.section-divider,
+	.section-suggestions,
+	.ugiz4pqJLAG__button,
+	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted,
+	.widget-pane-toggle-button {
 		background-color: var(--Surface) !important
 	}
-	.section-suggestions,
 	.ambient-card-section,
-	.section-divider,
 	.ambient-card-section:hover,
 	.ambient-card-section:focus,
-	.ugiz4pqJLAG__button,
+	.ugiz4pqJLAG__button:hover,
 	.iRxY3GoUYUY__button:hover,
 	.widget-homescreen .section-layout.section-cardbox,
-	.widget-pane-content,
-	.cX2WmPgCkHi__clickable:focus, .widget-pane-toggle-button {
+	.cX2WmPgCkHi__clickable:focus,
+	.section-info-action-button:hover,
+	.section-listitem-metadata .section-action-chip-button {
 		background-color: var(--Surface-Variant) !important
 	}
 	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint,
@@ -1943,7 +1874,8 @@ domain("google.no") {
 	.widget-directions-omnibox,
 	.widget-directions-dragger,
 	.jqnFjrOWMVU__bucket-fill,
-	.widget-directions-omnibox .searchbox, .section-directions-options {
+	.widget-directions-omnibox .searchbox,
+	.section-directions-options {
 		background: var(--Primary) !important
 	}
 	.widget-directions .searchbox-searchbutton {
@@ -2013,7 +1945,6 @@ domain("google.no") {
 	.maps-sprite-suggest-work,
 	.maps-sprite-suggest-reviewed,
 	.searchbox-icon,
-	.searchbox-searchbutton::before,
 	.maps-sprite-settings-chevron-left,
 	.lo7U087hsMA__row-copy-icon,
 	.jVMscDilb9d__clear,
@@ -2027,7 +1958,9 @@ domain("google.no") {
 	.maps-sprite-settings-languages-blue,
 	.widget-reveal-card-directions-icon,
 	.section-info-icon.section-common-icon,
-	.maps-sprite-pane-info-settings {
+	.maps-sprite-pane-info-settings,
+	.maps-sprite-pane-info-hours,
+	.sbcb_a:hover {
 		filter: hue-rotate(315deg) contrast(2)
 	}
 	.ugiz4pqJLAG__icon,
@@ -2040,8 +1973,12 @@ domain("google.no") {
 		filter: hue-rotate(320deg) contrast(2)
 	}
 	.section-star,
-	.section-review-star.section-review-star-active {
+	.section-review-star.section-review-star-active,
+	.rs9iHBFJiiu__star {
 		filter: hue-rotate(130deg)
+	}
+	.searchbox-searchbutton::before {
+		filter: hue-rotate(130deg) invert(1) contrast(2)
 	}
 	.gm2-hairline-border,
 	.section-layout.section-cardbox,
@@ -2078,8 +2015,5 @@ domain("google.no") {
 	.lVJX2wDGbwj__divider,
 	.section-homescreen-expand {
 		display: none !important
-	}
-	.widget-scene-canvas {
-		filter: contrast(1.1)
 	}
 }
