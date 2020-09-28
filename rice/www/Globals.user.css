@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      2.0.7
+@version      2.0.8
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -41,7 +41,36 @@
         --Mast-Shadow: 0 0 8px 2px var(--Background);
         --Rounding: 8px;
         --Rounding-Variant: 16px;
+}
 
+*:not(.fa):not(.fas):not(.far):not(.DPvwYc) {
+    font-family: "SF Nodo Pro" !important
+ }
+
+::-webkit-scrollbar {
+  width: 6px
+}
+::-webkit-scrollbar-track {
+  background: var(--Background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Foreground-Dark);
+  border-radius: var(--Rounding) 0 0 var(--Rounding)
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Foreground-Variant);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--Foreground);
+}
+
+body * {
+    -webkit-animation: fadein .5s;
+    animation-iteration-count: 1;
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Elevation shadow

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.1
+@version      2.1.2
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -426,7 +426,7 @@
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	.style-scope.ytd-searchbox {
+	#search-form {
 		background-color: var(--Mast-Variant) !important;
 		box-shadow: var(--Mast-Shadow) inset !important;
 		border-radius: var(--Rounding) !important;
@@ -676,6 +676,12 @@
 	.thumb.guide-video-youtube-red-icon.yt-sprite {
 		filter: grayscale(100%) brightness(200%)
 	}
+	#search-form > #container,
+	.masthead-search-terms,
+	.masthead-search-terms-border {
+		border: 0!important;
+		box-shadow: none!important
+	}
 	#footer-container,
 	#footer-main,
 	#yt-masthead-container,
@@ -693,7 +699,8 @@
 		visibility: hidden
 	}
 	#search-form > #container {
-		padding: 8px !important;
+		padding: 8px 10px!important;
+		border-radius: 5px 0 0 5px
 	}
 	.yt-uix-button-icon.yt-uix-button-icon-bell,
 	.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.search-btn-component.search-button .yt-uix-button-content {
@@ -1321,7 +1328,7 @@
 	}
 }
 @-moz-document url-prefix("https://translate.google.no"),
-url-prefix("https://translate.google.com") {
+url-prefix("https://translate.google.com"), url-prefix("https://translate.google.se") {
 	body,
 	.frame::before,
 	.gt-is-itm-hover,
@@ -1543,7 +1550,7 @@ url-prefix("https://translate.google.com") {
 	}
 }
 @-moz-document url-prefix("https://www.google.com"),
-url-prefix("https://www.google.no") {
+url-prefix("https://www.google.no"), url-prefix("https://www.google.se") {
 	.gb_F,
 	.gb_Db.gb_Db,
 	.gb_Db.gb_Db:hover {
@@ -1796,7 +1803,7 @@ url-prefix("https://www.google.no") {
 		outline: var(--Primary-Variant) solid 1px;
 	}
 }
-@-moz-document url-prefix("https://www.google.com/maps") {
+@-moz-document url-prefix("https://www.google.com/maps"), url-prefix("https://www.google.se/maps"), url-prefix("https://www.google.no/maps") {
 	.app-imagery-mode .uCBduRuX4WR__button,
 	.app-imagery-mode .widget-zoom-button,
 	.app-imagery-mode .widget-expand-button-pegman,
