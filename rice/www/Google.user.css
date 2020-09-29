@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.2
+@version      2.1.3
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -676,12 +676,6 @@
 	.thumb.guide-video-youtube-red-icon.yt-sprite {
 		filter: grayscale(100%) brightness(200%)
 	}
-	#search-form > #container,
-	.masthead-search-terms,
-	.masthead-search-terms-border {
-		border: 0!important;
-		box-shadow: none!important
-	}
 	#footer-container,
 	#footer-main,
 	#yt-masthead-container,
@@ -699,8 +693,7 @@
 		visibility: hidden
 	}
 	#search-form > #container {
-		padding: 8px 10px!important;
-		border-radius: 5px 0 0 5px
+		padding: 8px !important;
 	}
 	.yt-uix-button-icon.yt-uix-button-icon-bell,
 	.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.search-btn-component.search-button .yt-uix-button-content {

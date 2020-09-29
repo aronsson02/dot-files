@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      2.0.2
+@version      2.0.4
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -66,19 +66,27 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 /* Coloration */
 .NavBar-container-1T0BJz {
 	background-color: var(--Mast) !important;
-		box-shadow: 0 0 8px var(--Background) !important
+	box-shadow: 0 0 8px var(--Background) !important
 }
 .SourceSidebar-openSidebar-364QEr.SourceSidebar-sidebar-YpV2mw,
 .SourceSidebar-collapsedSidebar-3MDUee.SourceSidebar-sidebar-YpV2mw {
 	background-color: var(--Mast-Dark) !important;
-	box-shadow: 0 0 8px var(--Background) !important
+	box-shadow: var(--Mast-Shadow) !important
 }
 .QuickSearchInput-container-1HiCoN {
 		background-color: var(--Mast-Variant);
-		box-shadow: 0 0 8px var(--Background) inset !important
+		box-shadow: var(--Mast-Shadow) inset !important;
+		border-radius: var(--Rounding) !important;
 	}
-.show-modal-transparent {
+.user-select-modal, .user-select-modal-pin-container .pin-digit.current {
+	background-color: var(--Background) !important
+    }
+.show-modal-transparent, .user-select-modal-users-container, .user-select-modal-pin-container {
 	background-color: var(--Surface) !important
+}
+.user-select-modal-pin-container .pin-digit {
+    background-color: var(--Surface-Variant);
+	box-shadow: var(--Mast-Shadow) !important
 }
 .alert-bar.server-update-alert-bar.notify,
 .EditHomeModalContent-button-HgDyCQ.ModalFooter-button-15VJa0.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
@@ -164,7 +172,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .help-block a,
 .edit-section-modal .wizard-blocks-group > .wizard-block.selected,
 .edit-section-modal .wizard-blocks-group > .wizard-block.selected,
-.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw:hover {
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw:hover, .user-select-list-item .user-select-top .add-icon {
 	color: var(--Primary) !important
 }
 .glyphicon.remove-2:hover,
@@ -201,7 +209,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 #plex-icon-player-volume-low-560:hover,
 #plex-icon-player-volume-mute-560:hover,
 #plex-icon-player-more-vertical-560:hover,
-.help-block a:hover {
+.help-block a:hover, .user-select-list-item:hover .user-select-top .add-icon {
 	color: var(--Primary-Variant) !important
 }
 .input-group-addon.edit-lock-addon.locked .glyphicon.lock,
@@ -274,10 +282,10 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 }
 .EditHomeModalContent-footer-10Ix6N.ModalFooter-modalFooter-30WIB5,
 .MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt {
-	border-radius: 0 0 10px 10px !important;
+	border-radius: 0 0 var(--Rounding) var(--Rounding) !important;
 }
 .ModalHeader-modalHeader-1Kf9RW {
-	border-radius: 10px 10px 0 0 !important;
+	border-radius: var(--Rounding) var(--Rounding) 0 0 !important;
 }
 .MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-:hover,
 .input-group-addon.edit-lock-addon.locked,
@@ -285,7 +293,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 	border-color: var(--Primary) !important
 }
 .MetadataPosterCardFace-face--dz_Dx:hover,
-.PrePlayCastCell-posterCardLinkContainer-27hxZ8.PrePlayCastCell-posterCardContainer-2xrsDg.Link-link-2n0yJn.Link-default-2XA2bN:hover {
+.PrePlayCastCell-posterCardLinkContainer-27hxZ8.PrePlayCastCell-posterCardContainer-2xrsDg.Link-link-2n0yJn.Link-default-2XA2bN:hover, .user-select-list-item:hover .user-select-top .user-poster {
 	box-shadow: 0 0 0 2px var(--Primary-Variant) !important;
 }
 .SourceSidebarLink-isSelected-27-9-6 {
@@ -340,21 +348,21 @@ div[class^="MetadataPosterCard-card-"] {
 /* Roundification Effects */
 .MetadataPosterCardFace-poster-L2P6rC {
 	overflow: hidden;
-	border-radius: 8px;
+	border-radius: var(--Rounding);
 	background-color: rgba(0,0,0,0);
 	box-shadow: 0 0 4px rgba(0,0,0,1);
 }
 .Menu-menuPortal-AbMPTD {
 	overflow: hidden;
-	border-radius: 8px;
+	border-radius: var(--Rounding);
 }
 .modal-content, .Modal-medium-1UIAdk {
 	overflow: hidden;
-	border-radius: 16px;
+	border-radius: var(--Rounding-Variant);
 }
 .Modal-large-1fVmOF {
 	overflow: hidden;
-	border-radius: 32px;
+	border-radius: calc(var(--Rounding-Variant) * 2);
 }
 /* Search Box Colorification */
 .QuickSearchInput-focused-3rEqJC {

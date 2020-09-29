@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stylus
-@version      2.0.2
+@version      2.1.0
 @description  Stylus theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -13,7 +13,7 @@
 
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document url-prefix("moz-extension://") {
+@-moz-document url-prefix("moz-extension://"), url-prefix("chrome-extension://") {
 #stylus-edit, #stylus-popup, #stylus-manage, #options-title, .CodeMirror-search-field, #message-box-buttons {
     background-color: var(--Surface) !important;
     color: var(--Foreground) !important;
