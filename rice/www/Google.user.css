@@ -1777,7 +1777,7 @@ url-prefix("https://www.google.no"), url-prefix("https://www.google.se") {
 	.widget-reveal-card,
 	#inputtools .ita-kd-icon-button,
 	.gb_5c.gb_Pg.gb_i,
-	.action-menu-widget {
+	.action-menu-widget, .widget-mylocation-button.ripple-container {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
