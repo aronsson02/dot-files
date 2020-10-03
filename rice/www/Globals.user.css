@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      2.0.9
+@version      2.1.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -43,7 +43,7 @@
         --Rounding-Variant: 16px;
 }
 
-*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended) {
+*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons) {
     font-family: "SF Nodo Pro" !important
  }
 

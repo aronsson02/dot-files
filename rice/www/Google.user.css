@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.3
+@version      2.1.4
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -99,6 +99,9 @@
 		background-image: none !important;
 		backdrop-filter: var(--blur-variant) !important;
 	}
+	#container.ytd-searchbox {
+		background: none !important
+	}
 	.video-stream.html5-main-video,
 	#thumbnail {
 		filter: contrast(1.1) !important
@@ -116,7 +119,8 @@
 	.ytp-gradient-top {
 		height: 0px !important
 	}
-	.gstl_50.sbdd_a * {
+	.gstl_50.sbdd_a *,
+	#container.ytd-searchbox {
 		border: none !important
 	}
 	.sbpqs_a {
@@ -430,6 +434,7 @@
 		background-color: var(--Mast-Variant) !important;
 		box-shadow: var(--Mast-Shadow) inset !important;
 		border-radius: var(--Rounding) !important;
+		overflow: hidden;
 	}
 	ytd-two-column-browse-results-renderer[page-subtype="channels"],
 	ytd-two-column-search-results-renderer,
@@ -1090,7 +1095,9 @@
 	.docs-gm .docs-offline-optinpromo.jfk-bubble,
 	.docs-gm .docs-sync-indicator-popup.jfk-bubble,
 	.modal-dialog-content,
-	.modal-dialog-title, .apps-shortcutshelpcontentimpl-container, .apps-shortcutshelppopup {
+	.modal-dialog-title,
+	.apps-shortcutshelpcontentimpl-container,
+	.apps-shortcutshelppopup {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -1125,7 +1132,10 @@
 	.grid-shim-bottom,
 	.grid-shim-end-ltr,
 	.grid-shim-end-rtl,
-	.docs-gm .docs-menubar .goog-control:hover, .boqDrivesharedialogPermissionslistPermissionrowListItem:hover .boqDrivesharedialogPermissionslistPermissionrowPermissionRow, .boqDrivesharedialogPermissionslistPermissionrowListItem:focus-within .boqDrivesharedialogPermissionslistPermissionrowPermissionRow, .boqDrivesharedialogLinkLinkpermissionLinkPermissionRow:hover {
+	.docs-gm .docs-menubar .goog-control:hover,
+	.boqDrivesharedialogPermissionslistPermissionrowListItem:hover .boqDrivesharedialogPermissionslistPermissionrowPermissionRow,
+	.boqDrivesharedialogPermissionslistPermissionrowListItem:focus-within .boqDrivesharedialogPermissionslistPermissionrowPermissionRow,
+	.boqDrivesharedialogLinkLinkpermissionLinkPermissionRow:hover {
 		background-color: var(--Surface-Variant) !important;
 	}
 	.companion-app-switcher-container,
@@ -1156,7 +1166,9 @@
 	.docs-gm .docos-notification-settings .goog-flat-menu-button,
 	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-label,
 	.docs-horizontal-ruler,
-	.docs-vertical-ruler, .waffle-theme-container-element, .apps-navigationwidget-item:hover {
+	.docs-vertical-ruler,
+	.waffle-theme-container-element,
+	.apps-navigationwidget-item:hover {
 		background-color: var(--Surface) !important;
 	}
 	.docs-gm .modal-dialog,
@@ -1177,7 +1189,13 @@
 	.docs-gm .docs-colormenuitems .docs-colormenuitems-custom-header,
 	.gb_l .gb_tb,
 	.docs-gm .docs-details-field,
-	.d-u-Q, .boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowPrimary, .boqDrivesharedialogLinkLinkpermissionVisibilityMenuTextButton.mdc-button:not(:disabled), .waffle-current-theme, .apps-shortcutshelpcontentimpl-dialog-title, .apps-actiondatawidget-content-header, .apps-shortcutshelpcontentimpl-input {
+	.d-u-Q,
+	.boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowPrimary,
+	.boqDrivesharedialogLinkLinkpermissionVisibilityMenuTextButton.mdc-button:not(:disabled),
+	.waffle-current-theme,
+	.apps-shortcutshelpcontentimpl-dialog-title,
+	.apps-actiondatawidget-content-header,
+	.apps-shortcutshelpcontentimpl-input {
 		color: var(--Foreground) !important;
 	}
 	.docs-gm .docs-menubar .goog-control,
@@ -1185,12 +1203,28 @@
 	#goog-toolbar-menu-button-caption.goog-inline-block,
 	.gb_l .gb_vb,
 	.goog-toolbar-menu-button-caption.goog-inline-block,
-	.docs-gm .docs-details-value, .boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowSecondary, .boqDrivesharedialogPermissionslistPermissionsummarySummary, .boqDrivesharedialogLinkLinksummaryLinkPermissionsSummary .boqDrivesharedialogLinkLinksummaryBolded, .boqDrivesharedialogLinkLinkpermissionLinkPermissionSummary, .waffle-theme-title, .apps-actiondatawidget-shortcut-desc, .apps-actiondatawidget-shortcut-key, .apps-actiondatawidget-override-keys-on, .apps-navigationwidget, .apps-shortcutshelpcontentimpl-legacy-label {
+	.docs-gm .docs-details-value,
+	.boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowSecondary,
+	.boqDrivesharedialogPermissionslistPermissionsummarySummary,
+	.boqDrivesharedialogLinkLinksummaryLinkPermissionsSummary .boqDrivesharedialogLinkLinksummaryBolded,
+	.boqDrivesharedialogLinkLinkpermissionLinkPermissionSummary,
+	.waffle-theme-title,
+	.apps-actiondatawidget-shortcut-desc,
+	.apps-actiondatawidget-shortcut-key,
+	.apps-actiondatawidget-override-keys-on,
+	.apps-navigationwidget,
+	.apps-shortcutshelpcontentimpl-legacy-label {
 		color: var(--Foreground-Variant) !important;
 	}
 	.docs-gm .docos-new-comment-button,
 	.docs-gm .docos-notification-settings .goog-flat-menu-button,
-	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-label, .GmButtonText:not(:disabled), .appsMaterialWizButtonPaperbuttonTextColored, .appsMaterialWizButtonPaperbuttonTextColored .exportButtonNestedLink, .apps-navigationwidget-item-selected, .apps-shortcutshelpcontentimpl-link, .apps-shortcutshelpcontentimpl-link:active {
+	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-label,
+	.GmButtonText:not(:disabled),
+	.appsMaterialWizButtonPaperbuttonTextColored,
+	.appsMaterialWizButtonPaperbuttonTextColored .exportButtonNestedLink,
+	.apps-navigationwidget-item-selected,
+	.apps-shortcutshelpcontentimpl-link,
+	.apps-shortcutshelpcontentimpl-link:active {
 		color: var(--Primary) !important;
 	}
 	.docs-gm .modal-dialog .goog-buttonset-action,
@@ -1210,7 +1244,8 @@
 	.docs-material .goog-toolbar-menu-button:hover,
 	.docs-material .goog-toolbar-combo-button:hover,
 	.docs-material .goog-toolbar-button:hover,
-	.waffle-sidebar-container .goog-flat-menu-button, .waffle-theme-thumbnail.waffle-theme-active {
+	.waffle-sidebar-container .goog-flat-menu-button,
+	.waffle-theme-thumbnail.waffle-theme-active {
 		border: 1px solid var(--Primary) !important;
 	}
 	.rowcol-dragger-handle-bar,
@@ -1219,7 +1254,9 @@
 	}
 	.boqDrivesharedialogCommonCalloutCalloutDialog,
 	.docs-gm #docs-titlebar-share-client-button .jfk-button,
-	.docs-gm-promo.jfk-bubble.docs-promo-bubble, .boqDrivesharedialogCommonTitlebarTitleBar .boqDrivesharedialogCommonTitlebarIconContainer, .GmFillButton:not(:disabled) {
+	.docs-gm-promo.jfk-bubble.docs-promo-bubble,
+	.boqDrivesharedialogCommonTitlebarTitleBar .boqDrivesharedialogCommonTitlebarIconContainer,
+	.GmFillButton:not(:disabled) {
 		background-color: var(--Primary) !important;
 	}
 	.boqDrivesharedialogCommonCalloutArrowDown .Arrow,
@@ -1294,7 +1331,8 @@
 	}
 }
 @-moz-document url-prefix("https://translate.google.no"),
-url-prefix("https://translate.google.com"), url-prefix("https://translate.google.se") {
+url-prefix("https://translate.google.com"),
+url-prefix("https://translate.google.se") {
 	body,
 	.frame::before,
 	.gt-is-itm-hover,
@@ -1516,7 +1554,8 @@ url-prefix("https://translate.google.com"), url-prefix("https://translate.google
 	}
 }
 @-moz-document url-prefix("https://www.google.com"),
-url-prefix("https://www.google.no"), url-prefix("https://www.google.se") {
+url-prefix("https://www.google.no"),
+url-prefix("https://www.google.se") {
 	.gb_F,
 	.gb_Db.gb_Db,
 	.gb_Db.gb_Db:hover {
@@ -1769,7 +1808,9 @@ url-prefix("https://www.google.no"), url-prefix("https://www.google.se") {
 		outline: var(--Primary-Variant) solid 1px;
 	}
 }
-@-moz-document url-prefix("https://www.google.com/maps"), url-prefix("https://www.google.se/maps"), url-prefix("https://www.google.no/maps") {
+@-moz-document url-prefix("https://www.google.com/maps"),
+url-prefix("https://www.google.se/maps"),
+url-prefix("https://www.google.no/maps") {
 	.app-imagery-mode .uCBduRuX4WR__button,
 	.app-imagery-mode .widget-zoom-button,
 	.app-imagery-mode .widget-expand-button-pegman,
@@ -1777,7 +1818,8 @@ url-prefix("https://www.google.no"), url-prefix("https://www.google.se") {
 	.widget-reveal-card,
 	#inputtools .ita-kd-icon-button,
 	.gb_5c.gb_Pg.gb_i,
-	.action-menu-widget, .widget-mylocation-button.ripple-container {
+	.action-menu-widget,
+	.widget-mylocation-button.ripple-container {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
