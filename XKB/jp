@@ -131,8 +131,8 @@ xkb_symbols "latin" {
 //┃        ┃ Á À │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E   │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
 //┃Backspce┃ á à │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e   │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
 //┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫//
-//┃      ┃ _   │ Z   │ X   │ C Š │ V Œ │ B   │ K   │ M   │ O   │ ,   │ *   ┃              ┃//
-//┃ Shift┃ -   │ z   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ o   │ .   │ 0   ┃  Lvl_3_Shift ┃//
+//┃      ┃ _   │     │ X   │ C Š │ V Œ │ B   │ K   │ M   │ O   │ ,   │ *   ┃              ┃//
+//┃ Shift┃ -   │ ʃ   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ o   │ .   │ 0   ┃  Lvl_3_Shift ┃//
 //┣━━━━━━┻┱────┴┲━━━━┷━━┱──┴─────┴─────┴─────┴─────┴─────┴─────┼─────┴┲━━━━┻┳━━━━━┳━━━━━━━┫//
 //┃       ┃     ┃       ┃                                      │      ┃     ┃     ┃       ┃//
 //┃ Ctrl_L┃     ┃ Alt_L ┃                                      │ Alt_R┃     ┃     ┃ Ctrl_R┃//
@@ -190,7 +190,7 @@ xkb_symbols "faelz" {
 
   key <LFSH> { [      Shift_L,      Shift_L                                    ] };
   key <LSGT> { [        minus,   underscore                                    ] };
-  key <AB01> { [            z,            Z                                    ] };
+  key <AB01> { [        U0283                                                  ] };
   key <AB02> { [            x,            X                                    ] };
   key <AB03> { [            c,            C,          scaron,           Scaron ] };
   key <AB04> { [            v,            V,              oe,               OE ] };
