@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      2.2.0
+@version      2.2.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -39,6 +39,7 @@
         --blur-dark: blur(50px) brightness(66%);
         --blur-dark-variant: blur(5px) brightness(66%);
         --Mast-Shadow: 0 0 8px 2px var(--Background);
+        --Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
         --Rounding: 8px;
         --Rounding-Variant: 16px;
 }

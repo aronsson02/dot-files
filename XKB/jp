@@ -191,7 +191,7 @@ xkb_symbols "faelz" {
   key <LFSH> { [      Shift_L,      Shift_L                                    ] };
   key <LSGT> { [        minus,   underscore                                    ] };
   key <AB01> { [        U0283                                                  ] };
-  key <AB02> { [            x,            X                                    ] };
+  key <AB02> { [            x,            X,           U1E8B,            U1E8A ] };
   key <AB03> { [            c,            C,          scaron,           Scaron ] };
   key <AB04> { [            v,            V,              oe,               OE ] };
   key <AB05> { [            b,            B,      dead_breve                   ] };

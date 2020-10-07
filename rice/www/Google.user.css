@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.4
+@version      2.1.5
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -432,7 +432,7 @@
 	}
 	#search-form {
 		background-color: var(--Mast-Variant) !important;
-		box-shadow: var(--Mast-Shadow) inset !important;
+		box-shadow: var(--Mast-Variant-Shadow) inset !important;
 		border-radius: var(--Rounding) !important;
 		overflow: hidden;
 	}

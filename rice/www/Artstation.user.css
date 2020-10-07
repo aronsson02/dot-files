@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Artstation
-@version      2.0.1
+@version      2.0.2
 @description  Artstation theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -22,7 +22,7 @@
 	}
 	#search-input {
 		background-color: var(--Mast-Variant);
-		box-shadow: 0 0 8px var(--Background) inset !important
+		box-shadow: var(--Mast-Variant-Shadow) inset !important
 	}
 	.bs-btn-primary {
 		background-color: var(--Primary);

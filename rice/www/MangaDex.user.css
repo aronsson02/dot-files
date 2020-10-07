@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      2.0.4
+@version      2.0.5
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -51,6 +51,19 @@ body, .bg-reader-controls, .form-control {
 	border-radius: 8px !important;
 	overflow: hidden;
 }
+	.input-group {
+	box-shadow: var(--Mast-Variant-Shadow) !important;
+	border-radius: 8px !important;
+	overflow: hidden;
+	}
+	#quick_search_input, #quick_search_type, #quick_search_button {
+		background-color: var(--Mast-Dark) !important;
+		color: var(--Foreground) !important
+	}
+	#quick_search_input {
+		border-left: 2px solid var(--Grey) !important;
+		border-right: 2px solid var(--Grey) !important
+	}
 .nav .nav-link {
 	border-radius: 8px 8px 0 0 !important;
 	background-color: var(--Mast-Dark) !important;
@@ -69,7 +82,7 @@ body, .bg-reader-controls, .form-control {
 .badge-success, .btn-success {
 	background-color: var(--green) !important
 }
-.badge-warning, .alert {
+.badge-warning, .alert, .bg-reader-controls {
 	color: var(--Foreground) !important
 }
 .text-primary {
