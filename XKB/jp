@@ -2,20 +2,19 @@
 //┌─────┐                             //
 //│ 2 4 │2 = Shift,  4 = Shift+Level3 //
 //│ 1 3 │1 = Normal, 3 = Level3       //
-//└─────┘                             //
-//         fælz latin colemak         ///////////////////////////////////////////////////////
+//└─────┘  fælz latin colemak         ///////////////////////////////////////////////////////
 //┌────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓//
-//│ ~  │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ { ‹ │ } › │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
-//│ ≈  │ æ ä │ å   │ ø ö │ þ ð │ [ « │ ] » │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
+//│ ~  │ { ‹ │ } › │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
+//│ ≈  │ [ « │ ] » │ æ ä │ å   │ ø ö │ þ ð │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
 //┢━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫//
-//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J   │ L Ł │ U Ú │ Y Ü │ $ £ │ %   │ &   ┃       ┃//
-//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j   │ l ł │ u ú │ y ü │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
+//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J Ì │ L Ł │ U Ú │ Y Ü │ $ £ │ %   │ &   ┃       ┃//
+//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j ì │ l ł │ u ú │ y ü │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
 //┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃//
 //┃        ┃ A Á │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E É │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
 //┃Backspce┃ a á │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e é │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
 //┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫//
-//┃      ┃ _   │ Z   │ X   │ C Š │ V Œ │ B   │ K   │ M   │ O   │ ,   │ *   ┃              ┃//
-//┃ Shift┃ -   │ z   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ o   │ .   │ 0   ┃  Lvl_3_Shift ┃//
+//┃      ┃ _ ¦ │ Z   │ X   │ C Š │ V Œ │ B   │ K   │ M   │ O   │ ,   │ *   ┃              ┃//
+//┃ Shift┃ - | │ z   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ o   │ .   │ 0   ┃  Lvl_3_Shift ┃//
 //┣━━━━━━┻┱────┴┲━━━━┷━━┱──┴─────┴─────┴─────┴─────┴─────┴─────┼─────┴┲━━━━┻┳━━━━━┳━━━━━━━┫//
 //┃       ┃     ┃       ┃                                      │      ┃     ┃     ┃       ┃//
 //┃ Ctrl_L┃     ┃ Alt_L ┃                                      │ Alt_R┃     ┃     ┃ Ctrl_R┃//
@@ -26,12 +25,12 @@ default partial alphanumeric_keys
 xkb_symbols "latin" {
 
   key <TLDE> { [     approxeq,   asciitilde                                    ] };
-  key <AE01> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
-  key <AE02> { [        aring,        Aring                                    ] };
-  key <AE03> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
-  key <AE04> { [        thorn,        THORN,             eth,              ETH ] };
-  key <AE05> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
-  key <AE06> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+  key <AE01> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
+  key <AE02> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+  key <AE03> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
+  key <AE04> { [        aring,        Aring                                    ] };
+  key <AE05> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
+  key <AE06> { [        thorn,        THORN,             eth,              ETH ] };
   key <AE07> { [        colon,    semicolon,        multiply,         division ] };
   key <AE08> { [           at,        equal,      apostrophe                   ] };
   key <AE09> { [     question,         plus,    questiondown                   ] };
@@ -71,7 +70,7 @@ xkb_symbols "latin" {
   key <AC12> { [            3,   numbersign                                    ] };
 
 
-  key <LFSH> { [      Shift_L,      Shift_L                                    ] };
+  key <LFSH> { [      Shift_L,      Shift_L,       Caps_Lock,        Caps_Lock ] };
   key <LSGT> { [        minus,   underscore                                    ] };
   key <AB01> { [            z,            Z                                    ] };
   key <AB02> { [            x,            X                                    ] };
@@ -119,14 +118,13 @@ xkb_symbols "latin" {
 //┌─────┐                             //
 //│ 2 4 │2 = Shift,  4 = Level3+Shift //
 //│ 1 3 │1 = Normal, 3 = Level3       //
-//└─────┘                             //
-//            fælz colemak            ///////////////////////////////////////////////////////
+//└─────┘     fælz colemak            ///////////////////////////////////////////////////////
 //┌────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓//
-//│ ~  │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ { ‹ │ } › │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
-//│ ≈  │ æ ä │ å   │ ø ö │ þ ð │ [ « │ ] » │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
+//│ ~  │ { ‹ │ } › │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
+//│ ≈  │ [ « │ ] » │ æ ä │ å   │ ø ö │ þ ð │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
 //┢━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫//
-//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J   │ L Ł │ U Ú │ Y Ý │ $ £ │ %   │ &   ┃       ┃//
-//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j   │ l ł │ u ú │ y ý │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
+//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J Ì │ L Ł │ U Ú │ Y Ý │ $ £ │ %   │ &   ┃       ┃//
+//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j ì │ l ł │ u ú │ y ý │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
 //┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃//
 //┃        ┃ Á À │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E   │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
 //┃Backspce┃ á à │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e   │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
@@ -143,12 +141,12 @@ partial alphanumeric_keys
 xkb_symbols "faelz" {
 
   key <TLDE> { [     approxeq,   asciitilde                                    ] };
-  key <AE01> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
-  key <AE02> { [        aring,        Aring                                    ] };
-  key <AE03> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
-  key <AE04> { [        thorn,        THORN,             eth,              ETH ] };
-  key <AE05> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
-  key <AE06> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+  key <AE01> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
+  key <AE02> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+  key <AE03> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
+  key <AE04> { [        aring,        Aring                                    ] };
+  key <AE05> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
+  key <AE06> { [        thorn,        THORN,             eth,              ETH ] };
   key <AE07> { [        colon,    semicolon,        multiply,         division ] };
   key <AE08> { [           at,        equal,      apostrophe                   ] };
   key <AE09> { [     question,         plus,    questiondown                   ] };
@@ -188,7 +186,7 @@ xkb_symbols "faelz" {
   key <AC12> { [            3,   numbersign                                    ] };
 
 
-  key <LFSH> { [      Shift_L,      Shift_L                                    ] };
+  key <LFSH> { [      Shift_L,      Shift_L,       Caps_Lock,        Caps_Lock ] };
   key <LSGT> { [        minus,   underscore                                    ] };
   key <AB01> { [        U0283                                                  ] };
   key <AB02> { [            x,            X,           U1E8B,            U1E8A ] };
@@ -236,8 +234,7 @@ xkb_symbols "faelz" {
 //┌─────┐                             //
 //│ 2 4 │2 = Shift,  4 = Level3+Shift //
 //│ 1 3 │1 = Normal, 3 = Level3       //
-//└─────┘                             //
-//            ᚦᛇᛚᛋ colemak            ///////////////////////////////////////////////////////
+//└─────┘     ᚦᛇᛚᛋ colemak            ///////////////////////////////////////////////////////
 //┌────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓//
 //│ ~  │ Э   │     │     │ Ð Þ │ { ‹ │ } › │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
 //│ ≈  │ э   │     │     │ ð þ │ [ « │ ] » │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
@@ -305,7 +302,7 @@ xkb_symbols "runic" {
     key <AC12> { [            3,   numbersign                                    ] };
 
 
-    key <LFSH> { [      Shift_L,      Shift_L                                    ] };
+    key <LFSH> { [      Shift_L,      Shift_L,       Caps_Lock,        Caps_Lock ] };
     key <LSGT> { [        minus,   underscore                                    ] };
     key <AB01> { [        U16C9                                                  ] };
     key <AB02> { [        U0445                                                  ] };
