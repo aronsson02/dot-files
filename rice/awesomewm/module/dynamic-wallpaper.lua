@@ -36,9 +36,9 @@ wallpaper_night = 'night-wallpaper.png'
 wallpaper_midnight = 'midnight-wallpaper.jpg'
 
 -- Change the wallpaper on scheduled time
-morning_schedule = '06:22:00'
+morning_schedule = '07:00:00'
 noon_schedule = '12:00:00'
-night_schedule = '17:58:00'
+night_schedule = '17:30:00'
 midnight_schedule = '24:00:00'
 
 -- Don't stretch wallpaper on multihead setups if true
