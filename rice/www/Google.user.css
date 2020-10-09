@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.5
+@version      2.1.6
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1329,6 +1329,9 @@
 	.docs-branding-icon-img.docs-branding-icon-spreadsheets {
 		filter: hue-rotate(45deg) !important;
 	}
+	.gb_0a {
+	animation: var(--Anim-Google-One) !important;
+	}
 }
 @-moz-document url-prefix("https://translate.google.no"),
 url-prefix("https://translate.google.com"),
@@ -1552,6 +1555,9 @@ url-prefix("https://translate.google.se") {
 	.gb_uc .gb_se::before {
 		animation: filter 6s linear infinite !important;
 	}
+	.gb_0a {
+	animation: var(--Anim-Google-One) !important;
+	}
 }
 @-moz-document url-prefix("https://www.google.com"),
 url-prefix("https://www.google.no"),
@@ -1671,6 +1677,9 @@ url-prefix("https://www.google.se") {
 	}
 	.gb_Qb {
 		display: none !important;
+	}
+	.gb_0a {
+	animation: var(--Anim-Google-One) !important;
 	}
 }
 @-moz-document url-prefix("https://drive.google.com") {
@@ -1806,6 +1815,9 @@ url-prefix("https://www.google.se") {
 	}
 	:focus {
 		outline: var(--Primary-Variant) solid 1px;
+	}
+	.gb_0a {
+	animation: var(--Anim-Google-One) !important;
 	}
 }
 @-moz-document url-prefix("https://www.google.com/maps"),
@@ -2023,5 +2035,8 @@ url-prefix("https://www.google.no/maps") {
 	.lVJX2wDGbwj__divider,
 	.section-homescreen-expand {
 		display: none !important
+	}
+	.gb_0a {
+	animation: var(--Anim-Google-One) !important;
 	}
 }

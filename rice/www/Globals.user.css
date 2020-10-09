@@ -42,6 +42,7 @@
         --Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
         --Rounding: 8px;
         --Rounding-Variant: 16px;
+		--Anim-Google-One: google-one 3s ease infinite;
 }
 
 *:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons) {
@@ -82,14 +83,20 @@ body {
 }
 */
 @keyframes filter {
-    0% {
-        filter: hue-rotate(360deg) sepia(0) ;
-    }
-    50% {
-        filter: hue-rotate(0) sepia(50%) ;
-    }
-    100%{
-        filter: hue-rotate(360deg) sepia(0) ;
-    }
+    0% {filter: hue-rotate(360deg) sepia(0);}
+    50% {filter: hue-rotate(0) sepia(50%);}
+    100%{filter: hue-rotate(360deg) sepia(0);}
+}
+
+/*
+.gb_0a {
+	animation: google-one 3s ease infinite !important;
+}
+*/
+	@keyframes google-one {
+	10% {transform: rotate(0deg);}
+	30% {transform: rotate(-20deg);}
+	80% {transform: rotate(1100deg);}
+	100% {transform: rotate(1080deg);}
 }
 }
