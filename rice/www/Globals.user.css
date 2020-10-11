@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      2.2.1
+@version      2.2.2
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -42,7 +42,7 @@
         --Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
         --Rounding: 8px;
         --Rounding-Variant: 16px;
-		--Anim-Google-One: google-one 3s ease infinite;
+		--Anim-Google-One: google-one 6s ease infinite;
 }
 
 *:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons) {
@@ -50,27 +50,21 @@
  }
 
 ::-webkit-scrollbar {
-  width: 6px
-}
+  width: 6px}
 ::-webkit-scrollbar-track {
-  background: var(--Background);
-}
+  background: var(--Background);}
 ::-webkit-scrollbar-thumb {
   background: var(--Foreground-Dark);
-  border-radius: var(--Rounding) 0 0 var(--Rounding)
-}
+  border-radius: var(--Rounding) 0 0 var(--Rounding)}
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--Foreground-Variant);
-}
+  background: var(--Foreground-Variant);}
 ::-webkit-scrollbar-thumb:active {
-  background: var(--Foreground);
-}
+  background: var(--Foreground);}
 
 /*
 body {
     animation: hue-rotate 6s linear infinite !important;
-}
-*/
+}*/
 @keyframes hue-rotate {
     0% { filter: hue-rotate(0deg); }
     100%   { filter: hue-rotate(360deg); }
@@ -80,8 +74,7 @@ body {
 body {
     background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082) !important;
     animation: filter 6s linear infinite !important;
-}
-*/
+}*/
 @keyframes filter {
     0% {filter: hue-rotate(360deg) sepia(0);}
     50% {filter: hue-rotate(0) sepia(50%);}
@@ -91,12 +84,14 @@ body {
 /*
 .gb_0a {
 	animation: google-one 3s ease infinite !important;
-}
-*/
+}*/
 	@keyframes google-one {
 	10% {transform: rotate(0deg);}
-	30% {transform: rotate(-20deg);}
-	80% {transform: rotate(1100deg);}
-	100% {transform: rotate(1080deg);}
+	20% {transform: rotate(-20deg);}
+	40% {transform: rotate(1100deg);}
+	50% {transform: rotate(1080deg);}
+	60% {transform: rotate(1100deg);}
+	80% {transform: rotate(-20deg);}
+	100% {transform: rotate(0deg);}
 }
 }

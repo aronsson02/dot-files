@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.7
+@version      2.1.8
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1830,7 +1830,7 @@ url-prefix("https://www.google.no/maps") {
 	.widget-reveal-card,
 	.gb_5c.gb_Pg.gb_i,
 	.action-menu-widget,
-	.app-imagery-mode .widget-mylocation-button {
+	.app-imagery-mode .widget-mylocation-button, .widget-layer, .widget-nearby-suggestions-inner {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
@@ -1880,11 +1880,10 @@ url-prefix("https://www.google.no/maps") {
 	.widget-homescreen .section-layout.section-cardbox,
 	.cX2WmPgCkHi__clickable:focus,
 	.section-info-action-button:hover,
-	.section-listitem-metadata .section-action-chip-button, .ita-kd-menuitem-hover {
+	.section-listitem-metadata .section-action-chip-button, .ita-kd-menuitem-hover, .section-editorial-button:hover {
 		background-color: var(--Surface-Variant) !important
 	}
 	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint,
-	.section-layout.section-scrollbox.scrollable-y.scrollable-show,
 	.section-info-hoverable:hover,
 	.section-info .ripple-container:hover,
 	.keynav-mode .section-info-action-button:focus,
@@ -1892,14 +1891,17 @@ url-prefix("https://www.google.no/maps") {
 		background-color: var(--Background) !important;
 		color: var(--Foreground-Variant)
 	}
+	.section-header {
+		background-color: var(--Mast)
+	}
 	.widget-directions-omnibox,
 	.widget-directions-dragger,
 	.jqnFjrOWMVU__bucket-fill,
 	.widget-directions-omnibox .searchbox,
-	.section-directions-options {
+	.section-directions-options, .section-popular-times-value {
 		background: var(--Primary) !important
 	}
-	.widget-directions .searchbox-searchbutton {
+	.widget-directions .searchbox-searchbutton, .section-popular-times-current-value {
 		background: var(--Primary-Variant) !important
 	}
 	.widget-directions .sbib_b::after {
@@ -1910,7 +1912,7 @@ url-prefix("https://www.google.no/maps") {
 	body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata {
 		background-image: none
 	}
-	.ita-kd-menuitem-hover {
+	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner {
 		color: var(--Foreground) !important
 	}
 	.suggest-query,
@@ -1931,7 +1933,7 @@ url-prefix("https://www.google.no/maps") {
 	.ozj7Vb3wnYq__title-and-subtitle,
 	.section-mobile-promo-large-title-with-icon,
 	.section-dialog-header,
-	.section-dialog-footer-text, .ita-kd-menuitem {
+	.section-dialog-footer-text, .ita-kd-menuitem, .cX2WmPgCkHi__root, .section-editorial, .section-attribute-group {
 		color: var(--Foreground-Variant)
 	}
 	.section-categorical-shortcut-button-text,
@@ -1974,7 +1976,7 @@ url-prefix("https://www.google.no/maps") {
 	.jVMscDilb9d__clear,
 	.cYrDcjyGO77__dropdown-icon,
 	.section-review-more-icon,
-	.section-review-interaction-icon, .ita-kd-img {
+	.section-review-interaction-icon, .ita-kd-img, .maps-sprite-place-attributes-done {
 		filter: invert(1) !important
 	}
 	.searchbox-directions::before,
@@ -1993,12 +1995,12 @@ url-prefix("https://www.google.no/maps") {
 	.iRxY3GoUYUY__actionchip .iRxY3GoUYUY__icon,
 	.iRxY3GoUYUY__densechip .iRxY3GoUYUY__icon,
 	.iRxY3GoUYUY__icon,
-	.close-button {
+	.close-button, .nearby-restaurant-icon {
 		filter: hue-rotate(320deg) contrast(2)
 	}
 	.section-star,
 	.section-review-star.section-review-star-active,
-	.rs9iHBFJiiu__star {
+	.rs9iHBFJiiu__star, .hwQZgEbYrz5__section-star {
 		filter: hue-rotate(130deg)
 	}
 	.searchbox-searchbutton::before {
@@ -2025,7 +2027,7 @@ url-prefix("https://www.google.no/maps") {
 	.widget-directions-input-underline {
 		border-color: var(--Mast)
 	}
-	.gm2-hairline-border {
+	.gm2-hairline-border, .widget-pane-toggle-button {
 		border: none
 	}
 	.ambient-card-section {
@@ -2035,6 +2037,12 @@ url-prefix("https://www.google.no/maps") {
 	.widget-watermark {
 		border-radius: 16px;
 		padding: 5px
+	}
+	.widget-pane-collapsed .widget-pane-toggle-button {
+		border-radius: var(--Rounding-Variant) 0 0 var(--Rounding-Variant)
+	}
+	.widget-pane-toggle-button {
+		border-radius: 0 var(--Rounding) var(--Rounding) 0
 	}
 	.lVJX2wDGbwj__divider,
 	.section-homescreen-expand {
