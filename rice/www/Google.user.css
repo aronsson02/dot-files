@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.6
+@version      2.1.7
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1329,9 +1329,6 @@
 	.docs-branding-icon-img.docs-branding-icon-spreadsheets {
 		filter: hue-rotate(45deg) !important;
 	}
-	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
-	}
 }
 @-moz-document url-prefix("https://translate.google.no"),
 url-prefix("https://translate.google.com"),
@@ -1555,9 +1552,6 @@ url-prefix("https://translate.google.se") {
 	.gb_uc .gb_se::before {
 		animation: filter 6s linear infinite !important;
 	}
-	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
-	}
 }
 @-moz-document url-prefix("https://www.google.com"),
 url-prefix("https://www.google.no"),
@@ -1677,9 +1671,6 @@ url-prefix("https://www.google.se") {
 	}
 	.gb_Qb {
 		display: none !important;
-	}
-	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
 	}
 }
 @-moz-document url-prefix("https://drive.google.com") {
@@ -1816,9 +1807,6 @@ url-prefix("https://www.google.se") {
 	:focus {
 		outline: var(--Primary-Variant) solid 1px;
 	}
-	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
-	}
 }
 @-moz-document url-prefix("https://www.google.com/maps"),
 url-prefix("https://www.google.se/maps"),
@@ -1828,10 +1816,9 @@ url-prefix("https://www.google.no/maps") {
 	.app-imagery-mode .widget-expand-button-pegman,
 	.app-imagery-mode .scene-footer,
 	.widget-reveal-card,
-	#inputtools .ita-kd-icon-button,
 	.gb_5c.gb_Pg.gb_i,
 	.action-menu-widget,
-	.widget-mylocation-button.ripple-container {
+	.app-imagery-mode .widget-mylocation-button {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
@@ -1839,6 +1826,7 @@ url-prefix("https://www.google.no/maps") {
 	.widget-zoom-button,
 	.widget-expand-button-pegman,
 	.widget-watermark,
+	.widget-mylocation-button,
 	.snackbar {
 		background: none !important;
 		backdrop-filter: var(--blur-variant) !important;
@@ -1868,7 +1856,8 @@ url-prefix("https://www.google.no/maps") {
 	.section-suggestions,
 	.ugiz4pqJLAG__button,
 	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted,
-	.widget-pane-toggle-button {
+	.widget-pane-toggle-button,
+	.ita-kd-icon-button, .ita-kd-dropdown-menu {
 		background-color: var(--Surface) !important
 	}
 	.ambient-card-section,
@@ -1879,7 +1868,7 @@ url-prefix("https://www.google.no/maps") {
 	.widget-homescreen .section-layout.section-cardbox,
 	.cX2WmPgCkHi__clickable:focus,
 	.section-info-action-button:hover,
-	.section-listitem-metadata .section-action-chip-button {
+	.section-listitem-metadata .section-action-chip-button, .ita-kd-menuitem-hover {
 		background-color: var(--Surface-Variant) !important
 	}
 	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint,
@@ -1909,6 +1898,9 @@ url-prefix("https://www.google.no/maps") {
 	body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata {
 		background-image: none
 	}
+	.ita-kd-menuitem-hover {
+		color: var(--Foreground) !important
+	}
 	.suggest-query,
 	.widget-settings-button,
 	.section-area-weather-title,
@@ -1927,7 +1919,7 @@ url-prefix("https://www.google.no/maps") {
 	.ozj7Vb3wnYq__title-and-subtitle,
 	.section-mobile-promo-large-title-with-icon,
 	.section-dialog-header,
-	.section-dialog-footer-text {
+	.section-dialog-footer-text, .ita-kd-menuitem {
 		color: var(--Foreground-Variant)
 	}
 	.section-categorical-shortcut-button-text,
@@ -1970,7 +1962,7 @@ url-prefix("https://www.google.no/maps") {
 	.jVMscDilb9d__clear,
 	.cYrDcjyGO77__dropdown-icon,
 	.section-review-more-icon,
-	.section-review-interaction-icon {
+	.section-review-interaction-icon, .ita-kd-img {
 		filter: invert(1) !important
 	}
 	.searchbox-directions::before,
@@ -2035,8 +2027,5 @@ url-prefix("https://www.google.no/maps") {
 	.lVJX2wDGbwj__divider,
 	.section-homescreen-expand {
 		display: none !important
-	}
-	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
 	}
 }
