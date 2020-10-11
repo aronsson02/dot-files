@@ -1867,6 +1867,7 @@ url-prefix("https://www.google.no/maps") {
 	.section-divider,
 	.section-suggestions,
 	.ugiz4pqJLAG__button,
+	.widget-homescreen .section-layout.section-cardbox,
 	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted,
 	.widget-pane-toggle-button,
 	.ita-kd-icon-button, .ita-kd-dropdown-menu {
@@ -1877,7 +1878,6 @@ url-prefix("https://www.google.no/maps") {
 	.ambient-card-section:focus,
 	.ugiz4pqJLAG__button:hover,
 	.iRxY3GoUYUY__button:hover,
-	.widget-homescreen .section-layout.section-cardbox,
 	.cX2WmPgCkHi__clickable:focus,
 	.section-info-action-button:hover,
 	.section-listitem-metadata .section-action-chip-button, .ita-kd-menuitem-hover, .section-editorial-button:hover {
@@ -1912,7 +1912,7 @@ url-prefix("https://www.google.no/maps") {
 	body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata {
 		background-image: none
 	}
-	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner {
+	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title {
 		color: var(--Foreground) !important
 	}
 	.suggest-query,
@@ -2027,7 +2027,7 @@ url-prefix("https://www.google.no/maps") {
 	.widget-directions-input-underline {
 		border-color: var(--Mast)
 	}
-	.gm2-hairline-border, .widget-pane-toggle-button {
+	.gm2-hairline-border, .widget-pane-toggle-button, .section-layout.section-cardbox {
 		border: none
 	}
 	.ambient-card-section {
@@ -2044,8 +2044,11 @@ url-prefix("https://www.google.no/maps") {
 	.widget-pane-toggle-button {
 		border-radius: 0 var(--Rounding) var(--Rounding) 0
 	}
+	.widget-homescreen .section-layout.section-cardbox {
+		border-radius: var(--Rounding-Variant)
+	}
 	.lVJX2wDGbwj__divider,
-	.section-homescreen-expand {
+	.section-homescreen-expand, .section-divider.section-divider-top-line {
 		display: none !important
 	}
 	.gb_0a, .gb_jc {
