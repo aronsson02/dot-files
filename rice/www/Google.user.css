@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.1.8
+@version      2.2.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1799,11 +1799,6 @@ url-prefix("https://www.google.se") {
 	.Ea-oa {
 		border: none !important;
 	}
-	.gb_ua.gb_oe,
-	.gb_va,
-	.a-ec-Gd .Kzazxf.x6jRSb::before {
-		animation: hue-rotate 2s linear 2s infinite !important;
-	}
 	.ta-gc-np-Nd {
 		background-image: none !important;
 	}
@@ -2049,6 +2044,86 @@ url-prefix("https://www.google.no/maps") {
 	}
 	.lVJX2wDGbwj__divider,
 	.section-homescreen-expand, .section-divider.section-divider-top-line {
+		display: none !important
+	}
+	.gb_0a, .gb_jc {
+	animation: var(--Anim-Google-One) !important;
+	}
+}
+
+@-moz-document url-prefix("https://photos.google.com/") {
+	.Vtmiqc, .wtM1tc {
+		background: none !important;
+		backdrop-filter: var(--blur-dark-variant) !important;
+	}
+	body, .gN5aAe, .YisXab, .Cv8Rjc, .dhgHyf, .Yyy4Hc .Mna4i .ajQY2, .mEVcIe.uGCjIb, .DNLJJe, .mEVcIe.uGCjIb, .uGCjIb {
+		background-color: var(--Background) !important
+	}
+	.wDSX5e, .b4qJMd, .z80M1.FwR7Pc, .g3VIld, .rWgZgf, .RunE3b, .uORMl, .Cyg0ye, .p137Zd, .faKKX {
+		background-color: var(--Surface)
+	}
+	.JPdR6b, .Bofz6, .ZjEvzc, .hUsHhf, .KxwMuc, .tdVbM, .ZLRk4e.fROdt {
+		background-color: var(--Surface-Variant) !important
+	}
+	.QtDoYb, .V639qd.J9Nfi .X1clqd {
+		background-color: var(--Mast) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.Aul2T {
+		background-color: var(--Mast-Variant) !important;
+		box-shadow: var(--Mast-Shadow) inset !important
+	}
+	.Q77Pt {
+		background-color: var(--Mast-Dark) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.Kd04rd:hover, .BYwrnd {
+		background-color: var(--Mast) !important;
+	}
+	textarea {
+		background-color: var(--Mast-Dark) !important
+	}
+	.wDSX5e .DOAbib.ixImeb:hover, .wDSX5e .DOAbib:hover, .nCP5yc:not(:disabled), .gqI68:before, .gqI68:after, .Ud9NFb .XCxRFf {
+		background-color: var(--Primary)
+	}
+	.wDSX5e .ixImeb {
+		background-color: var(--Primary-Variant)
+	}
+	.K0a18, .eReC4e {
+		background: linear-gradient(var(--Surface),transparent);
+		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0
+	}
+	.G7ubtf, .mJ7Vpd .WNmljc, .x1LMef, .WUbige, .OgirMe, .rWyLGb, .ajQY2, .QeP71d, .H9eFkc, .V639qd.J9Nfi .X1clqd, .EIug8e, .I7yCae, .IGdgBf, .CqtWH, .AJM7gb {
+		color: var(--Foreground)
+	}
+	body, .xA0gfb, .o7Osof .oJeWuf, .hPriQc, .R9U8ab, .wiOkb, .LjDxcd, .Udl2rb .VNJHc .snByac, .mfQCMe,.WMnOad, .Ag1myf, .rWd3Kd, .rN6Qmb, .eT2rxc, .YHjolb, .hcClrf, .YCtJOe {
+		color: var(--Foreground-Variant) !important
+	}
+	.oBMhZb, .Cvr4mf, .iRQraf, .nAfFgf {
+		color: var(--Foreground-Dark)
+	}
+	.DOAbib.ixImeb .G7ubtf {
+		color: var(--Background)
+	}
+	.ksBjEc, .jpjDKc, .AUyCHc {
+		color: var(--Primary) !important
+	}
+	.VfPpkd-kBDsod .JUQOtc, .Lw7GHd.snByac .JUQOtc, .WDli4c .JUQOtc, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge {
+		fill: var(--Foreground) !important
+	}
+	.ixImeb .JUQOtc, .ixImeb .OOX9bc {
+		fill: var(--Background) !important
+	}
+	.Cyg0ye {
+		border-radius: var(--Rounding)
+	}
+	.V639qd.J9Nfi {
+		border-radius: var(--Rounding-Variant)
+	}
+	.xoqcGf .QtDoYb, .eReC4e.FbgB9, .lDDKpd .ajQY2, .ajQY2:hover, .gLE0gc {
+		border: none !important
+	}
+	.YisXab::after, .EYUu4d, .swa7If {
 		display: none !important
 	}
 	.gb_0a, .gb_jc {
