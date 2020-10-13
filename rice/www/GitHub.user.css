@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         GitHub
-@version      2.0.1
+@version      2.0.2
 @description  GitHub theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -2472,7 +2472,7 @@ body
 {
   background-color: var(--Foreground-Dark);
   /*** Change this URL for your own wallpaper image ***/
-  background-image: url('https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/awesomewm/theme/wallpapers/noon-wallpaper.jpg') !important;
+  background-image: url('https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/awesomewm/theme/wallpapers/midnight-wallpaper.jpg') !important;
   background-size: cover !important;
   background-clip: border-box !important;
   background-origin: padding-box !important;
