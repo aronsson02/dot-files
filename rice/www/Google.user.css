@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.2.0
+@version      2.2.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1839,7 +1839,7 @@ url-prefix("https://www.google.no/maps") {
 		backdrop-filter: var(--blur-variant) !important;
 	}
 	.widget-settings-pane,
-	.modal-border {
+	.modal-border, .issue-card-content, #issue-card-header {
 		background: none !important;
 		backdrop-filter: var(--blur) !important;
 	}
@@ -1907,7 +1907,7 @@ url-prefix("https://www.google.no/maps") {
 	body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata {
 		background-image: none
 	}
-	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title {
+	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title, #issue-card-header, .issue-card-title {
 		color: var(--Foreground) !important
 	}
 	.suggest-query,
@@ -1928,11 +1928,11 @@ url-prefix("https://www.google.no/maps") {
 	.ozj7Vb3wnYq__title-and-subtitle,
 	.section-mobile-promo-large-title-with-icon,
 	.section-dialog-header,
-	.section-dialog-footer-text, .ita-kd-menuitem, .cX2WmPgCkHi__root, .section-editorial, .section-attribute-group {
+	.section-dialog-footer-text, .ita-kd-menuitem, .cX2WmPgCkHi__root, .section-editorial, .section-attribute-group, .kd-radio-label {
 		color: var(--Foreground-Variant)
 	}
 	.section-categorical-shortcut-button-text,
-	.section-review-publish-date {
+	.section-review-publish-date, .rap-text-input, .single-selection-enabled .issue-card-field-hint {
 		color: var(--Foreground-Dark)
 	}
 	.blue-button-text,
@@ -2052,9 +2052,13 @@ url-prefix("https://www.google.no/maps") {
 }
 
 @-moz-document url-prefix("https://photos.google.com/") {
-	.Vtmiqc, .wtM1tc {
+	.Vtmiqc, .wtM1tc, .g4aRS {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
+	}
+	.YmYVQb {
+		background: none !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	body, .gN5aAe, .YisXab, .Cv8Rjc, .dhgHyf, .Yyy4Hc .Mna4i .ajQY2, .mEVcIe.uGCjIb, .DNLJJe, .mEVcIe.uGCjIb, .uGCjIb {
 		background-color: var(--Background) !important
@@ -2093,8 +2097,8 @@ url-prefix("https://www.google.no/maps") {
 		background: linear-gradient(var(--Surface),transparent);
 		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0
 	}
-	.G7ubtf, .mJ7Vpd .WNmljc, .x1LMef, .WUbige, .OgirMe, .rWyLGb, .ajQY2, .QeP71d, .H9eFkc, .V639qd.J9Nfi .X1clqd, .EIug8e, .I7yCae, .IGdgBf, .CqtWH, .AJM7gb {
-		color: var(--Foreground)
+	.G7ubtf, .mJ7Vpd .WNmljc, .x1LMef, .WUbige, .OgirMe, .rWyLGb, .ajQY2, .QeP71d, .H9eFkc, .V639qd.J9Nfi .X1clqd, .EIug8e, .I7yCae, .IGdgBf, .CqtWH, .AJM7gb, .vctcH {
+		color: var(--Foreground) !important
 	}
 	body, .xA0gfb, .o7Osof .oJeWuf, .hPriQc, .R9U8ab, .wiOkb, .LjDxcd, .Udl2rb .VNJHc .snByac, .mfQCMe,.WMnOad, .Ag1myf, .rWd3Kd, .rN6Qmb, .eT2rxc, .YHjolb, .hcClrf, .YCtJOe {
 		color: var(--Foreground-Variant) !important
