@@ -2063,7 +2063,7 @@ url-prefix("https://www.google.no/maps") {
 	body, .gN5aAe, .YisXab, .Cv8Rjc, .dhgHyf, .Yyy4Hc .Mna4i .ajQY2, .mEVcIe.uGCjIb, .DNLJJe, .mEVcIe.uGCjIb, .uGCjIb {
 		background-color: var(--Background) !important
 	}
-	.wDSX5e, .b4qJMd, .z80M1.FwR7Pc, .g3VIld, .rWgZgf, .RunE3b, .uORMl, .Cyg0ye, .p137Zd, .faKKX {
+	.wDSX5e, .b4qJMd, .z80M1.FwR7Pc, .g3VIld, .rWgZgf, .RunE3b, .uORMl, .Cyg0ye, .p137Zd, .faKKX, .Usd1Ac {
 		background-color: var(--Surface)
 	}
 	.JPdR6b, .Bofz6, .ZjEvzc, .hUsHhf, .KxwMuc, .tdVbM, .ZLRk4e.fROdt {
@@ -2097,17 +2097,17 @@ url-prefix("https://www.google.no/maps") {
 		background: linear-gradient(var(--Surface),transparent);
 		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0
 	}
-	.G7ubtf, .mJ7Vpd .WNmljc, .x1LMef, .WUbige, .OgirMe, .rWyLGb, .ajQY2, .QeP71d, .H9eFkc, .V639qd.J9Nfi .X1clqd, .EIug8e, .I7yCae, .IGdgBf, .CqtWH, .AJM7gb, .vctcH {
+	.G7ubtf, .mJ7Vpd .WNmljc, .x1LMef, .WUbige, .OgirMe, .rWyLGb, .ajQY2, .QeP71d, .H9eFkc, .V639qd.J9Nfi .X1clqd, .EIug8e, .I7yCae, .IGdgBf, .CqtWH, .AJM7gb, .vctcH, .ARSUIf, .C96I0d {
 		color: var(--Foreground) !important
 	}
-	body, .xA0gfb, .o7Osof .oJeWuf, .hPriQc, .R9U8ab, .wiOkb, .LjDxcd, .Udl2rb .VNJHc .snByac, .mfQCMe,.WMnOad, .Ag1myf, .rWd3Kd, .rN6Qmb, .eT2rxc, .YHjolb, .hcClrf, .YCtJOe {
+	body, .xA0gfb, .o7Osof .oJeWuf, .hPriQc, .R9U8ab, .wiOkb, .LjDxcd, .Udl2rb .VNJHc .snByac, .mfQCMe,.WMnOad, .Ag1myf, .rWd3Kd, .rN6Qmb, .eT2rxc, .YHjolb, .hcClrf, .YCtJOe, .FkWMmd, .uIkos {
 		color: var(--Foreground-Variant) !important
 	}
-	.oBMhZb, .Cvr4mf, .iRQraf, .nAfFgf {
+	.oBMhZb, .Cvr4mf, .iRQraf, .nAfFgf, .CKdD8 {
 		color: var(--Foreground-Dark)
 	}
 	.DOAbib.ixImeb .G7ubtf {
-		color: var(--Background)
+		color: var(--Background) !important
 	}
 	.ksBjEc, .jpjDKc, .AUyCHc {
 		color: var(--Primary) !important
@@ -2121,7 +2121,7 @@ url-prefix("https://www.google.no/maps") {
 	.Cyg0ye {
 		border-radius: var(--Rounding)
 	}
-	.V639qd.J9Nfi {
+	.V639qd.J9Nfi, .Usd1Ac {
 		border-radius: var(--Rounding-Variant)
 	}
 	.xoqcGf .QtDoYb, .eReC4e.FbgB9, .lDDKpd .ajQY2, .ajQY2:hover, .gLE0gc {
