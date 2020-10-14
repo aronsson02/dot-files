@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.2.1
+@version      2.2.2
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -617,6 +617,9 @@
 		width: 100%;
 		height: 100%;
 	}
+	#container.ytd-masthead, #header.ytd-app {
+		height: 50px !important
+	}
 	ytd-two-column-browse-results-renderer[page-subtype=home] {
 		background-color: rgba(0, 0, 0, 0);
 		margin-top: 20px;
@@ -950,8 +953,6 @@
 	ytd-app[masthead-hidden_] #masthead-container {
 		position: fixed;
 	}
-}
-@-moz-document domain("www.youtube.com") {
 	html:not([fullscreen="true"]):not([hide-scrollbar="true"]) ytd-page-manager#page-manager.style-scope.ytd-app,
 	html:not([fullscreen="true"]):not([hide-scrollbar="true"]) > body > ytd-app > #content,
 	#body-container,
@@ -1006,6 +1007,12 @@
 		background-color: var(--Surface) !important;
 		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0 !important;
 		overflow: hidden;
+	}
+	ytmusic-app-layout > [slot=nav-bar] {
+		width: 100vw !important;
+	}
+	ytmusic-app-layout > [slot=nav-bar], #nav-bar-background.ytmusic-app-layout {
+    height: 50px;
 	}
 	.tab-header.style-scope.ytmusic-player-page.iron-selected {
 		background-color: var(--Surface-Variant) !important;
@@ -1330,7 +1337,7 @@
 		filter: hue-rotate(45deg) !important;
 	}
 	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
+		animation: var(--Anim-Google-One) !important;
 	}
 }
 @-moz-document url-prefix("https://translate.google.no"),
@@ -1556,7 +1563,7 @@ url-prefix("https://translate.google.se") {
 		animation: filter 6s linear infinite !important;
 	}
 	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
+		animation: var(--Anim-Google-One) !important;
 	}
 }
 @-moz-document url-prefix("https://www.google.com"),
@@ -1679,7 +1686,7 @@ url-prefix("https://www.google.se") {
 		display: none !important;
 	}
 	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
+		animation: var(--Anim-Google-One) !important;
 	}
 }
 @-moz-document url-prefix("https://drive.google.com") {
@@ -1812,7 +1819,7 @@ url-prefix("https://www.google.se") {
 		outline: var(--Primary-Variant) solid 1px;
 	}
 	.gb_0a {
-	animation: var(--Anim-Google-One) !important;
+		animation: var(--Anim-Google-One) !important;
 	}
 }
 @-moz-document url-prefix("https://www.google.com/maps"),
@@ -1825,7 +1832,9 @@ url-prefix("https://www.google.no/maps") {
 	.widget-reveal-card,
 	.gb_5c.gb_Pg.gb_i,
 	.action-menu-widget,
-	.app-imagery-mode .widget-mylocation-button, .widget-layer, .widget-nearby-suggestions-inner {
+	.app-imagery-mode .widget-mylocation-button,
+	.widget-layer,
+	.widget-nearby-suggestions-inner {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
@@ -1839,7 +1848,9 @@ url-prefix("https://www.google.no/maps") {
 		backdrop-filter: var(--blur-variant) !important;
 	}
 	.widget-settings-pane,
-	.modal-border, .issue-card-content, #issue-card-header {
+	.modal-border,
+	.issue-card-content,
+	#issue-card-header {
 		background: none !important;
 		backdrop-filter: var(--blur) !important;
 	}
@@ -1865,7 +1876,8 @@ url-prefix("https://www.google.no/maps") {
 	.widget-homescreen .section-layout.section-cardbox,
 	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted,
 	.widget-pane-toggle-button,
-	.ita-kd-icon-button, .ita-kd-dropdown-menu {
+	.ita-kd-icon-button,
+	.ita-kd-dropdown-menu {
 		background-color: var(--Surface) !important
 	}
 	.ambient-card-section,
@@ -1875,7 +1887,9 @@ url-prefix("https://www.google.no/maps") {
 	.iRxY3GoUYUY__button:hover,
 	.cX2WmPgCkHi__clickable:focus,
 	.section-info-action-button:hover,
-	.section-listitem-metadata .section-action-chip-button, .ita-kd-menuitem-hover, .section-editorial-button:hover {
+	.section-listitem-metadata .section-action-chip-button,
+	.ita-kd-menuitem-hover,
+	.section-editorial-button:hover {
 		background-color: var(--Surface-Variant) !important
 	}
 	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint,
@@ -1893,10 +1907,12 @@ url-prefix("https://www.google.no/maps") {
 	.widget-directions-dragger,
 	.jqnFjrOWMVU__bucket-fill,
 	.widget-directions-omnibox .searchbox,
-	.section-directions-options, .section-popular-times-value {
+	.section-directions-options,
+	.section-popular-times-value {
 		background: var(--Primary) !important
 	}
-	.widget-directions .searchbox-searchbutton, .section-popular-times-current-value {
+	.widget-directions .searchbox-searchbutton,
+	.section-popular-times-current-value {
 		background: var(--Primary-Variant) !important
 	}
 	.widget-directions .sbib_b::after {
@@ -1907,7 +1923,12 @@ url-prefix("https://www.google.no/maps") {
 	body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata {
 		background-image: none
 	}
-	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title, #issue-card-header, .issue-card-title {
+	.ita-kd-menuitem-hover,
+	.widget-layer,
+	.widget-nearby-suggestions-inner,
+	.title,
+	#issue-card-header,
+	.issue-card-title {
 		color: var(--Foreground) !important
 	}
 	.suggest-query,
@@ -1928,11 +1949,18 @@ url-prefix("https://www.google.no/maps") {
 	.ozj7Vb3wnYq__title-and-subtitle,
 	.section-mobile-promo-large-title-with-icon,
 	.section-dialog-header,
-	.section-dialog-footer-text, .ita-kd-menuitem, .cX2WmPgCkHi__root, .section-editorial, .section-attribute-group, .kd-radio-label {
+	.section-dialog-footer-text,
+	.ita-kd-menuitem,
+	.cX2WmPgCkHi__root,
+	.section-editorial,
+	.section-attribute-group,
+	.kd-radio-label {
 		color: var(--Foreground-Variant)
 	}
 	.section-categorical-shortcut-button-text,
-	.section-review-publish-date, .rap-text-input, .single-selection-enabled .issue-card-field-hint {
+	.section-review-publish-date,
+	.rap-text-input,
+	.single-selection-enabled .issue-card-field-hint {
 		color: var(--Foreground-Dark)
 	}
 	.blue-button-text,
@@ -1971,7 +1999,9 @@ url-prefix("https://www.google.no/maps") {
 	.jVMscDilb9d__clear,
 	.cYrDcjyGO77__dropdown-icon,
 	.section-review-more-icon,
-	.section-review-interaction-icon, .ita-kd-img, .maps-sprite-place-attributes-done {
+	.section-review-interaction-icon,
+	.ita-kd-img,
+	.maps-sprite-place-attributes-done {
 		filter: invert(1) !important
 	}
 	.searchbox-directions::before,
@@ -1990,12 +2020,14 @@ url-prefix("https://www.google.no/maps") {
 	.iRxY3GoUYUY__actionchip .iRxY3GoUYUY__icon,
 	.iRxY3GoUYUY__densechip .iRxY3GoUYUY__icon,
 	.iRxY3GoUYUY__icon,
-	.close-button, .nearby-restaurant-icon {
+	.close-button,
+	.nearby-restaurant-icon {
 		filter: hue-rotate(320deg) contrast(2)
 	}
 	.section-star,
 	.section-review-star.section-review-star-active,
-	.rs9iHBFJiiu__star, .hwQZgEbYrz5__section-star {
+	.rs9iHBFJiiu__star,
+	.hwQZgEbYrz5__section-star {
 		filter: hue-rotate(130deg)
 	}
 	.searchbox-searchbutton::before {
@@ -2022,7 +2054,9 @@ url-prefix("https://www.google.no/maps") {
 	.widget-directions-input-underline {
 		border-color: var(--Mast)
 	}
-	.gm2-hairline-border, .widget-pane-toggle-button, .section-layout.section-cardbox {
+	.gm2-hairline-border,
+	.widget-pane-toggle-button,
+	.section-layout.section-cardbox {
 		border: none
 	}
 	.ambient-card-section {
@@ -2043,16 +2077,20 @@ url-prefix("https://www.google.no/maps") {
 		border-radius: var(--Rounding-Variant)
 	}
 	.lVJX2wDGbwj__divider,
-	.section-homescreen-expand, .section-divider.section-divider-top-line {
+	.section-homescreen-expand,
+	.section-divider.section-divider-top-line {
 		display: none !important
 	}
-	.gb_0a, .gb_jc {
-	animation: var(--Anim-Google-One) !important;
+	.gb_0a,
+	.gb_jc {
+		animation: var(--Anim-Google-One) !important;
 	}
 }
 
 @-moz-document url-prefix("https://photos.google.com/") {
-	.Vtmiqc, .wtM1tc, .g4aRS {
+	.Vtmiqc,
+	.wtM1tc,
+	.g4aRS {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
@@ -2060,16 +2098,42 @@ url-prefix("https://www.google.no/maps") {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
-	body, .gN5aAe, .YisXab, .Cv8Rjc, .dhgHyf, .Yyy4Hc .Mna4i .ajQY2, .mEVcIe.uGCjIb, .DNLJJe, .mEVcIe.uGCjIb, .uGCjIb {
+	body,
+	.gN5aAe,
+	.YisXab,
+	.Cv8Rjc,
+	.dhgHyf,
+	.Yyy4Hc .Mna4i .ajQY2,
+	.mEVcIe.uGCjIb,
+	.DNLJJe,
+	.mEVcIe.uGCjIb,
+	.uGCjIb {
 		background-color: var(--Background) !important
 	}
-	.wDSX5e, .b4qJMd, .z80M1.FwR7Pc, .g3VIld, .rWgZgf, .RunE3b, .uORMl, .Cyg0ye, .p137Zd, .faKKX, .Usd1Ac {
+	.wDSX5e,
+	.b4qJMd,
+	.z80M1.FwR7Pc,
+	.g3VIld,
+	.rWgZgf,
+	.RunE3b,
+	.uORMl,
+	.Cyg0ye,
+	.p137Zd,
+	.faKKX,
+	.Usd1Ac {
 		background-color: var(--Surface)
 	}
-	.JPdR6b, .Bofz6, .ZjEvzc, .hUsHhf, .KxwMuc, .tdVbM, .ZLRk4e.fROdt {
+	.JPdR6b,
+	.Bofz6,
+	.ZjEvzc,
+	.hUsHhf,
+	.KxwMuc,
+	.tdVbM,
+	.ZLRk4e.fROdt {
 		background-color: var(--Surface-Variant) !important
 	}
-	.QtDoYb, .V639qd.J9Nfi .X1clqd {
+	.QtDoYb,
+	.V639qd.J9Nfi .X1clqd {
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -2081,56 +2145,119 @@ url-prefix("https://www.google.no/maps") {
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	.Kd04rd:hover, .BYwrnd {
+	.Kd04rd:hover,
+	.BYwrnd {
 		background-color: var(--Mast) !important;
 	}
 	textarea {
 		background-color: var(--Mast-Dark) !important
 	}
-	.wDSX5e .DOAbib.ixImeb:hover, .wDSX5e .DOAbib:hover, .nCP5yc:not(:disabled), .gqI68:before, .gqI68:after, .Ud9NFb .XCxRFf {
+	.wDSX5e .DOAbib.ixImeb:hover,
+	.wDSX5e .DOAbib:hover,
+	.nCP5yc:not(:disabled),
+	.gqI68:before,
+	.gqI68:after,
+	.Ud9NFb .XCxRFf {
 		background-color: var(--Primary)
 	}
 	.wDSX5e .ixImeb {
 		background-color: var(--Primary-Variant)
 	}
-	.K0a18, .eReC4e {
-		background: linear-gradient(var(--Surface),transparent);
+	.K0a18,
+	.eReC4e {
+		background: linear-gradient(var(--Surface), transparent);
 		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0
 	}
-	.G7ubtf, .mJ7Vpd .WNmljc, .x1LMef, .WUbige, .OgirMe, .rWyLGb, .ajQY2, .QeP71d, .H9eFkc, .V639qd.J9Nfi .X1clqd, .EIug8e, .I7yCae, .IGdgBf, .CqtWH, .AJM7gb, .vctcH, .ARSUIf, .C96I0d {
+	.G7ubtf,
+	.mJ7Vpd .WNmljc,
+	.x1LMef,
+	.WUbige,
+	.OgirMe,
+	.rWyLGb,
+	.ajQY2,
+	.QeP71d,
+	.H9eFkc,
+	.V639qd.J9Nfi .X1clqd,
+	.EIug8e,
+	.I7yCae,
+	.IGdgBf,
+	.CqtWH,
+	.AJM7gb,
+	.vctcH,
+	.ARSUIf,
+	.C96I0d {
 		color: var(--Foreground) !important
 	}
-	body, .xA0gfb, .o7Osof .oJeWuf, .hPriQc, .R9U8ab, .wiOkb, .LjDxcd, .Udl2rb .VNJHc .snByac, .mfQCMe,.WMnOad, .Ag1myf, .rWd3Kd, .rN6Qmb, .eT2rxc, .YHjolb, .hcClrf, .YCtJOe, .FkWMmd, .uIkos {
+	body,
+	.xA0gfb,
+	.o7Osof .oJeWuf,
+	.hPriQc,
+	.R9U8ab,
+	.wiOkb,
+	.LjDxcd,
+	.Udl2rb .VNJHc .snByac,
+	.mfQCMe,
+	.WMnOad,
+	.Ag1myf,
+	.rWd3Kd,
+	.rN6Qmb,
+	.eT2rxc,
+	.YHjolb,
+	.hcClrf,
+	.YCtJOe,
+	.FkWMmd,
+	.uIkos {
 		color: var(--Foreground-Variant) !important
 	}
-	.oBMhZb, .Cvr4mf, .iRQraf, .nAfFgf, .CKdD8 {
+	.oBMhZb,
+	.Cvr4mf,
+	.iRQraf,
+	.nAfFgf,
+	.CKdD8 {
 		color: var(--Foreground-Dark)
 	}
 	.DOAbib.ixImeb .G7ubtf {
 		color: var(--Background) !important
 	}
-	.ksBjEc, .jpjDKc, .AUyCHc {
+	.ksBjEc,
+	.jpjDKc,
+	.AUyCHc {
 		color: var(--Primary) !important
 	}
-	.VfPpkd-kBDsod .JUQOtc, .Lw7GHd.snByac .JUQOtc, .WDli4c .JUQOtc, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge {
+	.VfPpkd-kBDsod .JUQOtc,
+	.Lw7GHd.snByac .JUQOtc,
+	.WDli4c .JUQOtc,
+	.gb_ta svg,
+	.gb_Ec svg,
+	.gb_1c .gb_ge,
+	.gb_Qc .gb_ge {
 		fill: var(--Foreground) !important
 	}
-	.ixImeb .JUQOtc, .ixImeb .OOX9bc {
+	.ixImeb .JUQOtc,
+	.ixImeb .OOX9bc {
 		fill: var(--Background) !important
 	}
 	.Cyg0ye {
 		border-radius: var(--Rounding)
 	}
-	.V639qd.J9Nfi, .Usd1Ac {
+	.V639qd.J9Nfi,
+	.Usd1Ac {
 		border-radius: var(--Rounding-Variant)
 	}
-	.xoqcGf .QtDoYb, .eReC4e.FbgB9, .lDDKpd .ajQY2, .ajQY2:hover, .gLE0gc {
+	.xoqcGf .QtDoYb,
+	.eReC4e.FbgB9,
+	.lDDKpd .ajQY2,
+	.ajQY2:hover,
+	.gLE0gc {
 		border: none !important
 	}
-	.YisXab::after, .EYUu4d, .swa7If {
+	.YisXab::after,
+	.EYUu4d,
+	.swa7If {
 		display: none !important
 	}
-	.gb_0a, .gb_jc {
-	animation: var(--Anim-Google-One) !important;
+	.gb_0a,
+	.gb_jc {
+		animation: var(--Anim-Google-One) !important;
 	}
 }

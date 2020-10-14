@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      2.3.0
+@version      2.3.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -10,77 +10,101 @@
 @license      CC0
 @preprocessor default
 ==/UserStyle== */
-
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document regexp(".*") {
 	:root {
-        --Foreground:   #FAFAFA;
-        --Foreground-Variant:   #FAFAFACC;
-        --Foreground-Dark:   #FAFAFA66;
-        --Foreground-Transparent:   #FFFFFF66;
-        --Background:   #222;
-        --Surface:   #333;
-        --Surface-Variant:   #555;
-        --Surface-Transparent:   #00000066;
-        --Primary:   #00BFBF;
-        --Primary-Variant:   #00E6E6;
-        --Mast:   #455A64;
-        --Mast-Variant:   #607D8B;
-        --Mast-Dark:   #263238;
-        --grey:  #808080;
-        --red:   #F44336;
-        --orange:#EA9D1C;
-        --dark-orange:#1F1504;
-        --green: #00E676;
-        --blue: #120056;
-        --blur: blur(50px);
-        --blur-variant: blur(5px);
-        --blur-dark: blur(50px) brightness(66%);
-        --blur-dark-variant: blur(5px) brightness(66%);
-        --Mast-Shadow: 0 0 8px 2px var(--Background);
-        --Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
-        --Rounding: 8px;
-        --Rounding-Variant: 16px;
+		--Foreground: #FAFAFA;
+		--Foreground-Variant: #FAFAFACC;
+		--Foreground-Dark: #FAFAFA66;
+		--Foreground-Transparent: #FFFFFF66;
+		--Background: #222;
+		--Surface: #333;
+		--Surface-Variant: #555;
+		--Surface-Transparent: #00000066;
+		--Primary: #00BFBF;
+		--Primary-Variant: #00E6E6;
+		--Mast: #455A64;
+		--Mast-Variant: #607D8B;
+		--Mast-Dark: #263238;
+		--grey: #808080;
+		--red: #F44336;
+		--orange: #EA9D1C;
+		--dark-orange: #1F1504;
+		--green: #00E676;
+		--blue: #120056;
+		--blur: blur(50px);
+		--blur-variant: blur(5px);
+		--blur-dark: blur(50px) brightness(66%);
+		--blur-dark-variant: blur(5px) brightness(66%);
+		--Mast-Shadow: 0 0 8px 2px var(--Background);
+		--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
+		--Rounding: 8px;
+		--Rounding-Variant: 16px;
 		--Anim-Google-One: google-one 6s ease infinite;
-}
+	}
 
-*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons) {font-family: "SF Nodo Pro" !important;}
+	*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons) {
+		font-family: "SF Nodo Pro" !important;
+		scrollbar-width: none !important;
+	}
 
-::-webkit-scrollbar {width: 6px}
-::-webkit-scrollbar-track {background: var(--Background);}
-::-webkit-scrollbar-thumb {background: var(--Foreground-Dark);border-radius: var(--Rounding) 0 0 var(--Rounding)}
-::-webkit-scrollbar-thumb:hover {background: var(--Foreground-Variant);}
-::-webkit-scrollbar-thumb:active {background: var(--Foreground);}
+	::-webkit-scrollbar {
+		display: none !important
+	}
 
-/*body {
+	/*body {
     animation: hue-rotate 6s linear infinite !important;
 }*/
-@keyframes hue-rotate {
-    0% { filter: hue-rotate(0deg); }
-    100%   { filter: hue-rotate(360deg); }
-}
+	@keyframes hue-rotate {
+		0% {
+			filter: hue-rotate(0deg);
+		}
+		100% {
+			filter: hue-rotate(360deg);
+		}
+	}
 
-/*body {
+	/*body {
     background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082) !important;
     animation: filter 6s linear infinite !important;
 }*/
-@keyframes filter {
-    0% {filter: hue-rotate(360deg) sepia(0);}
-    50% {filter: hue-rotate(0) sepia(50%);}
-    100%{filter: hue-rotate(360deg) sepia(0);}
-}
+	@keyframes filter {
+		0% {
+			filter: hue-rotate(360deg) sepia(0);
+		}
+		50% {
+			filter: hue-rotate(0) sepia(50%);
+		}
+		100% {
+			filter: hue-rotate(360deg) sepia(0);
+		}
+	}
 
-/*.gb_0a {
+	/*.gb_0a {
 	animation: google-one 3s ease infinite !important;
 }*/
 	@keyframes google-one {
-	10% {transform: rotate(0deg);}
-	20% {transform: rotate(-20deg);}
-	40% {transform: rotate(1100deg);}
-	50% {transform: rotate(1080deg);}
-	60% {transform: rotate(1100deg);}
-	80% {transform: rotate(-20deg);}
-	100% {transform: rotate(0deg);}
-}
+		10% {
+			transform: rotate(0deg);
+		}
+		20% {
+			transform: rotate(-20deg);
+		}
+		40% {
+			transform: rotate(1100deg);
+		}
+		50% {
+			transform: rotate(1080deg);
+		}
+		60% {
+			transform: rotate(1100deg);
+		}
+		80% {
+			transform: rotate(-20deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
 }
