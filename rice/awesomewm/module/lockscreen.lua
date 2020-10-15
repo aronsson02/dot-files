@@ -489,8 +489,8 @@ local locker = function(s)
                 end
             },
             awful.key {
-                modifiers = {'Mod1', 'Mod4', 'Shift', 'Control'},
-                key       = 'Return',
+                modifiers = {'Control'},
+                key       = 'Enter',
                 on_press  = function(self)
                     if not type_again then
                         return
