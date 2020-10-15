@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.2.2
+@version      2.2.3
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -617,7 +617,8 @@
 		width: 100%;
 		height: 100%;
 	}
-	#container.ytd-masthead, #header.ytd-app {
+	#container.ytd-masthead,
+	#header.ytd-app {
 		height: 50px !important
 	}
 	ytd-two-column-browse-results-renderer[page-subtype=home] {
@@ -1011,8 +1012,9 @@
 	ytmusic-app-layout > [slot=nav-bar] {
 		width: 100vw !important;
 	}
-	ytmusic-app-layout > [slot=nav-bar], #nav-bar-background.ytmusic-app-layout {
-    height: 50px;
+	ytmusic-app-layout > [slot=nav-bar],
+	#nav-bar-background.ytmusic-app-layout {
+		height: 50px;
 	}
 	.tab-header.style-scope.ytmusic-player-page.iron-selected {
 		background-color: var(--Surface-Variant) !important;
@@ -2129,7 +2131,8 @@ url-prefix("https://www.google.no/maps") {
 	.hUsHhf,
 	.KxwMuc,
 	.tdVbM,
-	.ZLRk4e.fROdt {
+	.ZLRk4e.fROdt,
+	.idZcaf {
 		background-color: var(--Surface-Variant) !important
 	}
 	.QtDoYb,
@@ -2157,11 +2160,18 @@ url-prefix("https://www.google.no/maps") {
 	.nCP5yc:not(:disabled),
 	.gqI68:before,
 	.gqI68:after,
-	.Ud9NFb .XCxRFf {
+	.Ud9NFb .XCxRFf,
+	.wSP0Lb {
 		background-color: var(--Primary)
 	}
 	.wDSX5e .ixImeb {
 		background-color: var(--Primary-Variant)
+	}
+	.d2YGhb::before {
+    	background-color: var(--green) !important
+	}
+	.J5YF3c::before {
+    	background-color: var(--red) !important
 	}
 	.K0a18,
 	.eReC4e {
@@ -2185,7 +2195,8 @@ url-prefix("https://www.google.no/maps") {
 	.AJM7gb,
 	.vctcH,
 	.ARSUIf,
-	.C96I0d {
+	.C96I0d,
+	.lzh6Sb, .cW6cye {
 		color: var(--Foreground) !important
 	}
 	body,
@@ -2206,7 +2217,7 @@ url-prefix("https://www.google.no/maps") {
 	.hcClrf,
 	.YCtJOe,
 	.FkWMmd,
-	.uIkos {
+	.uIkos, .NX2ljc, .SSQXob {
 		color: var(--Foreground-Variant) !important
 	}
 	.oBMhZb,
@@ -2224,18 +2235,23 @@ url-prefix("https://www.google.no/maps") {
 	.AUyCHc {
 		color: var(--Primary) !important
 	}
-	.VfPpkd-kBDsod .JUQOtc,
 	.Lw7GHd.snByac .JUQOtc,
 	.WDli4c .JUQOtc,
 	.gb_ta svg,
 	.gb_Ec svg,
 	.gb_1c .gb_ge,
-	.gb_Qc .gb_ge {
+	.gb_Qc .gb_ge, .oFwkk, .G6iPcb .JUQOtc {
 		fill: var(--Foreground) !important
 	}
 	.ixImeb .JUQOtc,
 	.ixImeb .OOX9bc {
 		fill: var(--Background) !important
+	}
+	.s1TlQd {
+		fill: var(--green)
+	}
+	.WRwIEe {
+		fill: var(--red)
 	}
 	.Cyg0ye {
 		border-radius: var(--Rounding)
