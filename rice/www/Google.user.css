@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.3.0
+@version      2.4.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -88,7 +88,7 @@
 	ytd-playlist-sidebar-renderer #items,
 	ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy,
 	yt-unlimited-page-header-renderer,
-	#overlays > ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail.style-scope {
+	#overlays > ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail.style-scope, ytd-active-account-header-renderer, ytd-multi-page-menu-renderer, ytd-simple-menu-header-renderer, ytd-account-settings {
 		background-color: transparent !important;
 		background-image: none !important;
 		backdrop-filter: var(--blur-dark) !important;
@@ -99,7 +99,7 @@
 		background-image: none !important;
 		backdrop-filter: var(--blur-variant) !important;
 	}
-	#container.ytd-searchbox {
+	#container.ytd-searchbox, paper-listbox {
 		background: none !important
 	}
 	.video-stream.html5-main-video,
@@ -169,11 +169,13 @@
 		height: 125% !important
 	}
 	#progressContainer,
-	.ytp-progress-list {
+	.ytp-progress-list,
+	#show-hide-button .style-scope.ytd-live-chat-frame,
+	paper-button.ytd-subscribe-button-renderer:hover {
 		background-color: var(--Surface-Variant) !important
 	}
-	#show-hide-button .style-scope.ytd-live-chat-frame {
-		background-color: var(--Surface-Variant) !important
+	paper-button.ytd-subscribe-button-renderer {
+		background-color: var(--Surface) !important
 	}
 	ytd-video-secondary-info-renderer {
 		border-bottom: none !important;
@@ -426,7 +428,7 @@
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	#guide-wrapper.ytd-app {
+	#guide-wrapper.ytd-app, ytd-settings-sidebar-renderer {
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -524,7 +526,7 @@
 	.style-scope.ytd-commentbox #submit-button {
 		background-color: var(--Primary) !important;
 	}
-	.style-scope.ytd-commentbox #cancel-button {
+	.style-scope.ytd-commentbox #cancel-button, ytd-app {
 		background-color: var(--Background) !important;
 	}
 	#comment-section-renderer .sprite-like::before,
@@ -540,6 +542,9 @@
 	.ytp-button.ytp-settings-button.ytp-hd-quality-badge,
 	.style-scope.ytd-multi-page-menu-renderer {
 		filter: hue-rotate(180deg) !important;
+	}
+	#sponsor-button {
+		display: none !important
 	}
 }
 @-moz-document domain("www.youtube.com") {
@@ -577,27 +582,32 @@
 		margin-bottom: 5px
 	}
 	#author-text.yt-simple-endpoint.ytd-comment-renderer {
-		background-color: var(--Foreground-Transparent);
+		background-color: var(--Surface);
 		padding: 4px 8px;
 		border-radius: 6px;
 	}
 	ytd-author-comment-badge-renderer {
 		padding: 4px 8px;
-		background-color: var(--Foreground-Transparent);
+		background-color: var(--Surface);
 		border-radius: 6px;
 	}
 	#more,
 	#less,
 	#continuation yt-next-continuation paper-button {
 		color: var(--Foreground);
-		background-color: var(--Foreground-Transparent);
+		background-color: var(--Surface);
 		padding: 4px 8px;
 		border-radius: 6px;
 	}
-	#more-text,
-	#less-text {
-		margin: 0 !important;
+	#more:hover,
+	#less:hover,
+	ytd-author-comment-badge-renderer:hover,
+	#author-text.yt-simple-endpoint.ytd-comment-renderer:hover {
+		background-color: var(--Surface-Variant);
 	}
+	#more-text,
+	#less-text,
+	ytd-searchbox.ytd-masthead,
 	yt-icon[icon="yt-icons:expand-more"],
 	yt-icon[icon="yt-icons:expand-less"] {
 		margin: 0 !important
@@ -619,7 +629,7 @@
 	}
 	#container.ytd-masthead,
 	#header.ytd-app {
-		height: 50px !important
+		height: 64px !important
 	}
 	ytd-two-column-browse-results-renderer[page-subtype=home] {
 		background-color: rgba(0, 0, 0, 0);
@@ -1000,7 +1010,7 @@
 	}
 	.search-box.style-scope.ytmusic-search-box {
 		background-color: var(--Mast-Variant) !important;
-		box-shadow: var(--Mast-Shadow) inset !important;
+		box-shadow: var(--Mast-Variant-Shadow) inset !important;
 		border-radius: var(--Rounding) !important;
 		overflow: hidden;
 	}
@@ -1011,10 +1021,6 @@
 	}
 	ytmusic-app-layout > [slot=nav-bar] {
 		width: 100vw !important;
-	}
-	ytmusic-app-layout > [slot=nav-bar],
-	#nav-bar-background.ytmusic-app-layout {
-		height: 50px;
 	}
 	.tab-header.style-scope.ytmusic-player-page.iron-selected {
 		background-color: var(--Surface-Variant) !important;
@@ -1028,7 +1034,9 @@
 	ytmusic-search-box[opened],
 	ytmusic-search-box[has-query],
 	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box,
-	ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
+	ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box,
+	ytmusic-app-layout > [slot=nav-bar],
+	#nav-bar-background.ytmusic-app-layout{
 		border: none !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -1707,7 +1715,9 @@ url-prefix("https://www.google.se") {
 	.gb_3d,
 	.a-Cd-oa,
 	.le-Ba,
-	.h-w {
+	.h-w,
+	.a-jn-yd,
+	.gb_5e.gb_6e {
 		background-color: var(--Surface) !important;
 	}
 	.Kk7lMc-Yb-Il-j,
@@ -1721,18 +1731,21 @@ url-prefix("https://www.google.se") {
 	.gb_5e {
 		background-color: var(--Mast-Variant) !important;
 		box-shadow: var(--Mast-Variant-Shadow) inset !important;
-		border-radius: var(--Rounding-Top)
+		border-radius: var(--Rounding-Variant)
 	}
 	.a-D-B {
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) inset !important
 	}
-	.a-D-B {
+	.a-D-B, .gb_5e.gb_6e, .a-jn-yd {
 		box-shadow: var(--Mast-Shadow) !important
+	}
+	.a-jn-yd {
+		border-radius: var(--Rounding-Bottom)
 	}
 	.a-s-tb-sc-Ja-Q.a-s-tb-sc-Ja-Q-Nm.a-s-tb-Kg-Q.a-s-tb-kl-Gd-ig {
 		background-color: var(--Surface) !important;
-		margin-right: 4em
+		margin-right: 2em
 	}
 	.a-qc-La,
 	.Yb-Il-d-W .Yb-Il-d-c-Nd,
