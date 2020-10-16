@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      2.3.1
+@version      2.3.2
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -40,7 +40,15 @@
 		--Mast-Shadow: 0 0 8px 2px var(--Background);
 		--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
 		--Rounding: 8px;
+		--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
+		--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;
+		--Rounding-Left: var(--Rounding) 0 0 var(--Rounding);
+		--Rounding-Right: 0 var(--Rounding) var(--Rounding) 0;
 		--Rounding-Variant: 16px;
+		--Rounding-Variant-Bottom: 0 0 var(--Rounding-Variant) var(--Rounding-Variant);
+		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
+		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
+		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
 		--Anim-Google-One: google-one 6s ease infinite;
 	}
 
