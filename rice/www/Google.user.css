@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.4.0
+@version      2.4.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1591,8 +1591,30 @@ url-prefix("https://www.google.se") {
 		background-color: var(--Background) !important;
 		color: var(--Foreground-Dark) !important;
 	}
+	#gsr #searchform .sfbg {
+		background-color: var(--Mast) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	#hdtbSum {
+		background-color: var(--Mast-Dark) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	#appbar {
+		background-color: var(--Surface) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.RNNXgb {
+		background-color: var(--Mast-Variant) !important;
+		box-shadow: var(--Mast-Variant-Shadow) inset !important;
+		border-radius: var(--Rounding-Variant)
+	}
+	.srp #searchform {
+		top: 10px !important
+	}
+	.sfbg {
+		padding-bottom: 6px !important
+	}
 	#fbar,
-	.RNNXgb,
 	.tfB0Bf input[type="submit"],
 	.gbqfba,
 	.aajZCb,
@@ -1601,11 +1623,11 @@ url-prefix("https://www.google.se") {
 	.gb_Lb.gb_Lb,
 	.gb_Mb.gb_Mb,
 	.gb_zb,
-	#appbar,
-	#hdtbSum,
-	#gsr #searchform .sfbg,
-	g-inner-card {
+	g-inner-card, .MGqjK, .cF4V5c {
 		background-color: var(--Surface) !important;
+	}
+	.MXl0lf {
+		background-color: var(--Surface-Variant) !important;
 	}
 	.sbhl,
 	.tX9u1b:hover,
@@ -1616,41 +1638,50 @@ url-prefix("https://www.google.se") {
 	.gb_zb:hover {
 		background-color: var(--Background) !important;
 	}
-	.gb_l .gb_tb {
+	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover {
 		color: var(--Foreground) !important
 	}
 	.tfB0Bf input[type="submit"],
 	.gbqfba,
 	#footer a,
-	.Rq5Gcb {
+	.Rq5Gcb, a, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge {
 		color: var(--Foreground-Variant) !important;
+	}
+	.eipWBe, .IsZvec, .GlPvmc, .rjmdhd {
+		color: var(--Foreground-Dark) !important;
 	}
 	.b0KoTc {
 		color: var(--grey) !important;
 	}
-	a,
-	.sbl1 {
+	#hdtb-msb .hdtb-mitem.hdtb-msel, .FAuhyb {
 		color: var(--Primary) !important;
 	}
-	a:visited,
 	.sbl1p,
 	.sbl1 b,
 	.gb_Lb.gb_Lb:hover,
 	.gb_Mb.gb_Mb:hover,
 	.gb_Bb:hover,
 	.gb_Db.gb_Db:hover,
-	.gb_zb.gb_zb:hover {
+	.gb_zb.gb_zb:hover, .FAuhyb:hover, #hdtb-msb .hdtb-mitem.hdtb-msel:hover {
 		color: var(--Primary-Variant) !important;
+	}
+	.gb_D[aria-expanded=true] .gb_7e, .gb_D[aria-expanded=true] .gb_8e {
+		fill: var(--Foreground) !important
 	}
 	.b2hzT,
 	#fbar {
 		border-color: var(--Background) !important;
 	}
-	.RNNXgb,
 	.tfB0Bf input[type="submit"],
 	.gbqfba,
-	.xtSCL {
+	.xtSCL, #hdtb-msb .hdtb-mitem.hdtb-msel {
 		border-color: var(--Primary) !important;
+	}
+	#hdtb-msb .hdtb-mitem.hdtb-msel:hover {
+		border-color: var(--Primary-Variant) !important;
+	}
+	.MGqjK, .VibNM {
+		border-color: var(--Grey) !important;
 	}
 	.gb_Db.gb_Db,
 	.gb_Kb,
@@ -1659,7 +1690,8 @@ url-prefix("https://www.google.se") {
 	.ve-Ji-ie,
 	.ve-Fi-Ue .ve-Gi-Zb-ie,
 	#hdtb,
-	.cv2VAd {
+	.cv2VAd,
+	.RNNXgb {
 		border: none !important;
 	}
 	.aajZCb {
@@ -1691,6 +1723,9 @@ url-prefix("https://www.google.se") {
 	.cv2VAd:hover,
 	.rhscol:hover .I6TXqe {
 		border: 1px solid var(--Primary-Variant) !important;
+	}
+	.hOoLGe {
+		filter: contrast(2)
 	}
 	.gb_Qb {
 		display: none !important;
