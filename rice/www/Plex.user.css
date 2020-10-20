@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      2.0.4
+@version      2.1.0
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -172,7 +172,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .help-block a,
 .edit-section-modal .wizard-blocks-group > .wizard-block.selected,
 .edit-section-modal .wizard-blocks-group > .wizard-block.selected,
-.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw:hover, .user-select-list-item .user-select-top .add-icon {
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw:hover, .user-select-list-item .user-select-top .add-icon, .NavBarIconButton-alertIcon-2HPvE2 {
 	color: var(--Primary) !important
 }
 .glyphicon.remove-2:hover,
@@ -219,10 +219,6 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .NavBarButton-button-oTeMHk {
 	color: var(--Foreground) !important
 }
-.NavBar-plexPassButton-wVK4vI.NavBarPlexPassButton-button-2zlgP_.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN {
-	color: var(--Background);
-	background-color: var(--Primary)
-}
 .media-poster-container.selected .media-poster::after,
 .PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw,
 .NavBarButton-button-oTeMHk:hover {
@@ -245,7 +241,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 }
 .AlertRoundOpaqueIcon-img-19hrPS,
 .PlexPassFeature-featureImage-1MQuZ0 {
-	filter: hue-rotate(140deg) !important;
+	filter: hue-rotate(180deg) !important;
 }
 .AllSourcesSidebarContent-iconImg-1hajvx,
 .EmptyPage-imgIcon-32C35q {

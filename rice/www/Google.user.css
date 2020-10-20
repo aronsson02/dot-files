@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.4.1
+@version      2.5.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -88,7 +88,11 @@
 	ytd-playlist-sidebar-renderer #items,
 	ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy,
 	yt-unlimited-page-header-renderer,
-	#overlays > ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail.style-scope, ytd-active-account-header-renderer, ytd-multi-page-menu-renderer, ytd-simple-menu-header-renderer, ytd-account-settings {
+	#overlays > ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail.style-scope,
+	ytd-active-account-header-renderer,
+	ytd-multi-page-menu-renderer,
+	ytd-simple-menu-header-renderer,
+	ytd-account-settings {
 		background-color: transparent !important;
 		background-image: none !important;
 		backdrop-filter: var(--blur-dark) !important;
@@ -99,7 +103,8 @@
 		background-image: none !important;
 		backdrop-filter: var(--blur-variant) !important;
 	}
-	#container.ytd-searchbox, paper-listbox {
+	#container.ytd-searchbox,
+	paper-listbox {
 		background: none !important
 	}
 	.video-stream.html5-main-video,
@@ -110,10 +115,6 @@
 		border: 5px solid!important;
 		border-radius: 999px;
 		border-color: var(--Foreground) transparent !important;
-	}
-	.style-scope.ytd-thumbnail-overlay-resume-playback-renderer {
-		background-color: #0ff !important;
-		opacity: .5 !important;
 	}
 	.ytp-gradient-bottom,
 	.ytp-gradient-top {
@@ -428,7 +429,8 @@
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	#guide-wrapper.ytd-app, ytd-settings-sidebar-renderer {
+	#guide-wrapper.ytd-app,
+	ytd-settings-sidebar-renderer {
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -523,10 +525,11 @@
 		color: var(--Primary) !important;
 	}
 	#like-bar,
-	.style-scope.ytd-commentbox #submit-button {
+	.style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer {
 		background-color: var(--Primary) !important;
 	}
-	.style-scope.ytd-commentbox #cancel-button, ytd-app {
+	.style-scope.ytd-commentbox #cancel-button,
+	ytd-app {
 		background-color: var(--Background) !important;
 	}
 	#comment-section-renderer .sprite-like::before,
@@ -1036,7 +1039,7 @@
 	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box,
 	ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box,
 	ytmusic-app-layout > [slot=nav-bar],
-	#nav-bar-background.ytmusic-app-layout{
+	#nav-bar-background.ytmusic-app-layout {
 		border: none !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -1623,7 +1626,9 @@ url-prefix("https://www.google.se") {
 	.gb_Lb.gb_Lb,
 	.gb_Mb.gb_Mb,
 	.gb_zb,
-	g-inner-card, .MGqjK, .cF4V5c {
+	g-inner-card,
+	.MGqjK,
+	.cF4V5c {
 		background-color: var(--Surface) !important;
 	}
 	.MXl0lf {
@@ -1638,22 +1643,45 @@ url-prefix("https://www.google.se") {
 	.gb_zb:hover {
 		background-color: var(--Background) !important;
 	}
-	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover {
+	.gb_l .gb_tb,
+	.a,
+	cite,
+	cite a:link,
+	cite a:visited,
+	.cite,
+	.cite:link,
+	.bc a:link,
+	.wUrVib,
+	.EZRelc,
+	.gLFyf,
+	.lBbtTb,
+	.hdtb-mitem a:hover {
 		color: var(--Foreground) !important
 	}
 	.tfB0Bf input[type="submit"],
 	.gbqfba,
 	#footer a,
-	.Rq5Gcb, a, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge {
+	.Rq5Gcb,
+	a,
+	.aCOpRe em,
+	.st em,
+	.gb_ta svg,
+	.gb_Ec svg,
+	.gb_1c .gb_ge,
+	.gb_Qc .gb_ge {
 		color: var(--Foreground-Variant) !important;
 	}
-	.eipWBe, .IsZvec, .GlPvmc, .rjmdhd {
+	.eipWBe,
+	.IsZvec,
+	.GlPvmc,
+	.rjmdhd {
 		color: var(--Foreground-Dark) !important;
 	}
 	.b0KoTc {
 		color: var(--grey) !important;
 	}
-	#hdtb-msb .hdtb-mitem.hdtb-msel, .FAuhyb {
+	#hdtb-msb .hdtb-mitem.hdtb-msel,
+	.FAuhyb {
 		color: var(--Primary) !important;
 	}
 	.sbl1p,
@@ -1662,10 +1690,13 @@ url-prefix("https://www.google.se") {
 	.gb_Mb.gb_Mb:hover,
 	.gb_Bb:hover,
 	.gb_Db.gb_Db:hover,
-	.gb_zb.gb_zb:hover, .FAuhyb:hover, #hdtb-msb .hdtb-mitem.hdtb-msel:hover {
+	.gb_zb.gb_zb:hover,
+	.FAuhyb:hover,
+	#hdtb-msb .hdtb-mitem.hdtb-msel:hover {
 		color: var(--Primary-Variant) !important;
 	}
-	.gb_D[aria-expanded=true] .gb_7e, .gb_D[aria-expanded=true] .gb_8e {
+	.gb_D[aria-expanded=true] .gb_7e,
+	.gb_D[aria-expanded=true] .gb_8e {
 		fill: var(--Foreground) !important
 	}
 	.b2hzT,
@@ -1674,13 +1705,15 @@ url-prefix("https://www.google.se") {
 	}
 	.tfB0Bf input[type="submit"],
 	.gbqfba,
-	.xtSCL, #hdtb-msb .hdtb-mitem.hdtb-msel {
+	.xtSCL,
+	#hdtb-msb .hdtb-mitem.hdtb-msel {
 		border-color: var(--Primary) !important;
 	}
 	#hdtb-msb .hdtb-mitem.hdtb-msel:hover {
 		border-color: var(--Primary-Variant) !important;
 	}
-	.MGqjK, .VibNM {
+	.MGqjK,
+	.VibNM {
 		border-color: var(--Grey) !important;
 	}
 	.gb_Db.gb_Db,
@@ -1772,7 +1805,9 @@ url-prefix("https://www.google.se") {
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) inset !important
 	}
-	.a-D-B, .gb_5e.gb_6e, .a-jn-yd {
+	.a-D-B,
+	.gb_5e.gb_6e,
+	.a-jn-yd {
 		box-shadow: var(--Mast-Shadow) !important
 	}
 	.a-jn-yd {
@@ -1880,10 +1915,11 @@ url-prefix("https://www.google.no/maps") {
 	.app-imagery-mode .widget-zoom-button,
 	.app-imagery-mode .widget-expand-button-pegman,
 	.app-imagery-mode .scene-footer,
+	.app-imagery-mode .widget-tilt-button,
+	.app-imagery-mode .widget-mylocation-button,
 	.widget-reveal-card,
 	.gb_5c.gb_Pg.gb_i,
 	.action-menu-widget,
-	.app-imagery-mode .widget-mylocation-button,
 	.widget-layer,
 	.widget-nearby-suggestions-inner {
 		background: none !important;
@@ -1928,7 +1964,8 @@ url-prefix("https://www.google.no/maps") {
 	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted,
 	.widget-pane-toggle-button,
 	.ita-kd-icon-button,
-	.ita-kd-dropdown-menu {
+	.ita-kd-dropdown-menu,
+	.clustered-widget-hovercard {
 		background-color: var(--Surface) !important
 	}
 	.ambient-card-section,
@@ -1979,7 +2016,9 @@ url-prefix("https://www.google.no/maps") {
 	.widget-nearby-suggestions-inner,
 	.title,
 	#issue-card-header,
-	.issue-card-title {
+	.issue-card-title,
+	.section-hero-header-title-title,
+	.rLwmCGCu6mP__title {
 		color: var(--Foreground) !important
 	}
 	.suggest-query,
@@ -2005,13 +2044,17 @@ url-prefix("https://www.google.no/maps") {
 	.cX2WmPgCkHi__root,
 	.section-editorial,
 	.section-attribute-group,
-	.kd-radio-label {
+	.kd-radio-label,
+	.section-hero-header-title-description-container {
 		color: var(--Foreground-Variant)
 	}
 	.section-categorical-shortcut-button-text,
 	.section-review-publish-date,
 	.rap-text-input,
-	.single-selection-enabled .issue-card-field-hint {
+	.single-selection-enabled .issue-card-field-hint,
+	.section-text-secondary,
+	.section-info-secondary-text,
+	.section-info-secondary-text .widget-pane-link {
 		color: var(--Foreground-Dark)
 	}
 	.blue-button-text,
@@ -2041,7 +2084,6 @@ url-prefix("https://www.google.no/maps") {
 		color: var(--red)
 	}
 	.maps-sprite-common-chevron-left,
-	.watermark.watermark-imagery,
 	.maps-sprite-suggest-work,
 	.maps-sprite-suggest-reviewed,
 	.searchbox-icon,
@@ -2052,37 +2094,15 @@ url-prefix("https://www.google.no/maps") {
 	.section-review-more-icon,
 	.section-review-interaction-icon,
 	.ita-kd-img,
-	.maps-sprite-place-attributes-done {
+	.maps-sprite-place-attributes-done,
+	.maps-sprite-suggest-starred,
+	.maps-sprite-suggest-home {
 		filter: invert(1) !important
 	}
-	.searchbox-directions::before,
+	.searchbox-searchbutton::before,
 	.widget-settings-button-icon,
-	.maps-sprite-settings-languages-blue,
-	.widget-reveal-card-directions-icon,
-	.section-info-icon.section-common-icon,
-	.maps-sprite-pane-info-settings,
-	.maps-sprite-pane-info-hours,
-	.sbcb_a:hover {
-		filter: hue-rotate(315deg) contrast(2)
-	}
-	.ugiz4pqJLAG__icon,
-	.cX2WmPgCkHi__section-icon,
-	.section-info-icon img,
-	.iRxY3GoUYUY__actionchip .iRxY3GoUYUY__icon,
-	.iRxY3GoUYUY__densechip .iRxY3GoUYUY__icon,
-	.iRxY3GoUYUY__icon,
-	.close-button,
-	.nearby-restaurant-icon {
-		filter: hue-rotate(320deg) contrast(2)
-	}
-	.section-star,
-	.section-review-star.section-review-star-active,
-	.rs9iHBFJiiu__star,
-	.hwQZgEbYrz5__section-star {
-		filter: hue-rotate(130deg)
-	}
-	.searchbox-searchbutton::before {
-		filter: hue-rotate(130deg) invert(1) contrast(2)
+	.maps-sprite-settings-languages-blue {
+		filter: hue-rotate(180deg) invert(1)
 	}
 	.gm2-hairline-border,
 	.section-layout.section-cardbox,
@@ -2128,7 +2148,6 @@ url-prefix("https://www.google.no/maps") {
 		border-radius: var(--Rounding-Variant)
 	}
 	.lVJX2wDGbwj__divider,
-	.section-homescreen-expand,
 	.section-divider.section-divider-top-line {
 		display: none !important
 	}
@@ -2158,7 +2177,8 @@ url-prefix("https://www.google.no/maps") {
 	.mEVcIe.uGCjIb,
 	.DNLJJe,
 	.mEVcIe.uGCjIb,
-	.uGCjIb, .PpML1d {
+	.uGCjIb,
+	.PpML1d {
 		background-color: var(--Background) !important
 	}
 	.wDSX5e,
@@ -2171,7 +2191,9 @@ url-prefix("https://www.google.no/maps") {
 	.Cyg0ye,
 	.p137Zd,
 	.faKKX,
-	.Usd1Ac, .NZp2ef, .KC1dQ {
+	.Usd1Ac,
+	.NZp2ef,
+	.KC1dQ {
 		background-color: var(--Surface) !important
 	}
 	.JPdR6b,
@@ -2181,7 +2203,8 @@ url-prefix("https://www.google.no/maps") {
 	.KxwMuc,
 	.tdVbM,
 	.ZLRk4e.fROdt,
-	.idZcaf, .Ud9NFb .DFG23b {
+	.idZcaf,
+	.Ud9NFb .DFG23b {
 		background-color: var(--Surface-Variant) !important
 	}
 	.QtDoYb,
@@ -2218,10 +2241,10 @@ url-prefix("https://www.google.no/maps") {
 		background-color: var(--Primary-Variant)
 	}
 	.d2YGhb::before {
-    	background-color: var(--green) !important
+		background-color: var(--green) !important
 	}
 	.J5YF3c::before {
-    	background-color: var(--red) !important
+		background-color: var(--red) !important
 	}
 	.K0a18,
 	.eReC4e {
@@ -2246,7 +2269,8 @@ url-prefix("https://www.google.no/maps") {
 	.vctcH,
 	.ARSUIf,
 	.C96I0d,
-	.lzh6Sb, .cW6cye {
+	.lzh6Sb,
+	.cW6cye {
 		color: var(--Foreground) !important
 	}
 	body,
@@ -2267,7 +2291,14 @@ url-prefix("https://www.google.no/maps") {
 	.hcClrf,
 	.YCtJOe,
 	.FkWMmd,
-	.uIkos, .NX2ljc, .SSQXob, .RwVyJb, .UcZrVc, .v1262d, .UcZrVc .w9e2Mc, .UcZrVc .OLQnJe {
+	.uIkos,
+	.NX2ljc,
+	.SSQXob,
+	.RwVyJb,
+	.UcZrVc,
+	.v1262d,
+	.UcZrVc .w9e2Mc,
+	.UcZrVc .OLQnJe {
 		color: var(--Foreground-Variant) !important
 	}
 	.oBMhZb,
@@ -2282,7 +2313,8 @@ url-prefix("https://www.google.no/maps") {
 	}
 	.ksBjEc,
 	.jpjDKc,
-	.AUyCHc, .fHoXkf {
+	.AUyCHc,
+	.fHoXkf {
 		color: var(--Primary) !important
 	}
 	.Lw7GHd.snByac .JUQOtc,
@@ -2290,10 +2322,13 @@ url-prefix("https://www.google.no/maps") {
 	.gb_ta svg,
 	.gb_Ec svg,
 	.gb_1c .gb_ge,
-	.gb_Qc .gb_ge, .oFwkk, .G6iPcb .JUQOtc {
+	.gb_Qc .gb_ge,
+	.oFwkk,
+	.G6iPcb .JUQOtc {
 		fill: var(--Foreground) !important
 	}
-	.UcZrVc .w9e2Mc, .UcZrVc .OLQnJe {
+	.UcZrVc .w9e2Mc,
+	.UcZrVc .OLQnJe {
 		fill: var(--Foreground-Variant) !important
 	}
 	.ixImeb .JUQOtc,
@@ -2325,7 +2360,8 @@ url-prefix("https://www.google.no/maps") {
 	}
 	.YisXab::after,
 	.EYUu4d,
-	.swa7If, .MgQfZd:after {
+	.swa7If,
+	.MgQfZd:after {
 		display: none !important
 	}
 	.gb_0a,
