@@ -237,7 +237,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {modkey},
-        ']',
+        '?',
         function()
             awesome.emit_signal('widget::blur:increase')
         end,
@@ -245,7 +245,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {modkey},
-        '[',
+        '@',
         function()
             awesome.emit_signal('widget::blur:decrease')
         end,
