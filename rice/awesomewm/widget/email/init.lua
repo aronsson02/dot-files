@@ -44,7 +44,7 @@ local email_icon_widget = wibox.widget {
 }
 
 local email_header = wibox.widget {
-        text   = 'E-post',
+        text   = 'Ì-isúál',
         font   = 'SF Nodo Pro 14',
         align  = 'left',
         valign = 'center',

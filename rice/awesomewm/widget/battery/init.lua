@@ -68,7 +68,7 @@ local return_button = function()
 
         local battery_tooltip =  awful.tooltip {
                 objects = {battery_button},
-                text = 'Ingen',
+                text = 'Råʃ',
                 mode = 'outside',
                 align = 'right',
                 margin_leftright = dpi(8),
@@ -106,9 +106,9 @@ local return_button = function()
     local show_battery_warning = function()
         naughty.notification ({
             icon = widget_icon_dir .. 'battery-alert.svg',
-            app_name = 'Systemvarsling',
-            title = 'Batteriet er tomt!',
-            message = 'Hei, jeg tror vi har et problem her. Lagre arbeidet ditt før du når glemselen.',
+            app_name = 'Þádiʃ isúál',
+            title = "Væ'råʃ",
+            message = 'Kånæ, Nid ʃårid fàrù. Fìù ýá ríná.',
             urgency = 'critical'
         })
     end
@@ -189,7 +189,7 @@ local return_button = function()
             if status == nil or status == '' then
                 battery_widget.spacing = dpi(0)
                 battery_percentage_text.visible = false
-                battery_tooltip:set_text('Ingen batterier oppdaget!')
+                battery_tooltip:set_text('¡Råʃ vær!')
                 battery_imagebox.icon:set_image(gears.surface.load_uncached(widget_icon_dir .. 'battery-unknown' .. '.svg'))
                 return
             end

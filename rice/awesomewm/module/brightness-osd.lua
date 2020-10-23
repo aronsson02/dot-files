@@ -12,7 +12,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
     s.show_bri_osd = false
 
     local osd_header = wibox.widget {
-        text = 'Brightness',
+        text = 'Kivå',
         font = 'SF Nodo Pro 12',
         align = 'left',
         valign = 'center',

@@ -129,8 +129,8 @@ xkb_symbols "latin" {
 //┃        ┃ Á À │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E   │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
 //┃Backspce┃ á à │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e   │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
 //┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫//
-//┃      ┃ _   │     │ X   │ C Š │ V Œ │ B   │ K   │ M   │ O   │ ,   │ *   ┃              ┃//
-//┃ Shift┃ -   │ ʃ   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ o   │ .   │ 0   ┃  Lvl_3_Shift ┃//
+//┃      ┃ _   │     │ X   │ C Š │ V Œ │ B   │ K   │ M   │ Ó   │ ,   │ *   ┃              ┃//
+//┃ Shift┃ -   │ ʃ   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ ó   │ .   │ 0   ┃  Lvl_3_Shift ┃//
 //┣━━━━━━┻┱────┴┲━━━━┷━━┱──┴─────┴─────┴─────┴─────┴─────┴─────┼─────┴┲━━━━┻┳━━━━━┳━━━━━━━┫//
 //┃       ┃     ┃       ┃                                      │      ┃     ┃     ┃       ┃//
 //┃ Ctrl_L┃     ┃ Alt_L ┃                                      │ Alt_R┃     ┃     ┃ Ctrl_R┃//
@@ -164,7 +164,7 @@ xkb_symbols "faelz" {
   key <AD05> { [            g,            G,     dead_ogonek                   ] };
   key <AD06> { [            j,            J,          igrave,           Igrave ] };
   key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
-  key <AD08> { [            u,            U,          uacute,           Uacute ] };
+  key <AD08> { [       ugrave,       Ugrave,          uacute,           Uacute ] };
   key <AD09> { [            y,            Y,          yacute,           Yacute ] };
   key <AD10> { [            4,       dollar,            cent,         sterling ] };
   key <AD11> { [            5,      percent,        EuroSign,              yen ] };
@@ -195,7 +195,7 @@ xkb_symbols "faelz" {
   key <AB05> { [            b,            B,      dead_breve                   ] };
   key <AB06> { [            k,            K,  dead_abovering                   ] };
   key <AB07> { [            m,            M,     dead_macron                   ] };
-  key <AB08> { [            o,            O                                    ] };
+  key <AB08> { [       oacute,       Oacute                                    ] };
   key <AB09> { [       period,        comma,         greater,             less ] };
   key <AB10> { [            0,     asterisk                                    ] };
   key <RTSH> { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift] };

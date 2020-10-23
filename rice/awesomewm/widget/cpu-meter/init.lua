@@ -8,7 +8,7 @@ local dpi = beautiful.xresources.apply_dpi
 local icons = require('theme.icons')
 
 local meter_name = wibox.widget {
-        text = 'Prosessor',
+        text = 'Þåki',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox

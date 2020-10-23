@@ -8,7 +8,7 @@ local icons = require('theme.icons')
 local clickable_container = require('widget.clickable-container')
 
 local action_name = wibox.widget {
-        text = 'Lysstyrke',
+        text = 'Kivå',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox

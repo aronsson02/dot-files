@@ -65,10 +65,10 @@ local return_button = function()
                         local widget_icon_name = nil
                         if stdout:match('Soft blocked: yes') then
                                 widget_icon_name = 'bluetooth-off'
-                                bluetooth_tooltip.markup = 'Bluetooth er av'
+                                bluetooth_tooltip.markup = 'ʃiáʃæ læn'
                         else
                                 widget_icon_name = 'bluetooth'
-                                bluetooth_tooltip.markup = 'Bluetooth er på'
+                                bluetooth_tooltip.markup = 'ʃiáʃæ fán'
                         end
                         widget.icon:set_image(widget_icon_dir .. widget_icon_name .. '.svg')
                         collectgarbage('collect')

@@ -70,7 +70,7 @@ local return_button = function()
         )
 
         local network_tooltip = awful.tooltip {
-                text = 'Laster...',
+                text = 'Vákrá...',
                 objects = {widget_button},
                 mode = 'outside',
                 align = 'right',
@@ -131,7 +131,7 @@ local return_button = function()
                 local notify_connected = function(essid)
                         local message = 'Du er nå koblet til <b>\"' .. essid .. '\"</b>'
                         local title = 'Forbindelse opprettet'
-                        local app_name = 'Systemvarsling'
+                        local app_name = 'Þádiʃ isúál'
                         local icon = widget_icon_dir .. 'wifi.svg'
                         network_notify(message, title, app_name, icon)
                 end
@@ -213,7 +213,7 @@ local return_button = function()
                 local notify_connected = function()
                         local message = 'Tilkoblet internett med <b>\"' .. interfaces.lan_interface .. '\"</b>'
                         local title = 'Forbindelse opprettet'
-                        local app_name = 'Systemvarsling'
+                        local app_name = 'Þádiʃ isúál'
                         local icon = widget_icon_dir .. 'wired.svg'
                         network_notify(message, title, app_name, icon)
                 end
@@ -249,7 +249,7 @@ local return_button = function()
                 local notify_wireless_disconnected = function(essid)
                         local message = 'Wi-Fi-nettverket er koblet fra'
                         local title = 'Tilkobling frakoblet'
-                        local app_name = 'Systemvarsling'
+                        local app_name = 'Þádiʃ isúál'
                         local icon = widget_icon_dir .. 'wifi-strength-off.svg'
                         network_notify(message, title, app_name, icon)
                 end
@@ -257,7 +257,7 @@ local return_button = function()
                 local notify_wired_disconnected = function(essid)
                         local message = 'Ethernet-nettverket er koblet fra'
                         local title = 'Tilkobling frakoblet'
-                        local app_name = 'Systemvarsling'
+                        local app_name = 'Þádiʃ isúál'
                         local icon = widget_icon_dir .. 'wired-off.svg'
                         network_notify(message, title, app_name, icon)
                 end

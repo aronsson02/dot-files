@@ -12,7 +12,7 @@ local clickable_container = require('widget.clickable-container')
 naughty.config.defaults.ontop = true
 naughty.config.defaults.icon_size = dpi(32)
 naughty.config.defaults.timeout = 5
-naughty.config.defaults.title = 'Systemvarsling'
+naughty.config.defaults.title = 'Þádiʃ isúál'
 naughty.config.defaults.margin = dpi(16)
 naughty.config.defaults.border_width = 0
 naughty.config.defaults.position = 'top_left'
@@ -46,8 +46,8 @@ ruled.notification.connect_signal(
 			rule       = { urgency = 'critical' },
 			properties = {
 				font        		= 'SF Nodo Pro 10',
-				bg 					= '#ff0000',
-				fg 					= '#fafafa',
+				bg 					= beautiful.transparent,
+				fg 					= beautiful.fg_normal,
 				margin 				= dpi(16),
 				position 			= 'top_left',
 				implicit_timeout	= 0
@@ -88,9 +88,9 @@ naughty.connect_signal(
 	function(message, startup)
 		naughty.notification {
 			urgency = 'critical',
-			title   = 'Ups, en feil skjedde'..(startup and ' under oppstart!' or '!'),
+			title   = 'Ùps, ¡Åʃær'..(startup and " ráse'kárá!" or '!'),
 			message = message,
-			app_name = 'Systemvarsling',
+			app_name = 'Þádiʃ isúál',
 			icon = beautiful.awesome_icon
 		}
 	end
@@ -165,7 +165,7 @@ naughty.connect_signal(
 											{
 												{
 													{
-														markup = n.app_name or 'System Notification',
+														markup = n.app_name or 'Þádiʃ isúál',
 														font = 'SF Nodo Pro 10',
 														align = 'center',
 														valign = 'center',

@@ -51,7 +51,7 @@ entry {
         expand:                         true;
         vertical-align:                 0.5;
         horizontal-align:               0.5;
-        placeholder:                    "Skriv inn for å søke";
+        placeholder:                    "Skårá dáì fírù";
         placeholder-color:              @foreground;
         blink:                          true;
 }

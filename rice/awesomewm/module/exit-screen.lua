@@ -11,7 +11,7 @@ local config_dir = filesystem.get_configuration_dir()
 local widget_icon_dir = config_dir .. 'configuration/user-profile/'
 
 local greeter_message = wibox.widget {
-        markup = 'Velg smart!',
+        markup = '¡Æìʃ!',
         font = 'SF Nodo Pro 48',
         align = 'center',
         valign = 'center',
@@ -76,7 +76,7 @@ local update_user_name = function()
             local first_name = stdout:match('(.*)@') or stdout:match('(.-)%s')
             first_name = first_name:sub(1, 1):upper() .. first_name:sub(2)
             profile_name:set_markup(stdout)
-            greeter_message:set_markup('Velg smart, ' .. first_name .. '!')
+            greeter_message:set_markup('¡Æìʃ, ' .. first_name .. '!')
         end
     )
 end
@@ -151,7 +151,7 @@ local reboot_command = function()
     awesome.emit_signal('module::exit_screen_hide')
 end
 
-local poweroff = build_button(icons.power, 'Avstengning datamaskin')
+local poweroff = build_button(icons.power, 'Læn')
 poweroff:connect_signal(
     'button::release',
     function()
@@ -159,7 +159,7 @@ poweroff:connect_signal(
     end
 )
 
-local reboot = build_button(icons.restart, 'Start på nytt')
+local reboot = build_button(icons.restart, 'Kárá rávíl')
 reboot:connect_signal(
     'button::release',
     function()
@@ -167,7 +167,7 @@ reboot:connect_signal(
     end
 )
 
-local suspend = build_button(icons.sleep, 'Sove')
+local suspend = build_button(icons.sleep, 'Såv')
 suspend:connect_signal(
     'button::release',
     function()
@@ -175,7 +175,7 @@ suspend:connect_signal(
     end
 )
 
-local exit = build_button(icons.logout, 'Logg ut')
+local exit = build_button(icons.logout, 'Sává')
 exit:connect_signal(
     'button::release',
     function()
@@ -183,7 +183,7 @@ exit:connect_signal(
     end
 )
 
-local lock = build_button(icons.lock, 'Låse')
+local lock = build_button(icons.lock, 'Råʃù')
 lock:connect_signal(
     'button::release',
     function()
@@ -221,16 +221,16 @@ screen.connect_signal(
                 if key == 's' then
                     suspend_command()
 
-                elseif key == 'e' then
+                elseif key == 'á' then
                     exit_command()
 
-                elseif key == 'l' then
+                elseif key == 'r' then
                     lock_command()
 
-                elseif key == 'p' then
+                elseif key == 'l' then
                     poweroff_command()
 
-                elseif key == 'r' then
+                elseif key == 'k' then
                     reboot_command()
 
                 elseif key == 'Escape' or key == 'q' or key == 'x' then

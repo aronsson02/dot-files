@@ -8,7 +8,7 @@ local icons = require('theme.icons')
 local clickable_container = require('widget.clickable-container')
 
 local action_name = wibox.widget {
-        text = 'Lyd forsterkning',
+        text = 'Váʃári',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
@@ -45,17 +45,17 @@ local action_level = wibox.widget {
 local slider = wibox.widget {
     nil,
         {
-                id                                      = 'volume_slider',
+                id                  = 'volume_slider',
                 bar_shape           = gears.shape.rounded_rect,
                 bar_height          = dpi(5),
                 bar_color           = '#fafafa20',
-                bar_active_color        = '#f2f2f2EE',
+                bar_active_color    = '#f2f2f2EE',
                 handle_color        = '#fafafa',
                 handle_shape        = gears.shape.circle,
                 handle_width        = dpi(15),
                 handle_border_color = '#00000012',
                 handle_border_width = dpi(1),
-                maximum                         = 100,
+                maximum             = 100,
         widget              = wibox.widget.slider
     },
     nil,

@@ -12,14 +12,14 @@ local icons = require('theme.icons')
 local device_state = false
 
 local action_name = wibox.widget {
-        text = 'Bluetooth',
+        text = 'ʃiáʃæ',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }
 
 local action_status = wibox.widget {
-        text = 'Av',
+        text = 'Læn',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
@@ -59,11 +59,11 @@ local widget_button = wibox.widget {
 
 local update_widget = function()
         if device_state then
-                action_status:set_text('På')
+                action_status:set_text('Fán')
                 widget_button.bg = beautiful.accent
                 button_widget.icon:set_image(widget_icon_dir .. 'bluetooth.svg')
         else
-                action_status:set_text('Av')
+                action_status:set_text('Læn')
                 widget_button.bg = beautiful.groups_bg
                 button_widget.icon:set_image(widget_icon_dir .. 'bluetooth-off.svg')
         end
@@ -94,7 +94,7 @@ local power_on_cmd = [[
     naughty = require('naughty')
     naughty.notification({
         app_name = 'Bluetooth Manager',
-        title = 'System Notification',
+        title = 'Þádiʃ isúál',
         message = 'Initializing bluetooth device...',
         icon = ']] .. widget_icon_dir .. 'loading' .. '.svg' .. [['
     })
@@ -115,7 +115,7 @@ local power_off_cmd = [[
     naughty = require('naughty')
     naughty.notification({
         app_name = 'Bluetooth Manager',
-        title = 'System Notification',
+        title = 'Þádiʃ isúál',
         message = 'The bluetooth device has been disabled.',
         icon = ']] .. widget_icon_dir .. 'bluetooth-off' .. '.svg' .. [['
     })

@@ -12,7 +12,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
     s.show_vol_osd = false
 
     local osd_header = wibox.widget {
-        text = 'Lyd forsterkning:',
+        text = 'Váʃári:',
         font = 'SF Nodo Pro 16',
         align = 'left',
         valign = 'center',

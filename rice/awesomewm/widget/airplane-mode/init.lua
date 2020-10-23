@@ -12,14 +12,14 @@ local icons = require('theme.icons')
 local ap_state = false
 
 local action_name = wibox.widget {
-        text = 'Flymodus',
+        text = 'Ìåʃká læn',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }
 
 local action_status = wibox.widget {
-        text = 'Av',
+        text = 'Læn',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox

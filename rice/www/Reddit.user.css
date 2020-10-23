@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Reddit
-@version      1.0.0
+@version      1.0.1
 @description  Reddit theme
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -17,8 +17,11 @@
 	._1vyLCp-v-tE5QvZovwrASa {
 		background-color: var(--Background) !important
 	}
-	._1oQyIsiPHYt6nx7VOmd1sz, ._1poyrkZ7g36PawDueRza-J, ._1npCwF50X2J7Wt82SZi6J0, .uI_hDmU5GSiudtABRz_37, ._2ulKn_zs7Y3LWsOqoFLHPo  {
+	._1oQyIsiPHYt6nx7VOmd1sz, ._1poyrkZ7g36PawDueRza-J, ._1npCwF50X2J7Wt82SZi6J0, .uI_hDmU5GSiudtABRz_37, ._2ulKn_zs7Y3LWsOqoFLHPo   {
 		background-color: var(--Surface) !important
+	}
+	._3Oa0THmZ3f5iZXAQ0hBJ0k {
+		background-color: var(--Surface-Variant) !important
 	}
 	._2M2wOqmeoPVvcSsJ6Po9-V._3287nL7j7epK9JmDC3N1VR {
 		background-color: var(--Surface-Transparent) !important;
@@ -30,6 +33,9 @@
 	._2fCzxBE1dlMh4OFc7B3Dun, ._3jOxDPIQ0KaOWpzvSQo-1s {
 		color: var(--Foreground-Variant) !important
 	}
+	._3SUsITjKNQ7Tp0Wi2jGxIM.Z3lT0VGlALek4Q9j0ZQCr, ._1rZYMD_4xY3gRcSS3p8ODO {
+		color: var(--Primary) !important
+	}
 	.m3aNC6yp8RrNM_-a0rrfa {
 	overflow: hidden;
 	border-radius: var(--Rounding-Variant);
@@ -40,11 +46,14 @@
 	}
 	#header-search-bar {
 		background-color: var(--Mast-Variant) !important;
-		box-shadow: var(--Mast-Shadow) inset !important;
+		box-shadow: var(--Mast-Variant-Shadow) inset !important;
 		border-radius: var(--Rounding) !important;
 	}
 	._3obgdFz00GvpqpuX8QCsNK {
 		background-color: var(--Mast-Dark) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.m3aNC6yp8RrNM_-a0rrfa {
 		box-shadow: var(--Mast-Shadow) !important
 	}
 	._2ulKn_zs7Y3LWsOqoFLHPo {

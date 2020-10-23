@@ -12,14 +12,14 @@ local icons = require('theme.icons')
 local blur_status = true
 
 local action_name = wibox.widget {
-        text = 'Uklarhetseffekter' ,
+        text = 'Ìàrùʃ' ,
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }
 
 local action_status = wibox.widget {
-        text = 'Av',
+        text = 'Læn',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
@@ -59,11 +59,11 @@ local widget_button = wibox.widget {
 
 local update_widget = function()
         if blur_status then
-                action_status:set_text('På')
+                action_status:set_text('Fán')
                 widget_button.bg = beautiful.system_magenta_dark
                 button_widget.icon:set_image(icons.effects)
         else
-                action_status:set_text('Av')
+                action_status:set_text('Læn')
                 widget_button.bg = beautiful.groups_bg
                 button_widget.icon:set_image(widget_icon_dir .. 'effects-off.svg')
         end

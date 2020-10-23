@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------
 --- Basic Calculator Widget
 --
--- 
+--
 -- For more details check my repos README.md
 --
 --
@@ -30,7 +30,7 @@ local calculator_screen = wibox.widget {
 	{
 		id = 'calcu_screen',
 		text = '0',
-		font = 'Inter Regular 20',
+		font = 'SF Nodo Pro 20',
 		align = 'right',
 		valign = 'center',
 		widget = wibox.widget.textbox,
@@ -53,7 +53,7 @@ local calculate = function ()
 
 	local func = assert(load('return ' .. string_expression))
 	local ans = tostring(func())
-		
+
 	-- Convert -nan to undefined
 	if ans == '-nan' then
 		calcu_screen:set_text('undefined')
@@ -66,10 +66,10 @@ local calculate = function ()
 end
 
 local txt_on_screen = function()
-	
+
 	screen_text = calculator_screen.calcu_screen:get_text()
 
-	return screen_text == 'inf' or screen_text == 'undefined' or screen_text == 'SYNTAX ERROR' or #screen_text == 1
+	return screen_text == 'inf' or screen_text == 'undefined' or screen_text == '¡ÅʃÆR ÆNI DÁKÆ!' or #screen_text == 1
 end
 
 -- Delete the last digit in screen
@@ -113,9 +113,9 @@ local format_screen = function(value)
 
 		end
 
-	elseif calcu_screen:get_text() == 'inf' or 
+	elseif calcu_screen:get_text() == 'inf' or
 		calcu_screen:get_text() == 'undefined' or
-		calcu_screen:get_text() == 'SYNTAX ERROR' then
+		calcu_screen:get_text() == '¡ÅʃÆR ÆNI DÁKÆ!' then
 
 		-- Clear screen if an operator is selected
 		if value:sub(-1):match('[%+%/%*%^%.]') then
@@ -131,7 +131,7 @@ local format_screen = function(value)
 
 		-- Don't let the user to input two or more consecutive arithmetic operators and decimals
 		if calcu_screen:get_text():sub(-1):match('[%+%-%/%*%^%.]') and value:sub(-1):match('[%+%-%/%*%^%.%%]') then
-			
+
 			-- Get the operator from button pressed
 			local string_eval = calcu_screen:get_text():sub(-1):gsub('[%+%-%/%*%^%.]', value)
 
@@ -141,11 +141,11 @@ local format_screen = function(value)
 
 			-- Concatenate the value operator to the screen string to replace the deleted operator
 			calcu_screen:set_text(calcu_screen:get_text() .. tostring(string_eval))
-		
+
 		else
 			-- Concatenate the value to screen string
 			calcu_screen:set_text(calcu_screen:get_text() .. tostring(value))
-		
+
 		end
 	end
 
@@ -153,7 +153,7 @@ end
 
 -- Shape generator
 local build_shape = function (position, radius)
-	
+
 	-- Position represents the position of rounded corners
 	if position == 'top' then
 		return function(cr, width, height)
@@ -207,7 +207,7 @@ local build_button_widget = function(text, rcp, rad)
 		{
 			id = 'btn_name',
 			text =  value,
-			font = 'Inter 12',
+			font = 'SF Nodo Pro 16',
 			align = 'center',
 			valign = 'center',
 			widget = wibox.widget.textbox,
@@ -228,9 +228,9 @@ local build_button_widget = function(text, rcp, rad)
 	build_button:buttons(
 		gears.table.join(
 			awful.button(
-				{}, 
-				1, 
-				nil, 
+				{},
+				1,
+				nil,
 				function ()
 
 					if value == 'C' then
@@ -239,7 +239,7 @@ local build_button_widget = function(text, rcp, rad)
 					elseif value == '=' then
 						-- Calculate and error handling
 						if not pcall(calculate) then
-							calculator_screen.calcu_screen:set_text('SYNTAX ERROR')
+							calculator_screen.calcu_screen:set_text('¡ÅʃÆR ÆNI DÁKÆ!')
 						end
 
 					elseif value == 'DEL' then
@@ -261,7 +261,7 @@ end
 local keygrab_running = false
 
 local kb_imagebox = wibox.widget {
-	
+
 	id = 'kb_icon',
 	image = widget_icon_dir .. 'kb-off' .. '.svg',
 	resize = true,
@@ -319,7 +319,7 @@ kb_button:buttons(
 )
 
 local calcu_keygrabber = awful.keygrabber {
-	
+
 	auto_start          = true,
 	stop_event          = 'release',
 	start_callback      = function()
@@ -328,13 +328,13 @@ local calcu_keygrabber = awful.keygrabber {
 		kb_imagebox:set_image(widget_icon_dir .. 'kb' .. '.svg')
 
 	end,
-	stop_callback = function() 
+	stop_callback = function()
 
 		keygrab_running = false
 		kb_imagebox:set_image(widget_icon_dir .. 'kb-off' .. '.svg')
 
 	end,
-	keypressed_callback = function(self, mod, key, command) 
+	keypressed_callback = function(self, mod, key, command)
 
 		if #key == 1 and (key:match('%d+') or key:match('[%+%-%/%*%^%.]')) then
 			format_screen(key)
@@ -351,7 +351,7 @@ local calcu_keygrabber = awful.keygrabber {
 		elseif key == '=' or key == 'Return' then
 			-- Calculate
 			if not pcall(calculate) then
-				calculator_screen.calcu_screen:set_text('SYNTAX ERROR')
+				calculator_screen.calcu_screen:set_text('¡ÅʃÆR ÆNI DÁKÆ!')
 			end
 
 		end
@@ -411,7 +411,7 @@ local calculator_body = wibox.widget {
 
 calculator_body:connect_signal(
 	'mouse::enter',
-	function() 
+	function()
 		-- Start keygrabbing
 		calcu_keygrabber:start()
 	end
@@ -427,7 +427,7 @@ calculator_body:connect_signal(
 
 awesome.connect_signal(
 	'widget::calc_start_keygrab',
-	function() 
+	function()
 		-- Stop keygrabbing
 		calcu_keygrabber:start()
 	end
@@ -435,7 +435,7 @@ awesome.connect_signal(
 
 awesome.connect_signal(
 	'widget::calc_stop_keygrab',
-	function() 
+	function()
 		-- Stop keygrabbing
 		calcu_keygrabber:stop()
 	end
@@ -464,10 +464,10 @@ local calcu_tooltip = awful.tooltip {
 
 	<b>Note:</b>
 	While in keygrabbing mode, your keyboard's focus will be on the calculator.
-	So you're AwesomeWM keybinding will stop working. 
+	So you're AwesomeWM keybinding will stop working.
 
 	<b>Stopping the keygrabbing mode:</b>
-	* Move away your cursor from the calculator. 
+	* Move away your cursor from the calculator.
 	* Toggle it off using the keyboard button.
 	* Press <b>x</b>.
 	]]

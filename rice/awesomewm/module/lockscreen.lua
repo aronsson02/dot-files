@@ -62,7 +62,7 @@ local uname_text = wibox.widget {
 
 local caps_text = wibox.widget {
         id = 'uname_text',
-        markup = 'Caps Lock er på',
+        markup = "Ásþ'ålʃkáká",
         font = 'SF Nodo Pro 12',
         align = 'center',
         valign = 'center',

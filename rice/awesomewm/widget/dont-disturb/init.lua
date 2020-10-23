@@ -13,14 +13,14 @@ local icons = require('theme.icons')
 _G.dont_disturb_state = false
 
 local action_name = wibox.widget {
-        text = 'Ikke forstyrr' ,
+        text = 'Fáìʃin í' ,
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
 }
 
 local action_status = wibox.widget {
-        text = 'Av',
+        text = 'Læn',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
@@ -60,11 +60,11 @@ local widget_button = wibox.widget {
 
 local update_widget = function()
         if dont_disturb_state then
-                action_status:set_text('På')
+                action_status:set_text('Fán')
                 widget_button.bg = beautiful.system_cyan_dark
                 button_widget.icon:set_image(widget_icon_dir .. 'dont-disturb.svg')
         else
-                action_status:set_text('Av')
+                action_status:set_text('Læn')
                 widget_button.bg = beautiful.groups_bg
                 button_widget.icon:set_image(widget_icon_dir .. 'notify.svg')
         end

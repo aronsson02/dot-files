@@ -8,7 +8,7 @@ local dpi = beautiful.xresources.apply_dpi
 local icons = require('theme.icons')
 
 local meter_name = wibox.widget {
-        text = 'Tilfeldig tilgang minne',
+        text = 'Iþik þádåk',
         font = 'SF Nodo Pro 12',
         align = 'left',
         widget = wibox.widget.textbox
@@ -42,14 +42,14 @@ local meter_icon = wibox.widget {
 local slider = wibox.widget {
     nil,
     {
-        id                  = 'ram_usage',
-        max_value          = 100,
-        value              = 29,
-        forced_height      = dpi(24),
-        color              = '#f2f2f2EE',
+        id               = 'ram_usage',
+        max_value        = 100,
+        value            = 29,
+        forced_height    = dpi(24),
+        color            = '#f2f2f2EE',
         background_color = '#fafafa20',
-        shape              = gears.shape.rounded_rect,
-        widget             = wibox.widget.progressbar
+        shape            = gears.shape.rounded_rect,
+        widget           = wibox.widget.progressbar
     },
     nil,
     expand = 'none',

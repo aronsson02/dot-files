@@ -75,7 +75,7 @@ entry {
         font:                                           "SF Nodo Pro 12";
         background-color:               @background;
         placeholder-color:              @foreground;
-        placeholder:                    "Global Search";
+        placeholder:                    "Skårá dáì fírù";
     blink:                            true;
     expand:                         true;
     text-color:                        @foreground;

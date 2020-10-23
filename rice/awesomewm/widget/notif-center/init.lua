@@ -4,7 +4,7 @@ local beautiful = require('beautiful')
 local dpi = beautiful.xresources.apply_dpi
 
 local notif_header = wibox.widget {
-        text   = 'Notifikasjons senter',
+        text   = 'Iʃál ìàʃæk',
         font   = 'SF Nodo Pro 14',
         align  = 'left',
         valign = 'center',
