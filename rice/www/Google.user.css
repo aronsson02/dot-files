@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.5.1
+@version      2.5.2
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1286,6 +1286,9 @@
 	.goog-tab-bar.spreadsheet-settings-dialog-tab-bar .goog-tab.spreadsheet-settings-tab.goog-tab-hover,
 	.docs-gm-promo.jfk-bubble.jfk-bubble-promo.docs-promo-bubble .jfk-bubble-arrowimplafter {
 		border-color: var(--Primary) transparent !important;
+	}
+	.kix-cursor-caret {
+		border-color: var(--Primary) !important;
 	}
 	.boqDrivesharedialogCommonCalloutCalloutActionRow .GmButtonText:hover,
 	.boqDrivesharedialogCommonCalloutCalloutActionRow .GmButtonText:focus,

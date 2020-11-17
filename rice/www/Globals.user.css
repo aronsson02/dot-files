@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      3.0.0
+@version      3.0.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -20,7 +20,7 @@
 		--Foreground-Transparent: #FFFFFF66;
 		--Background: #222;
 		--Surface: #333;
-		--Surface-Variant: #555;
+		--Surface-Variant: #444;
 		--Surface-Transparent: #00000066;
 		--Primary: #1A73E8;
 		--Primary-Variant: #69BBDD;
