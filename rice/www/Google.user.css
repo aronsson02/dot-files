@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      2.5.2
+@version      3.0.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -525,7 +525,8 @@
 		color: var(--Primary) !important;
 	}
 	#like-bar,
-	.style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer {
+	.style-scope.ytd-commentbox #submit-button,
+	.style-scope.ytd-thumbnail-overlay-resume-playback-renderer {
 		background-color: var(--Primary) !important;
 	}
 	.style-scope.ytd-commentbox #cancel-button,
@@ -1352,7 +1353,8 @@
 	.docs-branding-icon-img.docs-branding-icon-spreadsheets {
 		filter: hue-rotate(45deg) !important;
 	}
-	.gb_0a {
+	.gb_Za,
+	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
 }
@@ -1372,7 +1374,10 @@ url-prefix("https://translate.google.se") {
 	.gt-lc-mobile .gt-baf-word-clickable:hover,
 	.vk-btn,
 	.phrasebook-container .phrasebook-features .goog-menuitem-highlight,
-	.phrasebook-container .phrasebook-features .goog-menuitem:hover {
+	.phrasebook-container .phrasebook-features .goog-menuitem:hover,
+	.RvYhPd,
+	.ordo2:hover,
+	.ordo2:focus {
 		background-color: var(--Background) !important;
 	}
 	.source-wrap,
@@ -1391,7 +1396,14 @@ url-prefix("https://translate.google.se") {
 	.phrasebook-container .search-box,
 	.phrasebook-container .phrasebook-features .goog-option-selected,
 	.phrasebook-container .language-chip,
-	.jfk-tooltip {
+	.jfk-tooltip,
+	.ySES5:hover,
+	.EO28P,
+	.KjuTac,
+	.bvzp8c,
+	.RstnCb,
+	.KskmCc,
+	.RstnCb {
 		background-color: var(--Surface-Variant) !important;
 	}
 	.ft-icon-oval,
@@ -1438,11 +1450,22 @@ url-prefix("https://translate.google.se") {
 	.contribute-target,
 	.gt-lc.gt-lc-mobile .gt-cd,
 	#source,
-	.gb_Ec {
+	.gb_Ec,
+	.ySES5,
+	.P6w8m,
+	.rm1UF,
+	.Bcbxbe.FwR7Pc,
+	.I87fLc.XzOhkf,
+	.ordo2.KKjvXb,
+	.oLbzv {
 		background-color: var(--Surface) !important;
 	}
 	#gb {
 		background-color: var(--Mast) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.hgbeOc {
+		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
 	.gb_qe:not(.gb_3),
@@ -1464,8 +1487,18 @@ url-prefix("https://translate.google.se") {
 	.history-container .info-bar,
 	.phrasebook-container .phrasebook-features .sort-button,
 	.phrasebook-entry .tl-input,
-	.ZQWYD {
+	.ZQWYD,
+	.TcXXXb,
+	.xUPQqb,
+	.MZgjEb,
+	.ZTPlmc,
+	.a88hkc,
+	.TEGJAb {
 		color: var(--Foreground-Dark) !important;
+	}
+	.ordo2,
+	.ordo2:not(.KKjvXb) .qUL6me {
+		color: var(--Foreground-Variant) !important;
 	}
 	#source,
 	.results-container:not(.empty) .placeholder,
@@ -1507,7 +1540,18 @@ url-prefix("https://translate.google.se") {
 	.mTQVx,
 	.gb_ta svg,
 	.gb_1c .gb_ge,
-	.gb_Qc .gb_ge {
+	.gb_Qc .gb_ge,
+	.VfPpkd-YVzG2b,
+	.uNr6ee,
+	.nYkDR,
+	.KmsAmb .tL9Q4c,
+	.J0lOec,
+	.NMm5M,
+	.SSgGrd,
+	.q7sDqe .VfPpkd-kBDsod,
+	.q7sDqe,
+	.yUUmWd .VfPpkd-jY41G-V67aGc,
+	.AarNVd {
 		color: var(--Foreground) !important;
 	}
 	.spelling-correction a,
@@ -1525,7 +1569,10 @@ url-prefix("https://translate.google.se") {
 	.language-chip:focus-within,
 	.ls-select,
 	.e7YJ3,
-	.Rj2Mlf:not(:disabled) {
+	.Rj2Mlf:not(:disabled),
+	.S6GkK,
+	.er8xn,
+	.yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc {
 		color: var(--Primary) !important;
 	}
 	.gt-lc.gt-lc-mobile .gt-cc-r-i,
@@ -1542,14 +1589,23 @@ url-prefix("https://translate.google.se") {
 	.gt-is-mobile .gt-is-ld,
 	.phrasebook-container .language-chip,
 	.language_list_section {
-		border-color: var(--Background) !important;
+		border-color: var(--Background) !important
 	}
-	.gt-def-num {
-		border: 1px solid var(--Primary) !important;
+	.PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb {
+		border-color: var(--Primary) !important
+	}
+	.gt-def-num,
+	.I87fLc.XzOhkf {
+		border: 1px solid var(--Primary) !important
 	}
 	.gt-lc.gt-lc-mobile .gt-cd,
-	.header-button {
-		border: none !important;
+	.header-button,
+	.aCQag,
+	.ccvoYb {
+		border: none !important
+	}
+	.RstnCb {
+		box-shadow: none !important
 	}
 	.gt-spell-icon,
 	.language_list_item_wrapper.item-selected .language_list_item_icon,
@@ -1566,8 +1622,11 @@ url-prefix("https://translate.google.se") {
 	.ita-kd-img {
 		filter: invert() !important;
 	}
-	.ls-wrap .sugg-fade {
-		background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), var(--Surface)) !important;
+	.gb_tc .gb_se:before {
+		filter: contrast(0) brightness(1.85) !important
+	}
+	.X4DQ0::after {
+		display: none !important
 	}
 	.goog-inline-block.jfk-button-checked:after {
 		border-bottom: solid 3px var(--Primary) !important;
@@ -1578,7 +1637,8 @@ url-prefix("https://translate.google.se") {
 	.gb_uc .gb_se::before {
 		animation: filter 6s linear infinite !important;
 	}
-	.gb_0a {
+	.gb_Za,
+	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
 }
@@ -1766,7 +1826,8 @@ url-prefix("https://www.google.se") {
 	.gb_Qb {
 		display: none !important;
 	}
-	.gb_0a {
+	.gb_Za,
+	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
 }
@@ -1795,7 +1856,7 @@ url-prefix("https://www.google.se") {
 	.h-sb-Ic.g-d.g-d-wd:hover {
 		background-color: var(--Surface-Variant) !important;
 	}
-	.gb_ta {
+	.gb_sa {
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -1907,7 +1968,8 @@ url-prefix("https://www.google.se") {
 	:focus {
 		outline: var(--Primary-Variant) solid 1px;
 	}
-	.gb_0a {
+	.gb_Za,
+	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
 }
@@ -1924,7 +1986,23 @@ url-prefix("https://www.google.no/maps") {
 	.gb_5c.gb_Pg.gb_i,
 	.action-menu-widget,
 	.widget-layer,
-	.widget-nearby-suggestions-inner, #zoomToolbar, #undoRedoToolbar, #drawingToolbar, #directionsToolbar, #measureToolbar, #mobileToolbar, #zoomToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #drawingToolbar .VIpgJd-INgbqf-LgbsSe, #directionsToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #mobileToolbar .VIpgJd-INgbqf-LgbsSe, #mp-footer>li, #gb {
+	.widget-nearby-suggestions-inner,
+	#zoomToolbar,
+	#undoRedoToolbar,
+	#drawingToolbar,
+	#directionsToolbar,
+	#measureToolbar,
+	#mobileToolbar,
+	#zoomToolbar .VIpgJd-INgbqf-LgbsSe,
+	#undoRedoToolbar .VIpgJd-INgbqf-LgbsSe,
+	#undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe,
+	#drawingToolbar .VIpgJd-INgbqf-LgbsSe,
+	#directionsToolbar .VIpgJd-INgbqf-LgbsSe,
+	#measureToolbar .VIpgJd-INgbqf-LgbsSe,
+	#measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe,
+	#mobileToolbar .VIpgJd-INgbqf-LgbsSe,
+	#mp-footer > li,
+	#gb {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
@@ -1944,7 +2022,11 @@ url-prefix("https://www.google.no/maps") {
 		background: none !important;
 		backdrop-filter: var(--blur) !important;
 	}
-	.gm-style .gm-style-iw-c, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], #stylepopup-popup, .b0t70b-haAclf, .i4ewOd-LQLjdd {
+	.gm-style .gm-style-iw-c,
+	.i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true],
+	#stylepopup-popup,
+	.b0t70b-haAclf,
+	.i4ewOd-LQLjdd {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -1972,7 +2054,9 @@ url-prefix("https://www.google.no/maps") {
 	.widget-pane-toggle-button,
 	.ita-kd-icon-button,
 	.ita-kd-dropdown-menu,
-	.clustered-widget-hovercard, .VIpgJd-xl07Ob, .un1lmc-pbTTYe-ibnC6b-ZmdkE {
+	.clustered-widget-hovercard,
+	.VIpgJd-xl07Ob,
+	.un1lmc-pbTTYe-ibnC6b-ZmdkE {
 		background-color: var(--Surface) !important
 	}
 	.ambient-card-section,
@@ -1984,7 +2068,10 @@ url-prefix("https://www.google.no/maps") {
 	.section-info-action-button:hover,
 	.section-listitem-metadata .section-action-chip-button,
 	.ita-kd-menuitem-hover,
-	.section-editorial-button:hover, .VIpgJd-j7LFlb-sn54Q, .VIpgJd-j7LFlb-ZmdkE, .un1lmc-pbTTYe-ibnC6b-gk6SMd {
+	.section-editorial-button:hover,
+	.VIpgJd-j7LFlb-sn54Q,
+	.VIpgJd-j7LFlb-ZmdkE,
+	.un1lmc-pbTTYe-ibnC6b-gk6SMd {
 		background-color: var(--Surface-Variant) !important
 	}
 	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint,
@@ -1995,7 +2082,8 @@ url-prefix("https://www.google.no/maps") {
 		background-color: var(--Background) !important;
 		color: var(--Foreground-Variant)
 	}
-	.section-header, #mapsprosearch-field.tk3N6e-y4JFTd {
+	.section-header,
+	#mapsprosearch-field.tk3N6e-y4JFTd {
 		background-color: var(--Mast)
 	}
 	.widget-directions-omnibox,
@@ -2003,7 +2091,10 @@ url-prefix("https://www.google.no/maps") {
 	.jqnFjrOWMVU__bucket-fill,
 	.widget-directions-omnibox .searchbox,
 	.section-directions-options,
-	.section-popular-times-value, .VIpgJd-SxecR-PFprWc, .WHyFic .pbTTYe.pbTTYe-auswjd::before, .tk3N6e-LgbsSe-JIbuQc {
+	.section-popular-times-value,
+	.VIpgJd-SxecR-PFprWc,
+	.WHyFic .pbTTYe.pbTTYe-auswjd::before,
+	.tk3N6e-LgbsSe-JIbuQc {
 		background: var(--Primary) !important
 	}
 	.widget-directions .searchbox-searchbutton,
@@ -2025,7 +2116,13 @@ url-prefix("https://www.google.no/maps") {
 	#issue-card-header,
 	.issue-card-title,
 	.section-hero-header-title-title,
-	.rLwmCGCu6mP__title, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], .psjCIe-Bz112c, .eCT9zd-V67aGc, .i4ewOd-r4nke, .pbTTYe-r4nke, .ilErfe-yePe5c-haAclf {
+	.rLwmCGCu6mP__title,
+	.i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true],
+	.psjCIe-Bz112c,
+	.eCT9zd-V67aGc,
+	.i4ewOd-r4nke,
+	.pbTTYe-r4nke,
+	.ilErfe-yePe5c-haAclf {
 		color: var(--Foreground) !important
 	}
 	.suggest-query,
@@ -2052,7 +2149,15 @@ url-prefix("https://www.google.no/maps") {
 	.section-editorial,
 	.section-attribute-group,
 	.kd-radio-label,
-	.section-hero-header-title-description-container, .VIpgJd-j7LFlb, .VIpgJd-pWKtN, .VIpgJd-SFgmFf, .VIpgJd-wQNmvb-gk6SMd .VIpgJd-j7LFlb-bN97Pc, .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc, .i4ewOd-nUpftc-NnAfwf-fmcmS, .i4ewOd-LQLjdd li, .un1lmc-pbTTYe-ibnC6b {
+	.section-hero-header-title-description-container,
+	.VIpgJd-j7LFlb,
+	.VIpgJd-pWKtN,
+	.VIpgJd-SFgmFf,
+	.VIpgJd-wQNmvb-gk6SMd .VIpgJd-j7LFlb-bN97Pc,
+	.VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc,
+	.i4ewOd-nUpftc-NnAfwf-fmcmS,
+	.i4ewOd-LQLjdd li,
+	.un1lmc-pbTTYe-ibnC6b {
 		color: var(--Foreground-Variant)
 	}
 	.section-categorical-shortcut-button-text,
@@ -2061,7 +2166,11 @@ url-prefix("https://www.google.no/maps") {
 	.single-selection-enabled .issue-card-field-hint,
 	.section-text-secondary,
 	.section-info-secondary-text,
-	.section-info-secondary-text .widget-pane-link, .OMz1o-jOfkMb-vOkj6e, .OMz1o-jOfkMb-Vj7tjb, .OMz1o-jOfkMb-RcAFl, .OMz1o-jOfkMb-m0vcme {
+	.section-info-secondary-text .widget-pane-link,
+	.OMz1o-jOfkMb-vOkj6e,
+	.OMz1o-jOfkMb-Vj7tjb,
+	.OMz1o-jOfkMb-RcAFl,
+	.OMz1o-jOfkMb-m0vcme {
 		color: var(--Foreground-Dark)
 	}
 	.blue-button-text,
@@ -2075,7 +2184,8 @@ url-prefix("https://www.google.no/maps") {
 	.iRxY3GoUYUY__high-contrast .iRxY3GoUYUY__below-button-text,
 	.section-star-display,
 	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted,
-	.blue-link, .pbTTYe-INgbqf-hSRGPd {
+	.blue-link,
+	.pbTTYe-INgbqf-hSRGPd {
 		color: var(--Primary)
 	}
 	.allxGeDnJMl__button-hairline:hover,
@@ -2103,12 +2213,23 @@ url-prefix("https://www.google.no/maps") {
 	.ita-kd-img,
 	.maps-sprite-place-attributes-done,
 	.maps-sprite-suggest-starred,
-	.maps-sprite-suggest-home, .i4ewOd-TaUzNb-haAclf li.i4ewOd-TaUzNb-Bz112c-LgbsSe::after, .psjCIe-Bz112c.psjCIe-pKrx3d::before, .psjCIe-Bz112c::before, .Ensave-nJjxad-bEDTcc, .Ensave-nJjxad-m9bMae {
+	.maps-sprite-suggest-home,
+	.i4ewOd-TaUzNb-haAclf li.i4ewOd-TaUzNb-Bz112c-LgbsSe::after,
+	.psjCIe-Bz112c.psjCIe-pKrx3d::before,
+	.psjCIe-Bz112c::before,
+	.Ensave-nJjxad-bEDTcc,
+	.Ensave-nJjxad-m9bMae {
 		filter: invert(1) !important
 	}
 	.searchbox-searchbutton::before,
 	.widget-settings-button-icon,
-	.maps-sprite-settings-languages-blue, .i4ewOd-LQLjdd li:before, .i4ewOd-xl07Ob, .un1lmc-j4gsHd, .un1lmc-pbTTYe-ibnC6b-DyVDA, .Ensave-Bz112c-RJLb9c, .gb_D.gb_wc {
+	.maps-sprite-settings-languages-blue,
+	.i4ewOd-LQLjdd li:before,
+	.i4ewOd-xl07Ob,
+	.un1lmc-j4gsHd,
+	.un1lmc-pbTTYe-ibnC6b-DyVDA,
+	.Ensave-Bz112c-RJLb9c,
+	.gb_D.gb_wc {
 		filter: hue-rotate(180deg) invert(1)
 	}
 	.gm2-hairline-border,
@@ -2119,14 +2240,17 @@ url-prefix("https://www.google.no/maps") {
 	.section-divider-bottom-line {
 		border-color: var(--grey)
 	}
-	.app-imagery-mode .widget-runway-thumbstrip-background, #mapsprosearch-field.tk3N6e-y4JFTd, #mapsprosearch-button {
+	.app-imagery-mode .widget-runway-thumbstrip-background,
+	#mapsprosearch-field.tk3N6e-y4JFTd,
+	#mapsprosearch-button {
 		border-color: var(--Surface)
 	}
 	.jqnFjrOWMVU__bucket-fill,
 	.iRxY3GoUYUY__high-contrast .iRxY3GoUYUY__button {
 		border-color: var(--Primary)
 	}
-	.iRxY3GoUYUY__high-contrast:hover .iRxY3GoUYUY__button, .VIpgJd-SxecR-DKlKme .VIpgJd-SxecR-skjTt {
+	.iRxY3GoUYUY__high-contrast:hover .iRxY3GoUYUY__button,
+	.VIpgJd-SxecR-DKlKme .VIpgJd-SxecR-skjTt {
 		border-color: var(--Primary-Variant)
 	}
 	.widget-directions-input-underline {
@@ -2134,7 +2258,21 @@ url-prefix("https://www.google.no/maps") {
 	}
 	.gm2-hairline-border,
 	.widget-pane-toggle-button,
-	.section-layout.section-cardbox, .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], .VIpgJd-j7LFlb-sn54Q, .VIpgJd-j7LFlb-ZmdkE, #stylepopup-popup, #zoomToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #drawingToolbar .VIpgJd-INgbqf-LgbsSe, #directionsToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #mobileToolbar .VIpgJd-INgbqf-LgbsSe {
+	.section-layout.section-cardbox,
+	.i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke,
+	.i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed,
+	.i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true],
+	.VIpgJd-j7LFlb-sn54Q,
+	.VIpgJd-j7LFlb-ZmdkE,
+	#stylepopup-popup,
+	#zoomToolbar .VIpgJd-INgbqf-LgbsSe,
+	#undoRedoToolbar .VIpgJd-INgbqf-LgbsSe,
+	#undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe,
+	#drawingToolbar .VIpgJd-INgbqf-LgbsSe,
+	#directionsToolbar .VIpgJd-INgbqf-LgbsSe,
+	#measureToolbar .VIpgJd-INgbqf-LgbsSe,
+	#measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe,
+	#mobileToolbar .VIpgJd-INgbqf-LgbsSe {
 		border: none !important
 	}
 	.ambient-card-section {
@@ -2154,26 +2292,33 @@ url-prefix("https://www.google.no/maps") {
 	.gm-style .gm-style-iw-c {
 		border-radius: calc(2 * var(--Rounding-Variant)) var(--Rounding) calc(2 * var(--Rounding-Variant)) calc(2 * var(--Rounding-Variant))
 	}
-	.widget-homescreen .section-layout.section-cardbox, .VIpgJd-SxecR-PFprWc {
+	.widget-homescreen .section-layout.section-cardbox,
+	.VIpgJd-SxecR-PFprWc {
 		border-radius: var(--Rounding-Variant);
 	}
-	.i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true] {
+	.i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke,
+	.i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed,
+	.i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true] {
 		box-shadow: var(--Mast-Variant-Shadow) Inset;
 		border-radius: var(--Rounding-Variant);
 		padding: 10px
 	}
-	.b0t70b-haAclf, #featurelist-titlebar-container, #search-bar {
+	.b0t70b-haAclf,
+	#featurelist-titlebar-container,
+	#search-bar {
 		box-shadow: var(--Mast-Shadow) !important
 	}
 	.lVJX2wDGbwj__divider,
-	.section-divider.section-divider-top-line, #stylepopup-popup:after, #stylepopup-popup:before {
+	.section-divider.section-divider-top-line,
+	#stylepopup-popup:after,
+	#stylepopup-popup:before {
 		display: none !important
 	}
 	#gb {
 		border-radius: 0 0 0 calc(2 * var(--Rounding-Variant))
 	}
-	.gb_0a,
-	.gb_jc {
+	.gb_Za,
+	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
 }
@@ -2385,8 +2530,8 @@ url-prefix("https://www.google.no/maps") {
 	.MgQfZd:after {
 		display: none !important
 	}
-	.gb_0a,
-	.gb_jc {
+	.gb_Za,
+	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
 }
