@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.0.0
+@version      3.0.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -584,6 +584,14 @@
 	}
 	#header.ytd-comment-renderer {
 		margin-bottom: 5px
+	}
+	#movie_player {
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	ytd-thumbnail {
+		box-shadow: var(--Mast-Variant-Shadow) !important;
+		border-radius: var(--Rounding) !important;
+		overflow: hidden !important
 	}
 	#author-text.yt-simple-endpoint.ytd-comment-renderer {
 		background-color: var(--Surface);
