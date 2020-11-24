@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.0.1
+@version      3.0.2
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -588,7 +588,7 @@
 	#movie_player {
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	ytd-thumbnail {
+	ytd-thumbnail, .ytp-videowall-still.ytp-suggestion-set {
 		box-shadow: var(--Mast-Variant-Shadow) !important;
 		border-radius: var(--Rounding) !important;
 		overflow: hidden !important
