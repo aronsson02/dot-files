@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.0.2
+@version      3.1.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1365,6 +1365,32 @@
 	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
+	/* ---Google Account Menu--- \*/
+	.gb_F, .gb_zb.gb_zb {
+		background-color: var(--Surface) !important
+	}
+	.gb_vb.gb_vb, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		background-color: var(--Surface-Variant) !important
+	}
+	.gb_vb.gb_vb:hover, .gb_Hb.gb_Hb:hover, .gb_Ib.gb_Ib:hover, .gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover, .gb_Pb:hover {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_l .gb_pb, .gb_4b {
+		color: var(--Foreground) !important
+	}
+	.gb_Hb.gb_Hb, .gb_vb.gb_vb {
+		color: var(--Foreground-Variant) !important
+	}
+	.gb_l .gb_rb, .gb_zb.gb_zb, .gb_xb.gb_xb, .gb_6b {
+		color: var(--Foreground-Dark) !important
+	}
+	.gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		color: var(--Primary) !important
+	}
+	.gb_Fb, .gb_vb.gb_vb, .gb_zb.gb_zb, .gb_zb.gb_zb:hover, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib, .gb_Mb {
+		border: none !important
+	}
+	/*\ ---Google Account Menu--- */
 }
 @-moz-document url-prefix("https://translate.google.no"),
 url-prefix("https://translate.google.com"),
@@ -1429,7 +1455,6 @@ url-prefix("https://translate.google.se") {
 	.language_list_tl_list,
 	.language_list_section,
 	.language_list_item_wrapper,
-	.gb_F,
 	.EHzcec,
 	.gb_Ic,
 	.ita-kd-dropdown-menu,
@@ -1639,9 +1664,6 @@ url-prefix("https://translate.google.se") {
 	.goog-inline-block.jfk-button-checked:after {
 		border-bottom: solid 3px var(--Primary) !important;
 	}
-	.gb_8a.gb_F.gb_l.gb_9a.gb_na * {
-		border: none !important;
-	}
 	.gb_uc .gb_se::before {
 		animation: filter 6s linear infinite !important;
 	}
@@ -1649,11 +1671,36 @@ url-prefix("https://translate.google.se") {
 	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
+	/* ---Google Account Menu--- \*/
+	.gb_F, .gb_zb.gb_zb {
+		background-color: var(--Surface) !important
+	}
+	.gb_vb.gb_vb, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		background-color: var(--Surface-Variant) !important
+	}
+	.gb_vb.gb_vb:hover, .gb_Hb.gb_Hb:hover, .gb_Ib.gb_Ib:hover, .gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover, .gb_Pb:hover {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_l .gb_pb, .gb_4b {
+		color: var(--Foreground) !important
+	}
+	.gb_Hb.gb_Hb, .gb_vb.gb_vb {
+		color: var(--Foreground-Variant) !important
+	}
+	.gb_l .gb_rb, .gb_zb.gb_zb, .gb_xb.gb_xb, .gb_6b {
+		color: var(--Foreground-Dark) !important
+	}
+	.gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		color: var(--Primary) !important
+	}
+	.gb_Fb, .gb_vb.gb_vb, .gb_zb.gb_zb, .gb_zb.gb_zb:hover, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib, .gb_Mb {
+		border: none !important
+	}
+	/*\ ---Google Account Menu--- */
 }
 @-moz-document url-prefix("https://www.google.com"),
 url-prefix("https://www.google.no"),
 url-prefix("https://www.google.se") {
-	.gb_F,
 	.gb_Db.gb_Db,
 	.gb_Db.gb_Db:hover {
 		background: none !important;
@@ -1709,7 +1756,6 @@ url-prefix("https://www.google.se") {
 	.tX9u1b:hover,
 	.tX9u1b:hover .Rq5Gcb,
 	.NQV3m,
-	.gb_Lb.gb_Lb:hover,
 	.gb_Mb.gb_Mb:hover,
 	.gb_zb:hover {
 		background-color: var(--Background) !important;
@@ -1838,6 +1884,32 @@ url-prefix("https://www.google.se") {
 	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
+	/* ---Google Account Menu--- \*/
+	.gb_F, .gb_zb.gb_zb {
+		background-color: var(--Surface) !important
+	}
+	.gb_vb.gb_vb, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		background-color: var(--Surface-Variant) !important
+	}
+	.gb_vb.gb_vb:hover, .gb_Hb.gb_Hb:hover, .gb_Ib.gb_Ib:hover, .gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover, .gb_Pb:hover {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_l .gb_pb, .gb_4b {
+		color: var(--Foreground) !important
+	}
+	.gb_Hb.gb_Hb, .gb_vb.gb_vb {
+		color: var(--Foreground-Variant) !important
+	}
+	.gb_l .gb_rb, .gb_zb.gb_zb, .gb_xb.gb_xb, .gb_6b {
+		color: var(--Foreground-Dark) !important
+	}
+	.gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		color: var(--Primary) !important
+	}
+	.gb_Fb, .gb_vb.gb_vb, .gb_zb.gb_zb, .gb_zb.gb_zb:hover, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib, .gb_Mb {
+		border: none !important
+	}
+	/*\ ---Google Account Menu--- */
 }
 @-moz-document url-prefix("https://drive.google.com") {
 	.gb_8e {
@@ -1980,6 +2052,32 @@ url-prefix("https://www.google.se") {
 	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
+	/* ---Google Account Menu--- \*/
+	.gb_F, .gb_zb.gb_zb {
+		background-color: var(--Surface) !important
+	}
+	.gb_vb.gb_vb, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		background-color: var(--Surface-Variant) !important
+	}
+	.gb_vb.gb_vb:hover, .gb_Hb.gb_Hb:hover, .gb_Ib.gb_Ib:hover, .gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover, .gb_Pb:hover {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_l .gb_pb, .gb_4b {
+		color: var(--Foreground) !important
+	}
+	.gb_Hb.gb_Hb, .gb_vb.gb_vb {
+		color: var(--Foreground-Variant) !important
+	}
+	.gb_l .gb_rb, .gb_zb.gb_zb, .gb_xb.gb_xb, .gb_6b {
+		color: var(--Foreground-Dark) !important
+	}
+	.gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		color: var(--Primary) !important
+	}
+	.gb_Fb, .gb_vb.gb_vb, .gb_zb.gb_zb, .gb_zb.gb_zb:hover, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib, .gb_Mb {
+		border: none !important
+	}
+	/*\ ---Google Account Menu--- */
 }
 @-moz-document url-prefix("https://www.google.com/maps"),
 url-prefix("https://www.google.se/maps"),
@@ -2064,7 +2162,7 @@ url-prefix("https://www.google.no/maps") {
 	.ita-kd-dropdown-menu,
 	.clustered-widget-hovercard,
 	.VIpgJd-xl07Ob,
-	.un1lmc-pbTTYe-ibnC6b-ZmdkE {
+	.un1lmc-pbTTYe-ibnC6b-ZmdkE, .widget-pane-visible {
 		background-color: var(--Surface) !important
 	}
 	.ambient-card-section,
@@ -2193,7 +2291,7 @@ url-prefix("https://www.google.no/maps") {
 	.section-star-display,
 	.section-mobile-promo-download-button.section-mobile-promo-download-button-inverted,
 	.blue-link,
-	.pbTTYe-INgbqf-hSRGPd {
+	.pbTTYe-INgbqf-hSRGPd, .mat1qDhSMGD__title {
 		color: var(--Primary)
 	}
 	.allxGeDnJMl__button-hairline:hover,
@@ -2300,6 +2398,10 @@ url-prefix("https://www.google.no/maps") {
 	.gm-style .gm-style-iw-c {
 		border-radius: calc(2 * var(--Rounding-Variant)) var(--Rounding) calc(2 * var(--Rounding-Variant)) calc(2 * var(--Rounding-Variant))
 	}
+	#interactive-hovercard {
+		border-radius: var(--Rounding-Variant);
+		overflow: hidden !important
+	}
 	.widget-homescreen .section-layout.section-cardbox,
 	.VIpgJd-SxecR-PFprWc {
 		border-radius: var(--Rounding-Variant);
@@ -2313,7 +2415,7 @@ url-prefix("https://www.google.no/maps") {
 	}
 	.b0t70b-haAclf,
 	#featurelist-titlebar-container,
-	#search-bar {
+	#search-bar, .section-header, #searchbox, #interactive-hovercard {
 		box-shadow: var(--Mast-Shadow) !important
 	}
 	.lVJX2wDGbwj__divider,
@@ -2329,8 +2431,33 @@ url-prefix("https://www.google.no/maps") {
 	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
+	/* ---Google Account Menu--- \*/
+	.gb_F {
+		background-color: var(--Surface) !important
+	}
+	.gb_vb.gb_vb, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		background-color: var(--Surface-Variant) !important
+	}
+	.gb_vb.gb_vb:hover, .gb_Hb.gb_Hb:hover, .gb_Ib.gb_Ib:hover, .gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_l .gb_pb {
+		color: var(--Foreground) !important
+	}
+	.gb_Hb.gb_Hb, .gb_vb.gb_vb {
+		color: var(--Foreground-Variant) !important
+	}
+	.gb_l .gb_rb, .gb_zb.gb_zb, .gb_xb.gb_xb {
+		color: var(--Foreground-Dark) !important
+	}
+	.gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		color: var(--Primary) !important
+	}
+	.gb_Fb, .gb_vb.gb_vb, .gb_zb.gb_zb, .gb_zb.gb_zb:hover, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		border: none !important
+	}
+	/*\ ---Google Account Menu--- */
 }
-
 @-moz-document url-prefix("https://photos.google.com/") {
 	.Vtmiqc,
 	.wtM1tc,
@@ -2542,6 +2669,32 @@ url-prefix("https://www.google.no/maps") {
 	.gb_ic {
 		animation: var(--Anim-Google-One) !important;
 	}
+	/* ---Google Account Menu--- \*/
+	.gb_F, .gb_zb.gb_zb {
+		background-color: var(--Surface) !important
+	}
+	.gb_vb.gb_vb, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		background-color: var(--Surface-Variant) !important
+	}
+	.gb_vb.gb_vb:hover, .gb_Hb.gb_Hb:hover, .gb_Ib.gb_Ib:hover, .gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover, .gb_Pb:hover {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_l .gb_pb, .gb_4b {
+		color: var(--Foreground) !important
+	}
+	.gb_Hb.gb_Hb, .gb_vb.gb_vb {
+		color: var(--Foreground-Variant) !important
+	}
+	.gb_l .gb_rb, .gb_zb.gb_zb, .gb_xb.gb_xb, .gb_6b {
+		color: var(--Foreground-Dark) !important
+	}
+	.gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		color: var(--Primary) !important
+	}
+	.gb_Fb, .gb_vb.gb_vb, .gb_zb.gb_zb, .gb_zb.gb_zb:hover, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib, .gb_Mb {
+		border: none !important
+	}
+	/*\ ---Google Account Menu--- */
 }
 @-moz-document url-prefix("https://photos.google.com/search") {
 	.Aul2T {
@@ -2569,4 +2722,114 @@ url-prefix("https://www.google.no/maps") {
 		color: var(--Primary) !important;
 		border-radius: var(--Rounding) !important
 	}
+}
+@-moz-document url-prefix("https://accounts.google.com") {
+	.VmOpGe {
+		background-color: var(--Background) !important
+	}
+	.xkfVF, .N3Hzgf .snByac, .N3Hzgf .zHQkBf {
+		background-color: var(--Surface) !important
+	}
+	.l3q5xe, .nCP5yc:not(:disabled) {
+		background-color: var(--Primary) !important
+	}
+	.N3Hzgf .snByac, .N3Hzgf .zHQkBf, .jXeDnc h1, .nCP5yc:not(:disabled) {
+		color: var(--Foreground) !important
+	}
+	.Y4dIwd, .DRS7Fe a {
+		color: var(--Foreground-Variant) !important
+	}
+	.DRS7Fe button:not(.TrZEUc), .vwtvsf {
+		color: var(--Foreground-Dark) !important
+	}
+	.t29vte [jsslot] span {
+		color: var(--Primary) !important
+	}
+}
+@-moz-document url-prefix("https://myaccount.google.com") {
+	body {
+		background-color: var(--Background) !important
+	}
+	.XLK0Od, .ugt2L.xQmaOb, .Usd1Ac, .KC1dQ, .g81fxb {
+		background-color: var(--Surface) !important
+	}
+	.EhlvJf.KKjvXb, .V7Ncoe, .VfPpkd-xl07Ob-XxIAqe, .vORqbf, .ncFHed, .u7Uqwf.OUzXuf .g81fxb.bhe1tb .JaX6Fb {
+		background-color: var(--Surface-Variant) !important
+	}
+	.yUa4ve.KKjvXb, .s8kOBc .VfPpkd-rymPhb .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd, .ncFHed .MocG8c.KKjvXb {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_sa {
+		background-color: var(--Mast) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.gb_5e {
+		background-color: var(--Mast-Variant) !important;
+		box-shadow: var(--Mast-Variant-Shadow) inset !important;
+		border-radius: var(--Rounding-Variant)
+	}
+	.EWuRAb.OUzXuf .ikIPKb {
+		background-color: var(--Mast-Dark) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.tbyFuf {
+		background-color: var(--Surface) !important;
+		padding-right: 16px !important;
+		padding-bottom: 16px !important;
+		border-radius: 0 0 var(--Rounding-Variant) 0 !important;
+		border-Right: 1px solid var(--grey) !important;
+		border-Bottom: 1px solid var(--grey) !important
+	}
+	.x7WrMb, .fnfC4c, .gb_sa svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, .b5edlf, .IQgWAe, .ZZ9xL, .Eujndd, .VfPpkd-I9GLp-yrriRe, .cfWmIb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, .ReCbLb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-uusGie-fmcmS, .s8kOBc .VfPpkd-rymPhb .VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd, .s8kOBc .VfPpkd-rymPhb .VfPpkd-rymPhb-ibnC6b-OWXEXe-pXU01b, .s8kOBc .VfPpkd-rymPhb .VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd .VfPpkd-rymPhb-f7MjDc, .s8kOBc .VfPpkd-rymPhb .VfPpkd-rymPhb-ibnC6b-OWXEXe-pXU01b .VfPpkd-rymPhb-f7MjDc, .MocG8c, .RAjCxe, .BkKHtf {
+		color: var(--Foreground) !important
+	}
+	.cmSWBc, .ISnqu, .bJCr1d, .GiKO7c, .mPKYhd, .WzaSad, .kFNik, .nF0lvf, .vQ888d, .eqiJQ {
+		color: var(--Foreground-Variant) !important
+	}
+	body, .Dn5CSc, .v2954, .z7VTQb .DPvwYc, .btFaIb, .UqOdF, .s8kOBc .VfPpkd-rymPhb {
+		color: var(--Foreground-Dark) !important
+	}
+	.VZLjze, .mtfBU {
+		color: var(--Primary) !important
+	}
+	.XLK0Od, .Q5jTGb, .V7Ncoe, .hTY94b, .Usd1Ac, .Rj2Mlf:not(:disabled), .g81fxb {
+		border-color: var(--grey) !important
+	}
+	.XLK0Od {
+		border: 1px solid var(--grey) !important;
+	}
+	.rN3O0d, .plevpc {
+		border: none !important
+	}
+	.gb_Za,
+	.gb_ic,
+	.GdlJU {
+		animation: var(--Anim-Google-One) !important;
+	}
+	/* ---Google Account Menu--- \*/
+	.gb_F, .gb_zb.gb_zb {
+		background-color: var(--Surface) !important
+	}
+	.gb_vb.gb_vb, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib {
+		background-color: var(--Surface-Variant) !important
+	}
+	.gb_vb.gb_vb:hover, .gb_Hb.gb_Hb:hover, .gb_Ib.gb_Ib:hover, .gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover, .gb_Pb:hover {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.gb_l .gb_pb, .gb_4b {
+		color: var(--Foreground) !important
+	}
+	.gb_Hb.gb_Hb, .gb_vb.gb_vb {
+		color: var(--Foreground-Variant) !important
+	}
+	.gb_l .gb_rb, .gb_zb.gb_zb, .gb_xb.gb_xb, .gb_6b {
+		color: var(--Foreground-Dark) !important
+	}
+	.gb_zb.gb_zb:hover, .gb_Lb.gb_Lb:hover, .gb_xb:hover {
+		color: var(--Primary) !important
+	}
+	.gb_Fb, .gb_vb.gb_vb, .gb_zb.gb_zb, .gb_zb.gb_zb:hover, .gb_Hb.gb_Hb, .gb_Ib.gb_Ib, .gb_Mb {
+		border: none !important
+	}
+	/*\ ---Google Account Menu--- */
 }
