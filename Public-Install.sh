@@ -47,11 +47,6 @@ if test -e "$HOME/.icons/blue-oreo"; then
     else
     ln -sf "$HOME/dot-files/rice/linux system/icons/blue-oreo" "$HOME/.icons/blue-oreo"
 fi
-if test -e "$HOME/.mozilla/firefox/zpba42s9.default/chrome"; then
-    rm -Rv "$HOME/.mozilla/firefox/zpba42s9.default/chrome" && ln -sf "$HOME/dot-files/rice/firefox" "$HOME/.mozilla/firefox/zpba42s9.default/chrome"
-    else
-    ln -sf "$HOME/dot-files/rice/firefox" "$HOME/.mozilla/firefox/zpba42s9.default/chrome"
-fi
 if test -e "$HOME/.config/Kvantum"; then
     rm -Rv "$HOME/.config/Kvantum" && ln -sf "$HOME/dot-files/rice/Kvantum/" "$HOME/.config/Kvantum"
     else

@@ -123,14 +123,14 @@ xkb_symbols "latin" {
 //│ ~  │ { ‹ │ } › │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
 //│ ≈  │ [ « │ ] » │ æ ä │ å   │ ø ö │ þ ð │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
 //┢━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫//
-//┃       ┃ Q   │ W   │ F   │ P   │ G   │ J Ì │ L Ł │ U Ú │ Y Ý │ $ £ │ %   │ &   ┃       ┃//
-//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j ì │ l ł │ u ú │ y ý │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
+//┃       ┃ Q   │ W   │ F   │ P   │ G   │ Ì J │ L Ł │ Ù Ú │ Ý   │ $ £ │ %   │ &   ┃       ┃//
+//┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ ì j │ l ł │ ù ú │ ý   │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
 //┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃//
 //┃        ┃ Á À │ R   │ S   │ T   │ D   │ H Ħ │ N Ñ │ E   │ I Í │ !   │ "   │ #   ┃  ⏎   ┃//
 //┃Backspce┃ á à │ r   │ s ß │ t   │ d ° │ h ħ │ n ñ │ e   │ i í │ 1 ¡ │ 2   │ 3   ┃      ┃//
 //┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫//
-//┃      ┃ _   │     │ X   │ C Š │ V Œ │ B   │ K   │ M   │ Ó   │ ,   │ *   ┃              ┃//
-//┃ Shift┃ -   │ ʃ   │ x   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ ó   │ .   │ 0   ┃  Lvl_3_Shift ┃//
+//┃      ┃ _   │     │ Ẋ   │ C Š │ V Œ │ B   │ K   │ M   │ Ó   │ ,   │ *   ┃              ┃//
+//┃ Shift┃ -   │ ʃ   │ ẋ   │ c š │ v œ │ b ˘ │ k ° │ m ¯ │ ó   │ .   │ 0   ┃  Lvl_3_Shift ┃//
 //┣━━━━━━┻┱────┴┲━━━━┷━━┱──┴─────┴─────┴─────┴─────┴─────┴─────┼─────┴┲━━━━┻┳━━━━━┳━━━━━━━┫//
 //┃       ┃     ┃       ┃                                      │      ┃     ┃     ┃       ┃//
 //┃ Ctrl_L┃     ┃ Alt_L ┃                                      │ Alt_R┃     ┃     ┃ Ctrl_R┃//
@@ -162,10 +162,10 @@ xkb_symbols "faelz" {
   key <AD03> { [            f,            F                                    ] };
   key <AD04> { [            p,            P                                    ] };
   key <AD05> { [            g,            G,     dead_ogonek                   ] };
-  key <AD06> { [            j,            J,          igrave,           Igrave ] };
+  key <AD06> { [       igrave,       Igrave,               j,                J ] };
   key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
   key <AD08> { [       ugrave,       Ugrave,          uacute,           Uacute ] };
-  key <AD09> { [            y,            Y,          yacute,           Yacute ] };
+  key <AD09> { [       yacute,       Yacute                                    ] };
   key <AD10> { [            4,       dollar,            cent,         sterling ] };
   key <AD11> { [            5,      percent,        EuroSign,              yen ] };
   key <AD12> { [            6,    ampersand,     asciicircum,       dead_caron ] };
@@ -189,7 +189,7 @@ xkb_symbols "faelz" {
   key <LFSH> { [      Shift_L,      Shift_L,       Caps_Lock,        Caps_Lock ] };
   key <LSGT> { [        minus,   underscore                                    ] };
   key <AB01> { [        U0283                                                  ] };
-  key <AB02> { [            x,            X,           U1E8B,            U1E8A ] };
+  key <AB02> { [        U1E8B,        U1E8A                                    ] };
   key <AB03> { [            c,            C,          scaron,           Scaron ] };
   key <AB04> { [            v,            V,              oe,               OE ] };
   key <AB05> { [            b,            B,      dead_breve                   ] };

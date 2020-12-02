@@ -173,7 +173,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         { modkey, 'Control' },
-        'x',
+        'ẋ',
         function()
             awful.spawn('setxkbmap "jp (latin)"', false)
         end,
