@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      3.1.0
+@version      3.1.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -53,7 +53,7 @@
 		--Anim-Google-One: google-one 6s ease infinite;
 	}
 
-	*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons) {
+	*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons):not(.w-icon) {
 		font-family: "SF Nodo Pro" !important;
 		scrollbar-width: none !important;
 	}
