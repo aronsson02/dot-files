@@ -26,7 +26,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {altkey, 'Shift'},
-        'l',
+        'm',
         function()
             awful.tag.incmwfact(0.05)
         end,
@@ -34,7 +34,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {altkey, 'Shift'},
-        'h',
+        'k',
         function()
             awful.tag.incmwfact(-0.05)
         end,
@@ -42,7 +42,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {modkey, 'Shift'},
-        'h',
+        'm',
         function()
             awful.tag.incnmaster(1, nil, true)
         end,
@@ -50,7 +50,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {modkey, 'Shift'},
-        'l',
+        'k',
         function()
             awful.tag.incnmaster(-1, nil, true)
         end,
@@ -58,7 +58,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {modkey, 'Control'},
-        'h',
+        'm',
         function()
             awful.tag.incncol(1, nil, true)
         end,
@@ -66,7 +66,7 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {modkey, 'Control'},
-        'l',
+        'k',
         function()
             awful.tag.incncol(-1, nil, true)
         end,
@@ -97,7 +97,7 @@ local globalKeys = awful.util.table.join(
 
     awful.key(
         {modkey},
-        's',
+        'r',
         awful.tag.viewnext,
         {description = 'view next tag', group = 'tag'}
     ),
@@ -210,46 +210,6 @@ local globalKeys = awful.util.table.join(
             awesome.emit_signal('module::exit_screen_show')
         end,
         {description = 'toggle exit screen', group = 'hotkeys'}
-    ),
-    awful.key(
-        { },
-        'Print',
-        function ()
-            awful.spawn.easy_async_with_shell(apps.bins.full_screenshot,function() end)
-        end,
-        {description = 'fullscreen screenshot', group = 'Utility'}
-    ),
-    awful.key(
-        {modkey, 'Shift'},
-        's',
-        function ()
-            awful.spawn.easy_async_with_shell(apps.bins.area_screenshot,function() end)
-        end,
-        {description = 'area/selected screenshot', group = 'Utility'}
-    ),
-    awful.key(
-        {modkey},
-        'x',
-        function()
-            awesome.emit_signal('widget::blur:toggle')
-        end,
-        {description = 'toggle blur effects', group = 'Utility'}
-    ),
-    awful.key(
-        {modkey},
-        '?',
-        function()
-            awesome.emit_signal('widget::blur:increase')
-        end,
-        {description = 'increase blur effect by 1', group = 'Utility'}
-    ),
-    awful.key(
-        {modkey},
-        '@',
-        function()
-            awesome.emit_signal('widget::blur:decrease')
-        end,
-        {description = 'decrease blur effect by 1', group = 'Utility'}
     ),
     awful.key(
         { 'Control' },

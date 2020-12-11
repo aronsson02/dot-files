@@ -14,7 +14,7 @@ return {
         text_editor                     = 'kate',
 
         -- Web browser
-        web_browser                     = 'firefox-developer-edition',
+        web_browser                     = 'chromium',
 
         -- GUI File manager
         file_manager                    = 'dolphin',
@@ -29,7 +29,7 @@ return {
         power_manager                   = 'xfce4-power-manager',
 
         -- GUI Package manager
-        package_manager                 = 'pacman',
+        package_manager                 = 'yay',
 
         -- Lockscreen
         lock                                    = 'awesome-client "awesome.emit_signal(\'module::lockscreen_show\')"',
@@ -65,10 +65,10 @@ return {
         'ckb-next --background',
 
         -- Xinput
-        'xinput set-prop "Corsair CORSAIR DARK CORE RGB Wireless USB Receiver Mouse" "libinput Middle Emulation Enabled" 1',
+        'xinput --set-prop "Corsair CORSAIR DARK CORE RGB Wireless USB Receiver Mouse" "libinput Middle Emulation Enabled" 1',
 
         -- Xinput
-        'xinput set-prop "Corsair CORSAIR DARK CORE RGB Gaming Mouse" "libinput Middle Emulation Enabled" 1',
+        'xinput --set-prop "Corsair CORSAIR DARK CORE RGB Gaming Mouse" "libinput Middle Emulation Enabled" 1',
 
         -- Power manager
         'xfce4-power-manager',
