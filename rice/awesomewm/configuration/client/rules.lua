@@ -158,6 +158,7 @@ ruled.client.append_rule {
         class = {
             'Geany',
             'Atom',
+            'kate',
             'Subl3',
             'code-oss'
         },
@@ -203,12 +204,7 @@ ruled.client.append_rule {
     },
     properties = {
         tag = '5',
-        skip_decoration = true,
-        draw_backdrop = false,
-        switchtotag = true,
-        floating = true,
-        hide_titlebars = true,
-        placement = awful.placement.centered
+        switchtotag = true
     }
 }
 
