@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.1.0
+@version      3.1.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -124,11 +124,14 @@
 	#container.ytd-searchbox {
 		border: none !important
 	}
-	.sbpqs_a {
+	.sbpqs_a, .content.ytd-video-secondary-info-renderer {
 		color: var(--Foreground) !important
 	}
-	.sbqs_c {
+	.sbqs_c, span.yt-view-count-renderer, #date.ytd-video-primary-info-renderer, h3.ytd-compact-video-renderer {
 		color: var(--Foreground-Variant) !important
+	}
+	#channel-name.ytd-video-meta-block, #metadata-line.ytd-video-meta-block, yt-icon.ytd-badge-supported-renderer {
+		color: var(--Foreground-Dark) !important
 	}
 	.badge-style-type-live-now.ytd-badge-supported-renderer {
 		color: var(--Primary) !important;
@@ -142,7 +145,7 @@
 		font-style: oblique !important;
 	}
 	.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
-		background: var(--Primary)
+		background: var(--Primary) !important
 	}
 	#masthead {
 		padding-bottom: 2px !important;
