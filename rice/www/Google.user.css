@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.1.2
+@version      3.1.3
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1253,13 +1253,15 @@
 	.appsMaterialWizButtonPaperbuttonTextColored .exportButtonNestedLink,
 	.apps-navigationwidget-item-selected,
 	.apps-shortcutshelpcontentimpl-link,
-	.apps-shortcutshelpcontentimpl-link:active {
+	.apps-shortcutshelpcontentimpl-link:active,
+	.docs-gm .docs-sheet-active-tab .docs-sheet-tab-name {
 		color: var(--Primary) !important;
 	}
 	.docs-gm .modal-dialog .goog-buttonset-action,
 	.docs-gm .modal-dialog .jfk-button-action,
 	.docs-gm .docs-material-bubble .jfk-button-action,
-	.waffle-sidebar-container .jfk-button-action {
+	.waffle-sidebar-container .jfk-button-action,
+	#docs-access-level-indicator.goog-flat-menu-button {
 		background-color: var(--Primary) !important;
 		color: var(--Surface) !important;
 	}
@@ -1329,6 +1331,12 @@
 	}
 	.docs-dialog .modal-dialog-title-close:after {
 		filter: invert(1) !important;
+	}
+	#waffle-grid-container {
+		filter: invert(1) hue-rotate(180deg) !important;
+	}
+	.docs-branding-icon-img {
+		filter: hue-rotate(100deg) saturate(4)
 	}
 	.d-u-Q {
 		background: none
@@ -1924,7 +1932,6 @@ url-prefix("https://www.google.se") {
 	.ta-gc-np-Nd,
 	.Kk7lMc-QWPxkf-d.Yb-Il-d-rc .Yb-Il-d-c-Nd,
 	.Kk7lMc-Wc-Tn .Kk7lMc-QWPxkf-d.Yb-Il-d-rc .Yb-Il-d-c-Nd,
-	.gb_3d,
 	.a-Cd-oa,
 	.le-Ba,
 	.h-w,
@@ -1936,11 +1943,11 @@ url-prefix("https://www.google.se") {
 	.h-sb-Ic.g-d.g-d-wd:hover {
 		background-color: var(--Surface-Variant) !important;
 	}
-	.gb_sa {
+	.gb_3d {
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	.gb_5e {
+	#aso_search_form_anchor {
 		background-color: var(--Mast-Variant) !important;
 		box-shadow: var(--Mast-Variant-Shadow) inset !important;
 		border-radius: var(--Rounding-Variant)

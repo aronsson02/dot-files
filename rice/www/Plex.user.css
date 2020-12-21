@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      2.2.0
+@version      1.21.1.3766
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -63,6 +63,9 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 #id-509 * {
 	background-color: transparent !important;
 }
+.modal-body-with-panes .modal-nav-pane, .upload-artwork-container {
+		background: none !important
+}
 /* Coloration */
 .NavBar-container-1T0BJz {
 	background-color: var(--Mast) !important;
@@ -78,7 +81,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 	box-shadow: var(--Mast-Variant-Shadow) inset !important;
 	border-radius: var(--Rounding) !important;
 }
-.user-select-modal, .user-select-modal-pin-container .pin-digit.current, .SeekBar-seekBarTrack-3Gu5RX:before {
+.user-select-modal, .user-select-modal-pin-container .pin-digit.current, .SeekBar-seekBarTrack-3Gu5RX:before, .SourceSidebarLink-isSelected-27-9-6, .background-container {
 	background-color: var(--Background) !important
 }
 .show-modal-transparent, .user-select-modal-users-container, .user-select-modal-pin-container, .Player-miniPlayerContainer-3S8L9e {
@@ -125,9 +128,9 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw, .MetadataPosterCardCircle-cardCircle-2NfIyT {
 	background-color: var(--Primary-Variant) !important
 }
-	.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt {
+.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt {
 	background-color: var(--Foreground-Variant) !important
-	}
+}
 .Link-link-2n0yJn.Link-primary-1vcAGA,
 .PageHeaderTabButton-isSelected-25CIS7,
 .artwork-file-container a,
@@ -261,9 +264,9 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 .PosterCardLink-hoveredLink-AhlkMt {
 	box-shadow: 0 0 0 1px var(--Primary), 0 0 4px rgba(0,0,0,.3);
 }
-	.MetadataPosterCard-hoveredSelectedLink-3RwC7J, .MetadataPosterCard-selectedLink-3ZfYeB {
+.MetadataPosterCard-hoveredSelectedLink-3RwC7J, .MetadataPosterCard-selectedLink-3ZfYeB {
 	box-shadow: 0 0 0 2px var(--Primary), 0 0 4px rgba(0,0,0,.3);
-	}
+}
 .MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-:hover,
 .input-group-addon.edit-lock-addon.locked,
 .MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt, .PageHeaderMultiselectActions-container-2k4DLu {
@@ -319,7 +322,7 @@ div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1Sw
 	opacity: 0 !important;
 }
 .SettingsPage-content-1vKVEr.PageContent-pageContent-16mK6G *,
-.PlayPauseOverlay-playCircle-3ydPYX.PlayButton-playCircle-3Evfdw {
+.PlayPauseOverlay-playCircle-3ydPYX.PlayButton-playCircle-3Evfdw, .modal-footer, .modal-header, .upload-artwork-container {
 	border: none !important;
 }
 .background-container div div div {
