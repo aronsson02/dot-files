@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      2.0.5
+@version      2.0.6
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -42,8 +42,8 @@ body, .bg-reader-controls, .form-control {
 	box-shadow: 0 0 8px var(--Background) !important;
 	border-radius: 8px 8px 0 0 !important;
 }
-#reader-controls-collapser, .reader-controls.row.no-gutters.flex-column.flex-nowrap {
-	background-color: var(--Mast-Dark) !important;
+#reader-controls-collapser:before {
+    border-color: var(--Mast) transparent transparent transparent;
 }
 #jump-chapter {
 	background-color: var(--Mast-Variant) !important;

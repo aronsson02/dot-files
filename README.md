@@ -1,2 +1,2 @@
 # dot-files
-Just a personal repository of .files, You are allowed to use it however you want but i don't recomment it.
+Just a personal repository of dot-files. You are allowed to use it however you want; But i don't really recomment it.
