@@ -1,5 +1,5 @@
 configuration {
-        font:                           "SF Nodo Pro 12";
+        font:                           "SF Nodo Pro 16";
         show-icons:                     true;
         drun-display-format:            "{name}";
         threads:                        0;
@@ -12,8 +12,8 @@ configuration {
 
 * {
     background:                     #00000000;
-    background-color:               #00000066;
-    background-entry:               #00000033;
+    background-color:               #00000033;
+    background-entry:               #00000066;
     background-alt:                 #f2f2f215;
     foreground:                     #f2f2f2EE;
     foreground-selected:            #fafafaFF;
@@ -35,8 +35,8 @@ prompt {
 
 button {
         action:                         "ok";
-        str:                            " ";
-        font:                           "SF Nodo Pro 14";
+        str:                            "🔎 ";
+        font:                           "SF Nodo Pro 18";
         expand:                         false;
         text-color:                     @foreground;
         background-color:               @background;
@@ -45,7 +45,7 @@ button {
 }
 
 entry {
-        font:                           "SF Nodo Pro 14";
+        font:                           "SF Nodo Pro 20";
         background-color:               @background;
         text-color:                     @foreground;
         expand:                         true;
@@ -84,7 +84,7 @@ inputbar {
 
 listview {
     background-color:               @background;
-    columns:                        7;
+    columns:                        9;
     spacing:                        4px;
     cycle:                          false;
     dynamic:                        true;

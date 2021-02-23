@@ -158,7 +158,6 @@ ruled.client.append_rule {
         class = {
             'Geany',
             'Atom',
-            'kate',
             'Subl3',
             'code-oss'
         },
