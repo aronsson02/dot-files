@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      3.2.1
+@version      3.3.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -18,7 +18,7 @@
 		--Foreground-Variant: #E6F0FACC;
 		--Foreground-Dark: #E6F0FA66;
 		--Foreground-Transparent: #FFFFFF66;
-		--Background: #151515;
+		--Background: #181818;
 		--Surface: #252525;
 		--Surface-Variant: #333;
 		--Surface-Transparent: #00000066;
@@ -51,6 +51,7 @@
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
 		--Anim-Google-One: google-one 6s ease infinite;
+		--Spinner: var(--Primary) transparent;
 	}
 
 	*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons):not(.w-icon) {

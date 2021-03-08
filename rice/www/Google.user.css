@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.2.0
+@version      3.3.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -112,9 +112,9 @@
 		filter: contrast(1.1) !important
 	}
 	.ytp-spinner-container {
-		border: 5px solid!important;
+		border: 15px double!important;
 		border-radius: 999px;
-		border-color: var(--Foreground) transparent !important;
+		border-color: var(--Spinner) !important;
 	}
 	.ytp-gradient-bottom,
 	.ytp-gradient-top {
@@ -1125,7 +1125,8 @@
 	.modal-dialog-content,
 	.modal-dialog-title,
 	.apps-shortcutshelpcontentimpl-container,
-	.apps-shortcutshelppopup {
+	.apps-shortcutshelppopup,
+	.docs-homescreen-floater-header-cell .docsshared-menu-bubble {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -1154,7 +1155,8 @@
 	.docs-gm .docos-priority-checkbox .docs-material-gm-labeled-checkbox-focused .docs-material-gm-labeled-checkbox-label,
 	.kix-appview-editor,
 	.docs-omnibox-input,
-	.left-sidebar-container {
+	.left-sidebar-container,
+	.docs-homescreen-container {
 		background-color: var(--Background) !important;
 	}
 	.grid-shim-bottom,
@@ -1172,6 +1174,25 @@
 		background-color: var(--Surface) !important;
 		color: var(--Foreground) !important;
 		border-color: var(--Surface) !important;
+	}
+	.gb_qa.gb_Wa.gb_Se.gb_Ic {
+		background-color: var(--Mast) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	#aso_search_form_anchor,
+	.docs-homescreen-owner-filter-button {
+		background-color: var(--Mast-Variant) !important;
+		box-shadow: var(--Mast-Variant-Shadow) inset !important;
+		border-radius: var(--Rounding-Variant)
+	}
+	.docs-homescreen-floater-grid-header,
+	.gb_Bc {
+		background-color: var(--Mast-Dark) !important;
+		box-shadow: var(--Mast-Shadow) !important
+	}
+	.docs-homescreen-floater-header,
+	.goog-menu.goog-menu-vertical.docs-homescreen-leftmenu.docs-homescreen-leftmenu-hidefocusfeedback {
+		background-color: var(--Mast-Dark) !important;
 	}
 	.native-scrollbar::-webkit-scrollbar-thumb,
 	.docs-gm .docs-offline-optinpromo.jfk-bubble,
@@ -1196,7 +1217,9 @@
 	.docs-horizontal-ruler,
 	.docs-vertical-ruler,
 	.waffle-theme-container-element,
-	.apps-navigationwidget-item:hover {
+	.apps-navigationwidget-item:hover,
+	.docs-homescreen-fab,
+	.docs-homescreen-grid-item {
 		background-color: var(--Surface) !important;
 	}
 	.docs-gm .modal-dialog,
@@ -1333,9 +1356,6 @@
 	}
 	#waffle-grid-container {
 		filter: invert(1) hue-rotate(180deg) !important;
-	}
-	.docs-branding-icon-img {
-		filter: hue-rotate(100deg) saturate(4)
 	}
 	.d-u-Q {
 		background: none
@@ -2008,7 +2028,7 @@ url-prefix("https://www.google.se") {
 	.h-sb-Ic.g-d.g-d-wd:hover {
 		background-color: var(--Surface-Variant) !important;
 	}
-	.gb_3d {
+	.gb_qa.gb_Wa.gb_Se.gb_Ic {
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -2851,7 +2871,8 @@ url-prefix("https://www.google.no/maps") {
 		box-shadow: none !important
 	}
 }
-@-moz-document url-prefix("https://ogs.google.com") {
+@-moz-document url-prefix("https://ogs.google.com"),
+url-prefix("https://ogs.google.no") {
 	.EHzcec {
 		background-color: var(--Surface) !important
 	}

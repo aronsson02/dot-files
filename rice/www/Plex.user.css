@@ -152,7 +152,8 @@ regexp(".*:32400/.*") {
 	.open .dropdown-toggle.btn-primary {
 		background-color: var(--Primary-Variant) !important
 	}
-	.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt {
+	.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt,
+	.SelectButton-selectedCircle-264nVE{
 		background-color: var(--Foreground-Variant) !important
 	}
 	.Link-link-2n0yJn.Link-primary-1vcAGA,
@@ -310,7 +311,9 @@ regexp(".*:32400/.*") {
 	.setupComplete .complete-segment,
 	.setupComplete .library-segment,
 	.setupLibrary .basic-segment,
-	.setupLibrary .library-segment {
+	.setupLibrary .library-segment,
+	.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt,
+	.SelectButton-selectedCircle-264nVE {
 		border-color: var(--Primary) !important
 	}
 	.DisclosureArrow-isSelected-QMJhDY {
@@ -319,8 +322,7 @@ regexp(".*:32400/.*") {
 	.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw {
 		border-color: var(--Foreground)!important;
 	}
-	.PlayButton-playCircle-3Evfdw,
-	.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt {
+	.PlayButton-playCircle-3Evfdw {
 		border-color: var(--Foreground-Dark)!important;
 	}
 	.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv.SourceSidebarLink-isSelected-27-9-6 {
@@ -340,7 +342,8 @@ regexp(".*:32400/.*") {
 		border-color: var(--Primary) var(--Primary) transparent transparent !important;
 	}
 	.EditHomeModalContent-footer-10Ix6N.ModalFooter-modalFooter-30WIB5,
-	.MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt {
+	.SelectButton-selectCircle-3tdvGt,
+	.SelectButton-selectedCircle-264nVE{
 		border-radius: 0 0 var(--Rounding) var(--Rounding) !important;
 	}
 	.ModalHeader-modalHeader-1Kf9RW {
@@ -376,15 +379,11 @@ regexp(".*:32400/.*") {
 		background-color: var(--Background) !important;
 	}
 	/* Spinner */
-	.MetadataPosterCardOverlay-refreshingSpinner-ipJiyn.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
-	.NavBarActivityIcon-activityIndicator-3asEGT.Spinner-spinner-Niere7.spin-spin-2kLwt_.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
 	.loading,
 	.loading.loading-sm,
-	.Spinner-medium-31XpHm.Spinner-spinner-Niere7.spin-spin-2kLwt_,
-	.Spinner-large-3AQPyD.Spinner-spinner-Niere7.spin-spin-2kLwt_,
-	.SpinnerButton-spinner-1TgDPI.Spinner-spinner-Niere7.spin-spin-2kLwt_.Spinner-small-3PStHE.Spinner-spinner-Niere7.spin-spin-2kLwt_,
+	.Spinner-spinner-Niere7,
 	.Spinner-spinner-1qRM4t {
-		border-color: var(--Primary-Variant) transparent !important;
+		border-color: var(--Spinner) !important;
 	}
 	/* Darkified Side Bar */
 	div[class^="SourceSidebar-sidebar-"] {
