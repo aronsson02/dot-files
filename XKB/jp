@@ -28,7 +28,7 @@ xkb_symbols "latin" {
   key <AE01> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
   key <AE02> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
   key <AE03> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
-  key <AE04> { [        aring,        Aring                                    ] };
+  key <AE04> { [        aring,        Aring,           U0307,            U0323 ] };
   key <AE05> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
   key <AE06> { [        thorn,        THORN,             eth,              ETH ] };
   key <AE07> { [        colon,    semicolon,        multiply,         division ] };
@@ -144,7 +144,7 @@ xkb_symbols "faelz" {
   key <AE01> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
   key <AE02> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
   key <AE03> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
-  key <AE04> { [        aring,        Aring                                    ] };
+  key <AE04> { [        aring,        Aring,           U0307,            U0323 ] };
   key <AE05> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
   key <AE06> { [        thorn,        THORN,             eth,              ETH ] };
   key <AE07> { [        colon,    semicolon,        multiply,         division ] };

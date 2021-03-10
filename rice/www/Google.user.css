@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.3.0
+@version      3.3.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -92,7 +92,7 @@
 	ytd-active-account-header-renderer,
 	ytd-multi-page-menu-renderer,
 	ytd-simple-menu-header-renderer,
-	ytd-account-settings {
+	ytd-account-settings, #contentContainer.tp-yt-app-drawer {
 		background-color: transparent !important;
 		background-image: none !important;
 		backdrop-filter: var(--blur-dark) !important;
@@ -435,11 +435,14 @@
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	#guide-wrapper.ytd-app,
 	ytd-settings-sidebar-renderer,
 	ytd-mini-guide-renderer {
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) !important
+	}
+	#guide-wrapper.ytd-app {
+		box-shadow: var(--Mast-Shadow) !important;
+		background-image: linear-gradient(var(--Mast-Dark) 25%, transparent 75%) !important
 	}
 	ytd-mini-guide-entry-renderer {
 		background-color: var(--Mast-Dark) !important
