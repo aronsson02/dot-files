@@ -1,5 +1,5 @@
 configuration {
-        font:                           "SF Nodo Pro 10";
+        font:                           "daech 10";
         show-icons:                             true;
         fullscreen:                     false;
         threads:                        0;
@@ -72,7 +72,7 @@ button {
 
 
 entry {
-        font:                                           "SF Nodo Pro 12";
+        font:                                           "daech 12";
         background-color:               @background;
         placeholder-color:              @foreground;
         placeholder:                    "Skårá dáì fírù";
@@ -121,7 +121,7 @@ element-icon {
 }
 
 element-text {
-        font:                                   "SF Nodo Pro 11";
+        font:                                   "daech 11";
         expand:                         true;
         horizontal-align:               0.0;
         vertical-align:                                 0.5;

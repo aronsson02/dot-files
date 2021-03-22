@@ -4,8 +4,8 @@ local theme_dir = filesystem.get_configuration_dir() .. '/theme'
 local theme = {}
 
 theme.icons = theme_dir .. '/icons/'
-theme.font = 'SF Nodo Pro 12'
-theme.font_bold = 'SF Nodo Pro 14'
+theme.font = 'daech 13'
+theme.font_bold = 'daech 15'
 -- Colorscheme
 theme.system_black_dark = '#3D4C5F'
 theme.system_black_light = '#56687E'

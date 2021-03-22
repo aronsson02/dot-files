@@ -11,17 +11,9 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     s.show_vol_osd = false
 
-    local osd_header = wibox.widget {
-        text = 'Váʃári:',
-        font = 'SF Nodo Pro 16',
-        align = 'left',
-        valign = 'center',
-        widget = wibox.widget.textbox
-    }
-
     local osd_value = wibox.widget {
         text = '0%',
-        font = 'SF Nodo Pro 16',
+        font = 'daech 32',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -32,12 +24,12 @@ screen.connect_signal('request::desktop_decoration', function(s)
         {
             id                  = 'vol_osd_slider',
             bar_shape           = gears.shape.rounded_rect,
-            bar_height          = dpi(5),
+            bar_height          = dpi(6),
             bar_color           = '#fafafa20',
             bar_active_color    = '#f2f2f2EE',
             handle_color        = '#fafafa',
             handle_shape        = gears.shape.circle,
-            handle_width        = dpi(15),
+            handle_width        = dpi(16),
             handle_border_color = '#00000012',
             handle_border_width = dpi(1),
             maximum             = 100,
@@ -100,16 +92,16 @@ screen.connect_signal('request::desktop_decoration', function(s)
             resize = true,
             widget = wibox.widget.imagebox
         },
-        forced_height = dpi(150),
+        forced_height = dpi(64),
         top = dpi(12),
         bottom = dpi(12),
         widget = wibox.container.margin
     }
 
     -- Create the box
-    local osd_height = dpi(250)
+    local osd_height = dpi(100)
     local osd_width  = dpi(300)
-    local osd_margin = dpi(10)
+    local osd_margin = dpi(15)
 
     s.volume_osd_overlay = awful.popup {
         widget = {
@@ -136,17 +128,11 @@ screen.connect_signal('request::desktop_decoration', function(s)
                 layout = wibox.layout.fixed.vertical,
                 {
                     {
-                        layout = wibox.layout.align.horizontal,
-                        expand = 'none',
-                        nil,
-                        icon,
-                        nil
-                    },
-                    {
                         layout = wibox.layout.fixed.vertical,
                         {
                             layout = wibox.layout.align.horizontal,
                             expand = 'none',
+                            icon,
                             nil,
                             osd_value,
                             nil
@@ -167,7 +153,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
     }
 
     local hide_osd = gears.timer {
-        timeout = 3,
+        timeout = 5,
         autostart = true,
         callback  = function()
             awful.screen.focused().volume_osd_overlay.visible = false
@@ -199,9 +185,9 @@ screen.connect_signal('request::desktop_decoration', function(s)
             volume_osd,
             {
                 preferred_positions = 'top',
-                preferred_anchors   = 'middle',
+                preferred_anchors   = 'back',
                 geometry            = focused.top_panel or s,
-                offset              = { x = 0, y = dpi(600)}
+                offset              = { x = dpi(-64), y = dpi(64)}
             }
         )
     end

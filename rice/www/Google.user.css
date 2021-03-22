@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.3.1
+@version      3.3.2
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1397,12 +1397,16 @@
 	}
 	/* ---Google Account Menu--- \*/
 	.gb_F,
-	.gb_zb.gb_zb {
+	.gb_zb.gb_zb,
+	.gb_wb.gb_wb {
 		background-color: var(--Surface) !important
 	}
 	.gb_vb.gb_vb,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_sb.gb_sb,
+	.gb_Db.gb_Db,
+	.gb_Eb.gb_Eb {
 		background-color: var(--Surface-Variant) !important
 	}
 	.gb_vb.gb_vb:hover,
@@ -1411,7 +1415,11 @@
 	.gb_zb.gb_zb:hover,
 	.gb_Lb.gb_Lb:hover,
 	.gb_xb:hover,
-	.gb_Pb:hover {
+	.gb_Pb:hover,
+	.gb_wb:hover,
+	.gb_Nb>.gb_Mb:hover,
+	.gb_sb:hover,
+	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
 	}
 	.gb_l .gb_pb,
@@ -1725,12 +1733,16 @@ url-prefix("https://translate.google.se") {
 	}
 	/* ---Google Account Menu--- \*/
 	.gb_F,
-	.gb_zb.gb_zb {
+	.gb_zb.gb_zb,
+	.gb_wb.gb_wb {
 		background-color: var(--Surface) !important
 	}
 	.gb_vb.gb_vb,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_sb.gb_sb,
+	.gb_Db.gb_Db,
+	.gb_Eb.gb_Eb {
 		background-color: var(--Surface-Variant) !important
 	}
 	.gb_vb.gb_vb:hover,
@@ -1739,7 +1751,11 @@ url-prefix("https://translate.google.se") {
 	.gb_zb.gb_zb:hover,
 	.gb_Lb.gb_Lb:hover,
 	.gb_xb:hover,
-	.gb_Pb:hover {
+	.gb_Pb:hover,
+	.gb_wb:hover,
+	.gb_Nb>.gb_Mb:hover,
+	.gb_sb:hover,
+	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
 	}
 	.gb_l .gb_pb,
@@ -1960,12 +1976,16 @@ url-prefix("https://www.google.se") {
 	}
 	/* ---Google Account Menu--- \*/
 	.gb_F,
-	.gb_zb.gb_zb {
+	.gb_zb.gb_zb,
+	.gb_wb.gb_wb {
 		background-color: var(--Surface) !important
 	}
 	.gb_vb.gb_vb,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_sb.gb_sb,
+	.gb_Db.gb_Db,
+	.gb_Eb.gb_Eb {
 		background-color: var(--Surface-Variant) !important
 	}
 	.gb_vb.gb_vb:hover,
@@ -1974,7 +1994,11 @@ url-prefix("https://www.google.se") {
 	.gb_zb.gb_zb:hover,
 	.gb_Lb.gb_Lb:hover,
 	.gb_xb:hover,
-	.gb_Pb:hover {
+	.gb_Pb:hover,
+	.gb_wb:hover,
+	.gb_Nb>.gb_Mb:hover,
+	.gb_sb:hover,
+	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
 	}
 	.gb_l .gb_pb,
@@ -2031,7 +2055,7 @@ url-prefix("https://www.google.se") {
 	.h-sb-Ic.g-d.g-d-wd:hover {
 		background-color: var(--Surface-Variant) !important;
 	}
-	.gb_qa.gb_Wa.gb_Se.gb_Ic {
+	.gb_Kd {
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -2149,12 +2173,16 @@ url-prefix("https://www.google.se") {
 	}
 	/* ---Google Account Menu--- \*/
 	.gb_F,
-	.gb_zb.gb_zb {
+	.gb_zb.gb_zb,
+	.gb_wb.gb_wb {
 		background-color: var(--Surface) !important
 	}
 	.gb_vb.gb_vb,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_sb.gb_sb,
+	.gb_Db.gb_Db,
+	.gb_Eb.gb_Eb {
 		background-color: var(--Surface-Variant) !important
 	}
 	.gb_vb.gb_vb:hover,
@@ -2163,7 +2191,11 @@ url-prefix("https://www.google.se") {
 	.gb_zb.gb_zb:hover,
 	.gb_Lb.gb_Lb:hover,
 	.gb_xb:hover,
-	.gb_Pb:hover {
+	.gb_Pb:hover,
+	.gb_wb:hover,
+	.gb_Nb>.gb_Mb:hover,
+	.gb_sb:hover,
+	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
 	}
 	.gb_l .gb_pb,
@@ -2554,12 +2586,17 @@ url-prefix("https://www.google.no/maps") {
 		animation: var(--Anim-Google-One) !important;
 	}
 	/* ---Google Account Menu--- \*/
-	.gb_F {
+	.gb_F,
+	.gb_zb.gb_zb,
+	.gb_wb.gb_wb {
 		background-color: var(--Surface) !important
 	}
 	.gb_vb.gb_vb,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_sb.gb_sb,
+	.gb_Db.gb_Db,
+	.gb_Eb.gb_Eb {
 		background-color: var(--Surface-Variant) !important
 	}
 	.gb_vb.gb_vb:hover,
@@ -2567,10 +2604,16 @@ url-prefix("https://www.google.no/maps") {
 	.gb_Ib.gb_Ib:hover,
 	.gb_zb.gb_zb:hover,
 	.gb_Lb.gb_Lb:hover,
-	.gb_xb:hover {
+	.gb_xb:hover,
+	.gb_Pb:hover,
+	.gb_wb:hover,
+	.gb_Nb>.gb_Mb:hover,
+	.gb_sb:hover,
+	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
 	}
-	.gb_l .gb_pb {
+	.gb_l .gb_pb,
+	.gb_4b {
 		color: var(--Foreground) !important
 	}
 	.gb_Hb.gb_Hb,
@@ -2579,7 +2622,8 @@ url-prefix("https://www.google.no/maps") {
 	}
 	.gb_l .gb_rb,
 	.gb_zb.gb_zb,
-	.gb_xb.gb_xb {
+	.gb_xb.gb_xb,
+	.gb_6b {
 		color: var(--Foreground-Dark) !important
 	}
 	.gb_zb.gb_zb:hover,
@@ -2592,7 +2636,8 @@ url-prefix("https://www.google.no/maps") {
 	.gb_zb.gb_zb,
 	.gb_zb.gb_zb:hover,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_Mb {
 		border: none !important
 	}
 	/*\ ---Google Account Menu--- */
@@ -2810,12 +2855,16 @@ url-prefix("https://www.google.no/maps") {
 	}
 	/* ---Google Account Menu--- \*/
 	.gb_F,
-	.gb_zb.gb_zb {
+	.gb_zb.gb_zb,
+	.gb_wb.gb_wb {
 		background-color: var(--Surface) !important
 	}
 	.gb_vb.gb_vb,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_sb.gb_sb,
+	.gb_Db.gb_Db,
+	.gb_Eb.gb_Eb {
 		background-color: var(--Surface-Variant) !important
 	}
 	.gb_vb.gb_vb:hover,
@@ -2824,7 +2873,11 @@ url-prefix("https://www.google.no/maps") {
 	.gb_zb.gb_zb:hover,
 	.gb_Lb.gb_Lb:hover,
 	.gb_xb:hover,
-	.gb_Pb:hover {
+	.gb_Pb:hover,
+	.gb_wb:hover,
+	.gb_Nb>.gb_Mb:hover,
+	.gb_sb:hover,
+	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
 	}
 	.gb_l .gb_pb,
@@ -3031,12 +3084,16 @@ url-prefix("https://ogs.google.no") {
 	}
 	/* ---Google Account Menu--- \*/
 	.gb_F,
-	.gb_zb.gb_zb {
+	.gb_zb.gb_zb,
+	.gb_wb.gb_wb {
 		background-color: var(--Surface) !important
 	}
 	.gb_vb.gb_vb,
 	.gb_Hb.gb_Hb,
-	.gb_Ib.gb_Ib {
+	.gb_Ib.gb_Ib,
+	.gb_sb.gb_sb,
+	.gb_Db.gb_Db,
+	.gb_Eb.gb_Eb {
 		background-color: var(--Surface-Variant) !important
 	}
 	.gb_vb.gb_vb:hover,
@@ -3045,7 +3102,11 @@ url-prefix("https://ogs.google.no") {
 	.gb_zb.gb_zb:hover,
 	.gb_Lb.gb_Lb:hover,
 	.gb_xb:hover,
-	.gb_Pb:hover {
+	.gb_Pb:hover,
+	.gb_wb:hover,
+	.gb_Nb>.gb_Mb:hover,
+	.gb_sb:hover,
+	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
 	}
 	.gb_l .gb_pb,
