@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.21.4-4079
+@version      1.22.1-4228
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -364,7 +364,7 @@ regexp(".*:32400/.*") {
 	.MetadataPosterCardFace-isSelected-1XUgkl {
 		box-shadow: 0 0 0 3px var(--Primary-Variant) !important;
 	}
-	.modal-backdrop.fade.in {
+	.modal-backdrop.fade.in, .PlayerIconButton-playerButton-1DmNp4.isDisabled {
 		opacity: 0 !important;
 	}
 	.SettingsPage-content-1vKVEr.PageContent-pageContent-16mK6G *,
