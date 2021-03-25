@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.3.2
+@version      3.3.3
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -92,7 +92,8 @@
 	ytd-active-account-header-renderer,
 	ytd-multi-page-menu-renderer,
 	ytd-simple-menu-header-renderer,
-	ytd-account-settings, #contentContainer.tp-yt-app-drawer {
+	ytd-account-settings,
+	#contentContainer.tp-yt-app-drawer {
 		background-color: transparent !important;
 		background-image: none !important;
 		backdrop-filter: var(--blur-dark) !important;
@@ -1417,7 +1418,7 @@
 	.gb_xb:hover,
 	.gb_Pb:hover,
 	.gb_wb:hover,
-	.gb_Nb>.gb_Mb:hover,
+	.gb_Nb > .gb_Mb:hover,
 	.gb_sb:hover,
 	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
@@ -1753,7 +1754,7 @@ url-prefix("https://translate.google.se") {
 	.gb_xb:hover,
 	.gb_Pb:hover,
 	.gb_wb:hover,
-	.gb_Nb>.gb_Mb:hover,
+	.gb_Nb > .gb_Mb:hover,
 	.gb_sb:hover,
 	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
@@ -1800,13 +1801,14 @@ url-prefix("https://www.google.se") {
 	#gsr #viewport #searchform .sfbg,
 	.vk-btn {
 		background-color: var(--Background) !important;
-		color: var(--Foreground-Dark) !important;
+		color: var(--Foreground) !important;
 	}
 	#gsr #searchform .sfbg {
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	#hdtbSum {
+	#hdtbSum,
+	.yg51vc {
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
@@ -1910,9 +1912,7 @@ url-prefix("https://www.google.se") {
 	#fbar {
 		border-color: var(--Background) !important;
 	}
-	.tfB0Bf input[type="submit"],
 	.gbqfba,
-	.xtSCL,
 	#hdtb-msb .hdtb-mitem.hdtb-msel {
 		border-color: var(--Primary) !important;
 	}
@@ -1920,7 +1920,8 @@ url-prefix("https://www.google.se") {
 		border-color: var(--Primary-Variant) !important;
 	}
 	.MGqjK,
-	.VibNM {
+	.VibNM,
+	.xtSCL {
 		border-color: var(--Grey) !important;
 	}
 	.gb_Db.gb_Db,
@@ -1931,14 +1932,15 @@ url-prefix("https://www.google.se") {
 	.ve-Fi-Ue .ve-Gi-Zb-ie,
 	#hdtb,
 	.cv2VAd,
-	.RNNXgb {
+	.RNNXgb,
+	.aajZCb {
 		border: none !important;
 	}
 	.aajZCb {
 		box-shadow: none;
-		border-bottom: 1px solid var(--Primary) !important;
-		border-right: 1px solid var(--Primary) !important;
-		border-left: 1px solid var(--Primary) !important;
+		border-bottom: 1px solid var(--grey) !important;
+		border-right: 1px solid var(--grey) !important;
+		border-left: 1px solid var(--grey) !important;
 	}
 	.tfB0Bf input[type="submit"],
 	.gbqfba,
@@ -1996,7 +1998,7 @@ url-prefix("https://www.google.se") {
 	.gb_xb:hover,
 	.gb_Pb:hover,
 	.gb_wb:hover,
-	.gb_Nb>.gb_Mb:hover,
+	.gb_Nb > .gb_Mb:hover,
 	.gb_sb:hover,
 	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
@@ -2193,7 +2195,7 @@ url-prefix("https://www.google.se") {
 	.gb_xb:hover,
 	.gb_Pb:hover,
 	.gb_wb:hover,
-	.gb_Nb>.gb_Mb:hover,
+	.gb_Nb > .gb_Mb:hover,
 	.gb_sb:hover,
 	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
@@ -2607,7 +2609,7 @@ url-prefix("https://www.google.no/maps") {
 	.gb_xb:hover,
 	.gb_Pb:hover,
 	.gb_wb:hover,
-	.gb_Nb>.gb_Mb:hover,
+	.gb_Nb > .gb_Mb:hover,
 	.gb_sb:hover,
 	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
@@ -2875,7 +2877,7 @@ url-prefix("https://www.google.no/maps") {
 	.gb_xb:hover,
 	.gb_Pb:hover,
 	.gb_wb:hover,
-	.gb_Nb>.gb_Mb:hover,
+	.gb_Nb > .gb_Mb:hover,
 	.gb_sb:hover,
 	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
@@ -3104,7 +3106,7 @@ url-prefix("https://ogs.google.no") {
 	.gb_xb:hover,
 	.gb_Pb:hover,
 	.gb_wb:hover,
-	.gb_Nb>.gb_Mb:hover,
+	.gb_Nb > .gb_Mb:hover,
 	.gb_sb:hover,
 	.gb_Db:hover {
 		background-color: var(--Surface-Transparent) !important
