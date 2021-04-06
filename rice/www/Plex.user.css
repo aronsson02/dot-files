@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.22.1-4228
+@version      1.22.1-5
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -516,6 +516,10 @@ regexp(".*:32400/.*") {
 	.reset-customization-btn.btn.btn-sm.btn-default.btn-loading.form-control-btn:hover,
 	.restore-btn.btn.btn-sm.btn-danger.btn-loading.form-control-btn:hover {
 		animation: warnz 1s linear infinite !important;
+	}
+	.FullPageBackground-backgroundContainer-3CiKUQ {
+		background: linear-gradient(45deg, #00ffff, #F44336, #EA9D1C, #00E676, #3500ff, #fb0082) !important;
+    animation: filter 16s linear infinite !important
 	}
 	/* Text Modifications */
 	.agent-label {
