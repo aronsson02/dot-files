@@ -20,7 +20,7 @@ local greeter_message = wibox.widget {
 
 local profile_name = wibox.widget {
         markup = 'user@hostname',
-        font = 'daech 14',
+        font = 'daech 17',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -29,15 +29,15 @@ local profile_name = wibox.widget {
 local profile_imagebox = wibox.widget {
     image = widget_icon_dir .. 'default.svg',
     resize = true,
-    forced_height = dpi(130),
+    forced_height = dpi(150),
     clip_shape = gears.shape.circle,
     widget = wibox.widget.imagebox
 }
 
 local profile_imagebox_bg = wibox.widget {
     bg = beautiful.groups_bg,
-    forced_width = dpi(140),
-    forced_height = dpi(140),
+    forced_width = dpi(160),
+    forced_height = dpi(160),
     shape = gears.shape.circle,
     widget = wibox.container.background
 }
@@ -101,25 +101,25 @@ local build_button = function(icon, name)
                         image = icon,
                         widget = wibox.widget.imagebox
                     },
-                    margins = dpi(16),
+                    margins = dpi(18),
                     widget = wibox.container.margin
                 },
                 bg = beautiful.groups_bg,
                 widget = wibox.container.background
             },
             shape = gears.shape.rounded_rect,
-            forced_width = dpi(90),
-            forced_height = dpi(90),
+            forced_width = dpi(140),
+            forced_height = dpi(140),
             widget = clickable_container
         },
-        left = dpi(24),
-        right = dpi(24),
+        left = dpi(25),
+        right = dpi(25),
         widget = wibox.container.margin
     }
 
     local build_a_button = wibox.widget {
         layout = wibox.layout.fixed.vertical,
-        spacing = dpi(5),
+        spacing = dpi(6),
         a_button,
         button_text
     }
@@ -338,11 +338,11 @@ screen.connect_signal(
                                 lock,
                                 layout = wibox.layout.fixed.horizontal
                             },
-                            spacing = dpi(30),
+                            spacing = dpi(520),
                             layout = wibox.layout.fixed.vertical
                         },
                         widget = wibox.container.margin,
-                        margins = dpi(15)
+                        margins = dpi(25)
                     },
                     nil
                 }
