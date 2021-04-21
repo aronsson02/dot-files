@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.3.3
+@version      3.3.4
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -99,7 +99,7 @@
 		backdrop-filter: var(--blur-dark) !important;
 	}
 	#scroll-button-forward,
-	#scroll-button-back {
+	#scroll-button-back, #toast {
 		background-color: transparent !important;
 		background-image: none !important;
 		backdrop-filter: var(--blur-variant) !important;
@@ -134,7 +134,8 @@
 	.sbqs_c,
 	span.yt-view-count-renderer,
 	#date.ytd-video-primary-info-renderer,
-	h3.ytd-compact-video-renderer {
+	h3.ytd-compact-video-renderer,
+	#text.yt-notification-action-renderer {
 		color: var(--Foreground-Variant) !important
 	}
 	#channel-name.ytd-video-meta-block,
