@@ -2240,6 +2240,8 @@ url-prefix("https://www.google.no/maps") {
 	.app-imagery-mode .scene-footer,
 	.app-imagery-mode .widget-tilt-button,
 	.app-imagery-mode .widget-mylocation-button,
+	.app-imagery-mode .mapsTactileClientGlobeGlobetoggle__button,
+	.mapsConsumerUiTiltInternalTilt__widget-tilt-button,
 	.widget-reveal-card,
 	.gb_5c.gb_Pg.gb_i,
 	.action-menu-widget,
