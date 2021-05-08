@@ -13,7 +13,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     local osd_value = wibox.widget {
         text = '0%',
-        font = 'daech 32',
+        font = 'SF Nodo Pro 32',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox

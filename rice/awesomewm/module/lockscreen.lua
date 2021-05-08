@@ -54,7 +54,7 @@ local locked_tag = nil
 local uname_text = wibox.widget {
         id = 'uname_text',
         markup = '$USER',
-        font = 'daech 14',
+        font = 'SF Nodo Pro 14',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -63,7 +63,7 @@ local uname_text = wibox.widget {
 local caps_text = wibox.widget {
         id = 'uname_text',
         markup = "Ásþ'ålʃkáká",
-        font = 'daech 14',
+        font = 'SF Nodo Pro 14',
         align = 'center',
         valign = 'center',
         opacity = 0.0,
@@ -81,13 +81,13 @@ local profile_imagebox = wibox.widget {
 }
 
 local time = wibox.widget.textclock(
-        '<span font=\'daech 56\'>%I:%M %p</span>',
+        '<span font=\'SF Nodo Pro 56\'>%I:%M %p</span>',
         1
 )
 
 local wanted_text = wibox.widget {
         markup = 'INNTRENGER!',
-        font   = 'daech 12',
+        font   = 'SF Nodo Pro 12',
         align  = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -109,7 +109,7 @@ local msg_table = {
 
 local wanted_msg = wibox.widget {
         markup = 'Denne hendelsen vil bli rapportert!',
-        font   = 'daech 12',
+        font   = 'SF Nodo Pro 12',
         align  = 'center',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -150,7 +150,7 @@ end
 
 local date = wibox.widget {
         markup = date_value(),
-        font = 'daech 20',
+        font = 'SF Nodo Pro 20',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox

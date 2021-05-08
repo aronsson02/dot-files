@@ -1,5 +1,5 @@
 configuration {
-        font:                           "daech 16";
+        font:                           "SF Nodo Pro 16";
         show-icons:                     true;
         drun-display-format:            "{name}";
         threads:                        0;
@@ -36,7 +36,7 @@ prompt {
 button {
         action:                         "ok";
         str:                            "🔎 ";
-        font:                           "daech 18";
+        font:                           "SF Nodo Pro 18";
         expand:                         false;
         text-color:                     @foreground;
         background-color:               @background;
@@ -45,7 +45,7 @@ button {
 }
 
 entry {
-        font:                           "daech 20";
+        font:                           "SF Nodo Pro 20";
         background-color:               @background;
         text-color:                     @foreground;
         expand:                         true;

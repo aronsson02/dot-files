@@ -13,7 +13,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     local osd_header = wibox.widget {
         text = 'Kivå',
-        font = 'daech 14',
+        font = 'SF Nodo Pro 14',
         align = 'left',
         valign = 'center',
         widget = wibox.widget.textbox
@@ -21,7 +21,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
     local osd_value = wibox.widget {
         text = '0%',
-        font = 'daech 14',
+        font = 'SF Nodo Pro 14',
         align = 'center',
         valign = 'center',
         widget = wibox.widget.textbox

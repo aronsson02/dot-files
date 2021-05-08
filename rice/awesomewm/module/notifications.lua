@@ -45,7 +45,7 @@ ruled.notification.connect_signal(
 		ruled.notification.append_rule {
 			rule       = { urgency = 'critical' },
 			properties = {
-				font        		= 'daech 15',
+				font        		= 'SF Nodo Pro 15',
 				bg 					= beautiful.transparent,
 				fg 					= beautiful.fg_normal,
 				margin 				= dpi(16),
@@ -58,7 +58,7 @@ ruled.notification.connect_signal(
 		ruled.notification.append_rule {
 			rule       = { urgency = 'normal' },
 			properties = {
-				font        		= 'daech 15',
+				font        		= 'SF Nodo Pro 15',
 				bg      			= beautiful.transparent,
 				fg 					= beautiful.fg_normal,
 				margin 				= dpi(16),
@@ -71,7 +71,7 @@ ruled.notification.connect_signal(
 		ruled.notification.append_rule {
 			rule       = { urgency = 'low' },
 			properties = {
-				font        		= 'daech 15',
+				font        		= 'SF Nodo Pro 15',
 				bg     				= beautiful.transparent,
 				fg 					= beautiful.fg_normal,
 				margin 				= dpi(16),
@@ -129,7 +129,7 @@ naughty.connect_signal(
 						{
 							{
 								id     = 'text_role',
-								font   = 'daech 10',
+								font   = 'SF Nodo Pro 10',
 								widget = wibox.widget.textbox
 							},
 							widget = wibox.container.place
@@ -166,7 +166,7 @@ naughty.connect_signal(
 												{
 													{
 														markup = n.app_name or 'Þádiʃ isúál',
-														font = 'daech 10',
+														font = 'SF Nodo Pro 10',
 														align = 'center',
 														valign = 'center',
 														widget = wibox.widget.textbox
