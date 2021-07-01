@@ -32,7 +32,7 @@ local wall_dir = filesystem.get_configuration_dir() .. 'theme/wallpapers/'
 -- Wallpapers filename and extension
 wallpaper_morning = 'morning-wallpaper.jpg'
 wallpaper_noon = 'noon-wallpaper.jpg'
-wallpaper_night = 'night-wallpaper.png'
+wallpaper_night = 'night-wallpaper.jpg'
 wallpaper_midnight = 'midnight-wallpaper.jpg'
 
 -- Change the wallpaper on scheduled time
@@ -42,7 +42,7 @@ night_schedule = '17:30:00'
 midnight_schedule = '24:00:00'
 
 -- Don't stretch wallpaper on multihead setups if true
-local dont_stretch_wallpaper = false
+local dont_stretch_wallpaper = true
 
 --  ========================================
 --                    Processes

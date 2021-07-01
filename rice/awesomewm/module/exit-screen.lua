@@ -129,16 +129,11 @@ end
 
 local suspend_command = function()
     awesome.emit_signal('module::exit_screen_hide')
-    awful.spawn.with_shell(apps.default.lock .. ' & systemctl suspend')
+    awful.spawn.with_shell('systemctl suspend')
 end
 
 local exit_command = function()
     awesome.quit()
-end
-
-local lock_command = function()
-    awesome.emit_signal('module::exit_screen_hide')
-    awful.spawn.with_shell('sleep 1 && ' .. apps.default.lock)
 end
 
 local poweroff_command = function()
@@ -183,14 +178,6 @@ exit:connect_signal(
     end
 )
 
-local lock = build_button(icons.lock, 'Råʃù')
-lock:connect_signal(
-    'button::release',
-    function()
-        lock_command()
-    end
-)
-
 screen.connect_signal(
     'request::desktop_decoration',
     function(s)
@@ -223,9 +210,6 @@ screen.connect_signal(
 
                 elseif key == 'á' then
                     exit_command()
-
-                elseif key == 'r' then
-                    lock_command()
 
                 elseif key == 'l' then
                     poweroff_command()
@@ -335,7 +319,6 @@ screen.connect_signal(
                                 reboot,
                                 suspend,
                                 exit,
-                                lock,
                                 layout = wibox.layout.fixed.horizontal
                             },
                             spacing = dpi(520),

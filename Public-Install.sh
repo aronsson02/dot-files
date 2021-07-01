@@ -1,5 +1,5 @@
-sudo cp "$HOME/dot-files/XKB/evdev.xml" "/usr/share/X11/xkb/rules/"
-sudo cp "$HOME/dot-files/XKB/jp" "/usr/share/X11/xkb/symbols"
+sudo cp "$HOME/dot-files/X/evdev.xml" "/usr/share/X11/xkb/rules/"
+sudo cp "$HOME/dot-files/X/jp" "/usr/share/X11/xkb/symbols"
 setxkbmap jp
 yay -Sy awesome-git rofi-git picom-tryone-git alsa-utils pulseaudio pulseaudio-alsa xprop imagemagick xfce4-power-manager xdg-user-dirs kvantum-qt5-git konsole xorg-xinput
 if test -e "$HOME/.config/awesome"; then
