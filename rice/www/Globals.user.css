@@ -34,9 +34,9 @@
 		--dark-orange: #1F1504;
 		--green: #00E676;
 		--blue: #120056;
-		--blur: blur(50px);
+		--blur: blur(40px); /* backdrop-filter: var(--blur) */
 		--blur-variant: blur(5px);
-		--blur-dark: blur(50px) brightness(66%);
+		--blur-dark: blur(40px) brightness(66%);
 		--blur-dark-variant: blur(5px) brightness(66%);
 		--Mast-Shadow: 0 0 8px 1px var(--Background);
 		--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
