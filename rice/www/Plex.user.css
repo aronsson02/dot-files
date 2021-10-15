@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.22.1-5
+@version     1.24.4-5081
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -18,511 +18,111 @@ url-prefix("https://plex.tv"),
 domain("127.0.0.1"),
 regexp("https?://.*:32400/.*"),
 regexp(".*:32400/.*") {
-	/* Blurification */
-	#id-16,
-	#id-6,
-	#id-30,
-	#id-509,
-	#id-68,
-	#id-549,
-	#id-989,
-	#id-1100,
-	.AudioVideoPlaybackSettings-container-2pTAjN.AudioVideoStripeContainer-container-MI02OU,
-	.BottomBar-bottomBar-gbDBaF,
-	.ControlsContainer-controlsContainer-1Wn7vp,
-	.AudioVideoFullPlayer-topBar-2XUGMf.AudioVideoFullPlayer-bar-dDYeoN,
-	.SourceSidebar-expandedSidebar-ljacXC.SourceSidebar-sidebar-YpV2mw,
-	.QuickSearchResults-container-3IlHhN.Scroller-scroller-3GqQcZ.Scroller-vertical-VScFLT,
-	.MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-:hover,
-	.modal-body.modal-body-scroll.dark-scrollbar,
-	.modal-content,
-	.input-group-addon.edit-lock-addon,
-	.PosterCardOverlayProgress-progressTrack-3luzPK,
-	.ModalHeader-modalHeader-1Kf9RW,
-	.EditHomeModalContent-footer-10Ix6N.ModalFooter-modalFooter-30WIB5,
-	.EditHomeModalContent-modalBody-2rHN2d.ModalBody-modalBody--5uHSu.Scroller-scroller-3GqQcZ.Scroller-none-3GfKRp.Scroller-auto-LsWiWx,
-	.PrePlayDetailsContainer-container-1oBwsq,
-	.PrePlayMetadataListInnerContent-innerContent-2CsIzg,
-	.list.modal-list,
-	.ModalFooter-modalFooter-30WIB5,
-	.ConfirmModal-confirmBody-10ifxp.ModalBody-modalScroller-1xOMqS.ModalBody-modalBody--5uHSu.Scroller-scroller-3GqQcZ.Scroller-vertical-VScFLT.Scroller-auto-LsWiWx,
-	.ModalContent-modalContent-UQlV4k,
-	.Menu-menuPortal-AbMPTD,
-	.MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt,
-	.Menu-menu-3XnN6J.Menu-medium-2qYxsO,
-	.media-info-file-list.well,
-	.MetadataPosterCardProgressBar-track-1wK6zj {
-		background-color: transparent !important;
-		background-image: none !important;
-		backdrop-filter: var(--blur-dark) !important;
-	}
-	div[class^="MetadataPosterCard-card-"]:hover .MetadataPosterCardOverlay-link-1SwhlG.Link-link-2n0yJn.Link-default-2XA2bN {
-		background-color: transparent !important;
-		background-image: none !important;
-		backdrop-filter: blur(2px) !important;
-	}
-	.ModalContent-modalContent-UQlV4k,
-	.modal-header,
-	.modal-footer,
-	.Modal-modalBackdrop-3-L45r,
-	#id-509 * {
-		background-color: transparent !important;
-	}
-	.modal-body-with-panes .modal-nav-pane,
-	.upload-artwork-container {
-		background: none !important
-	}
-	/* Coloration */
-	.NavBar-container-1T0BJz {
-		background-color: var(--Mast) !important;
-		box-shadow: 0 0 8px var(--Background) !important
-	}
-	.SourceSidebar-openSidebar-364QEr.SourceSidebar-sidebar-YpV2mw,
-	.SourceSidebar-collapsedSidebar-3MDUee.SourceSidebar-sidebar-YpV2mw {
-		background-color: var(--Mast-Dark) !important;
-		box-shadow: var(--Mast-Shadow) !important
-	}
-	.QuickSearchInput-container-1HiCoN {
-		background-color: var(--Mast-Variant);
-		box-shadow: var(--Mast-Variant-Shadow) inset !important;
-		border-radius: var(--Rounding) !important;
-	}
-	.user-select-modal,
-	.user-select-modal-pin-container .pin-digit.current,
-	.SeekBar-seekBarTrack-3Gu5RX:before,
-	.SourceSidebarLink-isSelected-27-9-6,
-	.background-container {
-		background-color: var(--Background) !important
-	}
-	.show-modal-transparent,
-	.user-select-modal-users-container,
-	.user-select-modal-pin-container,
-	.Player-miniPlayerContainer-3S8L9e {
-		background-color: var(--Surface) !important
-	}
-	.user-select-modal-pin-container .pin-digit {
-		background-color: var(--Surface-Variant);
-		box-shadow: var(--Mast-Shadow) !important
-	}
-	.alert-bar.server-update-alert-bar.notify,
-	.EditHomeModalContent-button-HgDyCQ.ModalFooter-button-15VJa0.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
-	.MetadataPosterCardOverlay-unplayedTag-3hwoiQ,
-	.MetadataPosterCardOverlay-unplayedBadge-2hKHo5.MetadataPosterCardOverlay-badge-1FU-pf,
-	.save-btn.btn.btn-primary.btn-loading,
-	.input-group-addon.edit-lock-addon.locked,
-	.PosterCardOverlayProgress-progressBar-3k291O,
-	.NavBar-plexPassButton-wVK4vI.NavBarPlexPassButton-button-2zlgP_.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
-	.NavBarActivityButton-activityIcon-1Db2GP.NavBarActivityIcon-iconContainer-24xhXd,
-	.ConfirmModal-confirmButton-1DVQ-r.SpinnerButton-button-1A8EcL.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
-	.btn.btn-sm.btn-primary,
-	.VolumeSlider-fill-3XkYyD.VerticalSlider-fill-2HISoE.Slider-fill-35GFqs,
-	.SeekBar-seekBarBuffer-3bUz95.Slider-secondaryFill-31_05F.Slider-fill-35GFqs,
-	.PlayPauseOverlay-playCircle-3ydPYX.PlayButton-playCircle-3Evfdw,
-	.PlexPassModalContent-plansContainer-2boTWX *,
-	.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN,
-	.checking-for-updates-btn.label.label-btn.label-primary.active,
-	.check-for-updates-btn.label.label-btn.label-primary,
-	.retry-btn.btn.btn-primary.btn-loading,
-	.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-large-3S9UdJ.Link-link-2n0yJn.Link-default-2XA2bN,
-	.alert-bar.notify,
-	.Badge-primary-3suJx3,
-	.NavBarButton-button-oTeMHk,
-	.MetadataPosterCard-legacyUnwatchedEpisodesBadge-3kelZP,
-	.Button-primary-3z8akl,
-	.MetadataPosterCard-legacyUnwatchedTag-3f03pS,
-	.MetadataPosterCardProgressBar-bar-3N2AjG,
-	.btn-primary {
-		background-color: var(--Primary) !important
-	}
-	.SeekBar-seekBarFill-1Lcu0w.Slider-fill-35GFqs,
-	.Slider-thumb-2QGiU1.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
-	.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-large-3S9UdJ.Link-link-2n0yJn.Link-default-2XA2bN:hover,
-	.EditHomeModalContent-button-HgDyCQ.ModalFooter-button-15VJa0.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN:hover,
-	.ConfirmModal-confirmButton-1DVQ-r.SpinnerButton-button-1A8EcL.Button-button-2kT68l.Link-link-2n0yJn.Button-button-2kT68l.Link-link-2n0yJn.Button-primary-3fwLzo.Button-medium-3g45_Q.Link-link-2n0yJn.Link-default-2XA2bN:hover,
-	.save-btn.btn.btn-primary.btn-loading.save:hover,
-	.NavBarButton-button-oTeMHk:hover,
-	.NavBar-plexPassButton-wVK4vI.NavBarPlexPassButton-button-2zlgP_.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN:hover,
-	.Button-primary-3z8akl:hover,
-	.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw,
-	.MetadataPosterCardCircle-cardCircle-2NfIyT,
-	.btn-primary.active,
-	.btn-primary:active,
-	.btn-primary:focus,
-	.btn-primary:hover,
-	.open .dropdown-toggle.btn-primary {
-		background-color: var(--Primary-Variant) !important
-	}
-	.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt,
-	.SelectButton-selectedCircle-264nVE{
-		background-color: var(--Foreground-Variant) !important
-	}
-	.Link-link-2n0yJn.Link-primary-1vcAGA,
-	.PageHeaderTabButton-isSelected-25CIS7,
-	.artwork-file-container a,
-	.upload-url-btn,
-	.MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-,
-	.input-group-addon.edit-lock-addon .glyphicon.lock,
-	.NavBarActivityMenuStatusItem-statusButtonIndicator-3D2d1i,
-	.search-options-btn,
-	.dropdown-toggle,
-	.match-name,
-	.SelectedMenuItem-selectedIcon-20Yx1_,
-	.SelectedMenuItem-isSelected-178xe1,
-	.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.Link-link-2n0yJn.Link-default-2XA2bN.Link-isSelected-IRm9uM,
-	.SidebarMenuButton-sidebarMenuPrimaryTitleContainer-3-vDDD,
-	.ServerSettingsServerMenuItem-friendlyName-2eYIlv,
-	#plex-icon-selected-560,
-	.text-muted.text-center a,
-	.unreachable-description.status-description.help-block a,
-	.double-nat-description.status-details.help-block a,
-	.remote-access-error-container .help-block a,
-	.remote-access-status-message .status-description.help-block a,
-	.SourceSidebarServerHeader-title-3zMGa0.SourceSidebarLink-title-1lgRT2.SidebarLink-title-2vaAAn,
-	.NavBarActivityMenuStatusItem-primaryLabel-o8tsu6,
-	.form-group .help-block a,
-	.agent-types-nav.nav.nav-pills .active a,
-	.agents-list-container .active a,
-	.modal-footer .pull-left a,
-	.PlayerControls-buttonGroupCenter-11q8ie.PlayerControls-buttonGroup-4L6Pw-.PlayerControls-balanceLeft--vfZAg button,
-	#id-2076,
-	#plex-icon-player-repeat-560,
-	#plex-icon-player-repeat-one-560,
-	.MultiSelectPageHeader-selectedTitle-1kn-xo,
-	#id-16171,
-	#plex-icon-player-shuffle-560,
-	#plex-icon-player-settings-560,
-	#plex-icon-player-chapters-560,
-	.AudioVideoSettingsRow-cell-24KvKF .DisclosureArrowButton-disclosureArrowButton-11LSbY.Link-link-2n0yJn.DisclosureArrowButton-medium-3zt1WM.DisclosureArrowButton-isSelected-1aPl5o.Link-link-2n0yJn.Link-default-2XA2bN.Link-medium-3gAfLz.Link-isSelected-IRm9uM,
-	#plex-icon-player-queue-560,
-	#plex-icon-player-volume-high-560,
-	#plex-icon-player-volume-mid-560,
-	#plex-icon-player-volume-low-560,
-	#plex-icon-player-volume-mute-560,
-	#plex-icon-player-more-vertical-560,
-	.btn-gray.selected,
-	.help-block a,
-	.edit-section-modal .wizard-blocks-group > .wizard-block.selected,
-	.edit-section-modal .wizard-blocks-group > .wizard-block.selected,
-	.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw:hover,
-	.user-select-list-item .user-select-top .add-icon,
-	.NavBarIconButton-alertIcon-2HPvE2,
-	.MetadataPosterCardCircle-cardCircle-2NfIyT,
-	.Link-isSelected-IRm9uM,
-	.PageHeaderMultiselectActions-count-2fQWwV {
-		color: var(--Primary) !important
-	}
-	.glyphicon.remove-2:hover,
-	.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.Link-link-2n0yJn.Link-default-2XA2bN.Link-isSelected-IRm9uM:hover,
-	#id-2132:hover,
-	.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv:hover .SourceSidebarServerHeader-title-3zMGa0.SourceSidebarLink-title-1lgRT2.SidebarLink-title-2vaAAn,
-	.Link-link-2n0yJn.Link-primary-1vcAGA:hover,
-	.ModalContent-closeButton-3NY5uJ.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN:hover .PlexIcon-plexIcon-8Tamaj,
-	.NavBarActivityMenuStatusItem-splitButton-3DXXY-.ActivityMenuStatusItem-splitButton-1Ov6bl.MenuItem-menuItem-1s02mQ.MenuItem-menuItem-1s02mQ.MenuItem-default-2SKQ84.Link-link-2n0yJn.Link-default-2XA2bN:hover .NavBarActivityMenuStatusItem-statusButtonIndicator-3D2d1i,
-	.PageHeaderTabButton-button-1zTdeV.Button-button-2kT68l.Link-link-2n0yJn.PageHeaderTabButton-isSelected-25CIS7.Button-button-2kT68l.Link-link-2n0yJn.Button-default--yDCH5.Button-large-3S9UdJ.Link-link-2n0yJn.Link-default-2XA2bN:hover,
-	.NavBarActivityMenuStatusItem-splitButton-3DXXY-.ActivityMenuStatusItem-splitButton-1Ov6bl.MenuItem-menuItem-1s02mQ.MenuItem-menuItem-1s02mQ.MenuItem-default-2SKQ84.Link-link-2n0yJn.Link-default-2XA2bN:hover .NavBarActivityMenuStatusItem-primaryLabel-o8tsu6,
-	.form-group .help-block a:hover,
-	.install-manual-link:hover,
-	.agent-types-nav.nav.nav-pills .active:hover a,
-	.agents-list-container .active:hover a,
-	.modal-footer .pull-left a:hover,
-	#plex-icon-player-previous-track-560:hover,
-	#plex-icon-player-skip-back-560:hover,
-	#plex-icon-player-pause-560:hover,
-	#plex-icon-player-skip-forward-560:hover,
-	#plex-icon-player-next-track-560:hover,
-	#plex-icon-player-stop-560:hover,
-	#id-2076:hover,
-	#plex-icon-player-repeat-560:hover,
-	#plex-icon-player-repeat-one-560:hover,
-	#id-16171:hover,
-	.AudioVideoSettingsRow-cell-24KvKF .DisclosureArrowButton-disclosureArrowButton-11LSbY.Link-link-2n0yJn.DisclosureArrowButton-medium-3zt1WM.DisclosureArrowButton-isSelected-1aPl5o.Link-link-2n0yJn.Link-default-2XA2bN.Link-medium-3gAfLz.Link-isSelected-IRm9uM:hover,
-	#plex-icon-player-shuffle-560:hover,
-	#plex-icon-player-settings-560:hover,
-	#plex-icon-player-chapters-560:hover,
-	#plex-icon-player-queue-560:hover,
-	#plex-icon-player-volume-high-560:hover,
-	#plex-icon-player-volume-mid-560:hover,
-	#plex-icon-player-volume-low-560:hover,
-	#plex-icon-player-volume-mute-560:hover,
-	#plex-icon-player-more-vertical-560:hover,
-	.help-block a:hover,
-	.user-select-list-item:hover .user-select-top .add-icon,
-	.Link-isSelected-IRm9uM:hover {
-		color: var(--Primary-Variant) !important
-	}
-	.input-group-addon.edit-lock-addon.locked .glyphicon.lock,
-	.NavBarActivityButton-label-2ZN0gQ,
-	.match-score,
-	.ModalContent-closeButton-3NY5uJ.Link-link-2n0yJn.Link-link-2n0yJn.Link-default-2XA2bN,
-	.NavBarButton-button-oTeMHk,
-	.PrePlayPosterCardPlayedStatus-label-1a29LI {
-		color: var(--Foreground) !important
-	}
-	.media-poster-container.selected .media-poster::after,
-	.NavBarButton-button-oTeMHk:hover {
-		color: var(--Surface) !important
-	}
-	.mapping-icon.glyphicon.left-arrow.text-success,
-	.status-header.text-success,
-	.PlexIcon-plexIcon-8Tamaj.ServerSettingsServerMenuButton-icon-2pk73R.ServerConnectionStatusIcon-secureIcon-2Rpe9G,
-	.PlexIcon-plexIcon-8Tamaj.ServerSettingsServerMenuItem-icon-3bTVtt.ServerConnectionStatusIcon-secureIcon-2Rpe9G,
-	.success-icon.glyphicon.ok-2 {
-		color: var(--green) !important;
-	}
-	.glyphicon.remove-2,
-	.delete-btn.text-danger.pull-right {
-		color: var(--red) !important;
-	}
-	.confirm-btn.btn.btn-lg.btn-danger.btn-loading,
-	.reset-customization-btn.btn.btn-sm.btn-default.btn-loading.form-control-btn {
-		background-color: var(--red) !important;
-	}
-	.AlertRoundOpaqueIcon-img-19hrPS,
-	.PlexPassFeature-featureImage-1MQuZ0 {
-		filter: hue-rotate(180deg) !important;
-	}
-	.AllSourcesSidebarContent-iconImg-1hajvx,
-	.EmptyPage-imgIcon-32C35q,
-	.NavBar-plexLogo-3_NNRw.NavBarIconButton-button-eR0v0j.IconButton-button-9An-7I.Link-link-2n0yJn.Link-default-2XA2bN {
-		filter: hue-rotate(130deg) !important;
-	}
-	.PlayerIconButton-playerButton-1DmNp4.IconButton-button-9An-7I.IconButton-isActive-1_AJJ-.Link-link-2n0yJn.Link-default-2XA2bN {
-		filter: hue-rotate(90deg) !important;
-	}
-	.PageHeader-pageHeader-2KNPGd {
-		box-shadow: none !important;
-	}
-	.isFocused:not(.isDisabled) {
-		box-shadow: inset 0 0 0 2px var(--Primary-Variant) !important;
-	}
-	.PosterCardLink-hoveredLink-AhlkMt {
-		box-shadow: 0 0 0 1px var(--Primary), 0 0 4px rgba(0, 0, 0, .3);
-	}
-	.MetadataPosterCard-hoveredSelectedLink-3RwC7J,
-	.MetadataPosterCard-selectedLink-3ZfYeB {
-		box-shadow: 0 0 0 2px var(--Primary), 0 0 4px rgba(0, 0, 0, .3);
-	}
-	.MetadataPosterCardOverlay-playCircle-M67q6x.PlayButton-playCircle-3Evfdw.MetadataPosterCardOverlay-centerCircle-1Mg-s-:hover,
-	.input-group-addon.edit-lock-addon.locked,
-	.MetadataPosterCardOverlay-selectCircle-3ql8ST.SelectButton-selectCircle-3tdvGt,
-	.PageHeaderMultiselectActions-container-2k4DLu,
-	.setupBasic .basic-segment,
-	.setupComplete .basic-segment,
-	.setupComplete .complete-segment,
-	.setupComplete .library-segment,
-	.setupLibrary .basic-segment,
-	.setupLibrary .library-segment,
-	.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt,
-	.SelectButton-selectedCircle-264nVE {
-		border-color: var(--Primary) !important
-	}
-	.DisclosureArrow-isSelected-QMJhDY {
-		border-color: var(--Primary-Variant)!important;
-	}
-	.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw {
-		border-color: var(--Foreground)!important;
-	}
-	.PlayButton-playCircle-3Evfdw {
-		border-color: var(--Foreground-Dark)!important;
-	}
-	.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv.SourceSidebarLink-isSelected-27-9-6 {
-		box-shadow: inset 4px 0 0 0 var(--Primary) !important
-	}
-	.media-poster-container.selected .media-poster,
-	.force-hover .media-poster-container .media-poster,
-	.force-hover .media-poster-container .media-poster-fade,
-	.media-poster-container:focus .media-poster,
-	.media-poster-container:focus .media-poster-fade,
-	.media-poster-container:hover .media-poster,
-	.media-poster-container:hover .media-poster-fade {
-		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--Primary) !important;
-		box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--Primary) !important;
-	}
-	.media-poster-container.selected .media-poster::before {
-		border-color: var(--Primary) var(--Primary) transparent transparent !important;
-	}
-	.EditHomeModalContent-footer-10Ix6N.ModalFooter-modalFooter-30WIB5,
-	.SelectButton-selectCircle-3tdvGt,
-	.SelectButton-selectedCircle-264nVE{
-		border-radius: 0 0 var(--Rounding) var(--Rounding) !important;
-	}
-	.ModalHeader-modalHeader-1Kf9RW {
-		border-radius: var(--Rounding) var(--Rounding) 0 0 !important;
-	}
-	.MetadataPosterCardFace-face--dz_Dx:hover,
-	.PrePlayCastCell-posterCardLinkContainer-27hxZ8.PrePlayCastCell-posterCardContainer-2xrsDg.Link-link-2n0yJn.Link-default-2XA2bN:hover,
-	.user-select-list-item:hover .user-select-top .user-poster {
-		box-shadow: 0 0 0 2px var(--Primary-Variant) !important;
-	}
-	.SourceSidebarLink-isSelected-27-9-6 {
-		box-shadow: inset 4px 0 0 0 var(--Primary-Variant) !important;
-	}
-	.SourceSidebarItem-button-257zM0.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-small-3s6oyr:hover,
-	.SourceSidebarLink-button-1Qe470.SidebarLink-sidebarLink-L2OPdE.Link-default-2XA2bN.SourceSidebarLink-medium-3t-Vhv:hover {
-		box-shadow: inset 4px 0 0 0 var(--Primary) !important;
-	}
-	.MetadataPosterCardFace-isSelected-1XUgkl {
-		box-shadow: 0 0 0 3px var(--Primary-Variant) !important;
-	}
-	.modal-backdrop.fade.in, .PlayerIconButton-playerButton-1DmNp4.isDisabled {
-		opacity: 0 !important;
-	}
-	.SettingsPage-content-1vKVEr.PageContent-pageContent-16mK6G *,
-	.PlayPauseOverlay-playCircle-3ydPYX.PlayButton-playCircle-3Evfdw,
-	.modal-footer,
-	.modal-header,
-	.upload-artwork-container {
-		border: none !important;
-	}
-	.background-container div div div {
-		background-image: none !important;
-		background-color: var(--Background) !important;
-	}
-	/* Spinner */
-	.loading,
-	.loading.loading-sm,
-	.Spinner-spinner-Niere7,
-	.Spinner-spinner-1qRM4t {
-		border-color: var(--Spinner) !important;
-	}
-	/* Darkified Side Bar */
-	div[class^="SourceSidebar-sidebar-"] {
-		background-color: var(--Surface) !important;
-	}
-	/* Hoverification Effects */
-	div[class^="MetadataPhotoCell-photoContainer-"]:hover div {
-		transform: scale(1.05) !important;
-		box-shadow: none !important;
-	}
-	div[class^="MetadataPhotoCell-photoContainer-"]:hover > div:first-child {
-		outline: 2px solid var(--Primary) !important;
-	}
-	div[class^="MetadataPosterCard-card-"] {
-		-webkit-perspective: 500px;
-		perspective: 500px;
-		box-shadow: 0px 5px 12px -4px var(--Surface);
-		transition: all 350ms;
-	}
-	/* Roundification Effects */
-	.MetadataPosterCardFace-poster-L2P6rC {
-		overflow: hidden;
-		border-radius: var(--Rounding);
-		background-color: rgba(0, 0, 0, 0);
-	}
-	.Menu-menuPortal-AbMPTD {
-		overflow: hidden;
-		border-radius: var(--Rounding);
-	}
-	.modal-content,
-	.Modal-medium-1UIAdk {
-		overflow: hidden;
-		border-radius: var(--Rounding-Variant);
-	}
-	.Modal-large-1fVmOF {
-		overflow: hidden;
-		border-radius: calc(var(--Rounding-Variant) * 2);
-	}
-	/* Search Box Colorification */
-	.QuickSearchInput-focused-3rEqJC {
-		background: rgba(15, 16, 25, 0.5) !important;
-		color: var(--Primary) !important;
-	}
-	.QuickSearchInput-focused-3rEqJC input {
-		color: var(--Primary) !important;
-	}
-	/* Now Playing Glyph */
-	.NavBarActivityButton-isHighlighted-27qlko {
-		animation: flip 2s ease infinite !important;
-	}
-	/* ¡¡¡ANIMATIONS!!! */
-	@keyframes flip {
-		0% {
-			transform: rotate(0deg) scale(1);
-			opacity: 1;
-		}
-		75% {
-			transform: rotate(360deg) scale(0.9);
-			opacity: 0.25;
-		}
-		100% {
-			transform: rotate(360deg) scale(1);
-			opacity: 1;
-		}
-	}
-	@keyframes warn {
-		0% {
-			color: var(--red);
-		}
-		50% {
-			color: var(--orange);
-		}
-		100% {
-			color: var(--red);
-		}
-	}
-	@keyframes warnz {
-		0% {
-			background-color: var(--red);
-		}
-		50% {
-			background-color: var(--orange);
-		}
-		100% {
-			background-color: var(--red);
-		}
-	}
-	@keyframes attention {
-		0% {
-			background-color: var(--Primary);
-		}
-		50% {
-			background-color: var(--Primary-Variant);
-		}
-		100% {
-			background-color: var(--Primary);
-		}
-	}
-	.SettingsFormSection-section-1zYMPA:hover .Link-link-2n0yJn.Link-danger-58vt6Z,
-	.PlexIcon-plexIcon-8Tamaj.RemoteAccessStateIcon-error-1HDvqj,
-	.status-header.text-danger,
-	.mapping-icon.glyphicon.remove-2.text-danger,
-	.modal-icon.glyphicon.circle-exclamation-mark,
-	.PlexIcon-plexIcon-8Tamaj.EmptyPage-default-26GUDH,
-	.failure-icon.glyphicon.circle-exclamation-mark,
-	.install-manual-link,
-	.delete-btn.text-danger.pull-right:hover {
-		opacity: 1;
-		animation: warn 1s linear infinite !important;
-	}
-	.available-updates-btn.label.label-btn.label-primary {
-		animation: attention 2s linear infinite !important;
-	}
-	.AudioVideoFullPlayer-fullPlayer-3bJyOR:not(.AudioVideoFullPlayer-isVideo-1aASwH) .FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
-		background-color: var(--Surface) !important;
-		background-image: var(--Surface) !important;
-	}
-	.FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
-		filter: blur(2px) grayscale(0.5) contrast(1.03) brightness(0.7) invert(0.03) !important;
-	}
-	.background-container > .FullPage-container-17Y0cs > div > div > div,
-	.FullPlayerBackground-backgroundContainer-2UnXoW > div > div + div {
-		background-color: var(--Surface) !important;
-		background-image: var(--Surface) !important;
-	}
-	.Link-link-2n0yJn.Link-danger-58vt6Z {
-		opacity: 0;
-		transition: all 250ms
-	}
-	.reset-customization-btn.btn.btn-sm.btn-default.btn-loading.form-control-btn:hover,
-	.restore-btn.btn.btn-sm.btn-danger.btn-loading.form-control-btn:hover {
-		animation: warnz 1s linear infinite !important;
-	}
-	.FullPageBackground-backgroundContainer-3CiKUQ {
-		background: linear-gradient(45deg, #00ffff, #F44336, #EA9D1C, #00E676, #3500ff, #fb0082) !important;
-    animation: filter 16s linear infinite !important
-	}
-	/* Text Modifications */
-	.agent-label {
-		font-style: italic !important;
-	}
+    .Menu-menu-3iOTrU,
+    .SourceSidebar-expandedSidebar-1GBx52.SourceSidebar-sidebar-27HGYN {
+        background: none;
+        backdrop-filter: var(--blur-dark)
+    }
+    x {
+        background: none;
+        backdrop-filter: var(--blur-dark-variant)
+    }
+    x {
+        backdrop-filter: var(--blur)
+    }
+    .MetadataPosterCardCircle-cardCircle-1Qf61g,
+    .SourceSidebar-collapsedSidebar--Iz5dD.SourceSidebar-sidebar-27HGYN {
+        backdrop-filter: var(--blur-variant)
+    }
+    .SourceSidebar-collapsedSidebar--Iz5dD.SourceSidebar-sidebar-27HGYN {
+        background: none
+    }
+    .NavBarButton-button-1DGDMi,
+    .MetadataPosterCard-legacyUnwatchedTag-o5G90-,
+    .PlayButton-playButton-2dFmuo:hover .PlayButton-playCircle-2DYa77,
+    .PlayButton-playButton-2dFmuo.isActive .PlayButton-playCircle-2DYa77,
+    .MetadataPosterCard-legacyUnwatchedEpisodesBadge-3f-lLA,
+    .SourceSidebarLink-isSelected-1IQm2G:before,
+    .PivotTab-selectedButton-3p13j3:after,
+    .btn-primary,
+    .label-primary {
+        background-color: var(--Primary)
+    }
+    .btn-primary:focus,
+    .btn-primary:hover,
+    .label-primary[href]:focus,
+    .label-primary[href]:hover {
+        background-color: var(--Primary-Variant)
+    }
+    .btn-primary.disabled,
+    .btn-primary.disabled.active,
+    .btn-primary.disabled:active,
+    .btn-primary.disabled:focus,
+    .btn-primary.disabled:hover,
+    .btn-primary[disabled],
+    .btn-primary[disabled].active,
+    .btn-primary[disabled]:active,
+    .btn-primary[disabled]:focus,
+    .btn-primary[disabled]:hover,
+    fieldset[disabled] .btn-primary,
+    fieldset[disabled] .btn-primary.active,
+    fieldset[disabled] .btn-primary:active,
+    fieldset[disabled] .btn-primary:focus,
+    fieldset[disabled] .btn-primary:hover {
+        background-color: var(--Primary-Dark)
+    }
+    .MenuItem-default-2MkAgS:hover {
+        background-color: var(--Surface-Transparent)
+    }
+    .DisclosureArrow-isSelected-1XcnHD {
+        border-color: var(--Primary)
+    }
+    .PlayButton-playButton-2dFmuo:hover .PlayButton-playCircle-2DYa77 {
+        border-color: var(--Primary-Variant)
+    }
+    .PosterCardLink-hoveredLink-3lIyr7 {
+        box-shadow: 0 0 0 1px var(--Primary-Variant), 0 0 4px rgba(0, 0, 0, .3);
+    }
+    .MenuItem-default-2MkAgS:hover,
+    label {
+        color: var(--Foreground)
+    }
+    .Link-default-5Qrl3D,
+    .help-block {
+        color: var(--Foreground-Variant)
+    }
+    .form-message {
+        color: var(--Foreground-Dark)
+    }
+    a,
+    .SourceSidebarLink-isSelected-1IQm2G .SourceSidebarLink-iconContainer-2ErtWf,
+    .SourceSidebarLink-isSelected-1IQm2G .SourceSidebarLink-title-1v7zVF,
+    .PivotTab-selectedButton-3p13j3,
+    .ServerMenuItem-selectedIcon-2BY8P3, .MenuHeader-menuHeader-WuKJVD {
+        color: var(--Primary)
+    }
+    a:hover {
+        color: var(--Primary-Variant)
+    }
+    .text-success, .ServerConnectionStatusIcon-secureIcon-HhF8Zh {
+        color: var(--green) !important
+    }
+    .MenuHeader-menuHeader-WuKJVD {
+        font-weight: bold
+    }
+    .SourceSidebar-collapsedSidebar--Iz5dD {
+        transition: max-width 5s cubic-bezier(.4, 0, .2, 1), backdrop-filter 1s ease-out;
+    }
+    .SourceSidebar-expandedSidebar-1GBx52 {
+        max-width: 280px;
+        transition: max-width .6s cubic-bezier(.4, 0, .2, 1);
+        width: 280px;
+        z-index: 1014;
+    }
+    .plex-image.server {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDEwMCAxMDAiCiAgIHN0eWxlPSJzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxO2NsaXAtcnVsZTpldmVub2RkO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnOTAyIgogICBzb2RpcG9kaTpkb2NuYW1lPSJsYXN0IG5lZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMS4xICgzYmY1YWUwZDI1LCAyMDIxLTA5LTIwKSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXc5MDQiCiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEuMCIKICAgICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6em9vbT0iMTMuNjA0NzM0IgogICAgIGlua3NjYXBlOmN4PSI1Ni44NTUyMDciCiAgICAgaW5rc2NhcGU6Y3k9IjU4Ljg3NjU2MyIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjM4NDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMjEyNCIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMzYiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc5MDIiIC8+CiAgPGNpcmNsZQogICAgIGN4PSI1MCIKICAgICBjeT0iNTAiCiAgICAgcj0iNTAiCiAgICAgc3R5bGU9ImZpbGw6dXJsKCNsaW5lYXJHcmFkaWVudDIwMzUpO2ZpbGwtb3BhY2l0eToxLjAiCiAgICAgaWQ9ImNpcmNsZTg4MyIgLz4KICA8Y2lyY2xlCiAgICAgY3g9IjUwIgogICAgIGN5PSI1MCIKICAgICByPSI0NyIKICAgICBzdHlsZT0iZmlsbDp1cmwoI2xpbmVhckdyYWRpZW50MTg5Nik7ZmlsbC1vcGFjaXR5OjEuMCIKICAgICBpZD0iY2lyY2xlODg1IiAvPgogIDxwYXRoCiAgICAgZD0iTTMyLjkgMTguOGgxOC4xNjFMNzEuMSA1MC4wNSA1MS4wNjEgODEuM0gzMi45bDIwLjAzOS0zMS4yNUwzMi45IDE4LjgiCiAgICAgc3R5bGU9ImZpbGw6dXJsKCNjKTtzdHJva2Utd2lkdGg6MS4wMDE1NzQ4O3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lIgogICAgIGlkPSJwYXRoODg3IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM5MDAiPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxODY5IgogICAgICAgeDE9IjEwMCIKICAgICAgIHgyPSIwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcAogICAgICAgICBvZmZzZXQ9IjAlIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMWE3M2U4O3N0b3Atb3BhY2l0eToxIgogICAgICAgICBpZD0ic3RvcDE4NjUiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIG9mZnNldD0iMTAwJSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzY5YmJkZDtzdG9wLW9wYWNpdHk6MSIKICAgICAgICAgaWQ9InN0b3AxODY3IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImEiCiAgICAgICB4MT0iMTAwIgogICAgICAgeDI9IjAiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wCiAgICAgICAgIG9mZnNldD0iMCUiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNmOWJlMDMiCiAgICAgICAgIGlkPSJzdG9wODg5IiAvPgogICAgICA8c3RvcAogICAgICAgICBvZmZzZXQ9IjEwMCUiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNjYzdiMTkiCiAgICAgICAgIGlkPSJzdG9wODkxIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImIiCiAgICAgICB4MT0iOTciCiAgICAgICB4Mj0iMyIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3AKICAgICAgICAgb2Zmc2V0PSIwJSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzI1MjUyNTtzdG9wLW9wYWNpdHk6MSIKICAgICAgICAgaWQ9InN0b3A4OTQiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIG9mZnNldD0iMTAwJSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzMzMzMzMztzdG9wLW9wYWNpdHk6MSIKICAgICAgICAgaWQ9InN0b3A4OTYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50CiAgICAgICBpZD0iYyIKICAgICAgIGN4PSI3MS4wOTk5OTgiCiAgICAgICBjeT0iNTAuMDQ5OTk5IgogICAgICAgcj0iNTcuODEyIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQxODY5IgogICAgICAgZng9IjcxLjA5OTk5OCIKICAgICAgIGZ5PSI1MC4wNDk5OTkiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjM0NjYyMzQ5LC0wLjU0MDU0NTA3LDAuNTQwNTQ1MDgsLTAuMzQ2NjIzNDgsNjguNjkwNjQ1LDEwNS44MzEyNSkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNiIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MTg5NiIKICAgICAgIHgxPSIzIgogICAgICAgeTE9IjUwIgogICAgICAgeDI9Ijk3IgogICAgICAgeTI9IjUwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyIKICAgICAgIHhsaW5rOmhyZWY9IiNsaW5lYXJHcmFkaWVudDE4NjkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQyMDM1IgogICAgICAgeDE9IjAiCiAgICAgICB5MT0iNTAiCiAgICAgICB4Mj0iMTAwIgogICAgICAgeTI9IjUwIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIC8+CiAgPC9kZWZzPgo8L3N2Zz4K);
+        background-size: 250px 250px;
+        height: 250px;
+        width: 250px;
+    }
 }
