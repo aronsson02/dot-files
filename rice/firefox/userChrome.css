@@ -1,27 +1,43 @@
 :root {
-        --Foreground:   #FAFAFA;
-        --Foreground-Variant:   #FAFAFACC;
-        --Foreground-Dark:   #FAFAFA66;
-        --Foreground-Transparent:   #FFFFFF66;
-        --Background:   #212121;
-        --Surface:   #424242;
-        --Surface-Variant:   #626262;
-        --Surface-Transparent:   #00000066;
-        --Primary:   #00BFBF;
-        --Primary-Variant:   #00E6E6;
-        --Mast:   #512DA8;
-        --Mast-Variant:   #673AB7;
-        --Mast-Dark:   #311B92;
-        --grey:  #808080;
-        --red:   #F44336;
-        --orange:#EA9D1C;
-        --dark-orange:#1F1504;
-        --green: #00E676;
-        --blue: #120056;
-        --blur: blur(50px);
-        --blur-variant: blur(5px);
-        --blur-dark: blur(50px) brightness(66%);
-        --blur-dark-variant: blur(5px) brightness(66%);
+		--Foreground: #E6F0FA;
+		--Foreground-Variant: #E6F0FACC;
+		--Foreground-Dark: #E6F0FA66;
+		--Foreground-Transparent: #FFFFFF66;
+		--Background: #181818;
+		--Surface: #252525;
+		--Surface-Variant: #333;
+		--Surface-Transparent: #00000066;
+		--Primary: #1A73E8;
+		--Primary-Variant: #69BBDD;
+		--Primary-Dark: #0049b5;
+        --Primary-Transparent: #1A73E880;
+		--Mast: #444;
+		--Mast-Variant: #555;
+		--Mast-Dark: #333;
+		--grey: #808080;
+		--red: #F44336;
+		--orange: #EA9D1C;
+		--dark-orange: #1F1504;
+		--green: #00E676;
+		--blue: #120056;
+		--blur: blur(40px); /* backdrop-filter: var(--blur) */
+		--blur-variant: blur(5px);
+		--blur-dark: blur(40px) brightness(66%);
+		--blur-dark-variant: blur(5px) brightness(66%);
+		--Mast-Shadow: 0 0 8px 1px var(--Background);
+		--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
+		--Rounding: 8px;
+		--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
+		--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;
+		--Rounding-Left: var(--Rounding) 0 0 var(--Rounding);
+		--Rounding-Right: 0 var(--Rounding) var(--Rounding) 0;
+		--Rounding-Variant: 16px;
+		--Rounding-Variant-Bottom: 0 0 var(--Rounding-Variant) var(--Rounding-Variant);
+		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
+		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
+		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
+		--Anim-Google-One: google-one 6s ease infinite;
+		--Spinner: var(--Primary) transparent;
 }
 @keyframes hue-rotate {
     0% { filter: hue-rotate(0deg); }
