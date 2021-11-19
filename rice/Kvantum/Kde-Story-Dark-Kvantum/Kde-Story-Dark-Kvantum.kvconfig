@@ -68,28 +68,29 @@ dialog_button_layout=0
 intensity=1.00
 no_inactiveness=false
 saturation=1.00
-shadowless_popup=true
+shadowless_popup=false
+drag_from_buttons=false
 
 [GeneralColors]
 window.color=#000000
-base.color=#212121
-alt.base.color=#212121
+base.color=#25252538
+alt.base.color=#25252538
 button.color=#424242
-light.color=#212121
+light.color=#25252538
 mid.light.color=#151515
-dark.color=#212121
-mid.color=#212121
-highlight.color=#00BFBF
+dark.color=#25252538
+mid.color=#25252538
+highlight.color=#1A73E8
 inactive.highlight.color=#9ce1ff
-text.color=#FAFAFA
-window.text.color=#FAFAFA
-button.text.color=#FAFAFA
-disabled.text.color=#aaaaaa
-tooltip.text.color=#FAFAFA
-highlight.text.color=#212121
-link.color=#00BFBF
-link.visited.color=#00b8b8
-progress.indicator.text.color=#FAFAFA
+text.color=#E6F0FA
+window.text.color=#E6F0FA
+button.text.color=#E6F0FA
+disabled.text.color=#E6F0FA80
+tooltip.text.color=#E6F0FA
+highlight.text.color=#AAAAAA
+link.color=#1A73E8
+link.visited.color=#69BBDD
+progress.indicator.text.color=#E6F0FA
 
 [Hacks]
 transparent_ktitle_label=true
@@ -114,6 +115,8 @@ kinetic_scrolling=false
 middle_click_scroll=false
 opaque_colors=false
 scroll_jump_workaround=false
+centered_forms=false
+noninteger_translucency=false
 
 [PanelButtonCommand]
 frame=true

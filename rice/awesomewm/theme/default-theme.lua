@@ -32,8 +32,8 @@ local awesome_overrides = function(theme)
     theme.font = 'SF Nodo Pro 13'
 
     -- Foreground
-    theme.fg_normal = '#fafafade'
-    theme.fg_focus = '#e4e4e4'
+    theme.fg_normal = '#E6F0FADE'
+    theme.fg_focus = '#E6F0FA'
     theme.fg_urgent = '#CC9393'
 
     theme.bg_normal = theme.background
@@ -116,15 +116,15 @@ local awesome_overrides = function(theme)
     theme.titlebar_maximized_button_focus_active_hover  = tip .. 'maximized_focus_active_hover.svg'
 
     -- UI Groups
-    theme.groups_title_bg = '#fafafa' .. '15'
-    theme.groups_bg = '#fafafa' .. '10'
+    theme.groups_title_bg = '#E6F0FA' .. '15'
+    theme.groups_bg = '#E6F0FA' .. '10'
     theme.groups_radius = dpi(16)
 
     -- UI events
     theme.leave_event = transparent
-    theme.enter_event = '#fafafa' .. '10'
-    theme.press_event = '#fafafa' .. '15'
-    theme.release_event = '#fafafa' .. '10'
+    theme.enter_event = '#E6F0FA' .. '10'
+    theme.press_event = '#E6F0FA' .. '15'
+    theme.release_event = '#E6F0FA' .. '10'
 
     -- Client Decorations
 
@@ -148,8 +148,8 @@ local awesome_overrides = function(theme)
     theme.menu_bg_focus = theme.accent .. 'CC'
 
     theme.menu_bg_normal =  theme.background:sub(1,7) .. '33'
-    theme.menu_fg_normal = '#fafafa'
-    theme.menu_fg_focus = '#fafafa'
+    theme.menu_fg_normal = '#E6F0FA'
+    theme.menu_fg_focus = '#E6F0FA'
     theme.menu_border_color = theme.background:sub(1,7) .. '5C'
 
     -- Tooltips
@@ -172,7 +172,7 @@ local awesome_overrides = function(theme)
 
     -- Taglist
     theme.taglist_bg_empty = theme.background .. '99'
-    theme.taglist_bg_occupied =  '#fafafa' .. '1A'
+    theme.taglist_bg_occupied =  '#E6F0FA' .. '1A'
     theme.taglist_bg_urgent = '#E91E63' .. '99'
     theme.taglist_bg_focus = theme.background
     theme.taglist_spacing = dpi(0)
@@ -183,7 +183,7 @@ local awesome_overrides = function(theme)
     theme.tasklist_bg_focus = theme.background
     theme.tasklist_bg_urgent = '#E91E63' .. '99'
     theme.tasklist_fg_focus = '#DDDDDD'
-    theme.tasklist_fg_urgent = '#fafafa'
+    theme.tasklist_fg_urgent = '#E6F0FA'
     theme.tasklist_fg_normal = '#AAAAAA'
 
     -- Notification
