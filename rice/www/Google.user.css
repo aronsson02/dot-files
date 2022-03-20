@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.3.6
+@version      3.4.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1599,8 +1599,7 @@
         filter: hue-rotate(45deg) !important;
     }
 
-    .gb_Za,
-    .gb_ic {
+    .gb_Xa {
         animation: var(--Anim-Google-One) !important;
     }
 
@@ -1968,8 +1967,7 @@ url-prefix("https://translate.google.se") {
         animation: filter 6s linear infinite !important;
     }
 
-    .gb_Za,
-    .gb_ic {
+    .gb_Xa {
         animation: var(--Anim-Google-One) !important;
     }
 
@@ -2253,8 +2251,7 @@ url-prefix("https://www.google.se") {
         display: none !important;
     }
 
-    .gb_Za,
-    .gb_ic {
+    .gb_Xa {
         animation: var(--Anim-Google-One) !important;
     }
 
@@ -2331,7 +2328,6 @@ url-prefix("https://www.google.se") {
     }
 
     .gb_sa.gb_4a.gb_9e.gb_Oc,
-    .s55KNe .jGNTYb,
     .h-sb-Ic.g-d.g-d-wd,
     .l-u-xb,
     .l-u-Ab-zb,
@@ -2342,16 +2338,24 @@ url-prefix("https://www.google.se") {
     .le-Ba,
     .h-w,
     .a-jn-yd,
-    .gb_5e.gb_6e {
+    .gb_5e.gb_6e,
+    .g3Fmkb,
+    .aQh4x,
+    .ALpC8b,
+    .ZHllM,
+    .a-ub-Gd,
+    .a-ub-oa,
+    .a-q-zb-j {
         background-color: var(--Surface) !important;
     }
 
     .Kk7lMc-Yb-Il-j,
-    .h-sb-Ic.g-d.g-d-wd:hover {
+    .h-sb-Ic.g-d.g-d-wd:hover,
+    .s55KNe .jGNTYb {
         background-color: var(--Surface-Variant) !important;
     }
 
-    .gb_Kd {
+    .gb_Jd {
         background-color: var(--Mast) !important;
         box-shadow: var(--Mast-Shadow) !important
     }
@@ -2362,7 +2366,7 @@ url-prefix("https://www.google.se") {
         border-radius: var(--Rounding-Variant)
     }
 
-    .a-D-B {
+    .X {
         background-color: var(--Mast-Dark) !important;
         box-shadow: var(--Mast-Shadow) inset !important
     }
@@ -2462,7 +2466,8 @@ url-prefix("https://www.google.se") {
     .a-Cd-oa,
     .a-Cd-Ba-j,
     .le-Ba,
-    .Ea-oa {
+    .Ea-oa,
+    .a-ub-Gd {
         border: none !important;
     }
 
@@ -2481,8 +2486,7 @@ url-prefix("https://www.google.se") {
         outline: var(--Primary-Variant) solid 1px;
     }
 
-    .gb_Za,
-    .gb_ic {
+    .gb_Xa {
         animation: var(--Anim-Google-One) !important;
     }
 
@@ -2944,8 +2948,7 @@ url-prefix("https://www.google.no/maps") {
         border-radius: 0 0 0 calc(2 * var(--Rounding-Variant))
     }
 
-    .gb_Za,
-    .gb_ic {
+    .gb_Xa {
         animation: var(--Anim-Google-One) !important;
     }
 
@@ -3252,8 +3255,7 @@ url-prefix("https://www.google.no/maps") {
         display: none !important
     }
 
-    .gb_Za,
-    .gb_ic {
+    .gb_Xa {
         animation: var(--Anim-Google-One) !important;
     }
 
@@ -3517,9 +3519,7 @@ url-prefix("https://ogs.google.no") {
         border: none !important
     }
 
-    .gb_Za,
-    .gb_ic,
-    .GdlJU {
+    .gb_Xa {
         animation: var(--Anim-Google-One) !important;
     }
 
