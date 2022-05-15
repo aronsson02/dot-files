@@ -164,8 +164,8 @@
     }
 
     .badge-style-type-live-now.ytd-badge-supported-renderer:hover {
-        color: var(--Primary-Variant) !important;
-        border-color: var(--Primary-Variant)
+        color: var(--Secondary) !important;
+        border-color: var(--Secondary)
     }
 
     .sbsb_c.gsfs:hover .sbpqs_a {
@@ -1529,7 +1529,7 @@
     .docs-gm .modal-dialog .goog-buttonset-action:hover,
     .docs-gm .modal-dialog .jfk-button-action:hover,
     .docs-gm .docs-material-bubble .jfk-button-action:hover {
-        background-color: var(--Primary-Variant) !important;
+        background-color: var(--Secondary) !important;
     }
 
     .docs-gm-sidebar-icon g,
@@ -2166,7 +2166,7 @@ url-prefix("https://www.google.se") {
     .gb_zb.gb_zb:hover,
     .FAuhyb:hover,
     #hdtb-msb .hdtb-mitem.hdtb-msel:hover {
-        color: var(--Primary-Variant) !important;
+        color: var(--Secondary) !important;
     }
 
     .gb_D[aria-expanded=true] .gb_7e,
@@ -2185,7 +2185,7 @@ url-prefix("https://www.google.se") {
     }
 
     #hdtb-msb .hdtb-mitem.hdtb-msel:hover {
-        border-color: var(--Primary-Variant) !important;
+        border-color: var(--Secondary) !important;
     }
 
     .MGqjK,
@@ -2240,7 +2240,7 @@ url-prefix("https://www.google.se") {
     .gb_zb.gb_zb:hover,
     .cv2VAd:hover,
     .rhscol:hover .I6TXqe {
-        border: 1px solid var(--Primary-Variant) !important;
+        border: 1px solid var(--Secondary) !important;
     }
 
     .hOoLGe {
@@ -2410,7 +2410,7 @@ url-prefix("https://www.google.se") {
     .a-ec-Gd:hover .Kzazxf.x6jRSb,
     .h-sb-Ic.g-d.g-d-Y:hover,
     .Hb-ja-Na .a-U-xc:focus .a-U-ye.a-U-Vd-jh > .a-U-J {
-        background-color: var(--Primary-Variant) !important;
+        background-color: var(--Secondary) !important;
     }
 
     .a-U-ye-ha > .a-U-J > .a-U-J-x,
@@ -2447,7 +2447,7 @@ url-prefix("https://www.google.se") {
 
     .a-Ws-nb-Oh-Ma-A:hover,
     .le-Ba-d:hover {
-        color: var(--Primary-Variant) !important;
+        color: var(--Secondary) !important;
     }
 
     .a-Ng-c-ha svg,
@@ -2483,7 +2483,7 @@ url-prefix("https://www.google.se") {
     }
 
     :focus {
-        outline: var(--Primary-Variant) solid 1px;
+        outline: var(--Secondary) solid 1px;
     }
 
     .gb_Xa {
@@ -2694,7 +2694,7 @@ url-prefix("https://www.google.no/maps") {
 
     .widget-directions .searchbox-searchbutton,
     .section-popular-times-current-value {
-        background: var(--Primary-Variant) !important
+        background: var(--Secondary) !important
     }
 
     .widget-directions .sbib_b::after {
@@ -2798,7 +2798,7 @@ url-prefix("https://www.google.no/maps") {
     .iRxY3GoUYUY__high-contrast:hover .iRxY3GoUYUY__below-button-text,
     .blue-link:hover,
     .link-like:hover {
-        color: var(--Primary-Variant)
+        color: var(--Secondary)
     }
 
     .cX2WmPgCkHi__red {
@@ -2861,7 +2861,7 @@ url-prefix("https://www.google.no/maps") {
 
     .iRxY3GoUYUY__high-contrast:hover .iRxY3GoUYUY__button,
     .VIpgJd-SxecR-DKlKme .VIpgJd-SxecR-skjTt {
-        border-color: var(--Primary-Variant)
+        border-color: var(--Secondary)
     }
 
     .widget-directions-input-underline {
@@ -3110,7 +3110,7 @@ url-prefix("https://www.google.no/maps") {
 
     .Ud9NFb .XCxRFf,
     .wDSX5e .ixImeb {
-        background-color: var(--Primary-Variant)
+        background-color: var(--Secondary)
     }
 
     .d2YGhb::before {

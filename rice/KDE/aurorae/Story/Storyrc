@@ -1,6 +1,6 @@
 [General]
-ActiveTextColor=170,170,170,255
-InactiveTextColor=153,153,153,255
+ActiveTextColor=255,255,255,250
+InactiveTextColor=255,255,255,153
 TitleAlignment=Center
 TitleVerticalAlignment=Center
 UseTextShadow=false
@@ -9,7 +9,7 @@ InactiveTextShadowColor=15,16,25,255
 TextShadowOffsetX=0
 TextShadowOffsetY=1
 Shadow=false
-Animation=500
+Animation=400
 
 [Layout]
 BorderLeft=0

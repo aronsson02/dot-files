@@ -70,7 +70,7 @@ regexp(".*:32400/.*") {
     .btn-primary:hover,
     .label-primary[href]:focus,
     .label-primary[href]:hover {
-        background-color: var(--Primary-Variant)
+        background-color: var(--Secondary)
     }
 
     .btn-primary.disabled,
@@ -107,7 +107,7 @@ regexp(".*:32400/.*") {
     }
 
     .modal-body-with-panes .modal-nav-list a:hover {
-        background: linear-gradient(to right, var(--Primary-Variant-Transparent) -25%, transparent 90%)
+        background: linear-gradient(to right, var(--Secondary-Transparent) -25%, transparent 90%)
     }
 
     .btn-danger:hover,
@@ -128,7 +128,7 @@ regexp(".*:32400/.*") {
     }
 
     .PlayButton-playButton-2dFmuo:hover .PlayButton-playCircle-2DYa77 {
-        border-color: var(--Primary-Variant)
+        border-color: var(--Secondary)
     }
 
     .media-poster-container.selected .media-poster:before {
@@ -136,7 +136,7 @@ regexp(".*:32400/.*") {
     }
 
     .PosterCardLink-hoveredLink-3lIyr7 {
-        box-shadow: 0 0 0 1px var(--Primary-Variant), 0 0 4px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 0 1px var(--Secondary), 0 0 4px rgba(0, 0, 0, .3);
     }
 
     .MenuItem-default-2MkAgS:hover,
@@ -180,7 +180,7 @@ regexp(".*:32400/.*") {
     .artwork-file-container:hover a,
     .NavBarActivityButton-isHighlighted-1DDZEr:hover .NavBarActivityButton-activityIcon-H9SOPO,
     .NavBarActivityButton-isHighlighted-1DDZEr:hover .NavBarActivityButton-label-2dpDab {
-        color: var(--Primary-Variant)
+        color: var(--Secondary)
     }
 
     .text-success,
@@ -198,7 +198,7 @@ regexp(".*:32400/.*") {
     .media-poster-container:focus .media-poster-fade,
     .media-poster-container:hover .media-poster,
     .media-poster-container:hover .media-poster-fade {
-        box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 2px var(--Primary-Variant);
+        box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 2px var(--Secondary);
     }
 
     .MenuHeader-menuHeader-WuKJVD {

@@ -23,7 +23,7 @@
 		text-decoration: none;
 	}
 	a:hover {
-		color: var(--Primary-Variant) !important;
+		color: var(--Secondary) !important;
 		text-decoration: underline;
 	}
 	.b,

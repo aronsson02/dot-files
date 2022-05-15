@@ -83,8 +83,8 @@ ForegroundPositive=0,110,40
 ForegroundVisited=88,51,173
 
 [General]
-ColorScheme=KDE-Story
-Name=KDE-Story
+ColorScheme=KDE Story
+Name=KDE Story
 shadeSortColumn=true
 
 [KDE]

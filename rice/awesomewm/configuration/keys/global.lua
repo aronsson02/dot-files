@@ -167,7 +167,7 @@ local globalKeys = awful.util.table.join(
         { modkey, 'Control' },
         'c',
         function()
-            awful.spawn('setxkbmap "jp (faelz)"', false)
+            awful.spawn('setxkbmap "jp (faelch)"', false)
         end,
         {description = 'Switch keyboard layout', group = 'hotkeys'}
     ),

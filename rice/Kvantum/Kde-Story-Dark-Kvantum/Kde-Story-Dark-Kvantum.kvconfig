@@ -38,7 +38,7 @@ small_icon_size=16
 large_icon_size=32
 button_icon_size=16
 toolbar_icon_size=16
-combo_as_lineedit=false
+combo_as_lineedit=true
 animate_states=true
 button_contents_shift=false
 combo_menu=false
@@ -56,7 +56,7 @@ submenu_overlap=0
 tooltip_delay=50
 tree_branch_line=true
 no_window_pattern=false
-opaque=kaffeine,kmplayer,subtitlecomposer,kdenlive,vlc,smplayer,smplayer2,avidemux,avidemux2_qt4,avidemux3_qt4,avidemux3_qt5,kamoso,QtCreator,VirtualBox,trojita,dragon,digikam
+opaque=
 reduce_window_opacity=60
 reduce_menu_opacity=60
 respect_DE=false
@@ -68,8 +68,10 @@ dialog_button_layout=0
 intensity=1.00
 no_inactiveness=false
 saturation=1.00
-shadowless_popup=false
+shadowless_popup=true
 drag_from_buttons=false
+menu_blur_radius=2
+tooltip_blur_radius=2
 
 [GeneralColors]
 window.color=#000000
@@ -117,6 +119,8 @@ opaque_colors=false
 scroll_jump_workaround=false
 centered_forms=false
 noninteger_translucency=false
+blur_only_active_window=false
+style_vertical_toolbars=false
 
 [PanelButtonCommand]
 frame=true

@@ -14,19 +14,19 @@
 
 @-moz-document regexp(".*") {
 	:root {
-		--Foreground: #E6F0FA;
-		--Foreground-Variant: #E6F0FACC;
-		--Foreground-Dark: #E6F0FA66;
+		--Foreground: #BEC8D1;
+		--Foreground-Variant: #BEC8D1CC;
+		--Foreground-Dark: #BEC8D166;
 		--Foreground-Transparent: #FFFFFF66;
-		--Background: #181818;
-		--Surface: #252525;
-		--Surface-Variant: #333333;
+		--Background: #2B2E30;
+		--Surface: #373B3E;
+		--Surface-Variant: #43484C;
 		--Surface-Transparent: #00000066;
-		--Primary: #1A73E8;
-		--Primary-Variant: #69BBDD;
-		--Primary-Dark: #0049b5;
-        --Primary-Transparent: #1A73E880;
-		--Primary-Variant-Transparent: #69BBDD80;
+		--Primary: #47DFD3;
+		--Primary-Dark: #31DBCE;
+        --Primary-Transparent: #47DFD380;
+		--Secondary: #E12885;
+		--Secondary-Transparent: #E1288580;
 		--Mast: #444;
 		--Mast-Variant: #555;
 		--Mast-Dark: #333;

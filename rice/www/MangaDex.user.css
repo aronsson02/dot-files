@@ -18,7 +18,7 @@
     --md-primary-lighten2: #ffe1d9;
     --md-primary-lighten: #ffbead;
     --md-primary: var(--Primary);
-    --md-primary-darken: var(--Primary-Variant);
+    --md-primary-darken: var(--Secondary);
     --md-primary-darken2: var(--Primary-Dark);
 }
 	.dark {
@@ -64,7 +64,7 @@
          transition: all .3s cubic-bezier(.4, 0, .2, 1);
     }
     a:hover {
-        color: var(--Primary-Variant)
+        color: var(--Secondary)
     }
     .px-2 {
         color: var(--Foreground)

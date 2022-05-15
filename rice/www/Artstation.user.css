@@ -29,7 +29,7 @@
 		color: var(--Background)
 	}
 	.bs-btn-primary.active, .bs-btn-primary:active, .bs-btn-primary:hover, .open > .bs-btn-primary.dropdown-toggle {
-		background-color: var(--Primary-Variant);
+		background-color: var(--Secondary);
 	}
 	.fa-sign-in::before, .bs-btn-primary.active, .bs-btn-primary:active, .bs-btn-primary:hover, .open > .bs-btn-primary.dropdown-toggle {
 		color: var(--Background)
