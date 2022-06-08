@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.4.0
+@version      3.4.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -2587,7 +2587,9 @@ url-prefix("https://www.google.no/maps") {
     #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe,
     #mobileToolbar .VIpgJd-INgbqf-LgbsSe,
     #mp-footer > li,
-    #gb {
+    #gb,
+    .dwFJGb-u7eiKf,
+    .dwFJGb-bMcfAe-wEXlac {
         background: none !important;
         backdrop-filter: var(--blur-dark-variant) !important;
     }
@@ -2823,18 +2825,17 @@ url-prefix("https://www.google.no/maps") {
     .psjCIe-Bz112c.psjCIe-pKrx3d::before,
     .psjCIe-Bz112c::before,
     .Ensave-nJjxad-bEDTcc,
-    .Ensave-nJjxad-m9bMae {
+    .Ensave-nJjxad-m9bMae,
+    .i4ewOd-TaUzNb-haAclf.li.i4ewOd-TaUzNb-Bz112c-LgbsSe:,
+    {
         filter: invert(1) !important
     }
 
     .searchbox-searchbutton::before,
     .widget-settings-button-icon,
     .maps-sprite-settings-languages-blue,
-    .i4ewOd-LQLjdd li:before,
-    .i4ewOd-xl07Ob,
     .un1lmc-j4gsHd,
     .un1lmc-pbTTYe-ibnC6b-DyVDA,
-    .Ensave-Bz112c-RJLb9c,
     .gb_D.gb_wc {
         filter: hue-rotate(180deg) invert(1)
     }
@@ -2910,8 +2911,9 @@ url-prefix("https://www.google.no/maps") {
         border-radius: calc(2 * var(--Rounding-Variant)) var(--Rounding) calc(2 * var(--Rounding-Variant)) calc(2 * var(--Rounding-Variant))
     }
 
-    #interactive-hovercard {
-        border-radius: var(--Rounding-Variant);
+    #interactive-hovercard,
+    #featureListPanel {
+        border-radius: var(--Rounding-Variant) !important;
         overflow: hidden !important
     }
 

@@ -123,7 +123,7 @@ Gdraw.GGadget.Box.GradientStartCol: #00bfbf
 Gdraw.GGadget.Box.BorderBrightest: #4c4c4c
 Gdraw.GGadget.Box.BorderBrighter: #666666
 Gdraw.GGadget.Box.BorderDarker: #4c4c4c
-Gdraw.GGadget.Box.BorderDarkest: #333333
+Gdraw.GGadget.Box.BorderDarkest: #43484C
 Gdraw.GGadget.Box.BorderInnerCol: #000000
 Gdraw.GGadget.Box.BorderOuterCol: #000000
 Gdraw.GGadget.Box.ActiveBorder: #88b2de
@@ -151,9 +151,9 @@ Gdraw.GButton.Box.BorderInner: False
 Gdraw.GButton.Box.BorderOuter: False
 Gdraw.GButton.Box.DoDepressedBackground: False
 Gdraw.GButton.Box.DrawDefault: False
-Gdraw.GButton.Box.BorderBrightest: #333333
-Gdraw.GButton.Box.BorderBrighter: #333333
-Gdraw.GButton.Box.BorderDarker: #333333
+Gdraw.GButton.Box.BorderBrightest: #43484C
+Gdraw.GButton.Box.BorderBrighter: #43484C
+Gdraw.GButton.Box.BorderDarker: #43484C
 Gdraw.GButton.Box.BorderType: box
 Gdraw.GButton.Box.Padding: 1
 Gdraw.GButton.Box.Radius: 3
@@ -229,9 +229,9 @@ Gdraw.GTextField.Box.Radius: 3
 Gdraw.GTextField.Font: 400 10pt Inconsolata,monospace,clearlyu,unifont,unifont upper
 
 Gdraw.GComboBox.Box.BorderInner: True
-Gdraw.GComboBox.Box.BorderBrightest: #333333
-Gdraw.GComboBox.Box.BorderBrighter: #333333
-Gdraw.GComboBox.Box.BorderDarker: #333333
+Gdraw.GComboBox.Box.BorderBrightest: #43484C
+Gdraw.GComboBox.Box.BorderBrighter: #43484C
+Gdraw.GComboBox.Box.BorderDarker: #43484C
 Gdraw.GComboBox.Box.BorderType: box
 
 Gdraw.GComboBoxMenu.Box.GradientBG: True
@@ -240,17 +240,17 @@ Gdraw.GComboBoxMenu.Box.Padding: 2
 Gdraw.GNumericField.Box.BorderInner: True
 
 Gdraw.GNumericFieldSpinner.Box.GradientBG: True
-Gdraw.GNumericFieldSpinner.Box.BorderBrightest: #333333
-Gdraw.GNumericFieldSpinner.Box.BorderBrighter: #333333
-Gdraw.GNumericFieldSpinner.Box.BorderDarker: #333333
+Gdraw.GNumericFieldSpinner.Box.BorderBrightest: #43484C
+Gdraw.GNumericFieldSpinner.Box.BorderBrighter: #43484C
+Gdraw.GNumericFieldSpinner.Box.BorderDarker: #43484C
 Gdraw.GNumericFieldSpinner.Box.BorderType: box
 Gdraw.GNumericFieldSpinner.Box.BorderWidth: 1
 Gdraw.GNumericFieldSpinner.Box.Padding: 2
 
 Gdraw.GList.Box.BorderOuter: False
-Gdraw.GList.Box.BorderBrightest: #333333
-Gdraw.GList.Box.BorderBrighter: #333333
-Gdraw.GList.Box.BorderDarker: #333333
+Gdraw.GList.Box.BorderBrightest: #43484C
+Gdraw.GList.Box.BorderBrighter: #43484C
+Gdraw.GList.Box.BorderDarker: #43484C
 Gdraw.GList.Box.BorderType: box
 Gdraw.GList.Font: 400 10pt sans
 
@@ -309,9 +309,9 @@ Gdraw.GDrawable.Box.BorderType: none
 Gdraw.GDrawable.Box.BorderWidth: 0
 Gdraw.GDrawable.Box.Padding: 0
 
-Gdraw.GTabSet.Box.BorderBrightest: #333333
-Gdraw.GTabSet.Box.BorderBrighter: #333333
-Gdraw.GTabSet.Box.BorderDarker: #333333
+Gdraw.GTabSet.Box.BorderBrightest: #43484C
+Gdraw.GTabSet.Box.BorderBrighter: #43484C
+Gdraw.GTabSet.Box.BorderDarker: #43484C
 Gdraw.GTabSet.Box.BorderType: box
 Gdraw.GTabSet.Box.BorderShape: roundrect
 Gdraw.GTabSet.Box.BorderWidth: 1
