@@ -34,7 +34,7 @@ local left_panel = {}
 left_panel.create = function(s)
 
    local panel_shape = function(cr, width, height)
-      gears.shape.partially_rounded_rect(cr, width, height, false, true, true, false, 256)
+      gears.shape.partially_rounded_rect(cr, width, height, false, true, false, false, 256)
    end
    local maximized_panel_shape = function(cr, width, height)
       gears.shape.rectangle(cr, width, height)
@@ -72,7 +72,6 @@ left_panel.create = function(s)
    -- ===================================================================
    -- Functionality
    -- ===================================================================
-
 
    -- hide panel when client is fullscreen
    local function change_panel_visibility(client)

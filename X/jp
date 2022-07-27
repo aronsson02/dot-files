@@ -2,10 +2,10 @@
 //┌─────┐                             //
 //│ 2 4 │2 = Shift,  4 = Shift+Level3 //
 //│ 1 3 │1 = Normal, 3 = Level3       //
-//└─────┘  faelch latin colemak       ///////////////////////////////////////////////////////
+//└─────┘  Faelch (P)                 ///////////////////////////////////////////////////////
 //┌────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓//
-//│ ~  │ { ‹ │ } › │ Æ Ä │ Å   │ Ø Ö │ Þ Ð │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
-//│ ≈  │ [ « │ ] » │ æ ä │ å   │ ø ö │ þ ð │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
+//│ ~  │ { ‹ │ } › │ Å   │ Ä Æ │ Ö Ø │ Þ Ð │ ; ÷ │ =   │ +   │ /   │ (   │ )   ┃          ┃//
+//│ ≈  │ [ « │ ] » │ å   │ ä æ │ ö ø │ þ ð │ : × │ @ ' │ ? ¿ │ 7 \ │ 8   │ 9   ┃ Backspace┃//
 //┢━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫//
 //┃       ┃ Q   │ W   │ F   │ P   │ G   │ J Ì │ L Ł │ U Ú │ Y Ü │ $ £ │ %   │ &   ┃       ┃//
 //┃  Tab  ┃ q   │ w   │ f   │ p   │ g ˛ │ j ì │ l ł │ u ú │ y ü │ 4 ¢ │ 5 € │ 6 ^ ┃ Enter ┃//
@@ -27,16 +27,16 @@ xkb_symbols "latin" {
   key <TLDE> { [     approxeq,   asciitilde                                    ] };
   key <AE01> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
   key <AE02> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
-  key <AE03> { [           ae,           AE,      adiaeresis,       Adiaeresis ] };
-  key <AE04> { [        aring,        Aring,           U0307,            U0323 ] };
-  key <AE05> { [       oslash,     Ooblique,      odiaeresis,       Odiaeresis ] };
-  key <AE06> { [        thorn,        THORN,             eth,              ETH ] };
-  key <AE07> { [        colon,    semicolon,        multiply,         division ] };
-  key <AE08> { [           at,        equal,      apostrophe                   ] };
-  key <AE09> { [     question,         plus,    questiondown                   ] };
-  key <AE10> { [            7,        slash,       backslash                   ] };
-  key <AE11> { [            8,    parenleft                                    ] };
-  key <AE12> { [            9,   parenright                                    ] };
+  key <AE03> { [        aring,        Aring,           U0307,            U0323 ] };
+  key <AE04> { [   adiaeresis,   Adiaeresis,              ae,               AE ] };
+  key <AE05> { [   odiaeresis,   Odiaeresis,          oslash,         Ooblique ] };
+  key <AE06> { [            7,        slash,       backslash                   ] };
+  key <AE07> { [            8,    parenleft                                    ] };
+  key <AE08> { [            9,   parenright                                    ] };
+  key <AE09> { [        thorn,        THORN,             eth,              ETH ] };
+  key <AE10> { [        colon,    semicolon,        multiply,         division ] };
+  key <AE11> { [           at,        equal,      apostrophe                   ] };
+  key <AE12> { [     question,         plus,    questiondown                   ] };
   key <BKSP> { [    BackSpace,    BackSpace                                    ] };
 
 
@@ -46,13 +46,13 @@ xkb_symbols "latin" {
   key <AD03> { [            f,            F                                    ] };
   key <AD04> { [            p,            P                                    ] };
   key <AD05> { [            g,            G,     dead_ogonek                   ] };
-  key <AD06> { [            j,            J,          igrave,           Igrave ] };
-  key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
-  key <AD08> { [            u,            U,          uacute,           Uacute ] };
-  key <AD09> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
-  key <AD10> { [            4,       dollar,            cent,         sterling ] };
-  key <AD11> { [            5,      percent,        EuroSign,              yen ] };
-  key <AD12> { [            6,    ampersand,     asciicircum,       dead_caron ] };
+  key <AD06> { [            4,       dollar,            cent,         sterling ] };
+  key <AD07> { [            5,      percent,        EuroSign,              yen ] };
+  key <AD08> { [            6,    ampersand,     asciicircum,       dead_caron ] };
+  key <AD09> { [            j,            J,          igrave,           Igrave ] };
+  key <AD10> { [            l,            L,         lstroke,          Lstroke ] };
+  key <AD11> { [            u,            U,          uacute,           Uacute ] };
+  key <AD12> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
 
 
   key <CAPS> { [    BackSpace,    BackSpace                                    ] };
@@ -61,13 +61,13 @@ xkb_symbols "latin" {
   key <AC03> { [            s,            S,          ssharp                   ] };
   key <AC04> { [            t,            T,           U0167,            U0166 ] };
   key <AC05> { [            d,            D,           U00B0                   ] };
-  key <AC06> { [            h,            H,         hstroke,          Hstroke ] };
-  key <AC07> { [            n,            N,          ntilde,           Ntilde ] };
-  key <AC08> { [            e,            E,          eacute,           Eacute ] };
-  key <AC09> { [            i,            I,          iacute,           Iacute ] };
-  key <AC10> { [            1,       exclam,      exclamdown                   ] };
-  key <AC11> { [            2,     quotedbl                                    ] };
-  key <AC12> { [            3,   numbersign                                    ] };
+  key <AC06> { [            1,       exclam,      exclamdown                   ] };
+  key <AC07> { [            2,     quotedbl                                    ] };
+  key <AC08> { [            3,   numbersign                                    ] };
+  key <AC09> { [            h,            H,         hstroke,          Hstroke ] };
+  key <AC10> { [            n,            N,          ntilde,           Ntilde ] };
+  key <AC11> { [            e,            E,          eacute,           Eacute ] };
+  key <AC12> { [            i,            I,          iacute,           Iacute ] };
 
 
   key <LFSH> { [      Shift_L,      Shift_L,       Caps_Lock,        Caps_Lock ] };
@@ -77,11 +77,11 @@ xkb_symbols "latin" {
   key <AB03> { [            c,            C,          scaron,           Scaron ] };
   key <AB04> { [            v,            V,              oe,               OE ] };
   key <AB05> { [            b,            B,      dead_breve                   ] };
-  key <AB06> { [            k,            K,  dead_abovering                   ] };
-  key <AB07> { [            m,            M,     dead_macron                   ] };
-  key <AB08> { [            o,            O                                    ] };
-  key <AB09> { [       period,        comma,         greater,             less ] };
-  key <AB10> { [            0,     asterisk                                    ] };
+  key <AB06> { [            0,     asterisk                                    ] };
+  key <AB07> { [       period,        comma,         greater,             less ] };
+  key <AB08> { [            k,            K,  dead_abovering                   ] };
+  key <AB09> { [            m,            M,     dead_macron                   ] };
+  key <AB10> { [            o,            O                                    ] };
   key <RTSH> { [ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift,ISO_Level3_Shift] };
 
   key <PRSC> { [          bar,    brokenbar                                    ] };

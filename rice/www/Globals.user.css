@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      3.3.6
+@version      3.3.7
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -75,17 +75,19 @@
 		}
 	}
 
-	/* background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082) !important;
-    animation: filter 6s linear infinite !important */
+	/*  animation: filter 6s linear infinite !important */
 	@keyframes filter {
 		0% {
 			filter: hue-rotate(360deg) sepia(0);
+            background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
 		}
 		50% {
 			filter: hue-rotate(0) sepia(50%);
+            background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
 		}
 		100% {
 			filter: hue-rotate(360deg) sepia(0);
+            background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
 		}
 	}
 
@@ -95,21 +97,31 @@
 		}
 		20% {
 			transform: rotate(-20deg);
+            filter: saturate(100%)
 		}
 		40% {
 			transform: rotate(1100deg);
+            filter: saturate(150%)
 		}
 		50% {
 			transform: rotate(1080deg);
+            filter: saturate(100%)
 		}
-		60% {
+		55% {
+			transform: rotate(1080deg);
+            filter: saturate(100%)
+		}
+		65% {
 			transform: rotate(1100deg);
+            filter: saturate(100%)
 		}
-		80% {
+		85% {
 			transform: rotate(-20deg);
+            filter: saturate(150%)
 		}
 		100% {
 			transform: rotate(0deg);
+            filter: saturate(100%)
 		}
 	}
     /* animation: danger 1s linear infinite */
