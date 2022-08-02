@@ -125,16 +125,28 @@ theme.titlebar_minimize_button_normal_hover = icon_dir .. 'minimize_focus_hover.
 theme.titlebar_minimize_button_focus_hover  = icon_dir .. 'minimize_focus_hover.svg'
 
 -- Maximized Button (While Window is Maximized)
-theme.titlebar_maximized_button_normal_active = icon_dir .. 'normal.svg'
-theme.titlebar_maximized_button_focus_active  = icon_dir .. 'maximized_focus.svg'
-theme.titlebar_maximized_button_normal_active_hover = icon_dir .. 'maximized_focus_hover.svg'
-theme.titlebar_maximized_button_focus_active_hover  = icon_dir .. 'maximized_focus_hover.svg'
+theme.titlebar_maximized_button_normal_active = icon_dir .. 'maximized_active.svg'
+theme.titlebar_maximized_button_focus_active  = icon_dir .. 'maximized_active.svg'
+theme.titlebar_maximized_button_normal_active_hover = icon_dir .. 'maximized_active_hover.svg'
+theme.titlebar_maximized_button_focus_active_hover  = icon_dir .. 'maximized_active_hover.svg'
 
 -- Maximized Button (While Window is not Maximized)
 theme.titlebar_maximized_button_normal_inactive = icon_dir .. 'normal.svg'
 theme.titlebar_maximized_button_focus_inactive  = icon_dir .. 'maximized_focus.svg'
 theme.titlebar_maximized_button_normal_inactive_hover = icon_dir .. 'maximized_focus_hover.svg'
 theme.titlebar_maximized_button_focus_inactive_hover  = icon_dir .. 'maximized_focus_hover.svg'
+
+-- Floating Button (While Window is Not Floating)
+theme.titlebar_floating_button_normal_active = icon_dir .. 'floating_active.svg'
+theme.titlebar_floating_button_focus_active  = icon_dir .. 'floating_active.svg'
+theme.titlebar_floating_button_normal_active_hover  = icon_dir .. 'floating_active_hover.svg'
+theme.titlebar_floating_button_focus_active_hover  = icon_dir .. 'floating_active_hover.svg'
+
+-- Floating Button (While Window is Floating)
+theme.titlebar_floating_button_normal_inactive = icon_dir .. 'normal.svg'
+theme.titlebar_floating_button_focus_inactive  = icon_dir .. 'floating_focus.svg'
+theme.titlebar_floating_button_normal_inactive_hover  = icon_dir .. 'floating_focus_hover.svg'
+theme.titlebar_floating_button_focus_inactive_hover  = icon_dir .. 'floating_focus_hover.svg'
 
 -- return theme
 return theme
