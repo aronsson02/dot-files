@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      3.3.7
+@version      4.0.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -18,18 +18,18 @@
 		--Foreground-Variant: #BEC8D1CC;
 		--Foreground-Dark: #BEC8D166;
 		--Foreground-Transparent: #FFFFFF66;
-		--Background: #2B2E30;
-		--Surface: #373B3E;
-		--Surface-Variant: #43484C;
+		--Background: #041A1F;
+		--Surface: #011C22;
+		--Surface-Variant: #02303B;
 		--Surface-Transparent: #00000066;
-		--Primary: #47DFD3;
-		--Primary-Dark: #31DBCE;
-        --Primary-Transparent: #47DFD380;
-		--Secondary: #E12885;
-		--Secondary-Transparent: #E1288580;
-		--Mast: #444;
-		--Mast-Variant: #555;
-		--Mast-Dark: #333;
+		--Primary: #1CCFEA;
+		--Primary-Dark: #12AAC1;
+        --Primary-Transparent: #1CCFEA80;
+		--Secondary: #EA1CCF;
+		--Secondary-Transparent: #EA1CCF80;
+		--Mast: var(--Surface);
+		--Mast-Variant: var(--Surface-Variant);
+		--Mast-Dark: var(--Background);
 		--grey: #808080;
 		--red: #F44336;
 		--orange: #EA9D1C;
@@ -52,7 +52,7 @@
 		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
-		--Anim-Google-One: google-one 5s ease infinite;
+		--Anim-Google-One: google-one 6s ease infinite;
 		--Spinner: var(--Primary) transparent;
 	}
 

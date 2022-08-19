@@ -94,7 +94,9 @@
     ytd-multi-page-menu-renderer,
     ytd-simple-menu-header-renderer,
     ytd-account-settings,
-    #contentContainer.tp-yt-app-drawer
+    #contentContainer.tp-yt-app-drawer,
+    #masthead,
+    #guide-wrapper.ytd-app
     {
         background-color: transparent !important;
         background-image: none !important;
@@ -103,7 +105,8 @@
 
     #scroll-button-forward,
     #scroll-button-back,
-    #toast
+    #toast,
+    #sync-button.ytd-macro-markers-list-renderer
     {
         background-color: transparent !important;
         background-image: none !important;
@@ -111,7 +114,9 @@
     }
 
     #container.ytd-searchbox,
-    paper-listbox
+    paper-listbox,
+    ytd-macro-markers-list-item-renderer:hover,
+    ytd-macro-markers-list-item-renderer[active]
     {
         background: none !important
     }
@@ -141,6 +146,48 @@
     #show-more-button.ytd-rich-shelf-renderer
     {
         border: none !important
+    }
+
+    ytd-engagement-panel-section-list-renderer
+    {
+        border-radius: var(--Rounding);
+        overflow: hidden
+    }
+
+    #header.ytd-engagement-panel-title-header-renderer
+    {
+        background: linear-gradient(to bottom, var(--Background), var(--Surface))
+    }
+
+    #time.ytd-macro-markers-list-item-renderer
+    {
+        background: linear-gradient(to bottom, var(--Surface), var(--Surface-Variant))
+    }
+
+    #active-indicator.ytd-macro-markers-list-item-renderer
+    {
+        background: radial-gradient(transparent, var(--Primary) 50%)
+    }
+
+    #left-arrow-button.yt-chip-cloud-renderer,
+    #right-arrow-button.yt-chip-cloud-renderer
+    {
+        background: var(--Background);
+    }
+
+    yt-chip-cloud-renderer[is-dark-theme] #right-arrow.yt-chip-cloud-renderer:before
+    {
+        background: linear-gradient(to left, var(--Background, var(--yt-spec-general-background-a)) 10%, rgba(24, 24, 24, 0) 90%);
+    }
+
+    yt-chip-cloud-renderer[is-dark-theme] #left-arrow.yt-chip-cloud-renderer:after
+    {
+        background: linear-gradient(to right, var(--Background, var(--yt-spec-general-background-a)) 10%, rgba(24, 24, 24, 0) 90%);
+    }
+
+    ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer
+    {
+        outline: 2px solid var(--Primary);
     }
 
     .sbpqs_a,
@@ -210,14 +257,12 @@
     .ytp-play-progress.ytp-swatch-background-color
     {
         background: linear-gradient(to right, var(--Foreground-Dark), var(--Foreground)) !important;
-        height: 125% !important
     }
 
     #secondaryProgress,
     .ytp-load-progress
     {
         background: linear-gradient(to right, var(--Foreground-Dark), var(--Foreground-Variant)) !important;
-        height: 125% !important
     }
 
     #progressContainer,
@@ -228,7 +273,8 @@
         background-color: var(--Surface-Variant) !important
     }
 
-    paper-button.ytd-subscribe-button-renderer
+    paper-button.ytd-subscribe-button-renderer,
+    ytd-engagement-panel-section-list-renderer:not([modern-panels]) #content.ytd-engagement-panel-section-list-renderer
     {
         background-color: var(--Surface) !important
     }
@@ -486,23 +532,11 @@
         background-color: rgba(0, 0, 0, 0) !important;
     }
 
-    #masthead
-    {
-        background-color: var(--Mast) !important;
-        box-shadow: var(--Mast-Shadow) !important
-    }
-
     ytd-settings-sidebar-renderer,
     ytd-mini-guide-renderer
     {
         background-color: var(--Mast-Dark) !important;
         box-shadow: var(--Mast-Shadow) !important
-    }
-
-    #guide-wrapper.ytd-app
-    {
-        box-shadow: var(--Mast-Shadow) !important;
-        background-image: linear-gradient(var(--Mast-Dark) 25%, transparent 75%) !important
     }
 
     ytd-mini-guide-entry-renderer
@@ -517,8 +551,7 @@
 
     #search-form
     {
-        background-color: var(--Mast-Variant) !important;
-        box-shadow: var(--Mast-Variant-Shadow) inset !important;
+        background: radial-gradient(var(--Surface), transparent 75%);
         border-radius: var(--Rounding) !important;
         overflow: hidden;
     }
@@ -622,7 +655,8 @@
         fill: var(--Primary) !important;
     }
 
-    .ytp-swatch-color
+    .ytp-swatch-color,
+    #time.ytd-macro-markers-list-item-renderer
     {
         color: var(--Primary) !important;
     }

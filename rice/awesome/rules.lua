@@ -74,6 +74,7 @@ function rules.create(clientkeys, clientbuttons)
             },
             name = {
                "Event Tester",
+               "Direkteteksting",
                "Steam Guard - Computer Authorization Required"
             },
             role = {
