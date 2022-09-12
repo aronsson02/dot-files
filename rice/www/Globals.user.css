@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.0.0
+@version      4.0.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -22,6 +22,7 @@
 		--Surface: #011C22;
 		--Surface-Variant: #02303B;
 		--Surface-Transparent: #00000066;
+		--Surface-Alternative: #25283f;
 		--Primary: #1CCFEA;
 		--Primary-Dark: #12AAC1;
         --Primary-Transparent: #1CCFEA80;
@@ -36,6 +37,7 @@
 		--dark-orange: #1F1504;
 		--green: #00E676;
 		--blue: #120056;
+		--yellow: #f1ff52;
 		--blur: blur(40px); /* backdrop-filter: var(--blur) */
 		--blur-variant: blur(5px);
 		--blur-dark: blur(40px) brightness(66%);

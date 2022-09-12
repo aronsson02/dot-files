@@ -91,7 +91,7 @@ function rules.create(clientkeys, clientbuttons)
       {
          rule_any = {
             class = {
-               "Terraria.bin.x86",
+               "xxxx",
             },
          }, properties = {fullscreen = true}
       },

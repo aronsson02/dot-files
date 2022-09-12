@@ -1,6 +1,6 @@
 [%General]
 author=l4k1, based on KvAdaptaDark by Tsu Jan
-comment=KDE-Story-Dark-Kvantum
+comment=KDE-Story-Kvantum
 x11drag=all
 alt_mnemonic=true
 left_tabs=false
@@ -75,23 +75,23 @@ tooltip_blur_radius=2
 
 [GeneralColors]
 window.color=#000000
-base.color=#373B3E38
-alt.base.color=#373B3E38
-button.color=#424242
-light.color=#373B3E38
-mid.light.color=#151515
-dark.color=#373B3E38
-mid.color=#373B3E38
-highlight.color=#47DFD345
-inactive.highlight.color=#E1288538
+base.color=#011C2238
+alt.base.color=#011C2238
+button.color=#BEC8D1
+light.color=#011C2238
+mid.light.color=#011C2238
+dark.color=#011C2238
+mid.color=#011C2238
+highlight.color=#1CCFEA45
+inactive.highlight.color=#12AAC138
 text.color=#BEC8D1
 window.text.color=#BEC8D1
-button.text.color=#47DFD3
+button.text.color=#1CCFEA
 disabled.text.color=#BEC8D180
 tooltip.text.color=#BEC8D1
 highlight.text.color=#FFFFFF
-link.color=#47DFD3
-link.visited.color=#E12885
+link.color=#1CCFEA
+link.visited.color=#EA1CCF
 progress.indicator.text.color=#BEC8D1
 
 [Hacks]
