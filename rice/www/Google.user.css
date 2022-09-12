@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.5.0
+@version      3.5.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1388,7 +1388,8 @@
         width: 100vw !important;
     }
 
-    .tab-header.style-scope.ytmusic-player-page.iron-selected
+    .tab-header.style-scope.ytmusic-player-page.iron-selected,
+    ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle
     {
         background-color: var(--Surface-Variant) !important;
     }
@@ -1457,7 +1458,9 @@
     }
 
     ytmusic-player-bar,
-    .style-scope.ytmusic-popup-container
+    .style-scope.ytmusic-popup-container,
+    ytmusic-av-toggle[toggle-disabled] .video-button.ytmusic-av-toggle,
+    .av-toggle.ytmusic-av-toggle
     {
         background-color: var(--Surface);
     }
