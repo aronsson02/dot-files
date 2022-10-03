@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.5.4
+@version      3.5.5
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -94,7 +94,6 @@
 	ytd-simple-menu-header-renderer,
 	ytd-account-settings,
 	#contentContainer.tp-yt-app-drawer,
-	#masthead,
 	#guide-wrapper.ytd-app {
 		background-color: transparent !important;
 		background-image: none !important;
@@ -103,10 +102,16 @@
 	#scroll-button-forward,
 	#scroll-button-back,
 	#toast,
-	#sync-button.ytd-macro-markers-list-renderer {
+	#sync-button.ytd-macro-markers-list-renderer,
+	#scrim.tp-yt-app-drawer {
 		background-color: transparent !important;
 		background-image: none !important;
 		backdrop-filter: var(--blur-variant) !important;
+	}
+	#masthead {
+		background-color: transparent !important;
+		background-image: none !important;
+		backdrop-filter: var(--blur) !important;
 	}
 	#container.ytd-searchbox,
 	paper-listbox,
@@ -479,7 +484,7 @@
 		background-color: var(--Mast) !important
 	}
 	#search-form {
-		background: radial-gradient(var(--Surface), transparent 75%);
+		background-color: var(--Surface-Transparent);
 		border-radius: var(--Rounding) !important;
 		overflow: hidden;
 	}
@@ -1159,11 +1164,10 @@
 	.docs-gm .modal-dialog,
 	.docs-gm .docs-offline-optinpromo.jfk-bubble,
 	.docs-gm .docs-sync-indicator-popup.jfk-bubble,
-	.modal-dialog-content,
-	.modal-dialog-title,
 	.apps-shortcutshelpcontentimpl-container,
 	.apps-shortcutshelppopup,
-	.docs-homescreen-floater-header-cell .docsshared-menu-bubble {
+	.docs-homescreen-floater-header-cell .docsshared-menu-bubble,
+	.docs-material-button-hairline-primary.docs-material-button {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -1256,8 +1260,13 @@
 	.waffle-theme-container-element,
 	.apps-navigationwidget-item:hover,
 	.docs-homescreen-fab,
-	.docs-homescreen-grid-item {
+	.docs-homescreen-grid-item,
+	.docs-material #docs-equationtoolbar,
+	.docs-material .docs-printpreview-toolbar {
 		background-color: var(--Surface) !important;
+	}
+	.docs-horizontal-button-group .docs-material-button-selected {
+		background-color: var(--Surface-Transparent) !important;
 	}
 	.docs-gm .modal-dialog,
 	.docs-gm .modal-dialog-content,
@@ -1283,7 +1292,10 @@
 	.waffle-current-theme,
 	.apps-shortcutshelpcontentimpl-dialog-title,
 	.apps-actiondatawidget-content-header,
-	.apps-shortcutshelpcontentimpl-input {
+	.apps-shortcutshelpcontentimpl-input,
+	.docs-horizontal-button-group .docs-material-button:not([class*="docs-material-button-selected"]),
+	.docs-material .goog-toolbar-button,
+	.docs-material .goog-toolbar-menu-button {
 		color: var(--Foreground) !important;
 	}
 	.docs-gm .docs-menubar .goog-control,
@@ -1301,7 +1313,8 @@
 	.apps-actiondatawidget-shortcut-key,
 	.apps-actiondatawidget-override-keys-on,
 	.apps-navigationwidget,
-	.apps-shortcutshelpcontentimpl-legacy-label {
+	.apps-shortcutshelpcontentimpl-legacy-label,
+	.kix-pagesetupdialog-content-canvas .kix-pagesetupdialog-canvas-description-text {
 		color: var(--Foreground-Variant) !important;
 	}
 	.docs-gm .docos-new-comment-button,
@@ -1313,7 +1326,8 @@
 	.apps-navigationwidget-item-selected,
 	.apps-shortcutshelpcontentimpl-link,
 	.apps-shortcutshelpcontentimpl-link:active,
-	.docs-gm .docs-sheet-active-tab .docs-sheet-tab-name {
+	.docs-gm .docs-sheet-active-tab .docs-sheet-tab-name,
+	.docs-horizontal-button-group .docs-material-button.docs-material-button-selected .docs-material-button-content {
 		color: var(--Primary) !important;
 	}
 	.docs-gm .modal-dialog .goog-buttonset-action,
@@ -1335,7 +1349,8 @@
 	.docs-material .goog-toolbar-combo-button:hover,
 	.docs-material .goog-toolbar-button:hover,
 	.waffle-sidebar-container .goog-flat-menu-button,
-	.waffle-theme-thumbnail.waffle-theme-active {
+	.waffle-theme-thumbnail.waffle-theme-active,
+	.docs-horizontal-button-group .docs-material-button-selected {
 		border: 1px solid var(--Primary) !important;
 	}
 	.rowcol-dragger-handle-bar,
@@ -1394,10 +1409,14 @@
 	#waffle-grid-container {
 		filter: invert(1) hue-rotate(180deg) !important;
 	}
-	.d-u-Q {
+	.d-u-Q,
+	.modal-dialog-content,
+	.modal-dialog-title {
 		background: none
 	}
-	.docs-title-input-label {
+	.docs-title-input-label,
+	.goog-menuitem-disabled,
+	.apps-hoverable-menu-separator-container {
 		display: none !important
 	}
 	.docs-gm .docs-material .goog-toolbar-button-active .docs-icon-img,
@@ -2064,7 +2083,108 @@ url-prefix("https://www.google.se") {
 	/*\ ---Google Account Menu--- */
 }
 @-moz-document url-prefix("https://drive.google.com") {
-	.gb_8e {
+	.XV0XSd.KkxPLb {
+		--dt-background: #fff;
+		--dt-on-background: rgb(60, 64, 67);
+		--dt-on-background-secondary: rgb(95, 99, 104);
+		--dt-outline: rgb(218, 220, 224);
+		--dt-outline-variant: rgb(128, 134, 139);
+		--dt-on-disabled: #b5b6b8;
+		--dt-disabled: #e8e8e8;
+		--dt-inverse-on-surface: rgb(218, 220, 224);
+		--dt-inverse-surface: rgb(32, 33, 36);
+		--dt-on-surface-variant: rgb(95, 99, 104);
+		--dt-on-surface-secondary: rgb(95, 99, 104);
+		--dt-on-surface: rgb(60, 64, 67);
+		--dt-surface-variant: rgb(241, 243, 244);
+		--dt-surface1: var(--Surface-Variant);
+		--dt-surface1-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+		--dt-surface2: #fff;
+		--dt-surface2-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+		--dt-surface3: #fff;
+		--dt-surface3-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+		--dt-surface4: #fff;
+		--dt-surface4-shadow: 0 2px 3px 0 rgba(60, 64, 67, 0.3), 0 6px 10px 4px rgba(60, 64, 67, 0.15);
+		--dt-surface5: #fff;
+		--dt-surface5-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
+		--dt-surface: var(--Primary);
+		--dt-scrim: rgba(32, 33, 36, 0.6);
+		--dt-on-primary-container: rgb(60, 64, 67);
+		--dt-on-primary: #fff;
+		--dt-primary-action-state-layer: rgb(25, 103, 210);
+		--dt-primary-action-stateful: rgb(24, 90, 188);
+		--dt-primary-action: rgb(25, 103, 210);
+		--dt-primary-container-icon: rgb(25, 103, 210);
+		--dt-primary-container-link: rgb(25, 103, 210);
+		--dt-primary-container: rgb(232, 240, 254);
+		--dt-primary-icon: #fff;
+		--dt-primary-link: #fff;
+		--dt-primary-outline: rgb(24, 90, 188);
+		--dt-primary: rgb(26, 115, 232);
+		--dt-on-secondary-container: rgb(60, 64, 67);
+		--dt-on-secondary: #fff;
+		--dt-secondary-action-state-layer: rgb(60, 64, 67);
+		--dt-secondary-action-stateful: rgb(32, 33, 36);
+		--dt-secondary-action: rgb(60, 64, 67);
+		--dt-secondary-container-icon: rgb(60, 64, 67);
+		--dt-secondary-container-link: rgb(25, 103, 210);
+		--dt-secondary-container: rgb(166, 166, 166);
+		--dt-secondary-icon: #fff;
+		--dt-secondary-link: #fff;
+		--dt-secondary-outline: rgb(60, 64, 67);
+		--dt-secondary: rgb(60, 64, 67);
+		--dt-on-tertiary-container: rgb(60, 64, 67);
+		--dt-on-tertiary: #fff;
+		--dt-tertiary-action-state-layer: rgb(19, 115, 51);
+		--dt-tertiary-action-stateful: rgb(13, 101, 45);
+		--dt-tertiary-action: rgb(19, 115, 51);
+		--dt-tertiary-container-icon: rgb(19, 115, 51);
+		--dt-tertiary-container-link: rgb(19, 115, 51);
+		--dt-tertiary-container: rgb(236, 236, 236);
+		--dt-tertiary-icon: #fff;
+		--dt-tertiary-link: #fff;
+		--dt-tertiary-outline: rgb(19, 115, 51);
+		--dt-tertiary: rgb(40, 162, 77);
+		--dt-on-neutral-container: rgb(60, 64, 67);
+		--dt-on-neutral: #a82121;
+		--dt-neutral-action-state-layer: rgb(60, 64, 67);
+		--dt-neutral-action-stateful: rgb(32, 33, 36);
+		--dt-neutral-action: rgb(60, 64, 67);
+		--dt-neutral-container-icon: rgb(60, 64, 67);
+		--dt-neutral-container-link: rgb(25, 103, 210);
+		--dt-neutral-container: rgb(241, 243, 244);
+		--dt-neutral-icon: #fff;
+		--dt-neutral-link: #fff;
+		--dt-neutral-outline: rgb(60, 64, 67);
+		--dt-neutral: rgb(60, 64, 67);
+		--dt-error-action-state-layer: rgb(197, 34, 31);
+		--dt-error-action-stateful: rgb(179, 20, 18);
+		--dt-error-action: rgb(197, 34, 31);
+		--dt-error-container-icon: rgb(197, 34, 31);
+		--dt-error-container-link: rgb(197, 34, 31);
+		--dt-error-container: rgb(252, 232, 230);
+		--dt-error-icon: #fff;
+		--dt-error-link: #fff;
+		--dt-error-outline: rgb(179, 20, 18);
+		--dt-error: rgb(217, 48, 37);
+		--dt-on-error-container: rgb(60, 64, 67);
+		--dt-on-error: #c44545;
+		--dt-on-warning-container: rgb(60, 64, 67);
+		--dt-on-warning: rgb(32, 33, 36);
+		--dt-warning-action-state-layer: rgb(234, 134, 0);
+		--dt-warning-action-stateful: rgb(32, 33, 36);
+		--dt-warning-action: rgb(60, 64, 67);
+		--dt-warning-container-icon: rgb(60, 64, 67);
+		--dt-warning-container-link: rgb(60, 64, 67);
+		--dt-warning-container: rgb(254, 247, 224);
+		--dt-warning-icon: rgb(60, 64, 67);
+		--dt-warning-link: rgb(60, 64, 67);
+		--dt-warning-outline: rgb(234, 134, 0);
+		--dt-warning: rgb(249, 171, 0);
+	}
+	.gb_8e,
+	.cloudsearch_suggestion_overlay,
+	.a-AAFP6c-S-Fa-k {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -2091,12 +2211,24 @@ url-prefix("https://www.google.se") {
 	}
 	.Kk7lMc-Yb-Il-j,
 	.h-sb-Ic.g-d.g-d-wd:hover,
-	.s55KNe .jGNTYb {
+	.s55KNe .jGNTYb,
+	.YkfxEe {
 		background-color: var(--Surface-Variant) !important;
 	}
-	.gb_Jd {
+	.XV0XSd.KkxPLb #gb .gb_Se:not(:focus-within),
+	.XV0XSd.KkxPLb #gb .a-WErN3d-OEtP0:not(:focus-within),
+	.gb_Se.gb_Te,
+	.UHqLAb .vARBRb[aria-selected="true"],
+	.UHqLAb .vARBRb:focus,
+	.dc[aria-selected="true"],
+	.dc:focus {
+		background-color: var(--Surface-Transparent) !important;
+	}
+	.gb_Jd,
+	.XV0XSd .ak25Me {
 		background-color: var(--Mast) !important;
-		box-shadow: var(--Mast-Shadow) !important
+		box-shadow: var(--Mast-Shadow) !important;
+		border: none !important
 	}
 	#aso_search_form_anchor {
 		background-color: var(--Mast-Variant) !important;
@@ -2130,11 +2262,16 @@ url-prefix("https://www.google.se") {
 	.Yb-Il-d-Pb.Yb-Il-d-W .Yb-Il-d-c-Nd,
 	.Kk7lMc-Wc-Tn .Yb-Il-d-W .Yb-Il-d-c-Nd,
 	.Kk7lMc-Wc-Tn .Yb-Il-d-pb .Yb-Il-d-c-Nd,
-	.Kk7lMc-Wc-Tn .Yb-Il-d-ha.Yb-Il-d-W .Yb-Il-d-c-Nd {
+	.Kk7lMc-Wc-Tn .Yb-Il-d-ha.Yb-Il-d-W .Yb-Il-d-c-Nd,
+	.PolqHc,
+	.L202Xe,
+	.a-AAFP6c-S-Fa-k-Qc,
+	.XV0XSd .tb9Ntf {
 		background-color: var(--Background) !important;
 	}
 	.a-ec-Gd .Kzazxf.x6jRSb,
-	.h-sb-Ic.g-d.g-d-Y {
+	.h-sb-Ic.g-d.g-d-Y,
+	.a-AAFP6c-S-Fa-k-Gb .h-De-Vb {
 		background-color: var(--Primary) !important;
 	}
 	.a-U-ye-ha > .a-U-J,
@@ -2150,7 +2287,9 @@ url-prefix("https://www.google.se") {
 	.a-nEbBXb .g-d:not(.g-d-db):not(.g-d-R).g-d-Pb,
 	.a-Va-Zb-ga,
 	.gb_ge,
-	.gb_ta svg {
+	.gb_ta svg,
+	.Ke58ze,
+	.yYWAMb {
 		color: var(--Foreground) !important;
 	}
 	.WYuW0e,
@@ -2163,13 +2302,16 @@ url-prefix("https://www.google.se") {
 	.h-R-w-d.g-Qb,
 	.l-u-V,
 	.h-v-x,
-	.a-U-J-x {
+	.a-U-J-x,
+	.gb_Se:not(.gb_Te) input::placeholder,
+	.a-AAFP6c-S-Fa-k-tT0elb {
 		color: var(--Foreground-Variant) !important;
 	}
 	.s55KNe:not(.KBj6Qd) .GZwC2b .jGNTYb,
 	.aabwZd:not(.KBj6Qd) .GZwC2b,
 	.a-Ws-nb-Oh-Ma-A,
-	.le-Ba-d {
+	.le-Ba-d,
+	.h1Utz {
 		color: var(--Primary) !important;
 	}
 	.a-Ws-nb-Oh-Ma-A:hover,
@@ -2192,7 +2334,10 @@ url-prefix("https://www.google.se") {
 	.a-Cd-Ba-j,
 	.le-Ba,
 	.Ea-oa,
-	.a-ub-Gd {
+	.a-ub-Gd,
+	.cloudsearch_suggestion_filter_section,
+	.cloudsearch_suggestion_footer_section,
+	.L202Xe {
 		border: none !important;
 	}
 	.ta-gc-np-Nd {
@@ -2206,6 +2351,15 @@ url-prefix("https://www.google.se") {
 	}
 	:focus {
 		outline: var(--Secondary) solid 1px;
+	}
+	.UHqLAb .vARBRb[aria-selected="true"],
+	.UHqLAb .vARBRb:focus,
+	.dc[aria-selected="true"],
+	.dc:focus {
+		outline: none;
+	}
+	.a-AAFP6c-S-Fa-k img {
+		filter: invert(1) hue-rotate(180deg) opacity(0.5)
 	}
 	.gb_0a {
 		animation: var(--Anim-Google-One) !important;
@@ -2272,11 +2426,15 @@ url-prefix("https://www.google.se/maps"),
 url-prefix("https://www.google.no/maps") {
 	.app-imagery-mode .uCBduRuX4WR__button,
 	.app-imagery-mode .widget-zoom-button,
+	.app-imagery-mode .xsYFzc,
 	.app-imagery-mode .widget-expand-button-pegman,
 	.app-imagery-mode .scene-footer,
 	.app-imagery-mode .widget-tilt-button,
 	.app-imagery-mode .widget-mylocation-button,
 	.app-imagery-mode .mapsTactileClientGlobeGlobetoggle__button,
+	.app-imagery-mode .uSzaJe,
+	.app-imagery-mode .WzvKIe,
+	.app-imagery-mode .DMPNfb,
 	.mapsConsumerUiTiltInternalTilt__widget-tilt-button,
 	.widget-reveal-card,
 	.gb_5c.gb_Pg.gb_i,
@@ -2328,6 +2486,13 @@ url-prefix("https://www.google.no/maps") {
 	.i4ewOd-LQLjdd {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
+	}
+	.xsYFzc,
+	.WzvKIe,
+	.DMPNfb,
+	.pzaG1c {
+		background: none !important;
+		backdrop-filter: var(--blur-bright-variant) !important;
 	}
 	.searchbox,
 	.suggestions,
