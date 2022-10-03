@@ -3,23 +3,26 @@
 		--Foreground-Variant: #BEC8D1CC;
 		--Foreground-Dark: #BEC8D166;
 		--Foreground-Transparent: #FFFFFF66;
-		--Background: #2B2E30;
-		--Surface: #373B3E;
-		--Surface-Variant: #333;
+		--Background: #041A1F;
+		--Surface: #011C22;
+		--Surface-Variant: #02303B;
 		--Surface-Transparent: #00000066;
-		--Primary: #47DFD3;
-		--Primary-Variant: #E12885;
-		--Primary-Dark: #31DBCE;
-        --Primary-Transparent: #47DFD380;
-		--Mast: #444;
-		--Mast-Variant: #555;
-		--Mast-Dark: #333;
+		--Surface-Alternative: #25283f;
+		--Primary: #1CCFEA;
+		--Primary-Dark: #12AAC1;
+        --Primary-Transparent: #1CCFEA80;
+		--Secondary: #EA1CCF;
+		--Secondary-Transparent: #EA1CCF80;
+		--Mast: var(--Surface);
+		--Mast-Variant: var(--Surface-Variant);
+		--Mast-Dark: var(--Background);
 		--grey: #808080;
 		--red: #F44336;
 		--orange: #EA9D1C;
 		--dark-orange: #1F1504;
 		--green: #00E676;
 		--blue: #120056;
+		--yellow: #f1ff52;
 		--blur: blur(40px); /* backdrop-filter: var(--blur) */
 		--blur-variant: blur(5px);
 		--blur-dark: blur(40px) brightness(66%);
@@ -36,8 +39,6 @@
 		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
-		--Anim-Google-One: google-one 6s ease infinite;
-		--Spinner: var(--Primary) transparent;
 }
 @keyframes hue-rotate {
     0% { filter: hue-rotate(0deg); }
@@ -97,26 +98,22 @@
 ::placeholder {
     opacity: 0 !important;
 }
-#customizationui-widget-panel{
-    background-color: transparent !important;
-    backdrop-filter: blur(2px) brightness(66%) !important;
-}
-panelview {
-    background: var(--Background) !important;
-}
+
 /* Status Color Change */
 #statuspanel #statuspanel-label {
   color: var(--Foreground) !important;
   background-color: var(--Surface-Transparent) !important;
   border: none !important;
-  backdrop-filter: blur(20px) brightness(66%) !important;
+  backdrop-filter: var(--blur-dark-variant) !important;
 }
-/* URL bar blur*/
 #urlbar[open] > #urlbar-background{
-  backdrop-filter: blur(20px) brightness(66%) !important;
+  background-color: var(--Surface) !important;}
+/* URL bar blur*/
+/*#urlbar[open] > #urlbar-background{
+  backdrop-filter: var(--blur-dark) !important;
   background-color: transparent !important;
   border-color: transparent !important;
-}
+}*/
 /*#titlebar {
   margin-top: -30px !important;
   opacity: 0 !important;
@@ -133,6 +130,17 @@ panelview {
 #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional {
   display: inherit !important;
 }*/
+
+ /* Suppress Connecting/Waiting/Reading/Transerring */
+#statuspanel[type="status"] {
+   display: none !important;
+ }
+
+ /* Suppress Link Destination Overlay */
+ #statuspanel[type="overLink"] {
+   display: none !important;
+ }
+
 /*
   _____ _   ___ ___
  |_   _/_\ | _ ) __|
@@ -429,10 +437,18 @@ toolbarseparator {
   border: none !important;
 }
 
+panelview {
+    background: var(--Surface-Transparent) !important;
+}
+
+:is(menupopup, panel)[type="arrow"] {
+  --panel-background: transparent !important;
+}
+
 /*Context Menu*/
 menupopup {
 	-moz-appearance: none !important;
-	background-color: var(--mff-menupopup-bg) !important;
+	background-color: transparent !important;
   color: var(--mff-menupopup-color) !important;
 	background-image: none !important;
   box-shadow: none !important;

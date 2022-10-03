@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.0.1
+@version      4.1.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,9 +14,9 @@
 
 @-moz-document regexp(".*") {
 	:root {
-		--Foreground: #BEC8D1;
-		--Foreground-Variant: #BEC8D1CC;
-		--Foreground-Dark: #BEC8D166;
+		--Foreground: #FFFFFF;
+		--Foreground-Variant: #FFFFFFCC;
+		--Foreground-Dark: #FFFFFF66;
 		--Foreground-Transparent: #FFFFFF66;
 		--Background: #041A1F;
 		--Surface: #011C22;
@@ -136,6 +136,18 @@
 		}
 		100% {
 			background-color: var(--red);
+		}
+	}
+    /* animation: danger-text 1s linear infinite */
+    @keyframes danger-text {
+		0% {
+			color: var(--red);
+		}
+		50% {
+			color: var(--orange);
+		}
+		100% {
+			color: var(--red);
 		}
 	}
 }

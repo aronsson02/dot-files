@@ -100,10 +100,10 @@ function rules.create(clientkeys, clientbuttons)
       -- These clients make you switch to their tag when they appear
       {
          rule_any = {
-            class = {
-               "Firefox"
+            name = {
+               "Mozilla Firefox"
             },
-         }, properties = {switchtotag = true}
+         }, properties = {titlebars_enabled = false}
       },
 
       -- Visualizer

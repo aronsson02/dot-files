@@ -1,129 +1,217 @@
 :root {
-        --Foreground:   #FAFAFA;
-        --Foreground-Variant:   #FAFAFACC;
-        --Foreground-Dark:   #FAFAFA66;
-        --Foreground-Transparent:   #FFFFFF66;
-        --Background:   #212121;
-        --Surface:   #424242;
-        --Surface-Variant:   #626262;
-        --Surface-Transparent:   #00000066;
-        --Primary:   #00BFBF;
-        --Primary-Variant:   #00E6E6;
-        --Mast:   #512DA8;
-        --Mast-Variant:   #673AB7;
-        --Mast-Dark:   #311B92;
-        --grey:  #808080;
-        --red:   #F44336;
-        --orange:#EA9D1C;
-        --dark-orange:#1F1504;
-        --green: #00E676;
-        --blue: #120056;
-        --blur: blur(50px);
-        --blur-variant: blur(5px);
-        --blur-dark: blur(50px) brightness(66%);
-        --blur-dark-variant: blur(5px) brightness(66%);
+	--Foreground: #BEC8D1;
+	--Foreground-Variant: #BEC8D1CC;
+	--Foreground-Dark: #BEC8D166;
+	--Foreground-Transparent: #FFFFFF66;
+	--Background: #041A1F;
+	--Surface: #011C22;
+	--Surface-Variant: #02303B;
+	--Surface-Transparent: #00000066;
+	--Surface-Alternative: #25283f;
+	--Primary: #1CCFEA;
+	--Primary-Dark: #12AAC1;
+	--Primary-Transparent: #1CCFEA80;
+	--Secondary: #EA1CCF;
+	--Secondary-Transparent: #EA1CCF80;
+	--Mast: var(--Surface);
+	--Mast-Variant: var(--Surface-Variant);
+	--Mast-Dark: var(--Background);
+	--grey: #808080;
+	--red: #F44336;
+	--orange: #EA9D1C;
+	--dark-orange: #1F1504;
+	--green: #00E676;
+	--blue: #120056;
+	--yellow: #f1ff52;
+	--blur: blur(40px); /* backdrop-filter: var(--blur) */
+	--blur-variant: blur(5px);
+	--blur-dark: var(--blur) brightness(66%);
+	--blur-dark-variant: var(--blur-variant) brightness(66%);
+	--Mast-Shadow: 0 0 8px 1px var(--Background);
+	--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
+	--Rounding: 8px;
+	--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
+	--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;
+	--Rounding-Left: var(--Rounding) 0 0 var(--Rounding);
+	--Rounding-Right: 0 var(--Rounding) var(--Rounding) 0;
+	--Rounding-Variant: 16px;
+	--Rounding-Variant-Bottom: 0 0 var(--Rounding-Variant) var(--Rounding-Variant);
+	--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
+	--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
+	--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
 }
 * {
-    scrollbar-color: var(--Primary) var(--Background) !important;
-    scrollbar-width: none !important;
+	scrollbar-color: var(--Primary) var(--Background) !important;
+	scrollbar-width: none !important;
 }
 @keyframes hue-rotate {
-    0% { filter: hue-rotate(0deg); }
-    100%   { filter: hue-rotate(360deg); }
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
 }
 @keyframes filter {
-    0% {
-        filter: hue-rotate(360deg) sepia(0) ;
-    }
-    50% {
-        filter: hue-rotate(0) sepia(50%) ;
-    }
-    100%{
-        filter: hue-rotate(360deg) sepia(0) ;
-    }
+	0% {
+		filter: hue-rotate(360deg) sepia(0);
+	}
+	50% {
+		filter: hue-rotate(0) sepia(50%);
+	}
+	100% {
+		filter: hue-rotate(360deg) sepia(0);
+	}
 }
-@-moz-document url("about:home"),url(about:preferences),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
-  body{background-color:var(--Background)!important;--newtab-search-icon: transparent !important;}
-
-  a,a:visited,a:hover{color:#292D31!important}
-
+@-moz-document url("about:home"),
+url(about:preferences),
+url("about:blank"),
+url("about:newtab"),
+url("about:privatebrowsing") {
+	body {
+		background-color: var(--Background)!important;
+		--newtab-search-icon: transparent !important;
+	}
+	a,
+	a:visited,
+	a:hover {
+		color: #292D31!important
+	}
 	#newtab-search-text {
-	background-color: var(--Background) !important;
-	font-size: 18px !important;
-	color: var(--Foreground-Dark) !important;
-	box-shadow: none !important;
-	text-align: center !important;
-	border:none !important;
-	font-weight: bold !important;
-    }
-    .collapsible-section {
-        background-color: var(--Surface) !important;
-        border-radius: 16px !important;
-        box-shadow: 0 0 8px var(--Background) !important
-    }
-    .collapsible-section.active {
-        background-color: var(--Surface-Variant) !important;
-        border-radius: 16px !important;
-    }
-.non-collapsible-section {
-    display: none !important;
-}
-.search-wrapper input {
-    --newtab-textbox-focus-boxshadow: none !important;
-    padding-left: 20px !important;
-    padding-inline-end: 13px !important;
-  }
-
-.search-wrapper .logo-and-wordmark .wordmark {
-  display: none!important;
-}
-
-.search-wrapper .logo-and-wordmark {
-  margin-bottom: 40px!important;
-  padding-top: 60px!important;
-  filter: saturate(30%) opacity(50%)!important;
-}
-
-.search-button{background:none !important;}
-
-.prefs-button button {fill: #9BA8BB !important;}
-
-.prefs-button button:hover, .prefs-button button:focus {
-    background-color:  transparent !important; }
-
- .contentSearchSuggestionTable {display: none !important;}
-
+		background-color: var(--Background) !important;
+		font-size: 18px !important;
+		color: var(--Foreground-Dark) !important;
+		box-shadow: none !important;
+		text-align: center !important;
+		border: none !important;
+		font-weight: bold !important;
+	}
+	.collapsible-section {
+		background-color: var(--Surface) !important;
+		border-radius: 16px !important;
+		box-shadow: 0 0 8px var(--Background) !important
+	}
+	.collapsible-section.active {
+		background-color: var(--Surface-Variant) !important;
+		border-radius: 16px !important;
+	}
+	.non-collapsible-section {
+		display: none !important;
+	}
+	.customize-menu {
+		background-color: var(--Surface) !important
+	}
+	.top-site-outer .tile {
+		background-color: var(--Surface-Variant) !important
+	}
+	.search-wrapper input {
+		--newtab-textbox-focus-boxshadow: none !important;
+		padding-left: 20px !important;
+		padding-inline-end: 13px !important;
+	}
+	.search-wrapper .logo-and-wordmark .wordmark {
+		display: none!important;
+	}
+	.search-wrapper .logo-and-wordmark {
+		margin-bottom: 40px!important;
+		padding-top: 60px!important;
+		filter: saturate(30%) opacity(50%)!important;
+	}
+	.search-button {
+		background: none !important;
+	}
+	.prefs-button button {
+		fill: #9BA8BB !important;
+	}
+	.prefs-button button:hover,
+	.prefs-button button:focus {
+		background-color: transparent !important;
+	}
+	.contentSearchSuggestionTable {
+		display: none !important;
+	}
 }
 :root {
-
-    --in-content-border-active: var(--Primary) !important;
-    --in-content-border-active-shadow: none !important;
-    --in-content-page-background: var(--Background) !important;
+	--in-content-border-active: var(--Primary) !important;
+	--in-content-border-active-shadow: none !important;
+	--in-content-page-background: var(--Background) !important;
 }
-
-@-moz-document url("about:home"), url("about:newtab"){ .icon.icon-pin-small{ display: none !important } }
-
+@-moz-document url("about:home"),
+url("about:newtab") {
+	.icon.icon-pin-small {
+		display: none !important
+	}
+}
 /* uBlock Origin */
 @-moz-document url("moz-extension://cb34cddc-988c-418d-99ce-3e8e2acd7488/popup.html") {
-    body{background-color: var(--Background) !important; color: var(--Foreground) !important; }
-    h2 {background-color: var(--Background) !important; color: var(--Foreground) !important; font-weight: bold !important;}
-    span {color: var(--Foreground) !important;}
-    #extraTools {background-color: var(--Background) !important;}
-    #extraTools svg {fill: var(--Foreground) !important;}
-    #firewallContainer > div > span:first-child {background-color: var(--Background) !important; color: var(--Foreground) !important;}
-    #appinfo {display: none !important;}
-    #switch .fa-icon {fill: var(--Foreground) !important;}
-    body.off #switch .fa-icon {fill: var(--Foreground) !important;}
-    #rulesetTools .fa-icon {background-color: var(--Background) !important; fill: var(--Foreground) !important;}
-    #rulesetTools .fa-icon:hover {background-color: var(--Background) !important; fill: var(--Foreground) !important;}
-    #basicTools svg {fill: var(--Foreground) !important;}
-    #basicTools span:hover {fill: var(--Foreground) !important;}
-    #refresh {background-color: var(--Background) !important; fill: var(--Foreground) !important; border: none !important;}
-    #refresh svg:hover, #refresh svg:active {fill: var(--Foreground) !important;}
-    .nope {stroke: var(--Foreground) !important;}
-
-    #firewallContainer > div > span:nth-child(2), #firewallContainer > div > span:nth-child(3) {background-color: #191925 !important;}
-    #firewallContainer > div > span.allowRule.ownRule {background-color: #2ecc71 !important;}
-    #firewallContainer > div > span.blockRule.ownRule {background-color: #e74c3c !important;}
-    #firewallContainer > div > span.noopRule.ownRule {background-color: #555 !important;}
+	body {
+		background-color: var(--Background) !important;
+		color: var(--Foreground) !important;
+	}
+	h2 {
+		background-color: var(--Background) !important;
+		color: var(--Foreground) !important;
+		font-weight: bold !important;
+	}
+	span {
+		color: var(--Foreground) !important;
+	}
+	#extraTools {
+		background-color: var(--Background) !important;
+	}
+	#extraTools svg {
+		fill: var(--Foreground) !important;
+	}
+	#firewallContainer > div > span:first-child {
+		background-color: var(--Background) !important;
+		color: var(--Foreground) !important;
+	}
+	#appinfo {
+		display: none !important;
+	}
+	#switch .fa-icon {
+		fill: var(--Foreground) !important;
+	}
+	body.off #switch .fa-icon {
+		fill: var(--Foreground) !important;
+	}
+	#rulesetTools .fa-icon {
+		background-color: var(--Background) !important;
+		fill: var(--Foreground) !important;
+	}
+	#rulesetTools .fa-icon:hover {
+		background-color: var(--Background) !important;
+		fill: var(--Foreground) !important;
+	}
+	#basicTools svg {
+		fill: var(--Foreground) !important;
+	}
+	#basicTools span:hover {
+		fill: var(--Foreground) !important;
+	}
+	#refresh {
+		background-color: var(--Background) !important;
+		fill: var(--Foreground) !important;
+		border: none !important;
+	}
+	#refresh svg:hover,
+	#refresh svg:active {
+		fill: var(--Foreground) !important;
+	}
+	.nope {
+		stroke: var(--Foreground) !important;
+	}
+	#firewallContainer > div > span:nth-child(2),
+	#firewallContainer > div > span:nth-child(3) {
+		background-color: #191925 !important;
+	}
+	#firewallContainer > div > span.allowRule.ownRule {
+		background-color: #2ecc71 !important;
+	}
+	#firewallContainer > div > span.blockRule.ownRule {
+		background-color: #e74c3c !important;
+	}
+	#firewallContainer > div > span.noopRule.ownRule {
+		background-color: #555 !important;
+	}
 }
