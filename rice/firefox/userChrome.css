@@ -1,113 +1,115 @@
 :root {
-		--Foreground: #BEC8D1;
-		--Foreground-Variant: #BEC8D1CC;
-		--Foreground-Dark: #BEC8D166;
-		--Foreground-Transparent: #FFFFFF66;
-		--Background: #041A1F;
-		--Surface: #011C22;
-		--Surface-Variant: #02303B;
-		--Surface-Transparent: #00000066;
-		--Surface-Alternative: #25283f;
-		--Primary: #1CCFEA;
-		--Primary-Dark: #12AAC1;
-        --Primary-Transparent: #1CCFEA80;
-		--Secondary: #EA1CCF;
-		--Secondary-Transparent: #EA1CCF80;
-		--Mast: var(--Surface);
-		--Mast-Variant: var(--Surface-Variant);
-		--Mast-Dark: var(--Background);
-		--grey: #808080;
-		--red: #F44336;
-		--orange: #EA9D1C;
-		--dark-orange: #1F1504;
-		--green: #00E676;
-		--blue: #120056;
-		--yellow: #f1ff52;
-		--blur: blur(40px); /* backdrop-filter: var(--blur) */
-		--blur-variant: blur(5px);
-		--blur-dark: blur(40px) brightness(66%);
-		--blur-dark-variant: blur(5px) brightness(66%);
-		--Mast-Shadow: 0 0 8px 1px var(--Background);
-		--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
-		--Rounding: 8px;
-		--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
-		--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;
-		--Rounding-Left: var(--Rounding) 0 0 var(--Rounding);
-		--Rounding-Right: 0 var(--Rounding) var(--Rounding) 0;
-		--Rounding-Variant: 16px;
-		--Rounding-Variant-Bottom: 0 0 var(--Rounding-Variant) var(--Rounding-Variant);
-		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
-		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
-		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
+	--Foreground: #BEC8D1;
+	--Foreground-Variant: #BEC8D1CC;
+	--Foreground-Dark: #BEC8D166;
+	--Foreground-Transparent: #FFFFFF66;
+	--Background: #041A1F;
+	--Surface: #011C22;
+	--Surface-Variant: #02303B;
+	--Surface-Transparent: #00000066;
+	--Surface-Alternative: #25283f;
+	--Primary: #1CCFEA;
+	--Primary-Dark: #12AAC1;
+	--Primary-Transparent: #1CCFEA80;
+	--Secondary: #EA1CCF;
+	--Secondary-Transparent: #EA1CCF80;
+	--Mast: var(--Surface);
+	--Mast-Variant: var(--Surface-Variant);
+	--Mast-Dark: var(--Background);
+	--grey: #808080;
+	--red: #F44336;
+	--orange: #EA9D1C;
+	--dark-orange: #1F1504;
+	--green: #00E676;
+	--blue: #120056;
+	--yellow: #f1ff52;
+	--blur: blur(40px); /* backdrop-filter: var(--blur) */
+	--blur-variant: blur(5px);
+	--blur-dark: blur(40px) brightness(66%);
+	--blur-dark-variant: blur(5px) brightness(66%);
+	--Mast-Shadow: 0 0 8px 1px var(--Background);
+	--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
+	--Rounding: 8px;
+	--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
+	--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;
+	--Rounding-Left: var(--Rounding) 0 0 var(--Rounding);
+	--Rounding-Right: 0 var(--Rounding) var(--Rounding) 0;
+	--Rounding-Variant: 16px;
+	--Rounding-Variant-Bottom: 0 0 var(--Rounding-Variant) var(--Rounding-Variant);
+	--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
+	--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
+	--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
 }
 @keyframes hue-rotate {
-    0% { filter: hue-rotate(0deg); }
-    100%   { filter: hue-rotate(360deg); }
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
 }
 @keyframes filter {
-    0% {
-        filter: hue-rotate(360deg) sepia(0) ;
-    }
-    50% {
-        filter: hue-rotate(0) sepia(50%) ;
-    }
-    100%{
-        filter: hue-rotate(360deg) sepia(0) ;
-    }
+	0% {
+		filter: hue-rotate(360deg) sepia(0);
+	}
+	50% {
+		filter: hue-rotate(0) sepia(50%);
+	}
+	100% {
+		filter: hue-rotate(360deg) sepia(0);
+	}
 }
 :root {
-  --mff-bg: var(--Surface-Transparent);
-  --mff-icon-color: var(--Foreground);
-  --mff-nav-toolbar-padding: 5px;
-  --mff-sidebar-bg: transparent;
-  --mff-sidebar-color: var(--Foreground);
-  --mff-menupopup-bg: var(--mff-bg);
-  --mff-menupopup-color: var(--Foreground);
-  --mff-tab-border-radius: 999px;
-  --mff-tab-color: var(--Foreground);
-  --mff-tab-font-family: default, monospace, sans;
-  --mff-tab-font-size: 10pt;
-  --mff-tab-font-weight: 400;
-  --mff-tab-height: 20px;
-  --mff-tab-pinned-bg: var(--mff-bg);
-  --mff-tab-selected-bg: var(--mff-bg);
-  --mff-urlbar-color: var(--Foreground);
-  --mff-urlbar-background-color: transparent;
-  --mff-urlbar-focused-color: var(--Foreground);
-  --mff-urlbar-font-family: default, monospace, serif;
-  --mff-urlbar-font-size: 16pt;
-  --mff-urlbar-font-weight: 400;
-  --mff-urlbar-results-color: var(--Foreground);
-  --mff-urlbar-results-font-family: default, "mononoki Nerd Font", serif;
-  --mff-urlbar-results-font-size: 12pt;
-  --mff-urlbar-results-font-weight: 400;
-  --mff-urlbar-results-url-color: var(--Foreground-Dark);
-
-  /* Overriden Firefox variables*/
-  --autocomplete-popup-background: var(--mff-bg) !important;
-  --default-arrowpanel-background: var(--mff-bg) !important;
-  --default-arrowpanel-color: var(--Foreground-Variant) !important;
-  --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
-  --panel-disabled-color: #f9f9fa80;
-  --toolbar-bgcolor: var(--mff-bg) !important;
-  --urlbar-separator-color: transparent !important;
+	--mff-bg: var(--Surface-Transparent);
+	--mff-icon-color: var(--Foreground);
+	--mff-nav-toolbar-padding: 5px;
+	--mff-sidebar-bg: transparent;
+	--mff-sidebar-color: var(--Foreground);
+	--mff-menupopup-bg: var(--mff-bg);
+	--mff-menupopup-color: var(--Foreground);
+	--mff-tab-border-radius: 999px;
+	--mff-tab-color: var(--Foreground);
+	--mff-tab-font-family: default, monospace, sans;
+	--mff-tab-font-size: 10pt;
+	--mff-tab-font-weight: 400;
+	--mff-tab-height: 20px;
+	--mff-tab-pinned-bg: var(--mff-bg);
+	--mff-tab-selected-bg: var(--mff-bg);
+	--mff-urlbar-color: var(--Foreground);
+	--mff-urlbar-background-color: transparent;
+	--mff-urlbar-focused-color: var(--Foreground);
+	--mff-urlbar-font-family: default, monospace, serif;
+	--mff-urlbar-font-size: 16pt;
+	--mff-urlbar-font-weight: 400;
+	--mff-urlbar-results-color: var(--Foreground);
+	--mff-urlbar-results-font-family: default, "mononoki Nerd Font", serif;
+	--mff-urlbar-results-font-size: 12pt;
+	--mff-urlbar-results-font-weight: 400;
+	--mff-urlbar-results-url-color: var(--Foreground-Dark);
+	/* Overriden Firefox variables*/
+	--autocomplete-popup-background: var(--mff-bg) !important;
+	--default-arrowpanel-background: var(--mff-bg) !important;
+	--default-arrowpanel-color: var(--Foreground-Variant) !important;
+	--lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
+	--panel-disabled-color: #f9f9fa80;
+	--toolbar-bgcolor: var(--mff-bg) !important;
+	--urlbar-separator-color: transparent !important;
 }
-
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
-
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* only needed once */
 ::placeholder {
-    opacity: 0 !important;
+	opacity: 0 !important;
 }
-
 /* Status Color Change */
 #statuspanel #statuspanel-label {
-  color: var(--Foreground) !important;
-  background-color: var(--Surface-Transparent) !important;
-  border: none !important;
-  backdrop-filter: var(--blur-dark-variant) !important;
+	color: var(--Foreground) !important;
+	background-color: var(--Surface-Transparent) !important;
+	border: none !important;
+	backdrop-filter: var(--blur-dark-variant) !important;
 }
-#urlbar[open] > #urlbar-background{
-  background-color: var(--Surface) !important;}
+#urlbar[open] > #urlbar-background {
+	background-color: var(--Surface) !important;
+}
 /* URL bar blur*/
 /*#urlbar[open] > #urlbar-background{
   backdrop-filter: var(--blur-dark) !important;
@@ -130,17 +132,51 @@
 #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional {
   display: inherit !important;
 }*/
-
- /* Suppress Connecting/Waiting/Reading/Transerring */
-#statuspanel[type="status"] {
-   display: none !important;
- }
-
- /* Suppress Link Destination Overlay */
- #statuspanel[type="overLink"] {
-   display: none !important;
- }
-
+/* Suppress Connecting/Waiting/Reading/Transerring */
+#statuspanel[type="status"],
+#statuspanel[type="overLink"] {
+	display: none !important;
+}
+/* -----Window Controls----- */
+.titlebar-buttonbox-container {
+	display: flex !important;
+	background-color: var(--Surface-Transparent) !important;
+}
+.titlebar-min image {
+	list-style-image: url("titlebar/minimize_focus.svg") !important;
+	height: 15px !important;
+}
+.titlebar-max image {
+	list-style-image: url("titlebar/maximized_focus.svg") !important;
+	height: 15px !important;
+}
+.titlebar-restore image {
+	list-style-image: url("titlebar/maximized_active.svg") !important;
+	height: 15px !important;
+}
+.titlebar-close image {
+	list-style-image: url("titlebar/close_focus.svg") !important;
+	height: 15px !important;
+}
+.titlebar-min:hover image {
+	list-style-image: url("titlebar/minimize_focus_hover.svg") !important;
+	height: 15px !important;
+}
+.titlebar-max:hover image {
+	list-style-image: url("titlebar/maximized_focus_hover.svg") !important;
+	height: 15px !important;
+}
+.titlebar-restore:hover image {
+	list-style-image: url("titlebar/maximized_active_hover.svg") !important;
+	height: 15px !important;
+}
+.titlebar-close:hover image {
+	list-style-image: url("titlebar/close_focus_hover.svg") !important;
+	height: 15px !important;
+}
+.titlebar-buttonbox {
+	direction: rtl !important;
+}
 /*
   _____ _   ___ ___
  |_   _/_\ | _ ) __|
@@ -148,313 +184,284 @@
    |_/_/ \_\___/___/
 
 */
-.tabbrowser-tab:not[visuallyselected] .tab-close-button{
-  display:none;
+.tabbrowser-tab:not[visuallyselected] .tab-close-button {
+	display: none;
 }
-.tabbrowser-tab:not([pinned]):hover .tab-close-button{
-  display:-moz-box !important;
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+	display: -moz-box !important;
 }
 .tab-background[selected="true"] {
-  background: var(--mff-tab-selected-bg) !important;
+	background: var(--mff-tab-selected-bg) !important;
 }
-
 .tab-background:not[visuallyselected] {
-  background: var(--mff-tab-selected-bg) !important;
-  opacity: 0.5 !important;
+	background: var(--mff-tab-selected-bg) !important;
+	opacity: 0.5 !important;
 }
-
 /* This positions the tabs under the navaigator container */
 #titlebar {
-  -moz-box-ordinal-group: 3 !important;
+	-moz-box-ordinal-group: 3 !important;
 }
-
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
-  border-left: none !important;
+	border-left: none !important;
 }
-
 .tab-background {
-  border: none !important;
+	border: none !important;
 }
-
 .tabbrowser-arrowscrollbox {
-  margin-inline-start: 4px !important;
-  margin-inline-end: 0px !important;
+	margin-inline-start: 4px !important;
+	margin-inline-end: 0px !important;
 }
-
 .tab-text {
-  font-family: var(--mff-tab-font-family);
-  font-weight: var(--mff-tab-font-weight);
-  font-size: var(--mff-tab-font-size) !important;
-  color: var(--mff-tab-color);
+	font-family: var(--mff-tab-font-family);
+	font-weight: var(--mff-tab-font-weight);
+	font-size: var(--mff-tab-font-size) !important;
+	color: var(--mff-tab-color);
 }
-
 /* Hide the favicon for tabs */
 hbox.tab-content .tab-icon-image {
-  display: visible !important;
+	display: visible !important;
 }
-
 hbox.tab-content[pinned=true] .tab-text {
-  display: none !important;
+	display: none !important;
 }
-
 #tabbrowser-tabs {
-  --tab-loading-fill: #033433 !important;
-
+	--tab-loading-fill: #033433 !important;
 }
-
 .tab-label-container:not([textoverflow]) {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  width: 75% !important;
-  max-width: 75% !important;
-  min-width: 75% !important;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	width: 75% !important;
+	max-width: 75% !important;
+	min-width: 75% !important;
 }
-
 .tab-line {
-  display: none !important;
+	display: none !important;
 }
-
 .tabbrowser-tab {
-  border-radius: var(--mff-tab-border-radius) !important;
-  border-width: 0;
-  height: var(--mff-tab-height) !important;
-  margin-bottom: 4px !important;
-  margin-inline-end: 4px !important;
-  margin-top: 4px !important;
-  max-height: var(--mff-tab-height) !important;
-  min-height: var(--mff-tab-height) !important;
-  margin-left: 1px !important;
-  margin-right: 1px !important;
+	border-radius: var(--mff-tab-border-radius) !important;
+	border-width: 0;
+	height: var(--mff-tab-height) !important;
+	margin-bottom: 4px !important;
+	margin-inline-end: 4px !important;
+	margin-top: 4px !important;
+	max-height: var(--mff-tab-height) !important;
+	min-height: var(--mff-tab-height) !important;
+	margin-left: 1px !important;
+	margin-right: 1px !important;
 }
-.tabbrowser-tab[selected="true"], .tabbrowser-tab[soundplaying="true"] {
-  width: 100px !important;
-  max-width: 250px !important;
-  min-width: 100px !important;
+.tabbrowser-tab[selected="true"],
+.tabbrowser-tab[soundplaying="true"] {
+	width: 100px !important;
+	max-width: 250px !important;
+	min-width: 100px !important;
 }
 .tabbrowser-tab[soundplaying="true"] {
-  background-color: transparent !important;
-  background-image: linear-gradient(45deg, rgba(128,128,255,.15), rgba(255,0,255,.15));
+	background-color: transparent !important;
+	background-image: linear-gradient(45deg, rgba(128, 128, 255, .15), rgba(255, 0, 255, .15));
 }
-
-#tabs-newtab-button, #new-tab-button {
-  list-style-image: url("add.svg") !important;
+#tabs-newtab-button,
+#new-tab-button {
+	list-style-image: url("add.svg") !important;
 }
-
 /* Disable sound icon in tabs */
-.tab-icon-sound {
-  display: none !important;
+.tab-icon-overlay[soundplaying]:not([crashed]),
+.tab-icon-overlay[muted]:not([crashed]),
+.tab-icon-overlay[activemedia-blocked]:not([crashed]) {
+	display: none !important;
 }
-
 /*
   _____ ___   ___  _    ___   _   ___
 |_   _/ _ \ / _ \| |  | _ ) /_\ | _ \
   | || (_) | (_) | |__| _ \/ _ \|   /
   |_| \___/ \___/|____|___/_/  \_\_|_\
 */
-
 .urlbar-icon > image {
-  fill: var(--mff-icon-color) !important;
-  color: var(--mff-icon-color) !important;
+	fill: var(--mff-icon-color) !important;
+	color: var(--mff-icon-color) !important;
 }
-
 .toolbarbutton-text {
-    color: var(--mff-icon-color)  !important;
+	color: var(--mff-icon-color) !important;
 }
 .urlbar-icon {
-    color: var(--mff-icon-color)  !important;
+	color: var(--mff-icon-color) !important;
 }
 #back-button {
-    list-style-image: url("left-arrow.svg") !important;
+	list-style-image: url("left-arrow.svg") !important;
 }
 #forward-button {
-    list-style-image: url("right-arrow.svg") !important;
+	list-style-image: url("right-arrow.svg") !important;
 }
-
 #urlbar-results {
-  font-family: var(--mff-urlbar-results-font-family);
-  font-weight: var(--mff-urlbar-results-font-weight);
-  font-size: var(--mff-urlbar-results-font-size) !important;
-  color: var(--mff-urlbar-results-color) !important;
+	font-family: var(--mff-urlbar-results-font-family);
+	font-weight: var(--mff-urlbar-results-font-weight);
+	font-size: var(--mff-urlbar-results-font-size) !important;
+	color: var(--mff-urlbar-results-color) !important;
 }
-
-.urlbarView-row[type="bookmark"] > span{
-  color: var(--green) !important;
+.urlbarView-row[type="bookmark"] > span {
+	color: var(--green) !important;
 }
-
-.urlbarView-row[type="switchtab"] > span{
-  color: var(--orange) !important;
+.urlbarView-row[type="switchtab"] > span {
+	color: var(--orange) !important;
 }
-
-.urlbarView-url, .search-panel-one-offs-container {
-  color: var(--mff-urlbar-results-url-color) !important;
-  font-family: var(--mff-urlbar-font-family);
-  font-weight: var(--mff-urlbar-results-font-weight);
-  font-size: var(--mff-urlbar-font-size) !important;
+.urlbarView-url,
+.search-panel-one-offs-container {
+	color: var(--mff-urlbar-results-url-color) !important;
+	font-family: var(--mff-urlbar-font-family);
+	font-weight: var(--mff-urlbar-results-font-weight);
+	font-size: var(--mff-urlbar-font-size) !important;
 }
-
-.urlbarView-favicon, .urlbarView-type-icon {
-  display: none !important;
+.urlbarView-favicon,
+.urlbarView-type-icon {
+	display: none !important;
 }
-
 #urlbar-input {
-  font-size: var(--mff-urlbar-font-size) !important;
-  color: var(--mff-urlbar-color) !important;
-  font-family: var(--mff-urlbar-font-family) !important;
-  font-weight: var(--mff-urlbar-font-weight)!important;
-  text-align: center !important;
+	font-size: var(--mff-urlbar-font-size) !important;
+	color: var(--mff-urlbar-color) !important;
+	font-family: var(--mff-urlbar-font-family) !important;
+	font-weight: var(--mff-urlbar-font-weight)!important;
+	text-align: center !important;
 }
-
-#tracking-protection-icon-container, #identity-box {
-  display: none;
+#back-button > .toolbarbutton-icon {
+	--backbutton-background: transparent !important;
+	border: none !important;
 }
-
-#back-button > .toolbarbutton-icon{
-  --backbutton-background: transparent !important;
-  border: none !important;
-}
-
 toolbar {
-  background-image: none !important;
+	background-image: none !important;
 }
-
-#navigator-toolbox, toolbaritem {
-  border: none !important;
+#navigator-toolbox,
+toolbaritem {
+	border: none !important;
 }
-
 #urlbar-background {
-  background-color: var(--mff-urlbar-background-color) !important;
-  border: none !important;
+	background-color: var(--mff-urlbar-background-color) !important;
+	border: none !important;
 }
-
 .toolbar-items {
-  background-color: var(--mff-bg) !important;
+	background-color: var(--mff-bg) !important;
 }
-
 #sidebar-search-container {
-  background-color: var(--mff-sidebar-bg) !important;
+	background-color: var(--mff-sidebar-bg) !important;
 }
-
 box.panel-arrowbox {
-  display: none;
+	display: none;
 }
-
 box.panel-arrowcontent {
-  border-radius: 8px !important;
-  border: none !important;
+	border-radius: 8px !important;
+	border: none !important;
 }
-
 tab.tabbrowser-tab {
-  overflow: hidden;
+	overflow: hidden;
 }
-
 tab.tabbrowser-tab:hover {
-  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .05);
 }
-
-image#star-button {
-  display: none;
+#page-action-buttons {
+	display: none;
 }
-
 toolbar#nav-bar {
-  padding: var(--mff-nav-toolbar-padding) !important;
+	padding: var(--mff-nav-toolbar-padding) !important;
 }
-
 toolbar#nav-bar {
-  padding: 0 4px !important;
+	padding: 0 4px !important;
 }
-
 #urlbar-input:focus {
-  color: var(--mff-urlbar-focused-color) !important;
+	color: var(--mff-urlbar-focused-color) !important;
 }
-
-
 .megabar[breakout-extend="true"]:not([open="true"]) > #urlbar-background {
-  box-shadow: none !important;
-  background-color: transparent !important;
+	box-shadow: none !important;
+	background-color: transparent !important;
 }
-
 toolbarbutton {
-  box-shadow: none !important;
+	box-shadow: none !important;
 }
-
-
 /*
   ___ ___ ___  ___ ___   _   ___
  / __|_ _|   \| __| _ ) /_\ | _ \
  \__ \| || |) | _|| _ \/ _ \|   /
  |___/___|___/|___|___/_/ \_\_|_\
 */
-
-.close-icon, .urlbar-icon {
-  fill: var(--mff-icon-color) !important;
+.close-icon,
+.urlbar-icon {
+	fill: var(--mff-icon-color) !important;
 }
-
 .sidebar-placesTree {
-  color: var(--mff-sidebar-color) !important;
+	color: var(--mff-sidebar-color) !important;
 }
-
 #sidebar-box {
-  --sidebar-background-color: var(--mff-sidebar-bg) !important;
+	--sidebar-background-color: var(--mff-sidebar-bg) !important;
 }
-
 splitter#sidebar-splitter {
-  opacity: 0 !important;
+	opacity: 0 !important;
 }
-
 splitter#sidebar-splitter {
-  border: none !important;
-  background-color: transparent !important;
+	border: none !important;
+	background-color: transparent !important;
 }
-
 image#sidebar-icon {
-  display: none;
+	display: none;
 }
-
 /*
     _   ___ ___  _____      _____  _   _  _ ___ _
    /_\ | _ \ _ \/ _ \ \    / / _ \/_\ | \| | __| |
   / _ \|   /   / (_) \ \/\/ /|  _/ _ \| .` | _|| |__
  /_/ \_\_|_\_|_\\___/ \_/\_/ |_|/_/ \_\_|\_|___|____|
  */
-
 .panel-arrowcontent {
-  padding: 0px !important;
-  margin: 0px !important;
+	padding: 0px !important;
+	margin: 0px !important;
 }
-
-toolbarseparator {
-  display: none;
+toolbarseparator,
+menuseparator {
+	display: none;
 }
-
 /* Transparency */
-#TabsToolbar, #titlebar, #main-window, #navigator-toolbox {
+#TabsToolbar,
+#titlebar,
+#main-window,
+#navigator-toolbox,
+panelview,
+#toolbar-menubar {
 	-moz-appearance: none !important;
 	background-color: transparent !important;
 	background-image: none !important;
-  box-shadow: none !important;
-  border: none !important;
+	box-shadow: none !important;
+	border: none !important;
 }
-
-panelview {
-    background: var(--Surface-Transparent) !important;
+#toolbar-menubar {
+	background-color: var(--Surface-Transparent) !important;
 }
-
-:is(menupopup, panel)[type="arrow"] {
-  --panel-background: transparent !important;
+menupopup,
+panel {
+	--panel-background: transparent !important;
+	--panel-border-color: none !important;
 }
-
+#contentAreaContextMenu,
+#toolbar-context-menu,
+#appMenu-popup,
+#customizationui-widget-panel,
+menupopup > menu > menupopup {
+	background: var(--Surface-Transparent) !important;
+	border-radius: 0 !important;
+}
+#contentAreaContextMenu *,
+#toolbar-context-menu * {
+	border: none !important;
+}
+:is(menupopup,
+panel)[type="arrow"] {
+	--panel-background: transparent !important;
+}
 /*Context Menu*/
 menupopup {
 	-moz-appearance: none !important;
 	background-color: transparent !important;
-  color: var(--mff-menupopup-color) !important;
-	background-image: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  border-radius: 4px !important;
-  padding: 4px 0 !important;
+	color: var(--mff-menupopup-color) !important;
+	box-shadow: none !important;
+	border: none !important;
+	border-radius: 4px !important;
+	padding: 4px 0 !important;
 }
 #context-back {
 	list-style-image: url("left-arrow.svg") !important;
@@ -463,89 +470,70 @@ menupopup {
 	list-style-image: url("right-arrow.svg") !important;
 }
 menupopup menupopup {
-  margin: -5px 0 0 -4px;
+	margin: -5px 0 0 -4px;
 }
-
 menubar > menu > menupopup {
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
 }
-
-menuitem[type="checkbox"] image, menuitem[type="radio"] image {
-  visibility: visible !important;
+menuitem[type="checkbox"] image,
+menuitem[type="radio"] image {
+	visibility: visible !important;
 }
-
-menuitem[disabled="true"]:hover, menupopup menu[disabled="true"]:hover {
-  background: transparent !important;
+menuitem[disabled="true"]:hover,
+menupopup menu[disabled="true"]:hover {
+	background: transparent !important;
 }
-
 /* Don't show window control buttons */
-#autohide-context { display:none!important; }
-#window-controls  { display:none!important; }
-
-
+#autohide-context,
+#window-controls {
+	display: none!important;
+}
 /* Remove icons from the main context menu */
 #contentAreaContextMenu menuitem image,
 #contentAreaContextMenu menu image {
 	visibility: hidden;
 }
-
 #contentAreaContextMenu menugroup menuitem image {
 	visibility: visible;
 }
-
 /* Feature recommendation notification, fix width */
 #contextual-feature-recommendation-notification {
 	width: auto !important;
 }
-
 #sidebar-search-container {
-  -moz-appearance: none !important;
-  border-radius: 6px !important;
-  background-image:  none !important;
-  background-color: transparent !important;
+	-moz-appearance: none !important;
+	border-radius: 6px !important;
+	background-image: none !important;
+	background-color: transparent !important;
 }
-
 #sidebar-search-container search-textbox {
-  -moz-appearance: none !important;
-  border-radius: 6px !important;
-  background-image:  none !important;
-  background-color: var(--mff-bg) !important;
+	-moz-appearance: none !important;
+	border-radius: 6px !important;
+	background-image: none !important;
+	background-color: var(--mff-bg) !important;
 }
-
-.sidebar-panel {
-  -moz-appearance: none !important;
-  background-color: transparent !important;
-  background-image: none !important;
-}
-
+.sidebar-panel,
 #sidebar-search-container > search-textbox {
-  -moz-appearance: none !important;
-  background-color: transparent; !important;
-  background-image: none !important;
+	-moz-appearance: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
 }
-
-#historyTree  {
-  background-color: transparent !important;
-}
-
+#historyTree,
 #sidebar {
-  background-color: transparent !important;
+	background-color: transparent !important;
 }
-
 #browser {
-  -moz-appearance: none !important;
-  background-color: var(--mff-bg)  !important;
-  background-image: none !important;
+	-moz-appearance: none !important;
+	background-color: var(--mff-bg) !important;
+	background-image: none !important;
 }
-
 #browser #appcontent #tabbrowser-tabbox findbar,
 #browser #appcontent #tabbrowser-tabbox tabpanels {
-  -moz-appearance: none !important;
-  background-color: transparent !important;
-  background-image: none !important;
+	-moz-appearance: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
 }
-
 #browser #appcontent #tabbrowser-tabbox .findbar-find-fast {
-  background-color: var(--mff-bg) !important;
+	background-color: var(--mff-bg) !important;
 }

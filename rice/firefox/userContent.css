@@ -70,12 +70,17 @@ url("about:newtab"),
 url("about:privatebrowsing") {
 	body {
 		background-color: var(--Background)!important;
+		background-image: url("paper.png") !important;
+		background-position: center !important;
+		background-repeat: no-repeat;
 		--newtab-search-icon: transparent !important;
 	}
 	a,
 	a:visited,
 	a:hover {
 		color: #292D31!important
+	}
+	body {
 	}
 	#newtab-search-text {
 		background-color: var(--Background) !important;
@@ -87,9 +92,9 @@ url("about:privatebrowsing") {
 		font-weight: bold !important;
 	}
 	.collapsible-section {
-		background-color: var(--Surface) !important;
-		border-radius: 16px !important;
-		box-shadow: 0 0 8px var(--Background) !important
+		background-color: transparent !important;
+		backdrop-filter: var(--blur-dark);
+		border-radius: 64px !important;
 	}
 	.collapsible-section.active {
 		background-color: var(--Surface-Variant) !important;
@@ -98,11 +103,31 @@ url("about:privatebrowsing") {
 	.non-collapsible-section {
 		display: none !important;
 	}
+	.modalOverlayOuter {
+		background-color: transparent !important;
+		backdrop-filter: var(--blur-variant);
+		border-radius: 64px !important;
+	}
+	.context-menu, .modal {
+		background-color: transparent !important;
+		backdrop-filter: var(--blur-dark);
+	}
 	.customize-menu {
 		background-color: var(--Surface) !important
 	}
-	.top-site-outer .tile {
-		background-color: var(--Surface-Variant) !important
+	.actions {
+		border: none !important;
+	}
+	.topsite-form .form-wrapper input[type="text"], .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
+		background-color: var(--Surface-Transparent) !important;
+	}
+	.top-site-outer {
+		border-radius: 32px !important;
+	}
+	.top-site-outer .tile, .top-site-outer .context-menu-button:is(:active, :focus) {
+		background-color: transparent !important;
+		backdrop-filter: var(--blur-dark-variant);
+		border-radius: 999px !important;
 	}
 	.search-wrapper input {
 		--newtab-textbox-focus-boxshadow: none !important;
