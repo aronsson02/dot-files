@@ -458,11 +458,12 @@ panel)[type="arrow"] {
 menupopup {
 	-moz-appearance: none !important;
 	background-color: transparent !important;
-	color: var(--mff-menupopup-color) !important;
+	color: var(--Foreground) !important;
 	box-shadow: none !important;
 	border: none !important;
 	border-radius: 4px !important;
 	padding: 4px 0 !important;
+	color-scheme: dark !important;
 }
 #context-back {
 	list-style-image: url("left-arrow.svg") !important;
@@ -523,6 +524,9 @@ menupopup menu[disabled="true"]:hover {
 #historyTree,
 #sidebar {
 	background-color: transparent !important;
+}
+#ContentSelectDropdownPopup {
+	background-color: var(--Surface-Transparent) !important;
 }
 #browser {
 	-moz-appearance: none !important;

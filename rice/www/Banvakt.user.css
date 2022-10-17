@@ -1,0 +1,101 @@
+/* ==UserStyle==
+@name         Banvakt
+@version      1.1.0
+@description  Mörk Banvakt
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Banvakt.user.css
+@license      CC0
+@preprocessor default
+==/UserStyle== */
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://banvakt.se/") {
+	.page {
+		background-color: var(--Surface) !important;
+		background-image: none !important;
+		border-radius: var(--Rounding-Variant) !important;
+		border: 1px solid var(--Primary);
+		overflow: hidden !important;
+	}
+	.main div:not(.gm-style *) {
+		background-color: var(--Surface) !important;
+		background-image: none !important;
+	}
+	img {
+		border-radius: var(--Rounding) !important;
+		overflow: hidden !important;
+	}
+	#Extra_AendringsfoerslagPopup {
+		border-radius: var(--Rounding-Variant) !important;
+		overflow: hidden !important;
+	}
+	body {
+		background-color: var(--Background) !important;
+		color: var(--Foreground-Variant)
+	}
+	.header {
+		background-color: var(--Mast)
+	}
+	div.hideSkiplink,
+	div.menu ul li a,
+	div.menu ul li a:visited {
+		background-color: var(--Mast-Dark)
+	}
+	div.menu ul li a:hover {
+		background-color: var(--Mast-Variant)
+	}
+	td textarea,
+	td input,
+	td select,
+	#Extra_AendringsfoerslagPopup,
+	.vspalt input,
+	.vspalt textarea {
+		background-color: var(--Surface-Transparent) !important;
+		color: var(--Foreground) !important;
+		padding: 3px
+	}
+	td textarea,
+	td input,
+	td select,
+	.vspalt input,
+	.vspalt textarea {
+		border: 1px solid var(--Primary-Transparent) !important;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		color: var(--Foreground) !important
+	}
+	a:hover {
+		color: var(--Primary-Variant)
+	}
+	div.hideSkiplink {
+		border: none
+	}
+	.bandelsskiss_rad img {
+		filter: invert(1) !important
+	}
+	.title img {
+		filter: hue-rotate(245deg)
+	}
+	#Huvudinnehall_bildPopup,
+	#Huvudinnehall_Table7 tbody tr td,
+	#Huvudinnehall_Table7 tbody tr td div,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_0_backgroundElement,
+	.modalBakgrund {
+		background-color: transparent !important;
+		background-image: none !important;
+	}
+	.modalBakgrund {
+		opacity: 1 !important;
+		filter: none !important;
+		backdrop-filter: var(--blur-dark) !important;
+	}
+}
