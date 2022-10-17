@@ -96,6 +96,16 @@ url("about:privatebrowsing") {
 		backdrop-filter: var(--blur-dark);
 		border-radius: 64px !important;
 	}
+	.showPrivate.showSearch.container {
+		background-color: transparent !important;
+		backdrop-filter: var(--blur-dark);
+		border-radius: 32px !important;
+		overflow: hidden !important;
+		padding-top: 32px !important;
+	}
+	.showPrivate.showSearch.container .info {
+		border-radius: 32px !important;
+	}
 	.collapsible-section.active {
 		background-color: var(--Surface-Variant) !important;
 		border-radius: 16px !important;
@@ -108,7 +118,7 @@ url("about:privatebrowsing") {
 		backdrop-filter: var(--blur-variant);
 		border-radius: 64px !important;
 	}
-	.context-menu, .modal {
+	.context-menu, .modal, #preferences-stack {
 		background-color: transparent !important;
 		backdrop-filter: var(--blur-dark);
 	}
@@ -240,3 +250,4 @@ url("about:newtab") {
 		background-color: #555 !important;
 	}
 }
+

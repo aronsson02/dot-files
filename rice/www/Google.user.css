@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      3.5.5
+@version      3.5.6
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -109,9 +109,9 @@
 		backdrop-filter: var(--blur-variant) !important;
 	}
 	#masthead {
-		background-color: transparent !important;
+		background-color: #25283F80 !important;
 		background-image: none !important;
-		backdrop-filter: var(--blur) !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	#container.ytd-searchbox,
 	paper-listbox,
@@ -141,6 +141,10 @@
 	ytd-engagement-panel-section-list-renderer {
 		border-radius: var(--Rounding);
 		overflow: hidden
+	}
+	ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy,
+	ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
+		position: initial !important
 	}
 	#header.ytd-engagement-panel-title-header-renderer {
 		background: linear-gradient(to bottom, var(--Background), var(--Surface))
@@ -1037,7 +1041,7 @@
 	body.visibility-logging-enabled.flex-width-enabled.flex-width-enabled-snap.page-loaded .video-stream,
 	.ytp-fullscreen,
 	.ytp-fullscreen .video-stream {
-		border-radius: 0 !important
+		border-radius: var(--Rounding-Variant) !important
 	}
 }
 @-moz-document domain("music.youtube.com") {
@@ -2684,8 +2688,7 @@ url-prefix("https://www.google.no/maps") {
 	.psjCIe-Bz112c::before,
 	.Ensave-nJjxad-bEDTcc,
 	.Ensave-nJjxad-m9bMae,
-	.i4ewOd-TaUzNb-haAclf.li.i4ewOd-TaUzNb-Bz112c-LgbsSe:,
-	{
+	.i4ewOd-TaUzNb-haAclf.li.i4ewOd-TaUzNb-Bz112c-LgbsSe: {
 		filter: invert(1) !important
 	}
 	.searchbox-searchbutton::before,

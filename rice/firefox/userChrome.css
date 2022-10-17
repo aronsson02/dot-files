@@ -110,6 +110,7 @@
 #urlbar[open] > #urlbar-background {
 	background-color: var(--Surface) !important;
 }
+
 /* URL bar blur*/
 /*#urlbar[open] > #urlbar-background{
   backdrop-filter: var(--blur-dark) !important;

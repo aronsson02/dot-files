@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.2.0
+@version      4.2.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -22,7 +22,7 @@
 		--Surface: #011C22;
 		--Surface-Variant: #02303B;
 		--Surface-Transparent: #00000066;
-		--Surface-Alternative: #25283f;
+		--Surface-Alternative: #25283F;
 		--Primary: #1CCFEA;
 		--Primary-Dark: #12AAC1;
         --Primary-Transparent: #1CCFEA80;
