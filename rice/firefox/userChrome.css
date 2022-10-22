@@ -1,23 +1,24 @@
 :root {
-	--Foreground: #BEC8D1;
-	--Foreground-Variant: #BEC8D1CC;
-	--Foreground-Dark: #BEC8D166;
+	--Foreground: #FFFFFF;
+	--Foreground-Variant: #FFFFFFCC;
+	--Foreground-Dark: #FFFFFF66;
 	--Foreground-Transparent: #FFFFFF66;
 	--Background: #041A1F;
-	--Surface: #011C22;
+	--Surface: #061f29;
 	--Surface-Variant: #02303B;
 	--Surface-Transparent: #00000066;
-	--Surface-Alternative: #25283f;
+	--Surface-Alternative: #25283F;
 	--Primary: #1CCFEA;
 	--Primary-Dark: #12AAC1;
 	--Primary-Transparent: #1CCFEA80;
 	--Secondary: #EA1CCF;
 	--Secondary-Transparent: #EA1CCF80;
-	--Mast: var(--Surface);
-	--Mast-Variant: var(--Surface-Variant);
-	--Mast-Dark: var(--Background);
+	--Mast: var(--Surface-Alternative);
+	--Mast-Variant: #2e324f;
+	--Mast-Dark: #1c1e2f;
 	--grey: #808080;
-	--red: #F44336;
+	--red: #F2303B;
+	--red-old: #F44336;
 	--orange: #EA9D1C;
 	--dark-orange: #1F1504;
 	--green: #00E676;
@@ -25,8 +26,10 @@
 	--yellow: #f1ff52;
 	--blur: blur(40px); /* backdrop-filter: var(--blur) */
 	--blur-variant: blur(5px);
-	--blur-dark: blur(40px) brightness(66%);
-	--blur-dark-variant: blur(5px) brightness(66%);
+	--blur-dark: var(--blur) brightness(66%);
+	--blur-dark-variant: var(--blur-variant) brightness(66%);
+	--blur-bright: var(--blur) brightness(110%);
+	--blur-bright-variant: var(--blur-variant) brightness(110%);
 	--Mast-Shadow: 0 0 8px 1px var(--Background);
 	--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
 	--Rounding: 8px;
@@ -39,6 +42,8 @@
 	--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
 	--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 	--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
+	--Anim-Google-One: google-one 6s ease infinite;
+	--Spinner: var(--Primary) transparent;
 }
 @keyframes hue-rotate {
 	0% {
@@ -186,9 +191,9 @@
 
 */
 .tabbrowser-tab:not[visuallyselected] .tab-close-button {
-	display: none;
+	display: none !important;
 }
-.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+.tabbrowser-tab:not([pinned]):hover .tab-close-button, :root:not([tabsintitlebar], [sizemode="fullscreen"]) .titlebar-buttonbox {
 	display: -moz-box !important;
 }
 .tab-background[selected="true"] {
@@ -264,7 +269,8 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 #tabs-newtab-button,
 #new-tab-button {
-	list-style-image: url("add.svg") !important;
+	list-style-image: url("tab-new.svg") !important;
+	
 }
 /* Disable sound icon in tabs */
 .tab-icon-overlay[soundplaying]:not([crashed]),
@@ -272,6 +278,18 @@ hbox.tab-content[pinned=true] .tab-text {
 .tab-icon-overlay[activemedia-blocked]:not([crashed]) {
 	display: none !important;
 }
+.private-browsing-indicator {
+	background-image: none !important;
+	margin-inline: 0 !important;
+	background-color: var(--Surface-Transparent) !important;
+}
+#preferences-button {
+	list-style-image: url("configure.svg") !important;
+}
+#home-button {
+	list-style-image: url("chrome://browser/skin/home.svg") !important;
+}
+
 /*
   _____ ___   ___  _    ___   _   ___
 |_   _/ _ \ / _ \| |  | _ ) /_\ | _ \
