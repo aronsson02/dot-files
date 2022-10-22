@@ -19,7 +19,7 @@
 		--Foreground-Dark: #FFFFFF66;
 		--Foreground-Transparent: #FFFFFF66;
 		--Background: #041A1F;
-		--Surface: #011C22;
+		--Surface: #061f29;
 		--Surface-Variant: #02303B;
 		--Surface-Transparent: #00000066;
 		--Surface-Alternative: #25283F;
@@ -32,7 +32,8 @@
 		--Mast-Variant: #2e324f;
 		--Mast-Dark: #1c1e2f;
 		--grey: #808080;
-		--red: #F44336;
+		--red: #F2303B;
+		--red-old: #F44336;
 		--orange: #EA9D1C;
 		--dark-orange: #1F1504;
 		--green: #00E676;
