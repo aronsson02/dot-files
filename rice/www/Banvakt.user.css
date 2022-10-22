@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Banvakt
-@version      1.1.0
+@version      1.1.1
 @description  Mörk Banvakt
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -20,7 +20,7 @@
 		border: 1px solid var(--Primary);
 		overflow: hidden !important;
 	}
-	.main div:not(.gm-style *) {
+	.main div:not(.gm-style *), .gm-style .gm-style-iw-c {
 		background-color: var(--Surface) !important;
 		background-image: none !important;
 	}
@@ -89,6 +89,22 @@
 	#Huvudinnehall_Table7 tbody tr td,
 	#Huvudinnehall_Table7 tbody tr td div,
 	#Huvudinnehall_BilderRepeater_bildspelsvisare_0_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_1_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_2_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_3_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_4_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_5_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_6_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_7_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_8_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_9_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_10_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_11_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_12_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_13_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_14_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_15_backgroundElement,
+	#Huvudinnehall_BilderRepeater_bildspelsvisare_16_backgroundElement,
 	.modalBakgrund {
 		background-color: transparent !important;
 		background-image: none !important;

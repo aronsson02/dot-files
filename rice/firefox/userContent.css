@@ -118,12 +118,12 @@ url("about:privatebrowsing") {
 		backdrop-filter: var(--blur-variant);
 		border-radius: 64px !important;
 	}
-	.context-menu, .modal, #preferences-stack {
+	.context-menu, .modal, #preferences-stack, .customize-menu {
 		background-color: transparent !important;
 		backdrop-filter: var(--blur-dark);
 	}
 	.customize-menu {
-		background-color: var(--Surface) !important
+		background-color: var(--Surface-Transparent) !important;
 	}
 	.actions {
 		border: none !important;
