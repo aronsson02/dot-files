@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.0.0
+@version      5.0.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -41,7 +41,7 @@
 		background: var(--Surface-Transparent) !important;
 		backdrop-filter: var(--blur-dark)!important
 	}
-	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable
+	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer
 	{
 		background: none!important
 	}
