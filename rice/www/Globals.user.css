@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.2.2
+@version      4.2.3
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -29,6 +29,7 @@
 		--Secondary: #EA1CCF;
 		--Secondary-Transparent: #EA1CCF80;
 		--Mast: var(--Surface-Alternative);
+		--Mast-Transparent: #25283F66;
 		--Mast-Variant: #2e324f;
 		--Mast-Dark: #1c1e2f;
 		--grey: #808080;
@@ -45,8 +46,8 @@
 		--blur-dark-variant: var(--blur-variant) brightness(66%);
 		--blur-bright: var(--blur) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
-		--Mast-Shadow: 0 0 8px 1px var(--Background);
-		--Mast-Variant-Shadow: 0 0 8px 1px var(--Surface);
+		--Mast-Shadow: 0 0 8px 1px var(--Mast);
+		--Mast-Variant-Shadow: 0 0 8px 1px var(--Mast-Variant);
 		--Rounding: 8px;
 		--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
 		--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;

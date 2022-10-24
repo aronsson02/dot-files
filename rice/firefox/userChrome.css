@@ -267,11 +267,6 @@ hbox.tab-content[pinned=true] .tab-text {
 	background-color: transparent !important;
 	background-image: linear-gradient(45deg, rgba(128, 128, 255, .15), rgba(255, 0, 255, .15));
 }
-#tabs-newtab-button,
-#new-tab-button {
-	list-style-image: url("tab-new.svg") !important;
-	
-}
 /* Disable sound icon in tabs */
 .tab-icon-overlay[soundplaying]:not([crashed]),
 .tab-icon-overlay[muted]:not([crashed]),
@@ -285,9 +280,6 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 #preferences-button {
 	list-style-image: url("configure.svg") !important;
-}
-#home-button {
-	list-style-image: url("chrome://browser/skin/home.svg") !important;
 }
 
 /*
@@ -305,12 +297,6 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 .urlbar-icon {
 	color: var(--mff-icon-color) !important;
-}
-#back-button {
-	list-style-image: url("left-arrow.svg") !important;
-}
-#forward-button {
-	list-style-image: url("right-arrow.svg") !important;
 }
 #urlbar-results {
 	font-family: var(--mff-urlbar-results-font-family);
@@ -332,7 +318,7 @@ hbox.tab-content[pinned=true] .tab-text {
 	font-size: var(--mff-urlbar-font-size) !important;
 }
 .urlbarView-favicon,
-.urlbarView-type-icon {
+.urlbarView-type-icon, #back-button, #forward-button {
 	display: none !important;
 }
 #urlbar-input {
@@ -482,12 +468,6 @@ menupopup {
 	border-radius: 4px !important;
 	padding: 4px 0 !important;
 	color-scheme: dark !important;
-}
-#context-back {
-	list-style-image: url("left-arrow.svg") !important;
-}
-#context-forward {
-	list-style-image: url("right-arrow.svg") !important;
 }
 menupopup menupopup {
 	margin: -5px 0 0 -4px;
