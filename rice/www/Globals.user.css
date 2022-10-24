@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.2.3
+@version      4.2.4
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -29,7 +29,7 @@
 		--Secondary: #EA1CCF;
 		--Secondary-Transparent: #EA1CCF80;
 		--Mast: var(--Surface-Alternative);
-		--Mast-Transparent: #25283F66;
+		--Mast-Transparent: #25283F80;
 		--Mast-Variant: #2e324f;
 		--Mast-Dark: #1c1e2f;
 		--grey: #808080;
