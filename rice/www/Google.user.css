@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.0.1
+@version      5.0.2
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1038,7 +1038,7 @@
 		background-color: var(--Background) !important;
 		color: var(--Foreground) !important;
 	}
-	#gsr #searchform .sfbg, .Fh5muf, .v6U7rf
+	#gsr #searchform .sfbg, .Fh5muf, .v6U7rf, #gb
 	{
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
@@ -1048,11 +1048,12 @@
 		background-color: var(--Mast-Dark) !important;
 		box-shadow: var(--Mast-Variant-Shadow) !important
 	}
-	.RNNXgb, .zGVn2e
+	.RNNXgb, .zGVn2e, #sfcnt
 	{
 		background-color: var(--Mast-Variant) !important;
 		box-shadow: var(--Mast-Shadow) inset !important;
-		border-radius: var(--Rounding-Variant)
+		border-radius: var(--Rounding-Variant) !important;
+		overflow: hidden !important
 	}
 	.srp #searchform
 	{
@@ -1062,7 +1063,7 @@
 	{
 		padding-bottom: 6px !important
 	}
-	#fbar, .tfB0Bf input[type="submit"], .gbqfba, .aajZCb, .vk-box, .EHzcec.eejsDc, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .gb_zb, g-inner-card, .MGqjK, .cF4V5c, .dG2XIf, .P2c8Dd, .Sl6fgd, .Sl6fgd .zGVn2e
+	#fbar, .tfB0Bf input[type="submit"], .gbqfba, .aajZCb, .vk-box, .EHzcec.eejsDc, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .gb_zb, g-inner-card, .MGqjK, .cF4V5c, .dG2XIf, .P2c8Dd, .Sl6fgd, .Sl6fgd .zGVn2e, #gbr, #footer, .Gx5Zad, .bRsWnc, .bz1lBb, g-card, article, .tS8mh, .iKjWAf, #isv
 	{
 		background-color: var(--Surface) !important;
 	}
@@ -1070,19 +1071,22 @@
 	{
 		background-color: var(--Surface-Variant) !important;
 	}
-	.sbhl, .tX9u1b:hover, .tX9u1b:hover .Rq5Gcb, .NQV3m, .gb_Mb.gb_Mb:hover, .gb_zb:hover, .rsGxI.Ww4FFb, .Ww4FFb, #appbar, .appbar
+	.sbhl, .tX9u1b:hover, .tX9u1b:hover .Rq5Gcb, .NQV3m, .gb_Mb.gb_Mb:hover, .gb_zb:hover, .rsGxI.Ww4FFb, .Ww4FFb, #appbar, .appbar, html
 	{
 		background-color: var(--Background) !important;
 	}
-	.YTDezd
+	.YTDezd, #tsbb, #qdClwb
 	{
 		background-color: var(--Primary) !important
 	}
-	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe
+	.qM9CP {
+		background: none !important
+	}
+	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe, .mEUgP, .isv-t, a.isv-t:visited
 	{
 		color: var(--Foreground) !important
 	}
-	.tfB0Bf input[type="submit"], .gbqfba, #footer a, .Rq5Gcb, a, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge
+	.tfB0Bf input[type="submit"], .gbqfba, #footer a, .Rq5Gcb, a, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, #footer b, .s3v9rd.AP7Wnd, .r0bn4c.rQMQod, .oqSTJd
 	{
 		color: var(--Foreground-Variant) !important;
 	}
@@ -1094,23 +1098,32 @@
 	{
 		color: var(--grey) !important;
 	}
-	#hdtb-msb .hdtb-mitem.hdtb-msel, .FAuhyb, .rQEFy
+	#hdtb-msb .hdtb-mitem.hdtb-msel, .FAuhyb, .rQEFy, .vvjwJb, span.OXXup, .n8WSwd, .n8WSwd:visited
 	{
 		color: var(--Primary) !important;
+	}
+	.XLloXe {
+		color: var(--Primary-Dark) !important;
 	}
 	.sbl1p, .sbl1 b, .gb_Lb.gb_Lb:hover, .gb_Mb.gb_Mb:hover, .gb_Bb:hover, .gb_Db.gb_Db:hover, .gb_zb.gb_zb:hover, .FAuhyb:hover, #hdtb-msb .hdtb-mitem.hdtb-msel:hover
 	{
 		color: var(--Secondary) !important;
 	}
+	.UPmit.AP7Wnd {
+		color: var(--green) !important;
+	}
 	.gb_D[aria-expanded=true] .gb_7e, .gb_D[aria-expanded=true] .gb_8e
 	{
 		fill: var(--Foreground) !important
+	}
+	.n8WSwd, .n8WSwd:visited {
+	fill: var(--Primary) !important
 	}
 	.b2hzT, #fbar
 	{
 		border-color: var(--Background) !important;
 	}
-	.gbqfba, #hdtb-msb .hdtb-mitem.hdtb-msel, .rQEFy
+	.gbqfba, #hdtb-msb .hdtb-mitem.hdtb-msel, .rQEFy, #gbr, #qdClwb, span.OXXup
 	{
 		border-color: var(--Primary) !important;
 	}
@@ -1122,7 +1135,7 @@
 	{
 		border-color: var(--Grey) !important;
 	}
-	.gb_Db.gb_Db, .gb_Kb, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .ve-Ji-ie, .ve-Fi-Ue .ve-Gi-Zb-ie, #hdtb, .cv2VAd, .RNNXgb, .aajZCb, .xtSCL
+	.gb_Db.gb_Db, .gb_Kb, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .ve-Ji-ie, .ve-Fi-Ue .ve-Gi-Zb-ie, #hdtb, .cv2VAd, .RNNXgb, .aajZCb, .xtSCL, #gb, .qM9CP, #tsbb, .bRsWnc, .BupAEd, .hBwXxe
 	{
 		border: none !important;
 	}
