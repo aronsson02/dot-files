@@ -81,7 +81,7 @@
 	--mff-tab-pinned-bg: var(--mff-bg);
 	--mff-tab-selected-bg: var(--mff-bg);
 	--mff-urlbar-color: var(--Foreground);
-	--mff-urlbar-background-color: transparent;
+	--mff-urlbar-background-color: var(--Surface-Transparent);
 	--mff-urlbar-focused-color: var(--Foreground);
 	--mff-urlbar-font-family: default, monospace, serif;
 	--mff-urlbar-font-size: 16pt;
@@ -112,32 +112,31 @@
 	border: none !important;
 	backdrop-filter: var(--blur-dark-variant) !important;
 }
+
 #urlbar[open] > #urlbar-background {
-	background-color: var(--Surface) !important;
+	background-color: var(--Surface) !important
 }
 
 /* URL bar blur*/
-/*#urlbar[open] > #urlbar-background{
-  backdrop-filter: var(--blur-dark) !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
+/*#urlbar[open] > #urlbar-background {
+	backdrop-filter: var(--blur) !important;
+	background-color: var(--Surface-Transparent) !important;
+	border: none !important;
+    box-shadow: none !important;
 }*/
-/*#titlebar {
+#titlebar, #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional {
   margin-top: -30px !important;
   opacity: 0 !important;
   transition: all 250ms linear 750ms !important;
 }
-#navigator-toolbox:hover #titlebar {
+#navigator-toolbox:hover #titlebar, #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional {
   margin-top: 0px !important;
   opacity: 1 !important;
   transition: all 250ms linear !important;
 }
-#PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional {
+ {
   display: none !important;
 }
-#navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional {
-  display: inherit !important;
-}*/
 /* Suppress Connecting/Waiting/Reading/Transerring */
 #statuspanel[type="status"],
 #statuspanel[type="overLink"] {

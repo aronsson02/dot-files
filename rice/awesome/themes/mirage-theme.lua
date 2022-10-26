@@ -26,8 +26,8 @@ local theme = {}
 theme.name = "mirage"
 
 -- Font
-theme.font = "SF Nodo Pro 11"
-theme.title_font = "SF Nodo Pro 15"
+theme.font = "OSUF 11"
+theme.title_font = "OSUF 15"
 
 -- Background
 theme.bg_normal = "#00000066"

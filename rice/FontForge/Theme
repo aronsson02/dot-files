@@ -5,7 +5,7 @@ fontforge.FontView.SelectedFgColor: #000000
 fontforge.FontView.ChangedColor: #1c2e87
 fontforge.FontView.HintingNeededColor: #63a8c7
 fontforge.FontView.FontSize: 14
-fontforge.FontView.FontFamily: SF Nodo Pro, dejavu sans,fontview,courier,monospace,clearlyu,unifont,unifont upper
+fontforge.FontView.FontFamily: OSUF, dejavu sans,fontview,courier,monospace,clearlyu,unifont,unifont upper
 
 fontforge.CharView.PointColor: #ff0000
 fontforge.CharView.FirstPointColor: #a8a800
