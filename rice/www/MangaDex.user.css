@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      3.0.3
+@version      3.0.4
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -92,6 +92,9 @@
         background: none !important;
         backdrop-filter: var(--blur-dark-variant) !important;
     }
+	#nuxt-loading {
+		background: var(--Background) !important
+	}
 
     img.mr-2
     {
