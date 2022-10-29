@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.0.2
+@version      5.1.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -19,7 +19,7 @@
 		background-image: none!important;
 		backdrop-filter: var(--blur-dark)!important
 	}
-	#player-control-overlay.fadein .player-controls-background
+	#player-control-overlay.fadein .player-controls-background, #video-preview-container.ytd-video-preview
 	{
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant)!important
@@ -41,13 +41,19 @@
 		background: var(--Surface-Transparent) !important;
 		backdrop-filter: var(--blur-dark)!important
 	}
-	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer
+	#comments, #header.ytd-engagement-panel-title-header-renderer, ytd-transcript-search-panel-renderer {
+		background: var(--yt-spec-badge-chip-background) !important;
+		backdrop-filter: var(--blur-variant)!important
+	}
+	#comments, ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata, .yt-spec-button-shape-next--size-m {
+		border-radius: var(--Rounding-Variant) !important;
+	}
+	#comments {
+		padding: 1px 13px !important
+	}
+	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer
 	{
 		background: none!important
-	}
-	.video-stream.html5-main-video, #thumbnail
-	{
-		filter: contrast(1.1)!important
 	}
 	.ytp-spinner-container
 	{
@@ -55,26 +61,18 @@
 		border-radius: 999px;
 		border-color: var(--Spinner)!important
 	}
-	.ytp-gradient-bottom, .ytp-gradient-top
-	{
-		height: 0!important
-	}
 	.gstl_50.sbdd_a *, #container.ytd-searchbox, ytd-rich-shelf-renderer, #show-more-button.ytd-rich-shelf-renderer
 	{
 		border: none!important
 	}
 	ytd-engagement-panel-section-list-renderer, dialog, .menu-content
 	{
-		border-radius: var(--Rounding);
+		border-radius: var(--Rounding-Variant);
 		overflow: hidden
 	}
 	ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy
 	{
 		position: initial!important
-	}
-	#header.ytd-engagement-panel-title-header-renderer
-	{
-		background: linear-gradient(to bottom, var(--Background), var(--Surface))
 	}
 	#time.ytd-macro-markers-list-item-renderer
 	{
@@ -84,7 +82,7 @@
 	{
 		background: radial-gradient(transparent, var(--Primary) 50%)
 	}
-	#left-arrow-button.yt-chip-cloud-renderer, #right-arrow-button.yt-chip-cloud-renderer, .rich-grid-renderer-contents
+	.rich-grid-renderer-contents
 	{
 		background: var(--Background) !important
 	}
@@ -212,6 +210,16 @@
 	{
 		padding: 20px 0
 	}
+	#title #count {
+		padding-left: 13px !important
+	}
+	#notification-preference-button {
+		margin-left: 5px !important;
+		background: var(--yt-spec-badge-chip-background) !important;
+	}
+	#segmented-like-button {
+		margin-right: 4px !important;
+	}
 	.appbar-nav-menu
 	{
 		padding: 0 30px;
@@ -230,6 +238,9 @@
 	{
 		color: var(--Foreground-Dark)
 	}
+	.segment-timestamp.ytd-transcript-segment-renderer {
+		color: #000
+	}
 	.style-scope.ytd-topbar-logo-renderer path
 	{
 		fill: var(--Primary)!important
@@ -242,7 +253,7 @@
 	{
 		color: var(--red) !important
 	}
-	#like-bar, .style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer
+	#like-bar, .style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer, .iron-selected, .segment-timestamp.ytd-transcript-segment-renderer
 	{
 		background-color: var(--Primary)!important
 	}
@@ -258,7 +269,7 @@
 	{
 		filter: hue-rotate(180deg)!important
 	}
-	#sponsor-button
+	#sponsor-button, .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--segmented-start::after, .yt-chip-cloud-renderer #right-arrow, .yt-chip-cloud-renderer #left-arrow
 	{
 		display: none!important
 	}
@@ -266,7 +277,10 @@
 	{
 		background-color: var(--Mast-Dark)!important
 	}
-	#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer, .style-scope.ytd-commentbox #cancel-button, ytd-app, html
+	#chips-wrapper.ytd-feed-filter-chip-bar-renderer {
+		top: 0 !important
+	}
+	#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer, .style-scope.ytd-commentbox #cancel-button, html
 	{
 		background-color: var(--Background)!important
 	}
@@ -296,20 +310,19 @@
 	}
 	#movie_player
 	{
-		box-shadow: var(--Mast-Shadow)!important;
+		box-shadow: none !important;
 		width: calc(100% - 5px);
 		height: calc(100% - 2px)
 	}
 	ytd-thumbnail, .ytp-videowall-still.ytp-suggestion-set
 	{
-		box-shadow: var(--Mast-Variant-Shadow)!important;
-		border-radius: var(--Rounding)!important;
+		border-radius: var(--Rounding-Variant)!important;
 		overflow: hidden!important
 	}
 	#author-text.yt-simple-endpoint.ytd-comment-renderer, ytd-author-comment-badge-renderer
 	{
-		padding: 0 8px;
-		background-color: var(--Surface);
+		padding: 0 6px;
+		background-color: var(--yt-spec-badge-chip-background);
 		border-radius: 6px
 	}
 	#more, #less, #continuation yt-next-continuation paper-button
@@ -319,7 +332,7 @@
 		padding: 4px 8px;
 		border-radius: 6px
 	}
-	#more:hover, #less:hover, ytd-author-comment-badge-renderer:hover, #author-text.yt-simple-endpoint.ytd-comment-renderer:hover, tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed], #notification-preference-button
+	#more:hover, #less:hover, ytd-author-comment-badge-renderer:hover, #author-text.yt-simple-endpoint.ytd-comment-renderer:hover, tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed]
 	{
 		background-color: var(--Surface-Variant)!important
 	}
@@ -371,17 +384,15 @@
 		}
 		ytd-watch-flexy #secondary
 		{
-			background-color: var(--Background)!important;
-			margin-top: 0!important;
-			padding-top: 20px
+			background: none!important;
 		}
 	}
 	@media screen and (min-width: 1600px)
 	{
-		ytd-watch-flexy #primary, ytd-watch-flexy #secondary-inner
+		ytd-watch-flexy #secondary-inner
 		{
-			background-color: var(--Surface)!important;
-			border-radius: 10px
+			background-color: var(--yt-spec-badge-chip-background) !important;
+			border-radius: var(--Rounding-Variant) !important
 		}
 		ytd-watch-flexy #primary
 		{
@@ -523,11 +534,7 @@
 	{
 		color: var(--Surface)!important
 	}
-	.ytd-thumbnail > img, #notification-preference-button
-	{
-		border-radius: var(--Rounding)
-	}
-	.ytd-popup-container
+	.ytd-thumbnail > img, #notification-preference-button, .ytd-popup-container
 	{
 		border-radius: var(--Rounding-Variant)
 	}
@@ -567,7 +574,7 @@
 	tp-yt-paper-button.ytd-subscribe-button-renderer, tp-yt-paper-button:not([raised]).keyboard-focus
 	{
 		background-color: var(--red)!important;
-		border-radius: var(--Rounding)
+		border-radius: var(--Rounding-Variant)
 	}
 	.ytcp-entity-page-0 #main[studio-theme=DASHBOARD].ytcp-entity-page
 	{
@@ -576,7 +583,7 @@
 		background: -webkit-linear-gradient(left, rgba(254, 203, 111, 1) 0, rgba(252, 155, 112, 1) 15%, rgba(237, 106, 111, 1) 30%, rgba(203, 78, 108, 1) 48%, rgba(140, 65, 104, 1) 65%, rgba(81, 60, 99, 1) 82%, rgba(57, 59, 98, 1) 100%);
 		background: linear-gradient(to right, rgba(254, 203, 111, 1) 0, rgba(252, 155, 112, 1) 15%, rgba(237, 106, 111, 1) 30%, rgba(203, 78, 108, 1) 48%, rgba(140, 65, 104, 1) 65%, rgba(81, 60, 99, 1) 82%, rgba(57, 59, 98, 1) 100%)
 	}
-	.iron-selected, .ytcp-entity-page-0 ytcp-navigation-drawer.ytcp-entity-page, .ytcp-navigation-drawer-0 .menu-item-link.ytcp-navigation-drawer:focus paper-icon-item.ytcp-navigation-drawer:not(.iron-selected), .ytcp-navigation-drawer-0 .menu-item-link.ytcp-navigation-drawer:hover paper-icon-item.ytcp-navigation-drawer, .ytcp-navigation-drawer-0 paper-icon-item.bottom-section-entry.ytcp-navigation-drawer:hover, .ytcp-navigation-drawer-0 paper-icon-item.bottom-section-entry[submenu-open].ytcp-navigation-drawer, .ytcp-navigation-drawer-0[keyboard-focus] paper-icon-item.bottom-section-entry.ytcp-navigation-drawer:focus:not(.iron-selected)
+	.ytcp-entity-page-0 ytcp-navigation-drawer.ytcp-entity-page, .ytcp-navigation-drawer-0 .menu-item-link.ytcp-navigation-drawer:focus paper-icon-item.ytcp-navigation-drawer:not(.iron-selected), .ytcp-navigation-drawer-0 .menu-item-link.ytcp-navigation-drawer:hover paper-icon-item.ytcp-navigation-drawer, .ytcp-navigation-drawer-0 paper-icon-item.bottom-section-entry.ytcp-navigation-drawer:hover, .ytcp-navigation-drawer-0 paper-icon-item.bottom-section-entry[submenu-open].ytcp-navigation-drawer, .ytcp-navigation-drawer-0[keyboard-focus] paper-icon-item.bottom-section-entry.ytcp-navigation-drawer:focus:not(.iron-selected)
 	{
 		background-color: var(--Foreground)!important
 	}
@@ -640,7 +647,6 @@
 	html:not([fullscreen="true"]):not([hide-scrollbar="true"]) ytd-page-manager#page-manager.style-scope.ytd-app, html:not([fullscreen="true"]):not([hide-scrollbar="true"]) > body > ytd-app > #content, #body-container, .ytcp-entity-page-0 #main[studio-theme="DASHBOARD"].ytcp-entity-page
 	{
 		margin-top: 0!important;
-		background-color: var(--Background)!important
 	}
 	#movie_player.ytp-fullscreen
 	{
