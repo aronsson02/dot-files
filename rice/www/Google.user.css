@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.1.0
+@version      5.1.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -41,14 +41,17 @@
 		background: var(--Surface-Transparent) !important;
 		backdrop-filter: var(--blur-dark)!important
 	}
-	#comments, #header.ytd-engagement-panel-title-header-renderer, ytd-transcript-search-panel-renderer {
+	#comments, #header.ytd-engagement-panel-title-header-renderer, ytd-transcript-search-panel-renderer
+	{
 		background: var(--yt-spec-badge-chip-background) !important;
 		backdrop-filter: var(--blur-variant)!important
 	}
-	#comments, ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata, .yt-spec-button-shape-next--size-m {
+	#comments, ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata, .yt-spec-button-shape-next--size-m
+	{
 		border-radius: var(--Rounding-Variant) !important;
 	}
-	#comments {
+	#comments
+	{
 		padding: 1px 13px !important
 	}
 	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer
@@ -210,14 +213,17 @@
 	{
 		padding: 20px 0
 	}
-	#title #count {
+	#title #count
+	{
 		padding-left: 13px !important
 	}
-	#notification-preference-button {
+	#notification-preference-button
+	{
 		margin-left: 5px !important;
 		background: var(--yt-spec-badge-chip-background) !important;
 	}
-	#segmented-like-button {
+	#segmented-like-button
+	{
 		margin-right: 4px !important;
 	}
 	.appbar-nav-menu
@@ -238,7 +244,8 @@
 	{
 		color: var(--Foreground-Dark)
 	}
-	.segment-timestamp.ytd-transcript-segment-renderer {
+	.segment-timestamp.ytd-transcript-segment-renderer
+	{
 		color: #000
 	}
 	.style-scope.ytd-topbar-logo-renderer path
@@ -277,7 +284,8 @@
 	{
 		background-color: var(--Mast-Dark)!important
 	}
-	#chips-wrapper.ytd-feed-filter-chip-bar-renderer {
+	#chips-wrapper.ytd-feed-filter-chip-bar-renderer
+	{
 		top: 0 !important
 	}
 	#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer, .style-scope.ytd-commentbox #cancel-button, html
@@ -1034,10 +1042,15 @@
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
-	.B678Hb
+	.B678Hb, .AeB7Sc
 	{
 		background: none !important;
 		backdrop-filter: var(--blur-variant) !important;
+	}
+	.CbAZb
+	{
+		background: none !important;
+		backdrop-filter: var(--blur-dark) !important;
 	}
 	body, #gsr #viewport #searchform .sfbg, .vk-btn
 	{
@@ -1049,10 +1062,9 @@
 		background-color: var(--Mast) !important;
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	#hdtbSum, .yg51vc, .Zgesjc
+	#hdtbSum, .yg51vc, .Zgesjc, .GLcBOb.cCvmNd .Lj8KXd, .GLcBOb.mCRcc .Lj8KXd
 	{
 		background-color: var(--Mast-Dark) !important;
-		box-shadow: var(--Mast-Variant-Shadow) !important
 	}
 	.RNNXgb, .zGVn2e, #sfcnt
 	{
@@ -1069,34 +1081,35 @@
 	{
 		padding-bottom: 6px !important
 	}
-	#fbar, .tfB0Bf input[type="submit"], .gbqfba, .aajZCb, .vk-box, .EHzcec.eejsDc, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .gb_zb, g-inner-card, .MGqjK, .cF4V5c, .dG2XIf, .P2c8Dd, .Sl6fgd, .Sl6fgd .zGVn2e, #gbr, #footer, .Gx5Zad, .bRsWnc, .bz1lBb, g-card, article, .tS8mh, .iKjWAf, #isv
+	#fbar, .tfB0Bf input[type="submit"], .gbqfba, .aajZCb, .vk-box, .EHzcec.eejsDc, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .gb_zb, g-inner-card, .MGqjK, .cF4V5c, .dG2XIf, .P2c8Dd, .Sl6fgd, .Sl6fgd .zGVn2e, #gbr, #footer, .Gx5Zad, .bRsWnc, .bz1lBb, g-card, article, .tS8mh, .iKjWAf, #isv, .KxvlWc, .c93Gbe, .card:not(:empty), .mnr-c:not(:empty), .grvXqb, .H1HQf.WHVvie, .JNkvid, .YSlUOe
 	{
 		background-color: var(--Surface) !important;
 	}
-	.MXl0lf
+	.MXl0lf, .ud1jmf, .BVG0Nb, .x54gtf, .Q0HXG, .K4VNlb, .hkVxXe
 	{
 		background-color: var(--Surface-Variant) !important;
 	}
-	.sbhl, .tX9u1b:hover, .tX9u1b:hover .Rq5Gcb, .NQV3m, .gb_Mb.gb_Mb:hover, .gb_zb:hover, .rsGxI.Ww4FFb, .Ww4FFb, #appbar, .appbar, html
+	.sbhl, .tX9u1b:hover, .tX9u1b:hover .Rq5Gcb, .NQV3m, .gb_Mb.gb_Mb:hover, .gb_zb:hover, .rsGxI.Ww4FFb, .Ww4FFb, #appbar, .appbar, html, body, #center_col
 	{
 		background-color: var(--Background) !important;
 	}
-	.YTDezd, #tsbb, #qdClwb
+	.YTDezd, #tsbb, #qdClwb, .sy4vM, .gb_9d
 	{
 		background-color: var(--Primary) !important
 	}
-	.qM9CP {
+	.qM9CP, .eOjPIe
+	{
 		background: none !important
 	}
-	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe, .mEUgP, .isv-t, a.isv-t:visited
+	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe, .mEUgP, .isv-t, a.isv-t:visited, .I90TVb, .lyLwlc, .wyrwXc.AP7Wnd, .deIvCb.AP7Wnd, .RXaOfd
 	{
 		color: var(--Foreground) !important
 	}
-	.tfB0Bf input[type="submit"], .gbqfba, #footer a, .Rq5Gcb, a, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, #footer b, .s3v9rd.AP7Wnd, .r0bn4c.rQMQod, .oqSTJd
+	.tfB0Bf input[type="submit"], .gbqfba, #footer a, .Rq5Gcb, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, #footer b, .s3v9rd.AP7Wnd, .r0bn4c.rQMQod, .oqSTJd, .eLZYyf, .tAd8D.AP7Wnd
 	{
 		color: var(--Foreground-Variant) !important;
 	}
-	.eipWBe, .IsZvec, .GlPvmc, .rjmdhd, .s49v2 span b, .mus_il:first-child span b
+	.eipWBe, .IsZvec, .GlPvmc, .rjmdhd, .s49v2 span b, .mus_il:first-child span b, .wX2YHc .dbXO9, .jLhwdc, .wX2YHc .yS1nld
 	{
 		color: var(--Foreground-Dark) !important;
 	}
@@ -1104,26 +1117,37 @@
 	{
 		color: var(--grey) !important;
 	}
-	#hdtb-msb .hdtb-mitem.hdtb-msel, .FAuhyb, .rQEFy, .vvjwJb, span.OXXup, .n8WSwd, .n8WSwd:visited
+	#hdtb-msb .hdtb-mitem.hdtb-msel, .FAuhyb, .rQEFy, .vvjwJb, span.OXXup, .n8WSwd, .n8WSwd:visited, a, .Hv5UEb, .ud1jmf, .gb_pa svg, .gb_Hc svg, .gb_3c .gb_5d, .gb_Sc .gb_5d
 	{
 		color: var(--Primary) !important;
 	}
-	.XLloXe {
+	.XLloXe
+	{
 		color: var(--Primary-Dark) !important;
 	}
-	.sbl1p, .sbl1 b, .gb_Lb.gb_Lb:hover, .gb_Mb.gb_Mb:hover, .gb_Bb:hover, .gb_Db.gb_Db:hover, .gb_zb.gb_zb:hover, .FAuhyb:hover, #hdtb-msb .hdtb-mitem.hdtb-msel:hover
+	.sbl1p, .sbl1 b, .gb_Lb.gb_Lb:hover, .gb_Mb.gb_Mb:hover, .gb_Bb:hover, .gb_Db.gb_Db:hover, .gb_zb.gb_zb:hover, .FAuhyb:hover, #hdtb-msb .hdtb-mitem.hdtb-msel:hover, .uU7dJb
 	{
 		color: var(--Secondary) !important;
 	}
-	.UPmit.AP7Wnd {
+	.UPmit.AP7Wnd
+	{
 		color: var(--green) !important;
+	}
+	.sy4vM, .gb_9d
+	{
+		color: black !important
 	}
 	.gb_D[aria-expanded=true] .gb_7e, .gb_D[aria-expanded=true] .gb_8e
 	{
 		fill: var(--Foreground) !important
 	}
-	.n8WSwd, .n8WSwd:visited {
-	fill: var(--Primary) !important
+	.n8WSwd, .n8WSwd:visited
+	{
+		fill: var(--Primary) !important
+	}
+	.gb_A[aria-expanded="true"] .gb_Ve, .gb_A[aria-expanded="true"] .gb_We
+	{
+		fill: var(--Primary-Dark) !important
 	}
 	.b2hzT, #fbar
 	{
@@ -1141,7 +1165,7 @@
 	{
 		border-color: var(--Grey) !important;
 	}
-	.gb_Db.gb_Db, .gb_Kb, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .ve-Ji-ie, .ve-Fi-Ue .ve-Gi-Zb-ie, #hdtb, .cv2VAd, .RNNXgb, .aajZCb, .xtSCL, #gb, .qM9CP, #tsbb, .bRsWnc, .BupAEd, .hBwXxe
+	.gb_Db.gb_Db, .gb_Kb, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .ve-Ji-ie, .ve-Fi-Ue .ve-Gi-Zb-ie, #hdtb, .cv2VAd, .RNNXgb, .aajZCb, .xtSCL, #gb, .qM9CP, #tsbb, .bRsWnc, .BupAEd, .hBwXxe, .sy4vM, .ud1jmf, .lJ9FBc input[type="submit"], .gbqfba, .uU7dJb, hr
 	{
 		border: none !important;
 	}
@@ -1149,7 +1173,7 @@
 	{
 		background-image: none !important;
 	}
-	#gws-output-pages-elements-homepage_additional_languages__als, .FPdoLc.tfB0Bf, .RNmpXc, .P1Ycoe
+	#gws-output-pages-elements-homepage_additional_languages__als, .FPdoLc.tfB0Bf, .RNmpXc, .P1Ycoe, .lJ9FBc input[type="submit"], .gbqfba
 	{
 		display: none !important;
 	}
