@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.1.1
+@version      5.2.0
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1576,10 +1576,6 @@
 		border-radius: var(--Rounding-Variant) !important;
 		padding: 10px !important
 	}
-	#gb
-	{
-		padding-left: 8px !important
-	}
 	.b0t70b-haAclf, #featurelist-titlebar-container, #search-bar, .section-header, #searchbox, #interactive-hovercard
 	{
 		box-shadow: var(--Mast-Shadow) !important
@@ -1590,7 +1586,8 @@
 	}
 	#gb
 	{
-		border-radius: 0 0 0 calc(2 * var(--Rounding-Variant)) !important
+		border-radius: 0 0 0 calc(2 * var(--Rounding-Variant)) !important;
+		padding-left: 8px !important
 	}
 	.ft5n9e:hover .I4VS5c
 	{
@@ -1599,6 +1596,78 @@
 	.gb_0a
 	{
 		animation: var(--Anim-Google-One) !important;
+	}
+}
+@-moz-document url-prefix("https://timeline.google.com/maps")
+{
+	.LRAqi.modal-dialog
+	{
+		background: none !important;
+		backdrop-filter: var(--blur-dark) !important
+	}
+	.timeline-title, .material-icons-extended, .processing-day .material-flat-button, .activity-segment-outer .moment-edit-control:hover, .header-title, .timeline-item-title .place-visit, .date-range-picker .goog-menu .goog-menuitem, .goog-menuitem-highlight .goog-menuitem-content, .goog-menuitem-hover .goog-menuitem-content, .overflow-menu .goog-menuitem, .modal-dialog, .material-input, .modal-dialog-buttons button, .material-flat-button, .alias-add-form .textfield-with-label .inactive-label
+	{
+		color: var(--Foreground) !important
+	}
+	.timeline-subtitle, .duration-text, .timeline-item, .distance-text, .header-today-button, .date-range-picker, .suggest-subtitle
+	{
+		color: var(--Foreground-Variant) !important
+	}
+	.top-activity-text, .LRAqi .material-flat-button:disabled, .LRAqi .material-flat-button:disabled .material-icons-extended, .alias-add-form .goog-zippy-content
+	{
+		color: var(--Foreground-Dark) !important
+	}
+	.modal-dialog-buttons button.goog-buttonset-default:hover, .modal-dialog-buttons button:hover, .modal-dialog-buttons button:active
+	{
+		color: black !important
+	}
+	.histogram-wrapper, .place-history-moment-outer:hover .moment-edit-control, .place-history-moment-outer .moment-edit-control.place-visit, .goog-date-picker-popup, .date-range-picker .goog-menu, .goog-menu, .correction-dialog, .correction-dialog .modal-dialog-content, .correction-dialog .modal-dialog-title, .add-place-visit-dialog .place-selection-component .suggest-popup, .place-search-input, .goog-modalpopup, .modal-dialog
+	{
+		background-color: var(--Surface) !important
+	}
+	.date-range-picker .goog-flat-menu-button:hover, .date-range-picker .goog-flat-menu-button:focus, .material-flat-button:hover, .place-history-moment-outer:hover .moment-edit-control, .histogram-scroll-button-left, .histogram-scroll-button-right, .date-range-picker .goog-menu .goog-menuitem-highlight, .overflow-menu .goog-menuitem-highlight, .suggest-row.preselected, .drop-pin-row:hover, .ac-active, .activity-suggest .suggest-row:hover
+	{
+		background-color: var(--Surface-Variant) !important
+	}
+	.timeline-app-bar-header
+	{
+		background-color: var(--Mast) !important
+	}
+	.app-bar .histogram-toggle-button:hover, .app-bar .histogram-toggle-button.goog-flat-button-checked, .date-range-picker, .app-bar
+	{
+		background-color: var(--Mast-Variant) !important
+	}
+	.modal-dialog-buttons button.goog-buttonset-default:hover, .modal-dialog-buttons button:hover, .duration-picker-slider .goog-twothumbslider-rangehighlight, .duration-picker-slider .goog-twothumbslider-value-thumb .jfk-slider-thumbimpl, .duration-picker-slider .goog-twothumbslider-extent-thumb .jfk-slider-thumbimpl
+	{
+		background-color: var(--Primary) !important
+	}
+	.duration-picker .time-picker .time-picker-input, .LRAqi .nK2kYb .N0v1ub
+	{
+		background: none !important
+	}
+	.LRAqi .lV4f7b
+	{
+		border-color: var(--grey) !important
+	}
+	.app-bar .histogram-toggle-button.goog-flat-button-checked, .app-bar, .place-search-form, .drop-pin-row, .duration-picker-slider .goog-twothumbslider-value-thumb .jfk-slider-thumbimpl, .duration-picker-slider .goog-twothumbslider-extent-thumb .jfk-slider-thumbimpl
+	{
+		border: none !important
+	}
+	.suggest-row.preselected
+	{
+		border-left: 4px solid var(--Primary) !important
+	}
+	.material-input
+	{
+		border-bottom: 1px solid var(--Primary)
+	}
+	.LRAqi.modal-dialog
+	{
+		border-radius: var(--Rounding-Variant-Right)
+	}
+	.top-activity-icon, .activity-icon, .goog-date-picker-previousMonth, .goog-date-picker-nextMonth
+	{
+		filter: invert(1) !important
 	}
 }
 @-moz-document url-prefix("https://photos.google.com/")
