@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name         Banvakt
-@version      1.1.1
-@description  Mörk Banvakt
+@name         Banvakt mm
+@version      2.0.0
+@description  Mörk Banvakt och Lantkarta
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
 @homepageURL  https://github.com/aronsson02/dot-files
@@ -12,7 +12,7 @@
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document url-prefix("https://banvakt.se/") {
+@-moz-document url-prefix("https://banvakt.se") {
 	.page {
 		background-color: var(--Surface) !important;
 		background-image: none !important;
@@ -106,12 +106,90 @@
 	#Huvudinnehall_BilderRepeater_bildspelsvisare_15_backgroundElement,
 	#Huvudinnehall_BilderRepeater_bildspelsvisare_16_backgroundElement,
 	.modalBakgrund {
-		background-color: transparent !important;
+		background: transparent !important;
 		background-image: none !important;
 	}
 	.modalBakgrund {
 		opacity: 1 !important;
 		filter: none !important;
 		backdrop-filter: var(--blur-dark) !important;
+	}
+}
+
+@-moz-document url-prefix("https://minkarta.lantmateriet.se") {
+	main .map-panel .ol-scale-line, .ol-zoomslider, .rdt_Pagination button, main .map-panel .map-layout-panel, main .map-panel .button-layers, main .map-panel .button-layers.active, main .map-panel .button-gps, main .map-panel .button-menu, main .map-panel .map-context-panel, .ol-zoom {
+		background: none !important;
+		backdrop-filter: var(--blur-dark-variant) !important;
+		transition: all 1s 1s
+	}
+	main .map-panel .ol-scale-line:hover, .ol-zoomslider:hover, .ol-zoom:hover, main .map-panel .map-layout-panel:hover {
+		background: none !important;
+		backdrop-filter: var(--blur-dark-hover) !important;
+		transition: all .4s
+	}
+	main .map-panel .button-map, main .map-panel .map-context-panel .panel-toolbar {
+		background: none !important;
+		backdrop-filter: var(--blur-variant) !important
+	}
+	.button-tile, .button-icon, .form-input-text::placeholder, .ol-scale-line .ol-scale-line-inner, .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-in::after, .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-out::after, body, main .map-panel .button-map, main .map-panel .map-layout-panel .map-tile-selection li {
+		color: var(--Foreground) !important
+	}
+	a, a:hover {
+		color: var(--Primary) !important
+	}
+	main .map-panel .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-in:hover, main .map-panel .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-out:hover, main .map-panel .button-map, main .map-panel .map-layout-panel .map-tile-selection li .text, main .map-panel .button-map.active {
+		background-color: var(--Surface-Transparent) !important
+	}
+	main .map-panel .map-layout-panel .map-tile-selection li.active figure::after {
+		background-color: var(--Primary) !important
+	}
+	.page-navigation-compact {
+		background-color: var(--Mast) !important
+	}
+	.button-tile:hover:not(:focus-visible) {
+		background-color: var(--Mast-Variant) !important
+	}
+	main .map-panel .map-layout-panel .map-tile-selection li, .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-in, .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-out, .rdt_Pagination button {
+		background: none !important
+	}
+	.redet.maps .page-navigation, .redet.maps .page-navigation-alt, .redet.maps .page-navigation-compact, body.maps .page-navigation, body.maps .page-navigation-alt, body.maps .page-navigation-compact, .button-tile:not(:focus-visible)::after, .page-navigation-compact .container-fluid .navbar-search .form-input-text, .page-navigation-compact .container .navbar-search .form-input-text, .page-navigation-compact .container-fluid .navbar-search .button-icon, .page-navigation-compact .container .navbar-search .button-icon, .page-navigation-compact .container-fluid .navbar-search .button-icon, .page-navigation-compact .container .navbar-search .button-icon, .ol-scale-line .ol-scale-line-inner {
+		border-color: var(--Primary) !important
+	}
+	main .map-panel .map-context-panel.left::before {
+		border-right-color: var(--Primary) !important
+	}
+	main .map-panel .button-layers.active::after, main .map-panel .button-gps.active::after, main .map-panel .button-menu.active::after, main .map-panel .map-context-panel .panel-toolbar .divider {
+		border: none !important
+	}
+	main .map-panel .map-tile-selection, main .map-panel .map-layout-panel, main .map-panel .ol-scale-line, main .map-panel .ol-zoomslider, .ol-zoom, main .map-panel .button-layers, main .map-panel .button-gps, main .map-panel .button-menu, main .map-panel .button-map {
+		border-radius: var(--Rounding-Variant) !important
+	}
+	main .map-panel .map-layout-panel, main .map-panel .map-context-panel, main .map-panel .button-map.active {
+		box-shadow: 0 0 0 5px var(--Primary) !important
+	}
+	.ol-zoom {
+		box-shadow: 0 0 0 5px rgba(0, 0, 0, .2) !important
+	}
+	main .map-panel .button-layers, main .map-panel .button-gps, main .map-panel .button-menu, main .map-panel .button-menu.active:not(:focus-visible), main .map-panel .button-map, main .map-panel .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-in, main .map-panel .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-out {
+		box-shadow: none !important
+	}
+	header .navbar-search .form-input-text:focus-visible {
+		border: none !important;
+		outline: none !important;
+		background-color: var(--Mast-Variant) !important
+	}
+	main .map-panel .ol-viewport .ol-overlaycontainer-stopevent .ol-zoom .ol-zoom-out {
+		margin: 0 !important
+	}
+	main .map-panel .map-layout-panel .map-tile-selection li img {
+		filter: blur(2px) brightness(66%) !important;
+		transition: all 1s 1s
+	}
+	main .map-panel .map-layout-panel .map-tile-selection li:hover img {
+		filter: blur(0px) !important;
+		transition: all .4s
+	}
+	.navbar-brand {
+		filter: invert(1)
 	}
 }

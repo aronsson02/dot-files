@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.2.7
+@version      4.2.8
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -41,10 +41,13 @@
 		--blue: #120056;
 		--yellow: #f1ff52;
 		--blur: blur(40px); /* backdrop-filter: var(--blur) */
+		--blur-hover: blur(10px);
 		--blur-variant: blur(5px);
 		--blur-dark: var(--blur) brightness(66%);
+		--blur-dark-hover: var(--blur-hover) brightness(66%);
 		--blur-dark-variant: var(--blur-variant) brightness(66%);
 		--blur-bright: var(--blur) brightness(110%);
+		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
 		--Mast-Shadow: 0 0 8px 1px var(--Mast);
 		--Mast-Variant-Shadow: 0 0 8px 1px var(--Mast-Variant);
