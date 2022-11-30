@@ -453,7 +453,7 @@ panelview,
 	box-shadow: none !important;
 	border: none !important;
 }
-#toolbar-menubar, #placesContext, #PlacesChevronPopup, #tabContextMenu {
+#toolbar-menubar, #placesContext, #PlacesChevronPopup, #tabContextMenu, #downloadsPanel {
 	background-color: var(--Surface-Transparent) !important;
 }
 .menupopup-arrowscrollbox {
@@ -464,7 +464,7 @@ panel {
 	--panel-background: transparent !important;
 	--panel-border-color: none !important;
 }
-.menupopup-arrowscrollbox, #customizationui-widget-panel::part(content) {
+.menupopup-arrowscrollbox, #customizationui-widget-panel::part(content), slot:nth-child(1) {
 	box-shadow: none !important;
 	margin: none !important;
 }
