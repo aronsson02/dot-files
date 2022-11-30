@@ -1,4 +1,4 @@
-yay -Sy doas awesome-git rofi-git picom-tryone-git alsa-utils pulseaudio pulseaudio-alsa xprop imagemagick xfce4-power-manager xdg-user-dirs kvantum-qt5-git konsole xorg-xinput dolphin-git kate-git ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko chromium inkscape-git whatsapp-for-linux baobab isousb
+yay -Sy doas awesome-git rofi-git picom-tryone-git alsa-utils pulseaudio pulseaudio-alsa xprop imagemagick xfce4-power-manager xdg-user-dirs kvantum-qt5-git konsole xorg-xinput dolphin-git kate-git ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko inkscape-git whatsapp-for-linux baobab isousb
 doas mkdir /Archive
 doas mkdir /Anime
 doas cp "$HOME/dot-files/X/evdev.xml" "/usr/share/X11/xkb/rules/"
