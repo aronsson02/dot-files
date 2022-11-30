@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.3.0
+@version      5.3.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -203,7 +203,7 @@
 	ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"] c3-icon {
 		color: var(--red) !important
 	}
-	#like-bar, .style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer, .iron-selected, .segment-timestamp.ytd-transcript-segment-renderer {
+	#like-bar, .style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer, .iron-selected:not(.ytmusic-pivot-bar-renderer), .segment-timestamp.ytd-transcript-segment-renderer {
 		background-color: var(--Primary)!important
 	}
 	ytm-thumbnail-overlay-time-status-renderer[data-style="LIVE"] {
@@ -520,7 +520,7 @@
 	}
 }
 @-moz-document domain("music.youtube.com") {
-	.style-scope.ytmusic-menu-popup-renderer, .style-scope.ytmusic-popup-container, [dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background {
+	[dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background {
 		background-color: transparent!important;
 		background-image: none!important;
 		backdrop-filter: var(--blur-dark)!important
@@ -547,14 +547,20 @@
 	ytmusic-app-layout > [slot=nav-bar] {
 		width: 100vw!important
 	}
-	.tab-header.style-scope.ytmusic-player-page.iron-selected, ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle {
-		background-color: var(--Surface-Variant)!important
+	ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle {
+		background-color: var(--Primary-Transparent)!important
 	}
 	ytmusic-search-suggestions-section.ytmusic-search-box {
 		border: none!important;
 		background-color: var(--Mast-Variant);
 		border-radius: 0 0 var(--Rounding) var(--Rounding)!important;
 		overflow: hidden
+	}
+	ytmusic-av-toggle.ytmusic-av-toggle {
+		color: var(--Foreground) !important
+	}
+	ytmusic-av-toggle[toggle-disabled] .ytmusic-av-toggle {
+		color: var(--Foreground-Dark) !important
 	}
 	ytmusic-search-box[opened], ytmusic-search-box[has-query], ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box, ytmusic-app-layout > [slot=nav-bar], #nav-bar-background.ytmusic-app-layout {
 		border: none!important;
@@ -570,9 +576,6 @@
 	ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-shadow.ytmusic-app-layout {
 		opacity: 0!important
 	}
-	.volume-slider.ytmusic-player-bar {
-		opacity: 1
-	}
 	body {
 		margin: 0;
 		background-color: var(--Background)
@@ -586,8 +589,11 @@
 		background-color: var(--Surface);
 		box-shadow: none
 	}
-	ytmusic-player-bar, .style-scope.ytmusic-popup-container, ytmusic-av-toggle[toggle-disabled] .video-button.ytmusic-av-toggle, .av-toggle.ytmusic-av-toggle {
+	ytmusic-player-bar, .style-scope.ytmusic-popup-container, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle, .av-toggle.ytmusic-av-toggle, tp-yt-paper-listbox {
 		background-color: var(--Surface)
+	}
+	.iron-selected .text.ytmusic-menu-navigation-item-renderer {
+		color: black !important
 	}
 	#player-bar-background.ytmusic-app-layout {
 		right: 0;
@@ -601,13 +607,19 @@
 	ytmusic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer:first-child {
 		box-shadow: none
 	}
-	yt-button-renderer[is-paper-button] {
-		background-color: transparent
+	yt-button-renderer[is-paper-button], .tab-header.style-scope.ytmusic-player-page.iron-selected {
+		background-color: transparent !important
+	}
+	.selection-bar.tp-yt-paper-tabs {
+		border-bottom-color: var(--Primary) !important
 	}
 	yt-button-renderer #button.yt-button-renderer {
 		color: var(--Foreground);
 		background-color: var(--Surface);
 		text-transform: inherit
+	}
+	.style-scope.ytmusic-popup-container, .style-scope.ytmusic-menu-popup-renderer {
+		border-radius: var(--Rounding-Variant) !important
 	}
 	.ytmusic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer {
 		box-sizing: border-box;
@@ -849,7 +861,7 @@
 	}
 }
 @-moz-document url-prefix("https://www.google.com"), url-prefix("https://www.google.no"), url-prefix("https://www.google.se") {
-	.gb_Db.gb_Db, .gb_Db.gb_Db:hover {
+	.gb_Db.gb_Db, .gb_Db.gb_Db:hover, .sc {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -887,7 +899,7 @@
 	#fbar, .tfB0Bf input[type="submit"], .gbqfba, .aajZCb, .vk-box, .EHzcec.eejsDc, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .gb_zb, g-inner-card, .MGqjK, .cF4V5c, .dG2XIf, .P2c8Dd, .Sl6fgd, .Sl6fgd .zGVn2e, #gbr, #footer, .Gx5Zad, .bRsWnc, .bz1lBb, g-card, article, .tS8mh, .iKjWAf, #isv, .KxvlWc, .c93Gbe, .card:not(:empty), .mnr-c:not(:empty), .grvXqb, .H1HQf.WHVvie, .JNkvid, .YSlUOe {
 		background-color: var(--Surface) !important;
 	}
-	.MXl0lf, .ud1jmf, .BVG0Nb, .x54gtf, .Q0HXG, .K4VNlb, .hkVxXe {
+	.MXl0lf, .ud1jmf, .BVG0Nb, .x54gtf, .Q0HXG, .K4VNlb, .hkVxXe, .Qi9Fd {
 		background-color: var(--Surface-Variant) !important;
 	}
 	.sbhl, .tX9u1b:hover, .tX9u1b:hover .Rq5Gcb, .NQV3m, .gb_Mb.gb_Mb:hover, .gb_zb:hover, .rsGxI.Ww4FFb, .Ww4FFb, #appbar, .appbar, html, body, #center_col {
@@ -896,10 +908,10 @@
 	.YTDezd, #tsbb, #qdClwb, .sy4vM, .gb_9d {
 		background-color: var(--Primary) !important
 	}
-	.qM9CP, .eOjPIe {
+	.qM9CP, .eOjPIe, .gssb_e {
 		background: none !important
 	}
-	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe, .mEUgP, .isv-t, a.isv-t:visited, .I90TVb, .lyLwlc, .wyrwXc.AP7Wnd, .deIvCb.AP7Wnd, .RXaOfd {
+	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe, .mEUgP, .isv-t, a.isv-t:visited, .I90TVb, .lyLwlc, .wyrwXc.AP7Wnd, .deIvCb.AP7Wnd, .RXaOfd, .mWefFb, input {
 		color: var(--Foreground) !important
 	}
 	.tfB0Bf input[type="submit"], .gbqfba, #footer a, .Rq5Gcb, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, #footer b, .s3v9rd.AP7Wnd, .r0bn4c.rQMQod, .oqSTJd, .eLZYyf, .tAd8D.AP7Wnd {
@@ -947,7 +959,7 @@
 	.MGqjK, .VibNM, .xtSCL {
 		border-color: var(--Grey) !important;
 	}
-	.gb_Db.gb_Db, .gb_Kb, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .ve-Ji-ie, .ve-Fi-Ue .ve-Gi-Zb-ie, #hdtb, .cv2VAd, .RNNXgb, .aajZCb, .xtSCL, #gb, .qM9CP, #tsbb, .bRsWnc, .BupAEd, .hBwXxe, .sy4vM, .ud1jmf, .lJ9FBc input[type="submit"], .gbqfba, .uU7dJb, hr {
+	.gb_Db.gb_Db, .gb_Kb, .gb_Lb.gb_Lb, .gb_Mb.gb_Mb, .ve-Ji-ie, .ve-Fi-Ue .ve-Gi-Zb-ie, #hdtb, .cv2VAd, .RNNXgb, .aajZCb, .xtSCL, #gb, .qM9CP, #tsbb, .bRsWnc, .BupAEd, .hBwXxe, .sy4vM, .ud1jmf, .lJ9FBc input[type="submit"], .gbqfba, .uU7dJb, hr, .gssb_e, .sc > div {
 		border: none !important;
 	}
 	.tfB0Bf input[type="submit"], .gbqfba, .vk-btn {
@@ -964,6 +976,10 @@
 	}
 	.gb_zb.gb_zb:hover, .cv2VAd:hover, .rhscol:hover .I6TXqe {
 		border: 1px solid var(--Secondary) !important;
+	}
+	.sc {
+		border-radius: var(--Rounding-Variant-Bottom) !important;
+		overflow: hide !important
 	}
 	.hOoLGe, .sb43 {
 		filter: contrast(2)
@@ -1168,9 +1184,8 @@
 	.app-imagery-mode .uCBduRuX4WR__button, .app-imagery-mode .widget-zoom-button, .app-imagery-mode .xsYFzc, .app-imagery-mode .widget-expand-button-pegman, .app-imagery-mode .scene-footer, .app-imagery-mode .widget-tilt-button, .app-imagery-mode .widget-mylocation-button, .app-imagery-mode .mapsTactileClientGlobeGlobetoggle__button, .app-imagery-mode .uSzaJe, .app-imagery-mode .WzvKIe, .app-imagery-mode .DMPNfb, .mapsConsumerUiTiltInternalTilt__widget-tilt-button, .widget-reveal-card, .gb_5c.gb_Pg.gb_i, .action-menu-widget, .widget-layer, .widget-nearby-suggestions-inner, #zoomToolbar, #undoRedoToolbar, #drawingToolbar, #directionsToolbar, #measureToolbar, #mobileToolbar, #zoomToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #drawingToolbar .VIpgJd-INgbqf-LgbsSe, #directionsToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #mobileToolbar .VIpgJd-INgbqf-LgbsSe, #mp-footer > li, #gb, .dwFJGb-u7eiKf, .dwFJGb-bMcfAe-wEXlac, .U5xfxc, .tXNTee {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
-		transition: backdrop-filter 5s 2s
 	}
-	.scene-footer, .widget-zoom-button, .widget-expand-button-pegman, .widget-watermark, .widget-mylocation-button, .snackbar, .XKSfm-Sx9Kwc-xJ5Hnf, #stylepopup-popup, .gm-style .gm-style-iw-c, .b0t70b-haAclf, .VIpgJd-xl07Ob, .EkvGXe, #mapsprosearch-field, #mapsprosearch-button {
+	.scene-footer, .widget-zoom-button, .widget-expand-button-pegman, .widget-watermark, .widget-mylocation-button, .snackbar, .XKSfm-Sx9Kwc-xJ5Hnf, #stylepopup-popup, .gm-style .gm-style-iw-c, .b0t70b-haAclf, .VIpgJd-xl07Ob, .EkvGXe, #mapsprosearch-field, #mapsprosearch-button, .JPdR6b, .llhEMd.iWO5td {
 		background: none !important;
 		backdrop-filter: var(--blur-variant) !important;
 	}
@@ -1178,7 +1193,7 @@
 		background: none !important;
 		backdrop-filter: var(--blur) !important;
 	}
-	.gm-style .gm-style-iw-c:hover, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], #stylepopup-popup:hover, .b0t70b-haAclf:hover, .hdeJwf, .yu5kgd, .y1wT6-Sx9Kwc, .VIpgJd-xl07Ob:hover, .VIpgJd-TUo6Hb, .XKSfm-Sx9Kwc, .jyrRxf-haAclf TABLE {
+	.gm-style .gm-style-iw-c:hover, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], #stylepopup-popup:hover, .b0t70b-haAclf:hover, .hdeJwf, .yu5kgd, .y1wT6-Sx9Kwc, .VIpgJd-xl07Ob:hover, .VIpgJd-TUo6Hb, .XKSfm-Sx9Kwc, .jyrRxf-haAclf TABLE, .JPdR6b:hover, .g3VIld {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -1186,19 +1201,25 @@
 		background: none !important;
 		backdrop-filter: var(--blur-bright-variant) !important;
 	}
-	.b0t70b-haAclf, .VIpgJd-xl07Ob, .gm-style .gm-style-iw-c, #stylepopup-popup, #mapsprosearch-field, #mapsprosearch-button {
+	.b0t70b-haAclf, .VIpgJd-xl07Ob, .gm-style .gm-style-iw-c, #stylepopup-popup, #mapsprosearch-field, #mapsprosearch-button, .JPdR6b {
 		transition: backdrop-filter 5s 2s !important
 	}
-	.b0t70b-haAclf:hover, .VIpgJd-xl07Ob:hover, .gm-style .gm-style-iw-c:hover, #stylepopup-popup:hover, #mapsprosearch-field[aria-expanded="true"], #mapsprosearch-field[aria-expanded="true"] + #mapsprosearch-button {
+	.b0t70b-haAclf:hover, .VIpgJd-xl07Ob:hover, .gm-style .gm-style-iw-c:hover, #stylepopup-popup:hover, #mapsprosearch-field[aria-expanded="true"], #mapsprosearch-field[aria-expanded="true"] + #mapsprosearch-button, .JPdR6b:hover, .llhEMd.iWO5td {
 		transition: backdrop-filter .3s !important
 	}
-	.searchbox, .suggestions, .iRxY3GoUYUY__button, .app-imagery-mode .widget-runway-background-filler, .widget-scene-canvas, .widget-homescreen-expander, .ugiz4pqJLAG__icon-outer.ugiz4pqJLAG__icon-background, .section-info-action-icon-button, .section-info-action-icon-button, .lo7U087hsMA__row-row:hover .lo7U087hsMA__row-copy-icon-click-area, body:not(.keynav-mode-off) .lo7U087hsMA__row-copy-icon-click-area:focus, .jqnFjrOWMVU__bucket-background, .allxGeDnJMl__button, .rLwmCGCu6mP__card, .widget-pane-content, .ozj7Vb3wnYq__section-topappbar, .section-divider, .section-suggestions, .ugiz4pqJLAG__button, .widget-homescreen .section-layout.section-cardbox, .section-mobile-promo-download-button.section-mobile-promo-download-button-inverted, .widget-pane-toggle-button, .ita-kd-icon-button, .ita-kd-dropdown-menu, .clustered-widget-hovercard, .un1lmc-pbTTYe-ibnC6b-ZmdkE, .widget-pane-visible, .e07Vkf, .yra0jd, .bVzuaf, .YGwCn, .dRf81e, .ksVxwc, .i6BtHe, .bglq4b, .lgzdnd, .CUDjrd {
+	.QT3Do-EaZ7Cc-haAclf {
+		background-color: var(--Mast) !important
+	}
+	.i4ewOd-rymPhb-haAclf-tJHJj {
+		background-color: var(--Mast-Dark) !important
+	}
+	.searchbox, .suggestions, .iRxY3GoUYUY__button, .app-imagery-mode .widget-runway-background-filler, .widget-scene-canvas, .widget-homescreen-expander, .ugiz4pqJLAG__icon-outer.ugiz4pqJLAG__icon-background, .section-info-action-icon-button, .section-info-action-icon-button, .lo7U087hsMA__row-row:hover .lo7U087hsMA__row-copy-icon-click-area, body:not(.keynav-mode-off) .lo7U087hsMA__row-copy-icon-click-area:focus, .jqnFjrOWMVU__bucket-background, .allxGeDnJMl__button, .rLwmCGCu6mP__card, .widget-pane-content, .ozj7Vb3wnYq__section-topappbar, .section-divider, .section-suggestions, .ugiz4pqJLAG__button, .widget-homescreen .section-layout.section-cardbox, .section-mobile-promo-download-button.section-mobile-promo-download-button-inverted, .widget-pane-toggle-button, .ita-kd-icon-button, .ita-kd-dropdown-menu, .clustered-widget-hovercard, .un1lmc-pbTTYe-ibnC6b-ZmdkE, .widget-pane-visible, .e07Vkf, .yra0jd, .bVzuaf, .YGwCn, .dRf81e, .ksVxwc, .i6BtHe, .bglq4b, .lgzdnd, .CUDjrd, .i4ewOd-rymPhb-ibnC6b-haAclf, .i4ewOd-rymPhb-ObfsIf-nUpftc .i4ewOd-ibnC6b-jfdpUb-haAclf {
 		background-color: var(--Surface) !important
 	}
 	.ambient-card-section, .ambient-card-section:hover, .ambient-card-section:focus, .ugiz4pqJLAG__button:hover, .iRxY3GoUYUY__button:hover, .cX2WmPgCkHi__clickable:focus, .section-info-action-button:hover, .section-listitem-metadata .section-action-chip-button, .ita-kd-menuitem-hover, .section-editorial-button:hover, .VIpgJd-j7LFlb-ZmdkE, .un1lmc-pbTTYe-ibnC6b-gk6SMd, .rT66Dc:hover, .xoLGzf, .TZl14b {
 		background-color: var(--Surface-Variant) !important
 	}
-	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint, .section-info-hoverable:hover, .section-info .ripple-container:hover, .keynav-mode .section-info-action-button:focus, .keynav-mode .section-info:focus {
+	.section-homescreen-expand-single-card .section-homescreen-expand-entrypoint, .section-info-hoverable:hover, .section-info .ripple-container:hover, .keynav-mode .section-info-action-button:focus, .keynav-mode .section-info:focus, #docs-editor {
 		background-color: var(--Background) !important;
 		color: var(--Foreground-Variant)
 	}
@@ -1223,10 +1244,10 @@
 	.section-info-action-icon-button:last-of-type, .ugiz4pqJLAG__clickable.ugiz4pqJLAG__metadata-shown-on-hover-only:hover .section-listitem-metadata, body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata, .XKSfm-Sx9Kwc-c6xFrd button, .tk3N6e-LgbsSe-n2to0e {
 		background-image: none !important
 	}
-	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title, #issue-card-header, .issue-card-title, .section-hero-header-title-title, .rLwmCGCu6mP__title, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], .psjCIe-Bz112c, .eCT9zd-V67aGc, .i4ewOd-r4nke, .pbTTYe-r4nke, .ilErfe-yePe5c-haAclf, .T2ozWe, .bT9aub, .DUwDvf, .kPvgOb, .sErS0c, .Py6Qke, .vij30, .nhb85d .searchboxinput, .nhb85d .tactile-searchbox-input, .tXNTee, .lb7LQb, .iBQpTe .MlAqDb, button, .bu3EAe, .CUDjrd, .XKSfm-Sx9Kwc-r4nke, .XKSfm-Sx9Kwc, .tk3N6e-LgbsSe-n2to0e, .ilErfe-ztA2jd-ibnC6b-r4nke {
+	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title, #issue-card-header, .issue-card-title, .section-hero-header-title-title, .rLwmCGCu6mP__title, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], .psjCIe-Bz112c, .eCT9zd-V67aGc, .i4ewOd-r4nke, .pbTTYe-r4nke, .ilErfe-yePe5c-haAclf, .T2ozWe, .bT9aub, .DUwDvf, .kPvgOb, .sErS0c, .Py6Qke, .vij30, .nhb85d .searchboxinput, .nhb85d .tactile-searchbox-input, .tXNTee, .lb7LQb, .iBQpTe .MlAqDb, button, .bu3EAe, .CUDjrd, .XKSfm-Sx9Kwc-r4nke, .XKSfm-Sx9Kwc, .tk3N6e-LgbsSe-n2to0e, .ilErfe-ztA2jd-ibnC6b-r4nke, #docs-editor, .z80M1 {
 		color: var(--Foreground) !important
 	}
-	.suggest-query, .widget-settings-button, .section-area-weather-title, .ugiz4pqJLAG__two-line-text .ugiz4pqJLAG__primary-text, .iRxY3GoUYUY__actionchip .iRxY3GoUYUY__text, .iRxY3GoUYUY__densechip .iRxY3GoUYUY__text, .section-info-text, .section-info-text .widget-pane-link, .ugiz4pqJLAG__primary-text, .lo7U087hsMA__row-row, .action-menu-widget-gm2.action-menu-widget, .section-review-subtitle, .section-review-text, .widget-pane-link, .jVMscDilb9d__dense .jVMscDilb9d__input, .ozj7Vb3wnYq__title-and-subtitle, .section-mobile-promo-large-title-with-icon, .section-dialog-header, .section-dialog-footer-text, .ita-kd-menuitem, .cX2WmPgCkHi__root, .section-editorial, .section-attribute-group, .kd-radio-label, .section-hero-header-title-description-container, .VIpgJd-j7LFlb, .VIpgJd-pWKtN, .VIpgJd-SFgmFf, .VIpgJd-wQNmvb-gk6SMd .VIpgJd-j7LFlb-bN97Pc, .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc, .i4ewOd-nUpftc-NnAfwf-fmcmS, .i4ewOd-LQLjdd li, .un1lmc-pbTTYe-ibnC6b, .xwYt2d, .SemQB, .GKsdTb, .LBgpqf, .Io6YTe, .JpCtJf, .JpCtJf .DkEaL, .jftiEf, .OqCZI, .ilErfe-ztA2jd-ibnC6b-ij8cu {
+	.suggest-query, .widget-settings-button, .section-area-weather-title, .ugiz4pqJLAG__two-line-text .ugiz4pqJLAG__primary-text, .iRxY3GoUYUY__actionchip .iRxY3GoUYUY__text, .iRxY3GoUYUY__densechip .iRxY3GoUYUY__text, .section-info-text, .section-info-text .widget-pane-link, .ugiz4pqJLAG__primary-text, .lo7U087hsMA__row-row, .action-menu-widget-gm2.action-menu-widget, .section-review-subtitle, .section-review-text, .widget-pane-link, .jVMscDilb9d__dense .jVMscDilb9d__input, .ozj7Vb3wnYq__title-and-subtitle, .section-mobile-promo-large-title-with-icon, .section-dialog-header, .section-dialog-footer-text, .ita-kd-menuitem, .cX2WmPgCkHi__root, .section-editorial, .section-attribute-group, .kd-radio-label, .section-hero-header-title-description-container, .VIpgJd-j7LFlb, .VIpgJd-pWKtN, .VIpgJd-SFgmFf, .VIpgJd-wQNmvb-gk6SMd .VIpgJd-j7LFlb-bN97Pc, .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc, .i4ewOd-nUpftc-NnAfwf-fmcmS, .i4ewOd-LQLjdd li, .un1lmc-pbTTYe-ibnC6b, .xwYt2d, .SemQB, .GKsdTb, .LBgpqf, .Io6YTe, .JpCtJf, .JpCtJf .DkEaL, .jftiEf, .OqCZI, .ilErfe-ztA2jd-ibnC6b-ij8cu, .i4ewOd-ibnC6b-Tswv1b-HyDyrc-haAclf {
 		color: var(--Foreground-Variant) !important
 	}
 	.section-categorical-shortcut-button-text, .section-review-publish-date, .rap-text-input, .single-selection-enabled .issue-card-field-hint, .section-text-secondary, .section-info-secondary-text, .section-info-secondary-text .widget-pane-link, .OMz1o-jOfkMb-vOkj6e, .OMz1o-jOfkMb-Vj7tjb, .OMz1o-jOfkMb-RcAFl, .OMz1o-jOfkMb-m0vcme, .mgVscd, .i4ewOd-ij8cu, .OMz1o-jOfkMb-JnhlQb {
@@ -1241,7 +1262,7 @@
 	.cX2WmPgCkHi__red {
 		color: var(--red) !important
 	}
-	.maps-sprite-common-chevron-left, .maps-sprite-suggest-work, .maps-sprite-suggest-reviewed, .searchbox-icon, .maps-sprite-settings-chevron-left, .lo7U087hsMA__row-copy-icon, .jVMscDilb9d__clear, .cYrDcjyGO77__dropdown-icon, .section-review-more-icon, .section-review-interaction-icon, .ita-kd-img, .maps-sprite-place-attributes-done, .maps-sprite-suggest-starred, .maps-sprite-suggest-home, .i4ewOd-TaUzNb-haAclf li.i4ewOd-TaUzNb-Bz112c-LgbsSe::after, .psjCIe-Bz112c.psjCIe-pKrx3d::before, .psjCIe-Bz112c::before, .Ensave-nJjxad-bEDTcc, .Ensave-nJjxad-m9bMae, .i4ewOd-TaUzNb-haAclf.li.i4ewOd-TaUzNb-Bz112c-LgbsSe, .PFumDd, .gm-style-iw-c button, #stylepopup-close {
+	.maps-sprite-common-chevron-left, .maps-sprite-suggest-work, .maps-sprite-suggest-reviewed, .searchbox-icon, .maps-sprite-settings-chevron-left, .lo7U087hsMA__row-copy-icon, .jVMscDilb9d__clear, .cYrDcjyGO77__dropdown-icon, .section-review-more-icon, .section-review-interaction-icon, .ita-kd-img, .maps-sprite-place-attributes-done, .maps-sprite-suggest-starred, .maps-sprite-suggest-home, .i4ewOd-TaUzNb-haAclf li.i4ewOd-TaUzNb-Bz112c-LgbsSe::after, .psjCIe-Bz112c.psjCIe-pKrx3d::before, .psjCIe-Bz112c::before, .Ensave-nJjxad-bEDTcc, .Ensave-nJjxad-m9bMae, .i4ewOd-TaUzNb-haAclf.li.i4ewOd-TaUzNb-Bz112c-LgbsSe, .PFumDd, .gm-style-iw-c button, #stylepopup-close, .QT3Do-QA0Szd-LgbsSe-Bz112c, .gXQGxd-ObfsIf-Bz112c, .gXQGxd-rymPhb-Bz112c, .QT3Do-Bpn8Yb-LgbsSe-Bz112c, .QT3Do-t0O6ic-BIzmGd-Bz112c, .i4ewOd-ibnC6b-Bz112c, .i4ewOd-ibnC6b-xl07Ob-Bz112c, .i4ewOd-ibnC6b-euCgFf-Bz112c, .i4ewOd-ibnC6b-PoC6nf-jOfkMb-Bz112c, .i4ewOd-ibnC6b-J2xVie-ndfHFb-Bz112c, .QA0Szd-tJHJj-Bz112c, .QA0Szd-t0O6ic-Bz112c, .QA0Szd-mjN5wd-Bz112c, .QA0Szd-nupQLb-Bz112c, .QA0Szd-ndfHFb-Bz112c, .QA0Szd-h9d3hd-Bz112c, .QA0Szd-N7Eqid-Bz112c, .QA0Szd-ndfHFb-qwU8Me-Bz112c, .Ensave-Bz112c-RJLb9c {
 		filter: invert(1) !important
 	}
 	.searchbox-searchbutton::before, .widget-settings-button-icon, .maps-sprite-settings-languages-blue, .un1lmc-j4gsHd, .un1lmc-pbTTYe-ibnC6b-DyVDA, .gb_D.gb_wc, .wTbtv, .n8kHOd, .Iiwzxd, .YrysQe, .ExJQp, .JVpMu, .w8Xsjd, .kR7P, .pKQ3pb, .bDDiq, .highres .nhb85d .RP0xob, .highres .nhb85d .sbcb_a::before, .highres .mL3xi::before, .k48Abe {
@@ -1268,7 +1289,7 @@
 	.ambient-card-section {
 		margin: 0 !important
 	}
-	.gb_5c.gb_Pg.gb_i, .widget-watermark {
+	.gb_5c.gb_Pg.gb_i, .widget-watermark, .g3VIld {
 		border-radius: 16px !important;
 		padding: 5px !important
 	}
@@ -1320,7 +1341,7 @@
 	#search-bar {
 		box-shadow: none !important
 	}
-	.lVJX2wDGbwj__divider, .section-divider.section-divider-top-line, #stylepopup-popup:after, #stylepopup-popup:before, .ipilje, #inputtools, .luTzOb, .gm-style .gm-style-iw-tc::after, iframe.fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf, .VIpgJd-gqMrKb {
+	.lVJX2wDGbwj__divider, .section-divider.section-divider-top-line, #stylepopup-popup:after, #stylepopup-popup:before, .ipilje, #inputtools, .luTzOb, .gm-style .gm-style-iw-tc::after, iframe.fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf, .VIpgJd-gqMrKb, .kCtYwe {
 		display: none !important
 	}
 	.WHyFic .pbTTYe.pbTTYe-auswjd::before {
@@ -1335,6 +1356,23 @@
 	}
 	.XKSfm-Sx9Kwc-xJ5Hnf, .EkvGXe {
 		opacity: 1 !important
+	}
+	.i4ewOd-rymPhb-ibnC6b-haAclf {
+		transform: translateY(10px) !important;
+		transform-origin: bottom !important;
+		transition: all 1s .2s !important;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4) !important;
+		border-radius: var(--Rounding-Variant) !important;
+		overflow: hidden
+	}
+	.i4ewOd-rymPhb-ibnC6b-haAclf:hover {
+		transform: translateX(0px) !important;
+		transition: all .2s !important;
+		box-shadow: 0 10px 14px 0 rgba(0, 0, 0, .5) !important;
+		border-radius: var(--Rounding) !important;
+	}
+	.HQ8yf, .HQ8yf a {
+		animation: danger-text 2s linear infinite !important
 	}
 	.ft5n9e:hover .I4VS5c {
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QARACEAPLhv2WaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5goVEiEt91zTuwAAAN9JREFUaN7tmMENgzAQBPcoghdN0EFSGVAZdEATvGgi+fgVET6+W+eiHYkPSNYNnM3agBBCCFHJsJ/zsJ9z5uJf5aJLWGXxDwDrx+3lGHuaSBcw5sT8ElUCx9hvAJaWEuY1DwBMF4/C28k8J3MLCfMcrIWEeQ/IlrCIt8KUsKjeZElY5ArBkAgVYEiEC0RLUAQiJWgCN+EPAJ4llvxEmKPSkVto/dJCmyaxltF/+5GljhKpw1zqOJ16Q5N6S5l6U9+y+GqBm3BGO52LyEJ5jhYvTuaoxbvm/NJOQgghBJU3iumaoolGJCIAAAAASUVORK5CYII=) !important
