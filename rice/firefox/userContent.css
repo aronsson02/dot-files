@@ -78,7 +78,10 @@ url("about:privatebrowsing") {
 	a,
 	a:visited,
 	a:hover {
-		color: #292D31!important
+		color: var(--Primary) !important
+	}
+	#private-browsing-myths {
+		color: var(--Primary-Transparent) !important
 	}
 	body {
 	}
@@ -122,8 +125,11 @@ url("about:privatebrowsing") {
 		background-color: transparent !important;
 		backdrop-filter: var(--blur-dark);
 	}
-	.customize-menu {
+	.customize-menu, .search-inner-wrapper .search-handoff-button:hover, .search-inner-wrapper .search-handoff-button:hover:active {
 		background-color: var(--Surface-Transparent) !important;
+	}
+	.fake-textbox {
+		color: var(--Foreground) !important;
 	}
 	.actions {
 		border: none !important;
