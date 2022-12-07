@@ -991,6 +991,36 @@
 		animation: var(--Anim-Google-One) !important;
 	}
 }
+
+@-moz-document url-prefix("https://consent.google.no"), url-prefix("https://consent.google.com"), url-prefix("https://consent.google.se") {
+	html, body {
+		background-color: var(--Background) !important
+	}
+	.box, .hairlinebutton, .setting {
+		background-color: var(--Surface) !important
+	}
+	button, .button {
+		background-color: var(--Primary) !important
+	}
+	h1, .setting h2, .setting h3, h4 {
+		color: var(--Foreground) !important
+	}
+	p, .sub, .contentText, .icaCallout {
+		color: var(--Foreground-Variant) !important
+	}
+	a, a:link, a:visited, a:active, a:hover {
+		color: var(--Primary) !important
+	}
+	button, .button {
+		color: black !important
+	}
+	.box, .hairlinebutton, .setting {
+		border-color: var(--Surface-Alternative) !important
+	}
+	.footer, hr {
+		display: none !important
+	}
+}
 @-moz-document url-prefix("https://drive.google.com") {
 	.XV0XSd.KkxPLb {
 		--dt-background: #fff;
