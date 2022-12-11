@@ -97,7 +97,7 @@ url("about:privatebrowsing") {
 	.collapsible-section {
 		background-color: transparent !important;
 		backdrop-filter: var(--blur-dark);
-		border-radius: 64px !important;
+		border-radius: 48px !important;
 	}
 	.showPrivate.showSearch.container {
 		background-color: transparent !important;
@@ -134,16 +134,35 @@ url("about:privatebrowsing") {
 	.actions {
 		border: none !important;
 	}
-	.topsite-form .form-wrapper input[type="text"], .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
+	.top-site-outer {
+		padding: 24px 14px 2px !important;
+}
+	.topsite-form .form-wrapper input[type="text"] {
 		background-color: var(--Surface-Transparent) !important;
 	}
 	.top-site-outer {
 		border-radius: 32px !important;
+		transition: background-color 500ms 500ms, border-radius 300ms 400ms !important;
+	}
+	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
+		background-color: var(--Surface-Transparent) !important;
+		border-radius: 32px 16px 32px 32px !important;
+		transition: background-color 500ms, border-radius 300ms 200ms !important;
 	}
 	.top-site-outer .tile, .top-site-outer .context-menu-button:is(:active, :focus) {
-		background-color: transparent !important;
-		backdrop-filter: var(--blur-dark-variant);
+		background-color: var(--Surface-Transparent) !important;
 		border-radius: 999px !important;
+		overflow: hidden;
+	}
+	.top-site-outer .tile .icon-wrapper {
+		width: 85px !important;
+		height: 85px !important;;
+	}
+	.top-site-outer .context-menu-button {
+		transition-delay: 300ms !important;
+	}
+	.top-site-outer:hover .context-menu-button {
+		transition-delay: 300ms !important;
 	}
 	.search-wrapper input {
 		--newtab-textbox-focus-boxshadow: none !important;

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.3.2
+@version      5.3.3
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -538,6 +538,12 @@
 		box-shadow: var(--Mast-Variant-Shadow) inset!important;
 		border-radius: var(--Rounding)!important;
 		overflow: hidden
+	}
+	ytmusic-player {
+		margin:	auto 0 !important;
+	}
+	ytmusic-player-page:not([video-mode_]):not([player-fullscreened_]) #player.ytmusic-player-page {
+		max-width: initial !important
 	}
 	.side-panel.modular.style-scope.ytmusic-player-page {
 		background-color: var(--Surface)!important;

@@ -4,7 +4,7 @@ Enable=false
 
 [Colors:Button]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=55, 59, 62
+BackgroundNormal=4, 26, 31
 DecorationFocus=71, 223, 211
 DecorationHover=49, 219, 206
 ForegroundActive=255,128,224
@@ -36,13 +36,13 @@ ForegroundInactive=255,211,188
 ForegroundLink=71, 223, 211
 ForegroundNegative=253,84,126
 ForegroundNeutral=255,170,127
-ForegroundNormal=55, 59, 62
+ForegroundNormal=4, 26, 31
 ForegroundPositive=128,255,128
 ForegroundVisited=17,20,21
 
 [Colors:Tooltip]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=55, 59, 62
+BackgroundNormal=4, 26, 31
 DecorationFocus=71, 223, 211
 DecorationHover=49, 219, 206
 ForegroundActive=255,128,224
@@ -56,7 +56,7 @@ ForegroundVisited=100,58,197
 
 [Colors:View]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=55, 59, 62
+BackgroundNormal=4, 26, 31
 DecorationFocus=0,184,184
 DecorationHover=49, 219, 206
 ForegroundActive=255,128,224
@@ -70,7 +70,7 @@ ForegroundVisited=170,170,170
 
 [Colors:Window]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=55, 59, 62, 0
+BackgroundNormal=4, 26, 31, 0
 DecorationFocus=71, 223, 211
 DecorationHover=49, 219, 206
 ForegroundActive=255,128,224
@@ -83,17 +83,17 @@ ForegroundPositive=0,110,40
 ForegroundVisited=88,51,173
 
 [General]
-ColorScheme=KDE Story
-Name=KDE Story
+ColorScheme=Story
+Name=Story
 shadeSortColumn=true
 
 [KDE]
 contrast=5
 
 [WM]
-activeBackground=55, 59, 62
-activeBlend=55, 59, 62
+activeBackground=4, 26, 31, 0
+activeBlend=4, 26, 31
 activeForeground=170,170,170
-inactiveBackground=55, 59, 62
-inactiveBlend=55, 59, 62
+inactiveBackground=4, 26, 31, 0
+inactiveBlend=4, 26, 31
 inactiveForeground=153,153,153

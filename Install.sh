@@ -1,9 +1,9 @@
-yay -Sy doas awesome-git rofi-git picom-tryone-git alsa-utils pulseaudio pulseaudio-alsa xprop imagemagick xfce4-power-manager xdg-user-dirs kvantum-qt5-git konsole xorg-xinput dolphin-git kate-git ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko inkscape-git whatsapp-for-linux baobab isousb
+yay -Sy doas awesome-git rofi-git picom-tryone-git qt5ct xdg-user-dirs kvantum-qt5-git xorg-xinput ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko inkscape-git whatsapp-for-linux baobab isousb
 doas mkdir /Archive
 doas mkdir /Anime
-doas cp "$HOME/dot-files/X/evdev.xml" "/usr/share/X11/xkb/rules/"
-doas cp "$HOME/dot-files/X/jp" "/usr/share/X11/xkb/symbols"
-setxkbmap jp
+doas cp "$HOME/dot-files/X/00-mouse.conf" "/etc/X11/xorg.conf.d"
+doas cp "$HOME/dot-files/X/no" "/usr/share/X11/xkb/symbols"
+setxkbmap no
 if test -e "$HOME/.config/awesome"; then
     rm -Rv "$HOME/.config/awesome" && ln -sf "$HOME/dot-files/rice/awesomewm" "$HOME/.config/awesome"
     else
