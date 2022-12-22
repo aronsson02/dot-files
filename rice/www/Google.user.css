@@ -45,7 +45,7 @@
 	#comments {
 		padding: 1px 13px !important
 	}
-	#player, .song-media-controls.ytmusic-player, #container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer {
+	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer {
 		background: none!important
 	}
 	.ytp-spinner-container {
@@ -71,15 +71,6 @@
 	}
 	.rich-grid-renderer-contents {
 		background: var(--Background) !important
-	}
-	#thumbnail {
-		-webkit-mask: radial-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 70%);
-	}
-	ytmusic-chip-cloud-renderer {
-		-webkit-mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)
-	}
-	ytmusic-tab-renderer {
-		-webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)
 	}
 	yt-chip-cloud-renderer[is-dark-theme] #right-arrow.yt-chip-cloud-renderer:before {
 		background: linear-gradient(to left, var(--Background, var(--yt-spec-general-background-a)) 10%, rgba(24, 24, 24, 0) 90%)
@@ -556,7 +547,7 @@
 		border-radius: var(--Rounding)!important;
 		overflow: hidden
 	}
-	ytmusic-player-bar, #suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle {
+	#player, .song-media-controls.ytmusic-player, ytmusic-player-bar, #suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle {
 		background: none !important
 	}
 	ytmusic-player {
@@ -582,6 +573,15 @@
 	}
 	#content {
 		visibility: visible !important
+	}
+	#thumbnail {
+		-webkit-mask: radial-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 70%);
+	}
+	ytmusic-chip-cloud-renderer {
+		-webkit-mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)
+	}
+	ytmusic-tab-renderer {
+		-webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)
 	}
 	ytmusic-av-toggle.ytmusic-av-toggle {
 		color: var(--Foreground) !important
