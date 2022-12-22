@@ -22,21 +22,18 @@ local dpi = require("beautiful").xresources.apply_dpi
 
 -- Add a titlebar
 client.connect_signal("request::titlebars", function(c)
-   local titlebar = awful.titlebar(c, {
-      size = dpi(26)
-   })
+   local titlebar = awful.titlebar(c, {position = "left", size = dpi(18) } )
 
    titlebar: setup {
       {
          -- AwesomeWM native buttons (images loaded from theme)
-         wibox.container.margin(awful.titlebar.widget.closebutton(c), dpi(10), dpi(5), dpi(5), dpi(5)),
-         wibox.container.margin(awful.titlebar.widget.maximizedbutton(c), dpi(5), dpi(5), dpi(5), dpi(5)),
-         wibox.container.margin(awful.titlebar.widget.minimizebutton(c), dpi(5), dpi(5), dpi(5), dpi(5)),
-         wibox.container.margin(awful.titlebar.widget.floatingbutton (c), dpi(5), dpi(5), dpi(5), dpi(5)),
-         layout = wibox.layout.fixed.horizontal
+         wibox.container.margin(awful.titlebar.widget.closebutton(c), dpi(4), dpi(1), dpi(4), dpi(4)),
+         wibox.container.margin(awful.titlebar.widget.maximizedbutton(c), dpi(4), dpi(1), dpi(4), dpi(4)),
+         wibox.container.margin(awful.titlebar.widget.minimizebutton(c), dpi(4), dpi(1), dpi(4), dpi(4)),
+         layout = wibox.layout.fixed.vertical
       },
       nil,
-      nil,
-      layout = wibox.layout.align.horizontal
+      wibox.container.margin(awful.titlebar.widget.floatingbutton (c), dpi(4), dpi(1), dpi(4), dpi(4)),
+      layout = wibox.layout.align.vertical
    }
 end)

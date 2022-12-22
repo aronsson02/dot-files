@@ -1,15 +1,15 @@
 configuration {
     show-icons: true;
-    icon-theme: "Tela-dark";
-    font: "OSUF 14";
+    icon-theme: "Story";
+    font: "OSUF 15";
     display-drun: "";
     drun-display-format: "{name}";
 }
 
 * {
     background-color: transparent;
-    background: #5B60711A;
-    background-alt: #ffffff13;
+    background: transparent;
+    background-alt: #00000066;
     text-color: #D8DEE9;
     primary: #A3BE8C;
     urgent: #BF616A;
@@ -17,7 +17,7 @@ configuration {
 
 window {
     height: 100%;
-    width: 20%;
+    width: 100%;
     transparency: "real";
     background-color: @background;
 }
@@ -35,9 +35,9 @@ prompt {
 }
 
 entry {
-    font: "OSUF 14";
+    font: "OSUF 15";
     placeholder-color: #999999;
-    placeholder: "Search Applications";
+    placeholder: "Søk etter applikasjoner";
     blink: true;
 }
 
@@ -48,7 +48,7 @@ mainbox {
 }
 
 listview {
-    columns: 3;
+    columns: 18;
     layout: vertical;
     spacing: 0;
     margin: 7% 0;

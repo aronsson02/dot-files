@@ -126,15 +126,15 @@ local function list_update(w, buttons, label, data, objects)
       else
           -- truncate when title is too long
          local text_only = text:match('>(.-)<')
-         if (text_only:len() > 24) then
-            text = text:gsub('>(.-)<', '>' .. text_only:sub(1, 21) .. '...<')
+         if (text_only:len() > 48) then
+            text = text:gsub('>(.-)<', '>' .. text_only:sub(1, 48) .. '...<')
             tt:set_text(text_only)
             tt:add_to_object(tb)
          else
             tt:remove_from_object(tb)
          end
          if not tb:set_markup_silently(text) then
-            tb:set_markup('<i>&lt;Invalid text&gt;</i>')
+            tb:set_markup('<i>&lt;Ugyldig tekst&gt;</i>')
          end
       end
       bgb:set_bg(bg)
@@ -203,7 +203,7 @@ local tasklist_buttons = awful.util.table.join(
 task_list.create = function(s)
    return awful.widget.tasklist(
       s,
-      awful.widget.tasklist.filter.currenttags,
+      awful.widget.tasklist.filter.allscreen,
       tasklist_buttons,
       {},
       list_update,

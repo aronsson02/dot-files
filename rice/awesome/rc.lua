@@ -46,7 +46,8 @@ network_interfaces = {
 -- List of apps to run on start-up
 local run_on_start_up = {
    "picom --config " .. theme_config_dir .. "picom.conf",
-   "ckb-next --background"
+   "ckb-next --background",
+   "sleep 1s && xrandr --output DisplayPort-0 --off --output DisplayPort-1 --primary --mode 3840x2160 --pos 0x1440 --rotate normal --output DisplayPort-2 --off --output HDMI-A-0 --mode 1920x1080 --scale-from 2560x1440 --pos 0x0 --rotate normal --output DVI-D-0 --off"
 }
 
 

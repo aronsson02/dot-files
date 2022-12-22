@@ -23,7 +23,7 @@ local mirage = {}
 
 mirage.initialize = function()
    -- Set Wallpaper
-   gears.wallpaper.maximized(gears.filesystem.get_configuration_dir() .. "/wallpaper/midnight-wallpaper.png")
+   gears.wallpaper.maximized(gears.filesystem.get_configuration_dir() .. "/wallpaper/midnight-wallpaper.png", s)
 
    -- Import components
    require("components.exit-screen")
@@ -50,11 +50,9 @@ mirage.initialize = function()
 
       -- Only add the left panel on the primary screen
       if s.index == 1 then
-         left_panel.create(s)
+         top_panel.create(s)
       end
 
-      -- Add the top panel to every screen
-      top_panel.create(s)
    end)
 
    -- set initally selected tag to be active

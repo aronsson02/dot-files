@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.2.9
+@version      4.3.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -22,6 +22,7 @@
 		--Surface: #061f29;
 		--Surface-Variant: #02303B;
 		--Surface-Transparent: #00000066;
+		--Surface-Transparent-Alternative: #00000033;
 		--Surface-Alternative: #25283F;
 		--Primary: #1CCFEA;
 		--Primary-Dark: #12AAC1;
@@ -74,6 +75,12 @@
 	::-webkit-scrollbar {
 		display: none !important
 	}
+
+	/*
+	x {
+	-webkit-mask: radial-gradient(rgba(0,0,0,1) 60%, rgba(0,0,0,0) 70%)
+	}
+	*/
 
 	/* animation: hue-rotate 6s linear infinite !important */
 	@keyframes hue-rotate {

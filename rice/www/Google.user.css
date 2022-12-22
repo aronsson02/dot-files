@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.3.3
+@version      5.3.5
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -45,7 +45,7 @@
 	#comments {
 		padding: 1px 13px !important
 	}
-	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer {
+	#player, .song-media-controls.ytmusic-player, #container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer {
 		background: none!important
 	}
 	.ytp-spinner-container {
@@ -71,6 +71,15 @@
 	}
 	.rich-grid-renderer-contents {
 		background: var(--Background) !important
+	}
+	#thumbnail {
+		-webkit-mask: radial-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 70%);
+	}
+	ytmusic-chip-cloud-renderer {
+		-webkit-mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)
+	}
+	ytmusic-tab-renderer {
+		-webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)
 	}
 	yt-chip-cloud-renderer[is-dark-theme] #right-arrow.yt-chip-cloud-renderer:before {
 		background: linear-gradient(to left, var(--Background, var(--yt-spec-general-background-a)) 10%, rgba(24, 24, 24, 0) 90%)
@@ -203,7 +212,7 @@
 	ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"] c3-icon {
 		color: var(--red) !important
 	}
-	#like-bar, .style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer, .iron-selected:not(.ytmusic-pivot-bar-renderer), .segment-timestamp.ytd-transcript-segment-renderer {
+	#like-bar, .style-scope.ytd-commentbox #submit-button, .style-scope.ytd-thumbnail-overlay-resume-playback-renderer, .segment-timestamp.ytd-transcript-segment-renderer {
 		background-color: var(--Primary)!important
 	}
 	ytm-thumbnail-overlay-time-status-renderer[data-style="LIVE"] {
@@ -520,47 +529,59 @@
 	}
 }
 @-moz-document domain("music.youtube.com") {
-	[dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background {
+	[dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background, #player-bar-background.ytmusic-app-layout, .side-panel.modular.style-scope.ytmusic-player-page, .av-toggle.ytmusic-av-toggle {
 		background-color: transparent!important;
 		background-image: none!important;
 		backdrop-filter: var(--blur-dark)!important
 	}
 	.center-content.ytmusic-nav-bar {
-		background-color: var(--Mast)
+		background-color: var(--Mast-Transparent);
+		backdrop-filter: var(--blur)!important
 	}
-	.style-scope.ytmusic-section-list-renderer.fullbleed.stuck #header.style-scope.ytmusic-item-section-renderer {
+	.style-scope.ytmusic-section-list-renderer.fullbleed.stuck #header.style-scope.ytmusic-item-section-renderer, ytmusic-search-suggestions-section.ytmusic-search-box, tp-yt-paper-listbox {
 		background-color: transparent!important;
 		background-image: none!important;
 		backdrop-filter: var(--blur)!important
 	}
-	.search-box.style-scope.ytmusic-search-box {
-		background-color: var(--Mast-Variant)!important;
-		box-shadow: var(--Mast-Variant-Shadow) inset!important;
+	#player-page {
+		background-color: transparent!important;
+		background-image: none!important;
+		backdrop-filter: var(--blur-variant)!important
+	}
+	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
+		backdrop-filter: var(--blur-variant)!important
+	}
+	.search-box.style-scope.ytmusic-search-box, ytmusic-search-suggestions-section.ytmusic-search-box {
+		background-color: var(--Surface-Transparent-Alternative)!important;
 		border-radius: var(--Rounding)!important;
 		overflow: hidden
 	}
+	ytmusic-player-bar, #suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle {
+		background: none !important
+	}
 	ytmusic-player {
-		margin:	auto 0 !important;
+		margin: auto 0 !important;
 	}
 	ytmusic-player-page:not([video-mode_]):not([player-fullscreened_]) #player.ytmusic-player-page {
 		max-width: initial !important
 	}
 	.side-panel.modular.style-scope.ytmusic-player-page {
-		background-color: var(--Surface)!important;
 		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0!important;
 		overflow: hidden
 	}
 	ytmusic-app-layout > [slot=nav-bar] {
 		width: 100vw!important
 	}
-	ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle {
+	.iron-selected:not(.ytmusic-pivot-bar-renderer) {
 		background-color: var(--Primary-Transparent)!important
 	}
 	ytmusic-search-suggestions-section.ytmusic-search-box {
 		border: none!important;
-		background-color: var(--Mast-Variant);
 		border-radius: 0 0 var(--Rounding) var(--Rounding)!important;
 		overflow: hidden
+	}
+	#content {
+		visibility: visible !important
 	}
 	ytmusic-av-toggle.ytmusic-av-toggle {
 		color: var(--Foreground) !important
@@ -570,14 +591,14 @@
 	}
 	ytmusic-search-box[opened], ytmusic-search-box[has-query], ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box, ytmusic-app-layout > [slot=nav-bar], #nav-bar-background.ytmusic-app-layout {
 		border: none!important;
-		box-shadow: var(--Mast-Shadow)!important
+		box-shadow: none!important
 	}
 	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
 		border-radius: 8px 8px 0 0!important;
 		overflow: hidden
 	}
-	#suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section {
-		background-color: var(--Mast-Variant)
+	ytmusic-player-queue-item {
+		border: none !important
 	}
 	ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-shadow.ytmusic-app-layout {
 		opacity: 0!important
@@ -595,8 +616,14 @@
 		background-color: var(--Surface);
 		box-shadow: none
 	}
-	ytmusic-player-bar, .style-scope.ytmusic-popup-container, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle, .av-toggle.ytmusic-av-toggle, tp-yt-paper-listbox {
-		background-color: var(--Surface)
+	ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle, ytmusic-av-toggle[playback-mode="OMV_PREFERRED"] .video-button.ytmusic-av-toggle {
+		border: 1px solid #80808080 !important
+	}
+	ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle, ytmusic-av-toggle[playback-mode="OMV_PREFERRED"] .video-button.ytmusic-av-toggle {
+		background-color: var(--Surface-Transparent) !important
+	}
+	ytmusic-browse-response[has-background]:not([disable-gradient]) .background-gradient.ytmusic-browse-response {
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, var(--Background) 100%) !important
 	}
 	.iron-selected .text.ytmusic-menu-navigation-item-renderer {
 		color: black !important
@@ -606,11 +633,7 @@
 		background-color: var(--Surface);
 		box-shadow: none
 	}
-	ytmusic-player-page {
-		display: block;
-		background-color: var(--Background)
-	}
-	ytmusic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer:first-child {
+	usic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer:first-child {
 		box-shadow: none
 	}
 	yt-button-renderer[is-paper-button], .tab-header.style-scope.ytmusic-player-page.iron-selected {
@@ -618,6 +641,12 @@
 	}
 	.selection-bar.tp-yt-paper-tabs {
 		border-bottom-color: var(--Primary) !important
+	}
+	ytmusic-description-shelf-renderer {
+		padding: 0 2em
+	}
+	#steering-chips.ytmusic-player-queue {
+		padding: 4px 0
 	}
 	yt-button-renderer #button.yt-button-renderer {
 		color: var(--Foreground);
@@ -634,6 +663,9 @@
 		background-color: transparent;
 		margin: 0 0 0 16px;
 		box-shadow: none
+	}
+	ytmusic-av-toggle[toggle-disabled] .av-toggle.ytmusic-av-toggle {
+		display: none
 	}
 }
 @-moz-document url-prefix("https://docs.google.com") {
@@ -917,7 +949,7 @@
 	.qM9CP, .eOjPIe, .gssb_e {
 		background: none !important
 	}
-	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe, .mEUgP, .isv-t, a.isv-t:visited, .I90TVb, .lyLwlc, .wyrwXc.AP7Wnd, .deIvCb.AP7Wnd, .RXaOfd, .mWefFb, input {
+	.gb_l .gb_tb, .a, cite, cite a:link, cite a:visited, .cite, .cite:link, .bc a:link, .wUrVib, .EZRelc, .gLFyf, .lBbtTb, .hdtb-mitem a:hover, .s49v2 span, .mus_il:first-child span, .FbzDTd, .z1asCe, .mEUgP, .isv-t, a.isv-t:visited, .I90TVb, .lyLwlc, .wyrwXc.AP7Wnd, .deIvCb.AP7Wnd, .RXaOfd, .mWefFb, input, .wM6W7d {
 		color: var(--Foreground) !important
 	}
 	.tfB0Bf input[type="submit"], .gbqfba, #footer a, .Rq5Gcb, .aCOpRe em, .st em, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, #footer b, .s3v9rd.AP7Wnd, .r0bn4c.rQMQod, .oqSTJd, .eLZYyf, .tAd8D.AP7Wnd {
@@ -1374,7 +1406,7 @@
 	.section-header, #searchbox, #interactive-hovercard {
 		box-shadow: var(--Mast-Shadow) !important
 	}
-	#search-bar {
+	#search-bar, .b0t70b-haAclf {
 		box-shadow: none !important
 	}
 	.lVJX2wDGbwj__divider, .section-divider.section-divider-top-line, #stylepopup-popup:after, #stylepopup-popup:before, .ipilje, #inputtools, .luTzOb, .gm-style .gm-style-iw-tc::after, iframe.fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf, .VIpgJd-gqMrKb, .kCtYwe {

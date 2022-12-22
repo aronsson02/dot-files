@@ -113,7 +113,7 @@ url("about:privatebrowsing") {
 		background-color: var(--Surface-Variant) !important;
 		border-radius: 16px !important;
 	}
-	.non-collapsible-section {
+	.non-collapsible-section, #private-browsing-myths {
 		display: none !important;
 	}
 	.modalOverlayOuter {
@@ -125,13 +125,13 @@ url("about:privatebrowsing") {
 		background-color: transparent !important;
 		backdrop-filter: var(--blur-dark);
 	}
-	.customize-menu, .search-inner-wrapper .search-handoff-button:hover, .search-inner-wrapper .search-handoff-button:hover:active {
+	.customize-menu, .search-inner-wrapper .search-handoff-button:hover, .search-handoff-button.focused:not(.disabled) {
 		background-color: var(--Surface-Transparent) !important;
 	}
 	.fake-textbox {
 		color: var(--Foreground) !important;
 	}
-	.actions {
+	.actions, .search-handoff-button {
 		border: none !important;
 	}
 	.top-site-outer {
@@ -180,6 +180,9 @@ url("about:privatebrowsing") {
 	.search-button {
 		background: none !important;
 	}
+	.info {
+		background-color: transparent !important;
+	}
 	.prefs-button button {
 		fill: #9BA8BB !important;
 	}
@@ -189,6 +192,9 @@ url("about:privatebrowsing") {
 	}
 	.contentSearchSuggestionTable {
 		display: none !important;
+	}
+	.search-handoff-button {
+		box-shadow: none !important;
 	}
 }
 :root {
