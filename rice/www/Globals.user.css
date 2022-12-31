@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      4.3.0
+@version      5.0.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,21 +14,21 @@
 
 @-moz-document regexp(".*") {
 	:root {
-		--Foreground: #FFFFFF;
-		--Foreground-Variant: #FFFFFFCC;
-		--Foreground-Dark: #FFFFFF66;
-		--Foreground-Transparent: #FFFFFF33;
-		--Background: #041A1F;
-		--Surface: #061f29;
-		--Surface-Variant: #02303B;
+		--Foreground: #EEEEEE;
+		--Foreground-Variant: #EEEEEECC;
+		--Foreground-Dark: #EEEEEE66;
+		--Foreground-Transparent: #EEEEEE33;
+		--Background: #101010;
+		--Surface: #202020;
+		--Surface-Variant: #303030;
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
 		--Surface-Alternative: #25283F;
-		--Primary: #1CCFEA;
-		--Primary-Dark: #12AAC1;
-        --Primary-Transparent: #00ffff80;
-		--Secondary: #EA1CCF;
-		--Secondary-Transparent: #EA1CCF80;
+		--Primary: #00FFFF;
+		--Primary-Dark: #00CCCC;
+        --Primary-Transparent: #00FFFF80;
+		--Secondary: #FF00FF;
+		--Secondary-Transparent: #FF00FF80;
 		--Mast: var(--Surface-Alternative);
 		--Mast-Transparent: #25283F80;
 		--Mast-Variant: #2e324f;
