@@ -1,4 +1,4 @@
-yay -Sy doas awesome-git rofi-git picom-tryone-git qt5ct xdg-user-dirs kvantum-qt5-git xorg-xinput ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko inkscape-git whatsapp-for-linux baobab isousb
+yay -Sy doas awesome-git rofi-git picom-tryone-git qt5ct xdg-user-dirs kvantum-qt5-git xorg-xinput ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko inkscape-git whatsapp-for-linux baobab isousb czkawka-gui czkawka-cli
 doas mkdir /Archive
 doas mkdir /Anime
 doas cp "$HOME/dot-files/X/00-mouse.conf" "/etc/X11/xorg.conf.d"

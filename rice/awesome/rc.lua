@@ -39,15 +39,15 @@ apps = {
 -- define wireless and ethernet interface names for the network widget
 -- use `ip link` command to determine these
 network_interfaces = {
-   wlan = 'wlp1s0',
-   lan = 'enp1s0'
+   wlan = 'eno1',
+   lan = 'eno1'
 }
 
 -- List of apps to run on start-up
 local run_on_start_up = {
    "picom --config " .. theme_config_dir .. "picom.conf",
    "ckb-next --background",
-   "sleep 1s && xrandr --output DisplayPort-0 --off --output DisplayPort-1 --primary --mode 3840x2160 --pos 0x1440 --rotate normal --output DisplayPort-2 --off --output HDMI-A-0 --mode 1920x1080 --scale-from 2560x1440 --pos 0x0 --rotate normal --output DVI-D-0 --off"
+   "sleep 1s && xrandr --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --primary --mode 3840x2160 --pos 0x1080 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 540x0 --rotate normal"
 }
 
 

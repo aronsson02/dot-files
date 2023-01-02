@@ -1,0 +1,58 @@
+/* ==UserStyle==
+@name         Pixiv
+@version      0.0.1
+@description  Pixiv
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Pixiv.user.css
+@license      CC0
+@preprocessor default
+==/UserStyle== */
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("pixiv.net") {
+	.lPHpt {
+		background: none !important;
+		backdrop-filter: var(--blur) !important
+	}
+	.sc-1wmoqw-1 {
+		background: none !important;
+		backdrop-filter: var(--blur-dark) !important
+	}
+	.sc-1wmoqw-0, .bSLemN, .hMFZAj, .hYBINe, .sc-162tykz-0, .sc-1ow64s0-1  {
+		background: none !important;
+		backdrop-filter: var(--blur-dark-variant) !important
+	}
+	.ckuYsq, .kDlMmy, .cuTZeZ, .cuTZeZ, .cxXhWC, .dWlHet, .cxqcFu {
+		background: none !important
+	}
+	.beQeCv, .sc-1pkrz0g-0, body, .list-items {
+		background-color: var(--Background) !important
+	}
+	.bGUtlw, .YUFLT, .hdvpLU, ._unit, .footer {
+		background-color: var(--Surface) !important
+	}
+	.bookmark-detail-unit .input-box, .bookmark-detail-unit .input-box input {
+		background-color: var(--Surface-Variant)
+	}
+	.iUhfll, .biNiqG {
+		background-color: var(--Mast) !important
+	}
+	body, input::placeholder {
+		color: var(--Foreground) !important
+	}
+	.bXjFLc {
+		color: var(--red) !important
+	}
+	._unit, .footer, .bookmark-detail-unit .input-box {
+		border: none !important
+	}
+	.hdvpLU {
+		border-radius: 8px !important;
+		padding: 0 16px
+	}
+	.sc-1nhgff6-3 {
+		-webkit-mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%)
+	}
+}
