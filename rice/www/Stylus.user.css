@@ -7,30 +7,33 @@
 @homepageURL  https://github.com/aronsson02/dot-files
 @supportURL   https://github.com/aronsson02/dot-files/issues
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Stylus.user.css
-@license      CC0
-@preprocessor default
 ==/UserStyle== */
 
-@namespace url(http://www.w3.org/1999/xhtml);
-
 @-moz-document url-prefix("moz-extension://"), url-prefix("chrome-extension://") {
-#stylus-edit, #stylus-popup, #stylus-manage, #options-title, .CodeMirror-search-field, #message-box-buttons {
-    background-color: var(--Surface) !important;
-    color: var(--Foreground) !important;
-}
-#options, #message-box-contents {
-    background-color: var(--Surface-Variant) !important;
-    color: var(--Foreground) !important;
-}
-#message-box.danger #message-box-title, #save-button {
-	background-color: var(--red) !important;
-}
-.svg-icon.checked, .option.aligned, .style-name-link, .filter-selection div {
-    filter: invert() !important;
-}
-#help-popup {
-	background-color: transparent !important;
-	background-image: none !important;
-	backdrop-filter: var(--blur-dark) !important;
-}
+	#stylus-options, #message-box > div {
+		backdrop-filter: var(--blur) !important;
+		background: none !important
+	}
+	#message-box {
+		backdrop-filter: var(--blur-dark-variant) !important;
+		background: none !important
+	}
+	#options-title, #message-box-title, .entry.usercss .style-name-link::after, .active #filters-stats {
+		background-color: var(--Primary) !important
+	}
+	#options, #message-box-buttons {
+		background: none !important
+	}
+	h1 {
+		color: var(--Foreground) !important
+	}
+	.active #filters-stats, .entry.usercss .style-name-link::after, #options-title {
+		color: black !important
+	}
+	#options-close-icon, #message-box-close-icon {
+		filter: brightness(0%) !important
+	}
+	.actions {
+		filter: brightness(200%) !important
+	}
 }
