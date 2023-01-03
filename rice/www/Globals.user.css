@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      5.0.0
+@version      5.0.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -68,6 +68,9 @@
 
 	*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons):not(.w-icon):not(.goog-inline-block) {
 		font-family: "OSUF" !important;
+	}
+
+	* {
 		scrollbar-width: none !important;
 		color-scheme: dark !important;
 	}
