@@ -1,18 +1,19 @@
 :root {
-		--Foreground: #FFFFFF;
-		--Foreground-Variant: #FFFFFFCC;
-		--Foreground-Dark: #FFFFFF66;
-		--Foreground-Transparent: #FFFFFF33;
-		--Background: #041A1F;
-		--Surface: #061f29;
-		--Surface-Variant: #02303B;
+		--Foreground: #EEEEEE;
+		--Foreground-Variant: #EEEEEECC;
+		--Foreground-Dark: #EEEEEE66;
+		--Foreground-Transparent: #EEEEEE33;
+		--Background: #101010;
+		--Surface: #202020;
+		--Surface-Variant: #303030;
 		--Surface-Transparent: #00000066;
+		--Surface-Transparent-Alternative: #00000033;
 		--Surface-Alternative: #25283F;
-		--Primary: #1CCFEA;
-		--Primary-Dark: #12AAC1;
-		--Primary-Transparent: #1CCFEA80;
-		--Secondary: #EA1CCF;
-		--Secondary-Transparent: #EA1CCF80;
+		--Primary: #00FFFF;
+		--Primary-Dark: #00CCCC;
+        --Primary-Transparent: #00FFFF80;
+		--Secondary: #FF00FF;
+		--Secondary-Transparent: #FF00FF80;
 		--Mast: var(--Surface-Alternative);
 		--Mast-Transparent: #25283F80;
 		--Mast-Variant: #2e324f;
@@ -26,10 +27,13 @@
 		--blue: #120056;
 		--yellow: #f1ff52;
 		--blur: blur(40px); /* backdrop-filter: var(--blur) */
+		--blur-hover: blur(10px);
 		--blur-variant: blur(5px);
 		--blur-dark: var(--blur) brightness(66%);
+		--blur-dark-hover: var(--blur-hover) brightness(66%);
 		--blur-dark-variant: var(--blur-variant) brightness(66%);
 		--blur-bright: var(--blur) brightness(110%);
+		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
 		--Mast-Shadow: 0 0 8px 1px var(--Mast);
 		--Mast-Variant-Shadow: 0 0 8px 1px var(--Mast-Variant);
@@ -45,7 +49,7 @@
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
 		--Anim-Google-One: google-one 6s ease infinite;
 		--Spinner: var(--Primary) transparent;
-}
+	}
 @keyframes hue-rotate {
 	0% {
 		filter: hue-rotate(0deg);
