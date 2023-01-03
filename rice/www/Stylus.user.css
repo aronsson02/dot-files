@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stylus
-@version      2.1.0
+@version      3.0.0
 @description  Stylus theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -8,7 +8,6 @@
 @supportURL   https://github.com/aronsson02/dot-files/issues
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Stylus.user.css
 ==/UserStyle== */
-
 @-moz-document url-prefix("moz-extension://"), url-prefix("chrome-extension://") {
 	#stylus-options, #message-box > div {
 		backdrop-filter: var(--blur) !important;
@@ -18,17 +17,104 @@
 		backdrop-filter: var(--blur-dark-variant) !important;
 		background: none !important
 	}
+	body, .CodeMirror-sizer {
+		background-color: var(--Background) !important
+	}
+	#header, .applies-to {
+		background-color: var(--Surface) !important
+	}
+	button {
+		background-color: var(--Surface-Variant) !important
+	}
 	#options-title, #message-box-title, .entry.usercss .style-name-link::after, .active #filters-stats {
 		background-color: var(--Primary) !important
+	}
+	.cm-s-material-darker .cm-error {
+		background-color: var(--red) !important;
+	}
+	.cm-s-material-darker .cm-keyword:not(.colorview) {
+		background-color: #C792EA !important
 	}
 	#options, #message-box-buttons {
 		background: none !important
 	}
+	button {
+		background-image: none !important
+	}
+	.CodeMirror-gutters {
+		background: linear-gradient(to right, var(--Surface) 40%, var(--Background) 100%) !important
+	}
 	h1 {
 		color: var(--Foreground) !important
 	}
-	.active #filters-stats, .entry.usercss .style-name-link::after, #options-title {
+	.cm-s-material-darker .cm-comment {
+		color: var(--Foreground-Dark) !important
+	}
+	.cm-s-material-darker .cm-atom, .cm-s-material-darker .cm-number {
+		color: var(--Primary) !important
+	}
+	.cm-s-material-darker .cm-property {
+		color: var(--red) !important
+	}
+	.cm-s-material-darker .cm-variable {
+		color: var(--green) !important
+	}
+	.cm-s-material-darker .cm-def, .cm-s-material-darker .cm-meta {
+		color: var(--orange) !important
+	}
+	.cm-s-material-darker .cm-qualifier, .cm-s-material-darker .cm-variable-3 {
+		color: var(--yellow) !important
+	}
+	.active #filters-stats, .entry.usercss .style-name-link::after, #options-title, .cm-s-material-darker .cm-error, .cm-s-material-darker .cm-keyword {
 		color: black !important
+	}
+	#beautify, #check-all-updates, #add-style-label, #unfile-all-styles, #sync-styles, #editor\.tabSize, input[type=checkbox], .option select {
+		border-radius: var(--Rounding-Variant) !important
+	}
+	.split-btn #save-button, #style-settings-btn, #manage-options-button, #file-all-styles {
+		border-radius: var(--Rounding-Variant-Left) !important
+	}
+	#save-button ~ .split-btn-pedal, #cancel-button, #injection-order-button, #file-all-styles ~ .split-btn-pedal {
+		border-radius: var(--Rounding-Variant-Right) !important
+	}
+	#header-resizer {
+		border: none !important
+	}
+	#header {
+		box-shadow: none !important
+	}
+	#cancel-button {
+		margin-left: 0 !important
+	}
+	#style-settings-btn {
+		margin-right: 0 !important
+	}
+	input[type=checkbox] {
+		padding: 6px !important
+	}
+	.option select {
+		padding-left: 3px !important
+	}
+	#publish {
+		display: none !important
+	}
+	.cm-s-material-darker .cm-keyword:not(.colorview), .cm-s-material-darker .cm-error {
+		padding: 0 2px !important;
+		border-radius: var(--Rounding) !important
+	}
+	.cm-s-material-darker .cm-keyword.colorview {
+		color: var(--green) !important;
+		border-radius: var(--Rounding-Variant) !important;
+		padding-right: 2px !important;
+		padding-left: 16px !important
+	}
+	.cm-s-material-darker .cm-keyword.colorview:before {
+		border-radius: var(--Rounding-Variant) !important;
+		left: 4px !important
+	}
+	.svg-icon.checked {
+		height: 9px !important;
+		width: 9px !important
 	}
 	#options-close-icon, #message-box-close-icon {
 		filter: brightness(0%) !important

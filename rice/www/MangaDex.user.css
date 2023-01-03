@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      3.1.1
+@version      3.1.2
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -8,8 +8,7 @@
 @supportURL   https://github.com/aronsson02/dot-files/issues
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/MangaDex.user.css
 ==/UserStyle== */
-
-@-moz-document domain("mangadex.org") {
+@-moz-document domain("mangadex.org"), domain("auth.mangadex.org") {
 	:root {
 		--md-primary-lighten2: #ffe1d9;
 		--md-primary-lighten: var(--Primary-Transparent);
@@ -91,6 +90,18 @@
 	#nuxt-loading {
 		background: var(--Background) !important
 	}
+	#kc-form-buttons input {
+		background-color: var(--Primary) !important
+	}
+	#kc-form-buttons input {
+		color: var(--Background) !important
+	}
+	.login-pf a {
+		color: var(--Primary) !important
+	}
+	input[type="checkbox"] {
+		accent-color: var(--Primary) !important
+	}
 	.group:hover .group-hover\:opacity-100[data-v-46420996] {
 		transition: backdrop-filter 500ms !important
 	}
@@ -106,6 +117,9 @@
 			backdrop-filter: var(--blur) !important;
 			transition: all 200ms
 		}
+	}
+	.card-pf {
+		border-color: var(--Primary) !important
 	}
 	.reader--menu {
 		border: none !important
