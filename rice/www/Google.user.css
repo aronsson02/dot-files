@@ -228,7 +228,6 @@
 @-moz-document domain("www.youtube.com") {
 	#masthead-container.ytd-app {
 		z-index: 2045;
-		position: sticky
 	}
 	ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
 		z-index: 2050
