@@ -124,6 +124,38 @@
 	display: none !important;
 }
 
+/* show tab manager button even when tabs aren't overflowing -  
+   can instead use browser.tabs.tabmanager.enabled;true as well  
+   or skip this part if you want to retain the default behaviour */  
+#alltabs-button {  
+    display: -moz-box !important;  
+}  
+
+/* tab counter */  
+#TabsToolbar-customization-target {  
+    counter-reset: tabCount;  
+}  
+.tabbrowser-tab {  
+    counter-increment: tabCount;  
+}  
+#alltabs-button > .toolbarbutton-badge-stack > .toolbarbutton-icon {  
+    visibility: collapse !important;  
+}  
+#alltabs-button > .toolbarbutton-badge-stack {  
+    position: relative !important;  
+}  
+#alltabs-button > .toolbarbutton-badge-stack::before {  
+    content: counter(tabCount);  
+    border-bottom: 1px solid var(--toolbarbutton-icon-fill);  
+    color: var(--toolbarbutton-icon-fill);  
+    opacity: var(--toolbarbutton-icon-fill-opacity);  
+    position: absolute;  
+    bottom: var(--toolbarbutton-inner-padding);  
+    left: 50%;  
+    transform: translateX(-50%);  
+    padding: 0 3px;  
+}
+
 /* -----URL bar blur----- */
 /*#urlbar[open] > #urlbar-background {
 	backdrop-filter: var(--blur) !important;
@@ -134,7 +166,7 @@
 
 #identity-box, #tracking-protection-icon-box, #tabs-newtab-button, #private-browsing-indicator-with-label image, #private-browsing-indicator-with-label label, #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional, .tab-close-button, #appMenu-popup #PanelUI-button {
   opacity: 0 !important;
-  transition: opacity 250ms linear 2s !important;
+  transition: opacity 1s linear 2s !important;
 }
 #navigator-toolbox:hover #identity-box, #navigator-toolbox:hover #tracking-protection-icon-box, #navigator-toolbox:hover #tabs-newtab-button, #navigator-toolbox:hover #private-browsing-indicator-with-label image, #navigator-toolbox:hover #private-browsing-indicator-with-label label, #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional, #navigator-toolbox:hover .tab-close-button {
   opacity: 1 !important;
@@ -143,7 +175,7 @@
 
 #urlbar-background {
 	background-color: Transparent !important;
-	transition: all 250ms linear 2s !important;
+	transition: all 2s linear 1s !important;
 	box-shadow: none !important;
 }
 #navigator-toolbox:hover #urlbar-background {
@@ -204,9 +236,16 @@
 	background: none !important;
 }
 
+browser[primary="true"][tabDialogShowing="true"],
+#main-window[window-modal-open="true"] > body > #browser{
+  filter: var(--blur-variant) !important
+}
+:root[dialogroot], :host(dialog) {
+	background: none !important;
+}
 .dialogBox {
 	border-radius: var(--Rounding-Variant) !important;
-	margin-top: 10em !important;
+	backdrop-filter: var(--blur-dark) !important;
 }
 #bookmarkproperties {
 	background-color: var(--Surface) !important;
@@ -218,6 +257,9 @@
 	background-color: var(--Surface-Variant) !important;
 	border-radius: var(--Rounding) !important;
 	border: none !important;
+}
+.titleIcon {
+	background-color: #00000000 !important;
 }
 
 /*
