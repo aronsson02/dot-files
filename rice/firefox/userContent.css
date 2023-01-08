@@ -11,7 +11,7 @@
 		--Surface-Alternative: #25283F;
 		--Primary: #00FFFF;
 		--Primary-Dark: #00CCCC;
-        --Primary-Transparent: #00FFFF80;
+	  --Primary-Transparent: #00FFFF80;
 		--Secondary: #FF00FF;
 		--Secondary-Transparent: #FF00FF80;
 		--Mast: var(--Surface-Alternative);
@@ -163,6 +163,7 @@ url("about:privatebrowsing") {
 		background-color: var(--Surface-Transparent) !important;
 		border-radius: 999px !important;
 		overflow: hidden;
+		mask: radial-gradient(rgba(0,0,0,1) 55%, rgba(0,0,0,0) 70%)
 	}
 	.top-site-outer .tile .icon-wrapper {
 		width: 85px !important;

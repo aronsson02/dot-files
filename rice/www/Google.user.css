@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.3.8
+@version      5.3.9
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -501,9 +501,6 @@
 	}
 	ytd-app[masthead-hidden_] #masthead-container {
 		position: fixed
-	}
-	html:not([fullscreen="true"]):not([hide-scrollbar="true"]) ytd-page-manager#page-manager.style-scope.ytd-app, html:not([fullscreen="true"]):not([hide-scrollbar="true"]) > body > ytd-app > #content, #body-container, .ytcp-entity-page-0 #main[studio-theme="DASHBOARD"].ytcp-entity-page {
-		margin-top: 0!important;
 	}
 	#movie_player.ytp-fullscreen {
 		background-color: var(--Surface)

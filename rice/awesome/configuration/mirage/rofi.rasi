@@ -8,10 +8,10 @@ configuration {
 
 * {
     background-color: transparent;
-    background: transparent;
-    background-alt: #00000066;
-    text-color: #D8DEE9;
-    primary: #A3BE8C;
+    background: #00000066;
+    background-alt: #00000033;
+    text-color: #EEEEEE;
+    primary: #00FFFF;
     urgent: #BF616A;
 }
 
