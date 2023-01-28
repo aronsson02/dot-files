@@ -6,7 +6,7 @@
    version="1.1"
    id="svg22024"
    sodipodi:docname="kvantum.svg"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -23,13 +23,13 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
      inkscape:zoom="13.906433"
-     inkscape:cx="25.204162"
-     inkscape:cy="26.929982"
-     inkscape:window-width="1920"
-     inkscape:window-height="1002"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:cx="21.357022"
+     inkscape:cy="26.965937"
+     inkscape:window-width="1899"
+     inkscape:window-height="2126"
+     inkscape:window-x="1921"
+     inkscape:window-y="1112"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg22024">
     <inkscape:grid
        type="xygrid"
@@ -281,55 +281,63 @@
     </linearGradient>
     <radialGradient
        id="radialGradient24818"
-       cx="3.6559"
-       cy="4.2245998"
+       cx="2.0371351"
+       cy="4.1619487"
        r="7.5405002"
-       gradientTransform="matrix(5.3807979,4.8746771,-5.2192701,5.0636062,15.760923,-26.004845)"
-       gradientUnits="userSpaceOnUse">
+       gradientTransform="matrix(7.2939457,6.4982427,-5.297779,4.9992149,12.190333,-29.044274)"
+       gradientUnits="userSpaceOnUse"
+       fx="2.0371351"
+       fy="4.1619487">
       <stop
          stop-color="#bf616a"
          offset="0"
-         id="stop193" />
+         id="stop193"
+         style="stop-color:#ff001b;stop-opacity:1;" />
       <stop
          stop-color="#bf616a"
-         offset=".19754"
-         id="stop195" />
+         offset="0.1"
+         id="stop195"
+         style="stop-color:#ff0018;stop-opacity:1;" />
       <stop
          stop-color="#d08770"
-         offset=".27002"
-         id="stop197" />
+         offset="0.17"
+         id="stop197"
+         style="stop-color:#ff3b00;stop-opacity:1;" />
       <stop
          stop-color="#d08770"
-         offset=".313"
-         id="stop199" />
+         offset="0.25999999"
+         id="stop199"
+         style="stop-color:#ff3500;stop-opacity:1;" />
       <stop
          stop-color="#a3be8c"
-         offset=".37789"
-         id="stop201" />
+         offset="0.37"
+         id="stop201"
+         style="stop-color:#72ff00;stop-opacity:1;" />
       <stop
          stop-color="#a3be8c"
-         offset=".56553"
-         id="stop203" />
+         offset="0.47999999"
+         id="stop203"
+         style="stop-color:#73ff00;stop-opacity:1;" />
       <stop
          stop-color="#88c0d0"
-         offset=".63653"
-         id="stop205" />
-      <stop
-         stop-color="#88c0d0"
-         offset=".69161"
-         id="stop207" />
+         offset="0.57287097"
+         id="stop205"
+         style="stop-color:#00eeff;stop-opacity:1;" />
       <stop
          stop-color="#5e81ac"
-         offset=".78892"
-         id="stop209" />
+         offset="0.6961745"
+         id="stop209"
+         style="stop-color:#0072ff;stop-opacity:1;" />
       <stop
          stop-color="#b48ead"
-         offset=".85778"
-         id="stop211" />
+         offset="0.85921919"
+         id="stop211"
+         style="stop-color:#ff00ff;stop-opacity:1;" />
       <stop
          stop-color="#b48ead"
          offset="1"
-         id="stop213" />
+         id="stop213"
+         style="stop-color:#ff00a6;stop-opacity:1;" />
     </radialGradient>
     <linearGradient
        id="linearGradient28836"

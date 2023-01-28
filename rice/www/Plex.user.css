@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      4.63.0
+@version      4.87.2
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -15,7 +15,60 @@ url-prefix("https://plex.tv"),
 domain("127.0.0.1"),
 regexp("https?://.*:32400/.*"),
 regexp(".*:32400/.*") {
-    x {
-
+	.modal-header, .modal-footer, .modal-body-with-panes .modal-nav-pane, .ModalBody-modalBody-Me4Hwy, .ModalContent-modalContent-_BsQSK {
+		background: none !important
+	}
+	.Menu-menu-OCzudL {
+		background: none !important;
+		backdrop-filter: var(--blur) !important
+	}
+	.modal-backdrop, .Modal-modalBackdrop-nE6cJg {
+		background: none !important;
+		backdrop-filter: var(--blur-variant) !important
+	}
+	.BottomBar-bottomBar-hnsKzI, .AudioVideoFullPlayer-videoTopBar-SPrEoI, .modal-content,.SourceSidebar-sidebar-yw2lNo, .NavBar-container-F87RQ_, .Modal-modal-eUJhK0 {
+		background: none !important;
+		backdrop-filter: var(--blur-dark) !important
+	}
+    .ActionButton-iconActionButton-qpUHPk, select {
+		background: none !important;
+		backdrop-filter: var(--blur-dark-variant) !important
     }
+	.btn-default, .form-control {
+		background-color: var(--Foreground-Transparent)
+	}
+	.btn-primary, .Button-primary-cMdkLb, .Button-primary-XgQxrm {
+		background-color: var(--Primary) !important
+	}
+	.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary, .Button-primary-cMdkLb:hover, .Button-primary-XgQxrm:hover {
+		background-color: var(--Primary-Transparent) !important
+	}
+	.Link-default-BXtKLo, .PrePlayPrimaryTitle-primaryTitle-m91Ron a {
+		color: var(--Foreground) !important
+	}
+	a, .btn-gray.selected, .Link-isSelected-x0P_By {
+		color: var(--Primary) !important
+	}
+	a:hover, .Link-link-SxPFpG:hover {
+		color: var(--Primary-Dark) !important
+	}
+	.btn-gray {
+		color: var(--gray) !important
+	}
+	.btn-primary, .Button-primary-XgQxrm {
+		color: black !important
+	}
+	.modal-content, select, .Modal-modal-eUJhK0 {
+		border-radius: var(--Rounding-Variant) !important;
+		overflow: hidden !important
+	}
+	.modal-header, .modal-footer, select {
+		border: none !important
+	}
+	.modal-backdrop {
+		opacity: 1 !important
+	}
+	.NavBarButton-button-cMcOo3, .NavBar-buttonSeparator-racpPW {
+		display: none !important
+	}
 }

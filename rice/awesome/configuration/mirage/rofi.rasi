@@ -1,6 +1,6 @@
 configuration {
     show-icons: true;
-    icon-theme: "Story";
+    icon-theme: "Reverence";
     font: "OSUF 15";
     display-drun: "";
     drun-display-format: "{name}";
