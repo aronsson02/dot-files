@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.0
+@version      5.4.1
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -1255,7 +1255,7 @@
 	}
 }
 @-moz-document url-prefix("https://www.google.com/maps"), url-prefix("https://www.google.se/maps"), url-prefix("https://www.google.no/maps") {
-	.app-imagery-mode .uCBduRuX4WR__button, .app-imagery-mode .widget-zoom-button, .app-imagery-mode .xsYFzc, .app-imagery-mode .widget-expand-button-pegman, .app-imagery-mode .scene-footer, .app-imagery-mode .widget-tilt-button, .app-imagery-mode .widget-mylocation-button, .app-imagery-mode .mapsTactileClientGlobeGlobetoggle__button, .app-imagery-mode .uSzaJe, .app-imagery-mode .WzvKIe, .app-imagery-mode .DMPNfb, .mapsConsumerUiTiltInternalTilt__widget-tilt-button, .widget-reveal-card, .gb_5c.gb_Pg.gb_i, .action-menu-widget, .widget-layer, .widget-nearby-suggestions-inner, #zoomToolbar, #undoRedoToolbar, #drawingToolbar, #directionsToolbar, #measureToolbar, #mobileToolbar, #zoomToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #drawingToolbar .VIpgJd-INgbqf-LgbsSe, #directionsToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #mobileToolbar .VIpgJd-INgbqf-LgbsSe, #mp-footer > li, #gb, .dwFJGb-u7eiKf, .dwFJGb-bMcfAe-wEXlac, .U5xfxc, .tXNTee, .xoLGzf, .E9Z7uf .m6QErb.iS1Ot {
+	.app-imagery-mode .uCBduRuX4WR__button, .app-imagery-mode .widget-zoom-button, .app-imagery-mode .xsYFzc, .app-imagery-mode .widget-expand-button-pegman, .app-imagery-mode .scene-footer, .app-imagery-mode .widget-tilt-button, .app-imagery-mode .widget-mylocation-button, .app-imagery-mode .mapsTactileClientGlobeGlobetoggle__button, .app-imagery-mode .uSzaJe, .app-imagery-mode .WzvKIe, .app-imagery-mode .DMPNfb, .mapsConsumerUiTiltInternalTilt__widget-tilt-button, .widget-reveal-card, .gb_5c.gb_Pg.gb_i, .action-menu-widget, .widget-layer, .widget-nearby-suggestions-inner, #zoomToolbar, #undoRedoToolbar, #drawingToolbar, #directionsToolbar, #measureToolbar, #mobileToolbar, #zoomToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #drawingToolbar .VIpgJd-INgbqf-LgbsSe, #directionsToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #mobileToolbar .VIpgJd-INgbqf-LgbsSe, #mp-footer > li, #gb, .U5xfxc, .tXNTee, .xoLGzf, .E9Z7uf .m6QErb.iS1Ot {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
@@ -1267,7 +1267,7 @@
 		background: none !important;
 		backdrop-filter: var(--blur) !important;
 	}
-	.gm-style .gm-style-iw-c:hover, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], #stylepopup-popup:hover, .b0t70b-haAclf:hover, .hdeJwf, .yu5kgd, .y1wT6-Sx9Kwc, .VIpgJd-xl07Ob:hover, .VIpgJd-TUo6Hb, .XKSfm-Sx9Kwc, .jyrRxf-haAclf TABLE, .JPdR6b:hover, .g3VIld {
+	.gm-style .gm-style-iw-c:hover, #stylepopup-popup:hover, .b0t70b-haAclf:hover, .hdeJwf, .yu5kgd, .y1wT6-Sx9Kwc, .VIpgJd-xl07Ob:hover, .VIpgJd-TUo6Hb, .XKSfm-Sx9Kwc, .jyrRxf-haAclf TABLE, .JPdR6b:hover, .g3VIld {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important;
 	}
@@ -1280,6 +1280,12 @@
 	}
 	.b0t70b-haAclf:hover, .VIpgJd-xl07Ob:hover, .gm-style .gm-style-iw-c:hover, #stylepopup-popup:hover, #mapsprosearch-field[aria-expanded="true"], #mapsprosearch-field[aria-expanded="true"] + #mapsprosearch-button, .JPdR6b:hover, .llhEMd.iWO5td {
 		transition: backdrop-filter .3s !important
+	}
+	.i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .dwFJGb, .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke, div.fO2voc-jRmmHf-LJTIlf {
+		transition: background 5s 1s !important
+	}
+	.gm-style .gm-style-iw-c:hover .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .gm-style .gm-style-iw-c:hover .dwFJGb, .gm-style .gm-style-iw-c:hover .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke, .gm-style .gm-style-iw-c:hover  div.fO2voc-jRmmHf-LJTIlf {
+		transition: background .3s .2s !important
 	}
 	.QT3Do-EaZ7Cc-haAclf, .ODXihb, .bIuQGc, .Ehirqb, .d0UoQ, .dp9cUc, .kzu6Ye, .e07Vkf, .DAdBuc, .yra0jd {
 		background-color: var(--Mast) !important
@@ -1300,7 +1306,7 @@
 	.section-header, #mapsprosearch-field.tk3N6e-y4JFTd, .ztA2jd-SUR3Rd, .ztA2jd-auswjd {
 		background-color: var(--Mast-Transparent) !important
 	}
-	.VogBGf:active, .VogBGf:hover, .uEj1Gb, .bTUV6e:active, .bTUV6e:hover, div.fO2voc-jRmmHf-LJTIlf, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke, .XKSfm-Sx9Kwc-c6xFrd button, .XKSfm-Sx9Kwc-c6xFrd button:hover, .VIpgJd-j7LFlb-sn54Q, .jyrRxf-gk6SMd, .jyrRxf-ZmdkE, #table-top-left-cell, .tk3N6e-LgbsSe-n2to0e {
+	.VogBGf:active, .VogBGf:hover, .uEj1Gb, .bTUV6e:active, .bTUV6e:hover, .gm-style .gm-style-iw-c:hover  div.fO2voc-jRmmHf-LJTIlf, .gm-style .gm-style-iw-c:hover .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke, .XKSfm-Sx9Kwc-c6xFrd button, .XKSfm-Sx9Kwc-c6xFrd button:hover, .VIpgJd-j7LFlb-sn54Q, .jyrRxf-gk6SMd, .jyrRxf-ZmdkE, #table-top-left-cell, .tk3N6e-LgbsSe-n2to0e, .gm-style .gm-style-iw-c:hover .dwFJGb, .gm-style .gm-style-iw-c:hover .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke {
 		background-color: var(--Surface-Transparent) !important
 	}
 	.widget-directions-omnibox, .widget-directions-dragger, .jqnFjrOWMVU__bucket-fill, .widget-directions-omnibox .searchbox, .section-directions-options, .section-popular-times-value, .VIpgJd-SxecR-PFprWc, .WHyFic .pbTTYe.pbTTYe-auswjd::before, .Oys2tb.kTlC5c, .WHyFic .pbTTYe-ZmdkE .pbTTYe::before, .XKSfm-Sx9Kwc-c6xFrd .VIpgJd-ldDVFe-JIbuQc {
@@ -1312,7 +1318,7 @@
 	.widget-directions .searchbox-searchbutton, .section-popular-times-current-value {
 		background: var(--Secondary) !important
 	}
-	.widget-directions .sbib_b::after, .nhb85d .sbib_b::after, .OqCZI, .Vo5ZAe .e07Vkf, .sT82ee, .preQRb, .i4ewOd-LQLjdd, .XKSfm-Sx9Kwc-r4nke, .XKSfm-Sx9Kwc-bN97Pc {
+	.widget-directions .sbib_b::after, .nhb85d .sbib_b::after, .OqCZI, .Vo5ZAe .e07Vkf, .sT82ee, .preQRb, .i4ewOd-LQLjdd, .XKSfm-Sx9Kwc-r4nke, .XKSfm-Sx9Kwc-bN97Pc, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .dwFJGb-bMcfAe-wEXlac, .dwFJGb, .dwFJGb-u7eiKf, .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke, div.fO2voc-jRmmHf-LJTIlf {
 		background: none !important
 	}
 	.section-info-action-icon-button:last-of-type, .ugiz4pqJLAG__clickable.ugiz4pqJLAG__metadata-shown-on-hover-only:hover .section-listitem-metadata, body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata, .XKSfm-Sx9Kwc-c6xFrd button, .tk3N6e-LgbsSe-n2to0e {
@@ -1425,7 +1431,7 @@
 	.widget-homescreen .section-layout.section-cardbox, .VIpgJd-SxecR-PFprWc, div.fO2voc-jRmmHf-LJTIlf, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-g7W7Ed-lTBxed, .i4ewOd-TaUzNb-r4nke-haAclf div.i4ewOd-TaUzNb-r4nke {
 		border-radius: var(--Rounding-Variant) !important;
 	}
-	#search-bar, .b0t70b-haAclf, .ODXihb, .Tc0rEd, .DAdBuc {
+	#search-bar, .b0t70b-haAclf, .ODXihb, .Tc0rEd, .DAdBuc, .gm-style .gm-style-iw-c {
 		box-shadow: none !important
 	}
 	.lVJX2wDGbwj__divider, .section-divider.section-divider-top-line, #stylepopup-popup:after, #stylepopup-popup:before, .ipilje, #inputtools, .luTzOb, .gm-style .gm-style-iw-tc::after, iframe.fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf, .VIpgJd-gqMrKb, .kCtYwe {
