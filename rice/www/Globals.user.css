@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      5.0.1
+@version      5.0.2
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -8,7 +8,6 @@
 @supportURL   https://github.com/aronsson02/dot-files/issues
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Globals.user.css
 ==/UserStyle== */
-
 @-moz-document regexp(".*") {
 	:root {
 		--Foreground: #EEEEEE;
@@ -23,7 +22,7 @@
 		--Surface-Alternative: #25283F;
 		--Primary: #00FFFF;
 		--Primary-Dark: #00CCCC;
-        --Primary-Transparent: #00FFFF80;
+		--Primary-Transparent: #00FFFF80;
 		--Secondary: #FF00FF;
 		--Secondary-Transparent: #FF00FF80;
 		--Mast: var(--Surface-Alternative);
@@ -38,13 +37,13 @@
 		--green: #00E676;
 		--blue: #120056;
 		--yellow: #f1ff52;
-		--blur: blur(40px); /* backdrop-filter: var(--blur) */
+		--blur: blur(40px) contrast(0.9) saturate(1.5); /* backdrop-filter: var(--blur) */
 		--blur-hover: blur(10px);
 		--blur-variant: blur(5px);
-		--blur-dark: var(--blur) brightness(66%);
+		--blur-dark: var(--blur) brightness(66%) contrast(0.9) saturate(1.5);
 		--blur-dark-hover: var(--blur-hover) brightness(66%);
 		--blur-dark-variant: var(--blur-variant) brightness(66%);
-		--blur-bright: var(--blur) brightness(110%);
+		--blur-bright: var(--blur) brightness(110%) contrast(0.9) saturate(1.5);
 		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
 		--Mast-Shadow: 0 0 8px 1px var(--Mast);
@@ -81,7 +80,6 @@
 	mask: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 99%)
 	}
 	*/
-
 	/* animation: hue-rotate 6s linear infinite !important */
 	@keyframes hue-rotate {
 		0% {
@@ -96,15 +94,15 @@
 	@keyframes filter {
 		0% {
 			filter: hue-rotate(360deg) sepia(0);
-            background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
+			background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
 		}
 		50% {
 			filter: hue-rotate(0) sepia(50%);
-            background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
+			background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
 		}
 		100% {
 			filter: hue-rotate(360deg) sepia(0);
-            background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
+			background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
 		}
 	}
 
@@ -114,35 +112,35 @@
 		}
 		20% {
 			transform: rotate(-20deg);
-            filter: saturate(100%)
+			filter: saturate(100%)
 		}
 		40% {
 			transform: rotate(1100deg);
-            filter: saturate(150%)
+			filter: saturate(150%)
 		}
 		50% {
 			transform: rotate(1080deg);
-            filter: saturate(100%)
+			filter: saturate(100%)
 		}
 		55% {
 			transform: rotate(1080deg);
-            filter: saturate(100%)
+			filter: saturate(100%)
 		}
 		65% {
 			transform: rotate(1100deg);
-            filter: saturate(100%)
+			filter: saturate(100%)
 		}
 		85% {
 			transform: rotate(-20deg);
-            filter: saturate(150%)
+			filter: saturate(150%)
 		}
 		100% {
 			transform: rotate(0deg);
-            filter: saturate(100%)
+			filter: saturate(100%)
 		}
 	}
-    /* animation: danger 1s linear infinite */
-    @keyframes danger {
+	/* animation: danger 1s linear infinite */
+	@keyframes danger {
 		0% {
 			background-color: var(--red);
 		}
@@ -153,8 +151,8 @@
 			background-color: var(--red);
 		}
 	}
-    /* animation: danger-text 1s linear infinite */
-    @keyframes danger-text {
+	/* animation: danger-text 1s linear infinite */
+	@keyframes danger-text {
 		0% {
 			color: var(--red);
 		}

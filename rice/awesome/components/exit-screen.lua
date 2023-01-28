@@ -17,7 +17,7 @@ local beautiful = require("beautiful")
 local clickable_container = require("widgets.clickable-container")
 
 local dpi = beautiful.xresources.apply_dpi
-local ICON_DIR = gears.filesystem.get_configuration_dir() .. "/icons/exit-screen/" .. beautiful.name .. "/"
+local ICON_DIR = gears.filesystem.get_configuration_dir() .. "/icons/exit-screen/"
 
 -- define module table
 local exit_screen = {}
@@ -28,7 +28,7 @@ local exit_screen = {}
 -- ===================================================================
 
 
-local icon_size = dpi(90)
+local icon_size = dpi(128)
 
 local build_button = function(icon)
    local button = wibox.widget {

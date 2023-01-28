@@ -91,9 +91,9 @@ theme.systray_icon_spacing = dpi(5)
 
 
 -- Define layout icons
-theme.layout_tile = "~/.config/awesome/icons/layouts/tiled.png"
-theme.layout_floating = "~/.config/awesome/icons/layouts/floating.png"
-theme.layout_max = "~/.config/awesome/icons/layouts/maximized.png"
+theme.layout_tile = "~/.config/awesome/icons/layouts/tiled.svg"
+theme.layout_floating = "~/.config/awesome/icons/layouts/floating.svg"
+theme.layout_max = "~/.config/awesome/icons/layouts/maximized.svg"
 
 theme.icon_theme = "Tela-dark"
 

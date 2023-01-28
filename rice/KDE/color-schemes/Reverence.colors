@@ -4,12 +4,12 @@ Enable=false
 
 [Colors:Button]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=4, 26, 31
-DecorationFocus=71, 223, 211
-DecorationHover=49, 219, 206
+BackgroundNormal=32, 32, 32
+DecorationFocus=0, 255, 255
+DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
 ForegroundInactive=170,170,170
-ForegroundLink=71, 223, 211
+ForegroundLink=0, 255, 255
 ForegroundNegative=253,84,126
 ForegroundNeutral=255,170,127
 ForegroundNormal=180,180,180
@@ -27,27 +27,27 @@ ForegroundNeutral=255,170,127
 ForegroundVisited=0,184,184
 
 [Colors:Selection]
-BackgroundAlternate=49, 219, 206
-BackgroundNormal=49, 219, 206
-DecorationFocus=71, 223, 211
-DecorationHover=49, 219, 206
+BackgroundAlternate=0, 255, 255, 128
+BackgroundNormal=0, 255, 255, 128
+DecorationFocus=0, 255, 255
+DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
 ForegroundInactive=255,211,188
-ForegroundLink=71, 223, 211
+ForegroundLink=0, 255, 255
 ForegroundNegative=253,84,126
 ForegroundNeutral=255,170,127
-ForegroundNormal=4, 26, 31
+ForegroundNormal=32, 32, 32
 ForegroundPositive=128,255,128
 ForegroundVisited=17,20,21
 
 [Colors:Tooltip]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=4, 26, 31
-DecorationFocus=71, 223, 211
-DecorationHover=49, 219, 206
+BackgroundNormal=32, 32, 32
+DecorationFocus=0, 255, 255
+DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
 ForegroundInactive=168,198,207
-ForegroundLink=71, 223, 211
+ForegroundLink=0, 255, 255
 ForegroundNegative=253,84,126
 ForegroundNeutral=255,170,127
 ForegroundNormal=205,205,205
@@ -56,9 +56,9 @@ ForegroundVisited=100,58,197
 
 [Colors:View]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=4, 26, 31
+BackgroundNormal=32, 32, 32
 DecorationFocus=0,184,184
-DecorationHover=49, 219, 206
+DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
 ForegroundInactive=205,205,205
 ForegroundLink=0,184,184
@@ -70,12 +70,12 @@ ForegroundVisited=170,170,170
 
 [Colors:Window]
 BackgroundAlternate=67, 72, 76
-BackgroundNormal=4, 26, 31, 0
-DecorationFocus=71, 223, 211
-DecorationHover=49, 219, 206
+BackgroundNormal=32, 32, 32, 0
+DecorationFocus=0, 255, 255
+DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
 ForegroundInactive=153,153,153
-ForegroundLink=71, 223, 211
+ForegroundLink=0, 255, 255
 ForegroundNegative=253,84,126
 ForegroundNeutral=255,170,127
 ForegroundNormal=205,205,205
@@ -83,17 +83,17 @@ ForegroundPositive=0,110,40
 ForegroundVisited=88,51,173
 
 [General]
-ColorScheme=Story
-Name=Story
+ColorScheme=Reverence
+Name=Reverence
 shadeSortColumn=true
 
 [KDE]
 contrast=5
 
 [WM]
-activeBackground=4, 26, 31, 0
-activeBlend=4, 26, 31
+activeBackground=32, 32, 32, 0
+activeBlend=32, 32, 32
 activeForeground=170,170,170
-inactiveBackground=4, 26, 31, 0
-inactiveBlend=4, 26, 31
+inactiveBackground=32, 32, 32, 0
+inactiveBlend=32, 32, 32
 inactiveForeground=153,153,153
