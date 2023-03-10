@@ -1,4 +1,4 @@
-yay -Sy doas awesome-git rofi-git picom-tryone-git qt5ct xdg-user-dirs kvantum-qt5-git xorg-xinput ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko inkscape-git whatsapp-for-linux baobab isousb czkawka-gui czkawka-cli
+yay -Sy doas awesome-git rofi-git picom-tryone-git qt5ct xdg-user-dirs kvantum-qt5-git xorg-xinput ckb-next-git fontforge ktorrent gparted rawtherapee wine wine-mono wine-gecko inkscape-git whatsapp-for-linux baobab isousb czkawka-gui czkawka-cli easyeffects
 
 doas mkdir /Archive
 doas mkdir /Anime
