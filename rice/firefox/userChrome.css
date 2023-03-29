@@ -518,6 +518,10 @@ panelview,
 #toolbar-menubar, #placesContext, #PlacesChevronPopup, #tabContextMenu, #downloadsPanel, #editBookmarkPanel {
 	background-color: var(--Surface-Transparent) !important;
 }
+:is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton):not([disabled]):hover {
+	background-color: #00ffff45 !important;
+	border: 1px solid var(--Primary) !important;
+}
 .menupopup-arrowscrollbox {
 	background: none !important;
 }
