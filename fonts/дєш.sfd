@@ -195,11 +195,11 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 14 14 4
+WinInfo: 42 14 6
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 215040 107520 71680 532480 -1048576 71680 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 153
+BeginChars: 1114112 139
 
 StartChar: space
 Encoding: 32 32 0
@@ -4298,134 +4298,8 @@ Fore
 Refer: 130 47 N -1 0 0 1 660 0 2
 EndChar
 
-StartChar: uniF508
-Encoding: 62728 62728 136
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF509
-Encoding: 62729 62729 137
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF50A
-Encoding: 62730 62730 138
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF50B
-Encoding: 62731 62731 139
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF50C
-Encoding: 62732 62732 140
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF50D
-Encoding: 62733 62733 141
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF50E
-Encoding: 62734 62734 142
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF50F
-Encoding: 62735 62735 143
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF510
-Encoding: 62736 62736 144
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF511
-Encoding: 62737 62737 145
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF512
-Encoding: 62738 62738 146
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF513
-Encoding: 62739 62739 147
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF514
-Encoding: 62740 62740 148
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniF515
-Encoding: 62741 62741 149
-Width: 1267
-Flags: W
-LayerCount: 2
-Fore
-Refer: 11 65 N 1 0 0 1 0 0 2
-EndChar
-
 StartChar: percent
-Encoding: 37 37 150
+Encoding: 37 37 136
 Width: 1434
 Flags: W
 HStem: 0 21G<255 472.16 1235.84 1453> 0 21G<255 472.16 1235.84 1453> 1423 20G<767 941> 1423 20G<767 941>
@@ -4466,7 +4340,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eng
-Encoding: 330 330 151
+Encoding: 330 330 137
 Width: 1704
 Flags: W
 HStem: 0 180<302 1404> 607 228<773.035 932.965> 1263 180<302 1404>
@@ -4497,7 +4371,7 @@ EndSplineSet
 EndChar
 
 StartChar: eng
-Encoding: 331 331 152
+Encoding: 331 331 138
 Width: 1304
 Flags: W
 HStem: 0 180<252 1054> 406 228<573.035 732.965> 860 180<252 1054>
