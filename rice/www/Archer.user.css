@@ -1,0 +1,104 @@
+/* ==UserStyle==
+@name         Archer
+@version      0.0.1
+@description  TP-Link Archer
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Archer.user.css
+==/UserStyle== */
+
+@-moz-document domain("10.1.1.1") {
+	body, #mainBody {
+		background-image: url(https://github.com/aronsson02/dot-files/raw/master/rice/firefox/paper.png);
+		background-position: center;
+		background-color: var(--Background) !important
+	}
+	#main, #top, #pc-scroll, #pc-top, #menuTree ul.mu2::before, .select-box, .tp-select li {
+		background: none !important;
+	}
+	div.msg-container, div.help-content-container, .drop-down {
+		background: none !important;
+		backdrop-filter: var(--blur-dark)!important
+	}
+	div.status-panel-main, h4.status {
+		background: none !important;
+		backdrop-filter: var(--blur-dark-hover)!important
+	}
+	#base-inner, #top-con, #menuTree li.ml1 a, #pc-login, #pc-top-container, .pc-bottom-background {
+		background: none !important;
+		backdrop-filter: var(--blur-hover) contrast(0.9) saturate(1.5)!important
+	}
+	.bot-background {
+		background: none !important;
+		backdrop-filter: var(--blur-variant) contrast(0.9) saturate(1.5)!important
+	}
+	div.mask {
+		background: none !important;
+		backdrop-filter: var(--blur-hover) contrast(0.9) saturate(1.5)!important;
+		opacity: 1 !important
+	}
+	div.top-nav ul li {
+		background-color: var(--Primary-Transparent)
+	}
+	div.top-nav ul li.selected span.text, div.top-nav.disabled ul li.selected span.text {
+		background-color: var(--Primary) !important;
+		color: black !important
+	}
+	#menuTree li.ml1 a.sel {
+		background-color: var(--Surface-Transparent) !important;
+		border: none !important
+	}
+	*, #menu a.sel span.text, div.header-container h3 span, div.help-container div.help-content-container div.help-content h4.title {
+		color: var(--Foreground)
+	}
+	.label-title, .tp-input-text, .select-container .select-title, .tp-select .select-box {
+		color: var(--Foreground-Variant) !important
+	}
+	#menu li.ml2 a.clicked span.text {
+		color: var(--Primary) !important
+	}
+	h4.status {
+		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0 !important
+	}
+	div.status-panel-main, #top-con, #pc-top-container {
+		border-radius: 0 0 var(--Rounding-Variant) var(--Rounding-Variant) !important
+	}
+	#menuTree li.ml1 a, .drop-down, div.help-content-container {
+		border-radius: 32px 6px 32px 16px !important
+	}
+	#pc-login, div.msg-container {
+		border-radius: var(--Rounding-Variant) !important
+	}
+	#main {
+		border-top: var(--Foreground-Transparent) solid 1px !important
+	}
+	.pure-table, .pure-table td, .pure-table th, .pure-form input[type="text"].tp-input-text, .pure-form input[type="password"].tp-input-text, .tpAddress-wrapper, .tp-select .select-box, .drop-down, div.status-panel-main, h4.status {
+		border-color: var(--Foreground-Transparent) !important
+	}
+	div.help-content-container, #menuTree li.ml1 a {
+		border: 1px solid var(--Foreground-Transparent)
+	}
+	div.msg-container, .drop-down, div.help-content-container {
+		box-shadow: none !important
+	}
+	#menu span.icon, #conn_status_internet, #conn_status_wireless_2g {
+		filter: invert(1) hue-rotate(310deg) brightness(2.5) !important
+	}
+	#conn_status_wireless_5g {
+		filter: invert(1) hue-rotate(160deg) brightness(2.5) !important
+	}
+	#pc-login {
+		padding: 32px 16px !important
+	}
+	#pc-top-container {
+		padding: 0 16px !important
+	}
+	#pc-top-country {
+		right: 16px !important
+	}
+	div.top-nav ul #qs, #pc-arrowBg {
+		display: none !important
+	}
+}
