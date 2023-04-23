@@ -3,7 +3,7 @@
 		--Foreground-Variant: #EEEEEECC;
 		--Foreground-Dark: #EEEEEE66;
 		--Foreground-Transparent: #EEEEEE33;
-		--Background: #101010;
+		--Background: #151515;
 		--Surface: #202020;
 		--Surface-Variant: #303030;
 		--Surface-Transparent: #00000066;
@@ -11,7 +11,7 @@
 		--Surface-Alternative: #25283F;
 		--Primary: #00FFFF;
 		--Primary-Dark: #00CCCC;
-        --Primary-Transparent: #00FFFF80;
+		--Primary-Transparent: #00FFFF80;
 		--Secondary: #FF00FF;
 		--Secondary-Transparent: #FF00FF80;
 		--Mast: var(--Surface-Alternative);
@@ -26,13 +26,13 @@
 		--green: #00E676;
 		--blue: #120056;
 		--yellow: #f1ff52;
-		--blur: blur(40px); /* backdrop-filter: var(--blur) */
+		--blur: blur(40px) contrast(0.9) saturate(1.5); /* backdrop-filter: var(--blur) */
 		--blur-hover: blur(10px);
 		--blur-variant: blur(5px);
-		--blur-dark: var(--blur) brightness(66%);
+		--blur-dark: var(--blur) brightness(66%) contrast(0.9) saturate(1.5);
 		--blur-dark-hover: var(--blur-hover) brightness(66%);
 		--blur-dark-variant: var(--blur-variant) brightness(66%);
-		--blur-bright: var(--blur) brightness(110%);
+		--blur-bright: var(--blur) brightness(110%) contrast(0.9) saturate(1.5);
 		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
 		--Mast-Shadow: 0 0 8px 1px var(--Mast);
@@ -164,23 +164,23 @@
     box-shadow: none !important;
 }*/
 
-#identity-box, #tracking-protection-icon-box, #tabs-newtab-button, #private-browsing-indicator-with-label image, #private-browsing-indicator-with-label label, #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional, .tab-close-button, #appMenu-popup #PanelUI-button {
+#identity-box, #unified-extensions-button, #tracking-protection-icon-box, #tabs-newtab-button, #private-browsing-indicator-with-label image, #private-browsing-indicator-with-label label, #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional, .tab-close-button, #appMenu-popup #PanelUI-button {
   opacity: 0 !important;
-  transition: opacity 1s linear 2s !important;
+  transition: opacity 1s ease-out 2s !important;
 }
-#navigator-toolbox:hover #identity-box, #navigator-toolbox:hover #tracking-protection-icon-box, #navigator-toolbox:hover #tabs-newtab-button, #navigator-toolbox:hover #private-browsing-indicator-with-label image, #navigator-toolbox:hover #private-browsing-indicator-with-label label, #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional, #navigator-toolbox:hover .tab-close-button {
+#navigator-toolbox:hover #identity-box, #navigator-toolbox:hover #unified-extensions-button, #navigator-toolbox:hover #tracking-protection-icon-box, #navigator-toolbox:hover #tabs-newtab-button, #navigator-toolbox:hover #private-browsing-indicator-with-label image, #navigator-toolbox:hover #private-browsing-indicator-with-label label, #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional, #navigator-toolbox:hover .tab-close-button {
   opacity: 1 !important;
-  transition: opacity 250ms linear !important;
+  transition: opacity 250ms ease-out !important;
 }
 
 #urlbar-background {
 	background-color: Transparent !important;
-	transition: all 2s linear 1s !important;
+	transition: all 2s ease-out 1s !important;
 	box-shadow: none !important;
 }
 #navigator-toolbox:hover #urlbar-background {
 	background-color: var(--Surface-Transparent) !important;
-	transition: all 250ms linear !important;
+	transition: all 250ms ease-out !important;
 	box-shadow: 0 0 8px var(--Surface-Transparent) !important;
 }
 
@@ -191,7 +191,7 @@
 }
 .titlebar-buttonbox-container {
 	display: flex !important;
-	background-color: var(--Surface-Transparent) !important;
+	background: none !important;
 }
 .titlebar-min image, .titlebar-max image, .titlebar-restore image, .titlebar-close image {
 	list-style-image: url("titlebar/normal.svg") !important;
@@ -269,6 +269,26 @@ browser[primary="true"][tabDialogShowing="true"],
    |_/_/ \_\___/___/
 
 */
+#navigator-toolbox #titlebar {
+	opacity: 0 !important;
+	transform: rotateX(90deg) !important;
+	transform-origin: bottom !important;
+	transition: 1s all ease-out !important;
+	margin-top: -30px !important;
+    transition: opacity 1s ease-out 2s, transform 1s ease-out 3s, margin 3s ease-out 3s !important;
+}
+#navigator-toolbox:hover #titlebar{
+	opacity: 1 !important;
+	transform: rotateX(0deg) !important;
+	margin-top: 0px !important;
+    transition: all 250ms ease-out !important;
+}
+#navigator-toolbox-background {
+	background-color: var(--Surface-Transparent) !important;
+}
+.browser-toolbar:not(.titlebar-color) {
+	background: none !important;
+}
 #tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
 	height: initial !important;
 }
@@ -292,26 +312,11 @@ browser[primary="true"][tabDialogShowing="true"],
 #titlebar {
 	-moz-box-ordinal-group: 3 !important;
 }
-.tabbrowser-tab::after,
-.tabbrowser-tab::before {
-	border-left: none !important;
-}
-.tab-background {
-	border: none !important;
-}
-.tabbrowser-arrowscrollbox {
-	margin-inline-start: 4px !important;
-	margin-inline-end: 0px !important;
-}
 .tab-text {
 	font-family: var(--mff-tab-font-family);
 	font-weight: var(--mff-tab-font-weight);
 	font-size: var(--mff-tab-font-size) !important;
 	color: var(--mff-tab-color);
-}
-/* Hide the favicon for tabs */
-hbox.tab-content .tab-icon-image {
-	display: visible !important;
 }
 hbox.tab-content[pinned=true] .tab-text {
 	display: none !important;
@@ -425,7 +430,7 @@ toolbaritem {
 	border: none !important;
 }
 .toolbar-items {
-	background-color: var(--mff-bg) !important;
+	background: none !important;
 }
 #sidebar-search-container {
 	background-color: var(--mff-sidebar-bg) !important;
@@ -515,14 +520,14 @@ panelview,
 	box-shadow: none !important;
 	border: none !important;
 }
-#toolbar-menubar, #placesContext, #PlacesChevronPopup, #tabContextMenu, #downloadsPanel, #editBookmarkPanel {
+#placesContext, #PlacesChevronPopup, #tabContextMenu, #downloadsPanel, #editBookmarkPanel, .textbox-contextmenu, #unified-extensions-panel {
 	background-color: var(--Surface-Transparent) !important;
 }
 :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton):not([disabled]):hover {
 	background-color: #00ffff45 !important;
 	border: 1px solid var(--Primary) !important;
 }
-.menupopup-arrowscrollbox {
+.menupopup-arrowscrollbox, #toolbar-menubar {
 	background: none !important;
 }
 menupopup,
