@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Pixiv
-@version      0.0.1
+@version      1.0.0
 @description  Pixiv
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -10,19 +10,19 @@
 ==/UserStyle== */
 
 @-moz-document domain("pixiv.net") {
-	.lPHpt {
+	.lPHpt, .fqSxey, .jkzKWL {
 		background: none !important;
 		backdrop-filter: var(--blur) !important
 	}
-	.sc-1wmoqw-1 {
+	.sc-1wmoqw-1, .ddXsIb {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important
 	}
-	.sc-1wmoqw-0, .bSLemN, .hMFZAj, .hYBINe, .sc-162tykz-0, .sc-1ow64s0-1  {
+	.sc-1wmoqw-0, .bSLemN, .hMFZAj, .hYBINe, .sc-162tykz-0, .sc-1ow64s0-1, .ggMyQW {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important
 	}
-	.ckuYsq, .kDlMmy, .cuTZeZ, .cuTZeZ, .cxXhWC, .dWlHet, .cxqcFu {
+	.ckuYsq, .kDlMmy, .cuTZeZ, .cuTZeZ, .cxXhWC, .dWlHet, .cxqcFu, .kIMeEI, .kKdVSq {
 		background: none !important
 	}
 	.beQeCv, .sc-1pkrz0g-0, body, .list-items {
@@ -31,26 +31,93 @@
 	.bGUtlw, .YUFLT, .hdvpLU, ._unit, .footer {
 		background-color: var(--Surface) !important
 	}
-	.bookmark-detail-unit .input-box, .bookmark-detail-unit .input-box input {
-		background-color: var(--Surface-Variant)
+	.bookmark-detail-unit .input-box, .bookmark-detail-unit .input-box input, ._3LhShlo._2sMeHzD {
+		background-color: var(--Surface-Variant) !important
+	}
+	.cvkPAH {
+		background-color: var(--Surface-Transparent) !important
+	}
+	.kKdVSq:hover {
+		background-color: var(--Foreground-Transparent) !important
 	}
 	.iUhfll, .biNiqG {
 		background-color: var(--Mast) !important
 	}
+	._button:hover, .button-small:hover, ._button-large:hover, .submit-container .submit:hover, .submit-container .cancel:hover, .follow:hover, .request-mypixiv:hover, .following:hover, .mypixiv:hover, .questionnaire input:hover, .create-group-settings input[type="submit"]:hover, .tag-cloud .selected, ._2Of8xxg, .bbTNLI {
+		background: var(--Primary) !important
+	}
+	._button, .button-small, ._button-large, .submit-container .submit, .submit-container .cancel, .follow, .request-mypixiv, .following, .mypixiv, .questionnaire input, .create-group-settings input[type="submit"], .button-on, .button-small-on, ._2Of8xxg:hover {
+		background: var(--Primary-Dark) !important;
+		color: black !important;
+		text-shadow: none !important;
+		border: none !important;
+		transition: background 0.2s ease !important
+	}
 	body, input::placeholder {
 		color: var(--Foreground) !important
+	}
+	.inwVTq, ._3LhShlo._2sMeHzD {
+		color: var(--Foreground-Variant) !important
 	}
 	.bXjFLc {
 		color: var(--red) !important
 	}
+	.tag-cloud .selected, ._2Of8xxg, .fUCwNW, .fivNSm {
+		color: black !important
+	}
 	._unit, .footer, .bookmark-detail-unit .input-box {
 		border: none !important
 	}
+	.jkzKWL {
+		border-radius: var(--Rounding-Variant) !important
+	}
+	.hYfnPb, .kYCYRk {
+		border-radius: var(--Rounding) !important;
+		transition: border-radius 1s ease 1s !important;
+		overflow: hidden !important
+	}
+	.hYfnPb:hover, .ipxRsa:hover .kYCYRk {
+		border-radius: var(--Rounding-Variant) !important;
+		transition: border-radius .2s ease !important;
+		overflow: hidden !important
+	}
+	.goYuhC {
+		border-radius: 999px !important;
+		transition: border-radius 5s ease 1s !important
+	}
+	.goYuhC:hover {
+		border-radius: var(--Rounding-Variant) !important;
+		transition: border-radius .5s ease !important
+	}
 	.hdvpLU {
 		border-radius: 8px !important;
-		padding: 0 16px
+		padding: 0 16px !important
+	}
+	.tag-cloud span {
+		transition: all 0.2s ease !important;
+		border-radius: 999px !important;
+		padding-left: 6px !important;
+		padding-right: 6px !important
+	}
+	.epNrEx {
+		padding: 0px !important
+	}
+	.sc-rp5asc-10 {
+		transition: all 1s ease 1s !important;
+	}
+	.khjDVZ:hover .sc-rp5asc-10:not(.kYCYRk) {
+		opacity: 1 !important;
+		transform: scale(1.1) !important;
+		transition: all .2s ease !important
+	}
+	.gtIBwZ {
+		min-height: 700px !important;
+		max-height: 900px !important
+	}
+	.epNrEx {
+		mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)
 	}
 	.sc-1nhgff6-3 {
-		-webkit-mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%)
+		mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%)
 	}
 }

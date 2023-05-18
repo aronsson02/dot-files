@@ -164,13 +164,13 @@
     box-shadow: none !important;
 }*/
 
-#identity-box, #unified-extensions-button, #tracking-protection-icon-box, #tabs-newtab-button, #private-browsing-indicator-with-label image, #private-browsing-indicator-with-label label, #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional, .tab-close-button, #appMenu-popup #PanelUI-button {
+#identity-box, #unified-extensions-button, #tracking-protection-icon-box, #tabs-newtab-button, #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional, .tab-close-button, #appMenu-popup #PanelUI-button {
   opacity: 0 !important;
-  transition: opacity 1s ease-out 2s !important;
+  transition: opacity 1s ease 2s !important;
 }
-#navigator-toolbox:hover #identity-box, #navigator-toolbox:hover #unified-extensions-button, #navigator-toolbox:hover #tracking-protection-icon-box, #navigator-toolbox:hover #tabs-newtab-button, #navigator-toolbox:hover #private-browsing-indicator-with-label image, #navigator-toolbox:hover #private-browsing-indicator-with-label label, #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional, #navigator-toolbox:hover .tab-close-button {
+#navigator-toolbox:hover #identity-box, #navigator-toolbox:hover #unified-extensions-button, #navigator-toolbox:hover #tracking-protection-icon-box, #navigator-toolbox:hover #tabs-newtab-button, #navigator-toolbox:hover #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional, #navigator-toolbox:hover .tab-close-button {
   opacity: 1 !important;
-  transition: opacity 250ms ease-out !important;
+  transition: opacity 250ms ease !important;
 }
 
 #urlbar-background {
@@ -236,6 +236,7 @@
 	background: none !important;
 }
 
+
 browser[primary="true"][tabDialogShowing="true"],
 #main-window[window-modal-open="true"] > body > #browser{
   filter: var(--blur-variant) !important
@@ -269,19 +270,24 @@ browser[primary="true"][tabDialogShowing="true"],
    |_/_/ \_\___/___/
 
 */
-#navigator-toolbox #titlebar {
+#navigator-toolbox .toolbar-items, #navigator-toolbox .titlebar-buttonbox-container {
 	opacity: 0 !important;
 	transform: rotateX(90deg) !important;
 	transform-origin: bottom !important;
-	transition: 1s all ease-out !important;
-	margin-top: -30px !important;
-    transition: opacity 1s ease-out 2s, transform 1s ease-out 3s, margin 3s ease-out 3s !important;
+	transition: opacity 1s ease 2s, transform 1s ease-out 3s
 }
-#navigator-toolbox:hover #titlebar{
+#navigator-toolbox:hover .toolbar-items, #navigator-toolbox:hover .titlebar-buttonbox-container {
 	opacity: 1 !important;
 	transform: rotateX(0deg) !important;
+	transition: all 250ms ease .1s !important;
+}
+#navigator-toolbox #titlebar {
+	margin-top: -32px !important;
+    transition: margin 5s ease 2s !important;
+}
+#navigator-toolbox:hover #titlebar{
 	margin-top: 0px !important;
-    transition: all 250ms ease-out !important;
+    transition: margin 150ms !important;
 }
 #navigator-toolbox-background {
 	background-color: var(--Surface-Transparent) !important;
@@ -362,11 +368,6 @@ hbox.tab-content[pinned=true] .tab-text {
 .tab-icon-overlay[muted]:not([crashed]),
 .tab-icon-overlay[activemedia-blocked]:not([crashed]) {
 	display: none !important;
-}
-.private-browsing-indicator, #private-browsing-indicator-with-label {
-	background-image: none !important;
-	margin-inline: 0 !important;
-	background-color: var(--Surface-Transparent) !important;
 }
 #preferences-button {
 	list-style-image: url("configure.svg") !important;

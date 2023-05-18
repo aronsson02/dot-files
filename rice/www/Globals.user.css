@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      5.0.2
+@version      5.1.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -20,11 +20,11 @@
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
 		--Surface-Alternative: #25283F;
-		--Primary: #00FFFF;
-		--Primary-Dark: #00CCCC;
+		--Primary: #22CCCB;
+		--Primary-Dark: #199695;
 		--Primary-Transparent: #00FFFF80;
-		--Secondary: #FF00FF;
-		--Secondary-Transparent: #FF00FF80;
+		--Secondary: #E72F6B;
+		--Secondary-Transparent: #E72F6B80;
 		--Mast: var(--Surface-Alternative);
 		--Mast-Transparent: #25283F80;
 		--Mast-Variant: #2e324f;
@@ -38,12 +38,12 @@
 		--blue: #120056;
 		--yellow: #f1ff52;
 		--blur: blur(40px) contrast(0.9) saturate(1.5); /* backdrop-filter: var(--blur) */
-		--blur-hover: blur(10px);
-		--blur-variant: blur(5px);
-		--blur-dark: var(--blur) brightness(66%) contrast(0.9) saturate(1.5);
+		--blur-hover: blur(10px) contrast(0.9) saturate(1.5);
+		--blur-variant: blur(5px) contrast(0.9) saturate(1.5);
+		--blur-dark: var(--blur) brightness(66%);
 		--blur-dark-hover: var(--blur-hover) brightness(66%);
 		--blur-dark-variant: var(--blur-variant) brightness(66%);
-		--blur-bright: var(--blur) brightness(110%) contrast(0.9) saturate(1.5);
+		--blur-bright: var(--blur) brightness(110%);
 		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
 		--Mast-Shadow: 0 0 8px 1px var(--Mast);
@@ -62,13 +62,12 @@
 		--Spinner: var(--Primary) transparent;
 	}
 
-	*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons):not(.w-icon):not(.goog-inline-block) {
+	*:not(.fa):not(.fas):not(.far):not(.DPvwYc):not(.glyphicon):not(.material-icons):not(.material-icons-extended):not(.google-material-icons):not(.w-icon):not(.goog-inline-block):not(.el-input__icon):not(.el-icon-arrow-up):not(.el-icon-arrow-down) {
 		font-family: "OSUF" !important;
 	}
 
 	* {
 		scrollbar-width: none !important;
-		color-scheme: dark !important;
 	}
 
 	::-webkit-scrollbar {
@@ -161,6 +160,21 @@
 		}
 		100% {
 			color: var(--red);
+		}
+	}
+	/* animation: fade-in 3s ease 0s 1 */
+	@keyframes fade-in {
+		0% {
+			opacity: 0;
+			transform: scale(0.5)
+		}
+		75% {
+			opacity: 0;
+			transform: scale(0.5)
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1)
 		}
 	}
 }

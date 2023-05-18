@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.3
+@version      5.4.4
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -42,7 +42,7 @@
 	#comments {
 		padding: 1px 13px !important
 	}
-	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer, .ytd-engagement-panel-section-list-renderer {
+	#container.ytd-searchbox, paper-listbox, ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active], .searchbox-dropdown .sbdd_a, .searchbox-dropdown .sbdd_b, .searchbox-dropdown .sbsb_c, .gstl_50.sbdd_a *, .engagement-panel-container lazy-list, .engagement-panel-section-list-background.draggable, ytm-engagement-panel-section-list-renderer, ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer, .ytd-engagement-panel-section-list-renderer, #background.ytd-masthead {
 		background: none!important
 	}
 	.ytp-spinner-container {
@@ -425,8 +425,11 @@
 	#content-wrapper {
 		background-color: transparent
 	}
-	.video-stream.html5-main-video {
-		mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)
+	.ytp-gradient-bottom {
+		-webkit-mask: linear-gradient(to top,rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%)
+	}
+	.ytp-gradient-top {
+		-webkit-mask: linear-gradient(to bottom,rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%)
 	}
 	.ended-mode.ytp-hide-info-bar {
 		margin-bottom: 5px;
@@ -513,6 +516,9 @@
 	}
 	ytd-watch-flexy[theater] #movie_player, ytd-watch-flexy[theater] .video-stream, body.visibility-logging-enabled.flex-width-enabled.flex-width-enabled-snap.page-loaded #movie_player, body.visibility-logging-enabled.flex-width-enabled.flex-width-enabled-snap.page-loaded .video-stream, .ytp-fullscreen, .ytp-fullscreen .video-stream {
 		border-radius: var(--Rounding-Variant)!important
+	}
+	#masthead {
+		border-radius: var(--Rounding-Variant-Bottom) !important
 	}
 }
 @-moz-document domain("music.youtube.com") {
@@ -766,9 +772,6 @@
 	}
 	.docs-dialog .modal-dialog-title-close:after {
 		filter: invert(1)!important
-	}
-	#waffle-grid-container {
-		filter: invert(1) hue-rotate(180deg)!important
 	}
 	.d-u-Q, .modal-dialog-content, .modal-dialog-title {
 		background: none
@@ -1828,5 +1831,13 @@
 	}
 	.gb_0a {
 		animation: var(--Anim-Google-One) !important;
+	}
+}
+
+@-moz-document url-prefix("https://keep.google.com") {
+	.VIpgJd-TUo6Hb-xJ5Hnf.XKSfm-L9AdLc-AHe6Kc {
+		background: none !important;
+		backdrop-filter: var(--blur-variant) !important;
+		opacity: 1 !important;
 	}
 }

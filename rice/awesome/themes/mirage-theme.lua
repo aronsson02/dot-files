@@ -27,7 +27,7 @@ theme.name = "mirage"
 
 -- Font
 theme.font = "OSUF 11"
-theme.title_font = "OSUF 14"
+theme.title_font = "OSUF 13"
 
 -- Background
 theme.bg_normal = "#00000066"
@@ -43,8 +43,8 @@ theme.fg_urgent = "#BEC8D166"
 theme.fg_minimize = "#FFFFFF66"
 
 -- Gaps
-theme.useless_gap = dpi(1)
-theme.gap_single_client = true
+theme.useless_gap = dpi(0)
+theme.gap_single_client = false
 
 -- Corner Radius of Rounded Windows
 theme.corner_radius = dpi(20)

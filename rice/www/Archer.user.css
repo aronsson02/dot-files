@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Archer
-@version      0.0.1
+@version      0.0.2
 @description  TP-Link Archer
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -11,7 +11,7 @@
 
 @-moz-document domain("10.1.1.1") {
 	body, #mainBody {
-		background-image: url(https://github.com/aronsson02/dot-files/raw/master/rice/firefox/paper.png);
+		background-image: url(https://github.com/aronsson02/dot-files/raw/master/rice/hypr/wallpapers/wallpaper.jpg);
 		background-position: center;
 		background-color: var(--Background) !important
 	}

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      4.87.2
+@version      1.32.1
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -8,45 +8,44 @@
 @supportURL   https://github.com/aronsson02/dot-files/issues
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Plex.user.css
 ==/UserStyle== */
-
 @-moz-document url-prefix("https://app.plex.tv/"),
 url-prefix("http://app.plex.tv/"),
 url-prefix("https://plex.tv"),
 domain("127.0.0.1"),
 regexp("https?://.*:32400/.*"),
 regexp(".*:32400/.*") {
-	.modal-header, .modal-footer, .modal-body-with-panes .modal-nav-pane, .ModalBody-modalBody-Me4Hwy, .ModalContent-modalContent-_BsQSK {
+	.modal-header, .modal-footer, .modal-body-with-panes .modal-nav-pane, .ModalBody-modalBody-Me4Hwy, .ModalContent-modalContent-_BsQSK, .modal-list, .BottomBar-bottomBar-hnsKzI {
 		background: none !important
 	}
 	.Menu-menu-OCzudL {
 		background: none !important;
 		backdrop-filter: var(--blur) !important
 	}
-	.modal-backdrop, .Modal-modalBackdrop-nE6cJg {
+	.modal-backdrop, .Modal-modalBackdrop-nE6cJg, .MetadataPosterCardProgressBar-track-DUIwTi {
 		background: none !important;
 		backdrop-filter: var(--blur-variant) !important
 	}
-	.BottomBar-bottomBar-hnsKzI, .AudioVideoFullPlayer-videoTopBar-SPrEoI, .modal-content,.SourceSidebar-sidebar-yw2lNo, .NavBar-container-F87RQ_, .Modal-modal-eUJhK0 {
+	.AudioVideoFullPlayer-videoTopBar-SPrEoI, .modal-content, .SourceSidebar-sidebar-yw2lNo, .NavBar-container-F87RQ_, .Modal-modal-eUJhK0, .AudioVideoFullPlayer-bar-ka0DgM {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important
 	}
-    .ActionButton-iconActionButton-qpUHPk, select {
+	.ActionButton-iconActionButton-qpUHPk, select, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important
-    }
+	}
 	.btn-default, .form-control {
 		background-color: var(--Foreground-Transparent)
 	}
-	.btn-primary, .Button-primary-cMdkLb, .Button-primary-XgQxrm {
+	.btn-primary, .Button-primary-cMdkLb, .Button-primary-XgQxrm, .SourceSidebarLink-isSelected-rPGiHo::before, .MetadataPosterCardProgressBar-bar-xA7ztj, .MetadataPosterCard-legacyUnwatchedTag-xCeVKK, .SeekBar-seekBarFill-TestC_, .VolumeSlider-fill-m0PeVk {
 		background-color: var(--Primary) !important
 	}
-	.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary, .Button-primary-cMdkLb:hover, .Button-primary-XgQxrm:hover {
+	.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary, .Button-primary-cMdkLb:hover, .Button-primary-XgQxrm:hover, .SeekBar-seekBarBuffer-pao2Od {
 		background-color: var(--Primary-Transparent) !important
 	}
 	.Link-default-BXtKLo, .PrePlayPrimaryTitle-primaryTitle-m91Ron a {
 		color: var(--Foreground) !important
 	}
-	a, .btn-gray.selected, .Link-isSelected-x0P_By {
+	a, .btn-gray.selected, .Link-isSelected-x0P_By, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq, .SourceSidebarLink-isSelected-rPGiHo .SourceSidebarLink-iconContainer-xQGX4C, .SourceSidebarLink-isSelected-rPGiHo .SourceSidebarLink-title-C2NvGy {
 		color: var(--Primary) !important
 	}
 	a:hover, .Link-link-SxPFpG:hover {
@@ -58,12 +57,28 @@ regexp(".*:32400/.*") {
 	.btn-primary, .Button-primary-XgQxrm {
 		color: black !important
 	}
+	.MetadataPosterCardProgressBar-bar-xA7ztj {
+		border-radius: 0 var(--Rounding) 0 0 !important
+	}
 	.modal-content, select, .Modal-modal-eUJhK0 {
 		border-radius: var(--Rounding-Variant) !important;
 		overflow: hidden !important
 	}
+	.Spinner-spinner-XTaskc {
+		border-color: var(--Spinner) !important
+	}
 	.modal-header, .modal-footer, select {
 		border: none !important
+	}
+	.PosterCardLink-hoveredLink-H5OMFC {
+		box-shadow: 0 0 0 1px var(--Primary), 0 0 4px rgba(0, 0, 0, .3) !important
+	}
+	.MetadataPosterCard-legacyUnwatchedTag-xCeVKK {
+		width: 50px !important;
+		height: 50px!important;
+		border-radius: 999px !important;
+		right: -25px !important;
+		top: -25px !important
 	}
 	.modal-backdrop {
 		opacity: 1 !important
@@ -71,4 +86,5 @@ regexp(".*:32400/.*") {
 	.NavBarButton-button-cMcOo3, .NavBar-buttonSeparator-racpPW {
 		display: none !important
 	}
+
 }
