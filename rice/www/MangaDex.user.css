@@ -113,7 +113,7 @@
 	.glow[data-v-4a6dda51]:not(.disalbed) {
 		box-shadow: 0 .2rem 1rem var(--md-primary);
 	}
-	.md-inputwrap.md-blur[data-v-3824af96]::before {
+	.md-inputwrap.md-blur[data-v-3824af96]::before, .view-count {
 		display: none !important
 	}
 	img.mr-2 {
