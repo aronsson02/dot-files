@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      3.1.4
+@version      3.1.5
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -50,7 +50,7 @@
 		backdrop-filter: var(--blur-variant) !important;
 	}
 	.flash.type-update.flashinfo div,
-	.flash.type-add div:not(.flash.type-add div div), .shade, .md-modal__shade.no-blur, .md-modal__shade, .open-info-popup.floatbutton, .md-inputwrap[data-v-3824af96], .subtitle[data-v-46420996], .md-snackbar[data-v-f497e90c] {
+	.flash.type-add div:not(.flash.type-add div div), .shade, .md-modal__shade.no-blur, .md-modal__shade, .open-info-popup.floatbutton, .md-inputwrap[data-v-3824af96], .subtitle[data-v-46420996], .md-snackbar[data-v-f497e90c], .navbar-background {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}

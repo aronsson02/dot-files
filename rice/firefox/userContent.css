@@ -79,7 +79,7 @@ url("about:newtab"),
 url("about:privatebrowsing") {
 	body {
 		background-color: var(--Background)!important;
-		background-image: url("paper.png") !important;
+		background-image: url("Wallpaper.jpg") !important;
 		background-position: center !important;
 		background-repeat: no-repeat;
 		--newtab-search-icon: transparent !important;

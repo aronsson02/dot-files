@@ -25,11 +25,12 @@ regexp(".*:32400/.*") {
 		background: none !important;
 		backdrop-filter: var(--blur-variant) !important
 	}
-	.AudioVideoFullPlayer-videoTopBar-SPrEoI, .modal-content, .SourceSidebar-sidebar-yw2lNo, .NavBar-container-F87RQ_, .Modal-modal-eUJhK0, .AudioVideoFullPlayer-bar-ka0DgM {
+	.AudioVideoFullPlayer-videoTopBar-SPrEoI, .modal-content, .SourceSidebar-sidebar-yw2lNo, .NavBar-container-F87RQ_, .Modal-modal-eUJhK0, .AudioVideoFullPlayer-bar-ka0DgM, .AudioVideoStripeContainer-container-Pz3oFW {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important
 	}
-	.ActionButton-iconActionButton-qpUHPk, select, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq {
+	.ActionButton-iconActionButton-qpUHPk, select, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq, .SeekBar-seekBarTrack-nI_0Xu::before
+	{
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important
 	}
@@ -64,6 +65,10 @@ regexp(".*:32400/.*") {
 		border-radius: var(--Rounding-Variant) !important;
 		overflow: hidden !important
 	}
+	.AudioVideoStripeContainer-container-Pz3oFW {
+		border-radius: var(--Rounding-Variant-Top) !important;
+		overflow: hidden
+	}
 	.Spinner-spinner-XTaskc {
 		border-color: var(--Spinner) !important
 	}
@@ -72,6 +77,9 @@ regexp(".*:32400/.*") {
 	}
 	.PosterCardLink-hoveredLink-H5OMFC {
 		box-shadow: 0 0 0 1px var(--Primary), 0 0 4px rgba(0, 0, 0, .3) !important
+	}
+	.BottomBar-bottomBar-hnsKzI {
+		box-shadow: none !important
 	}
 	.MetadataPosterCard-legacyUnwatchedTag-xCeVKK {
 		width: 50px !important;
@@ -86,5 +94,4 @@ regexp(".*:32400/.*") {
 	.NavBarButton-button-cMcOo3, .NavBar-buttonSeparator-racpPW {
 		display: none !important
 	}
-
 }
