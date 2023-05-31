@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Archer
-@version      0.0.2
+@version      0.0.3
 @description  TP-Link Archer
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -8,35 +8,30 @@
 @supportURL   https://github.com/aronsson02/dot-files/issues
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Archer.user.css
 ==/UserStyle== */
-
 @-moz-document domain("10.1.1.1") {
 	body, #mainBody {
-		background-image: url(https://github.com/aronsson02/dot-files/raw/master/rice/hypr/wallpapers/wallpaper.jpg);
+		background-image: url(https://github.com/aronsson02/dot-files/blob/master/rice/hypr/wallpapers/Wallpaper.jpg?raw=true);
 		background-position: center;
 		background-color: var(--Background) !important
 	}
 	#main, #top, #pc-scroll, #pc-top, #menuTree ul.mu2::before, .select-box, .tp-select li {
 		background: none !important;
 	}
-	div.msg-container, div.help-content-container, .drop-down {
+	div.msg-container, div.help-content-container, div.status-panel-main, h4.status, .drop-down {
 		background: none !important;
 		backdrop-filter: var(--blur-dark)!important
 	}
-	div.status-panel-main, h4.status {
+	#base-inner, #top-con, #menuTree li.ml1 a, #pc-login, #pc-top-container, .pc-bottom-background {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-hover)!important
 	}
-	#base-inner, #top-con, #menuTree li.ml1 a, #pc-login, #pc-top-container, .pc-bottom-background {
-		background: none !important;
-		backdrop-filter: var(--blur-hover) contrast(0.9) saturate(1.5)!important
-	}
 	.bot-background {
 		background: none !important;
-		backdrop-filter: var(--blur-variant) contrast(0.9) saturate(1.5)!important
+		backdrop-filter: var(--blur-dark-variant)!important
 	}
 	div.mask {
 		background: none !important;
-		backdrop-filter: var(--blur-hover) contrast(0.9) saturate(1.5)!important;
+		backdrop-filter: var(--blur-dark-hover)!important;
 		opacity: 1 !important
 	}
 	div.top-nav ul li {
