@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      3.1.5
+@version      3.1.6
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -9,24 +9,6 @@
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/MangaDex.user.css
 ==/UserStyle== */
 @-moz-document domain("mangadex.org"), domain("auth.mangadex.org") {
-	:root {
-		--md-primary-lighten2: #ffe1d9;
-		--md-primary-lighten: var(--Primary-Transparent);
-		--md-primary: var(--Primary);
-		--md-primary-darken: var(--Secondary);
-		--md-primary-darken2: var(--Primary-Dark);
-	}
-
-	.dark {
-		color: #fff;
-		color-scheme: dark;
-		--md-background: var(--Background);
-		--md-accent-lighten2: var(--Surface-Variant);
-		--md-accent-lighten: var(--Surface-Transparent);
-		--md-accent: var(--Surface);
-		--md-accent-darken: var(--Surface-Transparent);
-	}
-
 	a {
 		color: var(--Primary);
 		transition: all .3s cubic-bezier(.4, 0, .2, 1);

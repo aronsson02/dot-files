@@ -70,7 +70,7 @@
 	}
 }
 :root {
-	--mff-bg: var(--Surface-Transparent);
+	--mff-bg: transparent;
 	--mff-icon-color: var(--Foreground);
 	--mff-nav-toolbar-padding: 5px;
 	--mff-sidebar-bg: transparent;
@@ -82,7 +82,6 @@
 	--mff-tab-font-family: default, monospace, sans;
 	--mff-tab-font-size: 10pt;
 	--mff-tab-font-weight: 400;
-	--mff-tab-height: 20px;
 	--mff-tab-pinned-bg: var(--mff-bg);
 	--mff-tab-selected-bg: var(--mff-bg);
 	--mff-urlbar-color: var(--Foreground);
@@ -154,23 +153,6 @@
     left: 50%;  
     transform: translateX(-50%);  
     padding: 0 3px;  
-}
-
-/* -----URL bar blur----- */
-/*#urlbar[open] > #urlbar-background {
-	backdrop-filter: var(--blur) !important;
-	background-color: var(--Surface-Transparent) !important;
-	border: none !important;
-    box-shadow: none !important;
-}*/
-
-#identity-box, #unified-extensions-button, #tracking-protection-icon-box, #tabs-newtab-button, #PanelUI-button, #personal-bookmarks, #page-action-buttons, .chromeclass-toolbar-additional, .tab-close-button, #appMenu-popup #PanelUI-button {
-  opacity: 0 !important;
-  transition: opacity 1s ease 2s !important;
-}
-#navigator-toolbox:hover #identity-box, #navigator-toolbox:hover #unified-extensions-button, #navigator-toolbox:hover #tracking-protection-icon-box, #navigator-toolbox:hover #tabs-newtab-button, #navigator-toolbox:hover #navigator-toolbox:hover #PanelUI-button, #navigator-toolbox:hover #personal-bookmarks, #navigator-toolbox:hover #page-action-buttons, #navigator-toolbox:hover .chromeclass-toolbar-additional, #navigator-toolbox:hover .tab-close-button {
-  opacity: 1 !important;
-  transition: opacity 250ms ease !important;
 }
 
 #urlbar-background {
@@ -270,27 +252,13 @@ browser[primary="true"][tabDialogShowing="true"],
    |_/_/ \_\___/___/
 
 */
-#navigator-toolbox .toolbar-items, #navigator-toolbox .titlebar-buttonbox-container {
-	opacity: 0 !important;
-	transform: rotateX(90deg) !important;
-	transform-origin: bottom !important;
-	transition: opacity 1s ease 2s, transform 1s ease-out 3s
+body {
+	background-color: Transparent !important;
+  transition: background-color 5s ease-out 2s !important;
 }
-#navigator-toolbox:hover .toolbar-items, #navigator-toolbox:hover .titlebar-buttonbox-container {
-	opacity: 1 !important;
-	transform: rotateX(0deg) !important;
-	transition: all 250ms ease .1s !important;
-}
-#navigator-toolbox #titlebar {
-	margin-top: -32px !important;
-    transition: margin 5s ease 2s !important;
-}
-#navigator-toolbox:hover #titlebar{
-	margin-top: 0px !important;
-    transition: margin 150ms !important;
-}
-#navigator-toolbox-background {
+#main-window:hover body {
 	background-color: var(--Surface-Transparent) !important;
+  transition: background-color 1s ease !important;
 }
 .browser-toolbar:not(.titlebar-color) {
 	background: none !important;
@@ -304,19 +272,12 @@ browser[primary="true"][tabDialogShowing="true"],
 .tabbrowser-tab:not[visuallyselected] .tab-close-button {
 	display: none !important;
 }
-.tabbrowser-tab:not([pinned]):hover .tab-close-button, :root:not([tabsintitlebar], [sizemode="fullscreen"]) .titlebar-buttonbox {
-	display: -moz-box !important;
-}
 .tab-background[selected="true"] {
 	background: var(--mff-tab-selected-bg) !important;
 }
 .tab-background:not[visuallyselected] {
 	background: var(--mff-tab-selected-bg) !important;
 	opacity: 0.5 !important;
-}
-/* This positions the tabs under the navaigator container */
-#titlebar {
-	-moz-box-ordinal-group: 3 !important;
 }
 .tab-text {
 	font-family: var(--mff-tab-font-family);
@@ -329,14 +290,6 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 #tabbrowser-tabs {
 	--tab-loading-fill: #033433 !important;
-}
-.tab-label-container:not([textoverflow]) {
-	display: flex;
-	overflow: hidden;
-	justify-content: center;
-	width: 75% !important;
-	max-width: 75% !important;
-	min-width: 75% !important;
 }
 .tab-line {
 	display: none !important;
@@ -504,10 +457,6 @@ image#sidebar-icon {
 	padding: 0px !important;
 	margin: 0px !important;
 }
-toolbarseparator,
-menuseparator {
-	display: none;
-}
 /* Transparency */
 #TabsToolbar,
 #titlebar,
@@ -522,7 +471,7 @@ panelview,
 	border: none !important;
 }
 #placesContext, #PlacesChevronPopup, #tabContextMenu, #downloadsPanel, #editBookmarkPanel, .textbox-contextmenu, #unified-extensions-panel {
-	background-color: var(--Surface-Transparent) !important;
+	background-color: var(--Surface) !important;
 }
 :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton):not([disabled]):hover {
 	background-color: #00ffff45 !important;
@@ -545,7 +494,7 @@ panel {
 #appMenu-popup,
 #customizationui-widget-panel,
 menupopup > menu > menupopup {
-	background: var(--Surface-Transparent) !important;
+	background: var(--Surface) !important;
 	border-radius: 0 !important;
 }
 #contentAreaContextMenu *,

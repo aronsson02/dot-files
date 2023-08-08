@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      5.1.0
+@version      5.2.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,15 +14,15 @@
 		--Foreground-Variant: #EEEEEECC;
 		--Foreground-Dark: #EEEEEE66;
 		--Foreground-Transparent: #EEEEEE33;
-		--Background: #151515;
-		--Surface: #202020;
-		--Surface-Variant: #303030;
+		--Background: #282a36;
+		--Surface: #343746;
+		--Surface-Variant: #42465b;
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
 		--Surface-Alternative: #25283F;
-		--Primary: #22CCCB;
-		--Primary-Dark: #199695;
-		--Primary-Transparent: #00FFFF80;
+		--Primary: #a179c0;
+		--Primary-Dark: #8660a4;
+		--Primary-Transparent: #a179c080;
 		--Secondary: #E72F6B;
 		--Secondary-Transparent: #E72F6B80;
 		--Mast: var(--Surface-Alternative);
@@ -32,10 +32,13 @@
 		--grey: #808080;
 		--red: #F2303B;
 		--red-old: #F44336;
-		--orange: #EA9D1C;
+		--orange: #ffb86c;
+		--orange-old: #ea9d1c;
 		--dark-orange: #1F1504;
-		--green: #00E676;
-		--blue: #120056;
+		--green: #50fa7b;
+		--green-old: #00E676;
+		--blue: #8be9fd;
+		--blue-dark: #120056;
 		--yellow: #f1ff52;
 		--blur: blur(40px) contrast(0.9) saturate(1.5); /* backdrop-filter: var(--blur) */
 		--blur-hover: blur(10px) contrast(0.9) saturate(1.5);
