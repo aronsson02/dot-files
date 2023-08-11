@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Pixiv
-@version      1.0.2
+@version      1.0.3
 @description  Pixiv
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -9,7 +9,7 @@
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Pixiv.user.css
 ==/UserStyle== */
 @-moz-document domain("pixiv.net") {
-	.lPHpt, .fqSxey, .jkzKWL {
+	.lPHpt, .fqSxey, .jkzKWL, .drFRmD {
 		background: none !important;
 		backdrop-filter: var(--blur) !important
 	}
@@ -27,7 +27,7 @@
 	.beQeCv, .sc-1pkrz0g-0, body, .list-items {
 		background-color: var(--Background) !important
 	}
-	.bGUtlw, .YUFLT, .hdvpLU, ._unit, .footer {
+	.bGUtlw, .YUFLT, .hdvpLU, ._unit, .footer, .fQcsvd {
 		background-color: var(--Surface) !important
 	}
 	.bookmark-detail-unit .input-box, .bookmark-detail-unit .input-box input, ._3LhShlo._2sMeHzD {
@@ -42,7 +42,7 @@
 	.iUhfll, .biNiqG {
 		background-color: var(--Mast) !important
 	}
-	._button:hover, .button-small:hover, ._button-large:hover, .submit-container .submit:hover, .submit-container .cancel:hover, .follow:hover, .request-mypixiv:hover, .following:hover, .mypixiv:hover, .questionnaire input:hover, .create-group-settings input[type="submit"]:hover, .tag-cloud .selected, ._2Of8xxg, .bbTNLI {
+	._button:hover, .button-small:hover, ._button-large:hover, .submit-container .submit:hover, .submit-container .cancel:hover, .follow:hover, .request-mypixiv:hover, .following:hover, .mypixiv:hover, .questionnaire input:hover, .create-group-settings input[type="submit"]:hover, .tag-cloud .selected, ._2Of8xxg, .bbTNLI, .kmHafz {
 		background: var(--Primary) !important
 	}
 	._button, .button-small, ._button-large, .submit-container .submit, .submit-container .cancel, .follow, .request-mypixiv, .following, .mypixiv, .questionnaire input, .create-group-settings input[type="submit"], .button-on, .button-small-on, ._2Of8xxg:hover {
@@ -52,7 +52,7 @@
 		border: none !important;
 		transition: background 0.2s ease !important
 	}
-	body, input::placeholder {
+	body, input::placeholder, .drFRmD {
 		color: var(--Foreground) !important
 	}
 	.inwVTq, ._3LhShlo._2sMeHzD {
@@ -123,6 +123,11 @@
 		.krFoBL {
 			grid-template-columns: repeat(8, 184px) !important
 		}
+	}
+	.cJkTBJ {
+		min-height: 100%;
+		background: linear-gradient(rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/100% 200%;
+		animation: shift 2s linear infinite;
 	}
 	.epNrEx {
 		mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)

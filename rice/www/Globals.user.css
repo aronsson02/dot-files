@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      5.2.0
+@version      5.2.1
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -40,7 +40,8 @@
 		--blue: #8be9fd;
 		--blue-dark: #120056;
 		--yellow: #f1ff52;
-		--blur: blur(40px) contrast(0.9) saturate(1.5); /* backdrop-filter: var(--blur) */
+		--blur: blur(40px) contrast(0.9) saturate(1.5);
+		/* backdrop-filter: var(--blur) */
 		--blur-hover: blur(10px) contrast(0.9) saturate(1.5);
 		--blur-variant: blur(5px) contrast(0.9) saturate(1.5);
 		--blur-dark: var(--blur) brightness(66%);
@@ -178,6 +179,16 @@
 		100% {
 			opacity: 1;
 			transform: scale(1)
+		}
+	}
+	/*
+		min-height: 100%;
+		background: linear-gradient(rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/100% 200%;
+		animation: shift 2s linear infinite;
+	*/
+	@keyframes shift {
+		to {
+			background-position: 0 -200%
 		}
 	}
 }
