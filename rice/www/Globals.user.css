@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      5.2.1
+@version      5.2.2
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -188,7 +188,7 @@
 	*/
 	@keyframes shift {
 		to {
-			background-position: 0 -200%
+			background-position: -200% 0
 		}
 	}
 }
