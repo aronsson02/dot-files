@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      5.2.2
+@version      6.0.0
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -10,21 +10,23 @@
 ==/UserStyle== */
 @-moz-document regexp(".*") {
 	:root {
-		--Foreground: #EEEEEE;
-		--Foreground-Variant: #EEEEEECC;
-		--Foreground-Dark: #EEEEEE66;
-		--Foreground-Transparent: #EEEEEE33;
-		--Background: #282a36;
-		--Surface: #343746;
-		--Surface-Variant: #42465b;
+		--Foreground: #F9EFE3;
+		--Foreground-Variant: #F9EFE3CC;
+		--Foreground-Dark: #F9EFE366;
+		--Foreground-Transparent: #F9EFE333;
+		--Background: #000000;
+		--Surface: #041A1F;
+		--Surface-Variant: #1D3035;
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
 		--Surface-Alternative: #25283F;
-		--Primary: #a179c0;
-		--Primary-Dark: #8660a4;
-		--Primary-Transparent: #a179c080;
+		--Primary: #1CCFEA;
+		--Primary-Light: #00FFFF;
+		--Primary-Dark: #16A5BB;
+		--Primary-Transparent: #00FFFF80;
 		--Secondary: #E72F6B;
 		--Secondary-Transparent: #E72F6B80;
+		--Secondary-Tri: #6BE72F;
 		--Mast: var(--Surface-Alternative);
 		--Mast-Transparent: #25283F80;
 		--Mast-Variant: #2e324f;
@@ -41,7 +43,6 @@
 		--blue-dark: #120056;
 		--yellow: #f1ff52;
 		--blur: blur(40px) contrast(0.9) saturate(1.5);
-		/* backdrop-filter: var(--blur) */
 		--blur-hover: blur(10px) contrast(0.9) saturate(1.5);
 		--blur-variant: blur(5px) contrast(0.9) saturate(1.5);
 		--blur-dark: var(--blur) brightness(66%);
@@ -62,7 +63,6 @@
 		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
-		--Anim-Google-One: google-one 6s ease infinite;
 		--Spinner: var(--Primary) transparent;
 	}
 
@@ -73,16 +73,10 @@
 	* {
 		scrollbar-width: none !important;
 	}
-
 	::-webkit-scrollbar {
 		display: none !important
 	}
 
-	/*
-	x {
-	mask: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 99%)
-	}
-	*/
 	/* animation: hue-rotate 6s linear infinite !important */
 	@keyframes hue-rotate {
 		0% {
@@ -92,7 +86,6 @@
 			filter: hue-rotate(360deg);
 		}
 	}
-
 	/*  animation: filter 6s linear infinite !important */
 	@keyframes filter {
 		0% {
@@ -106,40 +99,6 @@
 		100% {
 			filter: hue-rotate(360deg) sepia(0);
 			background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
-		}
-	}
-
-	@keyframes google-one {
-		10% {
-			transform: rotate(0deg);
-		}
-		20% {
-			transform: rotate(-20deg);
-			filter: saturate(100%)
-		}
-		40% {
-			transform: rotate(1100deg);
-			filter: saturate(150%)
-		}
-		50% {
-			transform: rotate(1080deg);
-			filter: saturate(100%)
-		}
-		55% {
-			transform: rotate(1080deg);
-			filter: saturate(100%)
-		}
-		65% {
-			transform: rotate(1100deg);
-			filter: saturate(100%)
-		}
-		85% {
-			transform: rotate(-20deg);
-			filter: saturate(150%)
-		}
-		100% {
-			transform: rotate(0deg);
-			filter: saturate(100%)
 		}
 	}
 	/* animation: danger 1s linear infinite */

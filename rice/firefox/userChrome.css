@@ -3,17 +3,17 @@
 		--Foreground-Variant: #EEEEEECC;
 		--Foreground-Dark: #EEEEEE66;
 		--Foreground-Transparent: #EEEEEE33;
-		--Background: #151515;
-		--Surface: #202020;
-		--Surface-Variant: #303030;
+		--Background: #282a36;
+		--Surface: #343746;
+		--Surface-Variant: #42465b;
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
 		--Surface-Alternative: #25283F;
-		--Primary: #00FFFF;
-		--Primary-Dark: #00CCCC;
-		--Primary-Transparent: #00FFFF80;
-		--Secondary: #FF00FF;
-		--Secondary-Transparent: #FF00FF80;
+		--Primary: #a179c0;
+		--Primary-Dark: #8660a4;
+		--Primary-Transparent: #a179c080;
+		--Secondary: #E72F6B;
+		--Secondary-Transparent: #E72F6B80;
 		--Mast: var(--Surface-Alternative);
 		--Mast-Transparent: #25283F80;
 		--Mast-Variant: #2e324f;
@@ -21,18 +21,22 @@
 		--grey: #808080;
 		--red: #F2303B;
 		--red-old: #F44336;
-		--orange: #EA9D1C;
+		--orange: #ffb86c;
+		--orange-old: #ea9d1c;
 		--dark-orange: #1F1504;
-		--green: #00E676;
-		--blue: #120056;
+		--green: #50fa7b;
+		--green-old: #00E676;
+		--blue: #8be9fd;
+		--blue-dark: #120056;
 		--yellow: #f1ff52;
-		--blur: blur(40px) contrast(0.9) saturate(1.5); /* backdrop-filter: var(--blur) */
-		--blur-hover: blur(10px);
-		--blur-variant: blur(5px);
-		--blur-dark: var(--blur) brightness(66%) contrast(0.9) saturate(1.5);
+		--blur: blur(40px) contrast(0.9) saturate(1.5);
+		/* backdrop-filter: var(--blur) */
+		--blur-hover: blur(10px) contrast(0.9) saturate(1.5);
+		--blur-variant: blur(5px) contrast(0.9) saturate(1.5);
+		--blur-dark: var(--blur) brightness(66%);
 		--blur-dark-hover: var(--blur-hover) brightness(66%);
 		--blur-dark-variant: var(--blur-variant) brightness(66%);
-		--blur-bright: var(--blur) brightness(110%) contrast(0.9) saturate(1.5);
+		--blur-bright: var(--blur) brightness(110%);
 		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
 		--Mast-Shadow: 0 0 8px 1px var(--Mast);
@@ -69,6 +73,11 @@
 		filter: hue-rotate(360deg) sepia(0);
 	}
 }
+@keyframes shift {
+		to {
+			background-position: -200% 0
+		}
+	}
 :root {
 	--mff-bg: transparent;
 	--mff-icon-color: var(--Foreground);
@@ -166,6 +175,16 @@
 	box-shadow: 0 0 8px var(--Surface-Transparent) !important;
 }
 
+#navigator-toolbox #PersonalToolbar {
+	opacity: 0 !important;
+	margin-bottom: -32px !important;
+	transition: opacity 3s ease-in-out 2s, margin 5s ease-in-out 3s !important;
+}
+#navigator-toolbox:hover #PersonalToolbar {
+	opacity: 1 !important;
+	margin-bottom: 0 !important;
+	transition: opacity .5s ease-in-out .1s, margin .2s ease-in-out !important;
+}
 
 /* -----Window Controls----- */
 .titlebar-button {
@@ -314,7 +333,8 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 .tabbrowser-tab[soundplaying="true"] {
 	background-color: transparent !important;
-	background-image: linear-gradient(45deg, rgba(128, 128, 255, .15), rgba(255, 0, 255, .15));
+	background: linear-gradient(110deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/200% 100%;
+	animation: shift 5s linear infinite;
 }
 /* Disable sound icon in tabs */
 .tab-icon-overlay[soundplaying]:not([crashed]),
@@ -495,7 +515,6 @@ panel {
 #customizationui-widget-panel,
 menupopup > menu > menupopup {
 	background: var(--Surface) !important;
-	border-radius: 0 !important;
 }
 #contentAreaContextMenu *,
 #toolbar-context-menu * {

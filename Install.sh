@@ -1,11 +1,11 @@
 
 yay -Y --builddir /Archive/arch-pkg/yay --save
-yay -Sy doas hyprland-git waybar-hyprland-git dunst-git swaybg-git swaylock-effects-git swayidle-git rofi-git qt5ct xdg-user-dirs kvantum-qt5-git xorg-xinput ckb-next-git fontforge ktorrent gparted rawtherapee inkscape-git whatsapp-for-linux baobab isousb czkawka-gui czkawka-cli easyeffects
+yay -Sy doas hyprland-git waybar-hyprland-git dunst-git swaybg-git swaylock-effects-git swayidle-git rofi-git qt5ct xdg-user-dirs kvantum-qt5-git xorg-xinput ckb-next-git fontforge ktorrent gparted rawtherapee inkscape-git whatsapp-for-linux baobab isousb czkawka-gui czkawka-cli easyeffects piper-git
 
 # yay -Sy awesome-git picom-tryone-git
 
 doas mkdir /Archive
-doas mkdir /Anime
+doas mkdir /Tera
 
 doas cp "$HOME/dot-files/X/00-mouse.conf" "/etc/X11/xorg.conf.d"
 doas cp "$HOME/dot-files/X/no" "/usr/share/X11/xkb/symbols"

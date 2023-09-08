@@ -1,0 +1,75 @@
+/* ==UserStyle==
+@name         NetOnNet
+@version      0.0.1
+@description  NetOnNet
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/NetOnNet.user.css
+==/UserStyle== */
+@-moz-document domain("netonnet.se") {
+	body {
+		background-color: var(--Background) !important;
+		color: var(--Foreground) !important
+	}
+	.panel.panel-default {
+		background-color: var(--Surface) !important;
+		border: 1px solid var(--Primary) !important;
+		border-radius: var(--Rounding) !important
+	}
+	.panel, .row .product-buy-usps {
+		background-color: var(--Surface) !important
+	}
+	#productPurchaseBoxContainer .price-box {
+		background-color: var(--Surface-Variant) !important
+	}
+	.btn-primary {
+		background-color: var(--Primary) !important
+	}
+	.btn-primary:hover {
+		background-color: var(--Primary-Dark) !important
+	}
+	.navbar-wrapper, #mainSearch .searchInput {
+		background-color: var(--Mast) !important;
+	}
+	.nonHeader-new {
+		background-color: var(--Mast-Variant) !important
+	}
+	.breadcrumb::before, .breadcrumb::after {
+		background: none !important
+	}
+	.product .shortText a, .navbar-default .navbar-nav > .active > a.menu-categories-desktop, h2 {
+		color: var(--Foreground) !important
+	}
+	.subMenuUpArrow, .breadcrumb a, .navbar-default .navbar-nav > li > a.menu-categories-desktop {
+		color: var(--Primary) !important
+	}
+	.navbar-default .navbar-nav > li > a.menu-categories-desktop:hover {
+		color: var(--Secondary) !important
+	}
+	.SubCategoryContainer .hidden-xs.hidden-sm, .insurance-text {
+		display: none !important
+	}
+	.row .product-buy-usps {
+		border-radius: var(--Rounding) !important
+	}
+	.panel-main {
+		border-radius: var(--Rounding-Variant) !important
+	}
+	#productPurchaseBoxContainer .price-box {
+		border-radius: var(--Rounding-Variant-Top) !important
+	}
+	#BuyButton_ProductPageStandard_1026456 {
+		border-radius: 0 0 0 var(--Rounding-Variant) !important
+	}
+	[data-target="#reserveInStoreModal"] {
+		border-radius: 0 0 var(--Rounding-Variant) 0 !important;
+		border: none !important;
+		background-color: var(--Primary) !important;
+		color: white
+	}
+	.navbar-wrapper, #mainSearch .searchInput, .btn-primary, .panel-main {
+		border: none !important
+	}
+}
