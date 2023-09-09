@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.32.1
+@version      1.32.5
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,14 +14,14 @@ url-prefix("https://plex.tv"),
 domain("127.0.0.1"),
 regexp("https?://.*:32400/.*"),
 regexp(".*:32400/.*") {
-	.modal-header, .modal-footer, .modal-body-with-panes .modal-nav-pane, .ModalBody-modalBody-Me4Hwy, .ModalContent-modalContent-_BsQSK, .modal-list, .BottomBar-bottomBar-hnsKzI {
+	.modal-header, .modal-footer, .modal-body-with-panes .modal-nav-pane, .ModalBody-modalBody-Me4Hwy, .ModalContent-modalContent-_BsQSK, .modal-list, .BottomBar-bottomBar-hnsKzI, ._76v8d6l, .PrePlayPosterCardPlayedStatus-status-bp2tOy {
 		background: none !important
 	}
 	.Menu-menu-OCzudL {
 		background: none !important;
 		backdrop-filter: var(--blur) !important
 	}
-	.modal-backdrop, .Modal-modalBackdrop-nE6cJg, .MetadataPosterCardProgressBar-track-DUIwTi {
+	.modal-backdrop, .Modal-modalBackdrop-nE6cJg, .MetadataPosterCardProgressBar-track-DUIwTi, .MetadataPosterCardCircle-cardCircle-gBHNQG {
 		background: none !important;
 		backdrop-filter: var(--blur-variant) !important
 	}
@@ -29,7 +29,7 @@ regexp(".*:32400/.*") {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important
 	}
-	.ActionButton-iconActionButton-qpUHPk, select, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq, .SeekBar-seekBarTrack-nI_0Xu::before
+	.ActionButton-iconActionButton-qpUHPk, select, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq, .SeekBar-seekBarTrack-nI_0Xu::before, div._1duebfh2e:nth-child(1)
 	{
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important
@@ -37,37 +37,41 @@ regexp(".*:32400/.*") {
 	.btn-default, .form-control {
 		background-color: var(--Foreground-Transparent)
 	}
-	.btn-primary, .Button-primary-cMdkLb, .Button-primary-XgQxrm, .SourceSidebarLink-isSelected-rPGiHo::before, .MetadataPosterCardProgressBar-bar-xA7ztj, .MetadataPosterCard-legacyUnwatchedTag-xCeVKK, .SeekBar-seekBarFill-TestC_, .VolumeSlider-fill-m0PeVk {
+	.btn-primary, .Button-primary-cMdkLb, .Button-primary-XgQxrm, .SourceSidebarLink-isSelected-rPGiHo::before, .MetadataPosterCardProgressBar-bar-xA7ztj, .MetadataPosterCard-legacyUnwatchedTag-xCeVKK, .SeekBar-seekBarFill-TestC_, .VolumeSlider-fill-m0PeVk, .PlayButton-playButton-vS1WII:hover .PlayButton-playCircle-fK1f_v {
 		background-color: var(--Primary) !important
 	}
 	.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary, .Button-primary-cMdkLb:hover, .Button-primary-XgQxrm:hover, .SeekBar-seekBarBuffer-pao2Od {
 		background-color: var(--Primary-Transparent) !important
 	}
+	.MenuItem-default-NAJl2g:hover {
+		background: linear-gradient(to right,transparent,var(--Surface-Transparent),var(--Surface-Transparent),transparent) !important
+	}
 	.Link-default-BXtKLo, .PrePlayPrimaryTitle-primaryTitle-m91Ron a {
 		color: var(--Foreground) !important
 	}
-	a, .btn-gray.selected, .Link-isSelected-x0P_By, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq, .SourceSidebarLink-isSelected-rPGiHo .SourceSidebarLink-iconContainer-xQGX4C, .SourceSidebarLink-isSelected-rPGiHo .SourceSidebarLink-title-C2NvGy {
+	a, .btn-gray.selected, .Link-isSelected-x0P_By, .MetadataPosterCard-legacyUnwatchedEpisodesBadge-MElNvq, .SourceSidebarLink-isSelected-rPGiHo .SourceSidebarLink-iconContainer-xQGX4C, .SourceSidebarLink-isSelected-rPGiHo .SourceSidebarLink-title-C2NvGy, ._32jj3a2, ._76v8d6l {
 		color: var(--Primary) !important
 	}
-	a:hover, .Link-link-SxPFpG:hover {
-		color: var(--Primary-Dark) !important
+	._32jj3a0:hover, a:hover, .Link-link-SxPFpG:hover, ._76v8d6g:hover {
+		color: var(--Primary-Light) !important
 	}
 	.btn-gray {
 		color: var(--gray) !important
 	}
-	.btn-primary, .Button-primary-XgQxrm {
+	.btn-primary, .Button-primary-XgQxrm, .ineka9e {
 		color: black !important
 	}
-	.MetadataPosterCardProgressBar-bar-xA7ztj {
-		border-radius: 0 var(--Rounding) 0 0 !important
+	.MetadataPosterCard-image-CA0wgl {
+		border-radius: var(--Rounding) !important;
 	}
-	.modal-content, select, .Modal-modal-eUJhK0 {
-		border-radius: var(--Rounding-Variant) !important;
-		overflow: hidden !important
+	._1duebfhf6,.modal-content, select, .Modal-modal-eUJhK0, .PosterCard-card-BRB1k_, div._1duebfh2e:nth-child(1), .PosterCardLink-hoveredLink-H5OMFC, .MetadataPosterCard-image-CA0wgl {
+		border-radius: var(--Rounding-Variant) !important
 	}
 	.AudioVideoStripeContainer-container-Pz3oFW {
-		border-radius: var(--Rounding-Variant-Top) !important;
-		overflow: hidden
+		border-radius: var(--Rounding-Variant-Top) !important
+	}
+	.PlayButton-playButton-vS1WII:hover .PlayButton-playCircle-fK1f_v {
+		border-color: var(--Primary-Light) !important
 	}
 	.Spinner-spinner-XTaskc {
 		border-color: var(--Spinner) !important
@@ -81,9 +85,12 @@ regexp(".*:32400/.*") {
 	.BottomBar-bottomBar-hnsKzI {
 		box-shadow: none !important
 	}
+	.MetadataPosterCardProgressBar-progress-GougiZ {
+		height: 6px !important
+	}
 	.MetadataPosterCard-legacyUnwatchedTag-xCeVKK {
-		width: 50px !important;
-		height: 50px!important;
+		width: 60px !important;
+		height: 60px!important;
 		border-radius: 999px !important;
 		right: -25px !important;
 		top: -25px !important
