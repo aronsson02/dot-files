@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      6.0.1
+@version      6.0.2
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -15,11 +15,11 @@
 		--Foreground-Dark: #F9EFE366;
 		--Foreground-Transparent: #F9EFE333;
 		--Background: #041A1F;
-		--Surface: #072D36;
-		--Surface-Variant: #0A404C;
+		--Surface: #052229;
+		--Surface-Variant: #072B33;
+		--Surface-Alternative: #09343d;
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
-		--Surface-Alternative: #25283F;
 		--Primary: #1CCFEA;
 		--Primary-Light: #00FFFF;
 		--Primary-Dark: #16A5BB;
@@ -141,9 +141,9 @@
 		}
 	}
 	/*
-		min-height: 100%;
-		background: linear-gradient(rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/100% 200%;
-		animation: shift 2s linear infinite;
+	min-height: 100%;
+	background: linear-gradient(rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/100% 200%;
+	animation: shift 2s linear infinite;
 	*/
 	@keyframes shift {
 		to {

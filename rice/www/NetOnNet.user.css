@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         NetOnNet
-@version      0.0.1
+@version      0.0.2
 @description  NetOnNet
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -9,6 +9,11 @@
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/NetOnNet.user.css
 ==/UserStyle== */
 @-moz-document domain("netonnet.se") {
+	.richSelectionBoxDropList {
+		background-color: transparent!important;
+		background-image: none!important;
+		backdrop-filter: var(--blur-dark)!important
+	}
 	body {
 		background-color: var(--Background) !important;
 		color: var(--Foreground) !important
@@ -18,10 +23,13 @@
 		border: 1px solid var(--Primary) !important;
 		border-radius: var(--Rounding) !important
 	}
-	.panel, .row .product-buy-usps {
+	.swatchBox {
+		background-color: var(--Background) !important;
+	}
+	.panel, .row .product-buy-usps, #gallery-fullImageModal .modal-content {
 		background-color: var(--Surface) !important
 	}
-	#productPurchaseBoxContainer .price-box {
+	#productPurchaseBoxContainer .price-box, #selectedFiltersWrapper .appliedFilter, .panel-default > .panel-heading, .table-striped > tbody > tr:nth-of-type(2n+1), .table > tbody > tr.info > th {
 		background-color: var(--Surface-Variant) !important
 	}
 	.btn-primary {
@@ -29,6 +37,9 @@
 	}
 	.btn-primary:hover {
 		background-color: var(--Primary-Dark) !important
+	}
+	.richSelectionBoxDropList div:hover {
+		background-color: var(--Primary-Transparent)
 	}
 	.navbar-wrapper, #mainSearch .searchInput {
 		background-color: var(--Mast) !important;
@@ -39,8 +50,11 @@
 	.breadcrumb::before, .breadcrumb::after {
 		background: none !important
 	}
-	.product .shortText a, .navbar-default .navbar-nav > .active > a.menu-categories-desktop, h2 {
+	.product .shortText a, .navbar-default .navbar-nav > .active > a.menu-categories-desktop, h2, .textSwatch, h3, .semiBoldBig {
 		color: var(--Foreground) !important
+	}
+	.panel-default > .panel-heading {
+		color: var(--Foreground-Variant) !important
 	}
 	.subMenuUpArrow, .breadcrumb a, .navbar-default .navbar-nav > li > a.menu-categories-desktop {
 		color: var(--Primary) !important
@@ -60,8 +74,14 @@
 	#productPurchaseBoxContainer .price-box {
 		border-radius: var(--Rounding-Variant-Top) !important
 	}
+	.richSelectionBoxDropList {
+		border-radius: var(--Rounding-Variant-Bottom) !important
+	}
 	#BuyButton_ProductPageStandard_1026456 {
 		border-radius: 0 0 0 var(--Rounding-Variant) !important
+	}
+	.swatchBox {
+		border-radius: 999px !important
 	}
 	[data-target="#reserveInStoreModal"] {
 		border-radius: 0 0 var(--Rounding-Variant) 0 !important;
@@ -69,7 +89,7 @@
 		background-color: var(--Primary) !important;
 		color: white
 	}
-	.navbar-wrapper, #mainSearch .searchInput, .btn-primary, .panel-main {
+	.navbar-wrapper, #mainSearch .searchInput, .btn-primary, .panel-main, .richSelectionBoxDropList, .swatchBox, .table > tbody > tr > th, .table > tbody > tr > td {
 		border: none !important
 	}
 }

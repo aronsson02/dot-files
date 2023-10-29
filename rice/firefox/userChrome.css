@@ -1,19 +1,21 @@
 :root {
-		--Foreground: #EEEEEE;
-		--Foreground-Variant: #EEEEEECC;
-		--Foreground-Dark: #EEEEEE66;
-		--Foreground-Transparent: #EEEEEE33;
-		--Background: #282a36;
-		--Surface: #343746;
-		--Surface-Variant: #42465b;
+		--Foreground: #F9EFE3;
+		--Foreground-Variant: #F9EFE3CC;
+		--Foreground-Dark: #F9EFE366;
+		--Foreground-Transparent: #F9EFE333;
+		--Background: #041A1F;
+		--Surface: #052229;
+		--Surface-Variant: #072B33;
+		--Surface-Alternative: #09343d;
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
-		--Surface-Alternative: #25283F;
-		--Primary: #a179c0;
-		--Primary-Dark: #8660a4;
-		--Primary-Transparent: #a179c080;
+		--Primary: #1CCFEA;
+		--Primary-Light: #00FFFF;
+		--Primary-Dark: #16A5BB;
+		--Primary-Transparent: #00FFFF80;
 		--Secondary: #E72F6B;
 		--Secondary-Transparent: #E72F6B80;
+		--Secondary-Tri: #6BE72F;
 		--Mast: var(--Surface-Alternative);
 		--Mast-Transparent: #25283F80;
 		--Mast-Variant: #2e324f;
@@ -30,7 +32,6 @@
 		--blue-dark: #120056;
 		--yellow: #f1ff52;
 		--blur: blur(40px) contrast(0.9) saturate(1.5);
-		/* backdrop-filter: var(--blur) */
 		--blur-hover: blur(10px) contrast(0.9) saturate(1.5);
 		--blur-variant: blur(5px) contrast(0.9) saturate(1.5);
 		--blur-dark: var(--blur) brightness(66%);
@@ -51,9 +52,8 @@
 		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
-		--Anim-Google-One: google-one 6s ease infinite;
 		--Spinner: var(--Primary) transparent;
-	}
+}
 @keyframes hue-rotate {
 	0% {
 		filter: hue-rotate(0deg);
@@ -132,36 +132,36 @@
 	display: none !important;
 }
 
-/* show tab manager button even when tabs aren't overflowing -  
-   can instead use browser.tabs.tabmanager.enabled;true as well  
-   or skip this part if you want to retain the default behaviour */  
-#alltabs-button {  
-    display: -moz-box !important;  
-}  
+/* show tab manager button even when tabs aren't overflowing -
+   can instead use browser.tabs.tabmanager.enabled;true as well
+   or skip this part if you want to retain the default behaviour */
+#alltabs-button {
+    display: -moz-box !important;
+}
 
-/* tab counter */  
-#TabsToolbar-customization-target {  
-    counter-reset: tabCount;  
-}  
-.tabbrowser-tab {  
-    counter-increment: tabCount;  
-}  
-#alltabs-button > .toolbarbutton-badge-stack > .toolbarbutton-icon {  
-    visibility: collapse !important;  
-}  
-#alltabs-button > .toolbarbutton-badge-stack {  
-    position: relative !important;  
-}  
-#alltabs-button > .toolbarbutton-badge-stack::before {  
-    content: counter(tabCount);  
-    border-bottom: 1px solid var(--toolbarbutton-icon-fill);  
-    color: var(--toolbarbutton-icon-fill);  
-    opacity: var(--toolbarbutton-icon-fill-opacity);  
-    position: absolute;  
-    bottom: var(--toolbarbutton-inner-padding);  
-    left: 50%;  
-    transform: translateX(-50%);  
-    padding: 0 3px;  
+/* tab counter */
+#TabsToolbar-customization-target {
+    counter-reset: tabCount;
+}
+.tabbrowser-tab {
+    counter-increment: tabCount;
+}
+#alltabs-button > .toolbarbutton-badge-stack > .toolbarbutton-icon {
+    visibility: collapse !important;
+}
+#alltabs-button > .toolbarbutton-badge-stack {
+    position: relative !important;
+}
+#alltabs-button > .toolbarbutton-badge-stack::before {
+    content: counter(tabCount);
+    border-bottom: 1px solid var(--toolbarbutton-icon-fill);
+    color: var(--toolbarbutton-icon-fill);
+    opacity: var(--toolbarbutton-icon-fill-opacity);
+    position: absolute;
+    bottom: var(--toolbarbutton-inner-padding);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 3px;
 }
 
 #urlbar-background {
@@ -177,13 +177,29 @@
 
 #navigator-toolbox #PersonalToolbar {
 	opacity: 0 !important;
-	margin-bottom: -32px !important;
-	transition: opacity 3s ease-in-out 2s, margin 5s ease-in-out 3s !important;
+	margin-bottom: -28px !important;
+	translate: 0 -28px !important;
+	transition: opacity 3s ease-in-out 2s, margin 3s ease-in-out 3s, translate 4s ease-in-out 3s !important;
+	border-radius: var(--Rounding-Variant-Bottom)
 }
 #navigator-toolbox:hover #PersonalToolbar {
 	opacity: 1 !important;
-	margin-bottom: 0 !important;
-	transition: opacity .5s ease-in-out .1s, margin .2s ease-in-out !important;
+	margin-bottom: 0px !important;
+	translate: 0 0 !important;
+	transition: opacity .5s ease-in-out .2s, margin .5s ease-in-out, translate .3s ease-in-out !important;
+}
+
+#navigator-toolbox #titlebar {
+	opacity: 0 !important;
+	margin-bottom: -30px !important;
+	translate: 0 -30px !important;
+	transition: opacity 3s ease-in-out 2s, margin 3s ease-in-out 3s, translate 4s ease-in-out 3s !important;
+}
+#navigator-toolbox:hover #titlebar {
+	opacity: 1 !important;
+	margin-bottom: 0px !important;
+	translate: 0 0 !important;
+	transition: opacity .5s ease-in-out .2s, margin .5s ease-in-out, translate .3s ease-in-out !important;
 }
 
 /* -----Window Controls----- */
@@ -314,27 +330,22 @@ hbox.tab-content[pinned=true] .tab-text {
 	display: none !important;
 }
 .tabbrowser-tab {
-	border-radius: var(--mff-tab-border-radius) !important;
 	border-width: 0;
 	height: var(--mff-tab-height) !important;
-	margin-bottom: 4px !important;
-	margin-inline-end: 4px !important;
-	margin-top: 4px !important;
-	max-height: var(--mff-tab-height) !important;
-	min-height: var(--mff-tab-height) !important;
-	margin-left: 1px !important;
-	margin-right: 1px !important;
+	overflow: hidden !important;
+	max-width: 500px !important;
+	min-width: 100px !important;
+	width: 100px !important;
 }
 .tabbrowser-tab[selected="true"],
 .tabbrowser-tab[soundplaying="true"] {
-	width: 100px !important;
-	max-width: 250px !important;
-	min-width: 100px !important;
-}
-.tabbrowser-tab[soundplaying="true"] {
+	width: 150px !important;
+	max-width: 500px !important;
+	min-width: 150px !important;
 	background-color: transparent !important;
-	background: linear-gradient(110deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/200% 100%;
-	animation: shift 5s linear infinite;
+	background: linear-gradient(120deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/200% 100%;
+	animation: shift 8s linear infinite;
+	border-radius: 0 0 99px 99px !important;
 }
 /* Disable sound icon in tabs */
 .tab-icon-overlay[soundplaying]:not([crashed]),
@@ -344,6 +355,9 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 #preferences-button {
 	list-style-image: url("configure.svg") !important;
+}
+.tab-background {
+	display: none !important;
 }
 
 /*

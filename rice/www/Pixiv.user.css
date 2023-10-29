@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Pixiv
-@version      1.0.4
+@version      1.0.5
 @description  Pixiv
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -21,7 +21,7 @@
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important
 	}
-	.ckuYsq, .kDlMmy, .cuTZeZ, .cuTZeZ, .cxXhWC, .dWlHet, .cxqcFu, .kIMeEI, .kKdVSq {
+	.ckuYsq, .kDlMmy, .cuTZeZ, .cuTZeZ, .cxXhWC, .dWlHet, .cxqcFu, .kIMeEI, .kKdVSq, .eMoZaF {
 		background: none !important
 	}
 	.beQeCv, .sc-1pkrz0g-0, body, .list-items {
@@ -42,6 +42,9 @@
 	.iUhfll, .biNiqG {
 		background-color: var(--Mast) !important
 	}
+	.eMoZaF:hover {
+		background-color: var(--Primary-Transparent) !important
+	}
 	._button:hover, .button-small:hover, ._button-large:hover, .submit-container .submit:hover, .submit-container .cancel:hover, .follow:hover, .request-mypixiv:hover, .following:hover, .mypixiv:hover, .questionnaire input:hover, .create-group-settings input[type="submit"]:hover, .tag-cloud .selected, ._2Of8xxg, .bbTNLI, .kmHafz, .fOWAlD {
 		background: var(--Primary) !important
 	}
@@ -52,10 +55,10 @@
 		border: none !important;
 		transition: background 0.2s ease !important
 	}
-	body, input::placeholder, .drFRmD {
+	body, input::placeholder, .drFRmD, .lhErbU {
 		color: var(--Foreground) !important
 	}
-	.inwVTq, ._3LhShlo._2sMeHzD {
+	.inwVTq, ._3LhShlo._2sMeHzD, .kopUgZ {
 		color: var(--Foreground-Variant) !important
 	}
 	.bXjFLc {
