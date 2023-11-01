@@ -304,60 +304,32 @@ body {
 #TabsToolbar #firefox-view-button[open]:not(:focus-visible) > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:not([multiselected="true"]):-moz-lwtheme {
 	outline: none !important;
 }
-.tabbrowser-tab:not[visuallyselected] .tab-close-button {
-	display: none !important;
-}
-.tab-background[selected="true"] {
-	background: var(--mff-tab-selected-bg) !important;
-}
-.tab-background:not[visuallyselected] {
-	background: var(--mff-tab-selected-bg) !important;
-	opacity: 0.5 !important;
-}
 .tab-text {
 	font-family: var(--mff-tab-font-family);
 	font-weight: var(--mff-tab-font-weight);
 	font-size: var(--mff-tab-font-size) !important;
 	color: var(--mff-tab-color);
 }
-hbox.tab-content[pinned=true] .tab-text {
-	display: none !important;
-}
 #tabbrowser-tabs {
 	--tab-loading-fill: #033433 !important;
 }
-.tab-line {
-	display: none !important;
-}
-.tabbrowser-tab {
-	border-width: 0;
-	height: var(--mff-tab-height) !important;
-	overflow: hidden !important;
-	max-width: 500px !important;
-	min-width: 100px !important;
-	width: 100px !important;
-}
 .tabbrowser-tab[selected="true"],
 .tabbrowser-tab[soundplaying="true"] {
-	width: 150px !important;
-	max-width: 500px !important;
-	min-width: 150px !important;
 	background-color: transparent !important;
 	background: linear-gradient(120deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/200% 100%;
 	animation: shift 8s linear infinite;
-	border-radius: 0 0 99px 99px !important;
+	border-radius: 16px 16px 64px 64px !important;
 }
-/* Disable sound icon in tabs */
 .tab-icon-overlay[soundplaying]:not([crashed]),
 .tab-icon-overlay[muted]:not([crashed]),
-.tab-icon-overlay[activemedia-blocked]:not([crashed]) {
+.tab-icon-overlay[activemedia-blocked]:not([crashed]),
+hbox.tab-content[pinned=true] .tab-text,
+.tab-line,
+.tab-background {
 	display: none !important;
 }
 #preferences-button {
 	list-style-image: url("configure.svg") !important;
-}
-.tab-background {
-	display: none !important;
 }
 
 /*

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Pixiv
-@version      1.0.5
+@version      1.0.6
 @description  Pixiv
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -9,19 +9,28 @@
 @updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Pixiv.user.css
 ==/UserStyle== */
 @-moz-document domain("pixiv.net") {
-	.lPHpt, .fqSxey, .jkzKWL, .drFRmD {
+	.lPHpt, .fqSxey, .jkzKWL, .drFRmD, .fqNqlu {
 		background: none !important;
 		backdrop-filter: var(--blur) !important
+	}
+	.gMEAWM {
+		background: none !important;
+		backdrop-filter: blur(50px) !important;
+		mask: linear-gradient(to right, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100%)
 	}
 	.sc-1wmoqw-1, .ddXsIb {
 		background: none !important;
 		backdrop-filter: var(--blur-dark) !important
 	}
-	.sc-1wmoqw-0, .bSLemN, .hMFZAj, .hYBINe, .sc-162tykz-0, .sc-1ow64s0-1, .ggMyQW {
+	.eqrGHc {
+		background: none !important;
+		backdrop-filter: var(--blur-bright) !important
+	}
+	.sc-1wmoqw-0, .bSLemN, .hMFZAj, .hYBINe, .sc-162tykz-0, .sc-1ow64s0-1, .ggMyQW, .eRCXIR {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important
 	}
-	.ckuYsq, .kDlMmy, .cuTZeZ, .cuTZeZ, .cxXhWC, .dWlHet, .cxqcFu, .kIMeEI, .kKdVSq, .eMoZaF {
+	.ckuYsq, .kDlMmy, .cuTZeZ, .cuTZeZ, .cxXhWC, .dWlHet, .cxqcFu, .kIMeEI, .kKdVSq, .eMoZaF, .gJBZuv {
 		background: none !important
 	}
 	.beQeCv, .sc-1pkrz0g-0, body, .list-items {
@@ -45,15 +54,15 @@
 	.eMoZaF:hover {
 		background-color: var(--Primary-Transparent) !important
 	}
-	._button:hover, .button-small:hover, ._button-large:hover, .submit-container .submit:hover, .submit-container .cancel:hover, .follow:hover, .request-mypixiv:hover, .following:hover, .mypixiv:hover, .questionnaire input:hover, .create-group-settings input[type="submit"]:hover, .tag-cloud .selected, ._2Of8xxg, .bbTNLI, .kmHafz, .fOWAlD {
-		background: var(--Primary) !important
-	}
-	._button, .button-small, ._button-large, .submit-container .submit, .submit-container .cancel, .follow, .request-mypixiv, .following, .mypixiv, .questionnaire input, .create-group-settings input[type="submit"], .button-on, .button-small-on, ._2Of8xxg:hover {
-		background: var(--Primary-Dark) !important;
+	._button, .button-small, ._button-large, .submit-container .submit, .submit-container .cancel, .follow, .request-mypixiv, .following, .mypixiv, .questionnaire input, .create-group-settings input[type="submit"], .button-on, .button-small-on, ._2Of8xxg:hover, .fwkkiC, .kmHafz, .fOWAlD {
+		background: var(--Primary) !important;
 		color: black !important;
 		text-shadow: none !important;
 		border: none !important;
 		transition: background 0.2s ease !important
+	}
+	._button:hover, .button-small:hover, ._button-large:hover, .submit-container .submit:hover, .submit-container .cancel:hover, .follow:hover, .request-mypixiv:hover, .following:hover, .mypixiv:hover, .questionnaire input:hover, .create-group-settings input[type="submit"]:hover, .tag-cloud .selected, ._2Of8xxg, .bbTNLI, .fwkkiC:hover:not(:disabled):not([aria-disabled]), .fwkkiC:hover[aria-disabled="false"], .kmHafz:hover:not(:disabled):not([aria-disabled]), .kmHafz:hover[aria-disabled="false"], .fOWAlD:hover:not(:disabled):not([aria-disabled]), .fOWAlD:hover[aria-disabled="false"] {
+		background: var(--Primary-Light) !important
 	}
 	body, input::placeholder, .drFRmD, .lhErbU {
 		color: var(--Foreground) !important
@@ -67,11 +76,20 @@
 	.tag-cloud .selected, ._2Of8xxg, .fUCwNW, .fivNSm {
 		color: black !important
 	}
-	._unit, .footer, .bookmark-detail-unit .input-box {
+	._unit, .footer, .bookmark-detail-unit .input-box, .kQWGSb {
 		border: none !important
 	}
-	.jkzKWL {
-		border-radius: var(--Rounding-Variant) !important
+	.list-items, .jOmqKq {
+		border-radius: var(--Rounding) !important;
+	}
+	.jkzKWL, ._button-large, .submit-container .submit, .fXmjBM {
+		border-radius: var(--Rounding-Variant) !important;
+	}
+	.bookmark-detail-unit, .footer {
+		border-radius: var(--Rounding-Variant-Top) !important;
+	}
+	.bookmark-list-unit {
+		border-radius: var(--Rounding-Variant-Bottom) !important;
 	}
 	.hYfnPb, .kYCYRk {
 		border-radius: var(--Rounding) !important;
@@ -117,6 +135,12 @@
 		min-height: 700px !important;
 		max-height: 1400px !important
 	}
+	.gvleGn {
+		height: 250px !important;
+		background-color: var(--Surface) !important;
+		padding: 16px !important;
+		border-radius: var(--Rounding-Variant) !important;
+	}
 	@media screen and (min-width: 1700px) {
 		.gTaKEp, .juyBTC {
 			width: 1640px !important;
@@ -136,5 +160,8 @@
 	}
 	.sc-1nhgff6-3 {
 		mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%)
+	}
+	.fQcsvd, .dFLqqk, .jqMLBd {
+		display: none !important
 	}
 }
