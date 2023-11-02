@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex
-@version      1.32.5
+@version      1.32.6
 @description  Plex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -17,11 +17,11 @@ regexp(".*:32400/.*") {
 	.modal-header, .modal-footer, .modal-body-with-panes .modal-nav-pane, .ModalBody-modalBody-Me4Hwy, .ModalContent-modalContent-_BsQSK, .modal-list, .BottomBar-bottomBar-hnsKzI, ._76v8d6l, .PrePlayPosterCardPlayedStatus-status-bp2tOy {
 		background: none !important
 	}
-	.Menu-menu-OCzudL {
+	.Menu-menu-OCzudL, .PlayButton-playButton-vS1WII:hover .PlayButton-playCircle-fK1f_v {
 		background: none !important;
 		backdrop-filter: var(--blur) !important
 	}
-	.modal-backdrop, .Modal-modalBackdrop-nE6cJg, .MetadataPosterCardProgressBar-track-DUIwTi, .MetadataPosterCardCircle-cardCircle-gBHNQG {
+	.modal-backdrop, .Modal-modalBackdrop-nE6cJg, .MetadataPosterCardProgressBar-track-DUIwTi, .MetadataPosterCardCircle-cardCircle-gBHNQG, .PlayPauseOverlay-playCircle-AOIb5b {
 		background: none !important;
 		backdrop-filter: var(--blur-variant) !important
 	}
@@ -37,7 +37,7 @@ regexp(".*:32400/.*") {
 	.btn-default, .form-control {
 		background-color: var(--Foreground-Transparent)
 	}
-	.btn-primary, .Button-primary-cMdkLb, .Button-primary-XgQxrm, .SourceSidebarLink-isSelected-rPGiHo::before, .MetadataPosterCardProgressBar-bar-xA7ztj, .MetadataPosterCard-legacyUnwatchedTag-xCeVKK, .SeekBar-seekBarFill-TestC_, .VolumeSlider-fill-m0PeVk, .PlayButton-playButton-vS1WII:hover .PlayButton-playCircle-fK1f_v {
+	.btn-primary, .Button-primary-cMdkLb, .Button-primary-XgQxrm, .SourceSidebarLink-isSelected-rPGiHo::before, .MetadataPosterCardProgressBar-bar-xA7ztj, .MetadataPosterCard-legacyUnwatchedTag-xCeVKK, .SeekBar-seekBarFill-TestC_, .VolumeSlider-fill-m0PeVk {
 		background-color: var(--Primary) !important
 	}
 	.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary, .Button-primary-cMdkLb:hover, .Button-primary-XgQxrm:hover, .SeekBar-seekBarBuffer-pao2Od {
@@ -76,7 +76,7 @@ regexp(".*:32400/.*") {
 	.Spinner-spinner-XTaskc {
 		border-color: var(--Spinner) !important
 	}
-	.modal-header, .modal-footer, select {
+	.modal-header, .modal-footer, select, .PlayPauseOverlay-playCircle-AOIb5b {
 		border: none !important
 	}
 	.PosterCardLink-hoveredLink-H5OMFC {
@@ -94,6 +94,9 @@ regexp(".*:32400/.*") {
 		border-radius: 999px !important;
 		right: -25px !important;
 		top: -25px !important
+	}
+	.PlayButton-playButton-vS1WII:hover .PlayButton-playCircle-fK1f_v, .PlayPauseOverlay-playCircle-AOIb5b {
+		transition: backdrop-filter 1s ease !important
 	}
 	.modal-backdrop {
 		opacity: 1 !important
