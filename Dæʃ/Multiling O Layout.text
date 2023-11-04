@@ -1,0 +1,48 @@
+{
+"title":"Fælʃ",
+"onScreen":{
+"altGr":[
+"[CO:2]0123[CO:1][123][123][123][CO:2]4567",
+"[CO:2]ԟхфшґґґйлуи",
+"[CO:2]арстдддѳнєі",
+"[CO:2]ӑꙩꙫв[CO:1][SYM][SYM][SYM][CO:2]ӧкї[MC:ў]",
+"[CO:1][SHIFT][SHIFT][CO:2]ҥ[MC:ҥ̆][XK:-_]& [XK:'\"][XK:.,][CO:1][DEL][DEL]",
+"[CO:1][LOCK][LOCK][CO:2][LEFT][SPACE][SPACE][SPACE][SPACE][SPACE][RIGHT][CO:1][ENTER][ENTER]",
+"  [CO:2][COPY][PASTE][PASTE][LAYOUTS][CO:1][WDEL]"
+],
+
+"sym":[
+"[CO:2]/\\()''{}[]",
+"[CO:2]~^°%\"\"=*「」",
+"[CO:2]¡!¿?[CO:1][123][123][CO:2]:#<>",
+"[CO:2]мгпб   ;[MC:ѳ̆][MC:в̆]о",
+"[CO:1][SHIFT][SHIFT][CO:2]&&[XK:-_][XK:-_][XK:-_]@@[CO:1][DEL][DEL]",
+"[CO:1][LOCK][LOCK][CO:2][LEFT][SPACE][SPACE][SPACE][SPACE][RIGHT][CO:1][ENTER][ENTER]",
+"[CO:1][ALTGR][CO:2]¯ˋˇ´¨"
+],
+
+"main":[
+"[CO:2]qwfpg[CO:1]123[CO:2]åj[XK:lł][XK:uùúü][XK:yýÿ]",
+"[CO:2][XK:aàá][XK:rɹ][XK:sšß]td[CO:1]456[CO:2][XK:äæ]h[XK:nñ][XK:eé][XK:iï]",
+"[CO:2]z[XK:xẋẍ][XK:cçćč]v[XK:@[MC:aronsson02.p@gmail.com]][CO:1]789[CO:2][XK:öø]bkm[XK:oòóœ]",
+"[CO:1][SHIFT][SHIFT][SHIFT][123][SYM][CO:2][XK:-_][CO:1]00[CO:2]+&[XK:.[MC:.se][MC:.no][MC:.org][MC:.net][MC:.com][MC:aethaer.duckdns.org],][CO:1][DEL][DEL][DEL]",
+"[CO:1][TOOL][TOOL][CO:2][LEFT][SPACE][SPACE][SPACE][SPACE][SPACE][SPACE][RIGHT][CO:1][ENTER][ENTER]",
+"[CO:1][ALTGR][CO:2][HIDE][EMOJI][XK:[PASTE][CLIPBOARD]][LAYOUTS][CO:1][WDEL]"
+],
+
+"num":[
+"=123#[4D:$    £¥€₹]",
+"*456/[4D:%     ‰ ‱]",
+"+789[4D:- [MC:am] [MC:pm]][4D::    @℉;℃]",
+"[CO:1][LOCK][CO:2][SPACE][CO:1]0[CO:2].,[CO:1][DEL]"
+],
+
+"edit":[
+"[W.LEFT][REDO][ã→a][UNDO][W.RIGHT]",
+"[TRANSLATE][PASTE][UP][COPY][CUT]",
+"[TAB][LEFT][ALL][RIGHT][WDEL]",
+"[SHIFT][HOME][DOWN][END][DEL]",
+"[LOCK][PGUP][SPACE][PGDN][ENTER]"
+]
+}
+}
