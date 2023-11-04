@@ -3,10 +3,10 @@
 "onScreen":{
 "altGr":[
 "[CO:2]0123[CO:1][123][123][123][CO:2]4567",
-"[CO:2]ԟхфшґґґйлуи",
-"[CO:2]арстдддѳнєі",
-"[CO:2]ӑꙩꙫв[CO:1][SYM][SYM][SYM][CO:2]ӧкї[MC:ў]",
-"[CO:1][SHIFT][SHIFT][CO:2]ҥ[MC:ҥ̆][XK:-_]& [XK:'\"][XK:.,][CO:1][DEL][DEL]",
+"[CO:2] ẋfʃŋ  jluy",
+"[CO:2]arstd ụþneæi",
+"[CO:2]ạȯåv[CO:1][SYM][SYM][SYM][CO:2]økï ",
+"[CO:1][SHIFT][SHIFT][CO:2]  [XK:-_]& [XK:'\"][XK:.,][CO:1][DEL][DEL]",
 "[CO:1][LOCK][LOCK][CO:2][LEFT][SPACE][SPACE][SPACE][SPACE][SPACE][RIGHT][CO:1][ENTER][ENTER]",
 "  [CO:2][COPY][PASTE][PASTE][LAYOUTS][CO:1][WDEL]"
 ],
