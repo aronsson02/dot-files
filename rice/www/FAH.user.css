@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name         Folding@Home
+@version      0.0.1
+@description  Global definitions
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/FAH.user.css
+==/UserStyle== */
+
+@-moz-document domain("localhost") {
+	body {
+		background-color: var(--Background) !important
+	}
+	#cp .panel-top, #cp .panel-pu {
+		background-color: var(--Surface) !important
+	}
+	#cp.panel, .box-pu li.active {
+		background-color: var(--Surface-Variant) !important
+	}
+	#box-all-slots {
+		background-color: var(--Surface-Alternative) !important
+	}
+	.box-pu li .run, .box-pu li .upload, .box-pu li .download, #btn-run {
+		background: var(--green) !important
+	}
+	.box-pu li .pause, .box-pu li .finish {
+		background: var(--yellow) !important
+	}
+	#btn-stop {
+		background: var(--red) !important
+	}
+	.box-pu li {
+		background-image: linear-gradient(var(--Surface-Variant), var(--Surface))
+	}
+	.box-pu li:hover:not(.box-pu li.active) {
+		background-image: linear-gradient(var(--Surface-Alternative), var(--Surface))
+	}
+	.panel-header {
+		background: none !important
+	}
+	html, button, input, select, textarea {
+		color: var(--Foreground) !important
+	}
+	#cp .hlarge {
+		color: var(--Primary) !important
+	}
+	a {
+		color: var(--Primary-Light) !important
+	}
+	.corner-all, #box-all-slots {
+		border-radius: var(--Rounding-Variant) !important
+	}
+}

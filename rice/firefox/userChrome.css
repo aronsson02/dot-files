@@ -288,12 +288,7 @@ browser[primary="true"][tabDialogShowing="true"],
 
 */
 body {
-	background-color: Transparent !important;
-  transition: background-color 5s ease-out 2s !important;
-}
-#main-window:hover body {
 	background-color: var(--Surface-Transparent) !important;
-  transition: background-color 1s ease !important;
 }
 .browser-toolbar:not(.titlebar-color) {
 	background: none !important;
