@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      3.1.6
+@version      3.1.7
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -71,7 +71,7 @@
 			transition: all 200ms
 		}
 	}
-	.overflow-y-auto.overscroll-contain.z-10.bg-accent.shadow.rounded-b[data-v-615991ff] {
+	.fixed {
 		position: initial !important
 	}
 	.card-pf {

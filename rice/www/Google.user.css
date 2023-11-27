@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.5
+@version      5.4.6
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -527,9 +527,8 @@
 		background-image: none!important;
 		backdrop-filter: var(--blur-dark)!important
 	}
-	.center-content.ytmusic-nav-bar {
-		background-color: var(--Mast-Transparent);
-		backdrop-filter: var(--blur)!important
+	ytmusic-app-layout > [slot="nav-bar"] {
+		backdrop-filter: blur(50px)!important
 	}
 	.style-scope.ytmusic-section-list-renderer.fullbleed.stuck #header.style-scope.ytmusic-item-section-renderer, ytmusic-search-suggestions-section.ytmusic-search-box, tp-yt-paper-listbox {
 		background-color: transparent!important;
@@ -545,7 +544,7 @@
 	ytmusic-app-layout > [slot="player-page"] {
 		background-color: transparent!important;
 		background-image: none!important;
-		backdrop-filter: blur(0px) !important;
+		backdrop-filter: blur(20px) !important;
 		transition: transform 400ms ease-in-out 100ms, backdrop-filter 300ms ease-in-out
 	}
 	ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box {
@@ -609,7 +608,7 @@
 		border-radius: 8px 8px 0 0!important;
 		overflow: hidden
 	}
-	ytmusic-player-queue-item {
+	ytmusic-player-queue-item, ytmusic-app-layout[is-bauhaus-sidenav-enabled] #mini-guide-background.ytmusic-app-layout {
 		border: none !important
 	}
 	ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-shadow.ytmusic-app-layout {
@@ -676,7 +675,7 @@
 		margin: 0 0 0 16px;
 		box-shadow: none
 	}
-	ytmusic-av-toggle[toggle-disabled] .av-toggle.ytmusic-av-toggle {
+	ytmusic-av-toggle[toggle-disabled] .av-toggle.ytmusic-av-toggle, ytmusic-app-layout[is-bauhaus-sidenav-enabled].content-scrolled #mini-guide-background.ytmusic-app-layout {
 		display: none
 	}
 }
