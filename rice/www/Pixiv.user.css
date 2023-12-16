@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Pixiv
-@version      1.0.7
+@version      1.0.8
 @description  Pixiv
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -145,7 +145,7 @@
 		border-radius: var(--Rounding-Variant) !important;
 	}
 	@media screen and (min-width: 1700px) {
-		.gTaKEp, .juyBTC {
+		.cDZIoX, .gtm-toppage-thumbnail-illustration-recommend-works-zone {
 			width: 1640px !important;
 			transform: translatex(-208px) !important
 		}

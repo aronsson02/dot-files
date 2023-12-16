@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.6
+@version      5.4.7
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -522,7 +522,7 @@
 	}
 }
 @-moz-document domain("music.youtube.com") {
-	[dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background, #player-bar-background.ytmusic-app-layout, .side-panel.modular.style-scope.ytmusic-player-page, .av-toggle.ytmusic-av-toggle {
+	[dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background, #player-bar-background.ytmusic-app-layout, .side-panel.modular.style-scope.ytmusic-player-page, .av-toggle.ytmusic-av-toggle, #container.ytmusic-multi-select-menu-renderer {
 		background-color: transparent!important;
 		background-image: none!important;
 		backdrop-filter: var(--blur-dark)!important
@@ -565,8 +565,9 @@
 		max-width: initial !important
 	}
 	.side-panel.modular.style-scope.ytmusic-player-page {
-		border-radius: var(--Rounding-Variant) var(--Rounding-Variant) 0 0!important;
-		overflow: hidden
+		border-radius: 32px 32px 0 0!important;
+		overflow: hidden;
+		padding: 0 8px
 	}
 	ytmusic-app-layout > [slot=nav-bar] {
 		width: 100vw!important
@@ -583,10 +584,10 @@
 		visibility: visible !important
 	}
 	#thumbnail {
-		mask: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 99%)
+		mask: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, .95) 25%, rgba(0, 0, 0, .95) 75%, rgba(0, 0, 0, 0) 99%)
 	}
 	#song-image {
-		mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 99%)
+		mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, .95) 25%, rgba(0, 0, 0, .95) 75%, rgba(0, 0, 0, 0) 99%)
 	}
 	ytmusic-chip-cloud-renderer {
 		mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)
@@ -674,6 +675,13 @@
 		background-color: transparent;
 		margin: 0 0 0 16px;
 		box-shadow: none
+	}
+	.image.ytmusic-immersive-header-renderer ~ .content-container-wrapper.ytmusic-immersive-header-renderer .gradient-container.ytmusic-immersive-header-renderer {
+		background: linear-gradient(1turn, var(--Background) 9%, rgba(0, 0, 0, 0) 75%) !important
+	}
+	#container.ytmusic-multi-select-menu-renderer {
+		border-radius: var(--Rounding-Variant) !important;
+		overflow: hidden
 	}
 	ytmusic-av-toggle[toggle-disabled] .av-toggle.ytmusic-av-toggle, ytmusic-app-layout[is-bauhaus-sidenav-enabled].content-scrolled #mini-guide-background.ytmusic-app-layout {
 		display: none
@@ -1512,7 +1520,7 @@
 	.modal-dialog-buttons button.goog-buttonset-default:hover, .modal-dialog-buttons button:hover, .modal-dialog-buttons button:active {
 		color: black !important
 	}
-	.histogram-wrapper, .place-history-moment-outer:hover .moment-edit-control, .place-history-moment-outer .moment-edit-control.place-visit, .goog-date-picker-popup, .date-range-picker .goog-menu, .goog-menu, .correction-dialog, .correction-dialog .modal-dialog-content, .correction-dialog .modal-dialog-title, .add-place-visit-dialog .place-selection-component .suggest-popup, .place-search-input, .goog-modalpopup, .modal-dialog {
+	.histogram-wrapper, .place-history-moment-outer:hover .moment-edit-control, .place-history-moment-outer .moment-edit-control.place-visit, .goog-date-picker-popup, .date-range-picker .goog-menu, .goog-menu, .correction-dialog, .correction-dialog .modal-dialog-content, .correction-dialog .modal-dialog-title, .add-place-visit-dialog .place-selection-component .suggest-popup, .place-search-input, .goog-modalpopup, .modal-dialog, .timeline-wrapper {
 		background-color: var(--Surface) !important
 	}
 	.date-range-picker .goog-flat-menu-button:hover, .date-range-picker .goog-flat-menu-button:focus, .material-flat-button:hover, .place-history-moment-outer:hover .moment-edit-control, .histogram-scroll-button-left, .histogram-scroll-button-right, .date-range-picker .goog-menu .goog-menuitem-highlight, .overflow-menu .goog-menuitem-highlight, .suggest-row.preselected, .drop-pin-row:hover, .ac-active, .activity-suggest .suggest-row:hover {

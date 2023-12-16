@@ -7,9 +7,10 @@ yay -Sy doas hyprland-git waybar-hyprland-git dunst-git swaybg-git swaylock-effe
 doas mkdir /Archive
 doas mkdir /Tera
 
-doas cp "$HOME/dot-files/X/00-mouse.conf" "/etc/X11/xorg.conf.d"
+# doas cp "$HOME/dot-files/X/00-mouse.conf" "/etc/X11/xorg.conf.d"
 doas cp "$HOME/dot-files/X/no" "/usr/share/X11/xkb/symbols"
-setxkbmap no
+hyprctl reload
+# setxkbmap no
 
 ln -sf "$HOME/dot-files/rice/awesomewm" "$HOME/.config/awesome"
 ln -sf "$HOME/dot-files/fonts/" "$HOME/.fonts"

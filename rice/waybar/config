@@ -2,7 +2,7 @@
     "layer": "top", // Waybar at top layer
     "position": "left", // Waybar position (top|bottom|left|right)
     // "height": 30, // Waybar height
-    "width": 75, // Waybar width
+    "width": 50, // Waybar width
     "modules-left": ["custom/launcher", "memory", "wlr/workspaces", "custom/weather"],
     "modules-right": ["tray", "network", "pulseaudio", "custom/lock", "clock", "custom/power-menu"],
     "wlr/workspaces": {
