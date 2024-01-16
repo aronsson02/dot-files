@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      3.1.7
+@version      3.1.8
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -94,6 +94,10 @@
 	}
 	.glow[data-v-4a6dda51]:not(.disalbed) {
 		box-shadow: 0 .2rem 1rem var(--md-primary);
+	}
+	.md--progress::before {
+		backdrop-filter: var(--blur-variant) !important;
+		mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 1) 100%)
 	}
 	.md-inputwrap.md-blur[data-v-3824af96]::before, .view-count {
 		display: none !important

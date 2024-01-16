@@ -20,7 +20,7 @@
         "spacing": 24
     },
     "clock": {
-        "format": "{:%H:%M\n\n%a\nU:%W\n\n%d/%m\n%Y}",
+        "format": "{:%H\n%M\n\n%a\nU%W\n\n%d\n%m\n%y}",
     },
 
     "memory": {

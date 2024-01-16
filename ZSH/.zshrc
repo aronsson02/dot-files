@@ -32,8 +32,6 @@ plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
-alias yt-dlp-all="yt-dlp-vt && yt-dlp-pvt && yt-dlp-boris && yt-dlp-Boy && yt-dlp-AiJ && yt-dlp-CB && yt-dlp-IDaT && yt-dlp-TAM && yt-dlp-JB && yt-dlp-Trash"
-
 alias yt-dlp-vt="yt-dlp --download-archive /Archive/.archive -N 16 --buffer-size 128K -P /Archive/VT/ --part PLu2_CGIuTx8MYkY8RDX7TIzQJ0MA9BWiP"
 alias yt-dlp-pvt="yt-dlp --download-archive /Archive/.archive -N 16 --buffer-size 128K -P /Archive/PVT/ --part PLu2_CGIuTx8M3BMEUuVYTn1adjKFWKPKB"
 alias yt-dlp-boris="yt-dlp --download-archive /Archive/.archive -N 16 --buffer-size 128K -P '/Archive/YouTube/Life of Boris/' --part --playlist-reverse -o 'E%(playlist_autonumber)s - %(title)s' 'UUS5tt2z_DFvG7-39J3aE-bQ'"
@@ -56,6 +54,7 @@ alias system-update="yay -Syu --noconfirm"
 alias cp="rsync -ahv --progress"
 alias system-info="inxi -Fza"
 alias disk-space="df -H"
+alias check-ports="nmap -Pn"
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH
 
