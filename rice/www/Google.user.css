@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.7
+@version      5.4.8
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -555,8 +555,14 @@
 		border-radius: var(--Rounding)!important;
 		overflow: hidden
 	}
-	#player, .song-media-controls.ytmusic-player, ytmusic-player-bar, #suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle {
+	#player, .song-media-controls.ytmusic-player, ytmusic-player-bar, #suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle, #mini-guide-background {
 		background: none !important
+	}
+	ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_TRANSPARENT"] a.ytmusic-chip-cloud-chip-renderer {
+		background-color: var(--Foreground) !important
+	}
+	ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_TRANSPARENT"] a.ytmusic-chip-cloud-chip-renderer:hover {
+		background-color: var(--Foreground-Variant) !important
 	}
 	ytmusic-player {
 		margin: auto 0 !important;
@@ -595,7 +601,7 @@
 	ytmusic-tab-renderer {
 		mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)
 	}
-	ytmusic-av-toggle.ytmusic-av-toggle {
+	ytmusic-av-toggle.ytmusic-av-toggle, .subtitle.ytmusic-queue-header-renderer {
 		color: var(--Foreground) !important
 	}
 	ytmusic-av-toggle[toggle-disabled] .ytmusic-av-toggle {
@@ -668,6 +674,9 @@
 	.style-scope.ytmusic-popup-container, .style-scope.ytmusic-menu-popup-renderer {
 		border-radius: var(--Rounding-Variant) !important
 	}
+	#toast {
+		border-radius: var(--Rounding) !important
+	}
 	.ytmusic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer {
 		box-sizing: border-box;
 		border: 0;
@@ -679,11 +688,16 @@
 	.image.ytmusic-immersive-header-renderer ~ .content-container-wrapper.ytmusic-immersive-header-renderer .gradient-container.ytmusic-immersive-header-renderer {
 		background: linear-gradient(1turn, var(--Background) 9%, rgba(0, 0, 0, 0) 75%) !important
 	}
+	ytmusic-shelf-renderer:not([is-bauhaus-web-detail-page-redesign-enabled]) #contents.ytmusic-shelf-renderer > .ytmusic-shelf-renderer:not(:last-child) {
+		border-image: linear-gradient(to right, #00000000 5%, #ffffff20 25%, #ffffff20 75%, #00000000 95%) 1;
+		border-width: 1px;
+		border-style: solid;
+	}
 	#container.ytmusic-multi-select-menu-renderer {
 		border-radius: var(--Rounding-Variant) !important;
 		overflow: hidden
 	}
-	ytmusic-av-toggle[toggle-disabled] .av-toggle.ytmusic-av-toggle, ytmusic-app-layout[is-bauhaus-sidenav-enabled].content-scrolled #mini-guide-background.ytmusic-app-layout {
+	ytmusic-av-toggle[toggle-disabled] .av-toggle.ytmusic-av-toggle, ytmusic-app-layout[is-bauhaus-sidenav-enabled].content-scrolled #mini-guide-background.ytmusic-app-layout, #nav-bar-divider {
 		display: none
 	}
 }
