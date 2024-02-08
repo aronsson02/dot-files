@@ -571,7 +571,7 @@ menupopup menu[disabled="true"]:hover {
 	background-color: transparent !important;
 }
 #ContentSelectDropdownPopup {
-	background-color: var(--Surface-Transparent) !important;
+	background-color: var(--Surface) !important;
 }
 #browser {
 	-moz-appearance: none !important;

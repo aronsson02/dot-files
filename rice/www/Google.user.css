@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.8
+@version      5.4.9
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -514,11 +514,11 @@
 	#movie_player, .video-stream, .ytp-small-mode {
 		border-radius: var(--Rounding)
 	}
-	ytd-watch-flexy[theater] #movie_player, ytd-watch-flexy[theater] .video-stream, body.visibility-logging-enabled.flex-width-enabled.flex-width-enabled-snap.page-loaded #movie_player, body.visibility-logging-enabled.flex-width-enabled.flex-width-enabled-snap.page-loaded .video-stream, .ytp-fullscreen, .ytp-fullscreen .video-stream {
+	.html5-video-container, ytd-watch-flexy[theater] #movie_player, ytd-watch-flexy[theater] .video-stream, body.visibility-logging-enabled.flex-width-enabled.flex-width-enabled-snap.page-loaded #movie_player, body.visibility-logging-enabled.flex-width-enabled.flex-width-enabled-snap.page-loaded .video-stream, .ytp-fullscreen, .ytp-fullscreen .video-stream {
 		border-radius: var(--Rounding-Variant)!important
 	}
 	#masthead {
-		border-radius: var(--Rounding-Variant-Bottom) !important
+		border-radius: 0 0 36px 36px !important
 	}
 }
 @-moz-document domain("music.youtube.com") {
