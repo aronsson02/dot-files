@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.9
+@version      5.4.10
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -490,8 +490,14 @@
 	.yt-uix-button-icon-icon-account-settings, #calendar-avatar-day.ytd-ticket-shelf-renderer {
 		background-color: var(--Surface-Transparent)
 	}
-	::placeholder, input:-moz-placeholder, #scrollable > yt-formatted-string, #filter-bar #filter-icon *, #filter-bar #text-input::placeholder, #yta-time-picker .ytcp-dropdown-trigger, #yta-time-picker .ytcp-text-dropdown-trigger, .style-scope.ytcp-missing-features-menu, .ytcp-missing-features-menu-0 #menu-header.ytcp-missing-features-menu, .ytcp-sticky-header-0 .paper-tab-0:not(.iron-selected) .tab-content {
+	.ytpa-ambientlight-settings-menu .ytpa-section.is-collapsed:not(:hover) .ytpa-section__label, .ytpa-ambientlight-settings-menu .ytpa-section.is-collapsed:not(:hover) .ytpa-section__fill {
+		background-color: var(--Foreground-Transparent) !important
+	}
+	::placeholder, input:-moz-placeholder, #scrollable > yt-formatted-string, #filter-bar #filter-icon *, #filter-bar #text-input::placeholder, #yta-time-picker .ytcp-dropdown-trigger, #yta-time-picker .ytcp-text-dropdown-trigger, .style-scope.ytcp-missing-features-menu, .ytcp-missing-features-menu-0 #menu-header.ytcp-missing-features-menu, .ytcp-sticky-header-0 .paper-tab-0:not(.iron-selected) .tab-content, .ytpa-ambientlight-settings-menu .ytpa-section.is-collapsed:not(:hover) {
 		color: var(--Foreground)!important
+	}
+	.ytpa-ambientlight-settings-menu .ytpa-feedback-link__text {
+		color: var(--Primary) !important
 	}
 	ytd-ticket-shelf-renderer.style-scope.ytd-watch-flexy, #main-menu li paper-icon-item, .ytcp-missing-features-menu-0 #menu-header.ytcp-missing-features-menu, .ytcp-missing-features-menu-0 #menu-items.ytcp-missing-features-menu a.ytcp-missing-features-menu:focus paper-icon-item.ytcp-missing-features-menu, .ytcp-missing-features-menu-0 paper-icon-item.ytcp-missing-features-menu:hover, .style-scope.ytcp-missing-features-menu:hover {
 		background: 0 0
