@@ -175,31 +175,20 @@
 	box-shadow: 0 0 8px var(--Surface-Transparent) !important;
 }
 
-#navigator-toolbox #PersonalToolbar {
-	opacity: 0 !important;
-	margin-bottom: -28px !important;
-	translate: 0 -28px !important;
-	transition: opacity 3s ease-in-out 2s, margin 3s ease-in-out 3s, translate 4s ease-in-out 3s !important;
-	border-radius: var(--Rounding-Variant-Bottom)
-}
-#navigator-toolbox:hover #PersonalToolbar {
-	opacity: 1 !important;
-	margin-bottom: 0px !important;
-	translate: 0 0 !important;
-	transition: opacity .5s ease-in-out .2s, margin .5s ease-in-out, translate .3s ease-in-out !important;
-}
-
 #navigator-toolbox #titlebar {
 	opacity: 0 !important;
-	margin-bottom: -30px !important;
-	translate: 0 -30px !important;
-	transition: opacity 3s ease-in-out 2s, margin 3s ease-in-out 3s, translate 4s ease-in-out 3s !important;
+	margin-bottom: -32px !important;
+	translate: 0 -32px !important;
+	transition: opacity 2s ease-in-out 2s, margin 3s ease-in-out 2s, translate 3s ease-in-out 2s !important;
 }
 #navigator-toolbox:hover #titlebar {
 	opacity: 1 !important;
 	margin-bottom: 0px !important;
 	translate: 0 0 !important;
 	transition: opacity .5s ease-in-out .2s, margin .5s ease-in-out, translate .3s ease-in-out !important;
+}
+#navigator-toolbox #personal-bookmarks {
+	max-width: 45vw !important;
 }
 
 /* -----Window Controls----- */
