@@ -55,6 +55,7 @@ alias cp="rsync -ahv --progress"
 alias system-info="inxi -Fza"
 alias disk-space="df -H"
 alias check-ports="nmap -Pn"
+alias ll=ls -lha
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH
 
