@@ -188,7 +188,7 @@
 	transition: opacity .5s ease-in-out .2s, margin .5s ease-in-out, translate .3s ease-in-out !important;
 }
 #navigator-toolbox #personal-bookmarks {
-	max-width: 45vw !important;
+	max-width: 48vw !important;
 }
 
 /* -----Window Controls----- */

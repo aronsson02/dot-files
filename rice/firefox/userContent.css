@@ -10,16 +10,12 @@
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
 		--Primary: #1CCFEA;
-		--Primary-Light: #00FFFF;
+		--Primary-Light: #00FFF0;
 		--Primary-Dark: #16A5BB;
 		--Primary-Transparent: #00FFFF80;
 		--Secondary: #E72F6B;
 		--Secondary-Transparent: #E72F6B80;
 		--Secondary-Tri: #6BE72F;
-		--Mast: var(--Surface-Alternative);
-		--Mast-Transparent: #25283F80;
-		--Mast-Variant: #2e324f;
-		--Mast-Dark: #1c1e2f;
 		--grey: #808080;
 		--red: #F2303B;
 		--red-old: #F44336;
@@ -40,14 +36,12 @@
 		--blur-bright: var(--blur) brightness(110%);
 		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
-		--Mast-Shadow: 0 0 8px 1px var(--Mast);
-		--Mast-Variant-Shadow: 0 0 8px 1px var(--Mast-Variant);
-		--Rounding: 8px;
+		--Rounding: 9px;
 		--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
 		--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;
 		--Rounding-Left: var(--Rounding) 0 0 var(--Rounding);
 		--Rounding-Right: 0 var(--Rounding) var(--Rounding) 0;
-		--Rounding-Variant: 16px;
+		--Rounding-Variant: 18px;
 		--Rounding-Variant-Bottom: 0 0 var(--Rounding-Variant) var(--Rounding-Variant);
 		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
@@ -95,8 +89,6 @@ url("about:privatebrowsing") {
 	}
 	#private-browsing-myths {
 		color: var(--Primary-Transparent) !important
-	}
-	body {
 	}
 	#newtab-search-text {
 		background-color: var(--Background) !important;
@@ -158,12 +150,12 @@ url("about:privatebrowsing") {
 		transition: background-color 500ms 500ms, border-radius 300ms 400ms !important;
 	}
 	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
-		background-color: var(--Surface-Transparent) !important;
+		background-color: var(--Surface-Transparent-Alternative) !important;
 		border-radius: 32px 16px 32px 32px !important;
 		transition: background-color 500ms, border-radius 300ms 200ms !important;
 	}
 	.top-site-outer .tile, .top-site-outer .context-menu-button:is(:active, :focus) {
-		background-color: var(--Surface-Transparent) !important;
+		background-color: var(--Surface-Transparent-Alternative) !important;
 		border-radius: 999px !important;
 		overflow: hidden;
 		mask: radial-gradient(rgba(0,0,0,1) 55%, rgba(0,0,0,0) 70%)
