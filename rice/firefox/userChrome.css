@@ -1,3 +1,24 @@
+
+/*************************************************************************************************************************************************************************************************************************************************************
+
+"userChrome.css" is a custom CSS file that can be used to specify CSS style rules for Floorp's interface (NOT internal site) using "chrome" privileges.
+For instance, if you want to hide the tab bar, you can use the following CSS rule:
+
+**************************************
+#TabsToolbar {                       *
+    display: none !important;        *
+}                                    *
+**************************************
+
+NOTE: You can use the userChrome.css file without change preferences (about:config)
+
+Quote: https://userChrome.org | https://github.com/topics/userchrome
+
+************************************************************************************************************************************************************************************************************************************************************/
+
+@charset "UTF-8";
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+/* Please write your custom CSS under this line */
 :root {
 		--Foreground: #F9EFE3;
 		--Foreground-Variant: #F9EFE3CC;
@@ -53,6 +74,9 @@
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
 		--Spinner: var(--Primary) transparent;
+	
+	  --in-content-page-background: transparent
+		--page-color:	calc(var(--floorp-navigator-toolbox-bg-color) / rgba(0,0,0,0.5))
 }
 @keyframes hue-rotate {
 	0% {
@@ -78,59 +102,6 @@
 			background-position: -200% 0
 		}
 	}
-:root {
-	--mff-bg: transparent;
-	--mff-icon-color: var(--Foreground);
-	--mff-nav-toolbar-padding: 5px;
-	--mff-sidebar-bg: transparent;
-	--mff-sidebar-color: var(--Foreground);
-	--mff-menupopup-bg: var(--mff-bg);
-	--mff-menupopup-color: var(--Foreground);
-	--mff-tab-border-radius: 999px;
-	--mff-tab-color: var(--Foreground);
-	--mff-tab-font-family: default, monospace, sans;
-	--mff-tab-font-size: 10pt;
-	--mff-tab-font-weight: 400;
-	--mff-tab-pinned-bg: var(--mff-bg);
-	--mff-tab-selected-bg: var(--mff-bg);
-	--mff-urlbar-color: var(--Foreground);
-	--mff-urlbar-background-color: var(--Surface-Transparent);
-	--mff-urlbar-focused-color: var(--Foreground);
-	--mff-urlbar-font-family: default, monospace, serif;
-	--mff-urlbar-font-size: 16pt;
-	--mff-urlbar-font-weight: 400;
-	--mff-urlbar-results-color: var(--Foreground);
-	--mff-urlbar-results-font-family: default, "mononoki Nerd Font", serif;
-	--mff-urlbar-results-font-size: 12pt;
-	--mff-urlbar-results-font-weight: 400;
-	--mff-urlbar-results-url-color: var(--Foreground-Dark);
-	/* Overriden Firefox variables*/
-	--autocomplete-popup-background: var(--mff-bg) !important;
-	--default-arrowpanel-background: var(--mff-bg) !important;
-	--default-arrowpanel-color: var(--Foreground-Variant) !important;
-	--lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
-	--panel-disabled-color: #f9f9fa80;
-	--toolbar-bgcolor: var(--mff-bg) !important;
-	--urlbar-separator-color: transparent !important;
-}
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-/* only needed once */
-::placeholder {
-	opacity: 0 !important;
-}
-/* -----Status Color Change----- */
-#statuspanel #statuspanel-label {
-	color: var(--Foreground) !important;
-	background-color: var(--Surface-Transparent) !important;
-	border: none !important;
-	backdrop-filter: var(--blur-dark-variant) !important;
-}
-
-/* -----Suppress Connecting/Waiting/Reading/Transerring----- */
-/* #statuspanel[type="status"],*/
-#statuspanel[type="overLink"] {
-	display: none !important;
-}
 
 /* show tab manager button even when tabs aren't overflowing -
    can instead use browser.tabs.tabmanager.enabled;true as well
@@ -163,83 +134,8 @@
     transform: translateX(-50%);
     padding: 0 3px;
 }
-
-#urlbar-background {
-	background-color: Transparent !important;
-	transition: all 2s ease-out 1s !important;
-	box-shadow: none !important;
-}
-#navigator-toolbox:hover #urlbar-background {
-	background-color: var(--Surface-Transparent) !important;
-	transition: all 250ms ease-out !important;
-	box-shadow: 0 0 8px var(--Surface-Transparent) !important;
-}
-
-#navigator-toolbox #titlebar {
-	opacity: 0 !important;
-	margin-bottom: -32px !important;
-	translate: 0 -32px !important;
-	transition: opacity 2s ease-in-out 2s, margin 3s ease-in-out 2s, translate 3s ease-in-out 2s !important;
-}
-#navigator-toolbox:hover #titlebar {
-	opacity: 1 !important;
-	margin-bottom: 0px !important;
-	translate: 0 0 !important;
-	transition: opacity .5s ease-in-out .2s, margin .5s ease-in-out, translate .3s ease-in-out !important;
-}
 #navigator-toolbox #personal-bookmarks {
 	max-width: 48vw !important;
-}
-
-/* -----Window Controls----- */
-.titlebar-button {
-	padding: 0 3px !important;
-}
-.titlebar-buttonbox-container {
-	display: flex !important;
-	background: none !important;
-}
-.titlebar-min image, .titlebar-max image, .titlebar-restore image, .titlebar-close image {
-	list-style-image: url("titlebar/normal.svg") !important;
-	height: 28px !important;
-}
-#main-window:hover .titlebar-min image {
-	list-style-image: url("titlebar/minimize_focus.svg") !important;
-	height: 28px !important;
-}
-#main-window:hover .titlebar-max image {
-	list-style-image: url("titlebar/maximized_focus.svg") !important;
-	height: 28px !important;
-}
-#main-window:hover .titlebar-restore image {
-	list-style-image: url("titlebar/maximized_active.svg") !important;
-	height: 28px !important;
-}
-#main-window:hover .titlebar-close image {
-	list-style-image: url("titlebar/close_focus.svg") !important;
-	height: 28px !important;
-}
-.titlebar-min:hover image {
-	list-style-image: url("titlebar/minimize_focus_hover.svg") !important;
-	height: 28px !important;
-}
-.titlebar-max:hover image {
-	list-style-image: url("titlebar/maximized_focus_hover.svg") !important;
-	height: 28px !important;
-}
-.titlebar-restore:hover image {
-	list-style-image: url("titlebar/maximized_active_hover.svg") !important;
-	height: 28px !important;
-}
-.titlebar-close:hover image {
-	list-style-image: url("titlebar/close_focus_hover.svg") !important;
-	height: 28px !important;
-}
-.titlebar-buttonbox {
-	direction: rtl !important;
-}
-.titlebar-button:-moz-lwtheme:hover {
-	background: none !important;
 }
 
 
@@ -247,27 +143,11 @@ browser[primary="true"][tabDialogShowing="true"],
 #main-window[window-modal-open="true"] > body > #browser{
   filter: var(--blur-variant) !important
 }
-:root[dialogroot], :host(dialog) {
-	background: none !important;
-}
 .dialogBox {
 	border-radius: var(--Rounding-Variant) !important;
 	backdrop-filter: var(--blur-dark) !important;
 }
-#bookmarkproperties {
-	background-color: var(--Surface) !important;
-}
-#bookmarkproperties label {
-	color: var(--Foreground) !important;
-}
-#bookmarkproperties input, #bookmarkpropertiesdialog .expander-up, #bookmarkpropertiesdialog .expander-down, #editBMPanel_tagsSelector {
-	background-color: var(--Surface-Variant) !important;
-	border-radius: var(--Rounding) !important;
-	border: none !important;
-}
-.titleIcon {
-	background-color: #00000000 !important;
-}
+
 
 /*
   _____ _   ___ ___
@@ -297,12 +177,16 @@ body {
 #tabbrowser-tabs {
 	--tab-loading-fill: #033433 !important;
 }
-.tabbrowser-tab[selected="true"],
-.tabbrowser-tab[soundplaying="true"] {
+.tabbrowser-tab[selected="true"] {
+		transition: background-color ease 500ms !important;
+		background-color: var(--floorp-navigator-toolbox-bg-color) !important;
+	border-radius: 16px 16px 32px 32px !important;
+	}
+.tabbrowser-tab[soundplaying="true"]:not([selected="true"]) {
 	background-color: transparent !important;
 	background: linear-gradient(100deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/200% 100%;
-	animation: shift 8s linear infinite;
-	border-radius: 16px 16px 64px 64px !important;
+	animation: shift 16s linear infinite;
+	border-radius: 16px 16px 32px 32px !important;
 }
 .tab-icon-overlay[soundplaying]:not([crashed]),
 .tab-icon-overlay[muted]:not([crashed]),
@@ -404,10 +288,6 @@ toolbar#nav-bar {
 #urlbar-input:focus {
 	color: var(--mff-urlbar-focused-color) !important;
 }
-.megabar[breakout-extend="true"]:not([open="true"]) > #urlbar-background {
-	box-shadow: none !important;
-	background-color: transparent !important;
-}
 toolbarbutton {
 	box-shadow: none !important;
 }
@@ -451,14 +331,21 @@ image#sidebar-icon {
 #TabsToolbar,
 #titlebar,
 #main-window,
-#navigator-toolbox,
 panelview,
-#toolbar-menubar {
+#toolbar-menubar,
+#navigator-toolbox,
+#navigator-toolbox-background {
 	-moz-appearance: none !important;
 	background-color: transparent !important;
 	background-image: none !important;
 	box-shadow: none !important;
 	border: none !important;
+}
+	#browser * {
+	-moz-appearance: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	border-color: transparent !important;
 }
 #placesContext, #PlacesChevronPopup, #tabContextMenu, #downloadsPanel, #editBookmarkPanel, .textbox-contextmenu, #unified-extensions-panel {
 	background-color: var(--Surface) !important;
@@ -484,7 +371,7 @@ panel {
 #appMenu-popup,
 #customizationui-widget-panel,
 menupopup > menu > menupopup {
-	background: var(--Surface) !important;
+		background-color: var(--floorp-navigator-toolbox-bg-color) !important;
 }
 #contentAreaContextMenu *,
 #toolbar-context-menu * {
@@ -577,6 +464,7 @@ menupopup menu[disabled="true"]:hover {
 	background-color: var(--mff-bg) !important;
 }
 
-#urlbar[open] > #urlbar-background {
-	background-color: var(--Surface) !important
+#urlbar-background {
+		background-color: var(--floorp-navigator-toolbox-bg-color) !important;
+}
 }

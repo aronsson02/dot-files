@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google
-@version      5.4.11
+@version      5.4.12
 @description  Google related themes.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,7 +14,7 @@
 		background-image: none!important;
 		backdrop-filter: var(--blur-dark)!important
 	}
-	#player-control-overlay.fadein .player-controls-background, #video-preview-container.ytd-video-preview {
+	#player-control-overlay.fadein .player-controls-background, #video-preview-container.ytd-video-preview, .arrow.yt-horizontal-list-renderer {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant)!important
 	}
@@ -261,6 +261,9 @@
 		padding: 4px 8px;
 		border-radius: 6px
 	}
+	html[data-ambientlight-enabled="true"][dark] ytd-app, html[dark] ytd-app {
+		background-color: var(--Background) !important
+	}
 	#more:hover, #less:hover, ytd-author-comment-badge-renderer:hover, #author-text.yt-simple-endpoint.ytd-comment-renderer:hover, tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] {
 		background-color: var(--Surface-Variant)!important
 	}
@@ -481,7 +484,7 @@
 	.ytcd-video-card-0 #video-card.ytcd-video-card {
 		border: none
 	}
-	#masthead-container.ytd-app::after, .ended-mode .ytp-tooltip.ytp-text-detail.ytp-preview.ytp-has-duration.ytp-bottom .ytp-tooltip-bg, .ended-mode .html5-video-container, .ended-mode .ytp-gradient-bottom, .ended-mode .ytp-hide-info-bar .ytp-volume-panel, .ended-mode.ytp-hide-info-bar .ytp-mute-button, .ended-mode.ytp-hide-info-bar .ytp-progress-bar-container, .ended-mode.ytp-hide-info-bar .ytp-time-display.notranslate, iron-overlay-backdrop.opened, scrollbar scrollbarbutton, #a11y-announcements-container, #masthead-positioner-height-offset, #logo-container .logo.masthead-logo-renderer-logo.yt-sprite, .content-region, .guide-section-separator, .video-annotations, html[hide-scrollbar="true"] ::-webkit-scrollbar, .gstl_50.sbdd_c, #search-icon-legacy {
+	#masthead-container.ytd-app::after, .ended-mode .ytp-tooltip.ytp-text-detail.ytp-preview.ytp-has-duration.ytp-bottom .ytp-tooltip-bg, .ended-mode .html5-video-container, .ended-mode .ytp-gradient-bottom, .ended-mode .ytp-hide-info-bar .ytp-volume-panel, .ended-mode.ytp-hide-info-bar .ytp-mute-button, .ended-mode.ytp-hide-info-bar .ytp-progress-bar-container, .ended-mode.ytp-hide-info-bar .ytp-time-display.notranslate, iron-overlay-backdrop.opened, scrollbar scrollbarbutton, #a11y-announcements-container, #masthead-positioner-height-offset, #logo-container .logo.masthead-logo-renderer-logo.yt-sprite, .content-region, .guide-section-separator, .video-annotations, html[hide-scrollbar="true"] ::-webkit-scrollbar, .gstl_50.sbdd_c, #search-icon-legacy, #paid-comment-background.ytd-comment-view-model {
 		display: none!important
 	}
 	#label-icon, #logo .ytd-topbar-logo-renderer #youtube-paths path, #iri-quick-control-auto-play > svg, #iri-quick-control-full-browser > svg, #iri-quick-control-pop-up-player > svg, #iri-quick-control-screen-shot > svg, #iri-quick-control-thumbnail > svg {
@@ -528,10 +531,13 @@
 	}
 }
 @-moz-document domain("music.youtube.com") {
-	[dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background, #player-bar-background.ytmusic-app-layout, .side-panel.modular.style-scope.ytmusic-player-page, .av-toggle.ytmusic-av-toggle, #container.ytmusic-multi-select-menu-renderer {
-		background-color: transparent!important;
-		background-image: none!important;
+	[dark] ::-webkit-scrollbar, [dark] ::-webkit-scrollbar-corner, #nav-bar-background, #player-bar-background.ytmusic-app-layout, .side-panel.modular.style-scope.ytmusic-player-page, .av-toggle.ytmusic-av-toggle, #container.ytmusic-multi-select-menu-renderer, ytmusic-add-to-playlist-renderer, ytmusic-dialog {
+		background: none!important;
 		backdrop-filter: var(--blur-dark)!important
+	}
+	tp-yt-iron-overlay-backdrop.opened {
+		background: none!important;
+		backdrop-filter: var(--blur-dark-variant)!important
 	}
 	ytmusic-app-layout > [slot="nav-bar"] {
 		backdrop-filter: blur(50px)!important
@@ -561,14 +567,14 @@
 		border-radius: var(--Rounding)!important;
 		overflow: hidden
 	}
-	#player, .song-media-controls.ytmusic-player, ytmusic-player-bar, #suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle, #mini-guide-background {
+	#player, .song-media-controls.ytmusic-player, ytmusic-player-bar, #suggestions.ytmusic-search-suggestions-section > .ytmusic-search-suggestions-section, #suggestions.ytmusic-search-suggestions-section > .selected-suggestion.ytmusic-search-suggestions-section, .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle, #mini-guide-background, tp-yt-paper-dialog, ytmusic-playlist-form {
 		background: none !important
 	}
-	ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_TRANSPARENT"] a.ytmusic-chip-cloud-chip-renderer {
+	ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_TRANSPARENT"] a.ytmusic-chip-cloud-chip-renderer, .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
 		background-color: var(--Foreground) !important
 	}
-	ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_TRANSPARENT"] a.ytmusic-chip-cloud-chip-renderer:hover {
-		background-color: var(--Foreground-Variant) !important
+	ytmusic-chip-cloud-chip-renderer[chip-style="STYLE_TRANSPARENT"] a.ytmusic-chip-cloud-chip-renderer:hover, .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled:hover {
+		background-color: var(--Foreground-Variant) !important;
 	}
 	ytmusic-player {
 		margin: auto 0 !important;
@@ -583,9 +589,6 @@
 	}
 	ytmusic-app-layout > [slot=nav-bar] {
 		width: 100vw!important
-	}
-	.iron-selected:not(.ytmusic-pivot-bar-renderer) {
-		background-color: var(--Primary-Transparent)!important
 	}
 	ytmusic-search-suggestions-section.ytmusic-search-box {
 		border: none!important;
@@ -613,7 +616,7 @@
 	ytmusic-av-toggle[toggle-disabled] .ytmusic-av-toggle {
 		color: var(--Foreground-Dark) !important
 	}
-	ytmusic-search-box[opened], ytmusic-search-box[has-query], ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box, ytmusic-app-layout > [slot=nav-bar], #nav-bar-background.ytmusic-app-layout {
+	ytmusic-search-box[opened], ytmusic-search-box[has-query], ytmusic-search-box[opened] .search-box.style-scope.ytmusic-search-box, ytmusic-search-box[has-query] .search-box.style-scope.ytmusic-search-box, ytmusic-app-layout > [slot=nav-bar], #nav-bar-background.ytmusic-app-layout, tp-yt-paper-dialog {
 		border: none!important;
 		box-shadow: none!important
 	}
@@ -626,6 +629,9 @@
 	}
 	ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-shadow.ytmusic-app-layout {
 		opacity: 0!important
+	}
+	tp-yt-iron-overlay-backdrop.opened {
+		opacity: 1!important
 	}
 	body {
 		margin: 0;
@@ -1285,7 +1291,7 @@
 	}
 }
 @-moz-document url-prefix("https://www.google.com/maps"), url-prefix("https://www.google.se/maps"), url-prefix("https://www.google.no/maps") {
-	.app-imagery-mode .uCBduRuX4WR__button, .app-imagery-mode .widget-zoom-button, .app-imagery-mode .xsYFzc, .app-imagery-mode .widget-expand-button-pegman, .app-imagery-mode .scene-footer, .app-imagery-mode .widget-tilt-button, .app-imagery-mode .widget-mylocation-button, .app-imagery-mode .mapsTactileClientGlobeGlobetoggle__button, .app-imagery-mode .uSzaJe, .app-imagery-mode .WzvKIe, .app-imagery-mode .DMPNfb, .mapsConsumerUiTiltInternalTilt__widget-tilt-button, .widget-reveal-card, .gb_5c.gb_Pg.gb_i, .action-menu-widget, .widget-layer, .widget-nearby-suggestions-inner, #zoomToolbar, #undoRedoToolbar, #drawingToolbar, #directionsToolbar, #measureToolbar, #mobileToolbar, #zoomToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #drawingToolbar .VIpgJd-INgbqf-LgbsSe, #directionsToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #mobileToolbar .VIpgJd-INgbqf-LgbsSe, #mp-footer > li, #gb, .U5xfxc, .tXNTee, .xoLGzf, .E9Z7uf .m6QErb.iS1Ot, .DAdBuc, .ztgaDb {
+	.app-imagery-mode .uCBduRuX4WR__button, .app-imagery-mode .widget-zoom-button, .app-imagery-mode .xsYFzc, .app-imagery-mode .widget-expand-button-pegman, .app-imagery-mode .scene-footer, .app-imagery-mode .widget-tilt-button, .app-imagery-mode .widget-mylocation-button, .app-imagery-mode .mapsTactileClientGlobeGlobetoggle__button, .app-imagery-mode .uSzaJe, .app-imagery-mode .WzvKIe, .app-imagery-mode .DMPNfb, .mapsConsumerUiTiltInternalTilt__widget-tilt-button, .widget-reveal-card, .gb_5c.gb_Pg.gb_i, .action-menu-widget, .widget-layer, .widget-nearby-suggestions-inner, #zoomToolbar, #undoRedoToolbar, #drawingToolbar, #directionsToolbar, #measureToolbar, #mobileToolbar, #zoomToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-LgbsSe, #undoRedoToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #drawingToolbar .VIpgJd-INgbqf-LgbsSe, #directionsToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-LgbsSe, #measureToolbar .VIpgJd-INgbqf-xl07Ob-LgbsSe, #mobileToolbar .VIpgJd-INgbqf-LgbsSe, #mp-footer > li, #gb, .U5xfxc, .tXNTee, .xoLGzf, .E9Z7uf .m6QErb.iS1Ot, .DAdBuc, .ztgaDb, #interactive-hovercard {
 		background: none !important;
 		backdrop-filter: var(--blur-dark-variant) !important;
 	}
@@ -1360,7 +1366,7 @@
 	.section-info-action-icon-button:last-of-type, .ugiz4pqJLAG__clickable.ugiz4pqJLAG__metadata-shown-on-hover-only:hover .section-listitem-metadata, body:not(.keynav-mode-off) .ugiz4pqJLAG__metadata-shown-on-hover-only.ugiz4pqJLAG__clickable.ugiz4pqJLAG__focus-within .section-listitem-metadata, .XKSfm-Sx9Kwc-c6xFrd button, .tk3N6e-LgbsSe-n2to0e {
 		background-image: none !important
 	}
-	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title, #issue-card-header, .issue-card-title, .section-hero-header-title-title, .rLwmCGCu6mP__title, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], .psjCIe-Bz112c, .eCT9zd-V67aGc, .i4ewOd-r4nke, .pbTTYe-r4nke, .ilErfe-yePe5c-haAclf, .T2ozWe, .bT9aub, .DUwDvf, .kPvgOb, .sErS0c, .Py6Qke, .vij30, .nhb85d .searchboxinput, .nhb85d .tactile-searchbox-input, .tXNTee, .lb7LQb, .iBQpTe .MlAqDb, button, .bu3EAe, .CUDjrd, .XKSfm-Sx9Kwc-r4nke, .XKSfm-Sx9Kwc, .tk3N6e-LgbsSe-n2to0e, .ilErfe-ztA2jd-ibnC6b-r4nke, #docs-editor, .z80M1, .cGRe9e, .b9DfJb, .MMkI0b, .fontBodyLarge, .RYaupb.fontBodyMedium, .nhb85d .dp9cUc .searchboxinput, .id-omnibox .dp9cUc .tactile-searchbox-input::placeholder, .wouVQd.wouVQd .Ab1Xue, .Fk3sm, .VuCHmb, .REvajc, .JoXhkf, .krCtrd, .KUej9d .mUekQe, .hPzYFf span, .Ab1Xue, .VaFJzb {
+	.ita-kd-menuitem-hover, .widget-layer, .widget-nearby-suggestions-inner, .title, #issue-card-header, .issue-card-title, .section-hero-header-title-title, .rLwmCGCu6mP__title, .i4ewOd-TaUzNb-haAclf div.i4ewOd-TaUzNb-p83tee-lTBxed[contenteditable=true], .psjCIe-Bz112c, .eCT9zd-V67aGc, .i4ewOd-r4nke, .pbTTYe-r4nke, .ilErfe-yePe5c-haAclf, .T2ozWe, .bT9aub, .DUwDvf, .kPvgOb, .sErS0c, .Py6Qke, .vij30, .nhb85d .searchboxinput, .nhb85d .tactile-searchbox-input, .tXNTee, .lb7LQb, .iBQpTe .MlAqDb, button, .bu3EAe, .CUDjrd, .XKSfm-Sx9Kwc-r4nke, .XKSfm-Sx9Kwc, .tk3N6e-LgbsSe-n2to0e, .ilErfe-ztA2jd-ibnC6b-r4nke, #docs-editor, .z80M1, .cGRe9e, .b9DfJb, .MMkI0b, .fontBodyLarge, .RYaupb.fontBodyMedium, .nhb85d .dp9cUc .searchboxinput, .id-omnibox .dp9cUc .tactile-searchbox-input::placeholder, .wouVQd.wouVQd .Ab1Xue, .Fk3sm, .VuCHmb, .REvajc, .JoXhkf, .krCtrd, .KUej9d .mUekQe, .hPzYFf span, .Ab1Xue, .VaFJzb, .szh09c {
 		color: var(--Foreground) !important
 	}
 	.suggest-query, .widget-settings-button, .section-area-weather-title, .ugiz4pqJLAG__two-line-text .ugiz4pqJLAG__primary-text, .iRxY3GoUYUY__actionchip .iRxY3GoUYUY__text, .iRxY3GoUYUY__densechip .iRxY3GoUYUY__text, .section-info-text, .section-info-text .widget-pane-link, .ugiz4pqJLAG__primary-text, .lo7U087hsMA__row-row, .action-menu-widget-gm2.action-menu-widget, .section-review-subtitle, .section-review-text, .widget-pane-link, .jVMscDilb9d__dense .jVMscDilb9d__input, .ozj7Vb3wnYq__title-and-subtitle, .section-mobile-promo-large-title-with-icon, .section-dialog-header, .section-dialog-footer-text, .ita-kd-menuitem, .cX2WmPgCkHi__root, .section-editorial, .section-attribute-group, .kd-radio-label, .section-hero-header-title-description-container, .VIpgJd-j7LFlb, .VIpgJd-pWKtN, .VIpgJd-SFgmFf, .VIpgJd-wQNmvb-gk6SMd .VIpgJd-j7LFlb-bN97Pc, .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc, .i4ewOd-nUpftc-NnAfwf-fmcmS, .i4ewOd-LQLjdd li, .un1lmc-pbTTYe-ibnC6b, .xwYt2d, .SemQB, .GKsdTb, .LBgpqf, .Io6YTe, .JpCtJf, .JpCtJf .DkEaL, .jftiEf, .OqCZI, .ilErfe-ztA2jd-ibnC6b-ij8cu, .i4ewOd-ibnC6b-Tswv1b-HyDyrc-haAclf, .fontBodySmall, .dxjKzc, .UgZKXd, .KUej9d, .vC55le, .WeS02d, .zSdcRe, .TrU0dc .GMtm7c {
@@ -1385,9 +1391,9 @@
 		color: black !important
 	}
 	.oxIpGd {
-	min-height: 100%;
-	background: linear-gradient(100deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/200% 100%;
-	animation: shift 5s linear infinite;
+		min-height: 100%;
+		background: linear-gradient(100deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/200% 100%;
+		animation: shift 5s linear infinite;
 	}
 	.qxPNJf, .vzX5Ic {
 		animation: hue-rotate 6s linear infinite

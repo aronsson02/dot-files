@@ -42,6 +42,7 @@ alias yt-dlp-Boy="yt-dlp --download-archive /Archive/.archive -N 16 --buffer-siz
 alias yt-dlp-IDaT="yt-dlp --download-archive /Archive/.archive -N 16 --buffer-size 128K -P '/Archive/YouTube/I did a thing/Season 2/' --part --write-info-json --no-write-playlist-metafiles --write-thumbnail --playlist-reverse -o 'I did a thing - S02E%(playlist_autonumber)s - %(title)s' 'UUJLZe_NoiG0hT7QCX_9vmqw'"
 alias yt-dlp-CD="yt-dlp --download-archive /Archive/.archive -N 16 --buffer-size 128K -P '/Archive/YouTube/Captain Disillusion/Season 1/' --part --write-info-json --no-write-playlist-metafiles --write-thumbnail --playlist-reverse -o 'Captain Disillusion - S01E%(playlist_autonumber)s - %(title)s' 'UUEOXxzW2vU0P-0THehuIIeg'"
 alias yt-dlp-Trash="yt-dlp --download-archive /Archive/.archive -N 16 --buffer-size 128K -P '/Archive/YouTube/Trash Taste/' --part --write-info-json --no-write-playlist-metafiles --write-thumbnail --playlist-reverse -o 'Trash Taste - S01E%(playlist_autonumber)s - %(title)s' 'UUcmxOGYGF51T1XsqQLewGtQ'"
+alias yt-dlp-random="yt-dlp -N 16 --buffer-size 128K -P '/home/yami/Nedlastinger/' --part -o '%(title)s'"
 
 alias pixiv-bookmarks="python /Archive/PixivUtil2/PixivUtil2.py -s 6 -p y -x"
 alias pixiv-list="python /Archive/PixivUtil2/PixivUtil2.py -s 4 -x"
@@ -54,7 +55,7 @@ alias cp="rsync -ahv --progress"
 alias system-info="inxi -Fza"
 alias disk-space="df -H"
 alias check-ports="nmap -Pn"
-alias ll=ls -lha
+alias ll="ls -lha"
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH
 

@@ -54,8 +54,8 @@ window {
     /* properties for window widget */
     transparency:                "real";
     fullscreen:                  false;
-    height: 2160px;
-    width: 3765px;
+    height: 1440px;
+    width: 3365px;
     x-offset:                    38px;
     y-offset:                    0px;
 
