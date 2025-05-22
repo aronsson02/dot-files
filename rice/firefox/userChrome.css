@@ -106,11 +106,17 @@ Quote: https://userChrome.org | https://github.com/topics/userchrome
 /* show tab manager button even when tabs aren't overflowing -
    can instead use browser.tabs.tabmanager.enabled;true as well
    or skip this part if you want to retain the default behaviour */
+
+/*
+
 #alltabs-button {
     display: -moz-box !important;
 }
 
 /* tab counter */
+
+/*
+
 #TabsToolbar-customization-target {
     counter-reset: tabCount;
 }
@@ -135,7 +141,7 @@ Quote: https://userChrome.org | https://github.com/topics/userchrome
     padding: 0 3px;
 }
 #navigator-toolbox #personal-bookmarks {
-	max-width: 48vw !important;
+	max-width: 40vw !important;
 }
 
 
@@ -148,7 +154,6 @@ browser[primary="true"][tabDialogShowing="true"],
 	backdrop-filter: var(--blur-dark) !important;
 }
 
-
 /*
   _____ _   ___ ___
  |_   _/_\ | _ ) __|
@@ -156,6 +161,9 @@ browser[primary="true"][tabDialogShowing="true"],
    |_/_/ \_\___/___/
 
 */
+
+/*
+
 body {
 	background-color: var(--Surface-Transparent) !important;
 }
@@ -206,6 +214,9 @@ hbox.tab-content[pinned=true] .tab-text,
   | || (_) | (_) | |__| _ \/ _ \|   /
   |_| \___/ \___/|____|___/_/  \_\_|_\
 */
+
+/*
+
 .urlbar-icon > image {
 	fill: var(--mff-icon-color) !important;
 	color: var(--mff-icon-color) !important;
@@ -297,6 +308,9 @@ toolbarbutton {
  \__ \| || |) | _|| _ \/ _ \|   /
  |___/___|___/|___|___/_/ \_\_|_\
 */
+
+/*
+
 .close-icon,
 .urlbar-icon {
 	fill: var(--mff-icon-color) !important;
@@ -317,17 +331,25 @@ splitter#sidebar-splitter {
 image#sidebar-icon {
 	display: none;
 }
+
+
 /*
     _   ___ ___  _____      _____  _   _  _ ___ _
    /_\ | _ \ _ \/ _ \ \    / / _ \/_\ | \| | __| |
   / _ \|   /   / (_) \ \/\/ /|  _/ _ \| .` | _|| |__
  /_/ \_\_|_\_|_\\___/ \_/\_/ |_|/_/ \_\_|\_|___|____|
  */
+
+/*
+
 .panel-arrowcontent {
 	padding: 0px !important;
 	margin: 0px !important;
 }
 /* Transparency */
+
+/*
+
 #TabsToolbar,
 #titlebar,
 #main-window,
@@ -382,6 +404,9 @@ panel)[type="arrow"] {
 	--panel-background: transparent !important;
 }
 /*Context Menu*/
+
+/*
+
 menupopup {
 	-moz-appearance: none !important;
 	background-color: transparent !important;
@@ -408,11 +433,17 @@ menupopup menu[disabled="true"]:hover {
 	background: transparent !important;
 }
 /* Don't show window control buttons */
+
+/*
+
 #autohide-context,
 #window-controls {
 	display: none!important;
 }
 /* Remove icons from the main context menu */
+
+/*
+
 #contentAreaContextMenu menuitem image,
 #contentAreaContextMenu menu image {
 	visibility: hidden;
@@ -421,6 +452,9 @@ menupopup menu[disabled="true"]:hover {
 	visibility: visible;
 }
 /* Feature recommendation notification, fix width */
+
+/*
+
 #contextual-feature-recommendation-notification {
 	width: auto !important;
 }

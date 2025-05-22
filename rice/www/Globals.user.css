@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Globals
-@version      6.0.7
+@version      6.0.8
 @description  Global definitions
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -14,12 +14,15 @@
 		--Foreground-Variant: #F9EFE3CC;
 		--Foreground-Dark: #F9EFE366;
 		--Foreground-Transparent: #F9EFE333;
+
 		--Background: #041A1F;
+		--Background-Transparent: #041a1f33;
 		--Surface: #052229;
 		--Surface-Variant: #072B33;
 		--Surface-Alternative: #09343d;
 		--Surface-Transparent: #00000066;
 		--Surface-Transparent-Alternative: #00000033;
+
 		--Primary: #1CCFEA;
 		--Primary-Light: #00FFF0;
 		--Primary-Dark: #16A5BB;
@@ -27,6 +30,7 @@
 		--Secondary: #E72F6B;
 		--Secondary-Transparent: #E72F6B80;
 		--Secondary-Tri: #6BE72F;
+
 		--grey: #808080;
 		--red: #F2303B;
 		--red-old: #F44336;
@@ -38,6 +42,7 @@
 		--blue: #8be9fd;
 		--blue-dark: #120056;
 		--yellow: #f1ff52;
+
 		--blur: blur(40px) contrast(0.9) saturate(1.5);
 		--blur-hover: blur(10px) contrast(0.9) saturate(1.5);
 		--blur-variant: blur(5px) contrast(0.9) saturate(1.5);
@@ -47,6 +52,7 @@
 		--blur-bright: var(--blur) brightness(110%);
 		--blur-bright-hover: var(--blur-hover) brightness(110%);
 		--blur-bright-variant: var(--blur-variant) brightness(110%);
+
 		--Rounding: 9px;
 		--Rounding-Bottom: 0 0 var(--Rounding) var(--Rounding);
 		--Rounding-Top: var(--Rounding) var(--Rounding) 0 0;
@@ -57,6 +63,7 @@
 		--Rounding-Variant-Top: var(--Rounding-Variant) var(--Rounding-Variant) 0 0;
 		--Rounding-Variant-Left: var(--Rounding-Variant) 0 0 var(--Rounding-Variant);
 		--Rounding-Variant-Right: 0 var(--Rounding-Variant) var(--Rounding-Variant) 0;
+
 		--Spinner: var(--Primary) transparent;
 	}
 
@@ -71,7 +78,9 @@
 		display: none !important
 	}
 
-	/* animation: hue-rotate 6s linear infinite !important */
+	/*
+	animation: hue-rotate 6s linear infinite !important
+	*/
 	@keyframes hue-rotate {
 		0% {
 			filter: hue-rotate(0deg);
@@ -80,7 +89,9 @@
 			filter: hue-rotate(360deg);
 		}
 	}
-	/*  animation: filter 6s linear infinite !important */
+	/*
+	animation: filter 6s linear infinite !important
+	*/
 	@keyframes filter {
 		0% {
 			filter: hue-rotate(360deg) sepia(0);
@@ -95,7 +106,9 @@
 			background: linear-gradient(45deg, #aa1100, #ff4400, #ffbb11, #55aa00, #000055, #fb0082);
 		}
 	}
-	/* animation: danger 1s linear infinite */
+	/*
+	animation: danger 1s linear infinite
+	*/
 	@keyframes danger {
 		0% {
 			background-color: var(--red);
@@ -107,7 +120,9 @@
 			background-color: var(--red);
 		}
 	}
-	/* animation: danger-text 1s linear infinite */
+	/*
+	animation: danger-text 1s linear infinite
+	*/
 	@keyframes danger-text {
 		0% {
 			color: var(--red);
@@ -119,7 +134,9 @@
 			color: var(--red);
 		}
 	}
-	/* animation: fade-in 3s ease 0s 1 */
+	/*
+	animation: fade-in 3s ease 0s 1
+	*/
 	@keyframes fade-in {
 		0% {
 			opacity: 0;

@@ -1,14 +1,14 @@
 #!/bin/sh
 
 down() {
-pamixer -d 2
+pamixer -d 1
 volume=$(pamixer --get-volume)
 [$volume -gt 0 ] && volume=`expr $volume`
 dunstify -a "VOLUME" "Decreasing to $volume%" -h int:value:"$volume" -i ~/.config/dunst/assets/ui/volume_low.png -r 2593 -u normal
 }
 
 up() {
-pamixer -i 2
+pamixer -i 1
 volume=$(pamixer --get-volume)
 [ $volume -lt 1000 ] && volume=`expr $volume`
 dunstify -a "VOLUME" "Increasing to $volume%" -h int:value:"$volume" -i ~/.config/dunst/assets/ui/volume_high.png -r 2593 -u normal

@@ -1,12 +1,12 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: Material Design Icons, JetBrainsMono Nerd Font, Iosevka Nerd Font;
+  font-family: Material Design Icons, OSUF, JetBrainsMono Nerd Font, Iosevka Nerd Font;
   font-size: 18px;
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.25);
-  color: #EEEEEE;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #F9EFE3;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -16,7 +16,7 @@ window#waybar.hidden {
 }
 
 #window {
-  color: #EEEEEE;
+  color: #F9EFE3;
 }
 
 #clock,
@@ -42,7 +42,7 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-  color: #e5e5e5;
+  color: #F9EFE3;
   padding: 2px 8px;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -110,7 +110,7 @@ window#waybar.hidden {
 #battery,
 #pulseaudio,
 #network {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 0em 2em;
 
   font-size: 20px;
@@ -212,8 +212,8 @@ window#waybar.hidden {
 }
 
 #clock {
-  color: #e5e5e5;
-  font-family: Iosevka Nerd Font;
+  color: #F9EFE3;
+  font-family: OSUF, Iosevka Nerd Font;
   font-weight: bold;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -274,7 +274,7 @@ label:focus {
 }
 
 #custom-weather {
-  font-family: Iosevka Nerd Font;
+  font-family: OSUF, Iosevka Nerd Font;
   font-size: 19px;
   color: #8a909e;
 }

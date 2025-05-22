@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name         Frigate
+@version      1.0.0
+@description  Frigate style
+@namespace    http://www.w3.org/1999/xhtml
+@author       aronsson02
+@homepageURL  https://github.com/aronsson02/dot-files
+@supportURL   https://github.com/aronsson02/dot-files/issues
+@updateURL    https://raw.githubusercontent.com/aronsson02/dot-files/master/rice/www/Frigate.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("http://10.1.1.28:5000/") {
+	body, .scrollbar-container, .bg-background_alt {
+		background-color: transparent !important
+	}
+	button.bg-secondary {
+		background-color: transparent!important;
+		background-image: none!important;
+		backdrop-filter: var(--blur-variant) !important
+	}
+	.bg-gradient-to-br {
+		background-color: transparent!important;
+		background-image: none!important;
+		backdrop-filter: var(--blur-dark-variant) !important
+	}
+	.bg-popover, button.hover\:bg-secondary\/80:hover {
+		background-color: transparent!important;
+		background-image: none!important;
+		backdrop-filter: var(--blur-dark-hover) !important
+	}
+	.bg-secondary {
+		background-color: var(--Surface-Transparent) !important;
+		transition: background-color 250ms !important
+	}
+	.hover\:bg-muted:hover, .hover\:bg-secondary\/80:hover {
+		background-color: var(--Surface-Transparent-Alternative) !important;
+		transition: background-color 250ms !important
+	}
+	.text-secondary-foreground, a, body {
+		color: var(--Foreground) !important
+	}
+	.text-muted-foreground, .\*\:text-muted-foreground > *, .dark\:text-secondary-foreground:is(.dark *) {
+		color: var(--Foreground-Variant) !important
+	}
+	.text-selected {
+		color: var(--Primary) !important
+	}
+	.shadow-severity_alert {
+		outline-color: var(--Primary) !important
+	}
+	.border-secondary-highlight {
+		border: none !important
+	}
+}

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         MangaDex
-@version      3.1.8
+@version      3.1.9
 @description  MangaDex theme.
 @namespace    http://www.w3.org/1999/xhtml
 @author       aronsson02
@@ -46,6 +46,9 @@
 	#kc-form-buttons input {
 		background-color: var(--Primary) !important
 	}
+	:root {
+		background-color: var(--Background-Transparent) !important
+	}
 	#kc-form-buttons input {
 		color: var(--Background) !important
 	}
@@ -70,9 +73,6 @@
 			backdrop-filter: var(--blur) !important;
 			transition: all 200ms
 		}
-	}
-	.fixed {
-		position: initial !important
 	}
 	.card-pf {
 		border-color: var(--Primary) !important

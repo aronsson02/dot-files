@@ -10,14 +10,10 @@ chsh -s /bin/zsh
 sudo cp "$HOME/dot-files/doas/doas.conf" "/etc/doas.conf"
 # Install doas config
 
-doas mkdir /Archive
-doas mkdir /Tera
-# Make the directories for the Archive and project Tera to connect to X2
-
 yay -Y --builddir /Archive/arch-pkg/yay --save
 # Use the remote build directory
 
-yay -Sy hyprland-git dunst-git swaybg-git swaylock-effects-git swayidle-git rofi-git qt5ct qt6ct xdg-user-dirs kvantum-git ckb-next-git fontforge rawtherapee inkscape baobab isousb czkawka-gui czkawka-cli easyeffects piper-git yt-dlp partitionmanager
+yay -Sy hyprland dunst swaybg swaylock-effects swayidle rofi qt5ct qt6ct xdg-user-dirs kvantum-git ckb-next-git fontforge rawtherapee inkscape baobab isousb czkawka-gui czkawka-cli easyeffects yt-dlp partitionmanager
 
 # yay -Sy awesome-git picom-tryone-git
 
