@@ -102,6 +102,17 @@ Quote: https://userChrome.org | https://github.com/topics/userchrome
 			background-position: -200% 0
 		}
 	}
+	
+	html#main-window {
+		--toolbox-textcolor: var(--Foreground) !important;
+	}
+	
+	
+	
+	
+	
+	
+	
 
 /* show tab manager button even when tabs aren't overflowing -
    can instead use browser.tabs.tabmanager.enabled;true as well
@@ -161,12 +172,8 @@ browser[primary="true"][tabDialogShowing="true"],
    |_/_/ \_\___/___/
 
 */
-
 /*
 
-body {
-	background-color: var(--Surface-Transparent) !important;
-}
 .browser-toolbar:not(.titlebar-color) {
 	background: none !important;
 }

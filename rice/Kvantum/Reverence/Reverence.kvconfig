@@ -74,9 +74,9 @@ menu_blur_radius=2
 tooltip_blur_radius=2
 
 [GeneralColors]
-window.color=#000000
-base.color=#00000000
-alt.base.color=#00000000
+window.color=#041a1f66
+base.color=#041a1f66
+alt.base.color=#041a1f66
 button.color=#F9EFE3
 light.color=#F9EFE3
 mid.light.color=#F9EFE3

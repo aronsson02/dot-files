@@ -53,10 +53,10 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    fullscreen:                  false;
+    fullscreen:                  true;
     height: 1440px;
     width: 3365px;
-    x-offset:                    38px;
+    x-offset:                    0px;
     y-offset:                    0px;
 
     /* properties for all widgets */

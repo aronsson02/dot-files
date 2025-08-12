@@ -4,7 +4,7 @@ Enable=false
 
 [Colors:Button]
 BackgroundAlternate=4, 26, 31, 64
-BackgroundNormal=4, 26, 31, 32
+BackgroundNormal=4, 26, 31, 64
 DecorationFocus=0, 255, 255
 DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
@@ -18,7 +18,7 @@ ForegroundVisited=153,153,153
 
 [Colors:Complementary]
 BackgroundAlternate=4, 26, 31, 64
-BackgroundNormal=4, 26, 31, 32
+BackgroundNormal=4, 26, 31, 64
 DecorationFocus=0,184,184
 DecorationHover=0,153,153
 ForegroundInactive=168,184,186
@@ -56,7 +56,7 @@ ForegroundVisited=100,58,197
 
 [Colors:View]
 BackgroundAlternate=4, 26, 31, 64
-BackgroundNormal=4, 26, 31, 32
+BackgroundNormal=4, 26, 31, 64
 DecorationFocus=0,184,184
 DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
@@ -70,7 +70,7 @@ ForegroundVisited=170,170,170
 
 [Colors:Window]
 BackgroundAlternate=4, 26, 31, 64
-BackgroundNormal=4, 26, 31, 32
+BackgroundNormal=4, 26, 31, 64
 DecorationFocus=0, 255, 255
 DecorationHover=0, 255, 255, 128
 ForegroundActive=255,128,224
